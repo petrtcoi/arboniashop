@@ -53,7 +53,7 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ model, minPrice, setTabBu
                 <Box marginTop="10px">
                     <Typography sx={ styles.smallText } >
                         Мы всегда стремимся дать выгодные цены для наших покупателей.
-                        Если вы нашли радиаторы Zehnder по более низким ценам, то свяжитесь с нашими менеджерами
+                        Если вы нашли радиаторы Arbonia по более низким ценам, то свяжитесь с нашими менеджерами
                         и предоставьте ссылку на соответствущую страницу или готовое коммерческое предложение.
                     </Typography>
                     <Box marginTop="10px">

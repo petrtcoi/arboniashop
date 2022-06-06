@@ -78,6 +78,14 @@ const FeaturesTable: NextPage<FeaturesTableProps> = ({ model, colorTitle, connec
             </Box>
             <Box>
                 <Typography sx={styles.smallText} display="inline">
+                    Макс. число секций:&nbsp;
+                </Typography>
+                <Typography sx={styles.smallTextBold} display="inline">
+                    { model.sectionsMax } сек.
+                </Typography>
+            </Box>
+            <Box>
+                <Typography sx={styles.smallText} display="inline">
                     Мощность секции (ΔT=50°):&nbsp;
                 </Typography>
                 <Typography sx={styles.smallTextBold} display="inline">
@@ -90,14 +98,6 @@ const FeaturesTable: NextPage<FeaturesTableProps> = ({ model, colorTitle, connec
                 </Typography>
                 <Typography sx={styles.smallTextBold} display="inline">
                     { model.dt60 } Вт
-                </Typography>
-            </Box>
-            <Box>
-                <Typography sx={styles.smallText} display="inline">
-                    Мощность секции (ΔT=70°):&nbsp;
-                </Typography>
-                <Typography sx={styles.smallTextBold} display="inline">
-                    { model.dt70 } Вт
                 </Typography>
             </Box>
             <Box>
@@ -121,15 +121,7 @@ const FeaturesTable: NextPage<FeaturesTableProps> = ({ model, colorTitle, connec
                     Производитель:&nbsp;
                 </Typography>
                 <Typography sx={styles.smallTextBold} display="inline" itemProp="manufacturer">
-                    Zehnder
-                </Typography>
-            </Box>
-            <Box itemProp="countryOfOrigin" itemScope itemType="https://schema.org/Country">
-                <Typography sx={styles.smallText} display="inline">
-                    Производство:&nbsp;
-                </Typography>
-                <Typography sx={styles.smallTextBold} display="inline" itemProp="name" >
-                    Германия
+                    Arbonia
                 </Typography>
             </Box>
             <Box>

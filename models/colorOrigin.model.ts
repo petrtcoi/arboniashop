@@ -4,7 +4,7 @@ type ColorOrigin = {
     baseRate: string
 
     img: string
-    group?: "RAL Classic" | "Серия Metallic" | "Серия Terra" | "Серия Pastell" | "Серия Nature"
+    group: "Серийный цвет" | "RAL Classic" | "Серия Metallic" | "Серия Terra" | "Серия Pastell" | "Серия Nature"
 }
 
 export type { ColorOrigin }

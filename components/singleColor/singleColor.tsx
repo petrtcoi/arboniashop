@@ -21,9 +21,9 @@ const SingleColor: React.FC<SingleColorProps> = ({ color, highlighted = false, h
             <Box>
                 <img
                     src={ `/images/colors/${color.img}` }
-                    width="116px"
-                    height="60px"
-                    style={ { borderRadius: "5px" } }
+                    width="150px"
+                    height="100px"
+                    style={ { borderRadius: "5px", border: "1px solid black" } }
                 />
             </Box>
             <Box>

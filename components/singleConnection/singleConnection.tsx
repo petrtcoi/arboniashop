@@ -25,7 +25,7 @@ const SingleConnection: React.FC<SingleConnectionProps> = ({ connection, highlig
                 <img
                     src={ `/images/connections/${connection.img}` }
                     width="150px"
-                    height="59px"
+                    height="100px"
                 />
             </Box>
             <Box marginTop={ "-10px" }>

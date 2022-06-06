@@ -11,6 +11,11 @@ import { ColorOrigin } from '../../models/colorOrigin.model'
 import * as styles from '../../styles/styles'
 
 
+const COLOR_GROUPS = [
+    'Серийный цвет', 'RAL Classic', 'Серия Metallic', 'Серия Terra', 'Серия Pastell', 'Серия Nature'
+]
+
+
 
 const Transition = React.forwardRef(function Transition(
     props: TransitionProps & {
@@ -41,7 +46,7 @@ const DialogColors: React.FC<DialogColorsProps> = ({ show, colors, colorCurrId, 
 
     const renderColor = (color: any) => {
         return (
-            <Grid item xs={ 6 } sm={ 4 } md={ 3 } key={ color.name }>
+            <Grid item xs={ 6 } sm={ 4 } md={ 3 } key={ color.id }>
                 <SingleColor
                     color={ color }
                     highlighted={ colorCurrId === color.id }
@@ -71,91 +76,41 @@ const DialogColors: React.FC<DialogColorsProps> = ({ show, colors, colorCurrId, 
                             <CloseIcon />
                         </IconButton>
                         <Typography sx={ { ml: 2, flex: 1 } } variant="h6" component="div">
-                            Палитра цветов Zehnder
+                            Палитра цветов Arbonia
                         </Typography>
                     </Toolbar>
                 </AppBar>
                 <DialogContent>
-                    <Box marginTop="20px" marginBottom="40px">
+                    <Box marginTop="20px" >
                         <Typography sx={ { ...styles.smallText } }>
-                            Радиаторы Zehnder Charleston могут быть окрашены во все цвета RAL classic и NCS цвета, дополнительно могут быть использованы специальные цвета из палитры Zehnder.
+                            По техническим причинам не является возможным абсолютно точно передать цвета.
                         </Typography>
                     </Box>
-                    <Grid container spacing={ 2 }>
-                        { colors.filter(x => !x.type).map((color) => {
-                            return renderColor(color)
-                        }) }
-                    </Grid>
-                    <Box marginTop="60px" marginBottom="20px">
-                        <Typography sx={ { color: "#000000", fontSize: "16px" } } display="inline">
-                            CORE
-                        </Typography>
-                        &nbsp;&nbsp;
-                        <Typography sx={ { ...styles.smallText } } display="inline">
-                            Кат.1 наценка 20%
-                        </Typography>
-                    </Box>
-                    <Box marginBottom="20px">
-                        <Typography sx={ { color: "#333333", fontSize: "14px" } } display="inline">
-                            WARM COLOURS
-                        </Typography>
-                    </Box>
-                    <Grid container spacing={ 2 }>
-                        { colors
-                            .filter(x => x.type === 'Core')
-                            .filter(x => x.group === 'Warm Colours')
-                            .map((color) => {
-                                return renderColor(color)
-                            }) }
-                    </Grid>
-                    <Box marginBottom="20px" marginTop="60px">
-                        <Typography sx={ { color: "#333333", fontSize: "14px" } } display="inline">
-                            COOL COLOURS
-                        </Typography>
-                    </Box>
-                    <Grid container spacing={ 2 }>
-                        { colors
-                            .filter(x => x.type === 'Core')
-                            .filter(x => x.group === 'Cool Colours')
-                            .map((color) => {
-                                return renderColor(color)
-                            }) }
-                    </Grid>
-                    <Box marginTop="60px" marginBottom="20px">
-                        <Typography sx={ { color: "#000000", fontSize: "16px" } } display="inline">
-                            TREND
-                        </Typography>
-                        &nbsp;&nbsp;
-                        <Typography sx={ { ...styles.smallText } } display="inline">
-                            Кат.2 наценка 30%
-                        </Typography>
-                    </Box>
-                    <Box marginBottom="20px">
-                        <Typography sx={ { color: "#333333", fontSize: "14px" } } display="inline">
-                            WARM COLOURS
-                        </Typography>
-                    </Box>
-                    <Grid container spacing={ 2 }>
-                        { colors
-                            .filter(x => x.type === 'Trend')
-                            .filter(x => x.group === 'Warm Colours')
-                            .map((color) => {
-                                return renderColor(color)
-                            }) }
-                    </Grid>
-                    <Box marginBottom="20px" marginTop="60px">
-                        <Typography sx={ { color: "#333333", fontSize: "14px" } } display="inline">
-                            COOL COLOURS
-                        </Typography>
-                    </Box>
-                    <Grid container spacing={ 2 }>
-                        { colors
-                            .filter(x => x.type === 'Trend')
-                            .filter(x => x.group === 'Cool Colours')
-                            .map((color) => {
-                                return renderColor(color)
-                            }) }
-                    </Grid>
+
+                    {
+                        COLOR_GROUPS.map(group => {
+                            return (
+                                <Box marginTop={ "50px" } key={group}>
+                                    <Box marginBottom="20px">
+                                        <Typography sx={ { color: "#333333", fontSize: "14px", textTransform: "uppercase" } } display="inline">
+                                            { group }
+                                        </Typography>
+                                    </Box>
+                                    <Grid container spacing={ 2 }>
+                                        { colors
+                                            .filter(x => x.group === group)
+                                            .map((color) => {
+                                                return renderColor(color)
+                                            }) }
+                                    </Grid>
+                                </Box>
+                            )
+
+                        })
+                    }
+
+                    <Box marginTop="30px" />
+
                 </DialogContent>
 
             </Dialog>

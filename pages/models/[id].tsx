@@ -61,12 +61,12 @@ const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, m
   return (
     <Box itemScope itemType="https://schema.org/ProductModel">
       <PageTitle
-        header={ "Официальный партнер Zehnder в России" }
+        header={ "Специализированный магазин Arbonia в России" }
         subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
         breadcrumbs={ [
           { title: "Главная", link: "/" },
           { title: "Каталог", link: "/catalog" },
-          { title: `Zehnder ${modelCurr.nameShort}, ${colorCurr.nameShort}, ${connectionCurr.nameShort}`, link: `/models/${modelCurr.id}` }
+          { title: `Arbonia ${modelCurr.nameShort}, ${colorCurr.name}, ${connectionCurr.nameShort}`, link: `/models/${modelCurr.id}` }
         ] }
       />
       <Box sx={ { ...global.pagePadding } }>
@@ -181,20 +181,20 @@ export async function getStaticProps(context: { params: { id: string } }) {
   const colors: ColorOrigin[] = await getColorsData()
   const connections: ConnectionOrigin[] = await getConnectionsData()
 
-  let modelTitle = `Радиатор Zehnder Charleston ${modelCurr?.nameShort}`
+  let modelTitle = `Радиатор Arbonia Column ${modelCurr?.nameShort}`
 
-  let colorTitle = 'палитра Zehnder'
+  let colorTitle = 'палитра Arbonia'
   let colorInit = null
   if (modelCurr != undefined && modelCurr.color) {
     const color = colors.find(x => x.id === modelCurr.color)
     if (color !== undefined) {
-      colorTitle = color.nameShort
+      colorTitle = color.name
       colorInit = color
       modelTitle += `, ${colorTitle}`
     }
   }
 
-  let connectionTitle = 'из каталога Zehnder'
+  let connectionTitle = 'из каталога Arbonia'
   let connectionInit = null
   if (modelCurr != undefined && modelCurr.connection) {
     const connection = connections.find(x => x.id === modelCurr.connection)

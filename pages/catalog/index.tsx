@@ -43,18 +43,18 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
     return (
         <Box>
-            <PageHeader title={ "Каталог радиаторов Zehnder" } />
+            <PageHeader title={ "Каталог радиаторов Arbonia" } />
             <PageTitle
-                header={ "Официальный партнер Zehnder в России" }
+                header={ "Магазин радиаторов Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },
-                    { title: "Каталог радиаторов Zehnder", link: "/catalog" }
+                    { title: "Каталог радиаторов Arbonia", link: "/catalog" }
                 ] }
             />
             <Hero
                 imgPath={ "/images/sliders/catalog.jpeg" }
-                header={ "Каталог радиаторов Zehnder" }
+                header={ "Каталог радиаторов Arbonia" }
                 subheader={ "Полный ассортимент производителя.Складские и заказные модели" }
             />
             <Box sx={ { ...global.pagePadding } }>

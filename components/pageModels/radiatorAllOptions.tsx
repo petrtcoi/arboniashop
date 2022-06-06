@@ -36,19 +36,19 @@ type RadiatorAllOptionsProps = {
     connections: ConnectionOrigin[]
 }
 
-const SECTIONS = range(global.sectionsDefaultMin, global.sectionsDefaultMax)
+
 const MODELS_GROUPS = [
-    { firstChar: '2', title: '2-трубчатые (62 мм)' },
-    { firstChar: '3', title: '3-трубчатые (100 мм)' },
-    { firstChar: '4', title: '4-трубчатые (136 мм)' },
-    { firstChar: '5', title: '5-трубчатые (173 мм)' },
-    { firstChar: '6', title: '6-трубчатые (210 мм)' }
+    { firstChar: '2', title: '2-трубчатые (65 мм)' },
+    { firstChar: '3', title: '3-трубчатые (105 мм)' },
+    { firstChar: '4', title: '4-трубчатые (145 мм)' },
+    { firstChar: '5', title: '5-трубчатые (185 мм)' },
+    { firstChar: '6', title: '6-трубчатые (225 мм)' }
 ]
 
 
 const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colorInit, connectionInit, modelFreeze = true, models, connections, colors }) => {
 
-
+    const SECTIONS = range(global.sectionsDefaultMin, modelInit.sectionsMax || global.sectionsDefaultMax)
 
     const { rateEuro } = useContext(CurrencyContext)
     const [colorCurr, setColorCurr] = useState<ColorOrigin>(colorInit)
@@ -76,7 +76,7 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colo
     const [radiatorTitle, setRadiatorTitle] = useState<string>('')
     useEffect(() => {
         const sectionQntyString: string = sectionsCurr < 10 ? '0' + sectionsCurr.toString() : sectionsCurr.toString()
-        setRadiatorTitle(`Zehnder Charleston ${modelCurr.nameShort}-${sectionQntyString}, ${colorCurr.name}, ${connectionCurr.name}`)
+        setRadiatorTitle(`Arbonia Column ${modelCurr.nameShort}-${sectionQntyString}, ${colorCurr.name}, ${connectionCurr.name}`)
     }, [modelCurr, colorCurr, connectionCurr, sectionsCurr])
 
 
@@ -240,9 +240,6 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colo
                                 </Typography>
                                 <Typography sx={ styles.standardTextThin } >
                                     мощность (ΔT=60°C): { Math.floor(+modelCurr.dt60 * sectionsCurr) } Вт
-                                </Typography>
-                                <Typography sx={ styles.standardTextThin } >
-                                    мощность (ΔT=70°C): { Math.floor(+modelCurr.dt70 * sectionsCurr) } Вт
                                 </Typography>
                             </Box>
                             <Box marginTop="40px">

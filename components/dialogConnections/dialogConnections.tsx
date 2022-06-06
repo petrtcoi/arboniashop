@@ -59,7 +59,7 @@ const DialogConnections: React.FC<DialogConnectionsProps> = ({ show, connections
                             <CloseIcon />
                         </IconButton>
                         <Typography sx={ { ml: 2, flex: 1 } } variant="h6" component="div">
-                            Варианты подключений Zehnder Charleston
+                            Варианты подключений Arbonia
                         </Typography>
                     </Toolbar>
                 </AppBar>

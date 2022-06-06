@@ -8,8 +8,7 @@ import getConnectionsData from '../../api_utils/getConnectionsData'
 import getModelsData from '../../api_utils/getModelsData'
 
 
-import SetBlackColor from '../../components/pageSetComponents/setBlackColor'
-import SetTechnoline from '../../components/pageSetComponents/setTechnoline'
+import SetLowModel from '../../components/pageSetComponents/setLowModel'
 import SetHighModel from '../../components/pageSetComponents/setHighModel'
 
 
@@ -18,20 +17,16 @@ import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
 import { SetComponentProps } from '../../models/setComponentProps.model'
 
-import global from '../../variables/global'
 
 
 const SETS_MAP: { [key: string]: { title: string, component: React.FC<SetComponentProps> } } = {
-    blackcolor: {
-        title: 'Zehnder Charleston черного цвета RAL 9217',
-        component: SetBlackColor
-    },
-    technoline: {
-        title: 'Zehnder Charleston в цвете прозрачный лак 0325 TL',
-        component: SetTechnoline
+  
+    'low-models': {
+        title: 'Нзкие радиаторы ArboniaColumn',
+        component: SetLowModel
     },
     'high-models': {
-        title: 'Высокие радиаторы Zehnder Charleston',
+        title: 'Высокие радиаторы ArboniaColumn',
         component: SetHighModel
     },
 }
@@ -53,7 +48,7 @@ const SetPage: NextPage<SetPageProps> = ({ models, colors, connections, setId })
     return (
         <Box>
             <PageTitle
-                header={ "Официальный партнер Zehnder в России" }
+                header={ "Специализированный магазин Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },

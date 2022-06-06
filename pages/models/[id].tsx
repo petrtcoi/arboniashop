@@ -10,12 +10,13 @@ import DownloadsBlock from '../../components/pageModels/downloadsBlock'
 import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
 import PageHeader from '../../components/pageHeader/pageHeader'
 import PageTitle from '../../components/pageTitle/pageTitle'
+import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
+
 
 
 import getModelsData from '../../api_utils/getModelsData'
 import getConnectionsData from '../../api_utils/getConnectionsData'
 import getColorsData from '../../api_utils/getColorsData'
-import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
 
 import { CurrencyContext } from '../../contexts/currencyContext'
 

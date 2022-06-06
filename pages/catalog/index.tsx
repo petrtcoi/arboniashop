@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
 
-import { Box, Typography, Grid, Divider, Button } from '@mui/material'
+import { Box, Typography, Grid, Divider } from '@mui/material'
 
 import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
 import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
@@ -29,11 +29,11 @@ type CatalogProps = {
     connections: ConnectionOrigin[]
 }
 const MODELS_GROUPS = [
-    { firstChar: '2', title: '2-трубчатые (62 мм)' },
-    { firstChar: '3', title: '3-трубчатые (100 мм)' },
-    { firstChar: '4', title: '4-трубчатые (136 мм)' },
-    { firstChar: '5', title: '5-трубчатые (173 мм)' },
-    { firstChar: '6', title: '6-трубчатые (210 мм)' }
+    { firstChar: '2', title: '2-трубчатые (65 мм)' },
+    { firstChar: '3', title: '3-трубчатые (105 мм)' },
+    { firstChar: '4', title: '4-трубчатые (145 мм)' },
+    { firstChar: '5', title: '5-трубчатые (185 мм)' },
+    { firstChar: '6', title: '6-трубчатые (225 мм)' }
 ]
 
 
@@ -53,14 +53,14 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                 ] }
             />
             <Hero
-                imgPath={ "/images/sliders/catalog.jpeg" }
+                imgPath={ "/images/sliders/slide.jpeg" }
                 header={ "Каталог радиаторов Arbonia" }
                 subheader={ "Полный ассортимент производителя.Складские и заказные модели" }
             />
             <Box sx={ { ...global.pagePadding } }>
                 <Box marginTop="20px">
                     <Typography textAlign="center" sx={ { ...styles.standardText } }>
-                        В данном разделе представлен полный ассортимент радиаторов Zehnder Charleston.<br />
+                        В данном разделе представлен полный ассортимент радиаторов Arbonia Column.<br />
                         Пожалуйста, свяжитесь с нами любым удобным вам способом<br />
                         и мы с радостью поможем подобрать наиболее подходящие модели.
                     </Typography>
@@ -73,7 +73,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                 {/* Складские модели */ }
                 <Box marginTop="70px" >
                     <Typography variant="h5" component="h2" id="in_stock_section" textAlign="center" sx={ { textTransform: 'uppercase' } }>
-                        Складские модели Zehnder
+                        Складские модели Arbonia
                     </Typography>
 
 
@@ -93,38 +93,38 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                     Боковое подключение
                                 </Typography>
                                 <Box paddingLeft="10px" >
-                                    <Box id="2056-9016-1270-34">
-                                        <Link href="/models/2056-9016-1270-34">
+                                    <Box id="2050-9016-69tvv">
+                                        <Link href="/models/2050-9016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } } >
-                                                    Zehnder 2056
+                                                    Arbonia 2050
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3057-9016-1270-34">
-                                        <Link href="/models/3057-9016-1270-34" >
+                                    <Box id="2057-9016-69tvv">
+                                        <Link href="/models/2057-9016-69tvv" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3057
+                                                    Arbonia 2057
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3057-9217-1270-34">
-                                        <Link href="/models/3057-9217-1270-34" >
+                                    <Box id="3050-9016-69tvv">
+                                        <Link href="/models/3050-9016-69tvv" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3057 RAL 9217 (черный)
+                                                    Arbonia 3050
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3057-0325-1270-34">
-                                        <Link href="/models/3057-0325-1270-34">
+                                    <Box id="3057-9016-69tvv">
+                                        <Link href="/models/3057-9016-69tvv" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3057 0325 TL (прозрачный лак)
+                                                    Arbonia 3057
                                                 </Typography>
                                             </a>
                                         </Link>
@@ -138,56 +138,38 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                     Нижнее подключение
                                 </Typography>
                                 <Box paddingLeft="10px">
-                                    <Box id="2050-9016-v001">
-                                        <Link href="/models/2050-9016-v001">
+                                    <Box id="2050-9016-12">
+                                        <Link href="/models/2050-9016-12">
                                             <a style={ { textDecoration: "none" } }>
-                                                <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2050
+                                                <Typography sx={ { ...styles.standartTextThinLink } } >
+                                                    Arbonia 2050
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="2056-9016-v001">
-                                        <Link href="/models/2056-9016-v001">
+                                    <Box id="2057-9016-12">
+                                        <Link href="/models/2057-9016-12" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2056
+                                                    Arbonia 2057
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3050-9016-v001">
-                                        <Link href="/models/3050-9016-v001">
+                                    <Box id="3050-9016-12">
+                                        <Link href="/models/3050-9016-12" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3050
+                                                    Arbonia 3050
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3057-9016-1270-34">
-                                        <Link href="/models/3057-9016-v001">
+                                    <Box id="3057-9016-12">
+                                        <Link href="/models/3057-9016-12" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3057
-                                                </Typography>
-                                            </a>
-                                        </Link>
-                                    </Box>
-                                    <Box id="3057-9217-1270-34">
-                                        <Link href="/models/3057-9217-v001">
-                                            <a style={ { textDecoration: "none" } }>
-                                                <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3057 RAL 9217 (черный)
-                                                </Typography>
-                                            </a>
-                                        </Link>
-                                    </Box>
-                                    <Box id="3057-0325-1270-34">
-                                        <Link href="/models/3057-0325-v001">
-                                            <a style={ { textDecoration: "none" } }>
-                                                <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3057 0325 TL (прозрачный лак)
+                                                    Arbonia 3057
                                                 </Typography>
                                             </a>
                                         </Link>
@@ -203,7 +185,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                     <Box marginTop="40px">
                         <Divider variant="fullWidth" textAlign="left">
                             <Typography component="h3" sx={ { ...styles.standardTextThin, color: 'red' } }>
-                                Высокие радиаторы (от 100 см)
+                                Высокие радиаторы (от 150 см)
                             </Typography>
                         </Divider>
                         {/* <Typography component="h3" sx={ { ...styles.standardTextThin } }>
@@ -215,65 +197,56 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                     Боковое подключение
                                 </Typography>
                                 <Box paddingLeft="10px">
-                                    <Box id="2110-9016-1270-34" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/2110-9016-1270-34">
+                                    <Box id="2180-9016-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/2180-9016-12">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2110
+                                                    Arbonia 2180
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="2180-9016-1270-34" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/2180-9016-1270-34">
+                                    <Box id="2180-7016-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/2180-7016-12">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2180
+                                                    Arbonia 2180 (RAL 7016)
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3180-9016-1270-34" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3180-9016-1270-34">
+                                    <Box id="2180-sf3-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/2180-sf3-12">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3180
+                                                    Arbonia 2180 (SF-3 Anthrazit metallic)
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="2180-9217-1270-34" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/2180-9217-1270-34">
+                                    <Box id="3180-9016-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3180-9016-12">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2180 RAL 9217 (черный)
+                                                    Arbonia 3180
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3180-9217-1270-34" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3180-9217-1270-34">
+                                    <Box id="3180-7016-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3180-7016-12">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3180 RAL 9217 (черный)
+                                                    Arbonia 3180 (RAL 7016)
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="2180-0325-1270-34" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/2180-0325-1270-34">
+                                    <Box id="3180-sf3-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3180-sf3-12">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2180 0325 TL (прозрачный лак)
-                                                </Typography>
-                                            </a>
-                                        </Link>
-                                    </Box>
-                                    <Box id="3180-0235-1270-34" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3180-0235-1270-34">
-                                            <a style={ { textDecoration: "none" } }>
-                                                <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3180 0325 TL (прозрачный лак)
+                                                    Arbonia 3180 (SF-3 Anthrazit metallic)
                                                 </Typography>
                                             </a>
                                         </Link>
@@ -286,71 +259,62 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                     Нижнее подключение
                                 </Typography>
                                 <Box paddingLeft="10px">
-                                    <Box id="2110-9016-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/2110-9016-v001">
+                                    <Box id="2180-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/2180-9016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2110
+                                                    Arbonia 2180
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="2180-9016-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/2180-9016-v001">
+                                    <Box id="2180-7016-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/2180-7016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2180
+                                                    Arbonia 2180 (RAL 7016)
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3180-9016-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3180-9016-v001">
+                                    <Box id="2180-sf3-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/2180-sf3-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3180
+                                                    Arbonia 2180 (SF-3 Anthrazit metallic)
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="2180-9217-v001">
-                                        <Link href="/models/2180-9217-v001">
+                                    <Box id="3180-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3180-9016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2180 RAL 9217 (черный)
+                                                    Arbonia 3180
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3180-9217-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3180-9217-v001">
+                                    <Box id="3180-7016-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3180-7016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3180 RAL 9217 (черный)
+                                                    Arbonia 3180 (RAL 7016)
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="2180-0325-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/2180-0325-v001">
+                                    <Box id="3180-sf3-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3180-sf3-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2180 0325 TL (прозрачный лак)
+                                                    Arbonia 3180 (SF-3 Anthrazit metallic)
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3180-0235-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3180-0235-v001">
-                                            <a style={ { textDecoration: "none" } }>
-                                                <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3180 0325 TL (прозрачный лак)
-                                                </Typography>
-                                            </a>
-                                        </Link>
-                                    </Box>
-
                                 </Box>
+
                             </Grid>
                         </Grid>
                     </Box>
@@ -372,11 +336,29 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                     Боковое подключение
                                 </Typography>
                                 <Box paddingLeft="10px">
-                                    <Box id="3037-9016-1270-34" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3037-9016-1270-34">
+                                    <Box id="2030-9016-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/2030-9016-12">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3037
+                                                    Arbonia 2030
+                                                </Typography>
+                                            </a>
+                                        </Link>
+                                    </Box>
+                                    <Box id="3030-9016-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3030-9016-12">
+                                            <a style={ { textDecoration: "none" } }>
+                                                <Typography sx={ { ...styles.standartTextThinLink } }>
+                                                    Arbonia 3030
+                                                </Typography>
+                                            </a>
+                                        </Link>
+                                    </Box>
+                                    <Box id="3037-9016-12" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3037-9016-12">
+                                            <a style={ { textDecoration: "none" } }>
+                                                <Typography sx={ { ...styles.standartTextThinLink } }>
+                                                    Arbonia 3037
                                                 </Typography>
                                             </a>
                                         </Link>
@@ -390,38 +372,20 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                     Нижнее подключение
                                 </Typography>
                                 <Box paddingLeft="10px">
-                                    <Box id="2030-9016-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/2030-9016-v001">
+                                <Box id="3030-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3030-9016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 2030
+                                                    Arbonia 3030
                                                 </Typography>
                                             </a>
                                         </Link>
                                     </Box>
-                                    <Box id="3030-9016-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3030-9016-v001">
+                                    <Box id="3037-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3037-9016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3030
-                                                </Typography>
-                                            </a>
-                                        </Link>
-                                    </Box>
-                                    <Box id="3030-9217-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3030-9217-v001">
-                                            <a style={ { textDecoration: "none" } }>
-                                                <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3030 RAL 9217 (черный)
-                                                </Typography>
-                                            </a>
-                                        </Link>
-                                    </Box>
-                                    <Box id="3037-9016-v001" paddingTop="50px" marginTop="-50px">
-                                        <Link href="/models/3037-9016-v001">
-                                            <a style={ { textDecoration: "none" } }>
-                                                <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                    Zehnder 3037
+                                                    Arbonia 3037
                                                 </Typography>
                                             </a>
                                         </Link>
@@ -444,46 +408,29 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                 </Divider>
                             </Grid>
                             <Grid item xs={ 12 } md={ 6 }>
-                                <Typography sx={ { ...styles.standardText } }>
+                                {/* <Typography sx={ { ...styles.standardText } }>
                                     По цвету
-                                </Typography>
+                                </Typography> */}
                                 <Box paddingLeft="10px">
 
-                                    <Link href="/catalog/blackcolor">
+                                    <Link href="/catalog/low-models">
                                         <a style={ { textDecoration: "none" } }>
                                             <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                Радиаторы черного цвета в наличии
+                                                Низкие радиаторы (склад)
                                             </Typography>
                                         </a>
                                     </Link>
-                                    <Link href="/catalog/technoline">
-                                        <a style={ { textDecoration: "none" } }>
-                                            <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                Zehnder в цвете TL в наличии
-                                            </Typography>
-                                        </a>
-                                    </Link>
-
-                                </Box>
-                            </Grid>
-                            <Grid item xs={ 12 } md={ 6 }>
-                                <Typography sx={ { ...styles.standardText } }>
-                                    По габаритам
-                                </Typography>
-                                <Box paddingLeft="10px">
-
                                     <Link href="/catalog/high-models">
                                         <a style={ { textDecoration: "none" } }>
                                             <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                Высокие радиаторы в наличии
+                                                Высокие радиаторы (склад)
                                             </Typography>
                                         </a>
                                     </Link>
 
-
-
                                 </Box>
                             </Grid>
+                            
                         </Grid>
                     </Box>
 
@@ -492,7 +439,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                 {/* Радиаторы под заказ */ }
                 <Box marginTop="100px" >
                     <Typography variant="h5" component="h2" id="out_stock_section" textAlign="center" sx={ { textTransform: 'uppercase' } }>
-                        Радиаторы Zehnder под заказ
+                        Радиаторы Arbonia под заказ
                     </Typography>
                     <Box marginTop={ { xs: "20px", md: "40px" } } />
                     <Grid container spacing={ 2 } >
@@ -500,7 +447,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                             return (
                                 <Grid item xs={ 12 } sm={ 6 } md={ 4 } key={ group.title }>
                                     <Box textAlign="center" marginTop="20px">
-                                        <img src={ `/images/schemas/${group.firstChar}.png` } height="130px" width="auto" />
+                                        <img src={ `/images/schemas/${group.firstChar}.png` } height="150px" width="auto" />
                                         <Typography sx={ { ...styles.standardText } }>
                                             { group.title }
                                         </Typography>
@@ -515,7 +462,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                                         <Link href={ `/models/${model.id}` } >
                                                             <a style={ { textDecoration: "none" } }>
                                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
-                                                                    Zehnder { model.nameShort }
+                                                                    Arbonia { model.nameShort }
                                                                 </Typography>
                                                             </a>
                                                         </Link>
@@ -534,11 +481,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
                 <Box marginTop="100px" >
                     <Typography variant="h5" component="h2" id="all_models_section" textAlign="center" sx={ { textTransform: 'uppercase' } }>
-                        Произвольная модель Zehnder
+                        Произвольная модель Arbonia
                     </Typography>
                     <Box marginTop="20px" />
                     <Typography sx={ styles.standardText } textAlign="center">
-                        Выберете произвольную модель Zehnder Charleton для оформления заказа.<br />Также,если у вас есть готовая спецификация, вы можете прислать нам ее на почту<br />для подготовки коммерческого предложения.
+                        Выберете произвольную модель Arbonia Column для оформления заказа.<br />Также,если у вас есть готовая спецификация, вы можете прислать нам ее на почту<br />для подготовки коммерческого предложения.
                     </Typography>
                     <Box marginTop="20px" />
                     <RadiatorAllOptions
@@ -558,7 +505,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                 </Box>
 
             </Box>
-        </Box>
+        </Box >
     )
 }
 

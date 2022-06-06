@@ -1,13 +1,10 @@
 type ColorOrigin = {
     id: string
     name: string
-    nameShort: string
-    description: string
     baseRate: string
 
     img: string
-    type?: "Core" | "Trend"
-    group?: "Warm Colours" | "Cool Colours"
+    group?: "RAL Classic" | "Серия Metallic" | "Серия Terra" | "Серия Pastell" | "Серия Nature"
 }
 
 export type { ColorOrigin }

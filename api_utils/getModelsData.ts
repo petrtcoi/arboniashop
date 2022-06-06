@@ -3,7 +3,7 @@ import axios from "axios"
 import readGoogleCsv from "./readGoogleCsv"
 import { ModelOrigin } from "../models/modelOrigin.model"
 
-const docId = '1vIL5-oS-fk8T5syIk1h-Zr_WcRzPrXcGRyQ1Sj2OBkc'
+const docId = '1BzzhQ_Ux6Q6-JZIHsQH9iECCc7EgJbAI82bM5ZeRsCU'
 const sheetLink = `https://docs.google.com/spreadsheets/d/${docId}/export?format=csv`
 
 

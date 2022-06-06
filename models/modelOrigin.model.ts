@@ -13,7 +13,6 @@ type ModelOrigin = {
     
     dt50: string
     dt60: string
-    dt70: string
     priceSectionEuro: string
 
     imagePrimary: string
@@ -26,8 +25,7 @@ type ModelOrigin = {
 
     exponentN: string  // Экспонента n
     weightSection: string //Вес (без воды) М кг / секцию
-    volumeSection: string  // Объем воды V дм3 / секцию
-    normalFlow: string // Нормальный расход одной секции qms кг / час секц.
+    sectionsMax: string  // Максимальное число секций
 }
 
 export type { ModelOrigin }

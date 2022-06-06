@@ -42,7 +42,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
         sectionQnty,
         currencyRate: currencyContext.rateEuro
     })
-    const { skuString, lengthString, dt50String, dt60String, dt70String, priceString } = getRadiatorData({ model, color, connection, sectionQnty, price: price.noConsole })
+    const { skuString, lengthString, dt50String, dt60String, priceString } = getRadiatorData({ model, color, connection, sectionQnty, price: price.noConsole })
 
 
 
@@ -152,14 +152,6 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                             15 бар
                                         </Typography>
                                     </Box>
-                                    <Box itemProp="countryOfOrigin" itemScope itemType="https://schema.org/Country">
-                                        <Typography sx={ styles.smallText } display="inline">
-                                            Производство:&nbsp;
-                                        </Typography>
-                                        <Typography sx={ styles.smallTextBold } display="inline" itemProp="name">
-                                            Германия
-                                        </Typography>
-                                    </Box>
                                     <Box>
                                         <Typography sx={ styles.smallText } display="inline">
                                             Гарантия:&nbsp;
@@ -224,14 +216,6 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                             { dt60String } Вт
                                         </Typography>
                                     </Box>
-                                    <Box>
-                                        <Typography sx={ styles.smallText } display="inline">
-                                            Мощность (ΔT=70°):&nbsp;
-                                        </Typography>
-                                        <Typography sx={ styles.smallTextBold } display="inline">
-                                            { dt70String } Вт
-                                        </Typography>
-                                    </Box>
                                 </Box>
                             </Box>
 
@@ -248,23 +232,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                             Вес (без воды):&nbsp;
                                         </Typography>
                                         <Typography sx={ styles.smallTextBold } display="inline" itemProp="weight">
-                                            { +model.weightSection * sectionQnty } кг
-                                        </Typography>
-                                    </Box>
-                                    <Box>
-                                        <Typography sx={ styles.smallText } display="inline">
-                                            Объем воды:&nbsp;
-                                        </Typography>
-                                        <Typography sx={ styles.smallTextBold } display="inline">
-                                            { +model.volumeSection * sectionQnty } дм3
-                                        </Typography>
-                                    </Box>
-                                    <Box>
-                                        <Typography sx={ styles.smallText } display="inline">
-                                            Нормальный расход одной секции qms:&nbsp;
-                                        </Typography>
-                                        <Typography sx={ styles.smallTextBold } display="inline">
-                                            { +model.normalFlow * sectionQnty } кг / час
+                                            { Math.floor((+model.weightSection * sectionQnty) * 100) / 100 } кг
                                         </Typography>
                                     </Box>
                                     <Box>
@@ -279,10 +247,6 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                             </Box>
 
                             <Box marginTop="20px" />
-
-
-
-
                         </Box>
 
 

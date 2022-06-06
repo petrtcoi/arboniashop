@@ -41,18 +41,18 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
         setTab(newTab)
     }
 
-    const radiatorTitle = `Радиатор Zehnder Charleston ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}, ${sectionQnty} секций`
+    const radiatorTitle = `Радиатор Arbonia Column ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}, ${sectionQnty} секций`
 
 
     return (
         <Box itemScope itemType="https://schema.org/IndividualProduct">
             <PageTitle
-                header={ "Официальный партнер Zehnder в России" }
+                header={ "Специализированный магазин Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },
                     { title: "Каталог", link: "/catalog" },
-                    { title: `Zehnder ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}`, link: `/models/${model.id}` },
+                    { title: `Arbonia ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}`, link: `/models/${model.id}` },
                     { title: `${sectionQnty > 10 ? sectionQnty : "0" + sectionQnty} секции(й)`, link: "/catalog" }
                 ] }
             />

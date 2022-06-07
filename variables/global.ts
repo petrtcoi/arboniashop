@@ -1,8 +1,8 @@
 const global: { [key: string]: any } = {
-    phone812String: '(812) 648-40-12',
-    phone812: '+78126484012',
-    phone495String: '(495) 055-40-12',
-    phone495: '+74950554012',
+    phone812String: '(812) 648-81-27',
+    phone812: '+78126488127',
+    phone495String: '(495)  008-81-27',
+    phone495: '+74950088127',
     whatsAppString: '+1 (218) 516-15-29',
     whatsApp: '12185161529',
     pages: [

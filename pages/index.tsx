@@ -12,9 +12,9 @@ import Portfolio from '../components/pageMain/portfolio'
 const Home: NextPage = () => {
   return (
     <Box  >
-      <PageHeader title={ "Магазин Zehnder Charleston" } />
+      <PageHeader title={ "Магазин радиаторов Arbonia" } />
       <PageTitle
-        header={ "Официальный партнер Zehnder в России" }
+        header={ "Специализированный магазин Arbonia в России" }
         subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
       />
 

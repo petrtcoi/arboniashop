@@ -48,8 +48,8 @@ const getOrderConfirmationEmailHtml = (props: Props): string => {
 
     if (items.length > 0) html += `<p>Итого: <strong>${getCartTotal({ items, consoleType }).toLocaleString()} руб.</strong></p>`
 
-    html += `<br/><br/><hr/><p>С уважением,<br/>Магазин радиаторов Zehnder<br/><br/>сайт: ${global.website}<br/>тел.: +7 ${global.phone495String}<br/>тел.: +7 ${global.phone812String}<br/>email: ${global.email}</p>`
-    html += '<img src="https://mouselite.ru/zehnders-email-logo.jpg" height="50px" width="auto"/>'
+    html += `<br/><br/><hr/><p>С уважением,<br/>Магазин радиаторов Arbonia<br/><br/>сайт: ${global.website}<br/>тел.: +7 ${global.phone495String}<br/>тел.: +7 ${global.phone812String}<br/>email: ${global.email}</p>`
+    html += '<img src="https://mouselite.ru/arboniashop-email-logo.png" height="50px" width="auto"/>'
 
     return html
 

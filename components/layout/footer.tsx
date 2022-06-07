@@ -23,7 +23,7 @@ const Footer: NextComponentType<FooterProps> = () => {
             <Box>
                 <Image
                     src="/images/logo.png"
-                    alt="Zehnder Charleston column radiators"
+                    alt="Arbonia column radiators"
                     width={ 130 }
                     height={ 50 }
                 />
@@ -33,10 +33,10 @@ const Footer: NextComponentType<FooterProps> = () => {
                 <Grid item xs={ 6 } md={ 4 }>
                     <Box>
                         <Typography sx={ footerTextBold }>
-                            Магазин авторизованного
+                            Специализированный магазин
                         </Typography>
                         <Typography sx={ footerTextBold }>
-                            партнера Zehnder в России
+                            трубчатых радиаторов Arbonia в России
                         </Typography>
                     </Box>
                     <Box marginTop={ "10px" } itemScope itemType="https://schema.org/Organization">
@@ -144,7 +144,7 @@ const Footer: NextComponentType<FooterProps> = () => {
                 </Grid>
                 <Grid item xs={ 12 } md={ 8 }>
                     <Typography sx={ footerText }>
-                        © 2022 Zehnders.ru – Авторизованный партнер «Цендер Груп Дойчланд ГмбХ»
+                        © 2022 ArboniaShop.ru – магазин радиаторов Arbonia
                     </Typography>
                 </Grid>
             </Grid>

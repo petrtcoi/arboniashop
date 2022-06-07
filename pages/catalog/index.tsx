@@ -83,7 +83,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                         <Grid container spacing={ 2 } >
                             <Grid item xs={ 12 }>
                                 <Divider variant="fullWidth" textAlign="left">
-                                    <Typography component="h3" sx={ { ...styles.standardTextThin, color: "red" } }>
+                                    <Typography component="h3" sx={ { ...styles.standardText, color: '#ef7d00' } }>
                                         Стандартная высота (50-60 см)
                                     </Typography>
                                 </Divider>
@@ -184,7 +184,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                     {/* Высокие */ }
                     <Box marginTop="40px">
                         <Divider variant="fullWidth" textAlign="left">
-                            <Typography component="h3" sx={ { ...styles.standardTextThin, color: 'red' } }>
+                            <Typography component="h3" sx={ { ...styles.standardText, color: '#ef7d00' } }>
                                 Высокие радиаторы (от 150 см)
                             </Typography>
                         </Divider>
@@ -323,7 +323,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                     {/* Низкие радиаторы */ }
                     <Box marginTop="40px">
                         <Divider variant="fullWidth" textAlign="left">
-                            <Typography component="h3" sx={ { ...styles.standardTextThin, color: "red" } }>
+                            <Typography component="h3" sx={ { ...styles.standardText, color: '#ef7d00' } }>
                                 Невысокие радиаторы (до 40 см)
                             </Typography>
                         </Divider>
@@ -402,7 +402,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                         <Grid container spacing={ 2 } >
                             <Grid item xs={ 12 }>
                                 <Divider variant="fullWidth" textAlign="left">
-                                    <Typography component="h3" sx={ { ...styles.standardTextThin, color: "red" } }>
+                                    <Typography component="h3" sx={ { ...styles.standardText, color: '#ef7d00' } }>
                                         Популярные подборки
                                     </Typography>
                                 </Divider>

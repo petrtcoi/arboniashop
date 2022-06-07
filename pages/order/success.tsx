@@ -27,7 +27,7 @@ const SuccessPage: NextPage<SuccessPageProps> = () => {
                 </Box>
                 <Box marginTop="40px" textAlign={ "center" }>
                     <Typography sx={ style.standardText } >
-                        Команда Zehnders.ru
+                        Команда ArboniaShop.ru
                     </Typography>
                 </Box>
             </Box>

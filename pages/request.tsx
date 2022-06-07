@@ -27,7 +27,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
     return (
         <Box>
             <PageTitle
-                header={ "Официальный партнер Zehnder в России" }
+                header={ "Специализированный магазин Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },
@@ -35,7 +35,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
                 ] }
             />
             <Box sx={ { ...global.pagePadding } }>
-                <PageHeader title={ "Запрос на подбор радиаторов Zehnder" } />
+                <PageHeader title={ "Запрос на подбор радиаторов Arbonia" } />
                 <Box marginY={ "30px" }>
                     <Typography variant="h4" component="h1" gutterBottom textAlign="center" sx={ { textTransform: "uppercase" } }>
                         Запрос на подбор радиаторов

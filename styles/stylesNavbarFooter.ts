@@ -15,7 +15,7 @@ export const menuButton = {
   color: '#333333',
   cursor: 'pointer',
   '&:hover': {
-    borderBottom: '1px solid red'
+    borderBottom: '1px solid #ef7d00'
   }
 }
 export const menuButtonPhone = {

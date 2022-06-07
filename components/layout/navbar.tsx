@@ -181,7 +181,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                                 <a >
                                     <Image
                                         src="/images/logo.png"
-                                        alt="Zehnder Charleston column radiators"
+                                        alt="Arbonia Columns column radiators"
                                         width={ 130 }
                                         height={ 50 }
                                         itemProp="logo"
@@ -194,7 +194,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                                 <a>
                                     <Image
                                         src="/images/logo_footer.png"
-                                        alt="Zehnder Charleston column radiators"
+                                        alt="Arbonia Columns column radiators"
                                         width={ 75 }
                                         height={ 50 }
                                         itemProp="logo"

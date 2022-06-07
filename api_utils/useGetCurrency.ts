@@ -10,7 +10,7 @@ const useGetCurrency = (): { rateEuro: number } => {
     useEffect(() => {
         const getRate = async () => {
             try {
-                const data = await axios.get(`${GET_RATE_URL}/ZEHNDERS` )
+                const data = await axios.get(`${GET_RATE_URL}/ARBONIASHOP` )
                 if (data.status !== 200 || data.data.rate <= 0) throw new Error()
                 setRateEuro(data.data.rate * DISCOUNT)
             } catch (err){

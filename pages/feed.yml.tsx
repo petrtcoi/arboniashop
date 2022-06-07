@@ -19,7 +19,7 @@ import axios from 'axios'
 import { DISCOUNT, GET_RATE_URL } from '../variables/currency'
 
 
-const BASE_URL = 'https://zehnders.ru'
+const BASE_URL = 'https://arboniashop.ru'
 
 
 
@@ -28,7 +28,7 @@ const YandexFeed: React.FC = () => null
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
 
-    const data = await axios.get(`${GET_RATE_URL}/ZEHNDERS` )
+    const data = await axios.get(`${GET_RATE_URL}/ARBONIASHOP` )
     if (data.status !== 200 || data.data.rate <= 0) return { props: {} }
     const rateEuro = data.data.rate * DISCOUNT
 
@@ -48,10 +48,10 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
         let content = `<?xml version="1.0" encoding="UTF-8"?>`
         content += `<yml_catalog date="${today.getFullYear()}-${month}-${day} ${hour}:${minutes}">`
         content += `<shop>`
-        content += `<name>Zehnders</name>`
+        content += `<name>ArboniaShop</name>`
         content += `<company>ООО МАУС ЛАЙТ</company>`
-        content += `<url>https://zehnders.ru</url>`
-        content += `<categories><category id="1">Трубчатые радиаторы Zehnder Charleston</category></categories>`
+        content += `<url>https://arboniashop.ru</url>`
+        content += `<categories><category id="1">Трубчатые радиаторы Arbonia Column</category></categories>`
         content += `<offers>`
 
         models
@@ -64,7 +64,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
                         const connection = connections.find(x => x.id === model.connection) || connections[0]
 
                         const path = `${BASE_URL}/models/${model.id}/${sectionQnty}`
-                        const title = `Радиатор Zehnder Charleston ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}, ${sectionQnty} секций`
+                        const title = `Радиатор Arbonia ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}, ${sectionQnty} секций`
                         const offerId = `${model.id}-${color.id}-${connection.id}-${sectionQnty}`
                         const { price } = calcRadiatorCost({
                             model,
@@ -74,12 +74,12 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
                             currencyRate: rateEuro
                         })
                         const imagePrimaryPath = BASE_URL + global.imagesModelPath + model.imagePrimary
-                        const { lengthString, dt50String, dt60String, dt70String } = getRadiatorData({ model, color, connection, sectionQnty: +sectionQnty, price: price.noConsole })
-                        const colorGen = color.id === '9016' ? 'Белый' : color.id === '9217' ? 'Черный' : 'Прозрачный лак'
+                        const { lengthString, dt50String, dt60String } = getRadiatorData({ model, color, connection, sectionQnty: +sectionQnty, price: price.noConsole })
+                        const colorGen = color.id === '9016' ? 'Белый' : color.id === '7016' ? 'Серый' : 'Антрацит металлик'
 
                         content += `<offer id="${offerId}">`
 
-                        content += `<vendor>Zehnder</vendor>`
+                        content += `<vendor>Arbonia</vendor>`
                         content += `<currencyId>RUR</currencyId>`
                         content += `<categoryId>1</categoryId>`
                         content += `<delivery>true</delivery>`
@@ -100,7 +100,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
                         content += `<param name="Длина" unit="мм">${lengthString}</param>`
                         content += `<param name="Мощность (75/65/20)" unit="Вт">${dt50String}</param>`
                         content += `<param name="Мощность (90/70/20)" unit="Вт">${dt60String}</param>`
-                        content += `<param name="Мощность (95/85/20)" unit="Вт">${dt70String}</param>`
 
 
                         content += `</offer>`

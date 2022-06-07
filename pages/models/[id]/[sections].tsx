@@ -53,7 +53,7 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
                     { title: "Главная", link: "/" },
                     { title: "Каталог", link: "/catalog" },
                     { title: `Arbonia ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}`, link: `/models/${model.id}` },
-                    { title: `${sectionQnty > 10 ? sectionQnty : "0" + sectionQnty} секции(й)`, link: "/catalog" }
+                    { title: `${sectionQnty >= 10 ? sectionQnty : "0" + sectionQnty} секции(й)`, link: "/catalog" }
                 ] }
             />
             <Box sx={ { ...global.pagePadding } }>

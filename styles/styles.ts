@@ -31,13 +31,13 @@ export const standardTextThin = {
 export const standartTextLink = {
     ...standardText,
     '&:hover': {
-        color: 'red'
+        color: 'ef7d00'
     }
 }
 export const standartTextThinLink = {
     ...standardTextThin,
     '&:hover': {
-        color: 'red'
+        color: '#ef7d00'
     }
 }
 
@@ -59,13 +59,13 @@ export const smallTextBoldRed = {
     fontSize: '12px',
     fontWeight: '600',
     lineHeight: '14px',
-    color: 'red'
+    color: 'ef7d00'
 }
 export const smallTextRed = {
     fontSize: '12px',
     fontWeight: '400',
     lineHeight: '14px',
-    color: 'red'
+    color: '#ef7d00'
 }
 export const smallTextRedLink = {
     ...smallTextRed,

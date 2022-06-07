@@ -34,7 +34,7 @@ const sendOrderConfirmation = async (props: SendOrderConfirmationProps): Promise
             await axios.post<RequestProps, RequestResult>(API_URL, {
                 to: props.email,
                 from: global.emailFrom,
-                subject: 'Zehnders.ru: ваш запрос принят',
+                subject: 'ArboniaShop.ru: ваш запрос принят',
                 text,
                 html
             })

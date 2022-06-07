@@ -17,16 +17,16 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
     return (
         <Box>
             <PageTitle
-                header={ "Официальный партнер Zehnder в России" }
+                header={ "Специализированный магазин Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },
                     { title: "Доставка и оплата", link: "/delivery" }
                 ] }
             />
-            <PageHeader title={ "Доставка и оплата радиаторов Zehnder" } />
+            <PageHeader title={ "Доставка и оплата радиаторов Arbonia" } />
             <Hero
-                imgPath={ "/images/sliders/slide-main.jpeg" }
+                imgPath={ "/images/sliders/slide-0.jpeg" }
                 header={ "Доставка и оплата" }
                 subheader={ "Работаем с физическими и юридическими лицами. Склады в Москве и Санкт-Петербурге" }
             />

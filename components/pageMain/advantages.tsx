@@ -12,7 +12,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
     return (
         <Box>
             <Typography variant="h5" component="h2" textAlign="center" sx={{textTransform: 'uppercase'}}>
-                Почему радиаторы Zehnder Charleston
+                Почему трубчатые радиаторы Arbonia
             </Typography>
             <Box marginTop="30px">
                 <Grid container spacing={ 2 }>

@@ -1,5 +1,5 @@
 const colors: {[key: string]: string} = {
-    purple: '#c158dc',
+    purple: '#ef7d00',
     purpleDark: '#5c007a',
     green: '#60ad5e',
     greenDark: '#005005',

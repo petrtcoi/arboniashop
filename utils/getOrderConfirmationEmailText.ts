@@ -47,7 +47,7 @@ const getOrderConfirmationEmailText = (props: Props): string => {
 
     if (props.items.length > 0) text += `\nИтого: ${getCartTotal({ items, consoleType }).toLocaleString()} руб.\n\n`
 
-    text += `С уважением,\nМагазин радиаторов Zehnder\n${global.website}\nтел.: +7 ${global.phone495String}\nтел.: +7 ${global.phone812String}`
+    text += `С уважением,\nМагазин радиаторов Arbonia\n${global.website}\nтел.: +7 ${global.phone495String}\nтел.: +7 ${global.phone812String}`
 
     return text
 

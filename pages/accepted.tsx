@@ -14,7 +14,7 @@ const PageAccepted: NextPage<PageAcceptedProps> = () => {
 
     return (
         <Box sx={{...global.pagePadding}}>
-            <PageHeader title={"Запрос на радиаторы Zehnder принят"} />
+            <PageHeader title={"Запрос на радиаторы Arbonia принят"} />
             <Typography variant="h4" component="h1" gutterBottom >
                 Запрос был получен
             </Typography>

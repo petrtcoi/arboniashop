@@ -21,7 +21,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
                     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
                     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
                  
-                    ym(87310454, "init", {
+                    ym(89126477, "init", {
                          clickmap:true,
                          trackLinks:true,
                          accurateTrackBounce:true,
@@ -30,7 +30,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
                                         `,
                 } }
             />
-            <Script id={ 'google_analytics_1' } src="https://www.googletagmanager.com/gtag/js?id=UA-59967703-17" />
+            <Script id={ 'google_analytics_1' } src="https://www.googletagmanager.com/gtag/js?id=UA-59967703-20" />
             <Script
                 id={ 'google_analytics_2' }
                 dangerouslySetInnerHTML={ {
@@ -39,7 +39,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                    gtag('config', 'UA-59967703-17');
+                    gtag('config', 'UA-59967703-20');
                     `,
                 } }
             />

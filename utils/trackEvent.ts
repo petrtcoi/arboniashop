@@ -1,7 +1,7 @@
 import ym from 'react-yandex-metrika'
 import ReactGA from 'react-ga'
 
-ReactGA.initialize('UA-59967703-17')
+ReactGA.initialize('UA-59967703-20')
 
 
 const trackEvent = (event: string) => {

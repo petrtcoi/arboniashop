@@ -69,7 +69,6 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
                     color={ color }
                     connection={ connection }
                     sectionQnty={ sectionQnty }
-
                 />
 
 
@@ -79,7 +78,6 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 
 
                 {/* ВКЛАДКИ С ИНФОРМАЦИЕЙ */ }
-
                 <Box marginTop="20px" marginBottom="40px" >
                     <Tabs value={ tab } onChange={ handleChangeTab }>
                         { model.imagesOther &&

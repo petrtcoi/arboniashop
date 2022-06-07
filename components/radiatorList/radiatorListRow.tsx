@@ -28,7 +28,7 @@ type RadiatorListRowProps = {
 const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connection, sectionQnty, price }) => {
 
 
-    const { titleString, skuString, lengthString, dt60String, priceString } = getRadiatorData({ model, color, connection, sectionQnty, price })
+    const { titleString, skuString, lengthString, dt60String, priceString, oldPriceString } = getRadiatorData({ model, color, connection, sectionQnty, price })
 
 
     return (
@@ -49,7 +49,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
                             </a>
                         </Link>
                     </Typography>
-                    {/* <Typography sx={ styles.smallTextRed }></Typography> */}
+                    {/* <Typography sx={ styles.smallTextRed }></Typography> */ }
                     <Hidden mdUp>
                         <Typography sx={ styles.smallTextThin } component="span">
                             { lengthString } мм, { dt60String } Вт&#42;
@@ -68,6 +68,9 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
                 </TableCell>
             </Hidden>
             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
+                <Typography sx={ { ...styles.smallText, color: "gray", textDecoration: "line-through", fontWeight: 200 } } display="inline" marginRight="10px">
+                    { oldPriceString }
+                </Typography>
                 { priceString }
             </TableCell>
             <TableCell component="th" scope="row" sx={ styles.smallText } align="center">
@@ -80,7 +83,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
                         qnty={ 1 }
                         buttonSize={ "small" }
                         buttonType={ "text" }
-                        buttonColor={"dark"}
+                        buttonColor={ "dark" }
                     />
                 </Box>
             </TableCell>

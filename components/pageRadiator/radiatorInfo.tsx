@@ -13,7 +13,6 @@ import { CurrencyContext } from '../../contexts/currencyContext'
 import getRadiatorData from '../../utils/getRadiatorData'
 import calcRadiatorCost from '../../utils/calcRadiatorCost'
 
-
 import global from '../../variables/global'
 import * as styles from '../../styles/styles'
 
@@ -42,7 +41,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
         sectionQnty,
         currencyRate: currencyContext.rateEuro
     })
-    const { skuString, lengthString, dt50String, dt60String, priceString } = getRadiatorData({ model, color, connection, sectionQnty, price: price.noConsole })
+    const { skuString, lengthString, dt50String, dt60String, priceString, oldPriceString } = getRadiatorData({ model, color, connection, sectionQnty, price: price.noConsole })
 
 
 
@@ -77,8 +76,11 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                 <Typography sx={ styles.standardText } display="inline">
                                     Цена:
                                 </Typography>
+                                <Typography sx={ { fontSize: "24px", fontWeight: 200, textDecoration: "line-through", color: "gray"} } display="inline" marginX="15px">
+                                    { oldPriceString } 
+                                </Typography>
                                 <Typography sx={ { fontSize: "30px", fontWeight: 600 } } display="inline">
-                                    &nbsp;{ priceString } руб
+                                    { priceString } руб
                                 </Typography>
                             </Box>
                             <Box marginTop="20px">

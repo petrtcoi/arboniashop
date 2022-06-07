@@ -10,7 +10,8 @@ import { ConsoleType } from '../models/consoleType.model'
 import global from './../variables/global'
 
 
-const API_URL = 'https://us-central1-mouselite-helpers.cloudfunctions.net/api/email/send'
+// const API_URL = 'https://us-central1-mouselite-helpers.cloudfunctions.net/api/email/send'
+const API_URL = 'https://docker.mouselite.ru/email'
 
 type SendOrderConfirmationProps = OrderData & { items: CartItemExtended[], consoleType: ConsoleType }
 type RequestProps = {
@@ -39,7 +40,6 @@ const sendOrderConfirmation = async (props: SendOrderConfirmationProps): Promise
                 html
             })
             : { data: 'ok' }
-
 
         const res2 = await axios.post<RequestProps, RequestResult>(API_URL, {
             to: global.emailNotifications,

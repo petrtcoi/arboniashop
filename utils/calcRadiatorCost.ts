@@ -5,9 +5,9 @@ import { RadiatorConsoles } from "../models/radiatorConsoles.model"
 import { RadiatorCost } from "../models/radiatorCost.model"
 
 import global from './../variables/global'
-import getCvdBhQnty from "./getCvdBhQnty"
+import getConsolesQnty from "./getConsolesQnty"
 
-import { cvd } from '../variablesPrices/consolePrices'
+import { w161h121Price } from '../variablesPrices/consolePrices'
 
 
 type CalcRadiatorCostProps = {
@@ -30,7 +30,7 @@ const calcRadiatorCost: CalcRadiatorCost = ({ model, color, connection, sectionQ
   
 
     const consoles = {
-        cvd: getCvdBhQnty({ model, sectionQnty })
+        w161h121: getConsolesQnty({ model, sectionQnty })
     }
 
     const euroCostNoConsole =
@@ -38,12 +38,12 @@ const calcRadiatorCost: CalcRadiatorCost = ({ model, color, connection, sectionQ
         +connection.cost
     
 
-    const euroCostCvdBh = euroCostNoConsole + consoles.cvd * (color.id === '9016' ? cvd.ral9016 : cvd.colored)
+    const euroCostW161h121 = euroCostNoConsole + consoles.w161h121 * w161h121Price
     
     return ({
         price: {
             noConsole: Math.floor(euroCostNoConsole * currencyRate),
-            cvd: Math.floor(euroCostCvdBh * currencyRate)
+            w161h121: Math.floor(euroCostW161h121 * currencyRate)
         },
         consoles
     })

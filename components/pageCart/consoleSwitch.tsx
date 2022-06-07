@@ -29,12 +29,12 @@ const ConsoleSwitch: React.FC<ConsoleSwitchProps> = () => {
                         textAlign="center"
 
                         sx={ {
-                            opacity: consoleType === 'cvd' ? "1" : "0.4",
+                            opacity: consoleType === 'w161h121' ? "1" : "0.4",
                             "&:hover": { cursor: 'pointer', opacity: "1" }
                         } }
                         onClick={ () => shoppingCartContext.dispatch({
                             type: 'SET_CONSOLE_TYPE',
-                            value: 'cvd'
+                            value: 'w161h121'
                         })
                         }
                     >
@@ -42,13 +42,13 @@ const ConsoleSwitch: React.FC<ConsoleSwitchProps> = () => {
                             marginX="auto"
                             sx={ {
                                 ...boxStyle,
-                                borderColor: consoleType === 'cvd' ? "#000000" : "#e6e6e6",
-                                backgroundImage: `url('/images/other/cvdbh.jpg')`,
+                                borderColor: consoleType === 'w161h121' ? "#000000" : "#e6e6e6",
+                                backgroundImage: `url('/images/other/w161h121.jpg')`,
                                 backgroundSize: "cover"
                             } }
                         />
                         <Typography sx={ { ...styles.smallTextThin } } >
-                            CVD + BH<br />(скрытые кронштейны)
+                            W161 + DS<br />(кронштейн + упор)
                         </Typography>
 
                     </Box>

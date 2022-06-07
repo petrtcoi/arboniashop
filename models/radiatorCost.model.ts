@@ -1,6 +1,6 @@
 type RadiatorCost = {
     noConsole: number
-    cvd: number
+    w161h121: number
 }
 
 export type { RadiatorCost }

@@ -37,7 +37,7 @@ const getOrderConfirmationEmailText = (props: Props): string => {
         text += `${index + 1}. ${item.title} \nцена: ${item.price.toLocaleString()} руб. \nкол-во: ${item.qnty} шт \nсумма: ${(item.price.noConsole * item.qnty).toLocaleString()} руб.\n\n`
     })
 
-    if (consoleType === 'cvd') {
+    if (consoleType === 'w161h121') {
         text += '\nкронштейны:\n\n'
         consoles.forEach((console) => {
             const consolePrice = Math.floor(console.totalSum / console.qnty)

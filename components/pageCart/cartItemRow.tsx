@@ -19,8 +19,8 @@ type CartItemRowProps = {
 const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
 
     const shoppingCartContext = useContext(ShoppingCartContext)
-    const consoleQnty = item.consoles.cvd
-    const consoleQntyString = consoleQnty > 0 ? `cvd+bh x ${consoleQnty}` : 'нет вариантов'
+    const consoleQnty = item.consoles.w161h121
+    const consoleQntyString = consoleQnty > 0 ? `W161 + DS x ${consoleQnty}` : 'нет вариантов'
 
     return (
         <TableRow

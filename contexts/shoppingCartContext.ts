@@ -28,7 +28,7 @@ type ShoppingCartContextType = {
     dispatch: Dispatch<ShoppingCartAction>
 }
 
-const initialState: ShoppingCartState = { items: [], consoleType: 'cvd', itemsFetched: false }
+const initialState: ShoppingCartState = { items: [], consoleType: 'w161h121', itemsFetched: false }
 const ShoppingCartContext = createContext<ShoppingCartContextType>({ state: initialState, dispatch: () => null })
 
 

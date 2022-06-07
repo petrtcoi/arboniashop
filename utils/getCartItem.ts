@@ -5,7 +5,6 @@ import { ConnectionOrigin } from "../models/connectionOrigin.model"
 import { ModelOrigin } from "../models/modelOrigin.model"
 
 import calcRadiatorCost from './calcRadiatorCost'
-import getCvdBhQnty from './getCvdBhQnty'
 
 type GetCartItemProps = {
     item: ShoppingCartItem
@@ -25,9 +24,9 @@ const getCartItem = ({ item, models, colors, connections, currencyRate }: GetCar
 
     if (!model || !color || !connection) return {
         ...item,
-        consoles: { cvd: 0 },
+        consoles: { w161h121: 0 },
         title: 'Error',
-        price: { noConsole: 0, cvd: 0 },
+        price: { noConsole: 0, w161h121: 0 },
         colorName: 'цвет не определен'
     }
 

@@ -94,6 +94,10 @@ const CartItemList: React.FC<CartItemListProps> = ({ items, showSummary = true }
                 </Typography>
                 <Box marginTop="20px" />
                 <ConsoleSwitch />
+                <Box marginTop="20px" />
+                <Typography sx={ { ...styles.smallText } }>
+                    *Автоматический подбор кронштейнов явялется приблизительным.<br/>Наличие конкретных кронштейнов и их необходимое количество уточнит<br/>продавец при согласовании заказа.
+                </Typography>
             </Box>
         </Box>
     )

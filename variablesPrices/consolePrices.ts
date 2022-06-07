@@ -1,4 +1,1 @@
-export const cvd = {
-    ral9016: 7,
-    colored: 19
-}
+export const w161h121Price = 9.74

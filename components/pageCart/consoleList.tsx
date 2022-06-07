@@ -31,7 +31,7 @@ const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
                             key={ index }
                         >
                             <TableCell component="th" scope="row" sx={ styles.smallText }>
-                                Кронштейн {console.title}, { console.colorName }&#42;
+                                Кронштейн {console.title}
                             </TableCell>
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
                                 { Math.floor(consolePrice).toLocaleString() }

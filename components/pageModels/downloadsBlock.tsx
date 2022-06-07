@@ -67,7 +67,80 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 
                 </Box>
             </Grid>
-            
+
+
+            <Grid item sm={ 12 } md={ 6 } lg={ 4 } marginTop={ "15px" }>
+                <Box mr={ 1 } display="inline" >
+                    <ArticleOutlinedIcon
+                        color="secondary"
+                        sx={ { fontSize: "16px", marginRight: "10px", verticalAlign: "middle" } }
+                    />
+                    <a
+                        href={ getPath('warranty.jpg') }
+                        download
+                        style={ { textDecoration: 'none' } }
+                    >
+                        <Typography sx={ styles.smallTextDotted } display="inline">
+                            Гарантия
+                        </Typography>
+                    </a>
+                </Box>
+            </Grid>
+
+            <Grid item sm={ 12 } md={ 6 } lg={ 4 } marginTop={ "15px" }>
+                <Box mr={ 1 } display="inline" >
+                    <ArticleOutlinedIcon
+                        color="secondary"
+                        sx={ { fontSize: "16px", marginRight: "10px", verticalAlign: "middle" } }
+                    />
+                    <a
+                        href={ getPath('w161.pdf') }
+                        download
+                        style={ { textDecoration: 'none' } }
+                    >
+                        <Typography sx={ styles.smallTextDotted } display="inline">
+                            Инструкция. Кронштейны W161
+                        </Typography>
+                    </a>
+                </Box>
+            </Grid>
+
+            <Grid item sm={ 12 } md={ 6 } lg={ 4 } marginTop={ "15px" }>
+                <Box mr={ 1 } display="inline" >
+                    <ArticleOutlinedIcon
+                        color="secondary"
+                        sx={ { fontSize: "16px", marginRight: "10px", verticalAlign: "middle" } }
+                    />
+                    <a
+                        href={ getPath('zb0251.pdf') }
+                        download
+                        style={ { textDecoration: 'none' } }
+                    >
+                        <Typography sx={ styles.smallTextDotted } display="inline">
+                            Инструкция. Кронштейны ZB0251
+                        </Typography>
+                    </a>
+                </Box>
+            </Grid>
+
+            <Grid item sm={ 12 } md={ 6 } lg={ 4 } marginTop={ "15px" }>
+                <Box mr={ 1 } display="inline" >
+                    <ArticleOutlinedIcon
+                        color="secondary"
+                        sx={ { fontSize: "16px", marginRight: "10px", verticalAlign: "middle" } }
+                    />
+                    <a
+                        href={ getPath('zb0281.pdf') }
+                        download
+                        style={ { textDecoration: 'none' } }
+                    >
+                        <Typography sx={ styles.smallTextDotted } display="inline">
+                            Инструкция. Кронштейны ZB0281
+                        </Typography>
+                    </a>
+                </Box>
+            </Grid>
+
         </Grid>
     )
 

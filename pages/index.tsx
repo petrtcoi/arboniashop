@@ -3,10 +3,10 @@ import { Box } from '@mui/material'
 
 import PageHeader from '../components/pageHeader/pageHeader'
 import PageTitle from '../components/pageTitle/pageTitle'
-import MainPageCarousel from '../components/pageMain/mainPageCarousel'
 import Advantages from '../components/pageMain/advantages'
 import WhyMouseLite from '../components/pageMain/whyMouseLite'
 import Portfolio from '../components/pageMain/portfolio'
+import Hero from '../components/hero/hero'
 
 
 const Home: NextPage = () => {
@@ -18,9 +18,11 @@ const Home: NextPage = () => {
         subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
       />
 
-      <Box>
-        <MainPageCarousel />
-      </Box>
+      <Hero
+        imgPath={ "/images/sliders/slide-0.jpeg" }
+        header={ "Магазин радиаторов Arbonia" }
+        subheader={ "Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ." }
+      />
       <Box >
         <Box marginTop="50px" paddingX={ { xs: "10px", md: "20px" } }>
           <Advantages />

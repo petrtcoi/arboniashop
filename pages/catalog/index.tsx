@@ -94,7 +94,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                 </Typography>
                                 <Box paddingLeft="10px" >
                                     <Box id="2050-9016-69tvv">
-                                        <Link href="/models/2050-9016-69tvv">
+                                        <Link href="/models/2050-9016-12">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } } >
                                                     Arbonia 2050
@@ -103,7 +103,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                         </Link>
                                     </Box>
                                     <Box id="2057-9016-69tvv">
-                                        <Link href="/models/2057-9016-69tvv" >
+                                        <Link href="/models/2057-9016-12" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
                                                     Arbonia 2057
@@ -112,7 +112,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                         </Link>
                                     </Box>
                                     <Box id="3050-9016-69tvv">
-                                        <Link href="/models/3050-9016-69tvv" >
+                                        <Link href="/models/3050-9016-12" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
                                                     Arbonia 3050
@@ -121,7 +121,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                         </Link>
                                     </Box>
                                     <Box id="3057-9016-69tvv">
-                                        <Link href="/models/3057-9016-69tvv" >
+                                        <Link href="/models/3057-9016-12" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
                                                     Arbonia 3057
@@ -139,7 +139,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                 </Typography>
                                 <Box paddingLeft="10px">
                                     <Box id="2050-9016-12">
-                                        <Link href="/models/2050-9016-12">
+                                        <Link href="/models/2050-9016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } } >
                                                     Arbonia 2050
@@ -148,7 +148,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                         </Link>
                                     </Box>
                                     <Box id="2057-9016-12">
-                                        <Link href="/models/2057-9016-12" >
+                                        <Link href="/models/2057-9016-69tvv" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
                                                     Arbonia 2057
@@ -157,7 +157,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                         </Link>
                                     </Box>
                                     <Box id="3050-9016-12">
-                                        <Link href="/models/3050-9016-12" >
+                                        <Link href="/models/3050-9016-69tvv" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
                                                     Arbonia 3050
@@ -166,7 +166,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                         </Link>
                                     </Box>
                                     <Box id="3057-9016-12">
-                                        <Link href="/models/3057-9016-12" >
+                                        <Link href="/models/3057-9016-69tvv" >
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
                                                     Arbonia 3057

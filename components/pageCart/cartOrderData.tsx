@@ -80,9 +80,9 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
         const isErrors = Object.values(errors).filter(x => x).length > 0 ? true : false
         // console.log(isErrors)
         if (isErrors === false) {
+            trackEvent('order_placed')
             const res = await sendOrderConfirmation({ ...inputData, consoleType, items })
             if (res === 'ok') {
-                trackEvent('order_placed')
                 shoppingCartContext.dispatch({ type: 'RESET' })
                 router.push('/order/success')
             } else {

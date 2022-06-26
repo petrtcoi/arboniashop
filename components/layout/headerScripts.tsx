@@ -12,7 +12,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
             <Head>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <YMInitializer accounts={ [87310454] } />
+            <YMInitializer accounts={ [89126477] } />
             <Script
                 id={ 'yandex_metrika' }
                 dangerouslySetInnerHTML={ {

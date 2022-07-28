@@ -21,7 +21,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
     return (
         <Box >
-            <PageHeader title={ "Преимущества и недостатки трубчатых радиаторов Arbonia" } />
+            <PageHeader title={ "Регулируемые кронштейны W161 или фиксирующий зажим ZB0281" } />
             <PageTitle
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },

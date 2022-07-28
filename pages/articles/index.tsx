@@ -98,7 +98,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                                     <Box textAlign={ "center" }>
                                         <Image
                                             src="/images/articles/30.jpeg"
-                                            alt="Вертикальный радиатор Фкищтшф"
+                                            alt="Вертикальный радиатор Arbonia"
                                             width={ 300 }
                                             height={ 300 }
                                         />
@@ -112,6 +112,35 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                                     <Box textAlign={ "justify" } marginTop="10px">
                                         <Typography sx={ { ...styles.smallText } } component="span">
                                             Вертикальные трубчатые радиаторы Arbonia  - один из наиболее популярных вариантов отопления помещений. Именно поэтому, в складскую программу входят сразу 2 модели высотой 1.8 м.                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
+
+                    <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/calculate">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/models/2-columns-3.jpeg"
+                                            alt="Как подбирать радиаторы Zehnder Charleston по мощности"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                            Вертикальные радиаторы Arbonia
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                            Трубчатые радиаторы Arbonia  предоставляют широкие возможности по подбору конкретных моделей под каждый случай: практически любая высота и длина доступны для изготовления.
+                                        </Typography>
                                     </Box>
                                 </a>
                             </Link>

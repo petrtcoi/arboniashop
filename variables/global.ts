@@ -9,6 +9,7 @@ const global: { [key: string]: any } = {
         ['Каталог', '/catalog'],
         ['Доставка и оплата', '/delivery'],
         ['Запрос на радиаторы', '/request'],
+        ['Информация', '/articles'],
         ['О магазине', '/about']
     ],
     website: 'www.arboniashop.ru',

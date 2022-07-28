@@ -31,7 +31,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
             />
             <Hero
                 imgPath={ "/images/sliders/slide.jpeg" }
-                header={ "Как подбирать радиаторы Zehnder Charleston по мощности" }
+                header={ "Как подбирать радиаторы Arbonia по мощности" }
             />
             <Box sx={ { ...global.pagePadding, maxWidth: "900px", margin: "auto" } }>
 

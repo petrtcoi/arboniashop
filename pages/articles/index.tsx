@@ -49,19 +49,75 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                                     <Box textAlign={ "center" } marginTop="10px">
 
                                         <Typography sx={ { ...styles.standardTextRedLink } } component="span">
-                                        Преимущества и недостатки трубчатых радиаторов Arbonia
+                                            Преимущества и недостатки трубчатых радиаторов Arbonia
                                         </Typography>
                                     </Box>
                                     <Box textAlign={ "justify" } marginTop="10px">
                                         <Typography sx={ { ...styles.smallText } } component="span">
-                                        Arbonia является один из лидеров в производстве стальных трубчатых радиаторов. Бренд имеет давнюю историю и хорошо зарекомендовал себя на российском рынке...
+                                            Arbonia является один из лидеров в производстве стальных трубчатых радиаторов. Бренд имеет давнюю историю и хорошо зарекомендовал себя на российском рынке...
                                         </Typography>
                                     </Box>
                                 </a>
                             </Link>
                         </Box>
                     </Grid>
-                   
+
+                    <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/arbonia-radiators">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/articles/20.jpg"
+                                            alt="Нижний упор Arbonia ZB0280"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                            Регулируемые кронштейны W161 или фиксирующий зажим ZB0281
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                            Радиаторы Arbonia  чаще всего комплектуются одним из двух вариантов кронштейнов: W161 + ZB0280 и ZB0280/ZB0281/ZB0282
+                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
+
+                    <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/arbonia-radiators">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/articles/30.jpeg"
+                                            alt="Вертикальный радиатор Фкищтшф"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                            Вертикальные радиаторы Arbonia
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                            Вертикальные трубчатые радиаторы Arbonia  - один из наиболее популярных вариантов отопления помещений. Именно поэтому, в складскую программу входят сразу 2 модели высотой 1.8 м.                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
                 </Grid>
             </Box>
         </Box >

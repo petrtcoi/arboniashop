@@ -33,7 +33,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                 imgPath={ "/images/sliders/slide.jpeg" }
                 header={ "Преимущества и недостатки трубчатых радиаторов Arbonia" }
             />
-            <Box sx={ { ...global.pagePadding } }>
+            <Box sx={ { ...global.pagePadding, maxWidth: "900px", margin: "auto" } }>
 
                 <Typography sx={ { ...styles.standardText } } marginY="20px">
                     Arbonia является один из лидеров в производстве стальных трубчатых радиаторов. Бренд имеет давнюю историю и хорошо зарекомендовал себя на российском рынке. Рассмотрим особенности, преимущества и недостатки Arbonia Column.

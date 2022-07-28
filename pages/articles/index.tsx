@@ -64,7 +64,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 
                     <Grid item md={ 6 }>
                         <Box>
-                            <Link href="/articles/arbonia-radiators">
+                            <Link href="/articles/consoles">
                                 <a style={ { textDecoration: 'none' } }>
                                     <Box textAlign={ "center" }>
                                         <Image
@@ -93,7 +93,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 
                     <Grid item md={ 6 }>
                         <Box>
-                            <Link href="/articles/arbonia-radiators">
+                            <Link href="/articles/2180-3180">
                                 <a style={ { textDecoration: 'none' } }>
                                     <Box textAlign={ "center" }>
                                         <Image

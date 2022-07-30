@@ -22,7 +22,7 @@ const getGroupedConsoles = ({ items }: { items: CartItemExtended[] }): ConsoleGr
                 [
                     ...acc,
                     {
-                        title: 'W161 + H121',
+                        title: 'W161 + ZB0280',
                         colorId: item.colorId,
                         qnty: item.consoles.w161h121 * item.qnty,
                         totalSum: (item.price.w161h121 - item.price.noConsole) * item.qnty,

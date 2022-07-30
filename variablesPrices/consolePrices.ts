@@ -1,1 +1,1 @@
-export const w161h121Price = 9.74
+export const w161h121Price = 12.85

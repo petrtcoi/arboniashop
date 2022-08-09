@@ -164,7 +164,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                                     <Box textAlign={ "center" } marginTop="10px">
 
                                         <Typography sx={ { ...styles.standardTextRedLink } } component="span">
-                                            Вертикальные радиаторы Arbonia
+                                        Как подбирать радиаторы Arbonia по мощности
                                         </Typography>
                                     </Box>
                                     <Box textAlign={ "justify" } marginTop="10px">

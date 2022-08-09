@@ -34,6 +34,36 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             />
             <Box sx={ { ...global.pagePadding } } marginTop="50px">
                 <Grid container spacing={ 5 }>
+
+                    <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/2-3-columns">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/articles/90-1.jpeg"
+                                            alt="3-трубчатый радиатор Arbonia"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                            Отличия 2-трубчатых радиаторов Arbonia от 3-трубчатых
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                            Мы стараемся поддерживать в наличии наиболее популярные модели радиаторов Arbonia. Это наиболее универсальные модели, которые подходят для большинства случаев...
+                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
+
                     <Grid item md={ 6 }>
                         <Box>
                             <Link href="/articles/arbonia-radiators">

@@ -141,7 +141,36 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                                     </Box>
                                     <Box textAlign={ "justify" } marginTop="10px">
                                         <Typography sx={ { ...styles.smallText } } component="span">
-                                            Вертикальные трубчатые радиаторы Arbonia  - один из наиболее популярных вариантов отопления помещений. Именно поэтому, в складскую программу входят сразу 2 модели высотой 1.8 м.                                        </Typography>
+                                            Вертикальные трубчатые радиаторы Arbonia  - один из наиболее популярных вариантов отопления помещений. Именно поэтому, в складскую программу входят сразу 2 модели высотой 1.8 м.
+                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
+                    <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/connections">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/articles/100.jpg"
+                                            alt="Радиатор Arbonia"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                            Радиаторы Arbonia с боковым и нижним подключением
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                            Два наиболее используемых варианта подключения для радиаторов Arbonia: боковое ¾” и нижнее со встроенным термовентилем. Именно они входят в нашу складскую программу.
+                                        </Typography>
                                     </Box>
                                 </a>
                             </Link>
@@ -164,7 +193,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                                     <Box textAlign={ "center" } marginTop="10px">
 
                                         <Typography sx={ { ...styles.standardTextRedLink } } component="span">
-                                        Как подбирать радиаторы Arbonia по мощности
+                                            Как подбирать радиаторы Arbonia по мощности
                                         </Typography>
                                     </Box>
                                     <Box textAlign={ "justify" } marginTop="10px">

@@ -176,35 +176,18 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                         </Typography>
                     </Box>
                     <Box itemScope itemType="https://schema.org/Organization">
-                        <Hidden smDown>
-                            <Link href="/">
-                                <a >
-                                    <Image
-                                        src="/images/logo.png"
-                                        alt="Arbonia Columns column radiators"
-                                        width={ 130 }
-                                        height={ 50 }
-                                        itemProp="logo"
-                                    />
-                                </a>
-                            </Link>
-                        </Hidden>
-                        <Hidden smUp>
-                            <Link href="/">
-                                <a>
-                                    <Image
-                                        src="/images/logo_footer.png"
-                                        alt="Arbonia Columns column radiators"
-                                        width={ 75 }
-                                        height={ 50 }
-                                        itemProp="logo"
-                                    />
-                                </a>
-                            </Link>
-                        </Hidden>
-
+                        <Link href="/">
+                            <a >
+                                <Image
+                                    src="/images/logo.png"
+                                    alt="Arbonia Columns column radiators"
+                                    width={ 130 }
+                                    height={ 50 }
+                                    itemProp="logo"
+                                />
+                            </a>
+                        </Link>
                     </Box>
-
                 </Toolbar>
             </Container>
         </AppBar >

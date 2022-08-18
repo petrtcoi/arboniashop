@@ -39,20 +39,19 @@ const CartPage: NextPage<CartPageProps> = ({ models, colors, connections }) => {
                 <Typography variant="h4" component="h1" gutterBottom textAlign="center" sx={ { textTransform: 'uppercase' } }>
                     Корзина
                 </Typography>
-                <Box paddingTop="30px">
-                    <CartItemList
-                        items={ items }
-                    />
-                </Box>
-
-
-                { items.length === 0 ?
+                { items.length === 0 &&
                     <EmptyCartMessage />
-                    :
-                    <Box marginTop="50px">
-                        <CartOrderData
+                }
+                { items.length !== 0 &&
+                    <Box paddingTop="30px">
+                        <CartItemList
                             items={ items }
                         />
+                        <Box marginTop="50px">
+                            <CartOrderData
+                                items={ items }
+                            />
+                        </Box>
                     </Box>
                 }
             </Box>

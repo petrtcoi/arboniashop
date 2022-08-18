@@ -15,7 +15,7 @@ const EmptyCartMessage: React.FC<EmptyCartMessageProps> = () => {
             </Typography>
             <Box marginTop="20px">
                 <Typography sx={ styles.standardText }>
-                    Вы можете добавить в нее товары из раздела { <Link href="/"><a>Каталог</a></Link> } или связаться с нами для консультации. Мы с радостью поможем подобрать наиболее подходящие радиаторы для вас.
+                    Вы можете добавить в нее товары из раздела { <Link href="/catalog"><a>Каталог</a></Link> } или связаться с нами для консультации. Мы с радостью поможем подобрать наиболее подходящие радиаторы для вас.
                 </Typography>
             </Box>
         </Box>

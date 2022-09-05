@@ -73,11 +73,6 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
                             itemProp="image"
                         />
                     </Box>
-                    {/* <Hidden mdDown>
-                        <Box marginTop="20px">
-                            <WhyBuy />
-                        </Box>
-                    </Hidden> */}
                 </Grid>
 
                 <Grid item xs={ 12 } sm={ 6 }>

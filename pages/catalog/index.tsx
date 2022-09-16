@@ -55,7 +55,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
             <Hero
                 imgPath={ "/images/sliders/slide.jpeg" }
                 header={ "Каталог радиаторов Arbonia" }
-                subheader={ "Полный ассортимент производителя.Складские и заказные модели" }
+                subheader={ "Полный ассортимент производителя. Складские и заказные модели" }
             />
             <Box sx={ { ...global.pagePadding } }>
                 <Box marginTop="20px">

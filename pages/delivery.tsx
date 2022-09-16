@@ -155,7 +155,6 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                 
                     </Box>
                 </Box>
-
             </Box>
         </Box>
     )

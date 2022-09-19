@@ -71,8 +71,12 @@ const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, m
         ] }
       />
       <Box sx={ { ...global.pagePadding } }>
-        <PageHeader title={ modelTitle } />
-        <Box marginBottom={ "50px" } marginTop={"20px"}>
+        <PageHeader
+          title={ modelTitle }
+          description={`${modelTitle} купить в магазине ArboniaShop по выгодынм ценам. Официальная гарантия на радиаторы 10 лет. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Возможно изготовление радиаторов под заказ. Бесплатная консультация и помощь в подборе радиаторов.`}
+
+        />
+        <Box marginBottom={ "50px" } marginTop={ "20px" }>
           <Typography variant="h5" component="h1" gutterBottom textAlign="center" itemProp="name">
             { modelTitle }
           </Typography>
@@ -124,8 +128,8 @@ const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, m
                     <>
                       <RadiatorAllOptions
                         modelInit={ modelCurr ? modelCurr : models[0] }
-                        connectionInit={connections[0]}
-                        colorInit={colors[0]}
+                        connectionInit={ connections[0] }
+                        colorInit={ colors[0] }
                         models={ models }
                         colors={ colors }
                         connections={ connections }

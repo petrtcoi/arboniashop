@@ -57,7 +57,10 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
                 ] }
             />
             <Box sx={ { ...global.pagePadding } }>
-                <PageHeader title={ radiatorTitle } />
+                <PageHeader
+                    title={ radiatorTitle }
+                    description={ `${radiatorTitle}: купить в магазине ArboniaShop по выгодынм ценам. Официальная гарантия на радиаторы 10 лет. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Возможно изготовление радиаторов под заказ. Бесплатная консультация и помощь в подборе радиаторов. Огромный опыт работы.` }
+                />
                 <Box marginBottom={ "50px" } marginTop={ "20px" }>
                     <Typography variant="h5" component="h1" gutterBottom textAlign="center" itemProp="name">
                         { radiatorTitle }

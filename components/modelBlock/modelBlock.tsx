@@ -38,14 +38,18 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
     return (
         <Box marginTop="70px">
             <Box paddingY="10px">
-                <Typography variant="h6" component="h3" sx={ { textTransform: 'uppercase'} } textAlign="center">
+                <Typography variant="h6" component="h3" sx={ { textTransform: 'uppercase' } } textAlign="center">
                     { title }
                 </Typography>
             </Box>
             <Box marginTop="20px">
                 <Grid container spacing={ 2 } >
                     <Grid item xs={ 3 } sm={ 2 } lg={ 2 }>
-                        <img width="90%" src={ imagePrimaryPath } />
+                        <img
+                            width="90%"
+                            src={ imagePrimaryPath }
+                            alt={ `Трубчатый радиатор ${model.name}` }
+                        />
                     </Grid>
                     <Grid item container xs={ 9 } sm={ 6 } lg={ 6 } direction="column" display="flex" justifyContent={ "center" }>
                         <Box >

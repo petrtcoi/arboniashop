@@ -25,7 +25,7 @@ const ImagesOtherList: React.FC<ImagesOtherListProps> = ({ imagesString }) => {
                         lg={ 4 }
                     >
                         <Box
-                            marginTop={"20px"}
+                            marginTop={ "20px" }
                             padding={ { sm: "20px", md: "0px" } }
                             textAlign={ { sm: "center", md: "left" } }
                         >
@@ -33,6 +33,7 @@ const ImagesOtherList: React.FC<ImagesOtherListProps> = ({ imagesString }) => {
                                 src={ imagePath }
                                 width="100%"
                                 height="auto"
+                                alt={ `Трубчатый радиатор Arbonia` }
                             />
                         </Box>
                     </Grid>

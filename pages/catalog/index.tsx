@@ -8,6 +8,7 @@ import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
 import BlockHowReadModel from '../../components/blockHowReadModel/blockHowReadModel'
 import PageHeader from '../../components/pageHeader/pageHeader'
 import Hero from '../../components/hero/hero'
+import PageTitle from '../../components/pageTitle/pageTitle'
 
 import getModelsData from '../../api_utils/getModelsData'
 import getColorsData from '../../api_utils/getColorsData'
@@ -19,7 +20,6 @@ import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 
 import * as styles from '../../styles/styles'
 import global from '../../variables/global'
-import PageTitle from '../../components/pageTitle/pageTitle'
 
 
 
@@ -372,7 +372,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                     Нижнее подключение
                                 </Typography>
                                 <Box paddingLeft="10px">
-                                <Box id="3030-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                                    <Box id="3030-9016-69tvv" paddingTop="50px" marginTop="-50px">
                                         <Link href="/models/3030-9016-69tvv">
                                             <a style={ { textDecoration: "none" } }>
                                                 <Typography sx={ { ...styles.standartTextThinLink } }>
@@ -430,7 +430,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
                                 </Box>
                             </Grid>
-                            
+
                         </Grid>
                     </Box>
 
@@ -447,7 +447,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                             return (
                                 <Grid item xs={ 12 } sm={ 6 } md={ 4 } key={ group.title }>
                                     <Box textAlign="center" marginTop="20px">
-                                        <img src={ `/images/schemas/${group.firstChar}.png` } height="150px" width="auto" />
+                                        <img
+                                            src={ `/images/schemas/${group.firstChar}.png` }
+                                            height="150px" width="auto"
+                                            alt={ `Радиаторы Arbonia` }
+                                        />
                                         <Typography sx={ { ...styles.standardText } }>
                                             { group.title }
                                         </Typography>

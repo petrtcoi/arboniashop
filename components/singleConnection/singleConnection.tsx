@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-
+import Image from 'next/image'
 
 
 import { ConnectionOrigin } from '../../models/connectionOrigin.model'
@@ -22,10 +22,11 @@ const SingleConnection: React.FC<SingleConnectionProps> = ({ connection, highlig
             onClick={ () => handleClick(connection.id ? connection.id : 'none') }
         >
             <Box alignContent={ "center" }>
-                <img
+                <Image
                     src={ `/images/connections/${connection.img}` }
                     width="150px"
                     height="100px"
+                    alt={ `Подключение радиатора Arbonia: ${connection.name}` }
                 />
             </Box>
             <Box marginTop={ "-10px" }>

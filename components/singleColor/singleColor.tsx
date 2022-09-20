@@ -24,6 +24,7 @@ const SingleColor: React.FC<SingleColorProps> = ({ color, highlighted = false, h
                     width="150px"
                     height="100px"
                     style={ { borderRadius: "5px", border: "1px solid black" } }
+                    alt={ `Цвет радиаторов Arbonia` }
                 />
             </Box>
             <Box>

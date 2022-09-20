@@ -57,6 +57,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                             width="90%"
                             src={ imagePrimaryPath }
                             itemProp="image"
+                            alt={ `Трубчатый радиатор ${model.name}` }
                         />
                     </Box>
                 </Grid>
@@ -76,8 +77,8 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                 <Typography sx={ styles.standardText } display="inline">
                                     Цена:
                                 </Typography>
-                                <Typography sx={ { fontSize: "24px", fontWeight: 200, textDecoration: "line-through", color: "gray"} } display="inline" marginX="15px">
-                                    { oldPriceString } 
+                                <Typography sx={ { fontSize: "24px", fontWeight: 200, textDecoration: "line-through", color: "gray" } } display="inline" marginX="15px">
+                                    { oldPriceString }
                                 </Typography>
                                 <Typography sx={ { fontSize: "30px", fontWeight: 600 } } display="inline">
                                     { priceString } руб

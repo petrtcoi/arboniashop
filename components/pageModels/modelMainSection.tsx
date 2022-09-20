@@ -71,6 +71,7 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
                             width="90%"
                             src={ imagePrimaryPath }
                             itemProp="image"
+                            alt={`Трубчатый радиатор ${modelCurr.name}`}
                         />
                     </Box>
                 </Grid>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@mui/material'
-import Link from 'next/link'
+import Image from 'next/image'
 
 import * as styles from '../../styles/styles'
 
@@ -19,7 +19,11 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             <Grid container spacing={ 2 }>
                 <Grid item xs={ 6 } md={ 3 } textAlign="center">
                     <Box marginTop="20px">
-                        <img src="/images/portfolio/2.jpg" width="200px" height="200px" />
+                        <Image
+                            src="/images/portfolio/2.jpg"
+                            width="200px" height="200px"
+                            alt={ "ЖК Верещагинская дача, Сочи" }
+                        />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
                         ЖК Верещагинская дача<br />Сочи
@@ -27,7 +31,11 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 </Grid>
                 <Grid item xs={ 6 } md={ 3 } textAlign="center">
                     <Box marginTop="20px">
-                        <img src="/images/portfolio/0.jpg" width="200px" height="200px" />
+                        <Image
+                            src="/images/portfolio/0.jpg"
+                            width="200px" height="200px"
+                            alt={ "Новая Голландия, Санкт-Петербург" }
+                        />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
                         Новая Голландия<br />
@@ -36,7 +44,11 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 </Grid>
                 <Grid item xs={ 6 } md={ 3 } textAlign="center">
                     <Box marginTop="20px">
-                        <img src="/images/portfolio/1.jpg" width="200px" height="200px" />
+                        <Image
+                            src="/images/portfolio/1.jpg"
+                            width="200px" height="200px"
+                            alt={ "Beluga Group, Москва" }
+                        />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
                         Beluga Group<br />
@@ -45,7 +57,11 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 </Grid>
                 <Grid item xs={ 6 } md={ 3 } textAlign="center">
                     <Box marginTop="20px">
-                        <img src="/images/portfolio/1.png" width="200px" height="200px" />
+                        <Image
+                            src="/images/portfolio/1.png"
+                            width="200px" height="200px"
+                            alt={ "Оперный театр, Новосибирск" }
+                        />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
                         Оперный театр<br />
@@ -54,7 +70,11 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 </Grid>
                 <Grid item xs={ 6 } md={ 3 } textAlign="center">
                     <Box marginTop="20px">
-                        <img src="/images/portfolio/2.png" width="200px" height="200px" />
+                        <Image
+                            src="/images/portfolio/2.png"
+                            width="200px" height="200px"
+                            alt={ "Duo Bar, Санкт-Петербург" }
+                        />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
                         Duo Bar<br />
@@ -63,7 +83,11 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 </Grid>
                 <Grid item xs={ 6 } md={ 3 } textAlign="center">
                     <Box marginTop="20px">
-                        <img src="/images/portfolio/4.png" width="200px" height="200px" />
+                        <Image
+                            src="/images/portfolio/4.png"
+                            width="200px" height="200px"
+                            alt={ "ВАГНЕР Таллинский, Санкт-Петербург" }
+                        />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
                         ВАГНЕР Таллинский<br />
@@ -72,7 +96,11 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 </Grid>
                 <Grid item xs={ 6 } md={ 3 } textAlign="center">
                     <Box marginTop="20px">
-                        <img src="/images/portfolio/6.png" width="200px" height="200px" />
+                        <Image
+                            src="/images/portfolio/6.png"
+                            width="200px" height="200px"
+                            alt={ "Ресторан GooseGoose, Санкт-Петербург" }
+                        />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
                         Ресторан GooseGoose<br />
@@ -81,7 +109,11 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 </Grid>
                 <Grid item xs={ 6 } md={ 3 } textAlign="center">
                     <Box marginTop="20px">
-                        <img src="/images/portfolio/7.png" width="200px" height="200px" />
+                        <Image
+                            src="/images/portfolio/7.png"
+                            width="200px" height="200px"
+                            alt={ "Hotel Indigo, Санкт-Петербург" }
+                        />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
                         Hotel Indigo<br />
@@ -91,9 +123,9 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             </Grid>
             <Box textAlign="center" marginY="80px">
                 <Typography sx={ { ...styles.standardText } }>
-                    У нас богатый опыт работы с различными проектами:<br/>
-                    От крупных коммерческих объектов, до замены единственного радиатора в комнате.<br/>
-                    Свяжитесь с нами и мы гарантируем качественный сервис и поставку радиаторов в срок!<br/>
+                    У нас богатый опыт работы с различными проектами:<br />
+                    От крупных коммерческих объектов, до замены единственного радиатора в комнате.<br />
+                    Свяжитесь с нами и мы гарантируем качественный сервис и поставку радиаторов в срок!<br />
                     Команда ArboniaShop.ru
                 </Typography>
 

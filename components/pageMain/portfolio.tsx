@@ -23,6 +23,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                             src="/images/portfolio/2.jpg"
                             width="200px" height="200px"
                             alt={ "ЖК Верещагинская дача, Сочи" }
+                            sizes="200px"
                         />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
@@ -33,8 +34,9 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                     <Box marginTop="20px">
                         <Image
                             src="/images/portfolio/0.jpg"
-                            width="200px" height="200px"
+                            width={200} height={200}
                             alt={ "Новая Голландия, Санкт-Петербург" }
+                            sizes="200px"
                         />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
@@ -48,6 +50,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                             src="/images/portfolio/1.jpg"
                             width="200px" height="200px"
                             alt={ "Beluga Group, Москва" }
+                            sizes="200px"
                         />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
@@ -61,6 +64,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                             src="/images/portfolio/1.png"
                             width="200px" height="200px"
                             alt={ "Оперный театр, Новосибирск" }
+                            sizes="200px"
                         />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
@@ -74,6 +78,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                             src="/images/portfolio/2.png"
                             width="200px" height="200px"
                             alt={ "Duo Bar, Санкт-Петербург" }
+                            sizes="200px"
                         />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
@@ -87,6 +92,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                             src="/images/portfolio/4.png"
                             width="200px" height="200px"
                             alt={ "ВАГНЕР Таллинский, Санкт-Петербург" }
+                            sizes="200px"
                         />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
@@ -100,6 +106,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                             src="/images/portfolio/6.png"
                             width="200px" height="200px"
                             alt={ "Ресторан GooseGoose, Санкт-Петербург" }
+                            sizes="200px"
                         />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>
@@ -113,6 +120,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                             src="/images/portfolio/7.png"
                             width="200px" height="200px"
                             alt={ "Hotel Indigo, Санкт-Петербург" }
+                            sizes="200px"
                         />
                     </Box>
                     <Typography sx={ { ...styles.smallText } }>

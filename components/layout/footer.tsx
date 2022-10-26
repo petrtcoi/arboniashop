@@ -22,10 +22,11 @@ const Footer: NextComponentType<FooterProps> = () => {
         <Box marginX={ { xs: "0px", md: "20px" } } paddingX={ { xs: "15px", md: "30px" } } paddingY={ "30px" } bgcolor={ "#E6E6E6" }>
             <Box>
                 <Image
+                    layout="fixed"
                     src="/images/logo.png"
                     alt="Arbonia column radiators"
-                    width={ 130 }
-                    height={ 50 }
+                    width={ "130px" }
+                    height={ "50px" }
                 />
             </Box>
             <Grid container spacing={ 2 }>

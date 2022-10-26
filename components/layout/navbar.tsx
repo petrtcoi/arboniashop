@@ -179,6 +179,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                         <Link href="/">
                             <a >
                                 <Image
+                                    layout="fixed"
                                     src="/images/logo.png"
                                     alt="Arbonia Columns column radiators"
                                     width={ 130 }

@@ -15,6 +15,7 @@ import { CurrencyContext } from '../../contexts/currencyContext'
 
 import global from '../../variables/global'
 import * as styles from '../../styles/styles'
+import Image from 'next/image'
 
 
 
@@ -67,12 +68,17 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
                         </Box>
                     }
                     <Box textAlign="center" marginTop="20px">
-                        <img
-                            width="90%"
-                            src={ imagePrimaryPath }
-                            itemProp="image"
-                            alt={`Трубчатый радиатор ${modelCurr.name}`}
-                        />
+                        {/* <div style={ { width: '100%', height: '100%', position: 'relative' } }> */}
+
+                            <Image
+                            priority
+                                width="100%" height="100%" layout="responsive" objectFit="contain"
+                                src={ imagePrimaryPath }
+                                itemProp="image"
+                                alt={ `Трубчатый радиатор ${modelCurr.name}` }
+                                sizes="(min-width: 800px) 400px, 500px"
+                            />
+                        {/* </div> */}
                     </Box>
                 </Grid>
 

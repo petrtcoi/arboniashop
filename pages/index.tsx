@@ -37,9 +37,9 @@ const Home: NextPage = () => {
         </Box>
       </Box>
     </Box>
-
-
   )
 }
+
+
 
 export default Home

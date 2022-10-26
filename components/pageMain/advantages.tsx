@@ -1,7 +1,10 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@mui/material'
+import Image from 'next/image'
+
 
 import * as styles from '../../styles/styles'
+import { textAlign } from '@mui/system'
 
 
 type AdvantagesProps = {}
@@ -18,7 +21,15 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 <Grid container spacing={ 2 }>
                     <Grid item xs={ 12 } md={ 6 } lg={ 4 }>
                         <Box textAlign="center">
-                            <img src="/images/advantages/1.jpg" style={ { ...styles.roundSquareImage } } />
+                            <div style={ { ...styles.roundSquareImage, display: "inline-block" } }>
+                                <Image
+                                    src="/images/advantages/1.jpg"
+                                    width={ "200px" }
+                                    height={ "200px" }
+                                    sizes="200px"
+                                    alt="Завод радиаторов Arbonia"
+                                />
+                            </div>
                             <Typography variant="h6" component="h3">
                                 Крупный производитель
                             </Typography>
@@ -30,7 +41,15 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 
                     <Grid item xs={ 12 } md={ 6 } lg={ 4 }>
                         <Box textAlign="center">
-                            <img src="/images/advantages/2.jpg" style={ { ...styles.roundSquareImage } } />
+                            <div style={ { ...styles.roundSquareImage, display: "inline-block" } }>
+                                <Image
+                                    src="/images/advantages/2.jpg"
+                                    width={ "200px" }
+                                    height={ "200px" }
+                                    sizes="200px"
+                                    alt="Вертикальный трубчатый радиатор Arbonia"
+                                />
+                            </div>
                             <Typography variant="h6" component="h3">
                                 Широкий ассортимент
                             </Typography>
@@ -42,7 +61,15 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 
                     <Grid item xs={ 12 } md={ 6 } lg={ 4 }>
                         <Box textAlign="center">
-                            <img src="/images/advantages/3.jpg" style={ { ...styles.roundSquareImage } } />
+                            <div style={ { ...styles.roundSquareImage, display: "inline-block" } }>
+                                <Image
+                                    src="/images/advantages/3.jpg"
+                                    width={ "200px" }
+                                    height={ "200px" }
+                                    sizes="200px"
+                                    alt="Горизонтальный трубчатый радиатор Arbonia белого цвета"
+                                />
+                            </div>
                             <Typography variant="h6" component="h3">
                                 Гигиеничность
                             </Typography>
@@ -55,7 +82,15 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 
                     <Grid item xs={ 12 } md={ 6 } lg={ 4 }>
                         <Box textAlign="center">
-                            <img src="/images/advantages/4.jpg" style={ { ...styles.roundSquareImage } } />
+                            <div style={ { ...styles.roundSquareImage, display: "inline-block" } }>
+                                <Image
+                                    src="/images/advantages/4.jpg"
+                                    width={ "200px" }
+                                    height={ "200px" }
+                                    sizes="200px"
+                                    alt="Установка радиатора Arbonia"
+                                />
+                            </div>
                             <Typography variant="h6" component="h3">
                                 Надежность
                             </Typography>
@@ -68,7 +103,15 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 
                     <Grid item xs={ 12 } md={ 6 } lg={ 4 }>
                         <Box textAlign="center">
-                            <img src="/images/advantages/5.jpg" style={ { ...styles.roundSquareImage } } />
+                            <div style={ { ...styles.roundSquareImage, display: "inline-block" } }>
+                                <Image
+                                    src="/images/advantages/5.jpg"
+                                    width={ "200px" }
+                                    height={ "200px" }
+                                    sizes="200px"
+                                    alt="Радиатор Arbonia с боковым подключением"
+                                />
+                            </div>
                             <Typography variant="h6" component="h3">
                                 Наличие на складе
                             </Typography>
@@ -82,7 +125,15 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 
                     <Grid item xs={ 12 } md={ 6 } lg={ 4 }>
                         <Box textAlign="center">
-                            <img src="/images/advantages/6.jpg" style={ { ...styles.roundSquareImage } } />
+                            <div style={ { ...styles.roundSquareImage, display: "inline-block" } }>
+                                <Image
+                                    src="/images/advantages/6.jpg"
+                                    width={ "200px" }
+                                    height={ "200px" }
+                                    sizes="200px"
+                                    alt="Низкий радиатор Arbonia с боковым подключением"
+                                />
+                            </div>
                             <Typography variant="h6" component="h3">
                                 Быстрая доставка по России
                             </Typography>

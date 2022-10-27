@@ -12,7 +12,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
             <Head>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <YMInitializer  accounts={ [89126477] } options={{async: true}} />
+            <YMInitializer  accounts={ [89126477] } options={{defer: true}} />
             {/* <Script
                 async
                 id={ 'yandex_metrika' }
@@ -32,12 +32,12 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
                 } }
             /> */}
             <Script
-                async
+                defer
                 id={ 'google_analytics_1' }
                 src="https://www.googletagmanager.com/gtag/js?id=UA-59967703-20"
             />
             <Script
-                async
+                defer
                 id={ 'google_analytics_2' }
                 dangerouslySetInnerHTML={ {
                     __html: `

@@ -12,8 +12,8 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
             <Head>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <YMInitializer  accounts={ [89126477] } />
-            <Script
+            <YMInitializer  accounts={ [89126477] } options={{async: true}} />
+            {/* <Script
                 async
                 id={ 'yandex_metrika' }
                 dangerouslySetInnerHTML={ {
@@ -30,7 +30,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
                     });
                                         `,
                 } }
-            />
+            /> */}
             <Script
                 async
                 id={ 'google_analytics_1' }

@@ -44,7 +44,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
     return (
         <AppBar position="static" color="transparent" style={ { borderBottom: "1px solid #e5e5e5", boxShadow: "none" } }>
             <Container maxWidth="xl">
-                <Toolbar disableGutters>
+                <Toolbar disableGutters itemScope itemType="https://schema.org/Organization">
                     <Box sx={ { flexGrow: 1, display: { xs: 'flex', md: 'none', } } }>
                         <IconButton
                             size="large"
@@ -146,7 +146,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                             />
                         </Box>
                     </Hidden>
-                    <Box mr={ 4 } itemScope itemType="https://schema.org/Organization">
+                    <Box mr={ 4 } >
                         <Typography
                             textAlign="center"
                             variant="body1"
@@ -175,16 +175,16 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                             </Link>
                         </Typography>
                     </Box>
-                    <Box itemScope itemType="https://schema.org/Organization">
+                    <Box>
                         <Link href="/">
-                            <a >
+                            <a itemProp={"url"}>
                                 <Image
                                     layout="fixed"
                                     src="/images/logo.png"
                                     alt="Arbonia Columns column radiators"
                                     width={ 130 }
                                     height={ 50 }
-                                    itemProp="logo"
+                                    itemScope itemType="https://schema.org/Organization" itemProp={"logo"}
                                 />
                             </a>
                         </Link>

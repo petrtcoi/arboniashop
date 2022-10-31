@@ -20,13 +20,14 @@ const Footer: NextComponentType<FooterProps> = () => {
 
     return (
         <Box marginX={ { xs: "0px", md: "20px" } } paddingX={ { xs: "15px", md: "30px" } } paddingY={ "30px" } bgcolor={ "#E6E6E6" }>
-            <Box>
+            <Box itemScope itemType="https://schema.org/Organization">
                 <Image
                     layout="fixed"
                     src="/images/logo.png"
                     alt="Arbonia column radiators"
                     width={ "130px" }
                     height={ "50px" }
+                    itemProp={"logo"}
                 />
             </Box>
             <Grid container spacing={ 2 }>
@@ -45,7 +46,7 @@ const Footer: NextComponentType<FooterProps> = () => {
                             <Link href={ `tel:${global.phone495}` }>
                                 <a
                                     style={ footerTextButton }
-                                    onClick={ () => trackEvent('phone_click') }
+                                    onClick={ () => trackEvent('phone_click') } 
                                 >
                                     <Typography
                                         sx={ footerTextButtonUnderline }
@@ -113,7 +114,7 @@ const Footer: NextComponentType<FooterProps> = () => {
                     )) }
                 </Grid>
                 <Grid item xs={ 12 } md={ 4 }>
-                    <Typography sx={ footerText }>
+                    <Typography sx={ footerText } itemScope itemType="https://schema.org/Organization" itemProp="name">
                         ООО &quot;Маус Лайт&quot;
                     </Typography>
                     <Typography sx={ footerText }>

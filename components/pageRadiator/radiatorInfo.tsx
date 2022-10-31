@@ -80,7 +80,13 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                 <Typography sx={ { fontSize: "24px", fontWeight: 200, textDecoration: "line-through", color: "gray" } } display="inline" marginX="15px">
                                     { oldPriceString }
                                 </Typography>
-                                <Typography sx={ { fontSize: "30px", fontWeight: 600 } } display="inline">
+                                <Typography
+                                    sx={ { fontSize: "30px", fontWeight: 600 } }
+                                    display="inline"
+                                    itemProp="offers"
+                                    itemScope
+                                    itemType="https://schema.org/Offer"
+                                >
                                     { priceString } руб
                                 </Typography>
                             </Box>

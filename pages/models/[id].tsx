@@ -37,6 +37,7 @@ type ModelProps = {
   colors: ColorOrigin[]
   connections: ConnectionOrigin[]
   modelTitle: string
+  metaTitle: string
   colorTitle: string
   connectionTitle: string
   colorInit: ColorOrigin | null
@@ -44,7 +45,7 @@ type ModelProps = {
 }
 
 
-const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, modelTitle, colorTitle, connectionTitle, colorInit, connectionInit }) => {
+const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, modelTitle, metaTitle, colorTitle, connectionTitle, colorInit, connectionInit }) => {
 
   const [tab, setTab] = useState<string>('buy')
   const handleChangeTab = (event: React.SyntheticEvent, newTab: string) => {
@@ -72,8 +73,8 @@ const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, m
       />
       <Box sx={ { ...global.pagePadding } }>
         <PageHeader
-          title={ modelTitle }
-          description={`${modelTitle} купить в магазине ArboniaShop по выгодынм ценам. Официальная гарантия на радиаторы 10 лет. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Возможно изготовление радиаторов под заказ. Бесплатная консультация и помощь в подборе радиаторов.`}
+          title={ metaTitle }
+          description={`${metaTitle} купить в магазине ArboniaShop по выгодынм ценам. Официальная гарантия на радиаторы 10 лет. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге.`}
 
         />
         <Box marginBottom={ "50px" } marginTop={ "20px" }>
@@ -187,6 +188,7 @@ export async function getStaticProps(context: { params: { id: string } }) {
   const connections: ConnectionOrigin[] = await getConnectionsData()
 
   let modelTitle = `Радиатор Arbonia Column ${modelCurr?.nameShort}`
+  let metaTitle = `Радиатор Arbonia ${modelCurr?.nameShort}`
 
   let colorTitle = 'палитра Arbonia'
   let colorInit = null
@@ -196,6 +198,7 @@ export async function getStaticProps(context: { params: { id: string } }) {
       colorTitle = color.name
       colorInit = color
       modelTitle += `, ${colorTitle}`
+      metaTitle += ` ${color.nameShort}`
     }
   }
 
@@ -207,9 +210,11 @@ export async function getStaticProps(context: { params: { id: string } }) {
       connectionInit = connection
       connectionTitle = connection.nameShort
       modelTitle += `, ${connectionTitle}`
+      metaTitle += ` ${connection.nameShort}`
     }
   }
 
+  
   return {
     props: {
       modelCurr,
@@ -217,6 +222,7 @@ export async function getStaticProps(context: { params: { id: string } }) {
       colors,
       connections,
       modelTitle,
+      metaTitle,
       colorTitle,
       connectionTitle,
       connectionInit,

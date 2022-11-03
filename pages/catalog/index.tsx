@@ -43,7 +43,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
     return (
         <Box>
-            <PageHeader title={ "Каталог радиаторов Arbonia" } />
+            <PageHeader title={ "ArboniaShop: полный каталог радиаторов Arbonia" } />
             <PageTitle
                 header={ "Магазин радиаторов Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }

@@ -12,7 +12,7 @@ import Hero from '../components/hero/hero'
 const Home: NextPage = () => {
   return (
     <Box  >
-      <PageHeader title={ "Магазин радиаторов Arbonia" } />
+      <PageHeader title={ "ArboniaShop: специализированный магазин радиаторов Arbonia" } />
       <PageTitle
         header={ "Специализированный магазин Arbonia в России" }
         subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }

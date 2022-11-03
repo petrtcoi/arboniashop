@@ -15,7 +15,7 @@ import global from '../../variables/global'
 const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
     return (
         <Box>
-            <PageHeader title={ "Высокие модели радиаторов Arbonia (склад)" } />
+            <PageHeader title={ "ArboniaShop: вертикальные радиаторы Arbonia (склад)" } />
             <Hero
                 imgPath={ "/images/sliders/high.jpeg" }
                 header={ "Вертикальные модели Arbonia" }

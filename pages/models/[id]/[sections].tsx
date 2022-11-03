@@ -41,8 +41,7 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
         setTab(newTab)
     }
 
-    const radiatorTitle = `Радиатор Arbonia Column ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}, ${sectionQnty} секций`
-
+    const radiatorTitle = `Радиатор Arbonia ${model.nameShort}-${sectionQnty}, ${color.nameShort}, ${connection.nameShort}`
 
     return (
         <Box itemScope itemType="https://schema.org/IndividualProduct">

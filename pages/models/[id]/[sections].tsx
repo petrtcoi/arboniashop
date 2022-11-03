@@ -20,6 +20,7 @@ import { ColorOrigin } from '../../../models/colorOrigin.model'
 
 import * as styles from '../../../styles/styles'
 import global from '../../../variables/global'
+import GeneralTextAboutArboniaProps from '../../../components/generalTextAboutArbonia'
 
 
 
@@ -109,6 +110,8 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
                         <DownloadsBlock />
                     </Box>
                 }
+
+                <GeneralTextAboutArboniaProps />
             </Box >
         </Box>
 

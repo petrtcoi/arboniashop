@@ -26,6 +26,7 @@ import { ColorOrigin } from '../../models/colorOrigin.model'
 
 import * as styles from './../../styles/styles'
 import global from '../../variables/global'
+import GeneralTextAboutArboniaProps from '../../components/generalTextAboutArbonia'
 
 
 
@@ -167,7 +168,9 @@ const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, m
             <DownloadsBlock />
           </Box>
         }
+        <GeneralTextAboutArboniaProps />
       </Box >
+
     </Box>
   )
 }

@@ -52,7 +52,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
                     </Grid>
                     <Grid item >
                         <Hidden smDown>
-                            <Typography component="h1" sx={ { ...styles.smallTextBold } } textAlign="right">
+                            <Typography component="h2" sx={ { ...styles.smallTextBold } } textAlign="right">
                                 { header }
                             </Typography>
                             <Typography component="h2" sx={ { ...styles.smallTextThin } } textAlign="right">
@@ -64,7 +64,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
                 </Grid>
                 :
                 <>
-                    <Typography component="h1" sx={ { ...styles.smallTextBold } } textAlign="right">
+                    <Typography component="h2" sx={ { ...styles.smallTextBold } } textAlign="right">
                         { header }
                     </Typography>
                     <Typography component="h2" sx={ { ...styles.smallTextThin } } textAlign="right">

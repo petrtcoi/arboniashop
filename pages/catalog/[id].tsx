@@ -47,6 +47,7 @@ const SetPage: NextPage<SetPageProps> = ({ models, colors, connections, setId })
 
     return (
         <Box>
+    
             <PageTitle
                 header={ "Специализированный магазин Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }

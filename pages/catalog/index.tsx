@@ -43,7 +43,10 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
     return (
         <Box>
-            <PageHeader title={ "ArboniaShop: полный каталог радиаторов Arbonia" } />
+            <PageHeader
+                title={ "ArboniaShop: полный каталог радиаторов Arbonia" }
+                description={"Полный каталог радиаторов Arbonia. Специализированный магазин радиаторов Arbonia в России. Официальная гарантия 10 лет. Выгодные цены. Быстрая доставка со складов в Москве и Санкт-Петербурге. Изготовление радиаторов под заказ. Бесплатные консультации и расчет мощности."}
+            />
             <PageTitle
                 header={ "Магазин радиаторов Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }

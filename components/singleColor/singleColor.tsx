@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
+import Image from 'next/image'
 
 import { ColorOrigin } from '../../models/colorOrigin.model'
 
@@ -19,10 +20,11 @@ const SingleColor: React.FC<SingleColorProps> = ({ color, highlighted = false, h
             onClick={ () => handleClick(color.id ? color.id : 'none') }
         >
             <Box>
-                <img
+                <Image
                     src={ `/images/colors/${color.img}` }
-                    width="150px"
-                    height="100px"
+                    width={ 150 }
+                    height={ 100 }
+                    sizes={ "150px" }
                     style={ { borderRadius: "5px", border: "1px solid black" } }
                     alt={ `Цвет радиаторов Arbonia` }
                 />

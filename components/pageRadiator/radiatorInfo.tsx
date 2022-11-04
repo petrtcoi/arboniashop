@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Box, Grid, Typography } from '@mui/material'
-import Link from 'next/link'
+import Image from 'next/image'
 
 import AddToCartButton from '../addToCartButton/addToCartButton'
 
@@ -53,8 +53,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                 {/* ИЗОБРАЖЕНИЕ */ }
                 <Grid item xs={ 12 } sm={ 6 }>
                     <Box textAlign="center" marginTop="20px">
-                        <img
-                            width="90%"
+                        <Image
+                            width={ 500 }
+                            height={ 500 }
+                            sizes={ "500px" }
                             src={ imagePrimaryPath }
                             itemProp="image"
                             alt={ `Трубчатый радиатор ${model.name}` }

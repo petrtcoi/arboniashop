@@ -1,5 +1,6 @@
 import { Box, Grid } from '@mui/material'
 import React from 'react'
+import Image from 'next/image'
 
 import global from '../../variables/global'
 
@@ -29,10 +30,11 @@ const ImagesOtherList: React.FC<ImagesOtherListProps> = ({ imagesString }) => {
                             padding={ { sm: "20px", md: "0px" } }
                             textAlign={ { sm: "center", md: "left" } }
                         >
-                            <img
+                            <Image
                                 src={ imagePath }
-                                width="100%"
-                                height="auto"
+                                width={ 500 }
+                                height={ 500 }
+                                sizes={ "500px" }
                                 alt={ `Трубчатый радиатор Arbonia` }
                             />
                         </Box>

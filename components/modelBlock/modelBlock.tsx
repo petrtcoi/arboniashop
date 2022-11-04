@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Box, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import RadiatorList from '../radiatorList/radiatorList'
 
@@ -45,8 +46,10 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
             <Box marginTop="20px">
                 <Grid container spacing={ 2 } >
                     <Grid item xs={ 3 } sm={ 2 } lg={ 2 }>
-                        <img
-                            width="90%"
+                        <Image
+                            width={ 500 }
+                            height={ 500 }
+                            sizes="500px"
                             src={ imagePrimaryPath }
                             alt={ `Трубчатый радиатор ${model.name}` }
                         />

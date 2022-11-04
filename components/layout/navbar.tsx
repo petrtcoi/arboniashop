@@ -181,7 +181,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                                 <Image
                                     layout="fixed"
                                     src="/images/logo.png"
-                                    alt="Arbonia Columns column radiators"
+                                    alt="Логотип Arbonia"
                                     width={ 130 }
                                     height={ 50 }
                                     itemScope itemType="https://schema.org/Organization" itemProp={"logo"}

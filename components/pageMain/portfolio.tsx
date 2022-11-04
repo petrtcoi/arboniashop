@@ -34,7 +34,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                     <Box marginTop="20px">
                         <Image
                             src="/images/portfolio/0.jpg"
-                            width={200} height={200}
+                            width={ 200 } height={ 200 }
                             alt={ "Новая Голландия, Санкт-Петербург" }
                             sizes="200px"
                         />

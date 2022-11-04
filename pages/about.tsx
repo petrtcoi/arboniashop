@@ -28,7 +28,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
             />
             <PageHeader title={ "О магазине радиаторов Arbonia" } />
             <Hero
-                imgPath={ "/images/sliders/slide-0.jpeg" }
+                imgPath={ "/images/sliders/slide.jpeg" }
                 header={ "О магазине" }
             />
             <Box sx={ { ...global.pagePadding } } marginTop="20px">

@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       />
 
       <Hero
-        imgPath={ "/images/sliders/slide-0.jpeg" }
+        imgPath={ "/images/sliders/high.jpeg" }
         header={ "Магазин радиаторов Arbonia" }
         subheader={ "Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ." }
       />

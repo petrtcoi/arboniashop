@@ -26,7 +26,7 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
             />
             <PageHeader title={ "Доставка и оплата радиаторов Arbonia" } />
             <Hero
-                imgPath={ "/images/sliders/slide-0.jpeg" }
+                imgPath={ "/images/sliders/slide.jpeg" }
                 header={ "Доставка и оплата" }
                 subheader={ "Работаем с физическими и юридическими лицами. Склады в Москве и Санкт-Петербурге" }
             />

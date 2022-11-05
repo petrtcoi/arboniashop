@@ -52,7 +52,6 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
                 <meta name="theme-color" content="#ffffff" />
                 <meta name="yandex-verification" content="9ac1785e06142cc3" />
                 <link rel="canonical" href={`https://arboniashop.ru${router.asPath}`}/> 
-                <script src="//code-ya.jivosite.com/widget/y6IaQXr7wR" defer></script>
             </Head>
             <ThemeProvider theme={ theme }>
                 <Container style={ {

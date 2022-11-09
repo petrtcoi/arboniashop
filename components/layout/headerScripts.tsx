@@ -33,18 +33,18 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
             /> */}
             <Script
                 defer
-                strategy='worker'
+                strategy='lazyOnload'
                 src="//code-ya.jivosite.com/widget/y6IaQXr7wR"
             />
             <Script
                 defer
-                strategy='worker'
+                strategy='lazyOnload'
                 id={ 'google_analytics_1' }
                 src="https://www.googletagmanager.com/gtag/js?id=UA-59967703-20"
             />
             <Script
                 defer
-                strategy='worker'
+                strategy='lazyOnload'
                 id={ 'google_analytics_2' }
                 dangerouslySetInnerHTML={ {
                     __html: `

@@ -13,24 +13,6 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <YMInitializer accounts={ [89126477] } options={ { defer: true } } />
-            {/* <Script
-                async
-                id={ 'yandex_metrika' }
-                dangerouslySetInnerHTML={ {
-                    __html: `
-                    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-                    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-                 
-                    ym(89126477, "init", {
-                         clickmap:true,
-                         trackLinks:true,
-                         accurateTrackBounce:true,
-                         webvisor:true
-                    });
-                                        `,
-                } }
-            /> */}
             <Script
                 defer
                 strategy='lazyOnload'
@@ -56,9 +38,21 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
                     `,
                 } }
             />
+            <Script
+                id={ 'ucalc' }
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={ {
+                    __html: `
+                    var widgetOptions403860 = { bg_color: "transparent" }; 
+                    (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=403860&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();
+                    `
+                } }
+
+            />
 
         </>
     )
 }
 
 export default HeaderScripts
+

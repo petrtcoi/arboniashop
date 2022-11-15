@@ -5,7 +5,6 @@ import { Box, Typography, Grid } from '@mui/material'
 import PageHeader from '../components/pageHeader/pageHeader'
 import PageTitle from '../components/pageTitle/pageTitle'
 
-import useUcalc from '../hooks/useUcalc'
 import trackEvent from '../utils/trackEvent'
 
 import type { NextPage } from 'next'
@@ -21,7 +20,6 @@ const PageRequest: NextPage<PageRequestProps> = () => {
     const [show, setShow] = useState<boolean>(false)
     const toggleShow = () => setShow(!show)
 
-    useUcalc()
 
 
     return (

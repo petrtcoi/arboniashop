@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import Script from 'next/script'
+
 import { Box, Typography, Grid } from '@mui/material'
 
 import PageHeader from '../components/pageHeader/pageHeader'
@@ -24,6 +26,16 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 
     return (
         <Box>
+            <Script
+                id={ 'ucalc' }
+                strategy="lazyOnload"
+                dangerouslySetInnerHTML={ {
+                    __html: `
+                    var widgetOptions403860 = { bg_color: "transparent" }; 
+                    (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=403860&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();
+                    `
+                } }
+            />
             <PageTitle
                 header={ "Специализированный магазин Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }

@@ -38,7 +38,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
             />
             <Script
                 id={ 'ucalc' }
-                strategy="afterInteractive"
+                strategy="lazyOnload"
                 dangerouslySetInnerHTML={ {
                     __html: `
                     var widgetOptions403860 = { bg_color: "transparent" }; 

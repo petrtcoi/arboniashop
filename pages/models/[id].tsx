@@ -74,8 +74,8 @@ const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, m
       />
       <Box sx={ { ...global.pagePadding } }>
         <PageHeader
-          title={ metaTitle }
-          description={ `${metaTitle} купить в магазине ArboniaShop по выгодынм ценам. Официальная гарантия на радиаторы 10 лет. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге.` }
+          title={ `${metaTitle}. Купить по выгодной цене` }
+          description={ `${metaTitle} купить в магазине ArboniaShop по выгодынм ценам. Официальная гарантия. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Работаем с юридическими и физическими лицами.` }
         />
         <Box marginBottom={ "50px" } marginTop={ "20px" }>
           <Typography variant="h5" component="h1" gutterBottom textAlign="center" itemProp="name">

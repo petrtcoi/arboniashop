@@ -21,7 +21,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
     return (
         <Box>
-            <PageHeader title={ "Как подбирать радиаторы Arbonia по мощности" } />
+            <PageHeader
+                title={ "Как подбирать радиаторы Arbonia по мощности" }
+                description={ "Как правильно расчитать требуемую мощность радиатора Arbonia и не ошибиться. Разбираем подводные камни и описываем несколько вариантов подбора нужной модели трубчатого радиатора." }
+            />
             <PageTitle
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },
@@ -116,12 +119,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                     <Typography sx={ { ...styles.standardText } } marginY="20px">
                         В случае, когда радиаторы меняются с старом доме, вы можете исходить из той же логики, что и при замене радиаторов в новостройке: посмотреть, какие радиаторы стоят сейчас и подобрать новые аналогичной мощностью.
                         <Box marginTop="20px" />
-                        Например, если стоят старые чугунные радиаторы, то их довольно легко можно поменять на модель 
+                        Например, если стоят старые чугунные радиаторы, то их довольно легко можно поменять на модель
                         &#160;
                         <Link href="/models/3057-9016-1270-34">
                             <a style={ { textDecoration: "none" } }>
                                 <Typography sx={ { ...styles.standardTextRedLink } } component="span">
-                                Arbonia 3057 с боковым подключением
+                                    Arbonia 3057 с боковым подключением
                                 </Typography>
                             </a>
                         </Link>

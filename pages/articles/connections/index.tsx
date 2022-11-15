@@ -21,7 +21,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
     return (
         <Box >
-            <PageHeader title={ "Радиаторы Arbonia с боковым и нижним подключением" } />
+            <PageHeader
+                title={ "Радиаторы Arbonia с боковым и нижним подключением" }
+                description={ "В складскую программу входят радиаторы Arbonia с боковым и нижним   подключением. Разберем, чем они отличаются, в каких случаях вы должны предпочесть одно подключение другому . " }
+            />
             <PageTitle
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },

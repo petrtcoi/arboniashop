@@ -21,7 +21,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
     return (
         <Box >
-            <PageHeader title={ "Отличия 2-трубчатых радиаторов Arbonia от 3-трубчатых" } />
+            <PageHeader
+                title={ "Отличия 2-трубчатых радиаторов Arbonia от 3-трубчатых" }
+                description={ "Среди радиаторов Arbonia наибольшей популярностью пользуются 2-трубчатые и 3-трубчатые модели. Именно они поддерживаются в наличии на складах и именно они, скорее всего,идеально подойдут для вашего дома. Разбираемся, какие отличия есть между ними и как правильно сделать выбор." }
+            />
             <PageTitle
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },
@@ -96,7 +99,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
                 </Typography>
 
-                
+
                 <Typography marginTop="40px" variant="h5" component={ "h2" }>
                     Гигиена и уход
 

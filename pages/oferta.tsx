@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 
 import type { NextPage } from 'next'
+import PageHeader from '../components/pageHeader/pageHeader'
 
 import * as styles from '../styles/styles'
 import global from '../variables/global'
@@ -13,6 +14,7 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
 
     return (
         <Box sx={ { ...global.pagePadding } }>
+            <PageHeader title={ "Магазин радиаторов Arbonia. Публичная оферта" } />
             <Typography variant="h3" component="h1">
                 Публичная оферта
             </Typography>

@@ -14,17 +14,17 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
             </Head>
             <YMInitializer accounts={ [89126477] } options={ { defer: true } } />
             <Script
-                strategy='afterInteractive'
+                strategy='lazyOnload'
                 src="//code-ya.jivosite.com/widget/y6IaQXr7wR"
             />
             <Script
-                strategy='afterInteractive'
+                strategy='lazyOnload'
                 id={ 'google_analytics_1' }
                 src="https://www.googletagmanager.com/gtag/js?id=UA-59967703-20"
             />
             <Script
                 defer
-                strategy="afterInteractive"
+                strategy="lazyOnload"
                 id={ 'google_analytics_2' }
                 dangerouslySetInnerHTML={ {
                     __html: `

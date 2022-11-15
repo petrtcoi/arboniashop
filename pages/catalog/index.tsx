@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Box, Typography, Grid, Divider } from '@mui/material'
 
@@ -45,7 +46,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
         <Box>
             <PageHeader
                 title={ "ArboniaShop: полный каталог радиаторов Arbonia" }
-                description={"Полный каталог радиаторов Arbonia. Специализированный магазин радиаторов Arbonia в России. Официальная гарантия 10 лет. Выгодные цены. Быстрая доставка со складов в Москве и Санкт-Петербурге. Изготовление радиаторов под заказ. Бесплатные консультации и расчет мощности."}
+                description={ "Полный каталог радиаторов Arbonia. Специализированный магазин радиаторов Arbonia в России. Официальная гарантия 10 лет. Выгодные цены. Быстрая доставка со складов в Москве и Санкт-Петербурге. Изготовление радиаторов под заказ. Бесплатные консультации и расчет мощности." }
             />
             <PageTitle
                 header={ "Магазин радиаторов Arbonia в России" }
@@ -450,11 +451,15 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                             return (
                                 <Grid item xs={ 12 } sm={ 6 } md={ 4 } key={ group.title }>
                                     <Box textAlign="center" marginTop="20px">
-                                        <img
-                                            src={ `/images/schemas/${group.firstChar}.png` }
-                                            height="150px" width="auto"
-                                            alt={ `Радиаторы Arbonia` }
-                                        />
+                                        <div style={ { height: "150px" } }>
+                                            <Image
+                                                // layout='fill'
+                                                height={150}
+                                                width={120}
+                                                src={ `/images/schemas/${group.firstChar}.png` }
+                                                alt={ `Радиаторы Arbonia ${group.title}` }
+                                            />
+                                        </div>
                                         <Typography sx={ { ...styles.standardText } }>
                                             { group.title }
                                         </Typography>

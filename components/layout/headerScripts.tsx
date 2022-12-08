@@ -14,6 +14,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
             </Head>
             <YMInitializer accounts={ [89126477] } options={ { defer: true } } />
             <Script
+                id='jivo'
                 strategy='afterInteractive'
                 src="//code-ya.jivosite.com/widget/y6IaQXr7wR"
             />
@@ -34,6 +35,16 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
 
                     gtag('config', 'UA-59967703-20');
                     `,
+                } }
+            />
+            <Script
+                async
+                strategy="afterInteractive"
+                id="vk_pixel"
+                dangerouslySetInnerHTML={ {
+                    __html: `
+                    <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1622038-fv2ia"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1622038-fv2ia" style="position:fixed; left:-999px;" alt=""/></noscript>
+                    `
                 } }
             />
         </>

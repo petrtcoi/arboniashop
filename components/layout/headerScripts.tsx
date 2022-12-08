@@ -41,12 +41,9 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
                 async
                 strategy="afterInteractive"
                 id="vk_pixel"
-                dangerouslySetInnerHTML={ {
-                    __html: `
-                    function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1622038-fv2ia"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
-                    `
-                } }
-            />
+            >
+                {`function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1622038-fv2ia"),VK.Retargeting.Hit()},document.head.appendChild(t)}();`}
+            </Script>
         </>
     )
 }

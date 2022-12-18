@@ -27,7 +27,7 @@ const Footer: NextComponentType<FooterProps> = () => {
                     alt="Arbonia column radiators"
                     width={ "130px" }
                     height={ "50px" }
-                    itemProp={"logo"}
+                    itemProp={ "logo" }
                 />
             </Box>
             <Grid container spacing={ 2 }>
@@ -46,7 +46,7 @@ const Footer: NextComponentType<FooterProps> = () => {
                             <Link href={ `tel:${global.phone495}` }>
                                 <a
                                     style={ footerTextButton }
-                                    onClick={ () => trackEvent('phone_click') } 
+                                    onClick={ () => trackEvent('phone_click') }
                                 >
                                     <Typography
                                         sx={ footerTextButtonUnderline }
@@ -143,7 +143,7 @@ const Footer: NextComponentType<FooterProps> = () => {
                             </a>
                         </Link>
                     </Typography>
-                      <Typography sx={ footerTextButton }>
+                    <Typography sx={ footerTextButton }>
                         <Link href="/oferta">
                             <a style={ { textDecoration: "none" } }>
                                 <Typography sx={ footerTextButtonUnderline } component="span">

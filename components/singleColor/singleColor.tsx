@@ -16,10 +16,10 @@ type SingleColorProps = {
 const SingleColor: React.FC<SingleColorProps> = ({ color, highlighted = false, handleClick }) => {
     return (
         <Box
-            sx={ { ...styles.textLinkBlock, color: highlighted ? 'red' : '' } }
+            sx={ { ...styles.textLinkBlock, color: highlighted ? 'red' : '', justifyItems: "center" } }
             onClick={ () => handleClick(color.id ? color.id : 'none') }
         >
-            <Box>
+            <Box sx={{height: 100, width: 150, borderRadius: "5px", border: "1px solid black", display: "inline-block"}}>
                 <Image
                     src={ `/images/colors/${color.img}` }
                     width={ 150 }

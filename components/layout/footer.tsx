@@ -143,6 +143,24 @@ const Footer: NextComponentType<FooterProps> = () => {
                             </a>
                         </Link>
                     </Typography>
+                      <Typography sx={ footerTextButton }>
+                        <Link href="/oferta">
+                            <a style={ { textDecoration: "none" } }>
+                                <Typography sx={ footerTextButtonUnderline } component="span">
+                                    Публичная оферта
+                                </Typography>
+                            </a>
+                        </Link>
+                    </Typography>
+                    <Typography sx={ footerTextButton }>
+                        <Link href="/agreement">
+                            <a style={ { textDecoration: "none" } }>
+                                <Typography sx={ footerTextButtonUnderline } component="span">
+                                    Пользовательское соглашение
+                                </Typography>
+                            </a>
+                        </Link>
+                    </Typography>
                 </Grid>
                 <Grid item xs={ 12 } md={ 8 }>
                     <Typography sx={ footerText }>

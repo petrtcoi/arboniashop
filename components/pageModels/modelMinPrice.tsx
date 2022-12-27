@@ -32,7 +32,9 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ model, minPrice, setTabBu
                     Цена от:
                 </Typography>
                 <Typography display="inline" sx={ { fontSize: "30px", fontWeight: 600 } }>
-                    &nbsp;{ minPrice.toLocaleString() } руб
+                    <span itemProp="offers" itemScope itemType="https://schema.org/AggregateOffer">
+                        &nbsp;<span itemProp="lowPrice">{ minPrice.toLocaleString() }</span> <span itemProp="priceCurrency">руб</span>
+                    </span>
                 </Typography>
             </Box>
             <Box display="inline" >

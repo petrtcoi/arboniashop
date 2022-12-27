@@ -89,7 +89,12 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                     itemScope
                                     itemType="https://schema.org/Offer"
                                 >
-                                    { priceString } руб
+                                    <span itemProp="price">
+                                        { priceString }
+                                    </span>
+                                    <span itemProp="priceCurrency">
+                                        руб
+                                    </span>
                                 </Typography>
                             </Box>
                             <Box marginTop="20px">

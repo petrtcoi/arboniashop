@@ -34,6 +34,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
     return (
         <TableRow
             sx={ { "&:hover": { backgroundColor: '#eeeeee' } } }
+            itemProp="offers" itemScope itemType="https://schema.org/Offer"
         >
             <Hidden smDown>
                 <TableCell align="left" sx={ styles.smallText } >{ skuString }</TableCell>
@@ -71,7 +72,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
                 <Typography sx={ { ...styles.smallText, color: "gray", textDecoration: "line-through", fontWeight: 200 } } display="inline" marginRight="10px">
                     { oldPriceString }
                 </Typography>
-                { priceString }
+                <span itemProp="price">{ priceString }</span>
             </TableCell>
             <TableCell component="th" scope="row" sx={ styles.smallText } align="center">
                 <Box paddingLeft="20px">

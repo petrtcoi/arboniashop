@@ -35,6 +35,36 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             <Box sx={ { ...global.pagePadding } } marginTop="50px">
                 <Grid container spacing={ 5 }>
 
+                <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/calc-radiators-by-old-ones">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/articles/2022122701.jpg"
+                                            alt="3-трубчатый белый радиатор Arbonia"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                        Подбор радиаторов Arbonia на основе уже установленных радиаторов
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                        Правильно определить требуемую тепловую мощность радиаторов очень важно. Ведь недостаточная мощность приведет к тому, что в доме или квартире будет просто некомфортно жить в холодное время года. С другой стороны...
+                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
+
+
                     <Grid item md={ 6 }>
                         <Box>
                             <Link href="/articles/2-3-columns">

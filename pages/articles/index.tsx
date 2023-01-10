@@ -1,18 +1,18 @@
-import React from 'react'
-import { NextPage } from 'next'
-import { Box, Typography, Grid } from '@mui/material'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import { NextPage } from 'next';
+import { Box, Typography, Grid } from '@mui/material';
+import Link from 'next/link';
+import Image from 'next/image';
 
 
-import PageTitle from '../../components/pageTitle/pageTitle'
-import PageHeader from '../../components/pageHeader/pageHeader'
-import Hero from '../../components/hero/hero'
+import PageTitle from '../../components/pageTitle/pageTitle';
+import PageHeader from '../../components/pageHeader/pageHeader';
+import Hero from '../../components/hero/hero';
 
-import * as styles from '../../styles/styles'
-import global from '../../variables/global'
+import * as styles from '../../styles/styles';
+import global from '../../variables/global';
 
-type ArticlesListPageProps = {}
+type ArticlesListPageProps = {};
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 
@@ -35,7 +35,37 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             <Box sx={ { ...global.pagePadding } } marginTop="50px">
                 <Grid container spacing={ 5 }>
 
-                <Grid item md={ 6 }>
+
+                    <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/convection-radiaton-arbonia">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/articles/20230110_0.jpg"
+                                            alt="Вертикальный радиатор Arbonia"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                            Что такое конвекция и тепловое излучение радиатора
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                            Все радиаторы отопления, без исключения, обогревают помещение за счет двух физических явлений: конвекция воздуха и тепловое (инфракрасное) излучение. Разные конструкции и модели радиаторов обладают разным соотношением доли тепла, передаваемой тем или иным способом...
+                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
+
+                    <Grid item md={ 6 }>
                         <Box>
                             <Link href="/articles/calc-radiators-by-old-ones">
                                 <a style={ { textDecoration: 'none' } }>
@@ -50,12 +80,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                                     <Box textAlign={ "center" } marginTop="10px">
 
                                         <Typography sx={ { ...styles.standardTextRedLink } } component="span">
-                                        Подбор радиаторов Arbonia на основе уже установленных радиаторов
+                                            Подбор радиаторов Arbonia на основе уже установленных радиаторов
                                         </Typography>
                                     </Box>
                                     <Box textAlign={ "justify" } marginTop="10px">
                                         <Typography sx={ { ...styles.smallText } } component="span">
-                                        Правильно определить требуемую тепловую мощность радиаторов очень важно. Ведь недостаточная мощность приведет к тому, что в доме или квартире будет просто некомфортно жить в холодное время года. С другой стороны...
+                                            Правильно определить требуемую тепловую мощность радиаторов очень важно. Ведь недостаточная мощность приведет к тому, что в доме или квартире будет просто некомфортно жить в холодное время года. С другой стороны...
                                         </Typography>
                                     </Box>
                                 </a>
@@ -239,9 +269,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                 </Grid>
             </Box>
         </Box >
-    )
+    );
 
 
-}
+};
 
-export default ArticlesListPage
+export default ArticlesListPage;

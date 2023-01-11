@@ -30,13 +30,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB7LCQ7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`} }></noscript>
 
-            <Script
-                async
+<Script
+                id="Jivo"
                 strategy="afterInteractive"
-                id="vk_pixel"
-            >
-                {/* { `function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1622038-fv2ia"),VK.Retargeting.Hit()},document.head.appendChild(t)}();` } */ }
-            </Script>
+                src="//code-ya.jivosite.com/widget/y6IaQXr7wR"
+            />
         </>
     )
 }

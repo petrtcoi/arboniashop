@@ -36,6 +36,35 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                 <Grid container spacing={ 5 }>
 
 
+                <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/low-models">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/articles/20230126_0.jpg"
+                                            alt="Радиатор Arbonia 3030"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                        Невысокие модели радиаторов Arbonia в наличии
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                        Радиаторы небольшой высоты набирают всю большую популярность в нашей стране. Связано это с тем, что в современных домах все чаще устанавливают большие окна с низкими подоконниками, под которыми батарею стандартной высоты разместить уже не получится. Поэтому, радиаторы Arbonia высотой до 40 см входят в нашу складскую программу. Ведь дома с большими окнами - это чаще всего дома бизнес- или премиум-класса...
+                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
+
                     <Grid item md={ 6 }>
                         <Box>
                             <Link href="/articles/convection-radiaton-arbonia">

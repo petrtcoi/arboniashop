@@ -12,7 +12,7 @@ import Hero from '../components/hero/hero';
 const Home: NextPage = () => {
   return (
     <Box  >
-      <PageHeader title={ "Купить радиаторы Arbonia по выгодным ценам. Доставка по России. Гарантия 10 лет" } />
+      <PageHeader title={ "Радиаторы Arbonia купить с доставкой по Москве, Санкт-Петербургу и по России в магазине ArboniaShop" } />
       <PageTitle
         header={ "Специализированный магазин Arbonia в России" }
         subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }

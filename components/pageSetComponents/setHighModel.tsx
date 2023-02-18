@@ -15,7 +15,7 @@ import global from '../../variables/global';
 const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
     return (
         <Box>
-            <PageHeader title={ "Высокие Arbonia в наличии. Купить по выгодным ценам. Официальная гарантия 10 лет" } />
+            <PageHeader title={ "Вертикальные Arbonia 2180 и 3180 купить в Москве, Петербурге и с доставкой по России в магазине ArboniaShop.ru" } />
             <Hero
                 imgPath={ "/images/sliders/high.jpeg" }
                 header={ "Вертикальные модели Arbonia" }

@@ -1,20 +1,20 @@
-import React from 'react'
-import { NextPage } from 'next'
-import { Box, Typography } from '@mui/material'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import { NextPage } from 'next';
+import { Box, Typography } from '@mui/material';
+import Link from 'next/link';
+import Image from 'next/image';
 
-import PageTitle from '../../../components/pageTitle/pageTitle'
-import PageHeader from '../../../components/pageHeader/pageHeader'
-import Hero from '../../../components/hero/hero'
+import PageTitle from '../../../components/pageTitle/pageTitle';
+import PageHeader from '../../../components/pageHeader/pageHeader';
+import Hero from '../../../components/hero/hero';
 
-import * as styles from '../../../styles/styles'
-import global from '../../../variables/global'
-
-
+import * as styles from '../../../styles/styles';
+import global from '../../../variables/global';
 
 
-type ArticlePageProps = {}
+
+
+type ArticlePageProps = {};
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 
@@ -22,7 +22,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
     return (
         <Box>
             <PageHeader
-                title={ "Преимущества и недостатки трубчатых радиаторов Arbonia" }
+                title={ "Трубчатые радиаторы Arbonia: преимущества и недостатки" }
                 description={ "Трубчатые радиаторы Arbonia - один из признанных лидеров европейского и россйиского рынка, когда речь заходит о дизайнерских отопительных приборах. Разбираем, чем они так хороши и какие недостатки у них все же имеются." }
             />
             <PageTitle
@@ -89,7 +89,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                 </Box>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default ArticlePage
+export default ArticlePage;

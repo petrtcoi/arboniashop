@@ -1,20 +1,20 @@
-import React from 'react'
-import { NextPage } from 'next'
-import { Box, Typography } from '@mui/material'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import { NextPage } from 'next';
+import { Box, Typography } from '@mui/material';
+import Link from 'next/link';
+import Image from 'next/image';
 
-import PageTitle from '../../../components/pageTitle/pageTitle'
-import PageHeader from '../../../components/pageHeader/pageHeader'
-import Hero from '../../../components/hero/hero'
+import PageTitle from '../../../components/pageTitle/pageTitle';
+import PageHeader from '../../../components/pageHeader/pageHeader';
+import Hero from '../../../components/hero/hero';
 
-import * as styles from '../../../styles/styles'
-import global from '../../../variables/global'
-
-
+import * as styles from '../../../styles/styles';
+import global from '../../../variables/global';
 
 
-type ArticlePageProps = {}
+
+
+type ArticlePageProps = {};
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 
@@ -22,7 +22,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
     return (
         <Box >
             <PageHeader
-                title={ "Отличия 2-трубчатых радиаторов Arbonia от 3-трубчатых" }
+                title={ "Радиаторы Arbonia 2-трубчатые и 3-трубчатые: в чем отличия моделей" }
                 description={ "Среди радиаторов Arbonia наибольшей популярностью пользуются 2-трубчатые и 3-трубчатые модели. Именно они поддерживаются в наличии на складах и именно они, скорее всего,идеально подойдут для вашего дома. Разбираемся, какие отличия есть между ними и как правильно сделать выбор." }
             />
             <PageTitle
@@ -113,7 +113,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default ArticlePage
+export default ArticlePage;

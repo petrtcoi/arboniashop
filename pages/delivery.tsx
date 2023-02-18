@@ -17,7 +17,7 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
     return (
         <Box>
             <PageTitle
-                header={ "Доставка радиаторов Arbonia по России. Купить по выгодным ценам" }
+                header={ "Доставка радиаторов Arbonia по Москве, Петербургу и России. Купить по выгодным ценам в магазине ArboniaShop" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },

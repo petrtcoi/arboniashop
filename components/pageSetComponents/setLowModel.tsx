@@ -15,7 +15,7 @@ import global from '../../variables/global';
 const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
     return (
         <Box>
-            <PageHeader title={ "Невысокие Arbonia в наличии. Купить по выгодным ценам. Официальная гарантия 10 лет" } />
+            <PageHeader title={ "Невысокие Arbonia в наличии купить по выгодным ценам в Москве, Санкт-Петербурге и с доставкой по России в магазине ArboniaShop" } />
             <Hero
                 imgPath={ "/images/sliders/slide.jpeg" }
                 header={ "Низкие модели Arbonia" }

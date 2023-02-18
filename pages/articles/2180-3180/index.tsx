@@ -1,29 +1,29 @@
-import React from 'react'
-import { NextPage } from 'next'
-import { Box, Typography } from '@mui/material'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import { NextPage } from 'next';
+import { Box, Typography } from '@mui/material';
+import Link from 'next/link';
+import Image from 'next/image';
 
-import PageTitle from '../../../components/pageTitle/pageTitle'
-import PageHeader from '../../../components/pageHeader/pageHeader'
-import Hero from '../../../components/hero/hero'
+import PageTitle from '../../../components/pageTitle/pageTitle';
+import PageHeader from '../../../components/pageHeader/pageHeader';
+import Hero from '../../../components/hero/hero';
 
-import * as styles from '../../../styles/styles'
-import global from '../../../variables/global'
-
-
+import * as styles from '../../../styles/styles';
+import global from '../../../variables/global';
 
 
-type ArticlePageProps = {}
+
+
+type ArticlePageProps = {};
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 
 
     return (
         <Box >
-            <PageHeader 
-            title={ "Вертикальные радиаторы Arbonia 2180 и 3180" } 
-            description={"Радиаторы Arbonia 2180 и 3180 - являются стандартом, если речь идет об установке вертикальных дизайн-радиаторов. Они не только здорово выглядят, но также обладают и высокой теплоотдачей. Что выбрать: 2180 или 3180? Разбираемся в этой статье."}
+            <PageHeader
+                title={ "Вертикальные радиаторы Arbonia 2180 и 3180: когда лучше применять и чем отличаются друг от друга" }
+                description={ "Радиаторы Arbonia 2180 и 3180 - являются стандартом, если речь идет об установке вертикальных дизайн-радиаторов. Они не только здорово выглядят, но также обладают и высокой теплоотдачей. Что выбрать: 2180 или 3180? Разбираемся в этой статье." }
             />
             <PageTitle
                 breadcrumbs={ [
@@ -114,7 +114,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default ArticlePage
+export default ArticlePage;

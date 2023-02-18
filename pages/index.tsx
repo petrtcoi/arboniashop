@@ -1,18 +1,18 @@
-import type { NextPage } from 'next'
-import { Box } from '@mui/material'
+import type { NextPage } from 'next';
+import { Box } from '@mui/material';
 
-import PageHeader from '../components/pageHeader/pageHeader'
-import PageTitle from '../components/pageTitle/pageTitle'
-import Advantages from '../components/pageMain/advantages'
-import WhyMouseLite from '../components/pageMain/whyMouseLite'
-import Portfolio from '../components/pageMain/portfolio'
-import Hero from '../components/hero/hero'
+import PageHeader from '../components/pageHeader/pageHeader';
+import PageTitle from '../components/pageTitle/pageTitle';
+import Advantages from '../components/pageMain/advantages';
+import WhyMouseLite from '../components/pageMain/whyMouseLite';
+import Portfolio from '../components/pageMain/portfolio';
+import Hero from '../components/hero/hero';
 
 
 const Home: NextPage = () => {
   return (
     <Box  >
-      <PageHeader title={ "ArboniaShop: специализированный магазин радиаторов Arbonia" } />
+      <PageHeader title={ "Купить радиаторы Arbonia по выгодным ценам. Доставка по России. Гарантия 10 лет" } />
       <PageTitle
         header={ "Специализированный магазин Arbonia в России" }
         subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
@@ -37,9 +37,9 @@ const Home: NextPage = () => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
 
 
-export default Home
+export default Home;

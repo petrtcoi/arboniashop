@@ -1,23 +1,23 @@
-import type { NextPage } from 'next'
-import { Box, Typography, Grid, Divider } from '@mui/material'
+import type { NextPage } from 'next';
+import { Box, Typography, Grid, Divider } from '@mui/material';
 
-import PageHeader from '../components/pageHeader/pageHeader'
-import PageTitle from '../components/pageTitle/pageTitle'
-import Hero from '../components/hero/hero'
+import PageHeader from '../components/pageHeader/pageHeader';
+import PageTitle from '../components/pageTitle/pageTitle';
+import Hero from '../components/hero/hero';
 
-import * as styles from '../styles/styles'
-import global from '../variables/global'
+import * as styles from '../styles/styles';
+import global from '../variables/global';
 
 
 
-type PageDeliveryProps = {}
+type PageDeliveryProps = {};
 
 const PageDelivery: NextPage<PageDeliveryProps> = () => {
 
     return (
         <Box>
             <PageTitle
-                header={ "Специализированный магазин Arbonia в России" }
+                header={ "Доставка радиаторов Arbonia по России. Купить по выгодным ценам" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
                 breadcrumbs={ [
                     { title: "Главная", link: "/" },
@@ -152,14 +152,14 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                                 </ul>
                             </p>
                         </Typography>
-                
+
                     </Box>
                 </Box>
             </Box>
         </Box>
-    )
+    );
 
-}
+};
 
 
-export default PageDelivery
+export default PageDelivery;

@@ -1,21 +1,21 @@
-import React from 'react'
-import { Box, Typography } from '@mui/material'
+import React from 'react';
+import { Box, Typography } from '@mui/material';
 
-import ModelBlock from '../modelBlock/modelBlock'
-import PageHeader from '../../components/pageHeader/pageHeader'
-import Hero from '../../components/hero/hero'
+import ModelBlock from '../modelBlock/modelBlock';
+import PageHeader from '../../components/pageHeader/pageHeader';
+import Hero from '../../components/hero/hero';
 
 
-import { SetComponentProps } from '../../models/setComponentProps.model'
+import { SetComponentProps } from '../../models/setComponentProps.model';
 
-import * as styles from '../../styles/styles'
-import global from '../../variables/global'
+import * as styles from '../../styles/styles';
+import global from '../../variables/global';
 
 
 const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
     return (
         <Box>
-            <PageHeader title={ "ArboniaShop: вертикальные радиаторы Arbonia (склад)" } />
+            <PageHeader title={ "Высокие Arbonia в наличии. Купить по выгодным ценам. Официальная гарантия 10 лет" } />
             <Hero
                 imgPath={ "/images/sliders/high.jpeg" }
                 header={ "Вертикальные модели Arbonia" }
@@ -35,7 +35,7 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
                 </Box>
 
 
-            
+
 
                 {/* 2180 белый*/ }
                 <ModelBlock
@@ -150,7 +150,7 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
             </Box>
 
         </Box>
-    )
-}
+    );
+};
 
-export default SetHighModel
+export default SetHighModel;

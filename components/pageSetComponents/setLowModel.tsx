@@ -1,21 +1,21 @@
-import React from 'react'
-import { Box, Typography } from '@mui/material'
+import React from 'react';
+import { Box, Typography } from '@mui/material';
 
-import ModelBlock from '../modelBlock/modelBlock'
-import PageHeader from '../../components/pageHeader/pageHeader'
-import Hero from '../../components/hero/hero'
+import ModelBlock from '../modelBlock/modelBlock';
+import PageHeader from '../../components/pageHeader/pageHeader';
+import Hero from '../../components/hero/hero';
 
 
-import { SetComponentProps } from '../../models/setComponentProps.model'
+import { SetComponentProps } from '../../models/setComponentProps.model';
 
-import * as styles from '../../styles/styles'
-import global from '../../variables/global'
+import * as styles from '../../styles/styles';
+import global from '../../variables/global';
 
 
 const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
     return (
         <Box>
-            <PageHeader title={ "ArboniaShop: низкие радиаторы Arbonia (склад)" } />
+            <PageHeader title={ "Невысокие Arbonia в наличии. Купить по выгодным ценам. Официальная гарантия 10 лет" } />
             <Hero
                 imgPath={ "/images/sliders/slide.jpeg" }
                 header={ "Низкие модели Arbonia" }
@@ -35,7 +35,7 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
                 </Box>
 
 
-            
+
 
                 {/* 2030 белый*/ }
                 <ModelBlock
@@ -46,7 +46,7 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
                     color={ colors.find(x => x.id === '9016') || colors[0] }
                     connection={ connections.find(x => x.id === '12') || connections[0] }
                 />
-       
+
 
                 {/* 3030 RAL 9016*/ }
                 <ModelBlock
@@ -87,7 +87,7 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
             </Box>
 
         </Box>
-    )
-}
+    );
+};
 
-export default SetLowModel
+export default SetLowModel;

@@ -1,26 +1,25 @@
-import { NextPage } from 'next'
-import { Box } from '@mui/material'
+import { NextPage } from 'next';
+import { Box } from '@mui/material';
 
-import PageTitle from '../../components/pageTitle/pageTitle'
+import PageTitle from '../../components/pageTitle/pageTitle';
 
-import getColorsData from '../../api_utils/getColorsData'
-import getConnectionsData from '../../api_utils/getConnectionsData'
-import getModelsData from '../../api_utils/getModelsData'
-
-
-import SetLowModel from '../../components/pageSetComponents/setLowModel'
-import SetHighModel from '../../components/pageSetComponents/setHighModel'
+import getColorsData from '../../api_utils/getColorsData';
+import getConnectionsData from '../../api_utils/getConnectionsData';
+import getModelsData from '../../api_utils/getModelsData';
 
 
-import { ColorOrigin } from '../../models/colorOrigin.model'
-import { ConnectionOrigin } from '../../models/connectionOrigin.model'
-import { ModelOrigin } from '../../models/modelOrigin.model'
-import { SetComponentProps } from '../../models/setComponentProps.model'
+import SetLowModel from '../../components/pageSetComponents/setLowModel';
+import SetHighModel from '../../components/pageSetComponents/setHighModel';
+
+import { ColorOrigin } from '../../models/colorOrigin.model';
+import { ConnectionOrigin } from '../../models/connectionOrigin.model';
+import { ModelOrigin } from '../../models/modelOrigin.model';
+import { SetComponentProps } from '../../models/setComponentProps.model';
 
 
 
-const SETS_MAP: { [key: string]: { title: string, component: React.FC<SetComponentProps> } } = {
-  
+const SETS_MAP: { [key: string]: { title: string, component: React.FC<SetComponentProps>; }; } = {
+
     'low-models': {
         title: 'Нзкие радиаторы ArboniaColumn',
         component: SetLowModel
@@ -29,25 +28,24 @@ const SETS_MAP: { [key: string]: { title: string, component: React.FC<SetCompone
         title: 'Высокие радиаторы ArboniaColumn',
         component: SetHighModel
     },
-}
+};
 
 
 type SetPageProps = {
-    models: ModelOrigin[]
-    colors: ColorOrigin[]
-    connections: ConnectionOrigin[]
-    setId: string
-}
+    models: ModelOrigin[];
+    colors: ColorOrigin[];
+    connections: ConnectionOrigin[];
+    setId: string;
+};
 
 const SetPage: NextPage<SetPageProps> = ({ models, colors, connections, setId }) => {
 
-    const Component: React.FC<SetComponentProps> | null = SETS_MAP[setId] ? SETS_MAP[setId].component : null
+    const Component: React.FC<SetComponentProps> | null = SETS_MAP[setId] ? SETS_MAP[setId].component : null;
 
-    if (Component === null) return <></>
+    if (Component === null) return <></>;
 
     return (
         <Box>
-    
             <PageTitle
                 header={ "Специализированный магазин Arbonia в России" }
                 subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
@@ -65,21 +63,21 @@ const SetPage: NextPage<SetPageProps> = ({ models, colors, connections, setId })
                 />
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default SetPage
-
-
+export default SetPage;
 
 
 
-export async function getStaticProps(context: { params: { id: string } }) {
-    const setId = context.params.id
 
-    const models: ModelOrigin[] = await getModelsData()
-    const colors: ColorOrigin[] = await getColorsData()
-    const connections: ConnectionOrigin[] = await getConnectionsData()
+
+export async function getStaticProps(context: { params: { id: string; }; }) {
+    const setId = context.params.id;
+
+    const models: ModelOrigin[] = await getModelsData();
+    const colors: ColorOrigin[] = await getColorsData();
+    const connections: ConnectionOrigin[] = await getConnectionsData();
 
 
     return {
@@ -89,14 +87,14 @@ export async function getStaticProps(context: { params: { id: string } }) {
             connections,
             setId
         }
-    }
+    };
 }
 
 export async function getStaticPaths() {
     return {
-        paths: Object.keys(SETS_MAP).map(setId => { return { params: { id: setId } } }),
+        paths: Object.keys(SETS_MAP).map(setId => { return { params: { id: setId } }; }),
         fallback: false // See the "fallback" section below
-    }
+    };
 }
 
 

@@ -36,7 +36,37 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                 <Grid container spacing={ 5 }>
 
 
-                <Grid item md={ 6 }>
+                    <Grid item md={ 6 }>
+                        <Box>
+                            <Link href="/articles/arbonia-3057">
+                                <a style={ { textDecoration: 'none' } }>
+                                    <Box textAlign={ "center" }>
+                                        <Image
+                                            src="/images/articles/20230222.jpg"
+                                            alt="Радиатор Arbonia 3057"
+                                            width={ 300 }
+                                            height={ 300 }
+                                        />
+                                    </Box>
+                                    <Box textAlign={ "center" } marginTop="10px">
+
+                                        <Typography sx={ { ...styles.standardTextRedLink } } component="span">
+                                            Замена чугунных радиаторов на Arbonia 3057
+                                        </Typography>
+                                    </Box>
+                                    <Box textAlign={ "justify" } marginTop="10px">
+                                        <Typography sx={ { ...styles.smallText } } component="span">
+                                            Отопление является одним из важнейших аспектов комфорта в жилом помещении. Чтобы система работала надежно и эффективно, важно выбрать правильное оборудование и правильно его установить. В данной статье мы рассмотрим особенности установки и замены трубчатых радиаторов Arbonia вместо старых чугунных или алюминиевых радиаторов...
+                                        </Typography>
+                                    </Box>
+                                </a>
+                            </Link>
+                        </Box>
+                    </Grid>
+
+
+
+                    <Grid item md={ 6 }>
                         <Box>
                             <Link href="/articles/low-models">
                                 <a style={ { textDecoration: 'none' } }>
@@ -51,12 +81,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                                     <Box textAlign={ "center" } marginTop="10px">
 
                                         <Typography sx={ { ...styles.standardTextRedLink } } component="span">
-                                        Невысокие модели радиаторов Arbonia в наличии
+                                            Невысокие модели радиаторов Arbonia в наличии
                                         </Typography>
                                     </Box>
                                     <Box textAlign={ "justify" } marginTop="10px">
                                         <Typography sx={ { ...styles.smallText } } component="span">
-                                        Радиаторы небольшой высоты набирают всю большую популярность в нашей стране. Связано это с тем, что в современных домах все чаще устанавливают большие окна с низкими подоконниками, под которыми батарею стандартной высоты разместить уже не получится. Поэтому, радиаторы Arbonia высотой до 40 см входят в нашу складскую программу. Ведь дома с большими окнами - это чаще всего дома бизнес- или премиум-класса...
+                                            Радиаторы небольшой высоты набирают всю большую популярность в нашей стране. Связано это с тем, что в современных домах все чаще устанавливают большие окна с низкими подоконниками, под которыми батарею стандартной высоты разместить уже не получится. Поэтому, радиаторы Arbonia высотой до 40 см входят в нашу складскую программу. Ведь дома с большими окнами - это чаще всего дома бизнес- или премиум-класса...
                                         </Typography>
                                     </Box>
                                 </a>

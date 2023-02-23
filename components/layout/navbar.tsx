@@ -1,50 +1,50 @@
-import { NextComponentType } from "next"
-import { useState } from "react"
+import { NextComponentType } from "next";
+import { useState } from "react";
 
-import Image from 'next/image'
-import Link from "next/link"
+import Image from 'next/image';
+import Link from "next/link";
 
-import { AppBar, Box, IconButton, Toolbar, Typography, Hidden } from "@mui/material"
-import Container from '@mui/material/Container'
-import MenuItem from '@mui/material/MenuItem'
-import MenuIcon from '@mui/icons-material/Menu'
-import Menu from '@mui/material/Menu'
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
+import { AppBar, Box, IconButton, Toolbar, Typography, Hidden } from "@mui/material";
+import Container from '@mui/material/Container';
+import MenuItem from '@mui/material/MenuItem';
+import MenuIcon from '@mui/icons-material/Menu';
+import Menu from '@mui/material/Menu';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
-import trackEvent from '../../utils/trackEvent'
-
-
-import global from './../../variables/global'
-import * as styles from '../../styles/styles'
-import { menuButton, menuButtonDropDown } from "../../styles/stylesNavbarFooter"
+import trackEvent from '../../utils/trackEvent';
 
 
-
-const pages: string[] = global.pages
+import global from './../../variables/global';
+import * as styles from '../../styles/styles';
+import { menuButton, menuButtonDropDown } from "../../styles/stylesNavbarFooter";
 
 
 
+const pages: string[] = global.pages;
 
-type NavbarProps = {}
+
+
+
+type NavbarProps = {};
 
 const Navbar: NextComponentType<NavbarProps> = () => {
 
-    const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null)
+    const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElNav(event.currentTarget)
-    }
+        setAnchorElNav(event.currentTarget);
+    };
     const handleCloseNavMenu = () => {
-        setAnchorElNav(null)
-    }
-    const myLoader = ({ src, width, quality }: { src: any, width: number, quality: number }) => {
-        return `{src}?w=${width}&q=${quality || 75}`
-    }
+        setAnchorElNav(null);
+    };
+    const myLoader = ({ src, width, quality }: { src: any, width: number, quality: number; }) => {
+        return `{src}?w=${width}&q=${quality || 75}`;
+    };
 
 
     return (
         <AppBar position="static" color="transparent" style={ { borderBottom: "1px solid #e5e5e5", boxShadow: "none" } }>
             <Container maxWidth="xl">
-                <Toolbar disableGutters itemScope itemType="https://schema.org/Organization">
+                <Toolbar disableGutters>
                     <Box sx={ { flexGrow: 1, display: { xs: 'flex', md: 'none', } } }>
                         <IconButton
                             size="large"
@@ -177,14 +177,13 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                     </Box>
                     <Box>
                         <Link href="/">
-                            <a itemProp={"url"}>
+                            <a itemProp={ "url" }>
                                 <Image
                                     layout="fixed"
                                     src="/images/logo.png"
                                     alt="Логотип Arbonia"
                                     width={ 130 }
                                     height={ 50 }
-                                    itemScope itemType="https://schema.org/Organization" itemProp={"logo"}
                                 />
                             </a>
                         </Link>
@@ -192,7 +191,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                 </Toolbar>
             </Container>
         </AppBar >
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

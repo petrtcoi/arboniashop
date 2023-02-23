@@ -1,26 +1,29 @@
-import { Box, Grid, Typography, Divider } from '@mui/material'
-import { NextComponentType } from "next"
+import { Box, Grid, Typography, Divider } from '@mui/material';
+import { NextComponentType } from "next";
 
-import Image from 'next/image'
-import Link from "next/link"
+import Image from 'next/image';
+import Link from "next/link";
 
-import trackEvent from '../../utils/trackEvent'
+import trackEvent from '../../utils/trackEvent';
 
-import global from './../../variables/global'
-import { footerText, footerTextBold, footerTextButton, footerTextButtonUnderline } from '../../styles/stylesNavbarFooter'
+import global from './../../variables/global';
+import { footerText, footerTextBold, footerTextButton, footerTextButtonUnderline } from '../../styles/stylesNavbarFooter';
 
 
-const pages: string[] = global.pages
+const pages: string[] = global.pages;
 
-type FooterProps = {}
+type FooterProps = {};
 
 
 const Footer: NextComponentType<FooterProps> = () => {
 
 
     return (
-        <Box marginX={ { xs: "0px", md: "20px" } } paddingX={ { xs: "15px", md: "30px" } } paddingY={ "30px" } bgcolor={ "#E6E6E6" }>
-            <Box itemScope itemType="https://schema.org/Organization">
+        <Box
+            marginX={ { xs: "0px", md: "20px" } } paddingX={ { xs: "15px", md: "30px" } } paddingY={ "30px" } bgcolor={ "#E6E6E6" }
+            itemScope itemType="https://schema.org/Organization"
+        >
+            <Box >
                 <Image
                     layout="fixed"
                     src="/images/logo.png"
@@ -41,7 +44,7 @@ const Footer: NextComponentType<FooterProps> = () => {
                             трубчатых радиаторов Arbonia в России
                         </Typography>
                     </Box>
-                    <Box marginTop={ "10px" } itemScope itemType="https://schema.org/Organization">
+                    <Box marginTop={ "10px" } >
                         <Typography sx={ footerText }>
                             <Link href={ `tel:${global.phone495}` }>
                                 <a
@@ -114,11 +117,11 @@ const Footer: NextComponentType<FooterProps> = () => {
                     )) }
                 </Grid>
                 <Grid item xs={ 12 } md={ 4 }>
-                    <Typography sx={ footerText } itemScope itemType="https://schema.org/Organization" itemProp="name">
+                    <Typography sx={ footerText } itemProp="name">
                         ООО &quot;Маус Лайт&quot;
                     </Typography>
-                    <Typography sx={ footerText }>
-                        Центральный офис: Санкт-Петербург, наб. Обводного канала, 118АХ, офис 438
+                    <Typography sx={ footerText } itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                        Центральный офис: <span itemProp="addressLocality">Санкт-Петербург</span>, <span itemProp="streetAddress">наб. Обводного канала, 118АХ, офис 438</span>
                     </Typography>
                     <Typography sx={ footerText }>
                         &zwj;ИНН 784&zwj;1407862 / КПП 783901001
@@ -169,8 +172,8 @@ const Footer: NextComponentType<FooterProps> = () => {
                 </Grid>
             </Grid>
         </Box>
-    )
+    );
 
-}
+};
 
-export default Footer
+export default Footer;

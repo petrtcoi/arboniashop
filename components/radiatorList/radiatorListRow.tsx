@@ -1,16 +1,16 @@
-import { NextPage } from 'next'
-import { TableCell, TableRow, Hidden, Typography, Box } from "@mui/material"
-import Link from 'next/link'
+import { NextPage } from 'next';
+import { TableCell, TableRow, Hidden, Typography, Box } from "@mui/material";
+import Link from 'next/link';
 
-import AddToCartButton from '../addToCartButton/addToCartButton'
+import AddToCartButton from '../addToCartButton/addToCartButton';
 
-import getRadiatorData from '../../utils/getRadiatorData'
+import getRadiatorData from '../../utils/getRadiatorData';
 
-import { ModelOrigin } from "../../models/modelOrigin.model"
-import { ConnectionOrigin } from '../../models/connectionOrigin.model'
-import { ColorOrigin } from '../../models/colorOrigin.model'
+import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ConnectionOrigin } from '../../models/connectionOrigin.model';
+import { ColorOrigin } from '../../models/colorOrigin.model';
 
-import * as styles from '../../styles/styles'
+import * as styles from '../../styles/styles';
 
 
 
@@ -18,17 +18,17 @@ import * as styles from '../../styles/styles'
 
 
 type RadiatorListRowProps = {
-    model: ModelOrigin
-    color: ColorOrigin
-    connection: ConnectionOrigin
-    sectionQnty: number
-    price: number
-}
+    model: ModelOrigin;
+    color: ColorOrigin;
+    connection: ConnectionOrigin;
+    sectionQnty: number;
+    price: number;
+};
 
 const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connection, sectionQnty, price }) => {
 
 
-    const { titleString, skuString, lengthString, dt60String, priceString, oldPriceString } = getRadiatorData({ model, color, connection, sectionQnty, price })
+    const { titleString, skuString, lengthString, dt60String, priceString, oldPriceString } = getRadiatorData({ model, color, connection, sectionQnty, price });
 
 
     return (
@@ -72,7 +72,10 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
                 <Typography sx={ { ...styles.smallText, color: "gray", textDecoration: "line-through", fontWeight: 200 } } display="inline" marginRight="10px">
                     { oldPriceString }
                 </Typography>
-                <span itemProp="price">{ priceString }</span>
+                <span itemProp="price">
+                    <meta itemProp="priceCurrency" content="RUB" />
+                    { priceString }
+                </span>
             </TableCell>
             <TableCell component="th" scope="row" sx={ styles.smallText } align="center">
                 <Box paddingLeft="20px">
@@ -89,7 +92,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
                 </Box>
             </TableCell>
         </TableRow>
-    )
-}
+    );
+};
 
-export default RadiatorListRow
+export default RadiatorListRow;

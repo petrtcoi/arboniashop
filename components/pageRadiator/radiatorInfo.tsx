@@ -1,20 +1,20 @@
-import React, { useContext } from 'react'
-import { Box, Grid, Typography } from '@mui/material'
-import Image from 'next/image'
+import React, { useContext } from 'react';
+import { Box, Grid, Typography } from '@mui/material';
+import Image from 'next/image';
 
-import AddToCartButton from '../addToCartButton/addToCartButton'
+import AddToCartButton from '../addToCartButton/addToCartButton';
 
-import { ModelOrigin } from '../../models/modelOrigin.model'
-import { ConnectionOrigin } from '../../models/connectionOrigin.model'
-import { ColorOrigin } from '../../models/colorOrigin.model'
+import { ModelOrigin } from '../../models/modelOrigin.model';
+import { ConnectionOrigin } from '../../models/connectionOrigin.model';
+import { ColorOrigin } from '../../models/colorOrigin.model';
 
-import { CurrencyContext } from '../../contexts/currencyContext'
+import { CurrencyContext } from '../../contexts/currencyContext';
 
-import getRadiatorData from '../../utils/getRadiatorData'
-import calcRadiatorCost from '../../utils/calcRadiatorCost'
+import getRadiatorData from '../../utils/getRadiatorData';
+import calcRadiatorCost from '../../utils/calcRadiatorCost';
 
-import global from '../../variables/global'
-import * as styles from '../../styles/styles'
+import global from '../../variables/global';
+import * as styles from '../../styles/styles';
 
 // import FeaturesTable from './featuresTable'
 
@@ -22,17 +22,17 @@ import * as styles from '../../styles/styles'
 
 
 type ModelMainSectionProps = {
-    model: ModelOrigin
-    color: ColorOrigin
-    connection: ConnectionOrigin
-    sectionQnty: number
-}
+    model: ModelOrigin;
+    color: ColorOrigin;
+    connection: ConnectionOrigin;
+    sectionQnty: number;
+};
 
 
 const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connection, sectionQnty }) => {
 
-    const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
-    const currencyContext = useContext(CurrencyContext)
+    const imagePrimaryPath = global.imagesModelPath + model.imagePrimary;
+    const currencyContext = useContext(CurrencyContext);
 
     const { price } = calcRadiatorCost({
         model,
@@ -40,8 +40,8 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
         connection,
         sectionQnty,
         currencyRate: currencyContext.rateEuro
-    })
-    const { skuString, lengthString, dt50String, dt60String, priceString, oldPriceString } = getRadiatorData({ model, color, connection, sectionQnty, price: price.noConsole })
+    });
+    const { skuString, lengthString, dt50String, dt60String, priceString, oldPriceString } = getRadiatorData({ model, color, connection, sectionQnty, price: price.noConsole });
 
 
 
@@ -89,12 +89,12 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                     itemScope
                                     itemType="https://schema.org/Offer"
                                 >
+                                    <meta itemProp="priceCurrency" content="RUB" />
                                     <span itemProp="price">
+                                        <meta itemProp="priceCurrency" content="RUB" />
                                         { priceString }
                                     </span>
-                                    <span itemProp="priceCurrency">
-                                        руб
-                                    </span>
+                                    руб
                                 </Typography>
                             </Box>
                             <Box marginTop="20px">
@@ -278,7 +278,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                 </Box>
             }
         </Box>
-    )
-}
+    );
+};
 
-export default RadiatorInfo
+export default RadiatorInfo;

@@ -1,18 +1,18 @@
-import type { NextPage } from 'next'
-import Link from 'next/link'
-import { Box, Typography, Grid, Divider } from '@mui/material'
+import type { NextPage } from 'next';
+import Link from 'next/link';
+import { Box, Typography, Grid, Divider } from '@mui/material';
 
-import PageHeader from '../components/pageHeader/pageHeader'
-import PageTitle from '../components/pageTitle/pageTitle'
-import Hero from '../components/hero/hero'
+import PageHeader from '../components/pageHeader/pageHeader';
+import PageTitle from '../components/pageTitle/pageTitle';
+import Hero from '../components/hero/hero';
 
-import trackEvent from '../utils/trackEvent'
+import trackEvent from '../utils/trackEvent';
 
-import * as styles from '../styles/styles'
-import global from '../variables/global'
+import * as styles from '../styles/styles';
+import global from '../variables/global';
 
 
-type PageAboutProps = {}
+type PageAboutProps = {};
 
 const PageAbout: NextPage<PageAboutProps> = () => {
 
@@ -146,9 +146,14 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     </Typography>
                     <Box marginTop="20px">
                         <Typography sx={ { ...styles.standardText } }>
-                            <strong>ООО &#34;Маус Лайт&#34;</strong><br />
+                            <span itemProp="name"><strong>ООО &#34;Маус Лайт&#34;</strong></span><br />
                             www.mouselite.ru<br />
-                            Центральный офис: 190005, Санкт-Петербург, наб. Обводного канала, 118АХ, офис 438<br />
+                            <span itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                                Центральный офис:
+                                <span itemProp="postalCode">190005</span>,
+                                <span itemProp="addressLocality">Санкт-Петербург</span>
+                                , <span itemProp="streetAddress">наб. Обводного канала, 118АХ, офис 438</span><br />
+                            </span>
                             ОГРН: 1097847137630<br />
                             &zwj;ИНН/КПП 7841407862 / 783901001<br />
                             Р/с 40702810432320000128<br />
@@ -162,9 +167,9 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 </Box>
             </Box>
         </Box>
-    )
+    );
 
-}
+};
 
 
-export default PageAbout
+export default PageAbout;

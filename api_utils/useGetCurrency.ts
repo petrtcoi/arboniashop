@@ -1,4 +1,4 @@
-import { useState, useEffect, useLayoutEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { DISCOUNT, GET_RATE_URL } from '../variables/currency';
 
@@ -7,7 +7,7 @@ import { DISCOUNT, GET_RATE_URL } from '../variables/currency';
 const useGetCurrency = (): { rateEuro: number; } => {
 
     const [rateEuro, setRateEuro] = useState<number>(0);
-    useLayoutEffect(() => {
+    useEffect(() => {
         const getRate = async () => {
             try {
                 console.log('FETCH DATA');

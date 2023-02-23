@@ -167,7 +167,7 @@ const Footer: NextComponentType<FooterProps> = () => {
                 </Grid>
                 <Grid item xs={ 12 } md={ 8 }>
                     <Typography sx={ footerText }>
-                        © 2022 ArboniaShop.ru – магазин радиаторов Arbonia
+                        © 2023 ArboniaShop.ru – магазин радиаторов Arbonia
                     </Typography>
                 </Grid>
             </Grid>

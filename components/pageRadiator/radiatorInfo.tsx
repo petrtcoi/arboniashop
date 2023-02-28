@@ -89,7 +89,6 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
                                     itemScope
                                     itemType="https://schema.org/Offer"
                                 >
-                                    <meta itemProp="priceCurrency" content="RUB" />
                                     <span itemProp="price">
                                         <meta itemProp="priceCurrency" content="RUB" />
                                         { priceString }

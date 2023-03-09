@@ -7,6 +7,7 @@ const global: { [key: string]: any; } = {
     whatsApp: '12185161529',
     pages: [
         ['Каталог', '/catalog'],
+        ['Покраска', '/coloring'],
         ['Доставка и оплата', '/delivery'],
         ['Запрос на радиаторы', '/request'],
         ['Информация', '/articles'],

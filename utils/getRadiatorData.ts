@@ -32,7 +32,7 @@ const getRadiatorData = ({ model, color, connection, sectionQnty, price }: Props
         dt50String: `${Math.floor(+model.dt50 * sectionQnty)}`,
         dt60String: `${Math.floor(+model.dt60 * sectionQnty)}`,
         priceString: price.toLocaleString(),
-        oldPriceString: Math.floor(price / DISCOUNT).toLocaleString();
+        oldPriceString: Math.floor(price / DISCOUNT).toLocaleString()
     };
 };
 

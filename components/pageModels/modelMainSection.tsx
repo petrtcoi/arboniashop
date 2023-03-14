@@ -1,37 +1,37 @@
-import React, { useContext } from 'react'
-import { Box, Grid, Typography } from '@mui/material'
+import React, { useContext } from 'react';
+import { Box, Grid, Typography } from '@mui/material';
 
-import ModelBadges from './modelBadges'
-import ModelMinPrice from './modelMinPrice'
-import FeaturesTable from './featuresTable'
+import ModelBadges from './modelBadges';
+import ModelMinPrice from './modelMinPrice';
+import FeaturesTable from './featuresTable';
 
-import calcRadiatorCost from '../../utils/calcRadiatorCost'
+import calcRadiatorCost from '../../utils/calcRadiatorCost';
 
-import { ModelOrigin } from '../../models/modelOrigin.model'
-import { ConnectionOrigin } from '../../models/connectionOrigin.model'
-import { ColorOrigin } from '../../models/colorOrigin.model'
+import { ModelOrigin } from '../../models/modelOrigin.model';
+import { ConnectionOrigin } from '../../models/connectionOrigin.model';
+import { ColorOrigin } from '../../models/colorOrigin.model';
 
-import { CurrencyContext } from '../../contexts/currencyContext'
+import { CurrencyContext } from '../../contexts/currencyContext';
 
-import global from '../../variables/global'
-import * as styles from '../../styles/styles'
-import Image from 'next/image'
+import global from '../../variables/global';
+import * as styles from '../../styles/styles';
+import Image from 'next/image';
 
 
 
 
 type ModelMainSectionProps = {
-    modelCurr: ModelOrigin
-    colorCurr: ColorOrigin
-    connectionCurr: ConnectionOrigin
+    modelCurr: ModelOrigin;
+    colorCurr: ColorOrigin;
+    connectionCurr: ConnectionOrigin;
 
-    modelTitle: string
-    colorTitle: string
-    connectionTitle: string
+    modelTitle: string;
+    colorTitle: string;
+    connectionTitle: string;
 
-    handleBuyButton: () => void
+    handleBuyButton: () => void;
 
-}
+};
 
 
 const ModelMainSection: React.FC<ModelMainSectionProps> = ({
@@ -40,8 +40,8 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
     handleBuyButton
 }) => {
 
-    const imagePrimaryPath = global.imagesModelPath + modelCurr.imagePrimary
-    const currencyContext = useContext(CurrencyContext)
+    const imagePrimaryPath = global.imagesModelPath + modelCurr.imagePrimary;
+    const currencyContext = useContext(CurrencyContext);
 
     const { price } = calcRadiatorCost({
         model: modelCurr,
@@ -49,8 +49,8 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
         connection: connectionCurr,
         sectionQnty: modelCurr.inStockSections ? +modelCurr.inStockSections.split(',')[0] : undefined,
         currencyRate: currencyContext.rateEuro
-    })
-    const minPrice = price.noConsole
+    });
+    const minPrice = price.noConsole;
 
 
     return (
@@ -68,17 +68,18 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
                         </Box>
                     }
                     <Box textAlign="center" marginTop="20px">
-                        {/* <div style={ { width: '100%', height: '100%', position: 'relative' } }> */}
+                        {/* <div style={ { width: '100%', height: '100%', position: 'relative' } }> */ }
 
-                            <Image
+                        <Image
                             priority
-                                width="100%" height="100%" layout="responsive" objectFit="contain"
-                                src={ imagePrimaryPath }
-                                itemProp="image"
-                                alt={ `Трубчатый радиатор ${modelCurr.name}` }
-                                sizes="(min-width: 800px) 400px, 500px"
-                            />
-                        {/* </div> */}
+                            width="100%" height="100%" layout="responsive" objectFit="contain"
+                            src={ imagePrimaryPath }
+                            itemProp="image"
+                            alt={ `Трубчатый радиатор ${modelCurr.name}` }
+                            title={ `Трубчатый радиатор ${modelCurr.name}` }
+                            sizes="(min-width: 800px) 400px, 500px"
+                        />
+                        {/* </div> */ }
                     </Box>
                 </Grid>
 
@@ -112,7 +113,7 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
                 </Box>
             }
         </Box>
-    )
-}
+    );
+};
 
-export default ModelMainSection
+export default ModelMainSection;

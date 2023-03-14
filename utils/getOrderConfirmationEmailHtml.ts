@@ -34,24 +34,25 @@ const getOrderConfirmationEmailHtml = (props: Props): string => {
 
     if (items.length > 0) html += `<h3>Заказ</h3><table border="1" cellpadding="5" cellspacing="0"><thead><td>№</td><td>Наименование</td><td>Цена</td><td>Кол-во</td><td>Сумма</td></thead><tbody>`;
     items.forEach((item, index) => {
-        html += `<tr><td>${index + 1}</td><td>${item.title}</td><td>${item.price.noConsole.toLocaleString('ru-RU')} руб.</td><td>${item.qnty}</td><td>${(item.price.noConsole * item.qnty).toLocaleString('ru-RU')} руб.</td></tr>`;
+        html += `<tr><td>${index + 1}</td><td>${item.title}</td><td>${item.price.noConsoletoLocaleString()} руб.</td><td>${item.qnty}</td><td>${(item.price.noConsole * item.qnty)toLocaleString();
+    } руб.< /td></tr > `;
     });
 
     if (consoleType === 'w161h121') {
         consoles.forEach((console) => {
             const consolePrice = Math.floor(console.totalSum / console.qnty);
-            html += `<tr><td></td><td>Кронштейн ${console.title}, ${console.colorName}</td><td>${consolePrice.toLocaleString('ru-RU')} руб.</td><td>${console.qnty}</td><td>${(console.totalSum).toLocaleString('ru-RU')} руб.</td></tr>`;
+            html += `< tr > <td></td><td>Кронштейн ${console.title}, ${console.colorName}</td > <td>${ consolePricetoLocaleString(); } руб.< /td><td>${console.qnty}</td > <td>${(console.totalSum)toLocaleString()} руб.</td></tr > `;
         });
     }
 
     if (items.length > 0) html += '</tbody></table>';
 
-    if (items.length > 0) html += `<p>Итого: <strong>${getCartTotal({ items, consoleType }).toLocaleString('ru-RU')} руб.</strong></p>`;
+    if (items.length > 0) html += `< p > Итого: <strong>${ getCartTotal({ items, consoleType })toLocaleString(); } руб.< /strong></p > `;
 
-    html += `<br/><br/><hr/><p>С уважением,<br/>Магазин радиаторов Arbonia<br/><br/>сайт: ${global.website}<br/>тел.: +7 ${global.phone495String}<br/>тел.: +7 ${global.phone812String}<br/>email: ${global.email}</p>`;
-    html += '<img src="https://mouselite.ru/arboniashop-email-logo.png" height="50px" width="auto"/>';
+    html += `< br /> <br/><hr/ > <p>С уважением, <br/>Магазин радиаторов Arbonia<br/ > <br/>сайт: ${global.website}<br/ > тел.: +7 ${ global.phone495String; } <br/>тел.: +7 ${global.phone812String}<br/ > email: ${ global.email; } </p>`;;
+html += '<img src="https://mouselite.ru/arboniashop-email-logo.png" height="50px" width="auto"/>';
 
-    return html;
+return html;
 
 };
 

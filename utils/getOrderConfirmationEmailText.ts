@@ -34,23 +34,24 @@ const getOrderConfirmationEmailText = (props: Props): string => {
 
     if (items.length > 0) text += `\n\nЗАКАЗ:\n\n`;
     items.forEach((item, index) => {
-        text += `${index + 1}. ${item.title} \nцена: ${item.price.toLocaleString('ru-RU')} руб. \nкол-во: ${item.qnty} шт \nсумма: ${(item.price.noConsole * item.qnty).toLocaleString('ru-RU')} руб.\n\n`;
+        text += `${index + 1}. ${item.title} \nцена: ${item.pricetoLocaleString()} руб. \nкол-во: ${item.qnty} шт \nсумма: ${(item.price.noConsole * item.qnty)toLocaleString();
+    } руб.\n\n`;
     });
 
     if (consoleType === 'w161h121') {
         text += '\nкронштейны:\n\n';
         consoles.forEach((console) => {
             const consolePrice = Math.floor(console.totalSum / console.qnty);
-            text += `Кронштейн ${console.title}, ${console.colorName} \nцена: ${consolePrice.toLocaleString('ru-RU')} руб. \nкол-во: ${console.qnty} шт \nсумма: ${(console.totalSum).toLocaleString('ru-RU')} руб.\n\n`;
+            text += `Кронштейн ${ console.title }, ${ console.colorName } \nцена: ${ consolePricetoLocaleString(); } руб.\nкол - во: ${ console.qnty } шт \nсумма: ${(console.totalSum)toLocaleString()} руб.\n\n`;
         });
     }
 
-    if (props.items.length > 0) text += `\nИтого: ${getCartTotal({ items, consoleType }).toLocaleString('ru-RU')} руб.\n\n`;
+    if (props.items.length > 0) text += `\nИтого: ${ getCartTotal({ items, consoleType })toLocaleString(); } руб.\n\n`;
 
-    text += `С уважением,\nМагазин радиаторов Arbonia\n${global.website}\nтел.: +7 ${global.phone495String}\nтел.: +7 ${global.phone812String}`;
+    text += `С уважением, \nМагазин радиаторов Arbonia\n${ global.website; } \nтел.: +7 ${ global.phone495String; } \nтел.: +7 ${ global.phone812String; } `;
 
     return text;
 
 };
 
-export default getOrderConfirmationEmailText;
+export default getOrderConfirmationEmailText;;

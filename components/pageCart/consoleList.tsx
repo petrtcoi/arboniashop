@@ -1,18 +1,18 @@
-import React from 'react'
-import { TableCell, TableRow } from '@mui/material'
+import React from 'react';
+import { TableCell, TableRow } from '@mui/material';
 
-import { CartItemExtended } from '../../models/cartItemExtended.model'
+import { CartItemExtended } from '../../models/cartItemExtended.model';
 
-import getGroupedConsoles from '../../utils/getGroupedConsoles'
+import getGroupedConsoles from '../../utils/getGroupedConsoles';
 
-import * as styles from './../../styles/styles'
+import * as styles from './../../styles/styles';
 
 
 
 
 type ConsoleListProps = {
-    items: CartItemExtended[]
-}
+    items: CartItemExtended[];
+};
 
 
 const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
@@ -23,7 +23,7 @@ const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
             { getGroupedConsoles({ items })
                 .map((console, index) => {
 
-                    const consolePrice = Math.floor(console.totalSum / console.qnty)
+                    const consolePrice = Math.floor(console.totalSum / console.qnty);
 
                     return (
                         <TableRow
@@ -31,27 +31,27 @@ const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
                             key={ index }
                         >
                             <TableCell component="th" scope="row" sx={ styles.smallText }>
-                                Кронштейн {console.title}
+                                Кронштейн { console.title }
                             </TableCell>
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
-                                { Math.floor(consolePrice).toLocaleString() }
+                                { Math.floor(consolePrice)toLocaleString() }
                             </TableCell>
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
                                 { console.qnty }
                             </TableCell>
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
-                                { (console.totalSum).toLocaleString() }
+                                { (console.totalSum)toLocaleString() }
                             </TableCell>
 
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="center">
                             </TableCell>
                         </TableRow >
-                    )
+                    );
                 }) }
         </>
 
-    )
+    );
 
-}
+};
 
-export default ConsoleList
+export default ConsoleList;

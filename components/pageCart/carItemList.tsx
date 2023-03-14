@@ -74,7 +74,7 @@ const CartItemList: React.FC<CartItemListProps> = ({ items, showSummary = true }
                         { showSummary === true &&
                             <TableRow >
                                 <TableCell align="right" colSpan={ 3 } sx={ { ...styles.smallTextBold, borderBottom: 0 } } >Итого</TableCell>
-                                <TableCell align="right" colSpan={ 1 } sx={ { ...styles.smallTextBold, borderBottom: 0 } }>{ totaltoLocaleString() }</TableCell>
+                                <TableCell align="right" colSpan={ 1 } sx={ { ...styles.smallTextBold, borderBottom: 0 } }>{ total.toLocaleString() }</TableCell>
                                 {/* <TableCell align="right" sx={ { ...styles.smallTextBold, borderBottom: 0 } }></TableCell>
                                 <TableCell sx={ { borderBottom: 0 } }></TableCell> */}
                             </TableRow>

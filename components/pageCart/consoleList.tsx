@@ -34,13 +34,13 @@ const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
                                 Кронштейн { console.title }
                             </TableCell>
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
-                                { Math.floor(consolePrice)toLocaleString() }
+                                { Math.floor(consolePrice).toLocaleString() }
                             </TableCell>
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
                                 { console.qnty }
                             </TableCell>
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
-                                { (console.totalSum)toLocaleString() }
+                                { (console.totalSum).toLocaleString() }
                             </TableCell>
 
                             <TableCell component="th" scope="row" sx={ styles.smallText } align="center">

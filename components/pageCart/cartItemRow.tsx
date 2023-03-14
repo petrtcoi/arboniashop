@@ -31,13 +31,13 @@ const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
                 <span style={ { ...styles.smallTextThin } }>({ consoleQntyString })</span>
             </TableCell>
             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
-                { (item.price.noConsole)toLocaleString() }
+                { (item.price.noConsole).toLocaleString() }
             </TableCell>
             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
                 { item.qnty }
             </TableCell>
             <TableCell component="th" scope="row" sx={ styles.smallText } align="right">
-                { (item.price.noConsole * item.qnty)toLocaleString() }
+                { (item.price.noConsole * item.qnty).toLocaleString() }
             </TableCell>
 
             <TableCell component="th" scope="row" sx={ styles.smallText } align="center">

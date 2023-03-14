@@ -247,7 +247,7 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colo
                                     цена:
                                 </Typography>
                                 <Typography display="inline" sx={ { fontSize: "20px", fontWeight: 600 } } >
-                                    &nbsp;{ radiatorCosttoLocaleString() } руб
+                                    &nbsp;{ radiatorCost.toLocaleString() } руб
                                 </Typography>
                                 <Box marginLeft="20px" display="inline-block">
                                     <AddToCartButton

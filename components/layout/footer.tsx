@@ -24,14 +24,18 @@ const Footer: NextComponentType<FooterProps> = () => {
             itemScope itemType="https://schema.org/Organization"
         >
             <Box >
-                <Image
-                    layout="fixed"
-                    src="/images/logo.png"
-                    alt="Arbonia column radiators"
-                    width={ "130px" }
-                    height={ "50px" }
-                    itemProp={ "logo" }
-                />
+                <Link href="/">
+                    <a itemProp={ "url" }>
+                        <Image
+                            layout="fixed"
+                            src="/images/logo.png"
+                            alt="Arbonia column radiators"
+                            width={ "130px" }
+                            height={ "50px" }
+                            itemProp={ "logo" }
+                        />
+                    </a>
+                </Link>
             </Box>
             <Grid container spacing={ 2 }>
 

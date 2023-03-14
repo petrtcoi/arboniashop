@@ -1,40 +1,40 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react';
 
-import { Box, Grid, Typography } from '@mui/material'
-import NativeSelect from '@mui/material/NativeSelect'
+import { Box, Grid, Typography } from '@mui/material';
+import NativeSelect from '@mui/material/NativeSelect';
 
-import AddToCartButton from '../addToCartButton/addToCartButton'
-import DialogColors from '../dialogColors/dialogColors'
-import SingleColor from '../singleColor/singleColor'
-import DialogConnections from '../dialogConnections/dialogConnections'
-import SingleConnection from '../singleConnection/singleConnection'
+import AddToCartButton from '../addToCartButton/addToCartButton';
+import DialogColors from '../dialogColors/dialogColors';
+import SingleColor from '../singleColor/singleColor';
+import DialogConnections from '../dialogConnections/dialogConnections';
+import SingleConnection from '../singleConnection/singleConnection';
 
 
-import range from '../../utils/range'
-import calcRadiatorCost from '../../utils/calcRadiatorCost'
+import range from '../../utils/range';
+import calcRadiatorCost from '../../utils/calcRadiatorCost';
 
-import { CurrencyContext } from '../../contexts/currencyContext'
+import { CurrencyContext } from '../../contexts/currencyContext';
 
-import { ColorOrigin } from '../../models/colorOrigin.model'
-import { ModelOrigin } from '../../models/modelOrigin.model'
-import { ConnectionOrigin } from '../../models/connectionOrigin.model'
+import { ColorOrigin } from '../../models/colorOrigin.model';
+import { ModelOrigin } from '../../models/modelOrigin.model';
+import { ConnectionOrigin } from '../../models/connectionOrigin.model';
 
-import global from '../../variables/global'
-import * as styles from '../../styles/styles'
+import global from '../../variables/global';
+import * as styles from '../../styles/styles';
 
 
 
 
 type RadiatorAllOptionsProps = {
-    modelInit: ModelOrigin
-    colorInit: ColorOrigin
-    connectionInit: ConnectionOrigin
-    modelFreeze?: boolean
+    modelInit: ModelOrigin;
+    colorInit: ColorOrigin;
+    connectionInit: ConnectionOrigin;
+    modelFreeze?: boolean;
 
-    models: ModelOrigin[]
-    colors: ColorOrigin[]
-    connections: ConnectionOrigin[]
-}
+    models: ModelOrigin[];
+    colors: ColorOrigin[];
+    connections: ConnectionOrigin[];
+};
 
 
 const MODELS_GROUPS = [
@@ -43,45 +43,45 @@ const MODELS_GROUPS = [
     { firstChar: '4', title: '4-трубчатые (145 мм)' },
     { firstChar: '5', title: '5-трубчатые (185 мм)' },
     { firstChar: '6', title: '6-трубчатые (225 мм)' }
-]
+];
 
 
 const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colorInit, connectionInit, modelFreeze = true, models, connections, colors }) => {
 
-    const SECTIONS = range(global.sectionsDefaultMin, modelInit.sectionsMax || global.sectionsDefaultMax)
+    const SECTIONS = range(global.sectionsDefaultMin, modelInit.sectionsMax || global.sectionsDefaultMax);
 
-    const { rateEuro } = useContext(CurrencyContext)
-    const [colorCurr, setColorCurr] = useState<ColorOrigin>(colorInit)
+    const { rateEuro } = useContext(CurrencyContext);
+    const [colorCurr, setColorCurr] = useState<ColorOrigin>(colorInit);
     const setColorById = (colorId: string) => {
-        const newColor = colors.find(x => x.id === colorId)
-        if (newColor) setColorCurr(newColor)
-    }
+        const newColor = colors.find(x => x.id === colorId);
+        if (newColor) setColorCurr(newColor);
+    };
 
 
-    const [connectionCurr, setConnectionCurr] = useState<ConnectionOrigin>(connectionInit)
+    const [connectionCurr, setConnectionCurr] = useState<ConnectionOrigin>(connectionInit);
     const setConnectionById = (connId: string) => {
-        const newConnection = connections.find(x => x.id === connId)
-        if (newConnection) setConnectionCurr(newConnection)
-    }
- 
+        const newConnection = connections.find(x => x.id === connId);
+        if (newConnection) setConnectionCurr(newConnection);
+    };
 
-    const [modelCurr, setModelCurr] = useState<ModelOrigin>(modelInit)
+
+    const [modelCurr, setModelCurr] = useState<ModelOrigin>(modelInit);
     const handleChangeModel = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const newModel = models.find(x => x.id === e.target.value)
-        if (newModel) setModelCurr(newModel)
-    }
+        const newModel = models.find(x => x.id === e.target.value);
+        if (newModel) setModelCurr(newModel);
+    };
 
 
-    const [sectionsCurr, setSectionsCurr] = useState<number>(SECTIONS[0])
-    const [radiatorTitle, setRadiatorTitle] = useState<string>('')
+    const [sectionsCurr, setSectionsCurr] = useState<number>(SECTIONS[0]);
+    const [radiatorTitle, setRadiatorTitle] = useState<string>('');
     useEffect(() => {
-        const sectionQntyString: string = sectionsCurr < 10 ? '0' + sectionsCurr.toString() : sectionsCurr.toString()
-        setRadiatorTitle(`Arbonia Column ${modelCurr.nameShort}-${sectionQntyString}, ${colorCurr.name}, ${connectionCurr.name}`)
-    }, [modelCurr, colorCurr, connectionCurr, sectionsCurr])
+        const sectionQntyString: string = sectionsCurr < 10 ? '0' + sectionsCurr.toString() : sectionsCurr.toString();
+        setRadiatorTitle(`Arbonia Column ${modelCurr.nameShort}-${sectionQntyString}, ${colorCurr.name}, ${connectionCurr.name}`);
+    }, [modelCurr, colorCurr, connectionCurr, sectionsCurr]);
 
 
 
-    const [radiatorCost, setRadiatorCost] = useState<number>(0)
+    const [radiatorCost, setRadiatorCost] = useState<number>(0);
     useEffect(() => {
         setRadiatorCost(calcRadiatorCost({
             model: modelCurr,
@@ -89,16 +89,16 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colo
             connection: connectionCurr,
             sectionQnty: sectionsCurr,
             currencyRate: rateEuro
-        }).price.noConsole)
-    }, [colorCurr, connectionCurr, sectionsCurr, rateEuro, modelCurr])
+        }).price.noConsole);
+    }, [colorCurr, connectionCurr, sectionsCurr, rateEuro, modelCurr]);
 
 
 
-    const [showColors, setShowColors] = useState<boolean>(false)
-    const toggleShowColors = () => { setShowColors(!showColors) }
+    const [showColors, setShowColors] = useState<boolean>(false);
+    const toggleShowColors = () => { setShowColors(!showColors); };
 
-    const [showConnections, setShowConnections] = useState<boolean>(false)
-    const toggleShowConnections = () => { setShowConnections(!showConnections) }
+    const [showConnections, setShowConnections] = useState<boolean>(false);
+    const toggleShowConnections = () => { setShowConnections(!showConnections); };
 
 
     return (
@@ -157,7 +157,7 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colo
                                                     .filter((model: ModelOrigin) => (model.id[0] === group.firstChar))
                                                     .map(model => <option key={ model.id } value={ model.id }>{ model.nameShort }</option>) }
                                             </optgroup>
-                                        )
+                                        );
                                     })
                                 }
 
@@ -247,7 +247,7 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colo
                                     цена:
                                 </Typography>
                                 <Typography display="inline" sx={ { fontSize: "20px", fontWeight: 600 } } >
-                                    &nbsp;{ radiatorCost.toLocaleString() } руб
+                                    &nbsp;{ radiatorCost.toLocaleString('ru-RU') } руб
                                 </Typography>
                                 <Box marginLeft="20px" display="inline-block">
                                     <AddToCartButton
@@ -267,7 +267,7 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({ modelInit, colo
                 </Grid>
             </Box>
         </Box >
-    )
-}
+    );
+};
 
-export default RadiatorAllOptions
+export default RadiatorAllOptions;

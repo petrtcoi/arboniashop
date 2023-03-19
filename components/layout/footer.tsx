@@ -124,9 +124,9 @@ const Footer: NextComponentType<FooterProps> = () => {
                     <Typography sx={ footerText } itemProp="name">
                         ООО &quot;Маус Лайт&quot;
                     </Typography>
-                    <Typography sx={ footerText } itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                    {/* <Typography sx={ footerText } itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
                         Центральный офис: <span itemProp="addressLocality">Санкт-Петербург</span>, <span itemProp="streetAddress">наб. Обводного канала, 118АХ, офис 438</span>
-                    </Typography>
+                    </Typography> */}
                     <Typography sx={ footerText }>
                         &zwj;ИНН 784&zwj;1407862 / КПП 783901001
                     </Typography>

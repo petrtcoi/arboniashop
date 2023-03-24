@@ -385,6 +385,15 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                                             </a>
                                         </Link>
                                     </Box>
+                                    <Box id="3030-9005-69tvv" paddingTop="50px" marginTop="-50px">
+                                        <Link href="/models/3030-9005-69tvv">
+                                            <a style={ { textDecoration: "none" } }>
+                                                <Typography sx={ { ...styles.standartTextThinLink } }>
+                                                    Arbonia 3030 (RAL 9005 matt)
+                                                </Typography>
+                                            </a>
+                                        </Link>
+                                    </Box>
                                     <Box id="3037-9016-69tvv" paddingTop="50px" marginTop="-50px">
                                         <Link href="/models/3037-9016-69tvv">
                                             <a style={ { textDecoration: "none" } }>

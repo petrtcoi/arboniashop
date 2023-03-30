@@ -1,14 +1,14 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material';
 
-import type { NextPage } from 'next'
-import PageHeader from '../components/pageHeader/pageHeader'
+import type { NextPage } from 'next';
+import PageHeader from '../components/pageHeader/pageHeader';
 
-import * as styles from '../styles/styles'
-import global from '../variables/global'
+import * as styles from '../styles/styles';
+import global from '../variables/global';
 
 
 
-type OfertaPageProps = {}
+type OfertaPageProps = {};
 
 const OfertaPage: NextPage<OfertaPageProps> = () => {
 
@@ -19,7 +19,7 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
                 Публичная оферта
             </Typography>
 
-          
+
 
             <Typography variant="h5" component="h2">
                 1. Общие положения
@@ -169,9 +169,15 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
             </Typography>
 
         </Box>
-    )
+    );
 
+};
+
+
+export default OfertaPage;
+
+export async function getStaticProps() {
+    return {
+        props: {}, // will be passed to the page component as props
+    };
 }
-
-
-export default OfertaPage

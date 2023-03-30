@@ -1,20 +1,20 @@
-import type { NextPage } from 'next'
-import { Box, Typography } from '@mui/material'
+import type { NextPage } from 'next';
+import { Box, Typography } from '@mui/material';
 
-import PageHeader from '../components/pageHeader/pageHeader'
+import PageHeader from '../components/pageHeader/pageHeader';
 
-import * as styles from '../styles/styles'
-import global from '../variables/global'
+import * as styles from '../styles/styles';
+import global from '../variables/global';
 
 
 
-type PageAcceptedProps = {}
+type PageAcceptedProps = {};
 
 const PageAccepted: NextPage<PageAcceptedProps> = () => {
 
     return (
-        <Box sx={{...global.pagePadding}}>
-            <PageHeader title={"Запрос на радиаторы Arbonia принят"} />
+        <Box sx={ { ...global.pagePadding } }>
+            <PageHeader title={ "Запрос на радиаторы Arbonia принят" } />
             <Typography variant="h4" component="h1" gutterBottom >
                 Запрос был получен
             </Typography>
@@ -25,9 +25,15 @@ const PageAccepted: NextPage<PageAcceptedProps> = () => {
                 </Typography>
             </Box>
         </Box >
-    )
+    );
 
+};
+
+
+export default PageAccepted;
+
+export async function getStaticProps() {
+    return {
+        props: {}, // will be passed to the page component as props
+    };
 }
-
-
-export default PageAccepted

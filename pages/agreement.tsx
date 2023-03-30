@@ -1,14 +1,14 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material';
 
-import type { NextPage } from 'next'
-import PageHeader from '../components/pageHeader/pageHeader'
+import type { NextPage } from 'next';
+import PageHeader from '../components/pageHeader/pageHeader';
 
-import * as styles from '../styles/styles'
-import global from '../variables/global'
+import * as styles from '../styles/styles';
+import global from '../variables/global';
 
 
 
-type AgreementPageProps = {}
+type AgreementPageProps = {};
 
 const AgreementPage: NextPage<AgreementPageProps> = () => {
 
@@ -172,9 +172,15 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
             </Typography>
 
         </Box>
-    )
+    );
 
+};
+
+
+export default AgreementPage;
+
+export async function getStaticProps() {
+    return {
+        props: {}, // will be passed to the page component as props
+    };
 }
-
-
-export default AgreementPage

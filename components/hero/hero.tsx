@@ -1,13 +1,15 @@
-import React from 'react'
-import { Box, Typography } from '@mui/material'
+import React from 'react';
+import Image from 'next/image';
 
-import * as styles from '../../styles/styles'
+import { Box, Typography } from '@mui/material';
+
+import * as styles from '../../styles/styles';
 
 type HeroProps = {
-    imgPath: string
-    header: string
-    subheader?: string
-}
+    imgPath: string;
+    header: string;
+    subheader?: string;
+};
 
 const Hero: React.FC<HeroProps> = ({ imgPath, header, subheader }) => {
 
@@ -16,13 +18,20 @@ const Hero: React.FC<HeroProps> = ({ imgPath, header, subheader }) => {
             position="relative"
             width={ "100%" }
             height={ "400px" }
-            sx={ {
-                backgroundImage: `url("${imgPath}")`,
-                backgroundSize: "cover",
-                textShadow: "0px 0px 5px rgb(0 0 0 / 60%"
-            } }
+        // sx={ {
+        //     backgroundImage: `url("${imgPath}")`,
+        //     backgroundSize: "cover",
+        //     textShadow: "0px 0px 5px rgb(0 0 0 / 60%"
+        // } }
         >
-            <Box position="absolute" sx={{bottom: "40px", left: "20px"}} paddingRight="20px">
+            <Image
+                src={ imgPath }
+                layout={ "fill" }
+                objectFit={ "cover" }
+                objectPosition={ "top" }
+                alt="Трубчатые радиаторы Arbonia"
+            />
+            <Box position="absolute" sx={ { bottom: "40px", left: "20px" } } paddingRight="20px">
                 <Typography sx={ { ...styles.standardText, fontSize: "40px", lineHeight: "42px", color: "#ffffff", textShadow: "1px 1px 10px black" } } component="h1">
                     { header }
                 </Typography>
@@ -31,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({ imgPath, header, subheader }) => {
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;

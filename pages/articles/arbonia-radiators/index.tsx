@@ -93,3 +93,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 };
 
 export default ArticlePage;
+
+export async function getStaticProps() {
+    return {
+        props: {}, // will be passed to the page component as props
+    };
+}

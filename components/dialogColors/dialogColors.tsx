@@ -1,47 +1,47 @@
-import React from 'react'
+import React from 'react';
 
-import { AppBar, Grid, Dialog, DialogContent, Box, IconButton, Toolbar, Typography, Slide } from '@mui/material'
-import { TransitionProps } from '@mui/material/transitions'
-import CloseIcon from '@mui/icons-material/Close'
+import { AppBar, Grid, Dialog, DialogContent, Box, IconButton, Toolbar, Typography, Slide } from '@mui/material';
+import { TransitionProps } from '@mui/material/transitions';
+import CloseIcon from '@mui/icons-material/Close';
 
-import SingleColor from '../singleColor/singleColor'
+import SingleColor from '../singleColor/singleColor';
 
-import { ColorOrigin } from '../../models/colorOrigin.model'
+import { ColorOrigin } from '../../models/colorOrigin.model';
 
-import * as styles from '../../styles/styles'
+import * as styles from '../../styles/styles';
 
 
 const COLOR_GROUPS = [
-    'Серийный цвет', 'RAL Classic', 'Серия Metallic', 'Серия Terra', 'Серия Pastell', 'Серия Nature'
-]
+    'Серийный цвет', 'RAL Classic', 'New Inspiration', 'Серия Metallic', 'Серия Terra', 'Серия Pastell', 'Серия Nature'
+];
 
 
 
 const Transition = React.forwardRef(function Transition(
     props: TransitionProps & {
-        children: React.ReactElement
+        children: React.ReactElement;
     },
     ref: React.Ref<unknown>,
 ) {
-    return <Slide direction="up" ref={ ref } { ...props } />
-})
+    return <Slide direction="up" ref={ ref } { ...props } />;
+});
 
 
 type DialogColorsProps = {
-    show: boolean
-    colors: ColorOrigin[]
-    colorCurrId: string
-    closeDialog: () => void
-    setColor: (colorId: string) => void
-}
+    show: boolean;
+    colors: ColorOrigin[];
+    colorCurrId: string;
+    closeDialog: () => void;
+    setColor: (colorId: string) => void;
+};
 
 
 const DialogColors: React.FC<DialogColorsProps> = ({ show, colors, colorCurrId, closeDialog, setColor }) => {
 
     const handleSetColor = (colorId: string) => {
-        setColor(colorId)
-        closeDialog()
-    }
+        setColor(colorId);
+        closeDialog();
+    };
 
 
     const renderColor = (color: any) => {
@@ -53,8 +53,8 @@ const DialogColors: React.FC<DialogColorsProps> = ({ show, colors, colorCurrId, 
                     handleClick={ handleSetColor }
                 />
             </Grid>
-        )
-    }
+        );
+    };
 
 
     return (
@@ -90,7 +90,7 @@ const DialogColors: React.FC<DialogColorsProps> = ({ show, colors, colorCurrId, 
                     {
                         COLOR_GROUPS.map(group => {
                             return (
-                                <Box marginTop={ "50px" } key={group}>
+                                <Box marginTop={ "50px" } key={ group }>
                                     <Box marginBottom="20px">
                                         <Typography sx={ { color: "#333333", fontSize: "14px", textTransform: "uppercase" } } display="inline">
                                             { group }
@@ -100,11 +100,11 @@ const DialogColors: React.FC<DialogColorsProps> = ({ show, colors, colorCurrId, 
                                         { colors
                                             .filter(x => x.group === group)
                                             .map((color) => {
-                                                return renderColor(color)
+                                                return renderColor(color);
                                             }) }
                                     </Grid>
                                 </Box>
-                            )
+                            );
 
                         })
                     }
@@ -116,7 +116,7 @@ const DialogColors: React.FC<DialogColorsProps> = ({ show, colors, colorCurrId, 
             </Dialog>
         </Box>
 
-    )
-}
+    );
+};
 
-export default DialogColors
+export default DialogColors;

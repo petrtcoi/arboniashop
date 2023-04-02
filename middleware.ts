@@ -16,7 +16,7 @@ export function middleware(req: NextRequest, ev: NextFetchEvent) {
 
   const response = NextResponse.next();
 
-  response.headers.set('Content-Security-Policy', ContentSecurityPolicy.replace(/\n/g, ''));
+  // response.headers.set('Content-Security-Policy', ContentSecurityPolicy.replace(/\n/g, ''));
   response.headers.set('X-Frame-Options', 'deny');
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('Referrer-Policy', 'strict-origin');

@@ -4,9 +4,9 @@ import { NextResponse } from 'next/server';
 export function middleware(req: NextRequest, ev: NextFetchEvent) {
   const ContentSecurityPolicy = `
   img-src 'self' data: https://mc.yandex.ru https://www.google-analytics.com;
-  connect-src 'self' https://mc.yandex.ru https://code-ya.jivosite.com https://www.google-analytics.com https://node-sber1-az3-1.jivosite.com;
+  connect-src 'self' https://mc.yandex.ru https://code-ya.jivosite.com https://www.google-analytics.com https://node-sber1-az3-1.jivosite.com https://www.google-analytics.com/analytics.js https://code-ya.jivosite.com/widget/y6IaQXr7wR https://docker.mouselite.ru/currency/ARBONIASHOP;
   default-src 'self';
-  script-src 'self' https://mc.yandex.ru https://yastatic.net https://ucalc.pro https://code.jivo.ru https://www.googletagmanager.com;
+  script-src 'self' https://mc.yandex.ru https://yastatic.net https://ucalc.pro https://code.jivo.ru https://www.googletagmanager.com https://www.google-analytics.com/analytics.js https://code-ya.jivosite.com/widget/y6IaQXr7wR;
   child-src blob: https://mc.yandex.ru;
   frame-src blob: https://mc.yandex.ru https://api.ucalc.pro;
   style-src 'self' https://api.ucalc.pro https://code.jivo.ru;

@@ -1,36 +1,29 @@
-import { NextPage } from 'next';
-import { useState, useContext } from 'react';
-import { Box, Typography, Divider, Tabs, Tab } from '@mui/material';
+import { NextPage } from "next";
+import { useState, useContext } from "react";
+import { Box, Typography, Divider, Tabs, Tab } from "@mui/material";
 
+import ModelMainSection from "../../components/pageModels/modelMainSection";
+import RadiatorList from "../../components/radiatorList/radiatorList";
+import ImagesOtherList from "../../components/pageModels/imagesOtherList";
+import DownloadsBlock from "../../components/pageModels/downloadsBlock";
+import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions";
+import PageHeader from "../../components/pageHeader/pageHeader";
+import PageTitle from "../../components/pageTitle/pageTitle";
+import RadiatorInCartList from "../../components/pageModels/radiatorInCartList";
 
-import ModelMainSection from '../../components/pageModels/modelMainSection';
-import RadiatorList from '../../components/radiatorList/radiatorList';
-import ImagesOtherList from '../../components/pageModels/imagesOtherList';
-import DownloadsBlock from '../../components/pageModels/downloadsBlock';
-import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions';
-import PageHeader from '../../components/pageHeader/pageHeader';
-import PageTitle from '../../components/pageTitle/pageTitle';
-import RadiatorInCartList from '../../components/pageModels/radiatorInCartList';
+import getModelsData from "../../api_utils/getModelsData";
+import getConnectionsData from "../../api_utils/getConnectionsData";
+import getColorsData from "../../api_utils/getColorsData";
 
+import { CurrencyContext } from "../../contexts/currencyContext";
 
+import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import { ColorOrigin } from "../../models/colorOrigin.model";
 
-import getModelsData from '../../api_utils/getModelsData';
-import getConnectionsData from '../../api_utils/getConnectionsData';
-import getColorsData from '../../api_utils/getColorsData';
-
-import { CurrencyContext } from '../../contexts/currencyContext';
-
-import { ModelOrigin } from '../../models/modelOrigin.model';
-import { ConnectionOrigin } from '../../models/connectionOrigin.model';
-import { ColorOrigin } from '../../models/colorOrigin.model';
-
-import * as styles from './../../styles/styles';
-import global from '../../variables/global';
-import GeneralTextAboutArboniaProps from '../../components/generalTextAboutArbonia';
-
-
-
-
+import * as styles from "./../../styles/styles";
+import global from "../../variables/global";
+import GeneralTextAboutArboniaProps from "../../components/generalTextAboutArbonia";
 
 type ModelProps = {
   modelCurr: ModelOrigin;
@@ -45,21 +38,34 @@ type ModelProps = {
   connectionInit: ConnectionOrigin | null;
 };
 
-
-const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, modelTitle, metaTitle, colorTitle, connectionTitle, colorInit, connectionInit }) => {
-
-  const [tab, setTab] = useState<string>('buy');
+const Model: NextPage<ModelProps> = ({
+  modelCurr,
+  models,
+  colors,
+  connections,
+  modelTitle,
+  metaTitle,
+  colorTitle,
+  connectionTitle,
+  colorInit,
+  connectionInit,
+}) => {
+  const [tab, setTab] = useState<string>("buy");
   const handleChangeTab = (event: React.SyntheticEvent, newTab: string) => {
     setTab(newTab);
   };
-  const [colorCurr, _setColorCurr] = useState<ColorOrigin>(colorInit === null ? colors[0] : colorInit);
-  const [connectionCurr, _setConnectionCurr] = useState<ConnectionOrigin>(connectionInit === null ? connections[0] : connectionInit);
+  const [colorCurr, _setColorCurr] = useState<ColorOrigin>(
+    colorInit === null ? colors[0] : colorInit
+  );
+  const [connectionCurr, _setConnectionCurr] = useState<ConnectionOrigin>(
+    connectionInit === null ? connections[0] : connectionInit
+  );
 
   const { rateEuro } = useContext(CurrencyContext);
 
-
-  const setTabBuy = () => { setTab('buy'); };
-
+  const setTabBuy = () => {
+    setTab("buy");
+  };
 
   return (
     <Box itemScope itemType="https://schema.org/ProductModel">
@@ -73,13 +79,21 @@ const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, m
         breadcrumbs={ [
           { title: "Главная", link: "/" },
           { title: "Каталог", link: "/catalog" },
-          { title: `Arbonia ${modelCurr.nameShort}, ${colorCurr.name}, ${connectionCurr.nameShort}`, link: `/models/${modelCurr.id}` }
+          {
+            title: `Arbonia ${modelCurr.nameShort}, ${colorCurr.name}, ${connectionCurr.nameShort}`,
+            link: `/models/${modelCurr.id}`,
+          },
         ] }
       />
       <Box sx={ { ...global.pagePadding } }>
-
         <Box marginBottom={ "50px" } marginTop={ "20px" }>
-          <Typography variant="h5" component="h1" gutterBottom textAlign="center" itemProp="name">
+          <Typography
+            variant="h5"
+            component="h1"
+            gutterBottom
+            textAlign="center"
+            itemProp="name"
+          >
             { modelTitle }
           </Typography>
         </Box>
@@ -98,94 +112,86 @@ const Model: NextPage<ModelProps> = ({ modelCurr, models, colors, connections, m
           <Divider variant="middle" />
         </Box>
 
-
         {/* ВКЛАДКИ С ИНФОРМАЦИЕЙ */ }
 
-        <Box marginTop="20px" marginBottom="40px" >
+        <Box marginTop="20px" marginBottom="40px">
           <Tabs value={ tab } onChange={ handleChangeTab }>
             <Tab label="Купить" value="buy" sx={ styles.smallText } />
-            { modelCurr.imagesOther &&
+            { modelCurr.imagesOther && (
               <Tab label="Изображения" value="images" sx={ styles.smallText } />
-            }
+            ) }
             <Tab label="Документы" value="docs" sx={ styles.smallText } />
           </Tabs>
         </Box>
 
-
-
-        { tab === 'buy' &&
+        { tab === "buy" && (
           <Box>
             <Box id="buy-section">
-              <Typography variant="h4" component="h2" marginBottom="20px">Купить { modelCurr.name }</Typography>
+              <Typography variant="h4" component="h2" marginBottom="20px">
+                Купить { modelCurr.name }
+              </Typography>
               <Box marginTop="20px">
-                {
-                  (modelCurr.inStock === 'true' && colorCurr !== null && connectionCurr !== null) ?
-                    <RadiatorList
-                      model={ modelCurr }
-                      color={ colorCurr }
-                      connection={ connectionCurr }
-                      currencyRate={ rateEuro }
+                { modelCurr.inStock === "true" &&
+                  colorCurr !== null &&
+                  connectionCurr !== null ? (
+                  <RadiatorList
+                    model={ modelCurr }
+                    color={ colorCurr }
+                    connection={ connectionCurr }
+                    currencyRate={ rateEuro }
+                  />
+                ) : (
+                  <>
+                    <RadiatorAllOptions
+                      modelInit={ modelCurr ? modelCurr : models[0] }
+                      connectionInit={ connections[0] }
+                      colorInit={ colors[0] }
+                      models={ models }
+                      colors={ colors }
+                      connections={ connections }
                     />
-                    :
-                    <>
-                      <RadiatorAllOptions
-                        modelInit={ modelCurr ? modelCurr : models[0] }
-                        connectionInit={ connections[0] }
-                        colorInit={ colors[0] }
-                        models={ models }
-                        colors={ colors }
-                        connections={ connections }
-                      />
-                      <RadiatorInCartList
-                        modelCurrentId={ modelCurr.id }
-                        models={ models }
-                        colors={ colors }
-                        connections={ connections }
-                      />
-                    </>
-                }
+                    <RadiatorInCartList
+                      modelCurrentId={ modelCurr.id }
+                      models={ models }
+                      colors={ colors }
+                      connections={ connections }
+                    />
+                  </>
+                ) }
               </Box>
             </Box>
           </Box>
+        ) }
 
-        }
-
-
-
-        { tab === 'images' && modelCurr.imagesOther &&
+        { tab === "images" && modelCurr.imagesOther && (
           <Box>
-            <Typography variant="h4" component="h2" marginBottom="20px">Дополнительные изображения</Typography>
-            <ImagesOtherList
-              imagesString={ modelCurr.imagesOther }
-            />
+            <Typography variant="h4" component="h2" marginBottom="20px">
+              Дополнительные изображения
+            </Typography>
+            <ImagesOtherList imagesString={ modelCurr.imagesOther } />
           </Box>
-        }
+        ) }
 
-
-
-        { tab === 'docs' &&
+        { tab === "docs" && (
           <Box>
-            <Typography variant="h4" component="h2" marginBottom="20px">Документы для скачивания</Typography>
+            <Typography variant="h4" component="h2" marginBottom="20px">
+              Документы для скачивания
+            </Typography>
             <DownloadsBlock />
           </Box>
-        }
+        ) }
         <GeneralTextAboutArboniaProps />
-      </Box >
-
+      </Box>
     </Box>
   );
 };
 
 export default Model;
 
-
-
-
-
 export async function getStaticProps(context: { params: { id: string; }; }) {
   const modelId = context.params.id;
   const models: ModelOrigin[] = await getModelsData();
-  const modelCurr = models.find(x => x.id === modelId);
+  const modelCurr = models.find((x) => x.id === modelId);
 
   const colors: ColorOrigin[] = await getColorsData();
   const connections: ConnectionOrigin[] = await getConnectionsData();
@@ -193,10 +199,10 @@ export async function getStaticProps(context: { params: { id: string; }; }) {
   let modelTitle = `Радиатор Arbonia Column ${modelCurr?.nameShort}`;
   let metaTitle = `Радиатор Arbonia ${modelCurr?.nameShort}`;
 
-  let colorTitle = 'палитра Arbonia';
+  let colorTitle = "палитра Arbonia";
   let colorInit = null;
   if (modelCurr != undefined && modelCurr.color) {
-    const color = colors.find(x => x.id === modelCurr.color);
+    const color = colors.find((x) => x.id === modelCurr.color);
     if (color !== undefined) {
       colorTitle = color.name;
       colorInit = color;
@@ -205,10 +211,10 @@ export async function getStaticProps(context: { params: { id: string; }; }) {
     }
   }
 
-  let connectionTitle = 'из каталога Arbonia';
+  let connectionTitle = "из каталога Arbonia";
   let connectionInit = null;
   if (modelCurr != undefined && modelCurr.connection) {
-    const connection = connections.find(x => x.id === modelCurr.connection);
+    const connection = connections.find((x) => x.id === modelCurr.connection);
     if (connection !== undefined) {
       connectionInit = connection;
       connectionTitle = connection.nameShort;
@@ -216,7 +222,6 @@ export async function getStaticProps(context: { params: { id: string; }; }) {
       metaTitle += ` ${connection.nameShort}`;
     }
   }
-
 
   return {
     props: {
@@ -229,20 +234,19 @@ export async function getStaticProps(context: { params: { id: string; }; }) {
       colorTitle,
       connectionTitle,
       connectionInit,
-      colorInit
-    }
+      colorInit,
+    },
   };
 }
 
-
 export async function getStaticPaths() {
-
   const models: ModelOrigin[] = await getModelsData();
-  const paths = models.map(model => { return { params: model }; });
+  const paths = models.map((model) => {
+    return { params: model };
+  });
 
   return {
     paths: paths,
-    fallback: false // See the "fallback" section below
+    fallback: false, // See the "fallback" section below
   };
 }
-

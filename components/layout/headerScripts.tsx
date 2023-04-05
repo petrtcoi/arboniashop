@@ -15,7 +15,7 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
             <YMInitializer accounts={ [89126477] } options={ { defer: true, webvisor: true, ecommerce: "dataLayer", trackLinks: true, accurateTrackBounce: true, clickmap: true, } } />
             <Script
                 id="Jivo"
-                strategy="afterInteractive"
+                strategy="lazyOnload"
                 src="//code-ya.jivosite.com/widget/y6IaQXr7wR"
             />
         </>

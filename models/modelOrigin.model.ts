@@ -1,31 +1,31 @@
 type ModelOrigin = {
-    id: string
-    name: string
-    nameLong: string
-    nameShort: string
+  id: string;
+  name: string;
+  nameLong: string;
+  nameShort: string;
 
-    description?: string
-    width: string
-    height: string
-    lengthSection: string
+  description?: string;
+  width: string;
+  height: string;
+  lengthSection: string;
 
-    badgesString?: string
-    
-    dt50: string
-    dt60: string
-    priceSectionEuro: string
+  badgesString?: string;
 
-    imagePrimary: string
-    imagesOther?: string
+  dt50: string;
+  dt60: string;
+  priceSectionEuro: string;
 
-    inStock?: 'true'
-    color?: string
-    connection?: string
-    inStockSections?: string
+  imagePrimary: string;
+  imagesOther?: string;
 
-    exponentN: string  // Экспонента n
-    weightSection: string //Вес (без воды) М кг / секцию
-    sectionsMax: string  // Максимальное число секций
-}
+  inStock?: "true";
+  color?: string;
+  connection?: string;
+  inStockSections?: string;
 
-export type { ModelOrigin }
+  exponentN: string; // Экспонента n
+  weightSection: string; //Вес (без воды) М кг / секцию
+  sectionsMax: string; // Максимальное число секций
+};
+
+export type { ModelOrigin };

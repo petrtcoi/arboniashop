@@ -1,1 +1,1 @@
-export const w161h121Price = 17
+export const w161h121Price = 17;

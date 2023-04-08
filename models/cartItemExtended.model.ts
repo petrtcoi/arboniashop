@@ -1,13 +1,12 @@
-import { ShoppingCartItem } from "../contexts/shoppingCartContext"
-import { RadiatorConsoles } from "./radiatorConsoles.model"
-import { RadiatorCost } from "./radiatorCost.model"
-
+import { ShoppingCartItem } from "../contexts/shoppingCartContext";
+import { RadiatorConsoles } from "./radiatorConsoles.model";
+import { RadiatorCost } from "./radiatorCost.model";
 
 type CartItemExtended = ShoppingCartItem & {
-    title: string
-    price: RadiatorCost
-    consoles: RadiatorConsoles
-    colorName: string
-}
+  title: string;
+  price: RadiatorCost;
+  consoles: RadiatorConsoles;
+  colorName: string;
+};
 
-export type { CartItemExtended }
+export type { CartItemExtended };

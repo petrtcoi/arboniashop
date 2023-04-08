@@ -70,23 +70,23 @@ const Model: NextPage<ModelProps> = ({
   return (
     <Box itemScope itemType="https://schema.org/ProductModel">
       <PageHeader
-        title={ `${metaTitle} купить в Москве, Санкт-Петербурге и доставкой по России в магазине ArboniaShop.ru` }
-        description={ `${metaTitle} - ${modelCurr.nameShort[0]}-трубчатая модель (ширина ${modelCurr.width} мм) высотой ${modelCurr.height} мм. Официальная гарантия. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Работаем с юридическими и физическими лицами.` }
+        title={`${metaTitle} купить в Москве, Санкт-Петербурге и доставкой по России в магазине ArboniaShop.ru`}
+        description={`${metaTitle} - ${modelCurr.nameShort[0]}-трубчатая модель (ширина ${modelCurr.width} мм) высотой ${modelCurr.height} мм. Официальная гарантия. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Работаем с юридическими и физическими лицами.`}
       />
       <PageTitle
-        header={ "Специализированный магазин Arbonia в России" }
-        subheader={ "Доставка со складов в Москве и Санкт-Петербурге" }
-        breadcrumbs={ [
+        header={"Специализированный магазин Arbonia в России"}
+        subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
+        breadcrumbs={[
           { title: "Главная", link: "/" },
           { title: "Каталог", link: "/catalog" },
           {
             title: `Arbonia ${modelCurr.nameShort}, ${colorCurr.name}, ${connectionCurr.nameShort}`,
             link: `/models/${modelCurr.id}`,
           },
-        ] }
+        ]}
       />
-      <Box sx={ { ...global.pagePadding } }>
-        <Box marginBottom={ "50px" } marginTop={ "20px" }>
+      <Box sx={{ ...global.pagePadding }}>
+        <Box marginBottom={"50px"} marginTop={"20px"}>
           <Typography
             variant="h5"
             component="h1"
@@ -94,92 +94,92 @@ const Model: NextPage<ModelProps> = ({
             textAlign="center"
             itemProp="name"
           >
-            { modelTitle }
+            {modelTitle}
           </Typography>
         </Box>
 
         <ModelMainSection
-          modelCurr={ modelCurr }
-          colorCurr={ colorCurr }
-          connectionCurr={ connectionCurr }
-          modelTitle={ modelTitle }
-          colorTitle={ colorTitle }
-          connectionTitle={ connectionTitle }
-          handleBuyButton={ setTabBuy }
+          modelCurr={modelCurr}
+          colorCurr={colorCurr}
+          connectionCurr={connectionCurr}
+          modelTitle={modelTitle}
+          colorTitle={colorTitle}
+          connectionTitle={connectionTitle}
+          handleBuyButton={setTabBuy}
         />
 
         <Box marginTop="40px">
           <Divider variant="middle" />
         </Box>
 
-        {/* ВКЛАДКИ С ИНФОРМАЦИЕЙ */ }
+        {/* ВКЛАДКИ С ИНФОРМАЦИЕЙ */}
 
         <Box marginTop="20px" marginBottom="40px">
-          <Tabs value={ tab } onChange={ handleChangeTab }>
-            <Tab label="Купить" value="buy" sx={ styles.smallText } />
-            { modelCurr.imagesOther && (
-              <Tab label="Изображения" value="images" sx={ styles.smallText } />
-            ) }
-            <Tab label="Документы" value="docs" sx={ styles.smallText } />
+          <Tabs value={tab} onChange={handleChangeTab}>
+            <Tab label="Купить" value="buy" sx={styles.smallText} />
+            {modelCurr.imagesOther && (
+              <Tab label="Изображения" value="images" sx={styles.smallText} />
+            )}
+            <Tab label="Документы" value="docs" sx={styles.smallText} />
           </Tabs>
         </Box>
 
-        { tab === "buy" && (
+        {tab === "buy" && (
           <Box>
             <Box id="buy-section">
               <Typography variant="h4" component="h2" marginBottom="20px">
-                Купить { modelCurr.name }
+                Купить {modelCurr.name}
               </Typography>
               <Box marginTop="20px">
-                { modelCurr.inStock === "true" &&
-                  colorCurr !== null &&
-                  connectionCurr !== null ? (
+                {modelCurr.inStock === "true" &&
+                colorCurr !== null &&
+                connectionCurr !== null ? (
                   <RadiatorList
-                    model={ modelCurr }
-                    color={ colorCurr }
-                    connection={ connectionCurr }
-                    currencyRate={ rateEuro }
+                    model={modelCurr}
+                    color={colorCurr}
+                    connection={connectionCurr}
+                    currencyRate={rateEuro}
                   />
                 ) : (
                   <>
                     <RadiatorAllOptions
-                      modelInit={ modelCurr ? modelCurr : models[0] }
-                      connectionInit={ connections[0] }
-                      colorInit={ colors[0] }
-                      models={ models }
-                      colors={ colors }
-                      connections={ connections }
+                      modelInit={modelCurr ? modelCurr : models[0]}
+                      connectionInit={connections[0]}
+                      colorInit={colors[0]}
+                      models={models}
+                      colors={colors}
+                      connections={connections}
                     />
                     <RadiatorInCartList
-                      modelCurrentId={ modelCurr.id }
-                      models={ models }
-                      colors={ colors }
-                      connections={ connections }
+                      modelCurrentId={modelCurr.id}
+                      models={models}
+                      colors={colors}
+                      connections={connections}
                     />
                   </>
-                ) }
+                )}
               </Box>
             </Box>
           </Box>
-        ) }
+        )}
 
-        { tab === "images" && modelCurr.imagesOther && (
+        {tab === "images" && modelCurr.imagesOther && (
           <Box>
             <Typography variant="h4" component="h2" marginBottom="20px">
               Дополнительные изображения
             </Typography>
-            <ImagesOtherList imagesString={ modelCurr.imagesOther } />
+            <ImagesOtherList imagesString={modelCurr.imagesOther} />
           </Box>
-        ) }
+        )}
 
-        { tab === "docs" && (
+        {tab === "docs" && (
           <Box>
             <Typography variant="h4" component="h2" marginBottom="20px">
               Документы для скачивания
             </Typography>
             <DownloadsBlock />
           </Box>
-        ) }
+        )}
         <GeneralTextAboutArboniaProps />
       </Box>
     </Box>
@@ -188,7 +188,7 @@ const Model: NextPage<ModelProps> = ({
 
 export default Model;
 
-export async function getStaticProps(context: { params: { id: string; }; }) {
+export async function getStaticProps(context: { params: { id: string } }) {
   const modelId = context.params.id;
   const models: ModelOrigin[] = await getModelsData();
   const modelCurr = models.find((x) => x.id === modelId);

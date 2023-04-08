@@ -1,11 +1,11 @@
 type ConnectionOrigin = {
-    id: string
-    name: string
-    nameShort: string
-    description: string
-    cost: string
-    
-    img: string
-}
+  id: string;
+  name: string;
+  nameShort: string;
+  description: string;
+  cost: string;
 
-export type { ConnectionOrigin }
+  img: string;
+};
+
+export type { ConnectionOrigin };

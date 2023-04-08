@@ -1,1 +1,1 @@
-export type ConsoleType = 'none' | 'w161h121'
+export type ConsoleType = "none" | "w161h121";

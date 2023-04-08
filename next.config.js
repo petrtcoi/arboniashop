@@ -1,14 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-
-
-
-
 module.exports = {
   reactStrictMode: true,
   i18n: {
-    locales: ['ru'],
-    defaultLocale: 'ru',
+    locales: ["ru"],
+    defaultLocale: "ru",
   },
   async headers() {
     return [
@@ -16,8 +12,8 @@ module.exports = {
         source: "/:path*",
         headers: [
           {
-            key: 'cache-control',
-            value: 'public, max-age=31536000, immutable',
+            key: "cache-control",
+            value: "public, max-age=31536000, immutable",
           },
           // {
           //   key: 'X-DNS-Prefetch-Control',
@@ -47,8 +43,8 @@ module.exports = {
           //   key: 'Referrer-Policy',
           //   value: 'origin-when-cross-origin'
           // }
-        ]
-      }
-    ]
-  }
-}
+        ],
+      },
+    ];
+  },
+};

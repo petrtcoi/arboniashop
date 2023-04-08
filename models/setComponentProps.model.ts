@@ -1,11 +1,11 @@
-import { ColorOrigin } from "./colorOrigin.model"
-import { ConnectionOrigin } from "./connectionOrigin.model"
-import { ModelOrigin } from "./modelOrigin.model"
+import { ColorOrigin } from "./colorOrigin.model";
+import { ConnectionOrigin } from "./connectionOrigin.model";
+import { ModelOrigin } from "./modelOrigin.model";
 
 type SetComponentProps = {
-    models: ModelOrigin[]
-    colors: ColorOrigin[]
-    connections: ConnectionOrigin[]
-}
+  models: ModelOrigin[];
+  colors: ColorOrigin[];
+  connections: ConnectionOrigin[];
+};
 
-export type { SetComponentProps }
+export type { SetComponentProps };

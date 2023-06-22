@@ -10,7 +10,7 @@ import { ConsoleType } from "../models/consoleType.model";
 import global from "./../variables/global";
 
 // const API_URL = 'https://us-central1-mouselite-helpers.cloudfunctions.net/api/email/send'
-const API_URL = "https://docker.mouselite.ru/email";
+const API_URL = "https://docker.homekomfort.ru/email";
 
 type SendOrderConfirmationProps = OrderData & {
   items: CartItemExtended[];

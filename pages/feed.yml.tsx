@@ -46,7 +46,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     content += `<yml_catalog date="${today.getFullYear()}-${month}-${day} ${hour}:${minutes}">`;
     content += `<shop>`;
     content += `<name>ArboniaShop</name>`;
-    content += `<company>ООО МАУС ЛАЙТ</company>`;
+    content += `<company>ООО ХОУМ КОМФОРТ</company>`;
     content += `<url>https://arboniashop.ru</url>`;
     content += `<categories><category id="1">Трубчатые радиаторы Arbonia Column</category></categories>`;
     content += `<offers>`;

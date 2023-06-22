@@ -69,7 +69,7 @@ const getOrderConfirmationEmailHtml = (props: Props): string => {
   html += `<br/> <br/><hr/> <p>С уважением, <br/>Магазин радиаторов Arbonia<br/ > <br/>сайт: ${ global.website }
   <br/> тел.: +7 ${ global.phone495String } <br/>тел.: +7 ${ global.phone812String }<br/>email: ${ global.email } </p>`
   html +=
-    '<img src="https://mouselite.ru/arboniashop-email-logo.png" height="50px" width="auto"/>'
+    '<img src="https://homekomfort.ru/arboniashop-email-logo.png" height="50px" width="auto"/>'
 
   return html
 }

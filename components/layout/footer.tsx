@@ -124,15 +124,12 @@ const Footer: NextComponentType<FooterProps> = () => {
         </Grid>
         <Grid item xs={12} md={4}>
           <Typography sx={footerText} itemProp="name">
-            ООО &quot;Маус Лайт&quot;
+            ООО &quot;ХОУМ КОМФОРТ&quot;
           </Typography>
-          {/* <Typography sx={ footerText } itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-                        Центральный офис: <span itemProp="addressLocality">Санкт-Петербург</span>, <span itemProp="streetAddress">наб. Обводного канала, 118АХ, офис 438</span>
-                    </Typography> */}
           <Typography sx={footerText}>
-            &zwj;ИНН 784&zwj;1407862 / КПП 783901001
+            &zwj;ИНН 7811788339 / КПП 781101001
           </Typography>
-          <Typography sx={footerText}>ОГРН 1097847137630</Typography>
+          <Typography sx={footerText}>ОГРН 1237800065865</Typography>
         </Grid>
       </Grid>
       <Box marginY={"15px"}>

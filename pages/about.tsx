@@ -174,29 +174,17 @@ const PageAbout: NextPage<PageAboutProps> = () => {
           <Box marginTop="20px">
             <Typography sx={{ ...styles.standardText }}>
               <span itemProp="name">
-                <strong>ООО &#34;Маус Лайт&#34;</strong>
+                <strong>ООО &#34;ХОУМ КОМФОРТ&#34;</strong>
               </span>
               <br />
-              www.mouselite.ru
-              <br />
-              {/* <span itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-                                Центральный офис:
-                                <span itemProp="postalCode">190005</span>,
-                                <span itemProp="addressLocality">Санкт-Петербург</span>
-                                , <span itemProp="streetAddress">наб. Обводного канала, 118АХ, офис 438</span><br />
-                            </span> */}
-              ОГРН: 1097847137630
-              <br />
-              &zwj;ИНН/КПП 7841407862 / 783901001
-              <br />
-              Р/с 40702810432320000128
-              <br />
-              в Филиал &#34;САНКТ-ПЕТЕРБУРГСКИЙ&#34; АО &#34;АЛЬФА-БАНК&#34; г
-              Санкт-Петербург
-              <br />
-              БИК 044030786
-              <br />
-              Корр/сч: 30101810600000000786
+              www.homekomfort.ru<br />
+              Центральный офис: 193168, РОССИЯ, г САНКТ-ПЕТЕРБУРГ, пр-кт ИСКРОВСКИЙ, ДОМ 22, корпус литера А, оф 3 ПОМЕЩ. 33-Н<br />
+              ОГРН: 1237800065865<br />
+              &zwj;ИНН/КПП 7811788339 / 781101001<br />
+              Р/с 40702810520000015671<br />
+              в ООО &#34;Банк Точка&#34;<br />
+              БИК 044525104<br />
+              Корр/сч: 30101810745374525104<br />
               <br />
               <br />
               Мы работаем как с физическими, так и с юридическими лицами.

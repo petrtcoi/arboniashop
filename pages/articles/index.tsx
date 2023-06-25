@@ -1,17 +1,17 @@
-import React from "react";
-import { NextPage } from "next";
-import { Box, Typography, Grid } from "@mui/material";
-import Link from "next/link";
-import Image from "next/image";
+import React from "react"
+import { NextPage } from "next"
+import { Box, Typography, Grid } from "@mui/material"
+import Link from "next/link"
+import Image from "next/image"
 
-import PageTitle from "../../components/pageTitle/pageTitle";
-import PageHeader from "../../components/pageHeader/pageHeader";
-import Hero from "../../components/hero/hero";
+import PageTitle from "../../components/pageTitle/pageTitle"
+import PageHeader from "../../components/pageHeader/pageHeader"
+import Hero from "../../components/hero/hero"
 
-import * as styles from "../../styles/styles";
-import global from "../../variables/global";
+import * as styles from "../../styles/styles"
+import global from "../../variables/global"
 
-type ArticlesListPageProps = {};
+type ArticlesListPageProps = {}
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
   return (
@@ -29,9 +29,64 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
         imgPath={"/images/sliders/slide.jpeg"}
         header={"Полезная информация Arbonia"}
       />
-      <Box sx={{ ...global.pagePadding }} marginTop="50px">
-        <Grid container spacing={5}>
-          <Grid item md={6}>
+      <Box
+        sx={{ ...global.pagePadding }}
+        marginTop="50px"
+      >
+        <Grid
+          container
+          spacing={5}
+        >
+          <Grid
+            item
+            md={6}
+          >
+            <Box>
+              <Link href="/articles/panorama">
+                <a style={{ textDecoration: "none" }}>
+                  <Box textAlign={"center"}>
+                    <Image
+                      src="/images/articles/panorama/arbonia-00.jpg"
+                      alt="Вертикальный радиатор Arbonia"
+                      width={300}
+                      height={300}
+                    />
+                  </Box>
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.standardTextRedLink }}
+                      component="span"
+                    >
+                      Радиаторы Arbonia для панорамных окон
+                    </Typography>
+                  </Box>
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
+                      Окна с панорамным видом - отличное решение для создания
+                      уютной атмосферы в помещении, поскольку они обеспечивают
+                      больше естественного света и открывают потрясающий вид.
+                      Одной из ключевых задач, которую необходимо решить,
+                      является выбор подходящих отопительных приборов...
+                    </Typography>
+                  </Box>
+                </a>
+              </Link>
+            </Box>
+          </Grid>
+
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/arbonia-3057">
                 <a style={{ textDecoration: "none" }}>
@@ -43,7 +98,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -51,8 +109,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Замена чугунных радиаторов на Arbonia 3057
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Отопление является одним из важнейших аспектов комфорта в
                       жилом помещении. Чтобы система работала надежно и
                       эффективно, важно выбрать правильное оборудование и
@@ -67,7 +131,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/low-models">
                 <a style={{ textDecoration: "none" }}>
@@ -79,7 +146,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -87,8 +157,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Невысокие модели радиаторов Arbonia в наличии
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Радиаторы небольшой высоты набирают всю большую
                       популярность в нашей стране. Связано это с тем, что в
                       современных домах все чаще устанавливают большие окна с
@@ -104,7 +180,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/convection-radiaton-arbonia">
                 <a style={{ textDecoration: "none" }}>
@@ -116,7 +195,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -124,8 +206,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Что такое конвекция и тепловое излучение радиатора
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Все радиаторы отопления, без исключения, обогревают
                       помещение за счет двух физических явлений: конвекция
                       воздуха и тепловое (инфракрасное) излучение. Разные
@@ -139,7 +227,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/calc-radiators-by-old-ones">
                 <a style={{ textDecoration: "none" }}>
@@ -151,7 +242,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -160,8 +254,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       радиаторов
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Правильно определить требуемую тепловую мощность
                       радиаторов очень важно. Ведь недостаточная мощность
                       приведет к тому, что в доме или квартире будет просто
@@ -174,7 +274,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/2-3-columns">
                 <a style={{ textDecoration: "none" }}>
@@ -186,7 +289,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -194,8 +300,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Отличия 2-трубчатых радиаторов Arbonia от 3-трубчатых
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Мы стараемся поддерживать в наличии наиболее популярные
                       модели радиаторов Arbonia. Это наиболее универсальные
                       модели, которые подходят для большинства случаев...
@@ -206,7 +318,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/arbonia-radiators">
                 <a style={{ textDecoration: "none" }}>
@@ -218,7 +333,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -226,8 +344,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Преимущества и недостатки трубчатых радиаторов Arbonia
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Arbonia является один из лидеров в производстве стальных
                       трубчатых радиаторов. Бренд имеет давнюю историю и хорошо
                       зарекомендовал себя на российском рынке...
@@ -238,7 +362,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/consoles">
                 <a style={{ textDecoration: "none" }}>
@@ -250,7 +377,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -258,8 +388,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Регулируемые кронштейны W161 или фиксирующий зажим ZB0281
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Радиаторы Arbonia чаще всего комплектуются одним из двух
                       вариантов кронштейнов: W161 + ZB0280 и
                       ZB0280/ZB0281/ZB0282
@@ -270,7 +406,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/2180-3180">
                 <a style={{ textDecoration: "none" }}>
@@ -282,7 +421,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -290,8 +432,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Вертикальные радиаторы Arbonia
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Вертикальные трубчатые радиаторы Arbonia - один из
                       наиболее популярных вариантов отопления помещений. Именно
                       поэтому, в складскую программу входят сразу 2 модели
@@ -303,7 +451,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/connections">
                 <a style={{ textDecoration: "none" }}>
@@ -315,7 +466,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -323,8 +477,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Радиаторы Arbonia с боковым и нижним подключением
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Два наиболее используемых варианта подключения для
                       радиаторов Arbonia: боковое ¾” и нижнее со встроенным
                       термовентилем. Именно они входят в нашу складскую
@@ -336,7 +496,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
-          <Grid item md={6}>
+          <Grid
+            item
+            md={6}
+          >
             <Box>
               <Link href="/articles/calculate">
                 <a style={{ textDecoration: "none" }}>
@@ -348,7 +511,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       height={300}
                     />
                   </Box>
-                  <Box textAlign={"center"} marginTop="10px">
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
                     <Typography
                       sx={{ ...styles.standardTextRedLink }}
                       component="span"
@@ -356,8 +522,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
                       Как подбирать радиаторы Arbonia по мощности
                     </Typography>
                   </Box>
-                  <Box textAlign={"justify"} marginTop="10px">
-                    <Typography sx={{ ...styles.smallText }} component="span">
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
                       Трубчатые радиаторы Arbonia предоставляют широкие
                       возможности по подбору конкретных моделей под каждый
                       случай: практически любая высота и длина доступны для
@@ -371,13 +543,13 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
         </Grid>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default ArticlesListPage;
+export default ArticlesListPage
 
 export async function getStaticProps() {
   return {
     props: {}, // will be passed to the page component as props
-  };
+  }
 }

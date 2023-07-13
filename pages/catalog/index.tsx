@@ -1,42 +1,42 @@
-import { NextPage } from "next";
-import Link from "next/link";
-import Image from "next/image";
+import { NextPage } from "next"
+import Link from "next/link"
+import Image from "next/image"
 
-import { Box, Typography, Grid, Divider } from "@mui/material";
+import { Box, Typography, Grid, Divider } from "@mui/material"
 
-import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions";
-import RadiatorInCartList from "../../components/pageModels/radiatorInCartList";
-import BlockHowReadModel from "../../components/blockHowReadModel/blockHowReadModel";
-import PageHeader from "../../components/pageHeader/pageHeader";
-import Hero from "../../components/hero/hero";
-import PageTitle from "../../components/pageTitle/pageTitle";
+import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions"
+import RadiatorInCartList from "../../components/pageModels/radiatorInCartList"
+import BlockHowReadModel from "../../components/blockHowReadModel/blockHowReadModel"
+import PageHeader from "../../components/pageHeader/pageHeader"
+import Hero from "../../components/hero/hero"
+import PageTitle from "../../components/pageTitle/pageTitle"
 
-import getModelsData from "../../api_utils/getModelsData";
-import getColorsData from "../../api_utils/getColorsData";
-import getConnectionsData from "../../api_utils/getConnectionsData";
+import getModelsData from "../../api_utils/getModelsData"
+import getColorsData from "../../api_utils/getColorsData"
+import getConnectionsData from "../../api_utils/getConnectionsData"
 
-import { ModelOrigin } from "../../models/modelOrigin.model";
-import { ColorOrigin } from "../../models/colorOrigin.model";
-import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model"
+import { ColorOrigin } from "../../models/colorOrigin.model"
+import { ConnectionOrigin } from "../../models/connectionOrigin.model"
 
-import * as styles from "../../styles/styles";
-import global from "../../variables/global";
+import * as styles from "../../styles/styles"
+import global from "../../variables/global"
 
 type CatalogProps = {
-  models: ModelOrigin[];
-  colors: ColorOrigin[];
-  connections: ConnectionOrigin[];
-};
+  models: ModelOrigin[]
+  colors: ColorOrigin[]
+  connections: ConnectionOrigin[]
+}
 const MODELS_GROUPS = [
   { firstChar: "2", title: "2-трубчатые (65 мм)" },
   { firstChar: "3", title: "3-трубчатые (105 мм)" },
   { firstChar: "4", title: "4-трубчатые (145 мм)" },
   { firstChar: "5", title: "5-трубчатые (185 мм)" },
   { firstChar: "6", title: "6-трубчатые (225 мм)" },
-];
+]
 
 const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
-  const outStockModels = models.filter((x) => !x.inStock);
+  const outStockModels = models.filter(x => !x.inStock)
 
   return (
     <Box>
@@ -65,7 +65,10 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
       />
       <Box sx={{ ...global.pagePadding }}>
         <Box marginTop="20px">
-          <Typography textAlign="center" sx={{ ...styles.standardText }}>
+          <Typography
+            textAlign="center"
+            sx={{ ...styles.standardText }}
+          >
             В данном разделе представлен полный ассортимент радиаторов Arbonia
             Column.
             <br />
@@ -92,9 +95,18 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
           {/* Стандартная высота */}
           <Box marginTop="40px">
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <Divider variant="fullWidth" textAlign="left">
+            <Grid
+              container
+              spacing={2}
+            >
+              <Grid
+                item
+                xs={12}
+              >
+                <Divider
+                  variant="fullWidth"
+                  textAlign="left"
+                >
                   <Typography
                     component="h3"
                     sx={{ ...styles.standardText, color: "#ef7d00" }}
@@ -103,7 +115,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                   </Typography>
                 </Divider>
               </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid
+                item
+                xs={12}
+                md={6}
+              >
                 <Typography sx={{ ...styles.standardText }}>
                   Боковое подключение
                 </Typography>
@@ -146,7 +162,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                   </Box>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid
+                item
+                xs={12}
+                md={6}
+              >
                 <Typography sx={{ ...styles.standardText }}>
                   Нижнее подключение
                 </Typography>
@@ -194,7 +214,10 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
           {/* Высокие */}
           <Box marginTop="40px">
-            <Divider variant="fullWidth" textAlign="left">
+            <Divider
+              variant="fullWidth"
+              textAlign="left"
+            >
               <Typography
                 component="h3"
                 sx={{ ...styles.standardText, color: "#ef7d00" }}
@@ -205,13 +228,25 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
             {/* <Typography component="h3" sx={ { ...styles.standardTextThin } }>
                     Такие радиаторы уже нельзя поставить под окна. Но они отлично подходят для установки на узкие ниши. Занимая мало места, высокие радиаторы обеспечивают высокую тепловую мощность.
                 </Typography> */}
-            <Grid container spacing={2} marginTop={"5px"}>
-              <Grid item xs={12} md={6}>
+            <Grid
+              container
+              spacing={2}
+              marginTop={"5px"}
+            >
+              <Grid
+                item
+                xs={12}
+                md={6}
+              >
                 <Typography sx={{ ...styles.standardText }}>
                   Боковое подключение
                 </Typography>
                 <Box paddingLeft="10px">
-                  <Box id="2180-9016-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="2180-9016-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/2180-9016-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -220,7 +255,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="2180-7016-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="2180-7016-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/2180-7016-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -229,7 +268,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="2180-sf3-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="2180-sf3-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/2180-sf3-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -238,7 +281,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3180-9016-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3180-9016-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3180-9016-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -247,7 +294,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3180-7016-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3180-7016-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3180-7016-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -256,7 +307,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3180-sf3-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3180-sf3-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3180-sf3-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -267,12 +322,20 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                   </Box>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid
+                item
+                xs={12}
+                md={6}
+              >
                 <Typography sx={{ ...styles.standardText }}>
                   Нижнее подключение
                 </Typography>
                 <Box paddingLeft="10px">
-                  <Box id="2180-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="2180-9016-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/2180-9016-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -281,7 +344,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="2180-7016-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="2180-7016-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/2180-7016-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -290,7 +357,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="2180-sf3-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="2180-sf3-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/2180-sf3-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -299,7 +370,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3180-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3180-9016-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3180-9016-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -308,7 +383,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3180-7016-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3180-7016-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3180-7016-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -317,7 +396,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3180-sf3-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3180-sf3-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3180-sf3-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -333,7 +416,10 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
           {/* Низкие радиаторы */}
           <Box marginTop="40px">
-            <Divider variant="fullWidth" textAlign="left">
+            <Divider
+              variant="fullWidth"
+              textAlign="left"
+            >
               <Typography
                 component="h3"
                 sx={{ ...styles.standardText, color: "#ef7d00" }}
@@ -344,13 +430,25 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
             {/* <Typography component="h3" sx={ { ...styles.standardTextThin } }>
                     Радиаторы для установки под окна с низкими подоконниками (50-60 см), а также для монтажа на ножки перед панорамными окнами
                 </Typography> */}
-            <Grid container spacing={2} marginTop={"5px"}>
-              <Grid item xs={12} md={6}>
+            <Grid
+              container
+              spacing={2}
+              marginTop={"5px"}
+            >
+              <Grid
+                item
+                xs={12}
+                md={6}
+              >
                 <Typography sx={{ ...styles.standardText }}>
                   Боковое подключение
                 </Typography>
                 <Box paddingLeft="10px">
-                  <Box id="2030-9016-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="2030-9016-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/2030-9016-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -359,7 +457,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3030-9016-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3030-9016-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3030-9016-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -368,7 +470,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3037-9016-12" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3037-9016-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3037-9016-12">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -379,12 +485,20 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                   </Box>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid
+                item
+                xs={12}
+                md={6}
+              >
                 <Typography sx={{ ...styles.standardText }}>
                   Нижнее подключение
                 </Typography>
                 <Box paddingLeft="10px">
-                  <Box id="3030-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3030-9016-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3030-9016-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -393,7 +507,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3030-9005-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3030-9005-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3030-9005-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -402,7 +520,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       </a>
                     </Link>
                   </Box>
-                  <Box id="3037-9016-69tvv" paddingTop="50px" marginTop="-50px">
+                  <Box
+                    id="3037-9016-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
                     <Link href="/models/3037-9016-69tvv">
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
@@ -418,9 +540,18 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
 
           {/* Популярные подборки */}
           <Box marginTop="40px">
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <Divider variant="fullWidth" textAlign="left">
+            <Grid
+              container
+              spacing={2}
+            >
+              <Grid
+                item
+                xs={12}
+              >
+                <Divider
+                  variant="fullWidth"
+                  textAlign="left"
+                >
                   <Typography
                     component="h3"
                     sx={{ ...styles.standardText, color: "#ef7d00" }}
@@ -429,7 +560,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                   </Typography>
                 </Divider>
               </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid
+                item
+                xs={12}
+                md={6}
+              >
                 {/* <Typography sx={ { ...styles.standardText } }>
                                     По цвету
                                 </Typography> */}
@@ -445,6 +580,21 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                     <a style={{ textDecoration: "none" }}>
                       <Typography sx={{ ...styles.standartTextThinLink }}>
                         Высокие радиаторы (склад)
+                      </Typography>
+                    </a>
+                  </Link>
+                </Box>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+              >
+                <Box paddingLeft="10px">
+                  <Link href="/catalog/2180-stock">
+                    <a style={{ textDecoration: "none" }}>
+                      <Typography sx={{ ...styles.standartTextThinLink }}>
+                        Arbonia 2180 (склад)
                       </Typography>
                     </a>
                   </Link>
@@ -466,11 +616,23 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
             Радиаторы Arbonia под заказ
           </Typography>
           <Box marginTop={{ xs: "20px", md: "40px" }} />
-          <Grid container spacing={2}>
-            {MODELS_GROUPS.map((group) => {
+          <Grid
+            container
+            spacing={2}
+          >
+            {MODELS_GROUPS.map(group => {
               return (
-                <Grid item xs={12} sm={6} md={4} key={group.title}>
-                  <Box textAlign="center" marginTop="20px">
+                <Grid
+                  item
+                  xs={12}
+                  sm={6}
+                  md={4}
+                  key={group.title}
+                >
+                  <Box
+                    textAlign="center"
+                    marginTop="20px"
+                  >
                     <div style={{ height: "150px" }}>
                       <Image
                         // layout='fill'
@@ -484,7 +646,10 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       {group.title}
                     </Typography>
                   </Box>
-                  <Box paddingLeft="10px" textAlign="center">
+                  <Box
+                    paddingLeft="10px"
+                    textAlign="center"
+                  >
                     {outStockModels
                       .filter(
                         (model: ModelOrigin) => model.id[0] === group.firstChar
@@ -508,11 +673,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                               </a>
                             </Link>
                           </Box>
-                        );
+                        )
                       })}
                   </Box>
                 </Grid>
-              );
+              )
             })}
           </Grid>
         </Box>
@@ -528,7 +693,10 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
             Произвольная модель Arbonia
           </Typography>
           <Box marginTop="20px" />
-          <Typography sx={styles.standardText} textAlign="center">
+          <Typography
+            sx={styles.standardText}
+            textAlign="center"
+          >
             Выберете произвольную модель Arbonia Column для оформления заказа.
             <br />
             Также,если у вас есть готовая спецификация, вы можете прислать нам
@@ -538,7 +706,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
           </Typography>
           <Box marginTop="20px" />
           <RadiatorAllOptions
-            modelInit={models.filter((x) => !x.inStock)[0]}
+            modelInit={models.filter(x => !x.inStock)[0]}
             colorInit={colors[0]}
             connectionInit={connections[0]}
             modelFreeze={false}
@@ -554,20 +722,20 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default Catalog;
+export default Catalog
 
 export async function getStaticProps() {
-  const models: ModelOrigin[] = await getModelsData();
-  const colors: ColorOrigin[] = await getColorsData();
-  const connections: ConnectionOrigin[] = await getConnectionsData();
+  const models: ModelOrigin[] = await getModelsData()
+  const colors: ColorOrigin[] = await getColorsData()
+  const connections: ConnectionOrigin[] = await getConnectionsData()
   return {
     props: {
       models,
       colors,
       connections,
     },
-  };
+  }
 }

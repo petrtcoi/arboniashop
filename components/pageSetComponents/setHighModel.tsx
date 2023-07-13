@@ -1,14 +1,15 @@
-import React from "react";
-import { Box, Typography } from "@mui/material";
+import React from "react"
+import Link from "next/link"
+import { Box, Typography } from "@mui/material"
 
-import ModelBlock from "../modelBlock/modelBlock";
-import PageHeader from "../../components/pageHeader/pageHeader";
-import Hero from "../../components/hero/hero";
+import ModelBlock from "../modelBlock/modelBlock"
+import PageHeader from "../../components/pageHeader/pageHeader"
+import Hero from "../../components/hero/hero"
 
-import { SetComponentProps } from "../../models/setComponentProps.model";
+import { SetComponentProps } from "../../models/setComponentProps.model"
 
-import * as styles from "../../styles/styles";
-import global from "../../variables/global";
+import * as styles from "../../styles/styles"
+import global from "../../variables/global"
 
 const SetHighModel: React.FC<SetComponentProps> = ({
   models,
@@ -38,6 +39,23 @@ const SetHighModel: React.FC<SetComponentProps> = ({
             интерьерах. Arbonia Column не нужно скрывать под декоративными
             панелями.
           </Typography>
+          <Box marginTop="20px">
+            <Typography sx={{ ...styles.standardText }}>
+              Если вас интересуют только 2-трубчатые модели, то посетите наш
+              обзор &#160;
+              <Link href="/catalog/2180-stock">
+                <a style={{ textDecoration: "none" }}>
+                  <Typography
+                    sx={{ ...styles.standardTextRedLink }}
+                    component="span"
+                  >
+                    складских радиаторов Arbonia 2180
+                  </Typography>
+                </a>
+              </Link>
+              , где мы больше внимания уделяем именно этой модели.
+            </Typography>
+          </Box>
         </Box>
         <Box marginTop="20px">
           <Typography sx={{ ...styles.standardText }}>
@@ -56,20 +74,18 @@ const SetHighModel: React.FC<SetComponentProps> = ({
           description={
             "Высокий 2-трубчатый радиатор в белом цвете и боковым подклчюением 3/4. Данная модель имеет стильный дизайн. Диаметр подключения 3/4 позволяет ставить радиатор в старые дома с однотрубной системой отопления."
           }
-          model={models.find((x) => x.id === "2180-9016-12") || models[0]}
-          color={colors.find((x) => x.id === "9016") || colors[0]}
-          connection={connections.find((x) => x.id === "12") || connections[0]}
+          model={models.find(x => x.id === "2180-9016-12") || models[0]}
+          color={colors.find(x => x.id === "9016") || colors[0]}
+          connection={connections.find(x => x.id === "12") || connections[0]}
         />
         <ModelBlock
           title={"Arbonia 2180 RAL 9016, №69 ТВВ"}
           description={
             "Высокий 2-трубчатый радиатор в белом цвете и нижним подключением со встроенным термовентилем. Радиатор подойдет для монтажа в современных домах с разводкой отопления по полу."
           }
-          model={models.find((x) => x.id === "2180-9016-69tvv") || models[0]}
-          color={colors.find((x) => x.id === "9016") || colors[0]}
-          connection={
-            connections.find((x) => x.id === "69tvv") || connections[0]
-          }
+          model={models.find(x => x.id === "2180-9016-69tvv") || models[0]}
+          color={colors.find(x => x.id === "9016") || colors[0]}
+          connection={connections.find(x => x.id === "69tvv") || connections[0]}
         />
 
         {/* 2180 RAL 7016*/}
@@ -78,20 +94,18 @@ const SetHighModel: React.FC<SetComponentProps> = ({
           description={
             "Высокий 2-трубчатый радиатор в антрацитово-сером цвете (RAL 7016) и боковым подклчюением 3/4. Данная модель имеет стильный дизайн. Диаметр подключения 3/4 позволяет ставить радиатор в старые дома с однотрубной системой отопления."
           }
-          model={models.find((x) => x.id === "2180-7016-12") || models[0]}
-          color={colors.find((x) => x.id === "7016") || colors[0]}
-          connection={connections.find((x) => x.id === "12") || connections[0]}
+          model={models.find(x => x.id === "2180-7016-12") || models[0]}
+          color={colors.find(x => x.id === "7016") || colors[0]}
+          connection={connections.find(x => x.id === "12") || connections[0]}
         />
         <ModelBlock
           title={"Arbonia 2180 RAL 7016, №69 ТВВ"}
           description={
             "Высокий 2-трубчатый радиатор в антрацитово-сером цвете (RAL 7016) и нижним подключением со встроенным термовентилем. Радиатор подойдет для монтажа в современных домах с разводкой отопления по полу."
           }
-          model={models.find((x) => x.id === "2180-7016-69tvv") || models[0]}
-          color={colors.find((x) => x.id === "7016") || colors[0]}
-          connection={
-            connections.find((x) => x.id === "69tvv") || connections[0]
-          }
+          model={models.find(x => x.id === "2180-7016-69tvv") || models[0]}
+          color={colors.find(x => x.id === "7016") || colors[0]}
+          connection={connections.find(x => x.id === "69tvv") || connections[0]}
         />
 
         {/* 2180 SF-3*/}
@@ -102,20 +116,18 @@ const SetHighModel: React.FC<SetComponentProps> = ({
           description={
             "Высокий 2-трубчатый радиатор в цвете SF-3 Anthrazit metallic и боковым подклчюением 3/4. Данная модель имеет стильный дизайн. Диаметр подключения 3/4 позволяет ставить радиатор в старые дома с однотрубной системой отопления."
           }
-          model={models.find((x) => x.id === "2180-sf3-12") || models[0]}
-          color={colors.find((x) => x.id === "sf3") || colors[0]}
-          connection={connections.find((x) => x.id === "12") || connections[0]}
+          model={models.find(x => x.id === "2180-sf3-12") || models[0]}
+          color={colors.find(x => x.id === "sf3") || colors[0]}
+          connection={connections.find(x => x.id === "12") || connections[0]}
         />
         <ModelBlock
           title={"Arbonia 2180 SF-3 Anthrazit metallic, №69 ТВВ"}
           description={
             "Высокий 2-трубчатый радиатор в цвете SF-3 Anthrazit metallic и нижним подключением со встроенным термовентилем. Радиатор подойдет для монтажа в современных домах с разводкой отопления по полу."
           }
-          model={models.find((x) => x.id === "2180-sf3-69tvv") || models[0]}
-          color={colors.find((x) => x.id === "sf3") || colors[0]}
-          connection={
-            connections.find((x) => x.id === "69tvv") || connections[0]
-          }
+          model={models.find(x => x.id === "2180-sf3-69tvv") || models[0]}
+          color={colors.find(x => x.id === "sf3") || colors[0]}
+          connection={connections.find(x => x.id === "69tvv") || connections[0]}
         />
 
         {/* 3180 белый*/}
@@ -124,20 +136,18 @@ const SetHighModel: React.FC<SetComponentProps> = ({
           description={
             "Высокий 3-трубчатый радиатор в белом цвете и боковым подклчюением 3/4. Данная модель имеет стильный дизайн. Диаметр подключения 3/4 позволяет ставить радиатор в старые дома с однотрубной системой отопления."
           }
-          model={models.find((x) => x.id === "3180-9016-12") || models[0]}
-          color={colors.find((x) => x.id === "9016") || colors[0]}
-          connection={connections.find((x) => x.id === "12") || connections[0]}
+          model={models.find(x => x.id === "3180-9016-12") || models[0]}
+          color={colors.find(x => x.id === "9016") || colors[0]}
+          connection={connections.find(x => x.id === "12") || connections[0]}
         />
         <ModelBlock
           title={"Arbonia 3180 RAL 9016, №69 ТВВ"}
           description={
             "Высокий 3-трубчатый радиатор в белом цвете и нижним подключением со встроенным термовентилем. Радиатор подойдет для монтажа в современных домах с разводкой отопления по полу."
           }
-          model={models.find((x) => x.id === "3180-9016-69tvv") || models[0]}
-          color={colors.find((x) => x.id === "9016") || colors[0]}
-          connection={
-            connections.find((x) => x.id === "69tvv") || connections[0]
-          }
+          model={models.find(x => x.id === "3180-9016-69tvv") || models[0]}
+          color={colors.find(x => x.id === "9016") || colors[0]}
+          connection={connections.find(x => x.id === "69tvv") || connections[0]}
         />
 
         {/* 3180 RAL 7016*/}
@@ -146,20 +156,18 @@ const SetHighModel: React.FC<SetComponentProps> = ({
           description={
             "Высокий 3-трубчатый радиатор в антрацитово-сером цвете (RAL 7016) и боковым подклчюением 3/4. Данная модель имеет стильный дизайн. Диаметр подключения 3/4 позволяет ставить радиатор в старые дома с однотрубной системой отопления."
           }
-          model={models.find((x) => x.id === "3180-7016-12") || models[0]}
-          color={colors.find((x) => x.id === "7016") || colors[0]}
-          connection={connections.find((x) => x.id === "12") || connections[0]}
+          model={models.find(x => x.id === "3180-7016-12") || models[0]}
+          color={colors.find(x => x.id === "7016") || colors[0]}
+          connection={connections.find(x => x.id === "12") || connections[0]}
         />
         <ModelBlock
           title={"Arbonia 3180 RAL 7016, №69 ТВВ"}
           description={
             "Высокий 3-трубчатый радиатор в антрацитово-сером цвете (RAL 7016) и нижним подключением со встроенным термовентилем. Радиатор подойдет для монтажа в современных домах с разводкой отопления по полу."
           }
-          model={models.find((x) => x.id === "3180-7016-69tvv") || models[0]}
-          color={colors.find((x) => x.id === "7016") || colors[0]}
-          connection={
-            connections.find((x) => x.id === "69tvv") || connections[0]
-          }
+          model={models.find(x => x.id === "3180-7016-69tvv") || models[0]}
+          color={colors.find(x => x.id === "7016") || colors[0]}
+          connection={connections.find(x => x.id === "69tvv") || connections[0]}
         />
 
         {/* 3180 SF-3*/}
@@ -170,24 +178,22 @@ const SetHighModel: React.FC<SetComponentProps> = ({
           description={
             "Высокий 3-трубчатый радиатор в цвете SF-3 Anthrazit metallic и боковым подклчюением 3/4. Данная модель имеет стильный дизайн. Диаметр подключения 3/4 позволяет ставить радиатор в старые дома с однотрубной системой отопления."
           }
-          model={models.find((x) => x.id === "3180-sf3-12") || models[0]}
-          color={colors.find((x) => x.id === "sf3") || colors[0]}
-          connection={connections.find((x) => x.id === "12") || connections[0]}
+          model={models.find(x => x.id === "3180-sf3-12") || models[0]}
+          color={colors.find(x => x.id === "sf3") || colors[0]}
+          connection={connections.find(x => x.id === "12") || connections[0]}
         />
         <ModelBlock
           title={"Arbonia 3180 SF-3 Anthrazit metallic, №69 ТВВ"}
           description={
             "Высокий 3-трубчатый радиатор в цвете SF-3 Anthrazit metallic и нижним подключением со встроенным термовентилем. Радиатор подойдет для монтажа в современных домах с разводкой отопления по полу."
           }
-          model={models.find((x) => x.id === "3180-sf3-69tvv") || models[0]}
-          color={colors.find((x) => x.id === "sf3") || colors[0]}
-          connection={
-            connections.find((x) => x.id === "69tvv") || connections[0]
-          }
+          model={models.find(x => x.id === "3180-sf3-69tvv") || models[0]}
+          color={colors.find(x => x.id === "sf3") || colors[0]}
+          connection={connections.find(x => x.id === "69tvv") || connections[0]}
         />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default SetHighModel;
+export default SetHighModel

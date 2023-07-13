@@ -282,6 +282,19 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                     </Link>
                   </Box>
                   <Box
+                    id="2180-9005-12"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
+                    <Link href="/models/2180-9005-12">
+                      <a style={{ textDecoration: "none" }}>
+                        <Typography sx={{ ...styles.standartTextThinLink }}>
+                          Arbonia 2180 (RAL 9005 matt)
+                        </Typography>
+                      </a>
+                    </Link>
+                  </Box>
+                  <Box
                     id="3180-9016-12"
                     paddingTop="50px"
                     marginTop="-50px"
@@ -366,6 +379,19 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                       <a style={{ textDecoration: "none" }}>
                         <Typography sx={{ ...styles.standartTextThinLink }}>
                           Arbonia 2180 (SF-3 Anthrazit metallic)
+                        </Typography>
+                      </a>
+                    </Link>
+                  </Box>
+                  <Box
+                    id="2180-9005-69tvv"
+                    paddingTop="50px"
+                    marginTop="-50px"
+                  >
+                    <Link href="/models/2180-9005-69tvv">
+                      <a style={{ textDecoration: "none" }}>
+                        <Typography sx={{ ...styles.standartTextThinLink }}>
+                          Arbonia 2180 (RAL 9005 matt)
                         </Typography>
                       </a>
                     </Link>

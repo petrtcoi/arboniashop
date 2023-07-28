@@ -24,6 +24,7 @@ import { ColorOrigin } from "../../models/colorOrigin.model"
 import * as styles from "./../../styles/styles"
 import global from "../../variables/global"
 import GeneralTextAboutArboniaProps from "../../components/generalTextAboutArbonia"
+import Link from "next/link"
 
 type ModelProps = {
   modelCurr: ModelOrigin
@@ -89,6 +90,38 @@ const Model: NextPage<ModelProps> = ({
         ]}
       />
       <Box sx={{ ...global.pagePadding }}>
+        {/* Shit code! */}
+
+        {modelCurr.id.startsWith("2180") && (
+          <Box>
+            <Link href="/models/2180">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 2180
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
+        {modelCurr.id.startsWith("2050") && (
+          <Box>
+            <Link href="/models/2050">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 2050
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
+        {/* Shit code end */}
+
         <Box
           marginBottom={"50px"}
           marginTop={"20px"}
@@ -103,7 +136,6 @@ const Model: NextPage<ModelProps> = ({
             {modelTitle}
           </Typography>
         </Box>
-
         <ModelMainSection
           modelCurr={modelCurr}
           colorCurr={colorCurr}
@@ -113,13 +145,10 @@ const Model: NextPage<ModelProps> = ({
           connectionTitle={connectionTitle}
           handleBuyButton={setTabBuy}
         />
-
         <Box marginTop="40px">
           <Divider variant="middle" />
         </Box>
-
         {/* ВКЛАДКИ С ИНФОРМАЦИЕЙ */}
-
         <Box
           marginTop="20px"
           marginBottom="40px"
@@ -147,7 +176,6 @@ const Model: NextPage<ModelProps> = ({
             />
           </Tabs>
         </Box>
-
         {tab === "buy" && (
           <Box>
             <Box id="buy-section">
@@ -190,7 +218,6 @@ const Model: NextPage<ModelProps> = ({
             </Box>
           </Box>
         )}
-
         {tab === "images" && modelCurr.imagesOther && (
           <Box>
             <Typography
@@ -203,7 +230,6 @@ const Model: NextPage<ModelProps> = ({
             <ImagesOtherList imagesString={modelCurr.imagesOther} />
           </Box>
         )}
-
         {tab === "docs" && (
           <Box>
             <Typography

@@ -1,21 +1,24 @@
-import type { NextPage } from "next";
-import Link from "next/link";
-import { Box, Typography, Grid, Divider } from "@mui/material";
+import type { NextPage } from "next"
+import Link from "next/link"
+import { Box, Typography, Grid, Divider } from "@mui/material"
 
-import PageHeader from "../components/pageHeader/pageHeader";
-import PageTitle from "../components/pageTitle/pageTitle";
-import Hero from "../components/hero/hero";
+import PageHeader from "../components/pageHeader/pageHeader"
+import PageTitle from "../components/pageTitle/pageTitle"
+import Hero from "../components/hero/hero"
 
-import trackEvent from "../utils/trackEvent";
+import trackEvent from "../utils/trackEvent"
 
-import * as styles from "../styles/styles";
-import global from "../variables/global";
+import * as styles from "../styles/styles"
+import global from "../variables/global"
 
-type PageAboutProps = {};
+type PageAboutProps = {}
 
 const PageAbout: NextPage<PageAboutProps> = () => {
   return (
-    <Box itemScope itemType="https://schema.org/Organization">
+    <Box
+      itemScope
+      itemType="https://schema.org/Organization"
+    >
       <PageTitle
         header={"Специализированный магазин Arbonia в России"}
         subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
@@ -25,12 +28,29 @@ const PageAbout: NextPage<PageAboutProps> = () => {
         ]}
       />
       <PageHeader title={"О магазине радиаторов Arbonia"} />
-      <Hero imgPath={"/images/sliders/slide.jpeg"} header={"О магазине"} />
-      <Box sx={{ ...global.pagePadding }} marginTop="20px">
+      <Hero
+        imgPath={"/images/sliders/slide.jpeg"}
+        header={"О магазине"}
+      />
+      <Box
+        sx={{ ...global.pagePadding }}
+        marginTop="20px"
+      >
         <Box>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={7} lg={6}>
-              <Typography sx={{ ...styles.standardText }} component={"span"}>
+          <Grid
+            container
+            spacing={2}
+          >
+            <Grid
+              item
+              xs={12}
+              md={7}
+              lg={6}
+            >
+              <Typography
+                sx={{ ...styles.standardText }}
+                component={"span"}
+              >
                 Наша компания специализируется на отопительном оборудовании
                 премиум-класса: стальные трубчатые радиаторы, внутрипольные
                 конвекторы, дизайн-радиаторы и чугунные ретро-радиаторы. Мы
@@ -55,17 +75,30 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 (Деловые Линии, Возовоз, Байкал-Сервис и др).
               </Typography>
             </Grid>
-            <Grid item xs={12} md={1} lg={1}>
+            <Grid
+              item
+              xs={12}
+              md={1}
+              lg={1}
+            >
               <Divider orientation="vertical" />
             </Grid>
-            <Grid item xs={12} md={4} lg={3}>
+            <Grid
+              item
+              xs={12}
+              md={4}
+              lg={3}
+            >
               <Box>
                 <Typography sx={{ ...styles.standardTextBold }}>
                   Контактная информация
                 </Typography>
               </Box>
               <Box marginTop="20px">
-                <Typography sx={{ ...styles.smallTextBold }} display="inline">
+                <Typography
+                  sx={{ ...styles.smallTextBold }}
+                  display="inline"
+                >
                   тел.:&nbsp;
                 </Typography>
                 <Link href={`tel:${global.phone495}`}>
@@ -74,7 +107,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     onClick={() => trackEvent("phone_click")}
                   >
                     <Typography
-                      sx={{ ...styles.standartTextLink }}
+                      sx={{ ...styles.standardTextLink }}
                       display="inline"
                       itemProp="telephone"
                     >
@@ -95,7 +128,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     onClick={() => trackEvent("phone_click")}
                   >
                     <Typography
-                      sx={{ ...styles.standartTextLink }}
+                      sx={{ ...styles.standardTextLink }}
                       display="inline"
                       itemProp="telephone"
                     >
@@ -105,7 +138,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 </Link>
               </Box>
               <Box>
-                <Typography sx={{ ...styles.smallTextBold }} display="inline">
+                <Typography
+                  sx={{ ...styles.smallTextBold }}
+                  display="inline"
+                >
                   email:&nbsp;
                 </Typography>
                 <Link href={`mailto:${global.email}`}>
@@ -114,7 +150,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     onClick={() => trackEvent("email_click")}
                   >
                     <Typography
-                      sx={{ ...styles.standartTextLink }}
+                      sx={{ ...styles.standardTextLink }}
                       display="inline"
                       itemProp="email"
                     >
@@ -125,7 +161,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
               </Box>
 
               <Box>
-                <Typography sx={{ ...styles.smallTextBold }} display="inline">
+                <Typography
+                  sx={{ ...styles.smallTextBold }}
+                  display="inline"
+                >
                   whatsapp:&nbsp;
                 </Typography>
                 <Link href={`https://wa.me/${global.whatsApp}`}>
@@ -134,7 +173,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     onClick={() => trackEvent("whatsapp_click")}
                   >
                     <Typography
-                      sx={{ ...styles.standartTextLink }}
+                      sx={{ ...styles.standardTextLink }}
                       display="inline"
                     >
                       {global.whatsAppString}
@@ -144,7 +183,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
               </Box>
 
               <Box>
-                <Typography sx={{ ...styles.smallTextBold }} display="inline">
+                <Typography
+                  sx={{ ...styles.smallTextBold }}
+                  display="inline"
+                >
                   telegram:&nbsp;
                 </Typography>
                 <Link href={`https://t.me/Arboniashopbot`}>
@@ -153,7 +195,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     onClick={() => trackEvent("telegram_click")}
                   >
                     <Typography
-                      sx={{ ...styles.standartTextLink }}
+                      sx={{ ...styles.standardTextLink }}
                       display="inline"
                     >
                       @Arboniashopbot
@@ -168,7 +210,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
           <Divider />
         </Box>
         <Box>
-          <Typography variant="h5" component="h2">
+          <Typography
+            variant="h5"
+            component="h2"
+          >
             Юридическая информация
           </Typography>
           <Box marginTop="20px">
@@ -177,14 +222,23 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 <strong>ООО &#34;ХОУМ КОМФОРТ&#34;</strong>
               </span>
               <br />
-              www.homekomfort.ru<br />
-              Центральный офис: 193168, РОССИЯ, г САНКТ-ПЕТЕРБУРГ, пр-кт ИСКРОВСКИЙ, ДОМ 22, корпус литера А, оф 3 ПОМЕЩ. 33-Н<br />
-              ОГРН: 1237800065865<br />
-              &zwj;ИНН/КПП 7811788339 / 781101001<br />
-              Р/с 40702810520000015671<br />
-              в ООО &#34;Банк Точка&#34;<br />
-              БИК 044525104<br />
-              Корр/сч: 30101810745374525104<br />
+              www.homekomfort.ru
+              <br />
+              Центральный офис: 193168, РОССИЯ, г САНКТ-ПЕТЕРБУРГ, пр-кт
+              ИСКРОВСКИЙ, ДОМ 22, корпус литера А, оф 3 ПОМЕЩ. 33-Н
+              <br />
+              ОГРН: 1237800065865
+              <br />
+              &zwj;ИНН/КПП 7811788339 / 781101001
+              <br />
+              Р/с 40702810520000015671
+              <br />
+              в ООО &#34;Банк Точка&#34;
+              <br />
+              БИК 044525104
+              <br />
+              Корр/сч: 30101810745374525104
+              <br />
               <br />
               <br />
               Мы работаем как с физическими, так и с юридическими лицами.
@@ -193,13 +247,13 @@ const PageAbout: NextPage<PageAboutProps> = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default PageAbout;
+export default PageAbout
 
 export async function getStaticProps() {
   return {
     props: {}, // will be passed to the page component as props
-  };
+  }
 }

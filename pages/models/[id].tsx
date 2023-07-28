@@ -279,6 +279,7 @@ export async function getStaticPaths() {
   const models: ModelOrigin[] = await getModelsData()
   const paths = models
     .filter(model => model.id !== "2180")
+    .filter(model => model.id !== "2050")
     .map(model => {
       return { params: model }
     })

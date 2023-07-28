@@ -28,10 +28,19 @@ export const standardTextThin = {
   lineHeight: "20px",
   color: "#333333",
 }
-export const standartTextLink = {
+export const standardTextLink = {
   ...standardText,
   "&:hover": {
     color: "ef7d00",
+  },
+}
+export const standardTextLinkUnderline = {
+  ...standardText,
+  textDecoration: "underline",
+  cursor: "pointer",
+  "&:hover": {
+    color: "ef7d00",
+    textDecoration: "none",
   },
 }
 export const standartTextThinLink = {

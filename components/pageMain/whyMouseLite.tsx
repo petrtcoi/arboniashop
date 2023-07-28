@@ -1,17 +1,27 @@
-import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
-import Link from "next/link";
+import React from "react"
+import { Box, Grid, Typography } from "@mui/material"
+import Link from "next/link"
 
-import * as styles from "../../styles/styles";
+import * as styles from "../../styles/styles"
 
-type WhyMouseLiteProps = {};
+type WhyMouseLiteProps = {}
 
 const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
   return (
     <Box>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          <Typography variant="h5" component="h2">
+      <Grid
+        container
+        spacing={2}
+      >
+        <Grid
+          item
+          xs={12}
+          md={6}
+        >
+          <Typography
+            variant="h5"
+            component="h2"
+          >
             Покупайте Arbonia у профессионалов
           </Typography>
           <Box marginTop="20px" />
@@ -23,9 +33,12 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
             наших клиентов есть как частные лица, так и организации:
             строительные компании, рестораны, государственные учреждения.&nbsp;
             <Link href="/about">
-              <a target="_blank" style={{ textDecoration: "none" }}>
+              <a
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
                 <Typography
-                  sx={{ ...styles.standartTextLink }}
+                  sx={{ ...styles.standardTextLink }}
                   component="span"
                 >
                   Подбронее о нашей компании...
@@ -34,7 +47,11 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
             </Link>
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+        >
           <Typography
             sx={{ ...styles.standardText, lineHeight: "2rem" }}
             component="span"
@@ -52,7 +69,7 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
         </Grid>
       </Grid>
     </Box>
-  );
-};
+  )
+}
 
-export default WhyMouseLite;
+export default WhyMouseLite

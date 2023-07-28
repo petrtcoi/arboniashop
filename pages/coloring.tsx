@@ -1,25 +1,25 @@
-import { useState } from "react";
-import Link from "next/link";
-import Script from "next/script";
+import { useState } from "react"
+import Link from "next/link"
+import Script from "next/script"
 
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material"
 
-import PageHeader from "../components/pageHeader/pageHeader";
-import PageTitle from "../components/pageTitle/pageTitle";
+import PageHeader from "../components/pageHeader/pageHeader"
+import PageTitle from "../components/pageTitle/pageTitle"
 
-import trackEvent from "../utils/trackEvent";
+import trackEvent from "../utils/trackEvent"
 
-import type { NextPage } from "next";
+import type { NextPage } from "next"
 
-import * as styles from "../styles/styles";
-import global from "../variables/global";
-import Hero from "../components/hero/hero";
+import * as styles from "../styles/styles"
+import global from "../variables/global"
+import Hero from "../components/hero/hero"
 
-type PageRequestProps = {};
+type PageRequestProps = {}
 
 const PageRequest: NextPage<PageRequestProps> = () => {
-  const [show, setShow] = useState<boolean>(false);
-  const toggleShow = () => setShow(!show);
+  const [show, setShow] = useState<boolean>(false)
+  const toggleShow = () => setShow(!show)
 
   return (
     <Box>
@@ -91,8 +91,17 @@ const PageRequest: NextPage<PageRequestProps> = () => {
           padding="10px"
           sx={{ backgroundColor: "#333333", borderRadius: "10px" }}
         >
-          <Grid container spacing={2} alignItems={"center"}>
-            <Grid item xs={12} sm={4} textAlign="center">
+          <Grid
+            container
+            spacing={2}
+            alignItems={"center"}
+          >
+            <Grid
+              item
+              xs={12}
+              sm={4}
+              textAlign="center"
+            >
               <Typography
                 sx={{ ...styles.smallText, color: "#e6e6e6" }}
                 display="inline"
@@ -105,7 +114,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
                   onClick={() => trackEvent("phone_click")}
                 >
                   <Typography
-                    sx={{ ...styles.standartTextLink, color: "white" }}
+                    sx={{ ...styles.standardTextLink, color: "white" }}
                     display="inline"
                   >
                     {global.phone495String}
@@ -131,7 +140,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
                   onClick={() => trackEvent("phone_click")}
                 >
                   <Typography
-                    sx={{ ...styles.standartTextLink, color: "white" }}
+                    sx={{ ...styles.standardTextLink, color: "white" }}
                     display="inline"
                   >
                     {global.phone812String}
@@ -139,7 +148,12 @@ const PageRequest: NextPage<PageRequestProps> = () => {
                 </a>
               </Link>
             </Grid>
-            <Grid item xs={12} sm={4} textAlign="center">
+            <Grid
+              item
+              xs={12}
+              sm={4}
+              textAlign="center"
+            >
               <Typography
                 sx={{ ...styles.smallText, color: "#e6e6e6" }}
                 display="inline"
@@ -152,7 +166,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
                   onClick={() => trackEvent("email_click")}
                 >
                   <Typography
-                    sx={{ ...styles.standartTextLink, color: "white" }}
+                    sx={{ ...styles.standardTextLink, color: "white" }}
                     display="inline"
                   >
                     {global.email}
@@ -160,7 +174,12 @@ const PageRequest: NextPage<PageRequestProps> = () => {
                 </a>
               </Link>
             </Grid>
-            <Grid item xs={12} sm={4} textAlign="center">
+            <Grid
+              item
+              xs={12}
+              sm={4}
+              textAlign="center"
+            >
               <Typography
                 sx={{ ...styles.smallText, color: "#e6e6e6" }}
                 display="inline"
@@ -173,7 +192,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
                   onClick={() => trackEvent("whatsapp_click")}
                 >
                   <Typography
-                    sx={{ ...styles.standartTextLink, color: "white" }}
+                    sx={{ ...styles.standardTextLink, color: "white" }}
                     display="inline"
                   >
                     {global.whatsAppString}
@@ -183,12 +202,18 @@ const PageRequest: NextPage<PageRequestProps> = () => {
             </Grid>
           </Grid>
         </Box>
-        <Typography sx={{ ...styles.standardText }} textAlign="center">
+        <Typography
+          sx={{ ...styles.standardText }}
+          textAlign="center"
+        >
           Также вы можете заполнить форму, представленную ниже.
         </Typography>
         <Box marginTop="20px">
           <a onClick={() => toggleShow()}>
-            <Typography sx={styles.smallTextGreenUnderline} textAlign="center">
+            <Typography
+              sx={styles.smallTextGreenUnderline}
+              textAlign="center"
+            >
               <span style={{ textDecorationStyle: "dotted" }}>
                 Какая информация нам нужна
               </span>
@@ -201,7 +226,10 @@ const PageRequest: NextPage<PageRequestProps> = () => {
             padding="20px"
             sx={{ backgroundColor: "#e6e6e6", borderRadius: "10px" }}
           >
-            <Typography sx={{ ...styles.standardText }} component={"span"}>
+            <Typography
+              sx={{ ...styles.standardText }}
+              component={"span"}
+            >
               Информация, которая нужна для правильного побора радиаторов: (если
               каких-то данных пока нет - то можно отправить то, что уже
               известно)
@@ -234,13 +262,13 @@ const PageRequest: NextPage<PageRequestProps> = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default PageRequest;
+export default PageRequest
 
 export async function getStaticProps() {
   return {
     props: {}, // will be passed to the page component as props
-  };
+  }
 }

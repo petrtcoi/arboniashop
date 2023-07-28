@@ -1,8 +1,8 @@
-import { NextComponentType } from "next";
-import { useState } from "react";
+import { NextComponentType } from "next"
+import { useState } from "react"
 
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 import {
   AppBar,
@@ -11,45 +11,42 @@ import {
   Toolbar,
   Typography,
   Hidden,
-} from "@mui/material";
-import Container from "@mui/material/Container";
-import MenuItem from "@mui/material/MenuItem";
-import MenuIcon from "@mui/icons-material/Menu";
-import Menu from "@mui/material/Menu";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+} from "@mui/material"
+import Container from "@mui/material/Container"
+import MenuItem from "@mui/material/MenuItem"
+import MenuIcon from "@mui/icons-material/Menu"
+import Menu from "@mui/material/Menu"
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone"
 
-import trackEvent from "../../utils/trackEvent";
+import trackEvent from "../../utils/trackEvent"
 
-import global from "./../../variables/global";
-import * as styles from "../../styles/styles";
-import {
-  menuButton,
-  menuButtonDropDown,
-} from "../../styles/stylesNavbarFooter";
+import global from "./../../variables/global"
+import * as styles from "../../styles/styles"
+import { menuButton, menuButtonDropDown } from "../../styles/stylesNavbarFooter"
 
-const pages: string[] = global.pages;
+const pages: string[] = global.pages
 
-type NavbarProps = {};
+type NavbarProps = {}
 
 const Navbar: NextComponentType<NavbarProps> = () => {
-  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null)
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    setAnchorElNav(event.currentTarget)
+  }
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    setAnchorElNav(null)
+  }
   const myLoader = ({
     src,
     width,
     quality,
   }: {
-    src: any;
-    width: number;
-    quality: number;
+    src: any
+    width: number
+    quality: number
   }) => {
-    return `{src}?w=${width}&q=${quality || 75}`;
-  };
+    return `{src}?w=${width}&q=${quality || 75}`
+  }
 
   return (
     <AppBar
@@ -90,7 +87,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
               itemScope
               itemType="https://schema.org/BreadcrumbList"
             >
-              {pages.map((page) => (
+              {pages.map(page => (
                 <Box
                   component={"span"}
                   key={page[0]}
@@ -114,7 +111,10 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                           {page[0]}
                         </Typography>
                       </MenuItem>
-                      <meta itemProp="position" content="1" />
+                      <meta
+                        itemProp="position"
+                        content="1"
+                      />
                     </Box>
                   </Link>
                 </Box>
@@ -127,7 +127,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
             itemScope
             itemType="https://schema.org/BreadcrumbList"
           >
-            {pages.map((page) => (
+            {pages.map(page => (
               <Box
                 component={"span"}
                 key={page[0]}
@@ -136,7 +136,10 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                 itemType="https://schema.org/ListItem"
               >
                 <Link href={page[1]}>
-                  <a style={{ textDecoration: "none" }} itemProp="item">
+                  <a
+                    style={{ textDecoration: "none" }}
+                    itemProp="item"
+                  >
                     <Typography
                       textAlign="center"
                       variant="body1"
@@ -146,7 +149,10 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                     >
                       {page[0]}
                     </Typography>
-                    <meta itemProp="position" content="1" />
+                    <meta
+                      itemProp="position"
+                      content="1"
+                    />
                   </a>
                 </Link>
               </Box>
@@ -172,7 +178,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                   onClick={() => trackEvent("phone_click")}
                 >
                   <Typography
-                    sx={{ ...styles.standartTextLink }}
+                    sx={{ ...styles.standardTextLink }}
                     component="span"
                     itemProp="telephone"
                   >
@@ -187,7 +193,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                   onClick={() => trackEvent("phone_click")}
                 >
                   <Typography
-                    sx={{ ...styles.standartTextLink }}
+                    sx={{ ...styles.standardTextLink }}
                     component="span"
                     itemProp="telephone"
                   >
@@ -213,7 +219,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
         </Toolbar>
       </Container>
     </AppBar>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -19,6 +19,8 @@ import getColorsData from "../../api_utils/getColorsData"
 import getConnectionsData from "../../api_utils/getConnectionsData"
 import RadiatorInCartList from "../../components/pageModels/radiatorInCartList"
 import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions"
+import ImagesOtherList from "../../components/pageModels/imagesOtherList"
+import DownloadsBlock from "../../components/pageModels/downloadsBlock"
 
 type Props = {
   models: ModelOrigin[]
@@ -45,6 +47,7 @@ const Model2180: React.FC<SetComponentProps> = ({
         title={
           "Радиаторы Arbonia 2180 в наличии | Выгодные цены и доставка в любой город России | ArboniaShop.ru"
         }
+        description="Вертикальные 2-трубчатые Arbonia 2180 в наличии. Выгодные цены и доставка в любой город России. Официальная гарантия на всю продукцию."
       />
       <Hero
         imgPath={"/images/sliders/high.jpeg"}
@@ -124,7 +127,7 @@ const Model2180: React.FC<SetComponentProps> = ({
               <Link href="/catalog/high-models">
                 <a style={{ textDecoration: "none" }}>
                   <Typography
-                    sx={{ ...styles.standardTextRedLink }}
+                    sx={{ ...styles.standardTextLinkUnderline }}
                     component="span"
                   >
                     вертикальных радиаторов Arbonia
@@ -374,7 +377,7 @@ const Model2180: React.FC<SetComponentProps> = ({
               title={""}
               description={""}
               onlyTable={true}
-              model={models.find(x => x.id === "2180-7016-12") || models[0]}
+              model={models.find(x => x.id === "2180-7016-69tvv") || models[0]}
               color={colors.find(x => x.id === "7016") || colors[0]}
               connection={
                 connections.find(x => x.id === "69tvv") || connections[0]
@@ -450,7 +453,7 @@ const Model2180: React.FC<SetComponentProps> = ({
               title={""}
               description={""}
               onlyTable={true}
-              model={models.find(x => x.id === "2180-sf3-12") || models[0]}
+              model={models.find(x => x.id === "2180-sf3-69tvv") || models[0]}
               color={colors.find(x => x.id === "sf3") || colors[0]}
               connection={
                 connections.find(x => x.id === "69tvv") || connections[0]
@@ -515,7 +518,7 @@ const Model2180: React.FC<SetComponentProps> = ({
               title={""}
               description={""}
               onlyTable={true}
-              model={models.find(x => x.id === "2180-9005-12") || models[0]}
+              model={models.find(x => x.id === "2180-9005-69tvv") || models[0]}
               color={colors.find(x => x.id === "9005") || colors[0]}
               connection={
                 connections.find(x => x.id === "69tvv") || connections[0]
@@ -567,6 +570,14 @@ const Model2180: React.FC<SetComponentProps> = ({
             colors={colors}
             connections={connections}
           />
+        </Box>
+        <Box marginTop="80px">
+          <h2>Дополнительные изображения радиаторов Arbonia 2180</h2>
+          <ImagesOtherList imagesString={model.imagesOther || ""} />
+        </Box>
+        <Box marginTop="80px">
+          <h2>Документы для скачивания</h2>
+          <DownloadsBlock />
         </Box>
       </Box>
     </Box>

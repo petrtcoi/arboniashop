@@ -9,7 +9,7 @@ import getModelsData from "../../api_utils/getModelsData"
 
 import SetLowModel from "../../components/pageSetComponents/setLowModel"
 import SetHighModel from "../../components/pageSetComponents/setHighModel"
-import Set2180Stock from "../../components/pageSetComponents/set2180Stock"
+import Set2180Stock from "../models/2180"
 
 import { ColorOrigin } from "../../models/colorOrigin.model"
 import { ConnectionOrigin } from "../../models/connectionOrigin.model"
@@ -20,7 +20,7 @@ const SETS_MAP: {
   [key: string]: { title: string; component: React.FC<SetComponentProps> }
 } = {
   "low-models": {
-    title: "Нзкие радиаторы ArboniaColumn",
+    title: "Низкие радиаторы ArboniaColumn",
     component: SetLowModel,
   },
   "high-models": {

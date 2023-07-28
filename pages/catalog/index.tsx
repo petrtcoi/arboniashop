@@ -611,7 +611,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                   </Link>
                 </Box>
               </Grid>
-              <Grid
+              {/* <Grid
                 item
                 xs={12}
                 md={6}
@@ -625,7 +625,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                     </a>
                   </Link>
                 </Box>
-              </Grid>
+              </Grid>*/}
             </Grid>
           </Box>
         </Box>

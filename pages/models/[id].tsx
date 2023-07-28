@@ -277,9 +277,11 @@ export async function getStaticProps(context: { params: { id: string } }) {
 
 export async function getStaticPaths() {
   const models: ModelOrigin[] = await getModelsData()
-  const paths = models.map(model => {
-    return { params: model }
-  })
+  const paths = models
+    .filter(model => model.id !== "2180")
+    .map(model => {
+      return { params: model }
+    })
 
   return {
     paths: paths,

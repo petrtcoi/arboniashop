@@ -1,22 +1,44 @@
-import React from "react"
+import React, { useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Box, Grid, Typography } from "@mui/material"
 
-import ModelBlock from "../modelBlock/modelBlock"
-import PageHeader from "../pageHeader/pageHeader"
-import Hero from "../hero/hero"
+import ModelBlock from "../../components/modelBlock/modelBlock"
+import PageHeader from "../../components/pageHeader/pageHeader"
+import Hero from "../../components/hero/hero"
 
 import { SetComponentProps } from "../../models/setComponentProps.model"
 
 import * as styles from "../../styles/styles"
 import global from "../../variables/global"
+import getModelsData from "../../api_utils/getModelsData"
+import { ColorOrigin } from "../../models/colorOrigin.model"
+import { ModelOrigin } from "../../models/modelOrigin.model"
+import { ConnectionOrigin } from "../../models/connectionOrigin.model"
+import getColorsData from "../../api_utils/getColorsData"
+import getConnectionsData from "../../api_utils/getConnectionsData"
+import RadiatorInCartList from "../../components/pageModels/radiatorInCartList"
+import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions"
 
-const Set2180Stock: React.FC<SetComponentProps> = ({
+type Props = {
+  models: ModelOrigin[]
+  colors: ColorOrigin[]
+  connections: ConnectionOrigin[]
+}
+
+const Model2180: React.FC<SetComponentProps> = ({
   models,
   colors,
   connections,
-}) => {
+}: Props) => {
+  const ref9016 = useRef<HTMLElement>(null)
+  const refSf3 = useRef<HTMLElement>(null)
+  const ref7016 = useRef<HTMLElement>(null)
+  const refOrder = useRef<HTMLElement>(null)
+
+  const model = models.find(model => model.id === "2180")
+  if (!model) return null
+
   return (
     <Box>
       <PageHeader
@@ -26,10 +48,71 @@ const Set2180Stock: React.FC<SetComponentProps> = ({
       />
       <Hero
         imgPath={"/images/sliders/high.jpeg"}
-        header={"Радиаторы Arbonia 2180 (склад)"}
+        header={"Радиаторы Arbonia 2180 "}
         subheader={"Все доступные варианты наиболее самой популярной модели"}
       />
       <Box sx={{ ...global.pagePadding }}>
+        <Box
+          marginBottom="30px"
+          display="flex"
+          flexDirection="row"
+          gap="15px"
+          flexWrap="wrap"
+        >
+          <Box
+            onClick={() => {
+              if (!ref9016.current) return
+              ref9016.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }}
+          >
+            <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
+              Arbonia 2180 в белом цвете
+            </Typography>
+          </Box>
+          <Box
+            onClick={() => {
+              if (!ref7016.current) return
+              ref7016.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }}
+          >
+            <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
+              Arbonia 2180 в цвете RAL 7016
+            </Typography>
+          </Box>
+          <Box
+            onClick={() => {
+              if (!refSf3.current) return
+              refSf3.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }}
+          >
+            <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
+              Arbonia 2180 в цвете SF-3 Antrazit metallic
+            </Typography>
+          </Box>
+          <Box
+            onClick={() => {
+              if (!refOrder.current) return
+              refOrder.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }}
+          >
+            <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
+              Радиаторы Arbonia 2180 под заказ
+            </Typography>
+          </Box>
+        </Box>
+
         <Box marginTop="20px">
           <Typography sx={{ ...styles.standardText }}>
             <p>
@@ -50,6 +133,7 @@ const Set2180Stock: React.FC<SetComponentProps> = ({
               </Link>
               , входящих в складскую программу.
             </p>
+
             <h2 style={{ marginTop: "40px" }}>
               Технические характеристики Arbonia 2180
             </h2>
@@ -92,7 +176,10 @@ const Set2180Stock: React.FC<SetComponentProps> = ({
         </Box>
 
         {/* 2180 белый*/}
-        <Box marginTop="40px">
+        <Box
+          marginTop="40px"
+          ref={ref9016}
+        >
           <Typography sx={{ ...styles.standardText }}>
             <h2>Arbonia 2180 в классическом белом цвете</h2>
             <Grid
@@ -210,21 +297,25 @@ const Set2180Stock: React.FC<SetComponentProps> = ({
                 </p>
               </Grid>
             </Grid>
+
+            <ModelBlock
+              title={""}
+              description={""}
+              onlyTable={true}
+              model={models.find(x => x.id === "2180-9016-69tvv") || models[0]}
+              color={colors.find(x => x.id === "9016") || colors[0]}
+              connection={
+                connections.find(x => x.id === "69tvv") || connections[0]
+              }
+            />
           </Typography>
-          <ModelBlock
-            title={""}
-            description={""}
-            onlyTable={true}
-            model={models.find(x => x.id === "2180-9016-69tvv") || models[0]}
-            color={colors.find(x => x.id === "9016") || colors[0]}
-            connection={
-              connections.find(x => x.id === "69tvv") || connections[0]
-            }
-          />
         </Box>
 
         {/* 2180 RAL 7016*/}
-        <Box marginTop="80px">
+        <Box
+          marginTop="80px"
+          ref={ref7016}
+        >
           <Typography sx={{ ...styles.standardText }}>
             <h2>Arbonia 2180 в темном цвете RAL7016</h2>
             <Grid
@@ -293,7 +384,10 @@ const Set2180Stock: React.FC<SetComponentProps> = ({
         </Box>
 
         {/* 2180 SF-3*/}
-        <Box marginTop="80px">
+        <Box
+          marginTop="80px"
+          ref={refSf3}
+        >
           <Typography sx={{ ...styles.standardText }}>
             <h2>Arbonia 2180 в металлизированном цвете SF-3</h2>
             <Grid
@@ -450,9 +544,47 @@ const Set2180Stock: React.FC<SetComponentProps> = ({
             поддерживать список доступных вариантов в актуальном состоянии.
           </Typography>
         </Box>
+        <Box
+          marginTop="60px"
+          ref={refOrder}
+        >
+          <h2>Радиаторы Arbonia 2180 под заказ</h2>
+          <Typography sx={{ ...styles.standardText }}>
+            Если вы не нашли подходящего варианта из складской программы, то
+            радиаторы Arbonia 2180 можно заказать на заводе в любом доступном
+            исполнении.
+          </Typography>
+          <RadiatorAllOptions
+            modelInit={model}
+            connectionInit={connections[0]}
+            colorInit={colors[0]}
+            models={models}
+            colors={colors}
+            connections={connections}
+          />
+          <RadiatorInCartList
+            models={models}
+            colors={colors}
+            connections={connections}
+          />
+        </Box>
       </Box>
     </Box>
   )
 }
 
-export default Set2180Stock
+export default Model2180
+
+export async function getStaticProps(): Promise<{ props: Props }> {
+  const models: ModelOrigin[] = await getModelsData()
+  const colors: ColorOrigin[] = await getColorsData()
+  const connections: ConnectionOrigin[] = await getConnectionsData()
+
+  return {
+    props: {
+      models,
+      colors,
+      connections,
+    },
+  }
+}

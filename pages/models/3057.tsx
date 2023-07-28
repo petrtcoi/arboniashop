@@ -28,7 +28,7 @@ type Props = {
   connections: ConnectionOrigin[]
 }
 
-const Model2050: React.FC<SetComponentProps> = ({
+const Model3057: React.FC<SetComponentProps> = ({
   models,
   colors,
   connections,
@@ -37,21 +37,21 @@ const Model2050: React.FC<SetComponentProps> = ({
   const refBottom = useRef<HTMLElement>(null)
   const refOrder = useRef<HTMLElement>(null)
 
-  const model = models.find(model => model.id === "2050")
+  const model = models.find(model => model.id === "3057")
   if (!model) return null
 
   return (
     <Box>
       <PageHeader
         title={
-          "Радиаторы Arbonia 2050 в наличии | Выгодные цены и доставка в любой город России | ArboniaShop.ru"
+          "Радиаторы Arbonia 3057 в наличии | Выгодные цены и доставка в любой город России | ArboniaShop.ru"
         }
-        description="Радиаторы Arbonia 2050 в наличии. Выгодные цены и доставка в любой город России. Высота секции - 50 см. Глубина секции - всего 65 мм. Официальная гарантия на всю продукцию."
+        description="Радиаторы Arbonia 3057 в наличии. Выгодные цены и доставка в любой город России. Высота секции - 50 см. Глубина секции - всего 105 мм. Официальная гарантия на всю продукцию."
       />
       <Hero
         imgPath={"/images/sliders/slide.jpeg"}
-        header={"Радиаторы Arbonia 2050 "}
-        subheader={"Элегантный трубчатый радиатор от Arbonia"}
+        header={"Радиаторы Arbonia 3057 "}
+        subheader={"Трубчатый радиатор Arbonia на все случаи жизни"}
       />
       <Box sx={{ ...global.pagePadding }}>
         <Box
@@ -71,7 +71,7 @@ const Model2050: React.FC<SetComponentProps> = ({
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
-              Arbonia 2050 с боковым подключением
+              Arbonia 3057 с боковым подключением
             </Typography>
           </Box>
           <Box
@@ -84,7 +84,7 @@ const Model2050: React.FC<SetComponentProps> = ({
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
-              Arbonia 2050 с нижним подключением
+              Arbonia 3057 с нижним подключением
             </Typography>
           </Box>
           <Box
@@ -97,7 +97,7 @@ const Model2050: React.FC<SetComponentProps> = ({
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
-              Arbonia 2050 под заказ
+              Arbonia 3057 под заказ
             </Typography>
           </Box>
         </Box>
@@ -105,15 +105,19 @@ const Model2050: React.FC<SetComponentProps> = ({
         <Box marginTop="20px">
           <Typography sx={{ ...styles.standardText }}>
             <p>
-              Arbonia 2050 - двухтрубчатый радиатор высотой 50 см. Он идеально
-              подойдет для установки под стандартные окна, оставляя достаточно
-              места для подключения снизу и под подоконником. Толщина радиатора
-              составляет всего 65 мм, что придает ему изысканный внешний вид.
-              При небольших габаритах, радиатор обладает достаточно высокой
-              тепловой мощностью: 49 Вт (ΔT=60°). Модель доступна в наличии с
-              боковым и с нижним подключением. Если вас интересует радиатор чуть
-              большей мощности или с межосевым расстоянием при боковом
-              подключении 50 см, то обратите внимание на модель &#160;
+              Arbonia 3057 - является наиболее универсальной моделью от Arbonia.
+              С одной стороны, он обладает высокой тепловой мощностью в 78 Вт /
+              секция (ΔT=60°). С другой, его толщина составляет всего 105 мм.
+              При подборе радиатора взамен старых панельных или чугунных
+              батарей, Arbonia 3057 должен быть вашим базовым вариантом. Еще
+              одним преимуществом 3-трубчатого радиатора является более низкая
+              стоимость по сравнению с более тонкими 2-трубчатыми радиаторами
+              аналогичной мощности. Модель доступна в наличии с боковым и с
+              нижним подключением.
+            </p>
+            <p>
+              Если вас интересует радиатор меньшей глубины, то обратите внимание
+              на аналогичную 2-трубчатую модель &#160;
               <Link href="/models/2057-9016-12">
                 <a style={{ textDecoration: "none" }}>
                   <Typography
@@ -139,42 +143,42 @@ const Model2050: React.FC<SetComponentProps> = ({
             </p>
 
             <h2 style={{ marginTop: "40px" }}>
-              Технические характеристики Arbonia 2050
+              Технические характеристики Arbonia 3057
             </h2>
             <p>
               <span style={{ ...styles.smallTextBold }}>
-                Высота секции: 50 см.
+                Высота секции: 57 см.
               </span>{" "}
               Радиатор подходит для установки под стандартные окна (высота
-              подоконника от 70 см)
+              подоконника от 80 см). При боковом подключении он имеет межосевое
+              расстояние 50 см, поэтому возможна замена старых алюминиевых или
+              чугунных батарей без переноса труб.
             </p>
             <p>
               <span style={{ ...styles.smallTextBold }}>
-                Глубина секции: 65 мм.
+                Глубина секции: 105 мм.
               </span>{" "}
-              Важно отметить, то радиатор располагается на некотором расстоянии
-              от стены, в зависимости от модели кронштейна. Поэтому закладывайте
-              полную глубину радиатора как 9-10 см и тогда вы точно не
-              ошибетесь.
+              Радиатор имеет стандартную глубину, сопоставимую с большинством
+              современных моделей.
             </p>
             <p>
               <span style={{ ...styles.smallTextBold }}>
-                Мощность секции: 49 Вт (ΔT=60°).
+                Мощность секции: 78 Вт (ΔT=60°).
               </span>{" "}
               При среднем расчете 100 Вт/м2, такой секции будет достаточно для
-              обогрева 0.5 кв.м. В случае хорошей теплоизоляции дома, одной
-              секции может быть достаточно для обогрева 1.5 кв.м.
+              обогрева 0.8 кв.м. В случае хорошей теплоизоляции дома, одной
+              секции может быть достаточно для обогрева 2.5 кв.м.
             </p>
           </Typography>
         </Box>
 
-        {/* 2050 белый*/}
+        {/* 3057 боковое*/}
         <Box
           marginTop="40px"
           ref={refLateral}
         >
           <Typography sx={{ ...styles.standardText }}>
-            <h2>Arbonia 2050 с боковым подключением</h2>
+            <h2>Arbonia 3057 с боковым подключением</h2>
             <Grid
               container
               spacing={2}
@@ -185,8 +189,8 @@ const Model2050: React.FC<SetComponentProps> = ({
                 md={4}
               >
                 <Image
-                  src="/images/models/2050-12-2.jpeg"
-                  alt="Белый радиатор Arbonia 2050 с боковым подключением"
+                  src="/images/models/3057-0.jpeg"
+                  alt="Белый радиатор Arbonia 3057 с боковым подключением"
                   width={400}
                   height={400}
                 />
@@ -204,6 +208,14 @@ const Model2050: React.FC<SetComponentProps> = ({
                   для российских домов.
                 </p>
                 <p>
+                  Благодаря тому, что Arbonia 3057 имеет межосевое расстояние 50
+                  см, вам не потребуется переносить трубы при замене старых
+                  чугунных или алюминиевых батарей, что является большим
+                  преимуществом. Касательно мощности: 2 секции Arbonia 3057 по
+                  габаритам и по мощности примерно соответствуют 1 секции
+                  чугунного радиатора.
+                </p>
+                <p>
                   Стоит упомянуть, что данный вид подключения является базовым и
                   поставляется без наценки. Поэтому, стоимость может стать
                   дополнительным аргументом в пользу бокового подключения.
@@ -215,7 +227,7 @@ const Model2050: React.FC<SetComponentProps> = ({
               title={""}
               description={""}
               onlyTable={true}
-              model={models.find(x => x.id === "2050-9016-12") || models[0]}
+              model={models.find(x => x.id === "3057-9016-12") || models[0]}
               color={colors.find(x => x.id === "9016") || colors[0]}
               connection={
                 connections.find(x => x.id === "12") || connections[0]
@@ -224,13 +236,13 @@ const Model2050: React.FC<SetComponentProps> = ({
           </Typography>
         </Box>
 
-        {/* 2050 нижнее*/}
+        {/* 3057 нижнее*/}
         <Box
           marginTop="80px"
           ref={refBottom}
         >
           <Typography sx={{ ...styles.standardText }}>
-            <h2>Arbonia 2050 с нижним подключением</h2>
+            <h2>Arbonia 3057 с нижним подключением</h2>
             <Grid
               container
               spacing={2}
@@ -241,10 +253,10 @@ const Model2050: React.FC<SetComponentProps> = ({
                 md={4}
               >
                 <Image
-                  src="/images/models/2050-69.jpg"
-                  alt="Радиатор Arbonia 2050 69 ТВВ"
+                  src="/images/models/3057-4.jpeg"
+                  alt="Радиатор Arbonia 3057 69 ТВВ"
                   width={400}
-                  height={300}
+                  height={307}
                 />
               </Grid>
               <Grid
@@ -259,7 +271,7 @@ const Model2050: React.FC<SetComponentProps> = ({
                   отопления.
                 </p>
                 <p>
-                  В наличии поддерживаются радиаторы Arbonia 2050 с нижним
+                  В наличии поддерживаются радиаторы Arbonia 3057 с нижним
                   подключением 69 ТВВ. Это одностороннее подключением слева или
                   справа под стандартный узел с межосевым расстоянием 50 мм. Так
                   как радиатор симметричный, то не имеет значения, с какой
@@ -274,7 +286,7 @@ const Model2050: React.FC<SetComponentProps> = ({
               title={""}
               description={""}
               onlyTable={true}
-              model={models.find(x => x.id === "2050-9016-69tvv") || models[0]}
+              model={models.find(x => x.id === "3057-9016-69tvv") || models[0]}
               color={colors.find(x => x.id === "9016") || colors[0]}
               connection={
                 connections.find(x => x.id === "69tvv") || connections[0]
@@ -285,7 +297,7 @@ const Model2050: React.FC<SetComponentProps> = ({
 
         <Box marginTop="50px">
           <Typography sx={{ ...styles.standardText }}>
-            Здесь мы отобразили все модели Arbonia 2050 доступные к покупке со
+            Здесь мы отобразили все модели Arbonia 3057 доступные к покупке со
             склада. Если среди предложенных вариантов не нашлось нужного цвета,
             то через нас вы можете как заказать радиатор в нужном исполнении на
             заводе. Также доступна опция с&#160;
@@ -308,10 +320,10 @@ const Model2050: React.FC<SetComponentProps> = ({
           marginTop="60px"
           ref={refOrder}
         >
-          <h2>Радиаторы Arbonia 2050 под заказ</h2>
+          <h2>Радиаторы Arbonia 3057 под заказ</h2>
           <Typography sx={{ ...styles.standardText }}>
             Если вы не нашли подходящего варианта из складской программы, то
-            радиаторы Arbonia 2050 можно заказать на заводе в любом доступном
+            радиаторы Arbonia 3057 можно заказать на заводе в любом доступном
             исполнении.
           </Typography>
           <RadiatorAllOptions
@@ -329,7 +341,7 @@ const Model2050: React.FC<SetComponentProps> = ({
           />
         </Box>
         <Box marginTop="80px">
-          <h2>Дополнительные изображения радиаторов Arbonia 2050</h2>
+          <h2>Дополнительные изображения радиаторов Arbonia 3057</h2>
           <ImagesOtherList imagesString={model.imagesOther || ""} />
         </Box>
         <Box marginTop="80px">
@@ -341,7 +353,7 @@ const Model2050: React.FC<SetComponentProps> = ({
   )
 }
 
-export default Model2050
+export default Model3057
 
 export async function getStaticProps(): Promise<{ props: Props }> {
   const models: ModelOrigin[] = await getModelsData()

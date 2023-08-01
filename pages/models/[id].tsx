@@ -134,6 +134,20 @@ const Model: NextPage<ModelProps> = ({
           </Box>
         )}
 
+        {modelCurr.id.startsWith("3050") && (
+          <Box>
+            <Link href="/models/3050">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 3050
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
         {/* Shit code end */}
 
         <Box
@@ -321,6 +335,7 @@ export async function getStaticPaths() {
     .filter(model => model.id !== "2180")
     .filter(model => model.id !== "2050")
     .filter(model => model.id !== "3057")
+    .filter(model => model.id !== "3050")
     .map(model => {
       return { params: model }
     })

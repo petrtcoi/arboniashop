@@ -109,6 +109,20 @@ const Radiator: NextPage<RadiatorProps> = ({
           </Box>
         )}
 
+        {model.id.startsWith("3050") && (
+          <Box>
+            <Link href="/models/3050">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 3050
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
         {/* Shit code end */}
         <PageHeader
           title={`Радиатор Arbonia ${model.nameShort} ${radiatorTitle} купить в Москве, Санкт-Петебурге или с доставкой по России в магазине ArboniaShop.ru`}

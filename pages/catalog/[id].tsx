@@ -9,6 +9,7 @@ import getModelsData from "../../api_utils/getModelsData"
 
 import SetLowModel from "../../components/pageSetComponents/setLowModel"
 import SetHighModel from "../../components/pageSetComponents/setHighModel"
+import SetRAL9016Model from "../../components/pageSetComponents/setRAL9016Model"
 import Set2180Stock from "../models/2180"
 
 import { ColorOrigin } from "../../models/colorOrigin.model"
@@ -26,6 +27,10 @@ const SETS_MAP: {
   "high-models": {
     title: "Высокие радиаторы ArboniaColumn",
     component: SetHighModel,
+  },
+  ral9016: {
+    title: "Arbonia  RAL 9016",
+    component: SetRAL9016Model,
   },
   "2180-stock": {
     title: "Радиаторы Arbonia 2180 (склад)",

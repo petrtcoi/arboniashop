@@ -95,6 +95,48 @@ const Radiator: NextPage<RadiatorProps> = ({
           </Box>
         )}
 
+        {model.id.startsWith("3030") && (
+          <Box>
+            <Link href="/models/3030">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 3030
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
+        {model.id.startsWith("2057") && (
+          <Box>
+            <Link href="/models/2057">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 2057
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
+        {model.id.startsWith("3180") && (
+          <Box>
+            <Link href="/models/3180">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 3180
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
         {model.id.startsWith("3057") && (
           <Box>
             <Link href="/models/3057">
@@ -125,7 +167,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 
         {/* Shit code end */}
         <PageHeader
-          title={`Радиатор Arbonia ${model.nameShort} ${radiatorTitle} купить в Москве, Санкт-Петебурге или с доставкой по России в магазине ArboniaShop.ru`}
+          title={`Радиатор Arbonia ${model.nameShort} ${radiatorTitle} купить в Москве, Санкт-Петербурге или с доставкой по России в магазине ArboniaShop.ru`}
           description={`Arbonia ${model.nameShort} - ${sectionQnty} секций, ${
             model.nameShort[0]
           }-трубчатая модель, цвет ${color.name}, подключение ${
@@ -134,7 +176,7 @@ const Radiator: NextPage<RadiatorProps> = ({
             parseInt(model.lengthSection) * sectionQnty + 26
           } мм. Мощность ${
             parseInt(model.dt60) * sectionQnty
-          } Вт (при dT=60C). Купить в магазине ArboniaShop по выгодынм ценам. Официальная гарантия на радиаторы 10 лет. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Возможно изготовление радиаторов под заказ. Бесплатная консультация и помощь в подборе радиаторов. Огромный опыт работы.`}
+          } Вт (при dT=60C). Купить в магазине ArboniaShop по выгодным ценам. Официальная гарантия на радиаторы 10 лет. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Возможно изготовление радиаторов под заказ. Бесплатная консультация и помощь в подборе радиаторов. Огромный опыт работы.`}
         />
         <Box
           marginBottom={"50px"}

@@ -106,6 +106,34 @@ const Model: NextPage<ModelProps> = ({
           </Box>
         )}
 
+        {modelCurr.id.startsWith("3030") && (
+          <Box>
+            <Link href="/models/3030">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 3030
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
+        {modelCurr.id.startsWith("2057") && (
+          <Box>
+            <Link href="/models/2057">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 2057
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
         {modelCurr.id.startsWith("3057") && (
           <Box>
             <Link href="/models/3057">
@@ -128,6 +156,20 @@ const Model: NextPage<ModelProps> = ({
                   sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
                 >
                   все складские модели Arbonia 2050
+                </Typography>
+              </a>
+            </Link>
+          </Box>
+        )}
+
+        {modelCurr.id.startsWith("3180") && (
+          <Box>
+            <Link href="/models/3180">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  все складские модели Arbonia 3180
                 </Typography>
               </a>
             </Link>
@@ -334,8 +376,11 @@ export async function getStaticPaths() {
   const paths = models
     .filter(model => model.id !== "2180")
     .filter(model => model.id !== "2050")
+    .filter(model => model.id !== "2057")
     .filter(model => model.id !== "3057")
     .filter(model => model.id !== "3050")
+    .filter(model => model.id !== "3180")
+    .filter(model => model.id !== "3030")
     .map(model => {
       return { params: model }
     })

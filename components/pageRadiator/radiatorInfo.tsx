@@ -1,29 +1,29 @@
-import React, { useContext } from "react";
-import { Box, Grid, Typography } from "@mui/material";
-import Image from "next/image";
+import React, { useContext } from "react"
+import { Box, Grid, Typography } from "@mui/material"
+import Image from "next/image"
 
-import AddToCartButton from "../addToCartButton/addToCartButton";
+import AddToCartButton from "../addToCartButton/addToCartButton"
 
-import { ModelOrigin } from "../../models/modelOrigin.model";
-import { ConnectionOrigin } from "../../models/connectionOrigin.model";
-import { ColorOrigin } from "../../models/colorOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model"
+import { ConnectionOrigin } from "../../models/connectionOrigin.model"
+import { ColorOrigin } from "../../models/colorOrigin.model"
 
-import { CurrencyContext } from "../../contexts/currencyContext";
+import { CurrencyContext } from "../../contexts/currencyContext"
 
-import getRadiatorData from "../../utils/getRadiatorData";
-import calcRadiatorCost from "../../utils/calcRadiatorCost";
+import getRadiatorData from "../../utils/getRadiatorData"
+import calcRadiatorCost from "../../utils/calcRadiatorCost"
 
-import global from "../../variables/global";
-import * as styles from "../../styles/styles";
+import global from "../../variables/global"
+import * as styles from "../../styles/styles"
 
 // import FeaturesTable from './featuresTable'
 
 type ModelMainSectionProps = {
-  model: ModelOrigin;
-  color: ColorOrigin;
-  connection: ConnectionOrigin;
-  sectionQnty: number;
-};
+  model: ModelOrigin
+  color: ColorOrigin
+  connection: ConnectionOrigin
+  sectionQnty: number
+}
 
 const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
   model,
@@ -31,8 +31,8 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
   connection,
   sectionQnty,
 }) => {
-  const imagePrimaryPath = global.imagesModelPath + model.imagePrimary;
-  const currencyContext = useContext(CurrencyContext);
+  const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
+  const currencyContext = useContext(CurrencyContext)
 
   const { price } = calcRadiatorCost({
     model,
@@ -40,7 +40,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
     connection,
     sectionQnty,
     currencyRate: currencyContext.rateEuro,
-  });
+  })
   const {
     skuString,
     lengthString,
@@ -54,14 +54,24 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
     connection,
     sectionQnty,
     price: price.noConsole,
-  });
+  })
 
   return (
     <Box>
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+      >
         {/* ИЗОБРАЖЕНИЕ */}
-        <Grid item xs={12} sm={6}>
-          <Box textAlign="center" marginTop="20px">
+        <Grid
+          item
+          xs={12}
+          sm={6}
+        >
+          <Box
+            textAlign="center"
+            marginTop="20px"
+          >
             <Image
               width={500}
               height={500}
@@ -72,11 +82,21 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Box marginTop="30px" marginLeft="20px">
+        <Grid
+          item
+          xs={12}
+          sm={6}
+        >
+          <Box
+            marginTop="30px"
+            marginLeft="20px"
+          >
             {/* АРТИКУЛ */}
             <Box>
-              <Typography sx={{ ...styles.smallTextThin }} itemProp="sku">
+              <Typography
+                sx={{ ...styles.smallTextThin }}
+                itemProp="sku"
+              >
                 арт.: {skuString}
               </Typography>
             </Box>
@@ -85,12 +105,32 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
             <Box
               marginTop="20px"
               padding="10px"
-              sx={{ border: "1px solid #333333", borderRadius: "10px" }}
-              textAlign="center"
+              // sx={{ border: "1px solid #333333", borderRadius: "10px" }}
+              textAlign="left"
             >
               <Box>
-                <Typography sx={styles.standardText} display="inline">
+                <Typography
+                  sx={styles.standardText}
+                  display="inline"
+                >
                   Цена:
+                </Typography>
+
+                <Typography
+                  sx={{ fontSize: "30px", fontWeight: 600 }}
+                  display="inline"
+                  itemProp="offers"
+                  itemScope
+                  itemType="https://schema.org/Offer"
+                >
+                  <span itemProp="price">
+                    <meta
+                      itemProp="priceCurrency"
+                      content="RUB"
+                    />
+                    {priceString}
+                  </span>{" "}
+                  руб
                 </Typography>
                 <Typography
                   sx={{
@@ -102,23 +142,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                   display="inline"
                   marginX="15px"
                 >
-                  {oldPriceString}
-                </Typography>
-                <Typography
-                  sx={{ fontSize: "30px", fontWeight: 600 }}
-                  display="inline"
-                  itemProp="offers"
-                  itemScope
-                  itemType="https://schema.org/Offer"
-                >
-                  <span itemProp="price">
-                    <meta itemProp="priceCurrency" content="RUB" />
-                    {priceString}
-                  </span>
-                  руб
+                  {oldPriceString} руб
                 </Typography>
               </Box>
-              <Box marginTop="20px">
+              <Box marginTop="10px">
                 <AddToCartButton
                   model={model}
                   colorId={color.id}
@@ -126,8 +153,8 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                   sectionQnty={sectionQnty}
                   qnty={1}
                   buttonSize={"medium"}
-                  buttonColor={"success"}
-                  align={"center"}
+                  buttonColor={"dark"}
+                  align={"left"}
                 />
               </Box>
             </Box>
@@ -147,7 +174,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                     >
                       Модель:&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       {model.nameShort}
                     </Typography>
                   </Box>
@@ -159,47 +189,80 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                     >
                       Цвет:&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       {color.nameShort}
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Подключение:&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       {connection.name}
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Число секций:&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       {sectionQnty}
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Рабочее давление:&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       10 бар
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Испытательное давление:&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       15 бар
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Гарантия:&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       10 лет
                     </Typography>
                   </Box>
@@ -212,7 +275,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                 </Typography>
                 <Box paddingLeft="30px">
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Длина:&nbsp;
                     </Typography>
                     <Typography
@@ -224,7 +290,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Высота:&nbsp;
                     </Typography>
                     <Typography
@@ -236,7 +305,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Глубина:&nbsp;
                     </Typography>
                     <Typography
@@ -256,18 +328,30 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                 </Typography>
                 <Box paddingLeft="30px">
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Мощность (ΔT=50°):&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       {dt50String} Вт
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Мощность (ΔT=60°):&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       {dt60String} Вт
                     </Typography>
                   </Box>
@@ -278,7 +362,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                 <Typography sx={{ ...styles.smallTextThin }}>Другое</Typography>
                 <Box paddingLeft="30px">
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Вес (без воды):&nbsp;
                     </Typography>
                     <Typography
@@ -292,10 +379,16 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                     </Typography>
                   </Box>
                   <Box>
-                    <Typography sx={styles.smallText} display="inline">
+                    <Typography
+                      sx={styles.smallText}
+                      display="inline"
+                    >
                       Экспонента n:&nbsp;
                     </Typography>
-                    <Typography sx={styles.smallTextBold} display="inline">
+                    <Typography
+                      sx={styles.smallTextBold}
+                      display="inline"
+                    >
                       {model.exponentN}
                     </Typography>
                   </Box>
@@ -308,14 +401,20 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
         </Grid>
       </Grid>
       {model.description && (
-        <Box marginTop="40px" marginLeft="20px">
-          <Typography sx={styles.standardText} itemProp="description">
+        <Box
+          marginTop="40px"
+          marginLeft="20px"
+        >
+          <Typography
+            sx={styles.standardText}
+            itemProp="description"
+          >
             {model.description}
           </Typography>
         </Box>
       )}
     </Box>
-  );
-};
+  )
+}
 
-export default RadiatorInfo;
+export default RadiatorInfo

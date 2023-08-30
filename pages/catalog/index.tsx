@@ -611,21 +611,21 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                   </Link>
                 </Box>
               </Grid>
-              {/* <Grid
+              <Grid
                 item
                 xs={12}
                 md={6}
               >
                 <Box paddingLeft="10px">
-                  <Link href="/catalog/2180-stock">
+                  <Link href="/catalog/ral9016">
                     <a style={{ textDecoration: "none" }}>
                       <Typography sx={{ ...styles.standartTextThinLink }}>
-                        Arbonia 2180 (склад)
+                        Arbonia RAL 9016 (склад)
                       </Typography>
                     </a>
                   </Link>
                 </Box>
-              </Grid>*/}
+              </Grid>
             </Grid>
           </Box>
         </Box>

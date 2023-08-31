@@ -36,7 +36,7 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({
     <Box>
       <PageHeader
         title={
-          "Arbonia RAL 9016| трубчатые радиаторы белого цвета в наличии | ArboniaShop.ru"
+          "Arbonia RAL 9016 | трубчатые радиаторы белого цвета в наличии | ArboniaShop.ru"
         }
         description="Трубчатые радиаторы Arbonia в белом цвете в наличии. Выгодные цены и доставка в любой город России. Официальная гарантия на всю продукцию."
       />

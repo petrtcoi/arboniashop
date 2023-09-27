@@ -12,19 +12,25 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
   return (
     <Box sx={{ ...global.pagePadding }}>
       <PageHeader title={"Магазин радиаторов Arbonia. Публичная оферта"} />
-      <Typography variant="h3" component="h1">
+      <Typography
+        variant="h3"
+        component="h1"
+      >
         Публичная оферта
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         1. Общие положения
       </Typography>
       ``
       <Typography sx={{ ...styles.standardText }}>
         1.1.Настоящая публичная оферта (далее — Оферта) является официальным
-        предложением ООО «ХОУМ КОМФОРТ» в адрес любого физического лица заключить с
-        ООО «ХОУМ КОМФОРТ» договор розничной купли-продажи товара на Сайте
-        дистанционным образом на условиях, определенных в настоящем Договоре и
-        содержит все существенные условия Оферты.
+        предложением ООО «ХОУМ КОМФОРТ» в адрес любого физического лица
+        заключить с ООО «ХОУМ КОМФОРТ» договор розничной купли-продажи товара на
+        Сайте дистанционным образом на условиях, определенных в настоящем
+        Договоре и содержит все существенные условия Оферты.
         <br />
         1.2.Заказ Покупателем товара, размещенного на Сайте, означает, что
         Покупатель согласен со всеми условиями настоящей Оферты, Политики
@@ -44,7 +50,10 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
         в одностороннем порядке. Поэтому актуальную информацию необходимо
         уточнять у продавцов магазина.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         2. Предмет Оферты
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -63,7 +72,10 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
         стоимости товара. Риск его случайной гибели или повреждения товара
         переходит к Покупателю с момента фактической передачи товара Покупателю.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         3.Стоимость товара
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -84,7 +96,10 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
         3.4.Расчеты между Сайтом и Покупателем за товар производятся способами,
         указанными на Сайте в разделе – Доставка и оплата.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         4. Момент заключения Оферты
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -118,7 +133,10 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
         быть отозвано Покупателем или его законным представителем, подачей
         письменного заявления, переданного Сайту.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         5. Возврат товара и денежных средств
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -128,7 +146,10 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
         5.2.Возврат денежных средств осуществляется посредством возврата
         стоимости оплаченного товара на банковскую карту или почтовым переводом.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         6. Доставка товара
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -143,14 +164,20 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
         6.3.После получения товара претензии к количеству, комплектности и виду
         товара не принимаются.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         7. Срок действия Оферты
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
         7.1.Настоящая Оферта вступает в силу с момента ее акцепта Покупателем, и
         действует до момента отзыва акцепта публичной Оферты.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         8. Дополнительные условия
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -176,20 +203,31 @@ const OfertaPage: NextPage<OfertaPageProps> = () => {
         8.5.Признание судом недействительности какого-либо положения настоящего
         Соглашения не влечет за собой недействительность остальных положений.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         9. Реквизиты Сайта
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
         ООО «ХОУМ КОМФОРТ»
         <br />
-        www.homekomfort.ru<br />
-              Центральный офис: 193168, РОССИЯ, г САНКТ-ПЕТЕРБУРГ, пр-кт ИСКРОВСКИЙ, ДОМ 22, корпус литера А, оф 3 ПОМЕЩ. 33-Н<br />
-              ОГРН: 1237800065865<br />
-              &zwj;ИНН/КПП 7811788339 / 781101001<br />
-              Р/с 40702810520000015671<br />
-              в ООО &#34;Банк Точка&#34;<br />
-              БИК 044525104<br />
-              Корр/сч: 30101810745374525104<br />
+        www.homekomfort.ru
+        <br />
+        Центральный офис: 192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ
+        ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6<br />
+        ОГРН: 1237800065865
+        <br />
+        &zwj;ИНН/КПП 7811788339 / 781101001
+        <br />
+        Р/с 40702810520000015671
+        <br />
+        в ООО &#34;Банк Точка&#34;
+        <br />
+        БИК 044525104
+        <br />
+        Корр/сч: 30101810745374525104
+        <br />
       </Typography>
     </Box>
   );

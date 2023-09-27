@@ -14,7 +14,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
       <PageHeader
         title={"Магазин радиаторов Arbonia. Политика конфиденциальности"}
       />
-      <Typography variant="h3" component="h1">
+      <Typography
+        variant="h3"
+        component="h1"
+      >
         Политика конфиденциальности
       </Typography>
 
@@ -35,7 +38,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         персональной информации; в случае несогласия с этими условиями
         Пользователь должен воздержаться от использования Сайта.
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         1. Общие положения политики
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -62,7 +68,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         законодательство Российской Федерации.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         2. Персональная информация Пользователей, которую обрабатывает Сайт
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -96,7 +105,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         дееспособность.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         3. Цели обработки персональной информации Пользователей
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -132,7 +144,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         3.2.8 оформление заказа на покупку товара
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         4. Условия обработки персональной информации Пользователей и её передачи
         третьим лицам
       </Typography>
@@ -173,7 +188,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         или оказания услуг по поручению Сайта.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         5 .Изменение и удаление персональной информации. Обязательное хранение
         данных
       </Typography>
@@ -190,7 +208,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         законодательно установленной процедурой государственному органу.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         6. Обработка персональной информации при помощи файлов Cookie и
         счетчиков
       </Typography>
@@ -222,7 +243,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         изменяться без предварительного уведомления Пользователя.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         7. Защита персонально информации Пользователя
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -233,7 +257,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         неправомерных действий с ней третьих лиц.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         8. Изменение Политики конфиденциальности
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -245,7 +272,10 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         по адресу www.arboniashop.ru/privacy .
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         9. Контакты и вопросы по персональным данным
       </Typography>
       <Typography sx={{ ...styles.standardText }}>
@@ -255,7 +285,8 @@ const PrivacyPage: NextPage<PrimacyPageProps> = () => {
         <br />
         -по адресу электронной почты: sales@homekomfort.ru
         <br />
-        -по почтовому адресу: 193168, РОССИЯ, г САНКТ-ПЕТЕРБУРГ, пр-кт ИСКРОВСКИЙ, ДОМ 22, корпус литера А, оф 3 ПОМЕЩ. 33-Н.
+        -по почтовому адресу: 192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ
+        ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6
         <br /> <br />
         Дата публикации: 23.06.2023 г.
       </Typography>

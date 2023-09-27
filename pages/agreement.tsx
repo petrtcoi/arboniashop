@@ -14,7 +14,10 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
       <PageHeader
         title={"Магазин радиаторов Arbonia. Пользовательское соглашение"}
       />
-      <Typography variant="h3" component="h1">
+      <Typography
+        variant="h3"
+        component="h1"
+      >
         Пользовательское соглашение
       </Typography>
 
@@ -25,7 +28,10 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
         ниже условиях Соглашения.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         1. Общие положения
       </Typography>
 
@@ -69,7 +75,10 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
         предусмотрено новой редакцией Соглашения.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         2. Общие условия пользования Сайтом
       </Typography>
 
@@ -99,13 +108,13 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
         проинформирован о том, что в случае, если у меня возникнет желание
         отказаться от информационной рассылки www.arboniashop.ru, мне будет
         необходимо написать соответствующий запрос на электронную почту
-        sales@homekomfort.ru или же сообщить о несогласии получения информационных
-        рассылок по адресам, указанным в разделе «Контакты» данного Соглашения.
-        Я также даю разрешение Сайту или третьим лицам, уполномоченным на
-        рассылку от имени Сайта, собирать, хранить и обрабатывать все переданные
-        мною в адрес Сайта персональные данные (в том числе фамилию, имя,
-        отчество и адрес электронной почты) с целью информирования о новостях и
-        других событиях Сайта.
+        sales@homekomfort.ru или же сообщить о несогласии получения
+        информационных рассылок по адресам, указанным в разделе «Контакты»
+        данного Соглашения. Я также даю разрешение Сайту или третьим лицам,
+        уполномоченным на рассылку от имени Сайта, собирать, хранить и
+        обрабатывать все переданные мною в адрес Сайта персональные данные (в
+        том числе фамилию, имя, отчество и адрес электронной почты) с целью
+        информирования о новостях и других событиях Сайта.
         <br />
         2.6.Вы соглашаетесь, что Сайт не несет никакой ответственности за
         задержки, сбои, неверную или несвоевременную доставку, удаление или
@@ -135,7 +144,10 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
         каталоге на Сайте.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         3. Обязательства Пользователя при использовании Сайта
       </Typography>
 
@@ -199,7 +211,10 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
         любой контент, доступный через сервисы Сайта.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         4. Политика конфиденциальности
       </Typography>
 
@@ -219,7 +234,10 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
         www.arboniashop.ru/privacy.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         5. Условия приобретения и доставки товара
       </Typography>
 
@@ -264,7 +282,10 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
         можете направить в Сайту по адресу — sales@homekomfort.ru.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         6.Ответственность
       </Typography>
 
@@ -296,21 +317,32 @@ const AgreementPage: NextPage<AgreementPageProps> = () => {
         ответственности не несет.
       </Typography>
 
-      <Typography variant="h5" component="h2">
+      <Typography
+        variant="h5"
+        component="h2"
+      >
         7. Реквизиты Сайта
       </Typography>
 
       <Typography sx={{ ...styles.standardText }}>
         ООО «ХОУМ КОМФОРТ»
         <br />
-        www.homekomfort.ru<br />
-              Центральный офис: 193168, РОССИЯ, г САНКТ-ПЕТЕРБУРГ, пр-кт ИСКРОВСКИЙ, ДОМ 22, корпус литера А, оф 3 ПОМЕЩ. 33-Н<br />
-              ОГРН: 1237800065865<br />
-              &zwj;ИНН/КПП 7811788339 / 781101001<br />
-              Р/с 40702810520000015671<br />
-              в ООО &#34;Банк Точка&#34;<br />
-              БИК 044525104<br />
-              Корр/сч: 30101810745374525104<br />
+        www.homekomfort.ru
+        <br />
+        Центральный офис: 192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ
+        ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6<br />
+        ОГРН: 1237800065865
+        <br />
+        &zwj;ИНН/КПП 7811788339 / 781101001
+        <br />
+        Р/с 40702810520000015671
+        <br />
+        в ООО &#34;Банк Точка&#34;
+        <br />
+        БИК 044525104
+        <br />
+        Корр/сч: 30101810745374525104
+        <br />
         <br />
         Электронный адрес для обращений: sales@homekomfort.ru
         <br />

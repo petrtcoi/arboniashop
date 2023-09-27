@@ -1,17 +1,17 @@
-import type { NextPage } from "next"
-import Link from "next/link"
-import { Box, Typography, Grid, Divider } from "@mui/material"
+import type { NextPage } from "next";
+import Link from "next/link";
+import { Box, Typography, Grid, Divider } from "@mui/material";
 
-import PageHeader from "../components/pageHeader/pageHeader"
-import PageTitle from "../components/pageTitle/pageTitle"
-import Hero from "../components/hero/hero"
+import PageHeader from "../components/pageHeader/pageHeader";
+import PageTitle from "../components/pageTitle/pageTitle";
+import Hero from "../components/hero/hero";
 
-import trackEvent from "../utils/trackEvent"
+import trackEvent from "../utils/trackEvent";
 
-import * as styles from "../styles/styles"
-import global from "../variables/global"
+import * as styles from "../styles/styles";
+import global from "../variables/global";
 
-type PageAboutProps = {}
+type PageAboutProps = {};
 
 const PageAbout: NextPage<PageAboutProps> = () => {
   return (
@@ -224,8 +224,8 @@ const PageAbout: NextPage<PageAboutProps> = () => {
               <br />
               www.homekomfort.ru
               <br />
-              Центральный офис: 193168, РОССИЯ, г САНКТ-ПЕТЕРБУРГ, пр-кт
-              ИСКРОВСКИЙ, ДОМ 22, корпус литера А, оф 3 ПОМЕЩ. 33-Н
+              Центральный офис: 192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ
+              ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6
               <br />
               ОГРН: 1237800065865
               <br />
@@ -247,13 +247,13 @@ const PageAbout: NextPage<PageAboutProps> = () => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default PageAbout
+export default PageAbout;
 
 export async function getStaticProps() {
   return {
     props: {}, // will be passed to the page component as props
-  }
+  };
 }

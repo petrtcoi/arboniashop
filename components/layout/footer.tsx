@@ -33,6 +33,10 @@ const Footer: NextComponentType<FooterProps> = () => {
         content="192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6"
       />
       <meta
+        itemProp="name"
+        content='ООО "ХОУМ КОМФОРТ"'
+      />
+      <meta
         itemProp="image"
         content="/public/images/logo.png"
       />

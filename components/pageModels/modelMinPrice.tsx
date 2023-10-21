@@ -42,8 +42,11 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({
               itemProp="priceCurrency"
               content="RUB"
             />
-            &nbsp;<span itemProp="lowPrice">{minPrice.toLocaleString()}</span>{" "}
-            руб
+            <meta
+              itemProp="lowPrice"
+              content={minPrice.toString().replace(",", "").trim()}
+            />
+            &nbsp;{minPrice.toLocaleString()} руб
           </span>
         </Typography>
       </Box>

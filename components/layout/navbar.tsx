@@ -191,7 +191,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
               content="192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6"
             />
             <meta
-              itemProp="address"
+              itemProp="name"
               content='ООО "ХОУМ КОМФОРТ"'
             />
 

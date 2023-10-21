@@ -1,32 +1,34 @@
-import { NextPage } from "next"
-import { useState } from "react"
-import { Box, Typography, Divider, Tabs, Tab } from "@mui/material"
+import { NextPage } from "next";
+import { useState } from "react";
+import Link from "next/link";
 
-import ImagesOtherList from "../../../components/pageModels/imagesOtherList"
-import DownloadsBlock from "../../../components/pageModels/downloadsBlock"
-import PageHeader from "../../../components/pageHeader/pageHeader"
-import RadiatorInfo from "../../../components/pageRadiator/radiatorInfo"
-import PageTitle from "../../../components/pageTitle/pageTitle"
+import { Box, Typography, Divider, Tabs, Tab } from "@mui/material";
 
-import getModelsData from "../../../api_utils/getModelsData"
-import getConnectionsData from "../../../api_utils/getConnectionsData"
-import getColorsData from "../../../api_utils/getColorsData"
+import ImagesOtherList from "../../../components/pageModels/imagesOtherList";
+import DownloadsBlock from "../../../components/pageModels/downloadsBlock";
+import PageHeader from "../../../components/pageHeader/pageHeader";
+import RadiatorInfo from "../../../components/pageRadiator/radiatorInfo";
+import PageTitle from "../../../components/pageTitle/pageTitle";
 
-import { ModelOrigin } from "../../../models/modelOrigin.model"
-import { ConnectionOrigin } from "../../../models/connectionOrigin.model"
-import { ColorOrigin } from "../../../models/colorOrigin.model"
+import getModelsData from "../../../api_utils/getModelsData";
+import getConnectionsData from "../../../api_utils/getConnectionsData";
+import getColorsData from "../../../api_utils/getColorsData";
 
-import * as styles from "../../../styles/styles"
-import global from "../../../variables/global"
-import GeneralTextAboutArboniaProps from "../../../components/generalTextAboutArbonia"
-import Link from "next/link"
+import { ModelOrigin } from "../../../models/modelOrigin.model";
+import { ConnectionOrigin } from "../../../models/connectionOrigin.model";
+import { ColorOrigin } from "../../../models/colorOrigin.model";
+
+import global from "../../../variables/global";
+import GeneralTextAboutArboniaProps from "../../../components/generalTextAboutArbonia";
+
+import * as styles from "../../../styles/styles";
 
 type RadiatorProps = {
-  model: ModelOrigin
-  color: ColorOrigin
-  connection: ConnectionOrigin
-  sectionQnty: number
-}
+  model: ModelOrigin;
+  color: ColorOrigin;
+  connection: ConnectionOrigin;
+  sectionQnty: number;
+};
 
 const Radiator: NextPage<RadiatorProps> = ({
   model,
@@ -34,12 +36,12 @@ const Radiator: NextPage<RadiatorProps> = ({
   connection,
   sectionQnty,
 }) => {
-  const [tab, setTab] = useState<string>("docs")
+  const [tab, setTab] = useState<string>("docs");
   const handleChangeTab = (event: React.SyntheticEvent, newTab: string) => {
-    setTab(newTab)
-  }
+    setTab(newTab);
+  };
 
-  const radiatorTitle = `Радиатор Arbonia ${model.nameShort}-${sectionQnty}, ${color.nameShort}, ${connection.nameShort}`
+  const radiatorTitle = `Радиатор Arbonia ${model.nameShort}-${sectionQnty}, ${color.nameShort}, ${connection.nameShort}`;
 
   return (
     <Box
@@ -251,28 +253,28 @@ const Radiator: NextPage<RadiatorProps> = ({
         <GeneralTextAboutArboniaProps />
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Radiator
+export default Radiator;
 
 export async function getStaticProps(context: {
-  params: { id: string; sections: string }
+  params: { id: string; sections: string };
 }) {
-  const modelId = context.params.id
-  const sectionQnty = +context.params.sections
+  const modelId = context.params.id;
+  const sectionQnty = +context.params.sections;
 
-  const models: ModelOrigin[] = await getModelsData()
-  const colors: ColorOrigin[] = await getColorsData()
-  const connections: ConnectionOrigin[] = await getConnectionsData()
+  const models: ModelOrigin[] = await getModelsData();
+  const colors: ColorOrigin[] = await getColorsData();
+  const connections: ConnectionOrigin[] = await getConnectionsData();
 
-  const model = models.find(x => x.id === modelId) || models[0]
-  const colorId = model.color || colors[0]
-  const connectionId = model.connection || connections[0]
+  const model = models.find(x => x.id === modelId) || models[0];
+  const colorId = model.color || colors[0];
+  const connectionId = model.connection || connections[0];
 
-  const color = colors.find(x => x.id === colorId) || colors[0]
+  const color = colors.find(x => x.id === colorId) || colors[0];
   const connection =
-    connections.find(x => x.id === connectionId) || connections[0]
+    connections.find(x => x.id === connectionId) || connections[0];
 
   return {
     props: {
@@ -281,22 +283,22 @@ export async function getStaticProps(context: {
       color,
       sectionQnty,
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const models: ModelOrigin[] = await getModelsData()
+  const models: ModelOrigin[] = await getModelsData();
   const paths = models
     .map(model => {
-      if (!model.inStockSections) return []
+      if (!model.inStockSections) return [];
       return model.inStockSections.split(",").map(sections => {
-        return { params: { id: model.id, sections: sections.trim() } }
-      })
+        return { params: { id: model.id, sections: sections.trim() } };
+      });
     })
-    .flat()
+    .flat();
 
   return {
     paths: paths,
     fallback: false, // See the "fallback" section below
-  }
+  };
 }

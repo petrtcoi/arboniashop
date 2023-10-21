@@ -53,15 +53,15 @@ const PageTitle: React.FC<PageTitleProps> = ({
                         {item.title}
                       </Typography>
                     </a>
-                    <meta
-                      itemProp="name"
-                      content={item.title}
-                    />
-                    <meta
-                      itemProp="position"
-                      content={(index + 1).toString()}
-                    />
                   </Link>
+                  <meta
+                    itemProp="name"
+                    content={item.title}
+                  />
+                  <meta
+                    itemProp="position"
+                    content={(index + 1).toString()}
+                  />
                   <Typography
                     sx={{ ...styles.smallTextThin }}
                     display="inline"

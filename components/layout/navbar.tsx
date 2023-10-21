@@ -119,15 +119,15 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                         </MenuItem>
                       </Box>
                     </a>
-                    <meta
-                      itemProp="name"
-                      content={page[0]}
-                    />
-                    <meta
-                      itemProp="position"
-                      content={(index + 1).toString()}
-                    />
                   </Link>
+                  <meta
+                    itemProp="name"
+                    content={page[0]}
+                  />
+                  <meta
+                    itemProp="position"
+                    content={(index + 1).toString()}
+                  />
                 </Box>
               ))}
             </Menu>
@@ -161,15 +161,15 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                       {page[0]}
                     </Typography>
                   </a>
-                  <meta
-                    itemProp="name"
-                    content={page[0]}
-                  />
-                  <meta
-                    itemProp="position"
-                    content={(index + 1).toString()}
-                  />
                 </Link>
+                <meta
+                  itemProp="name"
+                  content={page[0]}
+                />
+                <meta
+                  itemProp="position"
+                  content={(index + 1).toString()}
+                />
               </Box>
             ))}
           </Box>

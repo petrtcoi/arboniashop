@@ -26,7 +26,7 @@ type LayoutProps = ReactElement;
 
 const Layout: NextComponentType<LayoutProps> = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const { rateEuro } = useGetCurrency();
+  const { rateEuro, isFetching } = useGetCurrency();
 
   const [pageUrl, setPageUrl] = useState<string>("");
   const router = useRouter();
@@ -62,10 +62,22 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
           href="/images/favicons/safari-pinned-tab.svg"
           color="#5bbad5"
         />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="yandex-verification" content="9ac1785e06142cc3" />
-        <link rel="canonical" href={`https://arboniashop.ru${router.asPath}`} />
+        <meta
+          name="msapplication-TileColor"
+          content="#da532c"
+        />
+        <meta
+          name="theme-color"
+          content="#ffffff"
+        />
+        <meta
+          name="yandex-verification"
+          content="9ac1785e06142cc3"
+        />
+        <link
+          rel="canonical"
+          href={`https://arboniashop.ru${router.asPath}`}
+        />
       </Head>
       <ThemeProvider theme={theme}>
         <Container
@@ -76,11 +88,14 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
         >
           <CssBaseline />
           <ShoppingCartContext.Provider value={{ state, dispatch }}>
-            <CurrencyContext.Provider value={{ rateEuro }}>
+            <CurrencyContext.Provider value={{ rateEuro, isFetching }}>
               <HeaderScripts />
               <Navbar />
               <ShoppingCart />
-              <Box paddingX={"0px"} marginBottom="50px">
+              <Box
+                paddingX={"0px"}
+                marginBottom="50px"
+              >
                 <main>{children}</main>
               </Box>
               <Footer />

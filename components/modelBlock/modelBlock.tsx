@@ -1,30 +1,30 @@
-import React, { useContext } from "react"
-import { Box, Grid, Typography } from "@mui/material"
-import Link from "next/link"
-import Image from "next/image"
+import React, { useContext } from "react";
+import { Box, Grid, Typography } from "@mui/material";
+import Link from "next/link";
+import Image from "next/image";
 
-import RadiatorList from "../radiatorList/radiatorList"
+import RadiatorList from "../radiatorList/radiatorList";
 
-import { ColorOrigin } from "../../models/colorOrigin.model"
-import { ConnectionOrigin } from "../../models/connectionOrigin.model"
-import { ModelOrigin } from "../../models/modelOrigin.model"
+import { ColorOrigin } from "../../models/colorOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model";
 
-import { CurrencyContext } from "../../contexts/currencyContext"
+import { CurrencyContext } from "../../contexts/currencyContext";
 
-import global from "../../variables/global"
-import * as styles from "../../styles/styles"
+import global from "../../variables/global";
+import * as styles from "../../styles/styles";
 
 type ModelBlockProps = {
-  model: ModelOrigin
-  color: ColorOrigin
-  connection: ConnectionOrigin
+  model: ModelOrigin;
+  color: ColorOrigin;
+  connection: ConnectionOrigin;
 
-  onlyTable?: boolean
+  onlyTable?: boolean;
 
-  title: string
-  description?: string
-  modelLink?: string
-}
+  title: string;
+  description?: string;
+  modelLink?: string;
+};
 
 const ModelBlock: React.FC<ModelBlockProps> = ({
   model,
@@ -35,8 +35,8 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
   modelLink,
   onlyTable = false,
 }) => {
-  const { rateEuro } = useContext(CurrencyContext)
-  const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
+  const { rateEuro, isFetching } = useContext(CurrencyContext);
+  const imagePrimaryPath = global.imagesModelPath + model.imagePrimary;
 
   return (
     <Box marginTop={onlyTable ? "0px" : "70px"}>
@@ -102,6 +102,12 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
         </>
       )}
 
+      <Box visibility={isFetching ? "visible" : "hidden"}>
+        <Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
+          подождите, обновляется курс валют...
+        </Typography>
+      </Box>
+
       <Box marginTop={"20px"}>
         <RadiatorList
           model={model}
@@ -111,7 +117,7 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
         />
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default ModelBlock
+export default ModelBlock;

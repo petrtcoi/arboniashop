@@ -22,8 +22,15 @@ const PageTitle: React.FC<PageTitleProps> = ({
       sx={{ backgroundColor: "#f6f6f6", borderBottom: "1px solid #e5e5e5" }}
     >
       {breadcrumbs && breadcrumbs.length > 0 ? (
-        <Grid container justifyContent="space-between">
-          <Grid item itemScope itemType="https://schema.org/BreadcrumbList">
+        <Grid
+          container
+          justifyContent="space-between"
+        >
+          <Grid
+            item
+            itemScope
+            itemType="https://schema.org/BreadcrumbList"
+          >
             {breadcrumbs?.map((item, index) => {
               return index + 1 < breadcrumbs.length ? (
                 <Box
@@ -34,7 +41,10 @@ const PageTitle: React.FC<PageTitleProps> = ({
                   itemType="https://schema.org/ListItem"
                 >
                   <Link href={item.link}>
-                    <a style={{ textDecoration: "none" }} itemProp="item">
+                    <a
+                      style={{ textDecoration: "none" }}
+                      itemProp="item"
+                    >
                       <Typography
                         sx={{ ...styles.smallTextThinLink }}
                         display="inline"
@@ -48,13 +58,22 @@ const PageTitle: React.FC<PageTitleProps> = ({
                       />
                     </a>
                   </Link>
-                  <Typography sx={{ ...styles.smallTextThin }} display="inline">
+                  <Typography
+                    sx={{ ...styles.smallTextThin }}
+                    display="inline"
+                  >
                     &nbsp;&nbsp;&gt;&nbsp;&nbsp;
                   </Typography>
                 </Box>
               ) : (
-                <Box key={index} display="inline">
-                  <Typography sx={{ ...styles.smallText }} display="inline">
+                <Box
+                  key={index}
+                  display="inline"
+                >
+                  <Typography
+                    sx={{ ...styles.smallText }}
+                    display="inline"
+                  >
                     {item.title}
                   </Typography>
                 </Box>

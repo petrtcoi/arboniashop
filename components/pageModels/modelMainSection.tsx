@@ -39,7 +39,7 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
   handleBuyButton,
 }) => {
   const imagePrimaryPath = global.imagesModelPath + modelCurr.imagePrimary;
-  const currencyContext = useContext(CurrencyContext);
+  const { rateEuro, isFetching } = useContext(CurrencyContext);
 
   const { price } = calcRadiatorCost({
     model: modelCurr,
@@ -48,21 +48,31 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
     sectionQnty: modelCurr.inStockSections
       ? +modelCurr.inStockSections.split(",")[0]
       : undefined,
-    currencyRate: currencyContext.rateEuro,
+    currencyRate: rateEuro,
   });
   const minPrice = price.noConsole;
 
   return (
     <Box>
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+      >
         {/* ИЗОБРАЖЕНИЕ */}
-        <Grid item xs={12} sm={6}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+        >
           {modelCurr.badgesString && (
             <Box>
               <ModelBadges badgesString={modelCurr.badgesString} />
             </Box>
           )}
-          <Box textAlign="center" marginTop="20px">
+          <Box
+            textAlign="center"
+            marginTop="20px"
+          >
             {/* <div style={ { width: '100%', height: '100%', position: 'relative' } }> */}
 
             <Image
@@ -81,10 +91,25 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
           </Box>
         </Grid>
 
-        <Grid item xs={12} sm={6}>
-          <Box marginTop="30px" marginLeft="20px">
+        <Grid
+          item
+          xs={12}
+          sm={6}
+        >
+          <Box
+            marginTop="30px"
+            marginLeft="20px"
+          >
             {/* БЛОК ЦЕНЫ */}
-            <Box marginBottom="20px">
+            <Box marginBottom="10px">
+              <Box visibility={isFetching ? "visible" : "hidden"}>
+                <Typography
+                  sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}
+                >
+                  подождите, обновляется курс валют...
+                </Typography>
+              </Box>
+
               <ModelMinPrice
                 model={modelCurr}
                 minPrice={minPrice}
@@ -103,7 +128,11 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
         </Grid>
       </Grid>
       {modelCurr.description && (
-        <Box marginTop="40px" marginLeft="20px" itemProp="description">
+        <Box
+          marginTop="40px"
+          marginLeft="20px"
+          itemProp="description"
+        >
           <Typography sx={styles.standardText}>
             {modelCurr.description}
           </Typography>

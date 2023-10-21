@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Box, Button, Typography, Divider } from "@mui/material";
 
-import { footerTextButtonUnderline } from "../../styles/stylesNavbarFooter";
-
 import { ModelOrigin } from "../../models/modelOrigin.model";
 
 import * as styles from "../../styles/styles";
@@ -14,7 +12,6 @@ type ModelMinPriceProps = {
 };
 
 const ModelMinPrice: React.FC<ModelMinPriceProps> = ({
-  model,
   minPrice,
   setTabBuy,
 }) => {
@@ -26,19 +23,26 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({
   return (
     <Box>
       <Box marginRight="10px">
-        <Typography sx={styles.standardText} display="inline">
-          Цена от:
+        <Typography
+          sx={styles.standardText}
+          display="inline"
+        >
+          Цена от:{" "}
         </Typography>
-        <Typography display="inline" sx={{ fontSize: "30px", fontWeight: 600 }}>
+        <Typography
+          display="inline"
+          sx={{ fontSize: "30px", fontWeight: 600 }}
+        >
           <span
             itemProp="offers"
             itemScope
             itemType="https://schema.org/AggregateOffer"
           >
-            <meta itemProp="priceCurrency" content="RUB" />
-            &nbsp;<span itemProp="lowPrice">
-              {minPrice.toLocaleString()}
-            </span>{" "}
+            <meta
+              itemProp="priceCurrency"
+              content="RUB"
+            />
+            &nbsp;<span itemProp="lowPrice">{minPrice.toLocaleString()}</span>{" "}
             руб
           </span>
         </Typography>

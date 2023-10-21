@@ -24,13 +24,13 @@ const useGetCartItemsExtended = ({
   const { rateEuro } = useContext(CurrencyContext);
 
   const [items, setItems] = useState<CartItemExtended[]>(
-    shoppingCartContext.state.items.map((item) =>
+    shoppingCartContext.state.items.map(item =>
       getCartItem({ item, models, colors, connections, currencyRate: rateEuro })
     )
   );
   useEffect(() => {
     setItems(
-      shoppingCartContext.state.items.map((item) =>
+      shoppingCartContext.state.items.map(item =>
         getCartItem({
           item,
           models,

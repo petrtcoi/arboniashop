@@ -1,29 +1,29 @@
-import React, { useContext } from "react"
-import { Box, Grid, Typography } from "@mui/material"
-import Image from "next/image"
+import React, { useContext } from "react";
+import { Box, Grid, Typography } from "@mui/material";
+import Image from "next/image";
 
-import AddToCartButton from "../addToCartButton/addToCartButton"
+import AddToCartButton from "../addToCartButton/addToCartButton";
 
-import { ModelOrigin } from "../../models/modelOrigin.model"
-import { ConnectionOrigin } from "../../models/connectionOrigin.model"
-import { ColorOrigin } from "../../models/colorOrigin.model"
+import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import { ColorOrigin } from "../../models/colorOrigin.model";
 
-import { CurrencyContext } from "../../contexts/currencyContext"
+import { CurrencyContext } from "../../contexts/currencyContext";
 
-import getRadiatorData from "../../utils/getRadiatorData"
-import calcRadiatorCost from "../../utils/calcRadiatorCost"
+import getRadiatorData from "../../utils/getRadiatorData";
+import calcRadiatorCost from "../../utils/calcRadiatorCost";
 
-import global from "../../variables/global"
-import * as styles from "../../styles/styles"
+import global from "../../variables/global";
+import * as styles from "../../styles/styles";
 
 // import FeaturesTable from './featuresTable'
 
 type ModelMainSectionProps = {
-  model: ModelOrigin
-  color: ColorOrigin
-  connection: ConnectionOrigin
-  sectionQnty: number
-}
+  model: ModelOrigin;
+  color: ColorOrigin;
+  connection: ConnectionOrigin;
+  sectionQnty: number;
+};
 
 const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
   model,
@@ -31,16 +31,16 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
   connection,
   sectionQnty,
 }) => {
-  const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
-  const currencyContext = useContext(CurrencyContext)
+  const imagePrimaryPath = global.imagesModelPath + model.imagePrimary;
+  const { rateEuro, isFetching } = useContext(CurrencyContext);
 
   const { price } = calcRadiatorCost({
     model,
     color,
     connection,
     sectionQnty,
-    currencyRate: currencyContext.rateEuro,
-  })
+    currencyRate: rateEuro,
+  });
   const {
     skuString,
     lengthString,
@@ -54,7 +54,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
     connection,
     sectionQnty,
     price: price.noConsole,
-  })
+  });
 
   return (
     <Box>
@@ -102,18 +102,27 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
             </Box>
 
             {/* БЛОК ЦЕНЫ */}
+
             <Box
-              marginTop="20px"
+              marginTop="10px"
               padding="10px"
               // sx={{ border: "1px solid #333333", borderRadius: "10px" }}
               textAlign="left"
             >
+              <Box visibility={isFetching ? "visible" : "hidden"}>
+                <Typography
+                  sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}
+                >
+                  подождите, обновляется курс валют...
+                </Typography>
+              </Box>
+
               <Box>
                 <Typography
                   sx={styles.standardText}
                   display="inline"
                 >
-                  Цена:
+                  Цена:{" "}
                 </Typography>
 
                 <Typography
@@ -145,6 +154,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                   {oldPriceString} руб
                 </Typography>
               </Box>
+
               <Box marginTop="10px">
                 <AddToCartButton
                   model={model}
@@ -414,7 +424,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
         </Box>
       )}
     </Box>
-  )
-}
+  );
+};
 
-export default RadiatorInfo
+export default RadiatorInfo;

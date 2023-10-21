@@ -1,43 +1,43 @@
-import { NextPage } from "next"
-import { useState, useContext } from "react"
-import { Box, Typography, Divider, Tabs, Tab } from "@mui/material"
+import { NextPage } from "next";
+import { useState, useContext } from "react";
+import { Box, Typography, Divider, Tabs, Tab } from "@mui/material";
 
-import ModelMainSection from "../../components/pageModels/modelMainSection"
-import RadiatorList from "../../components/radiatorList/radiatorList"
-import ImagesOtherList from "../../components/pageModels/imagesOtherList"
-import DownloadsBlock from "../../components/pageModels/downloadsBlock"
-import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions"
-import PageHeader from "../../components/pageHeader/pageHeader"
-import PageTitle from "../../components/pageTitle/pageTitle"
-import RadiatorInCartList from "../../components/pageModels/radiatorInCartList"
+import ModelMainSection from "../../components/pageModels/modelMainSection";
+import RadiatorList from "../../components/radiatorList/radiatorList";
+import ImagesOtherList from "../../components/pageModels/imagesOtherList";
+import DownloadsBlock from "../../components/pageModels/downloadsBlock";
+import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions";
+import PageHeader from "../../components/pageHeader/pageHeader";
+import PageTitle from "../../components/pageTitle/pageTitle";
+import RadiatorInCartList from "../../components/pageModels/radiatorInCartList";
 
-import getModelsData from "../../api_utils/getModelsData"
-import getConnectionsData from "../../api_utils/getConnectionsData"
-import getColorsData from "../../api_utils/getColorsData"
+import getModelsData from "../../api_utils/getModelsData";
+import getConnectionsData from "../../api_utils/getConnectionsData";
+import getColorsData from "../../api_utils/getColorsData";
 
-import { CurrencyContext } from "../../contexts/currencyContext"
+import { CurrencyContext } from "../../contexts/currencyContext";
 
-import { ModelOrigin } from "../../models/modelOrigin.model"
-import { ConnectionOrigin } from "../../models/connectionOrigin.model"
-import { ColorOrigin } from "../../models/colorOrigin.model"
+import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import { ColorOrigin } from "../../models/colorOrigin.model";
 
-import * as styles from "./../../styles/styles"
-import global from "../../variables/global"
-import GeneralTextAboutArboniaProps from "../../components/generalTextAboutArbonia"
-import Link from "next/link"
+import * as styles from "./../../styles/styles";
+import global from "../../variables/global";
+import GeneralTextAboutArboniaProps from "../../components/generalTextAboutArbonia";
+import Link from "next/link";
 
 type ModelProps = {
-  modelCurr: ModelOrigin
-  models: ModelOrigin[]
-  colors: ColorOrigin[]
-  connections: ConnectionOrigin[]
-  modelTitle: string
-  metaTitle: string
-  colorTitle: string
-  connectionTitle: string
-  colorInit: ColorOrigin | null
-  connectionInit: ConnectionOrigin | null
-}
+  modelCurr: ModelOrigin;
+  models: ModelOrigin[];
+  colors: ColorOrigin[];
+  connections: ConnectionOrigin[];
+  modelTitle: string;
+  metaTitle: string;
+  colorTitle: string;
+  connectionTitle: string;
+  colorInit: ColorOrigin | null;
+  connectionInit: ConnectionOrigin | null;
+};
 
 const Model: NextPage<ModelProps> = ({
   modelCurr,
@@ -51,22 +51,22 @@ const Model: NextPage<ModelProps> = ({
   colorInit,
   connectionInit,
 }) => {
-  const [tab, setTab] = useState<string>("buy")
+  const [tab, setTab] = useState<string>("buy");
   const handleChangeTab = (event: React.SyntheticEvent, newTab: string) => {
-    setTab(newTab)
-  }
+    setTab(newTab);
+  };
   const [colorCurr, _setColorCurr] = useState<ColorOrigin>(
     colorInit === null ? colors[0] : colorInit
-  )
+  );
   const [connectionCurr, _setConnectionCurr] = useState<ConnectionOrigin>(
     connectionInit === null ? connections[0] : connectionInit
-  )
+  );
 
-  const { rateEuro } = useContext(CurrencyContext)
+  const { rateEuro, isFetching } = useContext(CurrencyContext);
 
   const setTabBuy = () => {
-    setTab("buy")
-  }
+    setTab("buy");
+  };
 
   return (
     <Box
@@ -256,6 +256,15 @@ const Model: NextPage<ModelProps> = ({
               >
                 Купить {modelCurr.name}
               </Typography>
+
+              <Box visibility={isFetching ? "visible" : "hidden"}>
+                <Typography
+                  sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}
+                >
+                  подождите, обновляется курс валют...
+                </Typography>
+              </Box>
+
               <Box marginTop="20px">
                 {modelCurr.inStock === "true" &&
                 colorCurr !== null &&
@@ -315,43 +324,43 @@ const Model: NextPage<ModelProps> = ({
         <GeneralTextAboutArboniaProps />
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Model
+export default Model;
 
 export async function getStaticProps(context: { params: { id: string } }) {
-  const modelId = context.params.id
-  const models: ModelOrigin[] = await getModelsData()
-  const modelCurr = models.find(x => x.id === modelId)
+  const modelId = context.params.id;
+  const models: ModelOrigin[] = await getModelsData();
+  const modelCurr = models.find(x => x.id === modelId);
 
-  const colors: ColorOrigin[] = await getColorsData()
-  const connections: ConnectionOrigin[] = await getConnectionsData()
+  const colors: ColorOrigin[] = await getColorsData();
+  const connections: ConnectionOrigin[] = await getConnectionsData();
 
-  let modelTitle = `Радиатор Arbonia Column ${modelCurr?.nameShort}`
-  let metaTitle = `Радиатор Arbonia ${modelCurr?.nameShort}`
+  let modelTitle = `Радиатор Arbonia Column ${modelCurr?.nameShort}`;
+  let metaTitle = `Радиатор Arbonia ${modelCurr?.nameShort}`;
 
-  let colorTitle = "палитра Arbonia"
-  let colorInit = null
+  let colorTitle = "палитра Arbonia";
+  let colorInit = null;
   if (modelCurr != undefined && modelCurr.color) {
-    const color = colors.find(x => x.id === modelCurr.color)
+    const color = colors.find(x => x.id === modelCurr.color);
     if (color !== undefined) {
-      colorTitle = color.name
-      colorInit = color
-      modelTitle += `, ${colorTitle}`
-      metaTitle += ` ${color.nameShort}`
+      colorTitle = color.name;
+      colorInit = color;
+      modelTitle += `, ${colorTitle}`;
+      metaTitle += ` ${color.nameShort}`;
     }
   }
 
-  let connectionTitle = "из каталога Arbonia"
-  let connectionInit = null
+  let connectionTitle = "из каталога Arbonia";
+  let connectionInit = null;
   if (modelCurr != undefined && modelCurr.connection) {
-    const connection = connections.find(x => x.id === modelCurr.connection)
+    const connection = connections.find(x => x.id === modelCurr.connection);
     if (connection !== undefined) {
-      connectionInit = connection
-      connectionTitle = connection.nameShort
-      modelTitle += `, ${connectionTitle}`
-      metaTitle += ` ${connection.nameShort}`
+      connectionInit = connection;
+      connectionTitle = connection.nameShort;
+      modelTitle += `, ${connectionTitle}`;
+      metaTitle += ` ${connection.nameShort}`;
     }
   }
 
@@ -368,11 +377,11 @@ export async function getStaticProps(context: { params: { id: string } }) {
       connectionInit,
       colorInit,
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const models: ModelOrigin[] = await getModelsData()
+  const models: ModelOrigin[] = await getModelsData();
   const paths = models
     .filter(model => model.id !== "2180")
     .filter(model => model.id !== "2050")
@@ -382,11 +391,11 @@ export async function getStaticPaths() {
     .filter(model => model.id !== "3180")
     .filter(model => model.id !== "3030")
     .map(model => {
-      return { params: model }
-    })
+      return { params: model };
+    });
 
   return {
     paths: paths,
     fallback: false, // See the "fallback" section below
-  }
+  };
 }

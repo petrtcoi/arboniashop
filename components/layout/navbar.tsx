@@ -1,8 +1,8 @@
-import { NextComponentType } from "next"
-import { useState } from "react"
+import { NextComponentType } from "next";
+import { useState } from "react";
 
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 import {
   AppBar,
@@ -11,42 +11,45 @@ import {
   Toolbar,
   Typography,
   Hidden,
-} from "@mui/material"
-import Container from "@mui/material/Container"
-import MenuItem from "@mui/material/MenuItem"
-import MenuIcon from "@mui/icons-material/Menu"
-import Menu from "@mui/material/Menu"
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone"
+} from "@mui/material";
+import Container from "@mui/material/Container";
+import MenuItem from "@mui/material/MenuItem";
+import MenuIcon from "@mui/icons-material/Menu";
+import Menu from "@mui/material/Menu";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
-import trackEvent from "../../utils/trackEvent"
+import trackEvent from "../../utils/trackEvent";
 
-import global from "./../../variables/global"
-import * as styles from "../../styles/styles"
-import { menuButton, menuButtonDropDown } from "../../styles/stylesNavbarFooter"
+import global from "./../../variables/global";
+import * as styles from "../../styles/styles";
+import {
+  menuButton,
+  menuButtonDropDown,
+} from "../../styles/stylesNavbarFooter";
 
-const pages: string[] = global.pages
+const pages: string[] = global.pages;
 
-type NavbarProps = {}
+type NavbarProps = {};
 
 const Navbar: NextComponentType<NavbarProps> = () => {
-  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null)
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget)
-  }
+    setAnchorElNav(event.currentTarget);
+  };
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null)
-  }
+    setAnchorElNav(null);
+  };
   const myLoader = ({
     src,
     width,
     quality,
   }: {
-    src: any
-    width: number
-    quality: number
+    src: any;
+    width: number;
+    quality: number;
   }) => {
-    return `{src}?w=${width}&q=${quality || 75}`
-  }
+    return `{src}?w=${width}&q=${quality || 75}`;
+  };
 
   return (
     <AppBar
@@ -87,7 +90,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
               itemScope
               itemType="https://schema.org/BreadcrumbList"
             >
-              {pages.map(page => (
+              {pages.map((page, index) => (
                 <Box
                   component={"span"}
                   key={page[0]}
@@ -96,26 +99,31 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                   itemType="https://schema.org/ListItem"
                 >
                   <Link href={page[1]}>
-                    <Box component="span">
-                      <MenuItem
-                        key={page}
-                        onClick={handleCloseNavMenu}
-                        itemProp="item"
-                      >
-                        <Typography
-                          textAlign="center"
-                          variant="body1"
-                          sx={menuButtonDropDown}
-                          itemProp="name"
+                    <a
+                      style={{ textDecoration: "none" }}
+                      itemProp="item"
+                      href={page[1]}
+                    >
+                      <Box component="span">
+                        <MenuItem
+                          key={page}
+                          onClick={handleCloseNavMenu}
                         >
-                          {page[0]}
-                        </Typography>
-                      </MenuItem>
-                      <meta
-                        itemProp="position"
-                        content="1"
-                      />
-                    </Box>
+                          <Typography
+                            textAlign="center"
+                            variant="body1"
+                            sx={menuButtonDropDown}
+                            itemProp="name"
+                          >
+                            {page[0]}
+                          </Typography>
+                        </MenuItem>
+                        <meta
+                          itemProp="position"
+                          content={(index + 1).toString()}
+                        />
+                      </Box>
+                    </a>
                   </Link>
                 </Box>
               ))}
@@ -127,7 +135,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
             itemScope
             itemType="https://schema.org/BreadcrumbList"
           >
-            {pages.map(page => (
+            {pages.map((page, index) => (
               <Box
                 component={"span"}
                 key={page[0]}
@@ -139,19 +147,19 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     itemProp="item"
+                    href={page[1]}
                   >
                     <Typography
                       textAlign="center"
                       variant="body1"
                       ml={4}
                       sx={menuButton}
-                      itemProp="name"
                     >
                       {page[0]}
                     </Typography>
                     <meta
                       itemProp="position"
-                      content="1"
+                      content={(index + 1).toString()}
                     />
                   </a>
                 </Link>
@@ -166,7 +174,15 @@ const Navbar: NextComponentType<NavbarProps> = () => {
               />
             </Box>
           </Hidden>
-          <Box mr={4}>
+          <Box
+            mr={4}
+            itemScope
+            itemType="https://schema.org/Organization"
+          >
+            <meta
+              itemProp="url"
+              content="https://arboniashop.ru"
+            />
             <Typography
               textAlign="center"
               variant="body1"
@@ -176,11 +192,11 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                 <a
                   style={{ textDecoration: "none" }}
                   onClick={() => trackEvent("phone_click")}
+                  itemProp="telephone"
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink }}
                     component="span"
-                    itemProp="telephone"
                   >
                     {global.phone495String}
                   </Typography>
@@ -191,11 +207,11 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                 <a
                   style={{ textDecoration: "none" }}
                   onClick={() => trackEvent("phone_click")}
+                  itemProp="telephone"
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink }}
                     component="span"
-                    itemProp="telephone"
                   >
                     {global.phone812String}
                   </Typography>
@@ -219,7 +235,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
         </Toolbar>
       </Container>
     </AppBar>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

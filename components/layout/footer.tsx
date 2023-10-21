@@ -28,6 +28,15 @@ const Footer: NextComponentType<FooterProps> = () => {
       itemScope
       itemType="https://schema.org/Organization"
     >
+      <meta
+        itemProp="address"
+        content="192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6"
+      />
+      <meta
+        itemProp="image"
+        content="/public/images/logo.png"
+      />
+
       <Box>
         <Link href="/">
           <a itemProp={"url"}>
@@ -42,8 +51,15 @@ const Footer: NextComponentType<FooterProps> = () => {
           </a>
         </Link>
       </Box>
-      <Grid container spacing={2}>
-        <Grid item xs={6} md={4}>
+      <Grid
+        container
+        spacing={2}
+      >
+        <Grid
+          item
+          xs={6}
+          md={4}
+        >
           <Box>
             <Typography sx={footerTextBold}>
               Специализированный магазин
@@ -108,12 +124,19 @@ const Footer: NextComponentType<FooterProps> = () => {
             <Typography sx={footerText}>пн. - пт. с 10:00 до 19:00</Typography>
           </Box>
         </Grid>
-        <Grid item xs={6} md={4}>
-          {pages.map((page) => (
+        <Grid
+          item
+          xs={6}
+          md={4}
+        >
+          {pages.map(page => (
             <Box key={page[0]}>
               <Link href={page[1]}>
                 <a style={{ textDecoration: "none" }}>
-                  <Typography sx={footerTextButton} component="span">
+                  <Typography
+                    sx={footerTextButton}
+                    component="span"
+                  >
                     {page[0]}
                   </Typography>
                 </a>
@@ -122,8 +145,15 @@ const Footer: NextComponentType<FooterProps> = () => {
             </Box>
           ))}
         </Grid>
-        <Grid item xs={12} md={4}>
-          <Typography sx={footerText} itemProp="name">
+        <Grid
+          item
+          xs={12}
+          md={4}
+        >
+          <Typography
+            sx={footerText}
+            itemProp="name"
+          >
             ООО &quot;ХОУМ КОМФОРТ&quot;
           </Typography>
           <Typography sx={footerText}>
@@ -135,12 +165,22 @@ const Footer: NextComponentType<FooterProps> = () => {
       <Box marginY={"15px"}>
         <Divider variant="middle" />
       </Box>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={4}>
+      <Grid
+        container
+        spacing={2}
+      >
+        <Grid
+          item
+          xs={12}
+          md={4}
+        >
           <Typography sx={footerTextButton}>
             <Link href="/privacy">
               <a style={{ textDecoration: "none" }}>
-                <Typography sx={footerTextButtonUnderline} component="span">
+                <Typography
+                  sx={footerTextButtonUnderline}
+                  component="span"
+                >
                   Политика конфиденциальности
                 </Typography>
               </a>
@@ -149,7 +189,10 @@ const Footer: NextComponentType<FooterProps> = () => {
           <Typography sx={footerTextButton}>
             <Link href="/oferta">
               <a style={{ textDecoration: "none" }}>
-                <Typography sx={footerTextButtonUnderline} component="span">
+                <Typography
+                  sx={footerTextButtonUnderline}
+                  component="span"
+                >
                   Публичная оферта
                 </Typography>
               </a>
@@ -158,14 +201,21 @@ const Footer: NextComponentType<FooterProps> = () => {
           <Typography sx={footerTextButton}>
             <Link href="/agreement">
               <a style={{ textDecoration: "none" }}>
-                <Typography sx={footerTextButtonUnderline} component="span">
+                <Typography
+                  sx={footerTextButtonUnderline}
+                  component="span"
+                >
                   Пользовательское соглашение
                 </Typography>
               </a>
             </Link>
           </Typography>
         </Grid>
-        <Grid item xs={12} md={8}>
+        <Grid
+          item
+          xs={12}
+          md={8}
+        >
           <Typography sx={footerText}>
             © 2023 ArboniaShop.ru – магазин радиаторов Arbonia
           </Typography>

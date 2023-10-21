@@ -137,6 +137,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                       itemProp="priceCurrency"
                       content="RUB"
                     />
+                    <meta
+                      itemProp="price"
+                      content={parseInt(priceString).toString()}
+                    />
                     {priceString}
                   </span>{" "}
                   руб

@@ -129,18 +129,23 @@ const Footer: NextComponentType<FooterProps> = () => {
           xs={6}
           md={4}
         >
-          {pages.map(page => (
+          {pages.map((page, index) => (
             <Box key={page[0]}>
               <Link href={page[1]}>
                 <a style={{ textDecoration: "none" }}>
                   <Typography
                     sx={footerTextButton}
                     component="span"
+                    itemProp="name"
                   >
                     {page[0]}
                   </Typography>
                 </a>
               </Link>
+              <meta
+                itemProp="position"
+                content={(index + 1).toString()}
+              />
               <br />
             </Box>
           ))}

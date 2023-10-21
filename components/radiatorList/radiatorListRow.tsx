@@ -122,7 +122,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({
             itemProp="priceCurrency"
             content="RUB"
           />
-          {parseInt(priceString).toString()}
+          {priceString.replace(",", "").replace(" ", "").trim()}
         </span>
       </TableCell>
       <TableCell

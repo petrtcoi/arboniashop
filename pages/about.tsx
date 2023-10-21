@@ -19,6 +19,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
       itemScope
       itemType="https://schema.org/Organization"
     >
+      <meta
+        itemProp="address"
+        content="192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6"
+      />
       <PageTitle
         header={"Специализированный магазин Arbonia в России"}
         subheader={"Доставка со складов в Москве и Санкт-Петербурге"}

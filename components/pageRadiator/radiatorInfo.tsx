@@ -139,7 +139,10 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
                     />
                     <meta
                       itemProp="price"
-                      content={parseInt(priceString).toString()}
+                      content={priceString
+                        .replace(",", "")
+                        .replace(" ", "")
+                        .trim()}
                     />
                     {priceString}
                   </span>{" "}

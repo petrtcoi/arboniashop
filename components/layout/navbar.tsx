@@ -117,16 +117,16 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                             {page[0]}
                           </Typography>
                         </MenuItem>
-                        <meta
-                          itemProp="name"
-                          content={page[0]}
-                        />
-                        <meta
-                          itemProp="position"
-                          content={(index + 1).toString()}
-                        />
                       </Box>
                     </a>
+                    <meta
+                      itemProp="name"
+                      content={page[0]}
+                    />
+                    <meta
+                      itemProp="position"
+                      content={(index + 1).toString()}
+                    />
                   </Link>
                 </Box>
               ))}
@@ -160,15 +160,15 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                     >
                       {page[0]}
                     </Typography>
-                    <meta
-                      itemProp="name"
-                      content={page[0]}
-                    />
-                    <meta
-                      itemProp="position"
-                      content={(index + 1).toString()}
-                    />
                   </a>
+                  <meta
+                    itemProp="name"
+                    content={page[0]}
+                  />
+                  <meta
+                    itemProp="position"
+                    content={(index + 1).toString()}
+                  />
                 </Link>
               </Box>
             ))}
@@ -187,9 +187,14 @@ const Navbar: NextComponentType<NavbarProps> = () => {
             itemType="https://schema.org/Organization"
           >
             <meta
-              itemProp="url"
-              content="https://arboniashop.ru"
+              itemProp="address"
+              content="192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6"
             />
+            <meta
+              itemProp="address"
+              content='ООО "ХОУМ КОМФОРТ"'
+            />
+
             <Typography
               textAlign="center"
               variant="body1"

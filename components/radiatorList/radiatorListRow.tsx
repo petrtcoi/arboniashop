@@ -44,11 +44,17 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({
       itemType="https://schema.org/Offer"
     >
       <Hidden smDown>
-        <TableCell align="left" sx={styles.smallText}>
+        <TableCell
+          align="left"
+          sx={styles.smallText}
+        >
           {skuString}
         </TableCell>
       </Hidden>
-      <TableCell component="th" scope="row">
+      <TableCell
+        component="th"
+        scope="row"
+      >
         <Box padding={{ xs: "5px", sm: "5px", md: "0px" }}>
           <Typography sx={{ ...styles.smallText }}>
             <Link href={`/models/${model.id}/${sectionQnty}`}>
@@ -64,7 +70,10 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({
           </Typography>
           {/* <Typography sx={ styles.smallTextRed }></Typography> */}
           <Hidden mdUp>
-            <Typography sx={styles.smallTextThin} component="span">
+            <Typography
+              sx={styles.smallTextThin}
+              component="span"
+            >
               {lengthString} мм, {dt60String} Вт&#42;
             </Typography>
           </Hidden>
@@ -90,7 +99,12 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({
           {dt60String}
         </TableCell>
       </Hidden>
-      <TableCell component="th" scope="row" sx={styles.smallText} align="right">
+      <TableCell
+        component="th"
+        scope="row"
+        sx={styles.smallText}
+        align="right"
+      >
         <Typography
           sx={{
             ...styles.smallText,
@@ -104,8 +118,11 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({
           {oldPriceString}
         </Typography>
         <span itemProp="price">
-          <meta itemProp="priceCurrency" content="RUB" />
-          {priceString}
+          <meta
+            itemProp="priceCurrency"
+            content="RUB"
+          />
+          {parseInt(priceString).toString()}
         </span>
       </TableCell>
       <TableCell

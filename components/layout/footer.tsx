@@ -136,12 +136,15 @@ const Footer: NextComponentType<FooterProps> = () => {
                   <Typography
                     sx={footerTextButton}
                     component="span"
-                    itemProp="name"
                   >
                     {page[0]}
                   </Typography>
                 </a>
               </Link>
+              <meta
+                itemProp="name"
+                content={page[0]}
+              />
               <meta
                 itemProp="position"
                 content={(index + 1).toString()}

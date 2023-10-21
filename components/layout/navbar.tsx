@@ -113,11 +113,14 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                             textAlign="center"
                             variant="body1"
                             sx={menuButtonDropDown}
-                            itemProp="name"
                           >
                             {page[0]}
                           </Typography>
                         </MenuItem>
+                        <meta
+                          itemProp="name"
+                          content={page[0]}
+                        />
                         <meta
                           itemProp="position"
                           content={(index + 1).toString()}

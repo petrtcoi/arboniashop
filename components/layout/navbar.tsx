@@ -161,6 +161,10 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                       {page[0]}
                     </Typography>
                     <meta
+                      itemProp="name"
+                      content={page[0]}
+                    />
+                    <meta
                       itemProp="position"
                       content={(index + 1).toString()}
                     />

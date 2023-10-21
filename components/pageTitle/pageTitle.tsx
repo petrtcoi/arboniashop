@@ -53,6 +53,10 @@ const PageTitle: React.FC<PageTitleProps> = ({
                         {item.title}
                       </Typography>
                       <meta
+                        itemProp="name"
+                        content={item.title}
+                      />
+                      <meta
                         itemProp="position"
                         content={(index + 1).toString()}
                       />

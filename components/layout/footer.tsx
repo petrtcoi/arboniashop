@@ -97,7 +97,6 @@ const Footer: NextComponentType<FooterProps> = () => {
                   <Typography
                     sx={footerTextButtonUnderline}
                     component="span"
-                    itemProp="telephone"
                   >
                     {global.phone812String}
                   </Typography>

@@ -219,7 +219,6 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                 <a
                   style={{ textDecoration: "none" }}
                   onClick={() => trackEvent("phone_click")}
-                  itemProp="telephone"
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink }}

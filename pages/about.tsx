@@ -134,7 +134,6 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     <Typography
                       sx={{ ...styles.standardTextLink }}
                       display="inline"
-                      itemProp="telephone"
                     >
                       {global.phone812String}
                     </Typography>

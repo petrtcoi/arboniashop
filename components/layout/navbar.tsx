@@ -87,21 +87,15 @@ const Navbar: NextComponentType<NavbarProps> = () => {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
-              itemScope
-              itemType="https://schema.org/BreadcrumbList"
             >
               {pages.map((page, index) => (
                 <Box
                   component={"span"}
                   key={page[0]}
-                  itemProp="itemListElement"
-                  itemScope
-                  itemType="https://schema.org/ListItem"
                 >
                   <Link href={page[1]}>
                     <a
                       style={{ textDecoration: "none" }}
-                      itemProp="item"
                       href={page[1]}
                     >
                       <Box component="span">
@@ -120,36 +114,20 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                       </Box>
                     </a>
                   </Link>
-                  <meta
-                    itemProp="name"
-                    content={page[0]}
-                  />
-                  <meta
-                    itemProp="position"
-                    content={(index + 1).toString()}
-                  />
                 </Box>
               ))}
             </Menu>
           </Box>
 
-          <Box
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-            itemScope
-            itemType="https://schema.org/BreadcrumbList"
-          >
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page, index) => (
               <Box
                 component={"span"}
                 key={page[0]}
-                itemProp="itemListElement"
-                itemScope
-                itemType="https://schema.org/ListItem"
               >
                 <Link href={page[1]}>
                   <a
                     style={{ textDecoration: "none" }}
-                    itemProp="item"
                     href={page[1]}
                   >
                     <Typography
@@ -162,14 +140,6 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                     </Typography>
                   </a>
                 </Link>
-                <meta
-                  itemProp="name"
-                  content={page[0]}
-                />
-                <meta
-                  itemProp="position"
-                  content={(index + 1).toString()}
-                />
               </Box>
             ))}
           </Box>
@@ -219,6 +189,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                 <a
                   style={{ textDecoration: "none" }}
                   onClick={() => trackEvent("phone_click")}
+                  itemProp="telephone"
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink }}

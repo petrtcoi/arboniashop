@@ -1,25 +1,25 @@
-import { useState } from "react"
-import Link from "next/link"
-import Script from "next/script"
+import { useState } from "react";
+import Link from "next/link";
+import Script from "next/script";
 
-import { Box, Typography, Grid } from "@mui/material"
+import { Box, Typography, Grid } from "@mui/material";
 
-import PageHeader from "../components/pageHeader/pageHeader"
-import PageTitle from "../components/pageTitle/pageTitle"
+import PageHeader from "../components/pageHeader/pageHeader";
+import PageTitle from "../components/pageTitle/pageTitle";
 
-import trackEvent from "../utils/trackEvent"
+import trackEvent from "../utils/trackEvent";
 
-import type { NextPage } from "next"
+import type { NextPage } from "next";
 
-import * as styles from "../styles/styles"
-import global from "../variables/global"
-import Hero from "../components/hero/hero"
+import * as styles from "../styles/styles";
+import global from "../variables/global";
+import Hero from "../components/hero/hero";
 
-type PageRequestProps = {}
+type PageRequestProps = {};
 
 const PageRequest: NextPage<PageRequestProps> = () => {
-  const [show, setShow] = useState<boolean>(false)
-  const toggleShow = () => setShow(!show)
+  const [show, setShow] = useState<boolean>(false);
+  const toggleShow = () => setShow(!show);
 
   return (
     <Box>
@@ -34,14 +34,17 @@ const PageRequest: NextPage<PageRequestProps> = () => {
         }}
       />
       <PageTitle
-        header={"Специализированный магазин Arbonia в России"}
-        subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
+        header={"Покраска Arbonia в ваш цвет с гарантией"}
+        subheader={"Радиаторы Arbonia любого цвета на ваш выбор"}
         breadcrumbs={[
           { title: "Главная", link: "/" },
           { title: "Покраска радиаторов Arbonia", link: "/coloring" },
         ]}
       />
-      <PageHeader title={"Покраска радиаторов Arbonia"} />
+      <PageHeader
+        title={"Покраска Arbonia в ваш цвет с гарантией"}
+        description="Покраска радиаторов Arbonia в любой цвет по вашему выбору с сохранением гарантии. Оживите интерьер своего дома."
+      />
       <Hero
         imgPath={"/images/sliders/slide-colors.jpg"}
         header={"Покраска радиаторов Arbonia"}
@@ -262,13 +265,13 @@ const PageRequest: NextPage<PageRequestProps> = () => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default PageRequest
+export default PageRequest;
 
 export async function getStaticProps() {
   return {
     props: {}, // will be passed to the page component as props
-  }
+  };
 }

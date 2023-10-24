@@ -1,58 +1,58 @@
-import React, { useRef } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Box, Grid, Typography } from "@mui/material"
+import React, { useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Box, Grid, Typography } from "@mui/material";
 
-import ModelBlock from "../../components/modelBlock/modelBlock"
-import PageHeader from "../../components/pageHeader/pageHeader"
-import Hero from "../../components/hero/hero"
+import ModelBlock from "../../components/modelBlock/modelBlock";
+import PageHeader from "../../components/pageHeader/pageHeader";
+import Hero from "../../components/hero/hero";
 
-import { SetComponentProps } from "../../models/setComponentProps.model"
+import { SetComponentProps } from "../../models/setComponentProps.model";
 
-import * as styles from "../../styles/styles"
-import global from "../../variables/global"
-import getModelsData from "../../api_utils/getModelsData"
-import { ColorOrigin } from "../../models/colorOrigin.model"
-import { ModelOrigin } from "../../models/modelOrigin.model"
-import { ConnectionOrigin } from "../../models/connectionOrigin.model"
-import getColorsData from "../../api_utils/getColorsData"
-import getConnectionsData from "../../api_utils/getConnectionsData"
-import RadiatorInCartList from "../../components/pageModels/radiatorInCartList"
-import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions"
-import ImagesOtherList from "../../components/pageModels/imagesOtherList"
-import DownloadsBlock from "../../components/pageModels/downloadsBlock"
+import * as styles from "../../styles/styles";
+import global from "../../variables/global";
+import getModelsData from "../../api_utils/getModelsData";
+import { ColorOrigin } from "../../models/colorOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import getColorsData from "../../api_utils/getColorsData";
+import getConnectionsData from "../../api_utils/getConnectionsData";
+import RadiatorInCartList from "../../components/pageModels/radiatorInCartList";
+import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions";
+import ImagesOtherList from "../../components/pageModels/imagesOtherList";
+import DownloadsBlock from "../../components/pageModels/downloadsBlock";
 
 type Props = {
-  models: ModelOrigin[]
-  colors: ColorOrigin[]
-  connections: ConnectionOrigin[]
-}
+  models: ModelOrigin[];
+  colors: ColorOrigin[];
+  connections: ConnectionOrigin[];
+};
 
 const Model3030: React.FC<SetComponentProps> = ({
   models,
   colors,
   connections,
 }: Props) => {
-  const refLateral = useRef<HTMLElement>(null)
-  const refBottom = useRef<HTMLElement>(null)
-  const refBottom9005 = useRef<HTMLElement>(null)
-  const refOrder = useRef<HTMLElement>(null)
+  const refLateral = useRef<HTMLElement>(null);
+  const refBottom = useRef<HTMLElement>(null);
+  const refBottom9005 = useRef<HTMLElement>(null);
+  const refOrder = useRef<HTMLElement>(null);
 
-  const model = models.find(model => model.id === "3030")
-  if (!model) return null
+  const model = models.find(model => model.id === "3030");
+  if (!model) return null;
 
   return (
     <Box>
       <PageHeader
-        title={
-          "Радиаторы Arbonia 3030 в наличии | Выгодные цены и доставка в любой город России | ArboniaShop.ru"
-        }
-        description="Радиаторы Arbonia 3030 в наличии. Выгодные цены и доставка в любой город России. Высота секции - 30 см. Глубина секции - всего 105 мм. Официальная гарантия на всю продукцию."
+        title={"Радиаторы Arbonia 3030 | Выгодные цены | Гарантия"}
+        description="Низкие радиаторы Arbonia 3030 в наличии (высота 30 см). Склады в Мск и СПб. Официальная гарантия 10 лет. Доставка в любой город России."
       />
       <Hero
         imgPath={"/images/sliders/slide.jpeg"}
         header={"Радиаторы Arbonia 3030"}
-        subheader={"3-трубчатый радиатор Arbonia высотой 30 см"}
+        subheader={
+          "Низкие трехтурбчатые радиаторы Arbonia высотой 30 в наличии"
+        }
       />
       <Box sx={{ ...global.pagePadding }}>
         <Box
@@ -64,11 +64,11 @@ const Model3030: React.FC<SetComponentProps> = ({
         >
           <Box
             onClick={() => {
-              if (!refLateral.current) return
+              if (!refLateral.current) return;
               refLateral.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              })
+              });
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -77,11 +77,11 @@ const Model3030: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!refBottom.current) return
+              if (!refBottom.current) return;
               refBottom.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              })
+              });
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -90,11 +90,11 @@ const Model3030: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!refBottom.current) return
+              if (!refBottom.current) return;
               refBottom.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              })
+              });
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -103,11 +103,11 @@ const Model3030: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!refOrder.current) return
+              if (!refOrder.current) return;
               refOrder.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              })
+              });
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -387,15 +387,15 @@ const Model3030: React.FC<SetComponentProps> = ({
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Model3030
+export default Model3030;
 
 export async function getStaticProps(): Promise<{ props: Props }> {
-  const models: ModelOrigin[] = await getModelsData()
-  const colors: ColorOrigin[] = await getColorsData()
-  const connections: ConnectionOrigin[] = await getConnectionsData()
+  const models: ModelOrigin[] = await getModelsData();
+  const colors: ColorOrigin[] = await getColorsData();
+  const connections: ConnectionOrigin[] = await getConnectionsData();
 
   return {
     props: {
@@ -403,5 +403,5 @@ export async function getStaticProps(): Promise<{ props: Props }> {
       colors,
       connections,
     },
-  }
+  };
 }

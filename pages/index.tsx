@@ -13,11 +13,14 @@ const Home: NextPage = () => {
     <Box>
       <PageHeader
         title={
-          "Радиаторы Arbonia купить с доставкой по Москве, Санкт-Петербургу и по России в магазине ArboniaShop"
+          "Радиаторы Arbonia купить в Москве и Петербурге | доставка по Росси | Гарантия 10 лет"
+        }
+        description={
+          "Радиаторы Arbonia в наличии и под заказ. Быстрая доставка в любой город России. Официальная гарантия 10 лет. В наличии наиболее популярные модели."
         }
       />
       <PageTitle
-        header={"Специализированный магазин Arbonia в России"}
+        header={"Магазин радиаторов Arbonia в России"}
         subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
       />
 
@@ -29,7 +32,10 @@ const Home: NextPage = () => {
         }
       />
       <Box>
-        <Box marginTop="50px" paddingX={{ xs: "10px", md: "20px" }}>
+        <Box
+          marginTop="50px"
+          paddingX={{ xs: "10px", md: "20px" }}
+        >
           <Advantages />
         </Box>
         <Box
@@ -41,7 +47,10 @@ const Home: NextPage = () => {
             <WhyMouseLite />
           </Box>
         </Box>
-        <Box marginTop="40px" paddingX={{ xs: "10px", md: "20px" }}>
+        <Box
+          marginTop="40px"
+          paddingX={{ xs: "10px", md: "20px" }}
+        >
           <Portfolio />
         </Box>
       </Box>

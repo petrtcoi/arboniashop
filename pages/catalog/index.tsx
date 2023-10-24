@@ -1,55 +1,55 @@
-import { NextPage } from "next"
-import Link from "next/link"
-import Image from "next/image"
+import { NextPage } from "next";
+import Link from "next/link";
+import Image from "next/image";
 
-import { Box, Typography, Grid, Divider } from "@mui/material"
+import { Box, Typography, Grid, Divider } from "@mui/material";
 
-import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions"
-import RadiatorInCartList from "../../components/pageModels/radiatorInCartList"
-import BlockHowReadModel from "../../components/blockHowReadModel/blockHowReadModel"
-import PageHeader from "../../components/pageHeader/pageHeader"
-import Hero from "../../components/hero/hero"
-import PageTitle from "../../components/pageTitle/pageTitle"
+import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions";
+import RadiatorInCartList from "../../components/pageModels/radiatorInCartList";
+import BlockHowReadModel from "../../components/blockHowReadModel/blockHowReadModel";
+import PageHeader from "../../components/pageHeader/pageHeader";
+import Hero from "../../components/hero/hero";
+import PageTitle from "../../components/pageTitle/pageTitle";
 
-import getModelsData from "../../api_utils/getModelsData"
-import getColorsData from "../../api_utils/getColorsData"
-import getConnectionsData from "../../api_utils/getConnectionsData"
+import getModelsData from "../../api_utils/getModelsData";
+import getColorsData from "../../api_utils/getColorsData";
+import getConnectionsData from "../../api_utils/getConnectionsData";
 
-import { ModelOrigin } from "../../models/modelOrigin.model"
-import { ColorOrigin } from "../../models/colorOrigin.model"
-import { ConnectionOrigin } from "../../models/connectionOrigin.model"
+import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ColorOrigin } from "../../models/colorOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
 
-import * as styles from "../../styles/styles"
-import global from "../../variables/global"
+import * as styles from "../../styles/styles";
+import global from "../../variables/global";
 
 type CatalogProps = {
-  models: ModelOrigin[]
-  colors: ColorOrigin[]
-  connections: ConnectionOrigin[]
-}
+  models: ModelOrigin[];
+  colors: ColorOrigin[];
+  connections: ConnectionOrigin[];
+};
 const MODELS_GROUPS = [
   { firstChar: "2", title: "2-трубчатые (65 мм)" },
   { firstChar: "3", title: "3-трубчатые (105 мм)" },
   { firstChar: "4", title: "4-трубчатые (145 мм)" },
   { firstChar: "5", title: "5-трубчатые (185 мм)" },
   { firstChar: "6", title: "6-трубчатые (225 мм)" },
-]
+];
 
 const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
-  const outStockModels = models.filter(x => !x.inStock)
+  const outStockModels = models.filter(x => !x.inStock);
 
   return (
     <Box>
       <PageHeader
         title={
-          "Радиаторы Arbonia купить в Москве, Петербурге и с доставкой по России в магазине ArboniaShop. Выгодные цены. Официальная гарантия 10 лет"
+          "Каталог радиаторов Arbonia | Все модели | В наличии и под заказ"
         }
         description={
-          "Полный каталог радиаторов Arbonia. Специализированный магазин радиаторов Arbonia в России. Официальная гарантия 10 лет. Выгодные цены. Быстрая доставка со складов в Москве и Санкт-Петербурге. Изготовление радиаторов под заказ. Бесплатные консультации и расчет мощности."
+          "Полный каталог радиаторов Arbonia: складские и заказные модели. Выгодные цены и быстрая доставка по России. Гарантия 10 лет."
         }
       />
       <PageTitle
-        header={"Магазин радиаторов Arbonia в России"}
+        header={"Радиаторы Arbonia - полный каталог"}
         subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
         breadcrumbs={[
           { title: "Главная", link: "/" },
@@ -59,9 +59,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
       <Hero
         imgPath={"/images/sliders/slide.jpeg"}
         header={"Каталог радиаторов Arbonia"}
-        subheader={
-          "Полный ассортимент производителя. Складские и заказные модели"
-        }
+        subheader={"Полный каталог Arbonia. Складские и заказные модели"}
       />
       <Box sx={{ ...global.pagePadding }}>
         <Box marginTop="20px">
@@ -69,8 +67,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
             textAlign="center"
             sx={{ ...styles.standardText }}
           >
-            В данном разделе представлен полный ассортимент радиаторов Arbonia
-            Column.
+            В данном разделе представлен полный каталог радиаторов Arbonia.
             <br />
             Пожалуйста, свяжитесь с нами любым удобным вам способом
             <br />и мы с радостью поможем подобрать наиболее подходящие модели.
@@ -699,11 +696,11 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                               </a>
                             </Link>
                           </Box>
-                        )
+                        );
                       })}
                   </Box>
                 </Grid>
-              )
+              );
             })}
           </Grid>
         </Box>
@@ -748,20 +745,20 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Catalog
+export default Catalog;
 
 export async function getStaticProps() {
-  const models: ModelOrigin[] = await getModelsData()
-  const colors: ColorOrigin[] = await getColorsData()
-  const connections: ConnectionOrigin[] = await getConnectionsData()
+  const models: ModelOrigin[] = await getModelsData();
+  const colors: ColorOrigin[] = await getColorsData();
+  const connections: ConnectionOrigin[] = await getConnectionsData();
   return {
     props: {
       models,
       colors,
       connections,
     },
-  }
+  };
 }

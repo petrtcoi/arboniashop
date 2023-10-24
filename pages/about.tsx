@@ -15,14 +15,7 @@ type PageAboutProps = {};
 
 const PageAbout: NextPage<PageAboutProps> = () => {
   return (
-    <Box
-      itemScope
-      itemType="https://schema.org/Organization"
-    >
-      <meta
-        itemProp="address"
-        content="192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6"
-      />
+    <Box>
       <PageTitle
         header={"Специализированный магазин Arbonia в России"}
         subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
@@ -113,7 +106,6 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     <Typography
                       sx={{ ...styles.standardTextLink }}
                       display="inline"
-                      itemProp="telephone"
                     >
                       {global.phone495String}
                     </Typography>
@@ -155,7 +147,6 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                     <Typography
                       sx={{ ...styles.standardTextLink }}
                       display="inline"
-                      itemProp="email"
                     >
                       {global.email}
                     </Typography>
@@ -221,7 +212,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
           </Typography>
           <Box marginTop="20px">
             <Typography sx={{ ...styles.standardText }}>
-              <span itemProp="name">
+              <span>
                 <strong>ООО &#34;ХОУМ КОМФОРТ&#34;</strong>
               </span>
               <br />

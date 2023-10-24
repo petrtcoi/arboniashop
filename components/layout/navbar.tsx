@@ -151,20 +151,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
               />
             </Box>
           </Hidden>
-          <Box
-            mr={4}
-            itemScope
-            itemType="https://schema.org/Organization"
-          >
-            <meta
-              itemProp="address"
-              content="192019, РОССИЯ, Г. САНКТ-ПЕТЕРБУРГ, ОБУХОВСКОЙ ОБОРОНЫ ПР-КТ, Д. 7, ЛИТЕРА С, ОФИС 6"
-            />
-            <meta
-              itemProp="name"
-              content='ООО "ХОУМ КОМФОРТ"'
-            />
-
+          <Box mr={4}>
             <Typography
               textAlign="center"
               variant="body1"
@@ -174,7 +161,6 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                 <a
                   style={{ textDecoration: "none" }}
                   onClick={() => trackEvent("phone_click")}
-                  itemProp="telephone"
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink }}
@@ -189,7 +175,6 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                 <a
                   style={{ textDecoration: "none" }}
                   onClick={() => trackEvent("phone_click")}
-                  itemProp="telephone"
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink }}
@@ -203,7 +188,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
           </Box>
           <Box>
             <Link href="/">
-              <a itemProp={"url"}>
+              <a>
                 <Image
                   layout="fixed"
                   src="/images/logo.png"

@@ -41,7 +41,18 @@ const Model2050: React.FC<SetComponentProps> = ({
   if (!model) return null;
 
   return (
-    <Box>
+    <Box
+      itemScope
+      itemType="https://schema.org/ProductModel"
+    >
+      <meta
+        itemProp="countryOfOrigin"
+        content="Чехия"
+      />
+      <meta
+        itemProp="material"
+        content="Сталь"
+      />
       <PageHeader
         title={"Радиаторы Arbonia 2050 | Выгодные цены | Гарантия"}
         description="Двухтрубчатые радиаторы Arbonia 2050 в наличии (высота 50 см). Склады в Мск и СПб. Официальная гарантия 10 лет. Доставка в любой город России."

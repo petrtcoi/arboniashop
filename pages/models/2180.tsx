@@ -42,7 +42,18 @@ const Model2180: React.FC<SetComponentProps> = ({
   if (!model) return null;
 
   return (
-    <Box>
+    <Box
+      itemScope
+      itemType="https://schema.org/ProductModel"
+    >
+      <meta
+        itemProp="countryOfOrigin"
+        content="Чехия"
+      />
+      <meta
+        itemProp="material"
+        content="Сталь"
+      />
       <PageHeader
         title={"Радиаторы Arbonia 2180 | Выгодные цены | Гарантия"}
         description="Вертикальные радиаторы Arbonia 2180 в наличии (2-трубчатые). Большой выбор моделей. Официальная гарантия 10 лет. Доставка в любой город России."

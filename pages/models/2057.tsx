@@ -41,7 +41,18 @@ const Model2057: React.FC<SetComponentProps> = ({
   if (!model) return null;
 
   return (
-    <Box>
+    <Box
+      itemScope
+      itemType="https://schema.org/ProductModel"
+    >
+      <meta
+        itemProp="countryOfOrigin"
+        content="Чехия"
+      />
+      <meta
+        itemProp="material"
+        content="Сталь"
+      />
       <PageHeader
         title={"Радиаторы Arbonia 2057 | Выгодные цены | Гарантия"}
         description="Двухтрубчатые радиаторы Arbonia 2057 в наличии (высота 57 см). Склады в Мск и СПб. Официальная гарантия 10 лет. Доставка в любой город России."

@@ -73,6 +73,15 @@ const Model: NextPage<ModelProps> = ({
       itemScope
       itemType="https://schema.org/ProductModel"
     >
+      <meta
+        itemProp="countryOfOrigin"
+        content="Чехия"
+      />
+      <meta
+        itemProp="material"
+        content="Сталь"
+      />
+
       <PageHeader
         title={`${metaTitle} в купить выгодно в магазине ArboniaShop.ru`}
         description={`Доставка в Москве, Петербурге, отправка в любой город России. ${metaTitle} - ${modelCurr.nameShort[0]}-трубчатая модель (ширина ${modelCurr.width} мм) высотой ${modelCurr.height} мм. Официальная гарантия. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Работаем с юридическими и физическими лицами.`}

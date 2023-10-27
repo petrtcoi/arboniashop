@@ -42,7 +42,18 @@ const Model3030: React.FC<SetComponentProps> = ({
   if (!model) return null;
 
   return (
-    <Box>
+    <Box
+      itemScope
+      itemType="https://schema.org/ProductModel"
+    >
+      <meta
+        itemProp="countryOfOrigin"
+        content="Чехия"
+      />
+      <meta
+        itemProp="material"
+        content="Сталь"
+      />
       <PageHeader
         title={"Радиаторы Arbonia 3030 | Выгодные цены | Гарантия"}
         description="Низкие радиаторы Arbonia 3030 в наличии (высота 30 см). Склады в Мск и СПб. Официальная гарантия 10 лет. Доставка в любой город России."

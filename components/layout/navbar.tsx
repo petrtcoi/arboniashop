@@ -58,7 +58,11 @@ const Navbar: NextComponentType<NavbarProps> = () => {
       style={{ borderBottom: "1px solid #e5e5e5", boxShadow: "none" }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          itemScope
+          itemType="https://schema.org/SiteNavigationElement"
+        >
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -97,6 +101,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                     <a
                       style={{ textDecoration: "none" }}
                       href={page[1]}
+                      itemProp="url"
                     >
                       <Box component="span">
                         <MenuItem
@@ -129,6 +134,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     href={page[1]}
+                    itemProp="url"
                   >
                     <Typography
                       textAlign="center"

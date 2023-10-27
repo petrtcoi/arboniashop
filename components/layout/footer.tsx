@@ -144,10 +144,6 @@ const Footer: NextComponentType<FooterProps> = () => {
                   </Typography>
                 </a>
               </Link>
-              <meta
-                itemProp="name"
-                content={page[0]}
-              />
 
               <br />
             </Box>

@@ -46,6 +46,10 @@ const Model2057: React.FC<SetComponentProps> = ({
       itemType="https://schema.org/ProductModel"
     >
       <meta
+        itemProp="name"
+        content="Arbonia 2057"
+      />
+      <meta
         itemProp="countryOfOrigin"
         content="Чехия"
       />

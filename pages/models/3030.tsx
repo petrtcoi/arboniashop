@@ -47,6 +47,10 @@ const Model3030: React.FC<SetComponentProps> = ({
       itemType="https://schema.org/ProductModel"
     >
       <meta
+        itemProp="name"
+        content="Arbonia 3030"
+      />
+      <meta
         itemProp="countryOfOrigin"
         content="Чехия"
       />

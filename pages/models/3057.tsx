@@ -204,6 +204,7 @@ const Model3057: React.FC<SetComponentProps> = ({
                 md={4}
               >
                 <Image
+                  itemProp="image"
                   src="/images/models/3057-0.jpeg"
                   alt="Белый радиатор Arbonia 3057 с боковым подключением"
                   width={400}

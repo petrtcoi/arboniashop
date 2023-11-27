@@ -227,7 +227,7 @@ const Model3030: React.FC<SetComponentProps> = ({
               model={models.find(x => x.id === "3030-9016-12") || models[0]}
               color={colors.find(x => x.id === "9016") || colors[0]}
               connection={
-                connections.find(x => x.id === "12") || connections[0]
+                connections.find(x => x.id === "12-34") || connections[0]
               }
             />
           </Typography>

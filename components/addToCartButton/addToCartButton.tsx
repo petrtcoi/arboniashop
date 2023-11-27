@@ -1,24 +1,24 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react"
 
-import { Box, IconButton, Button } from "@mui/material";
-import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
-import RemoveCircleOutlineOutlinedIcon from "@mui/icons-material/RemoveCircleOutlineOutlined";
+import { Box, IconButton, Button } from "@mui/material"
+import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined"
+import RemoveCircleOutlineOutlinedIcon from "@mui/icons-material/RemoveCircleOutlineOutlined"
 
-import { ShoppingCartContext } from "../../contexts/shoppingCartContext";
+import { ShoppingCartContext } from "../../contexts/shoppingCartContext"
 
-import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model"
 
 type AddToCartButtonProps = {
-  model: ModelOrigin;
-  colorId: string;
-  connectionId: string;
-  sectionQnty: number;
-  qnty: number;
-  buttonType?: "text" | "contained" | "outlined";
-  buttonSize?: "small" | "medium" | "large";
-  buttonColor?: "primary" | "success" | "dark";
-  align?: "left" | "center" | "right";
-};
+  model: ModelOrigin
+  colorId: string
+  connectionId: string
+  sectionQnty: number
+  qnty: number
+  buttonType?: "text" | "contained" | "outlined"
+  buttonSize?: "small" | "medium" | "large"
+  buttonColor?: "primary" | "success" | "dark"
+  align?: "left" | "center" | "right"
+}
 
 const AddToCartButton: React.FC<AddToCartButtonProps> = ({
   model,
@@ -31,9 +31,9 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({
   buttonType = "contained",
   align = "left",
 }) => {
-  const shoppingCartContext = useContext(ShoppingCartContext);
+  const shoppingCartContext = useContext(ShoppingCartContext)
 
-  const [itemsInCart, setItemsInCart] = useState<number>(0);
+  const [itemsInCart, setItemsInCart] = useState<number>(0)
   useEffect(() => {
     const itemIndex = shoppingCartContext.state.items.findIndex(
       item =>
@@ -41,19 +41,19 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({
         item.colorId === colorId &&
         item.connectionId === connectionId &&
         item.sectionQnty === sectionQnty
-    );
+    )
     if (itemIndex !== -1)
-      setItemsInCart(shoppingCartContext.state.items[itemIndex].qnty);
-    if (itemIndex === -1) setItemsInCart(0);
+      setItemsInCart(shoppingCartContext.state.items[itemIndex].qnty)
+    if (itemIndex === -1) setItemsInCart(0)
   }, [
     shoppingCartContext.state.items,
     colorId,
     connectionId,
     sectionQnty,
     model,
-  ]);
+  ])
 
-  const mainColor = buttonColor === "dark" ? "#333333" : "";
+  const mainColor = buttonColor === "dark" ? "#333333" : ""
 
   return (
     <Box
@@ -116,7 +116,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({
         </IconButton>
       )}
     </Box>
-  );
-};
+  )
+}
 
-export default AddToCartButton;
+export default AddToCartButton

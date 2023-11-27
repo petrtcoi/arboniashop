@@ -241,7 +241,7 @@ const Model3180: React.FC<SetComponentProps> = ({
               model={models.find(x => x.id === "3180-9016-12") || models[0]}
               color={colors.find(x => x.id === "9016") || colors[0]}
               connection={
-                connections.find(x => x.id === "12") || connections[0]
+                connections.find(x => x.id === "12-34") || connections[0]
               }
             />
             <h3 style={{ marginTop: "40px" }}>Нижнее подключение №69 ТВВ</h3>
@@ -377,7 +377,7 @@ const Model3180: React.FC<SetComponentProps> = ({
               model={models.find(x => x.id === "3180-7016-12") || models[0]}
               color={colors.find(x => x.id === "7016") || colors[0]}
               connection={
-                connections.find(x => x.id === "12") || connections[0]
+                connections.find(x => x.id === "12-34") || connections[0]
               }
             />
             <p style={{ marginTop: "40px" }}>Нижнее подключение:</p>
@@ -453,7 +453,7 @@ const Model3180: React.FC<SetComponentProps> = ({
               model={models.find(x => x.id === "3180-sf3-12") || models[0]}
               color={colors.find(x => x.id === "sf3") || colors[0]}
               connection={
-                connections.find(x => x.id === "12") || connections[0]
+                connections.find(x => x.id === "12-34") || connections[0]
               }
             />
             <p style={{ marginTop: "40px" }}>Нижнее подключение:</p>

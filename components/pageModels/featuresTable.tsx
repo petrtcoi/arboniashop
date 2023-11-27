@@ -1,17 +1,17 @@
-import { NextPage } from "next";
+import { NextPage } from "next"
 
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material"
 
-import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model"
 
-import * as styles from "../../styles/styles";
+import * as styles from "../../styles/styles"
 
 type FeaturesTableProps = {
-  model: ModelOrigin;
-  modelTitle: string;
-  colorTitle: string;
-  connectionTitle: string;
-};
+  model: ModelOrigin
+  modelTitle: string
+  colorTitle: string
+  connectionTitle: string
+}
 
 const FeaturesTable: NextPage<FeaturesTableProps> = ({
   model,
@@ -141,7 +141,7 @@ const FeaturesTable: NextPage<FeaturesTableProps> = ({
         </Typography>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default FeaturesTable;
+export default FeaturesTable

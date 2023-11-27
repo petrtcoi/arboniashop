@@ -1,45 +1,45 @@
-import React, { useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Box, Grid, Typography } from "@mui/material";
+import React, { useRef } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { Box, Grid, Typography } from "@mui/material"
 
-import ModelBlock from "../../components/modelBlock/modelBlock";
-import PageHeader from "../../components/pageHeader/pageHeader";
-import Hero from "../../components/hero/hero";
+import ModelBlock from "../../components/modelBlock/modelBlock"
+import PageHeader from "../../components/pageHeader/pageHeader"
+import Hero from "../../components/hero/hero"
 
-import { SetComponentProps } from "../../models/setComponentProps.model";
+import { SetComponentProps } from "../../models/setComponentProps.model"
 
-import * as styles from "../../styles/styles";
-import global from "../../variables/global";
-import getModelsData from "../../api_utils/getModelsData";
-import { ColorOrigin } from "../../models/colorOrigin.model";
-import { ModelOrigin } from "../../models/modelOrigin.model";
-import { ConnectionOrigin } from "../../models/connectionOrigin.model";
-import getColorsData from "../../api_utils/getColorsData";
-import getConnectionsData from "../../api_utils/getConnectionsData";
-import RadiatorInCartList from "../../components/pageModels/radiatorInCartList";
-import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions";
-import ImagesOtherList from "../../components/pageModels/imagesOtherList";
-import DownloadsBlock from "../../components/pageModels/downloadsBlock";
+import * as styles from "../../styles/styles"
+import global from "../../variables/global"
+import getModelsData from "../../api_utils/getModelsData"
+import { ColorOrigin } from "../../models/colorOrigin.model"
+import { ModelOrigin } from "../../models/modelOrigin.model"
+import { ConnectionOrigin } from "../../models/connectionOrigin.model"
+import getColorsData from "../../api_utils/getColorsData"
+import getConnectionsData from "../../api_utils/getConnectionsData"
+import RadiatorInCartList from "../../components/pageModels/radiatorInCartList"
+import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions"
+import ImagesOtherList from "../../components/pageModels/imagesOtherList"
+import DownloadsBlock from "../../components/pageModels/downloadsBlock"
 
 type Props = {
-  models: ModelOrigin[];
-  colors: ColorOrigin[];
-  connections: ConnectionOrigin[];
-};
+  models: ModelOrigin[]
+  colors: ColorOrigin[]
+  connections: ConnectionOrigin[]
+}
 
 const Model2180: React.FC<SetComponentProps> = ({
   models,
   colors,
   connections,
 }: Props) => {
-  const ref9016 = useRef<HTMLElement>(null);
-  const refSf3 = useRef<HTMLElement>(null);
-  const ref7016 = useRef<HTMLElement>(null);
-  const refOrder = useRef<HTMLElement>(null);
+  const ref9016 = useRef<HTMLElement>(null)
+  const refSf3 = useRef<HTMLElement>(null)
+  const ref7016 = useRef<HTMLElement>(null)
+  const refOrder = useRef<HTMLElement>(null)
 
-  const model = models.find(model => model.id === "2180");
-  if (!model) return null;
+  const model = models.find(model => model.id === "2180")
+  if (!model) return null
 
   return (
     <Box
@@ -79,11 +79,11 @@ const Model2180: React.FC<SetComponentProps> = ({
         >
           <Box
             onClick={() => {
-              if (!ref9016.current) return;
+              if (!ref9016.current) return
               ref9016.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              });
+              })
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -92,11 +92,11 @@ const Model2180: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!ref7016.current) return;
+              if (!ref7016.current) return
               ref7016.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              });
+              })
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -105,11 +105,11 @@ const Model2180: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!refSf3.current) return;
+              if (!refSf3.current) return
               refSf3.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              });
+              })
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -118,11 +118,11 @@ const Model2180: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!refOrder.current) return;
+              if (!refOrder.current) return
               refOrder.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              });
+              })
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -588,6 +588,56 @@ const Model2180: React.FC<SetComponentProps> = ({
           />
         </Box>
         <Box marginTop="80px">
+          <h2>Популярные запросы на радиаторы Arbonia 2180</h2>
+          <ul>
+            <li><Link href="/radiators/2180-04">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  Arbonia 2180 04 секции
+                </Typography>
+              </a>
+            </Link></li>
+            <li><Link href="/radiators/2180-06">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  Arbonia 2180 06 секций
+                </Typography>
+              </a>
+            </Link></li>
+            <li><Link href="/radiators/2180-08">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  Arbonia 2180 08 секций
+                </Typography>
+              </a>
+            </Link></li>
+            <li><Link href="/radiators/2180-10">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  Arbonia 2180 10 секций
+                </Typography>
+              </a>
+            </Link></li>
+            <li><Link href="/radiators/2180-12">
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}
+                >
+                  Arbonia 2180 12 секций
+                </Typography>
+              </a>
+            </Link></li>
+          </ul>
+        </Box>
+        <Box marginTop="80px">
           <h2>Дополнительные изображения радиаторов Arbonia 2180</h2>
           <ImagesOtherList imagesString={model.imagesOther || ""} />
         </Box>
@@ -597,15 +647,15 @@ const Model2180: React.FC<SetComponentProps> = ({
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default Model2180;
+export default Model2180
 
 export async function getStaticProps(): Promise<{ props: Props }> {
-  const models: ModelOrigin[] = await getModelsData();
-  const colors: ColorOrigin[] = await getColorsData();
-  const connections: ConnectionOrigin[] = await getConnectionsData();
+  const models: ModelOrigin[] = await getModelsData()
+  const colors: ColorOrigin[] = await getColorsData()
+  const connections: ConnectionOrigin[] = await getConnectionsData()
 
   return {
     props: {
@@ -613,5 +663,5 @@ export async function getStaticProps(): Promise<{ props: Props }> {
       colors,
       connections,
     },
-  };
+  }
 }

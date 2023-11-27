@@ -16,7 +16,6 @@ import { ConnectionOrigin } from "../../models/connectionOrigin.model"
 import getColorsData from "../../api_utils/getColorsData"
 import getConnectionsData from "../../api_utils/getConnectionsData"
 
-
 import ImagesOtherList from "../../components/pageModels/imagesOtherList"
 import DownloadsBlock from "../../components/pageModels/downloadsBlock"
 import { CurrencyContext } from "../../contexts/currencyContext"
@@ -37,9 +36,9 @@ type Props = {
 
 // -------------------------------
 
-const SECTIONS_QNTY = 4
-const SECTIONS_STRING = "04"
-const SECTIONS_POSTFIX = "секции"
+const SECTIONS_QNTY = 10
+const SECTIONS_STRING = "10"
+const SECTIONS_POSTFIX = "секций"
 
 // -------------------------------
 
@@ -58,7 +57,8 @@ const Model2180: React.FC<SetComponentProps> = ({
 
   const power = Math.floor(SECTIONS_QNTY * +model.dt60)
   const power50 = Math.floor(SECTIONS_QNTY * +model.dt50)
-  const square = Math.round(power / 10) / 10
+  const square = Math.round(power / 100)
+
   const width = Math.round(SECTIONS_QNTY * +model.width + 26)
 
   const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
@@ -304,7 +304,7 @@ const Model2180: React.FC<SetComponentProps> = ({
 
                 <Typography sx={{ ...styles.standardText }}>
                   <p>
-                    Радиатор Arbonia 2180 04 секции - это самая небольшая модель из вертикальных трубчатых батарей Arbonia. Радиатор имеет ширину всего {width} мм и хорошо подойдет для установки в узких нишах. Данный радиатор можно рассматривать как основной источник тепла в случаях, когда нужно отопить небольшое помещение. В остальных ситуациях, Arbonia 2180 04 должен работать как дополнительный источник тепла. Например, его можно разместить у выхода на балкон.
+                    Радиатор Arbonia 2180 10 секций - компактный вертикальный радиатор шириной {width} мм. Радиатор может являться единственным источником тепла при обогреве средних помещений. В остальных ситуациях, Arbonia 2180 10 должен работать как дополнительный источник тепла. Например, его можно разместить у выхода на балкон.
                   </p>
                   <p>
                     Мощность радиатора составляет {power} Вт при ΔT=60°С. В зависимости от уровня теплоизоляции дома, а также температуры воды в трубах, он может обогреть от {square} до {square * 2} м². Свяжитесь с нами для уточнения требуемой мощности для вашего дома или квартиры.

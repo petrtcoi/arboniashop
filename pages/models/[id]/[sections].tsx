@@ -59,9 +59,8 @@ const Radiator: NextPage<RadiatorProps> = ({
             link: `/models/${model.id}`,
           },
           {
-            title: `${
-              sectionQnty >= 10 ? sectionQnty : "0" + sectionQnty
-            } секции(й)`,
+            title: `${sectionQnty >= 10 ? sectionQnty : "0" + sectionQnty
+              } секции(й)`,
             link: "/catalog",
           },
         ]}
@@ -166,19 +165,14 @@ const Radiator: NextPage<RadiatorProps> = ({
             </Link>
           </Box>
         )}
-
         {/* Shit code end */}
         <PageHeader
-          title={`Радиатор Arbonia ${model.nameShort} ${radiatorTitle} купить в Москве, Санкт-Петербурге или с доставкой по России в магазине ArboniaShop.ru`}
-          description={`Arbonia ${model.nameShort} - ${sectionQnty} секций, ${
-            model.nameShort[0]
-          }-трубчатая модель, цвет ${color.name}, подключение ${
-            connection.name
-          }, габариты ${model.height}x${model.width}x${
-            parseInt(model.lengthSection) * sectionQnty + 26
-          } мм. Мощность ${
-            parseInt(model.dt60) * sectionQnty
-          } Вт (при dT=60C). Купить в магазине ArboniaShop по выгодным ценам. Официальная гарантия на радиаторы 10 лет. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Возможно изготовление радиаторов под заказ. Бесплатная консультация и помощь в подборе радиаторов. Огромный опыт работы.`}
+          title={`Arbonia ${model.nameShort}-${sectionQnty} ${color.nameShort} ${connection.nameShort} | купить выгодно`}
+          description={`Arbonia ${model.nameShort}-${sectionQnty}, ${model.nameShort[0]
+            }-трубчатая модель, ${color.nameShort}, ${connection.nameShort
+            }, ${model.height}x${model.width}x${parseInt(model.lengthSection) * sectionQnty + 26
+            } мм. ${parseInt(model.dt60) * sectionQnty
+            } Вт (при dT=60C). Выгодные цены. Гарантия 10 лет.`}
         />
         <Box
           marginBottom={"50px"}
@@ -259,7 +253,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 export default Radiator;
 
 export async function getStaticProps(context: {
-  params: { id: string; sections: string };
+  params: { id: string; sections: string; };
 }) {
   const modelId = context.params.id;
   const sectionQnty = +context.params.sections;

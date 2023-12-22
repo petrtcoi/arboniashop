@@ -83,8 +83,8 @@ const Model: NextPage<ModelProps> = ({
       />
 
       <PageHeader
-        title={`${metaTitle} в купить выгодно в магазине ArboniaShop.ru`}
-        description={`${metaTitle}. 🚚 Доставка в Москве, Петербурге, отправка в любой город России. ${metaTitle} - ${modelCurr.nameShort[0]}-трубчатая модель (ширина ${modelCurr.width} мм) высотой ${modelCurr.height} мм. Официальная гарантия. Быстрая доставка в любой город России со складов в Москве и Санкт-Петербурге. Работаем с юридическими и физическими лицами.`}
+        title={`${metaTitle} | выгодно`}
+        description={`${metaTitle} - ${modelCurr.nameShort[0]}-трубчатая модель (ширина ${modelCurr.width} мм) высотой ${modelCurr.height} мм. Гарантия 10 лет. 🚚 Доставка в любой город России. Выгодные условия покупки.`}
       />
       <PageTitle
         header={"Специализированный магазин Arbonia в России"}
@@ -276,8 +276,8 @@ const Model: NextPage<ModelProps> = ({
 
               <Box marginTop="20px">
                 {modelCurr.inStock === "true" &&
-                colorCurr !== null &&
-                connectionCurr !== null ? (
+                  colorCurr !== null &&
+                  connectionCurr !== null ? (
                   <RadiatorList
                     model={modelCurr}
                     color={colorCurr}
@@ -338,7 +338,7 @@ const Model: NextPage<ModelProps> = ({
 
 export default Model;
 
-export async function getStaticProps(context: { params: { id: string } }) {
+export async function getStaticProps(context: { params: { id: string; }; }) {
   const modelId = context.params.id;
   const models: ModelOrigin[] = await getModelsData();
   const modelCurr = models.find(x => x.id === modelId);

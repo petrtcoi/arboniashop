@@ -1,6 +1,8 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /order/*
+Disallow: /accepted
 
 # Host
 Host: https://arboniashop.ru

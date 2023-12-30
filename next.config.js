@@ -3,17 +3,26 @@
 module.exports = {
   reactStrictMode: true,
   i18n: {
-    locales: ["ru"],
-    defaultLocale: "ru",
+    locales: ['ru'],
+    defaultLocale: 'ru',
+  },
+  async redirects() {
+    return [
+      {
+        source: '/arbonia-radiators',
+        destination: '/',
+        permanent: true,
+      },
+    ];
   },
   async headers() {
     return [
       {
-        source: "/:path*",
+        source: '/:path*',
         headers: [
           {
-            key: "cache-control",
-            value: "public, max-age=31536000, immutable",
+            key: 'cache-control',
+            value: 'public, max-age=31536000, immutable',
           },
           // {
           //   key: 'X-DNS-Prefetch-Control',

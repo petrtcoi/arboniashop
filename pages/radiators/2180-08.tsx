@@ -1,44 +1,44 @@
-import React, { useContext, useRef } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Box, Grid, Typography } from "@mui/material"
+import React, { useContext, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Box, Grid, Typography } from "@mui/material";
 
-import PageHeader from "../../components/pageHeader/pageHeader"
-import Hero from "../../components/hero/hero"
+import PageHeader from "../../components/pageHeader/pageHeader";
+import Hero from "../../components/hero/hero";
 
-import { SetComponentProps } from "../../models/setComponentProps.model"
+import { SetComponentProps } from "../../models/setComponentProps.model";
 
 
-import getModelsData from "../../api_utils/getModelsData"
-import { ColorOrigin } from "../../models/colorOrigin.model"
-import { ModelOrigin } from "../../models/modelOrigin.model"
-import { ConnectionOrigin } from "../../models/connectionOrigin.model"
-import getColorsData from "../../api_utils/getColorsData"
-import getConnectionsData from "../../api_utils/getConnectionsData"
+import getModelsData from "../../api_utils/getModelsData";
+import { ColorOrigin } from "../../models/colorOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import getColorsData from "../../api_utils/getColorsData";
+import getConnectionsData from "../../api_utils/getConnectionsData";
 
-import ImagesOtherList from "../../components/pageModels/imagesOtherList"
-import DownloadsBlock from "../../components/pageModels/downloadsBlock"
-import { CurrencyContext } from "../../contexts/currencyContext"
-import calcRadiatorCost from "../../utils/calcRadiatorCost"
-import getRadiatorData from "../../utils/getRadiatorData"
-import AddToCartButton from "../../components/addToCartButton/addToCartButton"
+import ImagesOtherList from "../../components/pageModels/imagesOtherList";
+import DownloadsBlock from "../../components/pageModels/downloadsBlock";
+import { CurrencyContext } from "../../contexts/currencyContext";
+import calcRadiatorCost from "../../utils/calcRadiatorCost";
+import getRadiatorData from "../../utils/getRadiatorData";
+import AddToCartButton from "../../components/addToCartButton/addToCartButton";
 
-import * as styles from "../../styles/styles"
-import global from "../../variables/global"
+import * as styles from "../../styles/styles";
+import global from "../../variables/global";
 
 // -------------------------------
 
 type Props = {
-  models: ModelOrigin[]
-  colors: ColorOrigin[]
-  connections: ConnectionOrigin[]
-}
+  models: ModelOrigin[];
+  colors: ColorOrigin[];
+  connections: ConnectionOrigin[];
+};
 
 // -------------------------------
 
-const SECTIONS_QNTY = 8
-const SECTIONS_STRING = "08"
-const SECTIONS_POSTFIX = "секций"
+const SECTIONS_QNTY = 8;
+const SECTIONS_STRING = "08";
+const SECTIONS_POSTFIX = "секций";
 
 // -------------------------------
 
@@ -48,32 +48,32 @@ const Model2180: React.FC<SetComponentProps> = ({
   connections,
 }: Props) => {
 
-  const refPrices = useRef<HTMLElement>(null)
+  const refPrices = useRef<HTMLElement>(null);
 
-  const model = models.find(model => model.id === "2180")
-  if (!model) return null
+  const model = models.find(model => model.id === "2180");
+  if (!model) return null;
 
   // -------------------------------
 
-  const power = Math.floor(SECTIONS_QNTY * +model.dt60)
-  const power50 = Math.floor(SECTIONS_QNTY * +model.dt50)
-  const square = Math.round(power / 100)
+  const power = Math.floor(SECTIONS_QNTY * +model.dt60);
+  const power50 = Math.floor(SECTIONS_QNTY * +model.dt50);
+  const square = Math.round(power / 100);
 
-  const width = Math.round(SECTIONS_QNTY * +model.width + 26)
+  const width = Math.round(SECTIONS_QNTY * +model.width + 26);
 
-  const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
-  const { rateEuro, isFetching } = useContext(CurrencyContext)
+  const imagePrimaryPath = global.imagesModelPath + model.imagePrimary;
+  const { rateEuro, isFetching } = useContext(CurrencyContext);
 
-  const color9016 = colors.find(x => x.id === "9016")
-  const color7016 = colors.find(x => x.id === "7016")
-  const colorSf3 = colors.find(x => x.id === "sf3")
-  const color9005 = colors.find(x => x.id === "9005")
+  const color9016 = colors.find(x => x.id === "9016");
+  const color7016 = colors.find(x => x.id === "7016");
+  const colorSf3 = colors.find(x => x.id === "sf3");
+  const color9005 = colors.find(x => x.id === "9005");
 
-  const conn12 = connections.find(x => x.id === "12-34")
-  const conn69 = connections.find(x => x.id === "69tvv")
+  const conn12 = connections.find(x => x.id === "12-34");
+  const conn69 = connections.find(x => x.id === "69tvv");
 
 
-  if (!color9016 || !color7016 || !colorSf3 || !color9005 || !conn12 || !conn69) return null
+  if (!color9016 || !color7016 || !colorSf3 || !color9005 || !conn12 || !conn69) return null;
 
   // RAL 9016 боковое
 
@@ -83,14 +83,14 @@ const Model2180: React.FC<SetComponentProps> = ({
     connection: conn12,
     sectionQnty: SECTIONS_QNTY,
     currencyRate: rateEuro,
-  })
+  });
   const rad_12_9016_data = getRadiatorData({
     model,
     color: color9016,
     connection: conn12,
     sectionQnty: SECTIONS_QNTY,
     price: rad_12_9016.price.noConsole,
-  })
+  });
 
 
   // RAL 9016 нижнее
@@ -101,14 +101,14 @@ const Model2180: React.FC<SetComponentProps> = ({
     connection: conn69,
     sectionQnty: SECTIONS_QNTY,
     currencyRate: rateEuro,
-  })
+  });
   const rad_69_9016_data = getRadiatorData({
     model,
     color: color9016,
     connection: conn69,
     sectionQnty: SECTIONS_QNTY,
     price: rad_69_9016.price.noConsole,
-  })
+  });
 
   // RAL 7016 боковое
 
@@ -118,14 +118,14 @@ const Model2180: React.FC<SetComponentProps> = ({
     connection: conn12,
     sectionQnty: SECTIONS_QNTY,
     currencyRate: rateEuro,
-  })
+  });
   const rad_12_7016_data = getRadiatorData({
     model,
     color: color7016,
     connection: conn12,
     sectionQnty: SECTIONS_QNTY,
     price: rad_12_7016.price.noConsole,
-  })
+  });
 
 
   // RAL 7016 нижнее
@@ -136,14 +136,14 @@ const Model2180: React.FC<SetComponentProps> = ({
     connection: conn69,
     sectionQnty: SECTIONS_QNTY,
     currencyRate: rateEuro,
-  })
+  });
   const rad_69_7016_data = getRadiatorData({
     model,
     color: color7016,
     connection: conn69,
     sectionQnty: SECTIONS_QNTY,
     price: rad_69_7016.price.noConsole,
-  })
+  });
 
 
   // SF-3 боковое
@@ -154,14 +154,14 @@ const Model2180: React.FC<SetComponentProps> = ({
     connection: conn12,
     sectionQnty: SECTIONS_QNTY,
     currencyRate: rateEuro,
-  })
+  });
   const rad_12_sf3_data = getRadiatorData({
     model,
     color: colorSf3,
     connection: conn12,
     sectionQnty: SECTIONS_QNTY,
     price: rad_12_sf3.price.noConsole,
-  })
+  });
 
 
   // RAL SF-3 нижнее
@@ -172,14 +172,14 @@ const Model2180: React.FC<SetComponentProps> = ({
     connection: conn69,
     sectionQnty: SECTIONS_QNTY,
     currencyRate: rateEuro,
-  })
+  });
   const rad_69_sf3_data = getRadiatorData({
     model,
     color: colorSf3,
     connection: conn69,
     sectionQnty: SECTIONS_QNTY,
     price: rad_69_sf3.price.noConsole,
-  })
+  });
 
   // RAL 9905 боковое
 
@@ -189,14 +189,14 @@ const Model2180: React.FC<SetComponentProps> = ({
     connection: conn12,
     sectionQnty: SECTIONS_QNTY,
     currencyRate: rateEuro,
-  })
+  });
   const rad_12_9005_data = getRadiatorData({
     model,
     color: color9005,
     connection: conn12,
     sectionQnty: SECTIONS_QNTY,
     price: rad_12_9005.price.noConsole,
-  })
+  });
 
 
   // RAL SF-3 нижнее
@@ -207,14 +207,14 @@ const Model2180: React.FC<SetComponentProps> = ({
     connection: conn69,
     sectionQnty: SECTIONS_QNTY,
     currencyRate: rateEuro,
-  })
+  });
   const rad_69_9005_data = getRadiatorData({
     model,
     color: color9005,
     connection: conn69,
     sectionQnty: SECTIONS_QNTY,
     price: rad_69_9005.price.noConsole,
-  })
+  });
 
 
 
@@ -345,7 +345,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                           />
                           <meta
                             itemProp="price"
-                            content={rad_12_9016_data.priceString
+                            content={rad_12_9016_data.priceString.replace(",", "")
+                              .replace(" ", "")
+                              .trim()
                             }
                           />
                           {rad_12_9016_data.priceString}
@@ -375,11 +377,11 @@ const Model2180: React.FC<SetComponentProps> = ({
                       <Box
                         marginTop="10px"
                         onClick={() => {
-                          if (!refPrices.current) return
+                          if (!refPrices.current) return;
                           refPrices.current.scrollIntoView({
                             behavior: "smooth",
                             block: "start",
-                          })
+                          });
                         }}
                       >
                         <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -650,7 +652,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                         />
                         <meta
                           itemProp="price"
-                          content={rad_12_9016_data.priceString
+                          content={rad_12_9016_data.priceString.replace(",", "")
+                            .replace(" ", "")
+                            .trim()
                           }
                         />
                         {rad_12_9016_data.priceString}
@@ -712,7 +716,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                         />
                         <meta
                           itemProp="price"
-                          content={rad_69_9016_data.priceString
+                          content={rad_69_9016_data.priceString.replace(",", "")
+                            .replace(" ", "")
+                            .trim()
                           }
                         />
                         {rad_69_9016_data.priceString}
@@ -821,7 +827,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                         />
                         <meta
                           itemProp="price"
-                          content={rad_12_7016_data.priceString
+                          content={rad_12_7016_data.priceString.replace(",", "")
+                            .replace(" ", "")
+                            .trim()
                           }
                         />
                         {rad_12_7016_data.priceString}
@@ -883,7 +891,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                         />
                         <meta
                           itemProp="price"
-                          content={rad_69_7016_data.priceString
+                          content={rad_69_7016_data.priceString.replace(",", "")
+                            .replace(" ", "")
+                            .trim()
                           }
                         />
                         {rad_69_7016_data.priceString}
@@ -995,7 +1005,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                         />
                         <meta
                           itemProp="price"
-                          content={rad_12_sf3_data.priceString
+                          content={rad_12_sf3_data.priceString.replace(",", "")
+                            .replace(" ", "")
+                            .trim()
                           }
                         />
                         {rad_12_sf3_data.priceString}
@@ -1057,7 +1069,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                         />
                         <meta
                           itemProp="price"
-                          content={rad_69_sf3_data.priceString
+                          content={rad_69_sf3_data.priceString.replace(",", "")
+                            .replace(" ", "")
+                            .trim()
                           }
                         />
                         {rad_69_sf3_data.priceString}
@@ -1157,7 +1171,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                         />
                         <meta
                           itemProp="price"
-                          content={rad_12_9005_data.priceString
+                          content={rad_12_9005_data.priceString.replace(",", "")
+                            .replace(" ", "")
+                            .trim()
                           }
                         />
                         {rad_12_9005_data.priceString}
@@ -1219,7 +1235,9 @@ const Model2180: React.FC<SetComponentProps> = ({
                         />
                         <meta
                           itemProp="price"
-                          content={rad_69_9005_data.priceString
+                          content={rad_69_9005_data.priceString.replace(",", "")
+                            .replace(" ", "")
+                            .trim()
                           }
                         />
                         {rad_69_9005_data.priceString}
@@ -1277,15 +1295,15 @@ const Model2180: React.FC<SetComponentProps> = ({
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Model2180
+export default Model2180;
 
-export async function getStaticProps(): Promise<{ props: Props }> {
-  const models: ModelOrigin[] = await getModelsData()
-  const colors: ColorOrigin[] = await getColorsData()
-  const connections: ConnectionOrigin[] = await getConnectionsData()
+export async function getStaticProps(): Promise<{ props: Props; }> {
+  const models: ModelOrigin[] = await getModelsData();
+  const colors: ColorOrigin[] = await getColorsData();
+  const connections: ConnectionOrigin[] = await getConnectionsData();
 
   return {
     props: {
@@ -1293,5 +1311,5 @@ export async function getStaticProps(): Promise<{ props: Props }> {
       colors,
       connections,
     },
-  }
+  };
 }

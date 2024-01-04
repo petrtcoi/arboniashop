@@ -1,8 +1,8 @@
-import { ColorOrigin } from "../models/colorOrigin.model";
-import { ConnectionOrigin } from "../models/connectionOrigin.model";
-import { ModelOrigin } from "../models/modelOrigin.model";
+import { ColorOrigin } from '../models/colorOrigin.model';
+import { ConnectionOrigin } from '../models/connectionOrigin.model';
+import { ModelOrigin } from '../models/modelOrigin.model';
 
-import { DISCOUNT } from "../variables/currency";
+import { DISCOUNT } from '../variables/currency';
 
 type Props = {
   model: ModelOrigin;
@@ -29,7 +29,7 @@ const getRadiatorData = ({
   price,
 }: Props): Return => {
   const sectionQntyString: string =
-    sectionQnty < 10 ? "0" + sectionQnty.toString() : sectionQnty.toString();
+    sectionQnty < 10 ? '0' + sectionQnty.toString() : sectionQnty.toString();
   return {
     titleString: `Arbonia ${model.nameShort} / ${sectionQntyString}`,
     skuString: `${model.nameShort}/${sectionQntyString}/${color.nameShort}/${connection.nameShort}`,

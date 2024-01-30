@@ -6,20 +6,7 @@ module.exports = {
     locales: ['ru'],
     defaultLocale: 'ru',
   },
-  async redirects() {
-    return [
-      {
-        source: '/arbonia-radiators',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/catalog/2180-stock',
-        destination: '/models/2180',
-        permanent: true,
-      },
-    ];
-  },
+
   async headers() {
     return [
       {

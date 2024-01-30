@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/catalog/2180-stock"
+  to = "/models/2180"
+  status = 301

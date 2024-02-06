@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import PageHeader from "../components/pageHeader/pageHeader";
 import PageTitle from "../components/pageTitle/pageTitle";
 import Advantages from "../components/pageMain/advantages";
+import Bestsellers from "../components/pageMain/bestsellers";
 import WhyMouseLite from "../components/pageMain/whyMouseLite";
 import Portfolio from "../components/pageMain/portfolio";
 import Hero from "../components/hero/hero";
@@ -32,12 +33,15 @@ const Home: NextPage = () => {
         }
       />
       <Box>
+
         <Box
           marginTop="50px"
           paddingX={{ xs: "10px", md: "20px" }}
         >
-          <Advantages />
+          <Bestsellers />
         </Box>
+
+
         <Box
           marginTop="40px"
           paddingY="40px"
@@ -47,6 +51,14 @@ const Home: NextPage = () => {
             <WhyMouseLite />
           </Box>
         </Box>
+
+        <Box
+          marginTop="50px"
+          paddingX={{ xs: "10px", md: "20px" }}
+        >
+          <Advantages />
+        </Box>
+
         <Box
           marginTop="40px"
           paddingX={{ xs: "10px", md: "20px" }}

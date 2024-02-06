@@ -40,7 +40,7 @@ const Bestsellers: React.FC<BestsellersProps> = () => {
       <Box marginTop="40px">
 
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={4} lg={3} >
+          <Grid item xs={12} md={4} lg={3} >
             <Box textAlign="center" >
               <Link href="/models/2180">
                 <a style={{ textDecoration: "none" }}>
@@ -72,7 +72,7 @@ const Bestsellers: React.FC<BestsellersProps> = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3} >
+          <Grid item xs={12} md={4} lg={3} >
             <Box textAlign="center" >
               <Link href="/models/3057">
                 <a style={{ textDecoration: "none" }}>
@@ -103,7 +103,7 @@ const Bestsellers: React.FC<BestsellersProps> = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3} >
+          <Grid item xs={12} md={4} lg={3} >
             <Box textAlign="center" >
               <Link href="/models/3180">
                 <a style={{ textDecoration: "none" }}>
@@ -133,7 +133,7 @@ const Bestsellers: React.FC<BestsellersProps> = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3} >
+          <Grid item xs={12} md={4} lg={3} >
             <Box textAlign="center" >
               <Link href="/models/3030">
                 <a style={{ textDecoration: "none" }}>
@@ -163,7 +163,7 @@ const Bestsellers: React.FC<BestsellersProps> = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3} >
+          <Grid item xs={12} md={4} lg={3} >
             <Box textAlign="center" >
               <Link href="/models/2050">
                 <a style={{ textDecoration: "none" }}>
@@ -193,7 +193,7 @@ const Bestsellers: React.FC<BestsellersProps> = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3} >
+          <Grid item xs={12} md={4} lg={3} >
             <Box textAlign="center" >
               <Link href="/models/3050">
                 <a style={{ textDecoration: "none" }}>

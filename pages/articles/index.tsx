@@ -1,17 +1,17 @@
-import React from "react"
-import { NextPage } from "next"
-import { Box, Typography, Grid } from "@mui/material"
-import Link from "next/link"
-import Image from "next/image"
+import React from "react";
+import { NextPage } from "next";
+import { Box, Typography, Grid } from "@mui/material";
+import Link from "next/link";
+import Image from "next/image";
 
-import PageTitle from "../../components/pageTitle/pageTitle"
-import PageHeader from "../../components/pageHeader/pageHeader"
-import Hero from "../../components/hero/hero"
+import PageTitle from "../../components/pageTitle/pageTitle";
+import PageHeader from "../../components/pageHeader/pageHeader";
+import Hero from "../../components/hero/hero";
 
-import * as styles from "../../styles/styles"
-import global from "../../variables/global"
+import * as styles from "../../styles/styles";
+import global from "../../variables/global";
 
-type ArticlesListPageProps = {}
+type ArticlesListPageProps = {};
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
   return (
@@ -37,6 +37,50 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
           container
           spacing={5}
         >
+          <Grid
+            item
+            md={6}
+          >
+            <Box>
+              <Link href="/articles/high-arbonia">
+                <a style={{ textDecoration: "none" }}>
+                  <Box textAlign={"center"}>
+                    <Image
+                      src="/images/articles/2022122702.jpg"
+                      alt="Высокий радиатор Arbonia"
+                      width={300}
+                      height={300}
+                    />
+                  </Box>
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.standardTextRedLink }}
+                      component="span"
+                    >
+                      Высокие радиаторы Arbonia
+                    </Typography>
+                  </Box>
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
+                      Высокие радиаторы, которые мы определяем как устройства отопления с высотой от 1 метра и выше, становятся все более популярными в современных архитектурных и дизайнерских решениях...
+                    </Typography>
+                  </Box>
+                </a>
+              </Link>
+            </Box>
+          </Grid>
+
+
+
           <Grid
             item
             md={6}
@@ -543,13 +587,13 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
         </Grid>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default ArticlesListPage
+export default ArticlesListPage;
 
 export async function getStaticProps() {
   return {
     props: {}, // will be passed to the page component as props
-  }
+  };
 }

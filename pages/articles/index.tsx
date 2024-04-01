@@ -37,6 +37,48 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
           container
           spacing={5}
         >
+
+          <Grid
+            item
+            md={6}
+          >
+            <Box>
+              <Link href="/articles/faq">
+                <a style={{ textDecoration: "none" }}>
+                  <Box textAlign={"center"}>
+                    <Image
+                      src="/images/articles/sf-3-0.jpeg"
+                      alt="Высокий радиатор Arbonia"
+                      width={300}
+                      height={300}
+                    />
+                  </Box>
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.standardTextRedLink }}
+                      component="span"
+                    >
+                      Ответы на часто задаваемые вопросы
+                    </Typography>
+                  </Box>
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
+                      Подборка частых вопросов про радиаторы Arbonia и ответом на них. Где производятся? Какие давление держат? И т.д...
+                    </Typography>
+                  </Box>
+                </a>
+              </Link>
+            </Box>
+          </Grid>
           <Grid
             item
             md={6}

@@ -36,7 +36,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
       />
       <Hero
         imgPath={"/images/sliders/slide-5.jpeg"}
-        header={"Ответы на часто задаваемые вопросы"}
+        header={"Ответы на часто задаваемые вопросы про радиаторы Arbonia"}
       />
       <Box
         sx={{ ...global.pagePadding, maxWidth: "900px", margin: "auto" }}

@@ -150,12 +150,14 @@ const Footer: NextComponentType<FooterProps> = () => {
           ))}
           <Box key={"faq"}>
             <Link href={"/articles/faq"}>
-              <a style={{ textDecoration: "none" }}>
+              <a style={{ textDecoration: "none", }}>
                 <Typography
-                  sx={footerTextButton}
+                  sx={{ ...footerTextButton, lineHeight: 0.1 }}
                   component="span"
                 >
-                  Ответы на часто задаваемые вопросы
+                  <div style={{ marginTop: "10px", lineHeight: 1.2 }}>
+                    Ответы на часто задаваемые вопросы про радиаторы Arbonia
+                  </div>
                 </Typography>
               </a>
             </Link>

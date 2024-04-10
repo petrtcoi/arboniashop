@@ -148,6 +148,20 @@ const Footer: NextComponentType<FooterProps> = () => {
               <br />
             </Box>
           ))}
+          <Box key={"faq"}>
+            <Link href={"/articles/faq"}>
+              <a style={{ textDecoration: "none" }}>
+                <Typography
+                  sx={footerTextButton}
+                  component="span"
+                >
+                  Ответы на часто задаваемые вопросы
+                </Typography>
+              </a>
+            </Link>
+
+            <br />
+          </Box>
         </Grid>
         <Grid
           item
@@ -221,7 +235,7 @@ const Footer: NextComponentType<FooterProps> = () => {
           md={8}
         >
           <Typography sx={footerText}>
-            © 2023 ArboniaShop.ru – магазин радиаторов Arbonia
+            © 2024 ArboniaShop.ru – магазин радиаторов Arbonia
           </Typography>
         </Grid>
       </Grid>

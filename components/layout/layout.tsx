@@ -38,7 +38,7 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
   }, [router.asPath]);
 
   return (
-    <Box padding="0px">
+    <Box padding="0px" >
       <Head>
         <link
           rel="apple-touch-icon"

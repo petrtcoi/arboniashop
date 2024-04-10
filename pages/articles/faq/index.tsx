@@ -18,7 +18,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
     <Box>
       <PageHeader
         title={
-          "Радиаторы Arbonia: ответы на частые вопросы"
+          "Радиаторы Arbonia: ответы на частые вопросы про радиаторы Arbonia"
         }
         description={
           "Собрали наиболее частые вопросы, которые нам задают про радиаторы Arbonia, и подготовили на них ответы. Где можно устанавливать радиаторы Arbonia? Где их производят? Какое давление они выдерживают? И т.д."
@@ -36,15 +36,172 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
       />
       <Hero
         imgPath={"/images/sliders/slide-5.jpeg"}
-        header={"Горизонтальный радиатор Arbonia"}
+        header={"Ответы на часто задаваемые вопросы"}
       />
       <Box
         sx={{ ...global.pagePadding, maxWidth: "900px", margin: "auto" }}
         itemScope
         itemType="https://schema.org/FAQPage"
       >
+        <div>
+          <Typography variant="h5" component={"h2"}>
+            Содержание:
+          </Typography>
+          <Typography sx={{ ...styles.standardText }}>
+            <ul>
+              <li>
+                <Link href={"#faq-1"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Где производят радиаторы Arbonia?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-2"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Какие вертикальные радиаторы Arbonia поддерживаются в наличии?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-3"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Подходят ли радиаторы Arbonia для центрального отопления?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-4"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Возможно ли радиусное исполнение радиаторов Arbonia?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-42"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Как соотносятся мощности радиаторов Arbonia c алюминиевыми или биметаллическими радиаторами?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-5"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Какое должно быть расстояние радиатора от стены?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-6"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Какое нужно расстояние от пола и от подоконника?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-7"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Возможно ли проходное подключение радиаторов Arbonia
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-8"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Как работает циркуляция теплоносителя в радиаторах большой длины
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-9"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Возможна ли покраска радиаторов в свой цвет?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-10"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Основные преимущества стальных трубчатых радиаторов
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
+              <li style={{ marginTop: "5px" }}>
+                <Link href={"#faq-11"} >
+                  <a style={{ textDecoration: "none" }}>
+                    <Typography
+                      sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+                      component="span"
+                    >
+                      Как приобрести радиатор Arbonia по индивидуальному заказу?
+                    </Typography>
+                  </a>
+                </Link>
+              </li>
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+
+
+            </ul>
+          </Typography>
+        </div>
+
+
+        <div id="faq-1" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Где производят радиаторы Arbonia?
           </Typography>
@@ -59,7 +216,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
         {/* --- */}
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+        <div id="faq-2" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Какие вертикальные радиаторы Arbonia поддерживаются в наличии?
           </Typography>
@@ -92,7 +249,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
         {/* --- */}
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+        <div id="faq-3" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Подходят ли радиаторы Arbonia для центрального отопления?
           </Typography>
@@ -110,8 +267,104 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
         </div>
 
         {/* --- */}
+        <div id="faq-42" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+          <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
+            Как соотносятся мощности радиаторов Arbonia c алюминиевыми или биметаллическими радиаторами?
+          </Typography>
+          <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+            <div itemProp="text">
+              <Typography sx={{ ...styles.standardText }} marginY="20px">
+                Алюминиевые или биметаллические радиаторы состоят из секций длиной 80 мм и обладают высокой теплоотдачей за счет высокой доли передачи тепла через конвекцию. Ниже представлена таблица, в которой приведены мощности популярных моделей радиаторов Arbonia в сравнении с алюминиевыми батареями (мощности указаны при dT=60C).
+              </Typography>
+              <Typography sx={{ ...styles.smallText }} marginY="20px">
+                <table style={{
+                  width: '100%',
+                  minWidth: '500px',
+                  borderCollapse: 'collapse',
+                  overflowX: 'auto',
+                }}>
+                  <tr>
+                    <th style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "lightgrey" }}>Алюминиевый<br />радиатор</th>
+                    <th style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "lightgrey" }}>Arbonia 3057</th>
+                    <th style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "lightgrey" }}>Arbonia 2180</th>
+                    <th style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "lightgrey" }}>Arbonia 3180</th>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>5 секций<br />430 мм<br />790 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>10 секций<br />476 мм<br />780 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>5 секций<br />251 мм<br />820 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>4 секции<br />206 мм<br />876 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>6 секций<br />510 мм<br />948 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>12 секций<br />566 мм<br />936 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>6 секций<br />296 мм<br />984 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>4 секции<br />206 мм<br />876 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>7 секций<br />590 мм<br />1106 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>14 секций<br />656 мм<br />1092 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>7 секций<br />341 мм<br />1148 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>5 секций<br />251 мм<br />1095 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>8 секций<br />670 мм<br />1264 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>16 секций<br />746 мм<br />1248 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>8 секций<br />386 мм<br />1312 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>6 секций<br />296 мм<br />1314 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>9 секций<br />750 мм<br />1422 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>18 секций<br />836 мм<br />1404 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>9 секций<br />431 мм<br />1476 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>6 секций<br />296 мм<br />1314 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>10 секций<br />830 мм<br />1580 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>20 секций<br />926 мм<br />1560 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>10 секций<br />476 мм<br />1640 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>7 секций<br />341 мм<br />1533 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>11 секций<br />910 мм<br />1738 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>22 секций<br />1016 мм<br />1716 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>11 секций<br />521 мм<br />1804 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>8 секций<br />386 мм<br />1752 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>12 секций<br />990 мм<br />1896 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>24 секций<br />1106 мм<br />1872 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>12 секций<br />566 мм<br />1968 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>9 секций<br />431 мм<br />1971 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>13 секций<br />1070 мм<br />2054 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>26 секций<br />1196 мм<br />2028 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>13 секций<br />611 мм<br />2132 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>9 секций<br />431 мм<br />1971 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>14 секций<br />1150 мм<br />2212 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>28 секций<br />1286 мм<br />2184 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>13 секций<br />611 мм<br />2132 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: "#f2f2f2" }}>10 секций<br />476 мм<br />2190 Вт</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>15 секций<br />1230 мм<br />2370 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>30 секций<br />1376 мм<br />2340 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>14 секций<br />656 мм<br />2296 Вт</td>
+                    <td style={{ padding: '5px', border: '1px solid darkgray' }}>11 секций<br />521 мм<br />2409 Вт</td>
+                  </tr>
+                </table>
+              </Typography>
+            </div>
+          </div>
+        </div>
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+
+        {/* --- */}
+
+        <div id="faq-4" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Возможно ли радиусное исполнение радиаторов Arbonia?
           </Typography>
@@ -136,7 +389,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
         {/* --- */}
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+        <div id="faq-5" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Какое должно быть расстояние радиатора от стены
           </Typography>
@@ -158,7 +411,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
         {/* --- */}
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+        <div id="faq-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Какое нужно расстояние от пола и от подоконника?
           </Typography>
@@ -178,7 +431,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
         {/* --- */}
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+        <div id="faq-7" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Возможно ли проходное подключение радиаторов Arbonia
           </Typography>
@@ -197,7 +450,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
         {/* --- */}
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+        <div id="faq-8" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Как работает циркуляция теплоносителя в радиаторах большой длины
           </Typography>
@@ -216,7 +469,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
         {/* --- */}
 
-        <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+        <div id="faq-9" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
           <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
             Возможна ли покраска радиаторов в свой цвет?
           </Typography>
@@ -228,6 +481,52 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
               </Typography>
             </div>
           </div>
+        </div>
+
+        {/* --- */}
+
+        <div id="faq-10" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+          <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
+            Основные преимущества стальных трубчатых радиаторов
+          </Typography>
+
+          <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+            <div itemProp="text">
+              <Typography sx={{ ...styles.standardText }} marginY="20px">
+                Стальные трубчатые радиаторы обладают множеством преимуществ, делающих их идеальным выбором для современного жилища. Одно из ключевых преимуществ — это полностью автоматизированное производство, исключающее человеческий фактор, что гарантирует высокое качество и однородность каждого изделия. Эти радиаторы предлагаются в широком ассортименте типоразмеров: высота варьируется от 19 до 300 см, количество трубок в секции — от 2 до 6, а число секций может достигать от 2 до 50. Такой разнообразный выбор позволяет подобрать радиатор для любого пространства и тепловых нужд.
+              </Typography>
+              <Typography sx={{ ...styles.standardText }} marginY="20px">
+                Порошковая окраска, используемая в производстве, не только придает изделиям привлекательный внешний вид, но и увеличивает их устойчивость к коррозии и механическим повреждениям. Это делает радиаторы более долговечными и уменьшает потребность в их регулярном обслуживании. Уход за такими радиаторами не составляет труда — они легко очищаются от пыли и грязи, что способствует поддержанию оптимальной гигиены в помещении.
+              </Typography>
+              <Typography sx={{ ...styles.standardText }} marginY="20px">
+                Кроме того, стальные трубчатые радиаторы отличаются премиальным внешним видом. Они идеально вписываются в дизайнерские интерьеры, будь то классические или современные стили, благодаря своему универсальному дизайну. Это делает их подходящими для использования в самых различных архитектурных и дизайнерских решениях.
+              </Typography>
+            </div>
+          </div>
+
+          {/* --- */}
+          <div id="faq-11" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <Typography marginTop="40px" variant="h5" component={"h2"} itemProp="name">
+              Как приобрести радиатор Arbonia по индивидуальному заказу?
+            </Typography>
+
+            <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+              <div itemProp="text">
+                <Typography sx={{ ...styles.standardText }} marginY="20px">
+                  В наличии поддерживаются наиболее популярные модели радиаторов Arbonia. Однако, если вам нужен радиатор с нестандартными параметрами, вы можете оформить индивидуальный заказ. Сроки поставки радиатора зависят от загруженности производства и могут составлять от 2 до 4 месяцев. Пожалуйста, уточняйте реальные сроки у менеджера при оформлении заказа.
+                </Typography>
+                <Typography sx={{ ...styles.standardText }} marginY="20px">
+                  Заказать можно любой радиатор из полного каталога производителя. На выбор доступны не только любые размеры, но также цвета и варианты подключения. Это дает возможность подобрать радиатор, который идеально подойдет для вашего интерьера и обеспечит оптимальное отопление помещения.
+                </Typography>
+                <Typography sx={{ ...styles.standardText }} marginY="20px">
+                  Важно учитывать, что радиаторы изготавливаются и поставляются в России по вашему индивидуальному заказу. Поэтому их нельзя будет вернуть или обменять. Мы настоятельно рекомендуем согласовать технические параметры радиаторов с вашим прорабом перед оформлением заказа.
+                </Typography>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
 
       </Box>

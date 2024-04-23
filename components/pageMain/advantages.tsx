@@ -9,17 +9,16 @@ type AdvantagesProps = {};
 
 const Advantages: React.FC<AdvantagesProps> = () => {
   return (
-    <Box>
+    <Box paddingX={{ xs: "10px", md: "20px" }}>
       <Typography
         variant="h5"
         component="h2"
-        textAlign="center"
-        sx={{ textTransform: "uppercase" }}
+        textAlign="left"
       >
         Почему трубчатые радиаторы Arbonia
       </Typography>
       <Box marginTop="30px">
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           <Grid item xs={12} md={6} lg={4}>
             <Box textAlign="center">
               <div
@@ -38,7 +37,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 Крупный производитель
               </Typography>
             </Box>
-            <Typography sx={{ ...styles.smallText }}>
+            <Typography sx={{ ...styles.smallText }} maxWidth={400} marginX="auto" marginTop="10px">
               Arbonia - известный европейский производитель, ведущий свою
               историю с 1954 года. Компания специализируется на производстве
               отопительного и вентиляционного оборудования. Помимо трубчатых
@@ -65,7 +64,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 Широкий ассортимент
               </Typography>
             </Box>
-            <Typography sx={{ ...styles.smallText }}>
+            <Typography sx={{ ...styles.smallText }} maxWidth={400} marginX="auto" marginTop="10px">
               В модельном ряде трубчатых радиаторов Arbonia имеется 5 вариантов
               глубины. Высота батарей возможна от 19 см до 3 м. Длина до 66
               секций вместо 40 секций, как у большинства производителей.
@@ -92,7 +91,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 Гигиеничность
               </Typography>
             </Box>
-            <Typography sx={{ ...styles.smallText }}>
+            <Typography sx={{ ...styles.smallText }} maxWidth={400} marginX="auto" marginTop="10px">
               Форма трубчатого радиатора позволяет его легко чистить щеткой или
               мыть. Базовая покраска имеет гладкую поверхность, на которой не
               накапливаются пыль и грязь. Это преимущество играет особенно
@@ -119,7 +118,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 Надежность
               </Typography>
             </Box>
-            <Typography sx={{ ...styles.smallText }}>
+            <Typography sx={{ ...styles.smallText }} maxWidth={400} marginX="auto" marginTop="10px">
               Гарантия на радиаторы Arbonia составляет 10 лет. Радиаторы
               подходят для работы в российских условиях и для установки в
               многоквартирные дома. Благодаря полностью автоматизированному
@@ -145,11 +144,11 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 Наличие на складе
               </Typography>
             </Box>
-            <Typography sx={{ ...styles.smallText }}>
-              В наличии поддерживаются наиболее популяряные модели Arbonia. От
+            <Typography sx={{ ...styles.smallText }} maxWidth={400} marginX="auto" marginTop="10px">
+              В наличии поддерживаются наиболее популярные модели Arbonia. От
               небольших 2030, до вертикальных и мощных 3180. Вертикальные модели
               также доступны в цветном исполнении: черный и темно-серый оттенки.
-              В подавляющем большинству случаеы наши покупатели находят
+              В подавляющем большинству случаев наши покупатели находят
               радиаторы с требуемыми характеристиками у нас в наличии. Для
               исключительных случаев мы можем заказать изготовление радиаторов
               по индивидуальным требованиям.
@@ -174,11 +173,11 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 Быстрая доставка по России
               </Typography>
             </Box>
-            <Typography sx={{ ...styles.smallText }}>
+            <Typography sx={{ ...styles.smallText }} maxWidth={400} marginX="auto" marginTop="10px">
               Arbonia отгружаются со складов, расположенных в Москве и
               Санкт-Петербурге. Доставка возможна в любой город России.
               Благодаря надежной заводской упаковке радиаторы будут доставлены
-              без достадных повреждений. Мы имеем опыт доставки радиаторов от
+              без досадных повреждений. Мы имеем опыт доставки радиаторов от
               Калининграда до Владивостока, а также в Казахстан.
             </Typography>
           </Grid>

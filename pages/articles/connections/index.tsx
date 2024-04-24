@@ -89,7 +89,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           радиаторов без переноса труб.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/100.jpg"
             alt="Радиатор Arbonia с боковым подключением"
             width={400}
@@ -168,7 +168,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           .
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/101.jpg"
             alt="Радиатор Arbonia с нижним подключением"
             width={533}

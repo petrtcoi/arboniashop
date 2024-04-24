@@ -46,7 +46,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/faq">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/sf-3-0.jpeg"
                       alt="Высокий радиатор Arbonia"
                       width={300}
@@ -87,7 +87,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/high-arbonia">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/2022122702.jpg"
                       alt="Высокий радиатор Arbonia"
                       width={300}
@@ -131,7 +131,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/panorama">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/panorama/arbonia-00.jpg"
                       alt="Вертикальный радиатор Arbonia"
                       width={300}
@@ -177,7 +177,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/arbonia-3057">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/20230222.jpg"
                       alt="Радиатор Arbonia 3057"
                       width={300}
@@ -225,7 +225,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/low-models">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/20230126_0.jpg"
                       alt="Радиатор Arbonia 3030"
                       width={300}
@@ -274,7 +274,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/convection-radiaton-arbonia">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/20230110_0.jpg"
                       alt="Вертикальный радиатор Arbonia"
                       width={300}
@@ -321,7 +321,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/calc-radiators-by-old-ones">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/2022122701.jpg"
                       alt="3-трубчатый белый радиатор Arbonia"
                       width={300}
@@ -368,7 +368,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/2-3-columns">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/90-1.jpeg"
                       alt="3-трубчатый радиатор Arbonia"
                       width={300}
@@ -412,7 +412,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/arbonia-radiators">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/1.jpg"
                       alt="Трубчатый радиатор Arbonia"
                       width={300}
@@ -456,7 +456,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/consoles">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/20.jpg"
                       alt="Нижний упор Arbonia ZB0280"
                       width={300}
@@ -500,7 +500,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/2180-3180">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/30.jpeg"
                       alt="Вертикальный радиатор Arbonia"
                       width={300}
@@ -545,7 +545,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/connections">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/articles/100.jpg"
                       alt="Радиатор Arbonia"
                       width={300}
@@ -590,7 +590,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
               <Link href="/articles/calculate">
                 <a style={{ textDecoration: "none" }}>
                   <Box textAlign={"center"}>
-                    <Image
+                    <img
                       src="/images/models/2-columns-3.jpeg"
                       alt="Как подбирать радиаторы Zehnder Charleston по мощности"
                       width={300}

@@ -1,45 +1,45 @@
-import React, { useRef } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Box, Grid, Typography } from "@mui/material"
+import React, { useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Box, Grid, Typography } from "@mui/material";
 
-import ModelBlock from "../../components/modelBlock/modelBlock"
-import PageHeader from "../../components/pageHeader/pageHeader"
-import Hero from "../../components/hero/hero"
+import ModelBlock from "../../components/modelBlock/modelBlock";
+import PageHeader from "../../components/pageHeader/pageHeader";
+import Hero from "../../components/hero/hero";
 
-import { SetComponentProps } from "../../models/setComponentProps.model"
+import { SetComponentProps } from "../../models/setComponentProps.model";
 
-import * as styles from "../../styles/styles"
-import global from "../../variables/global"
-import getModelsData from "../../api_utils/getModelsData"
-import { ColorOrigin } from "../../models/colorOrigin.model"
-import { ModelOrigin } from "../../models/modelOrigin.model"
-import { ConnectionOrigin } from "../../models/connectionOrigin.model"
-import getColorsData from "../../api_utils/getColorsData"
-import getConnectionsData from "../../api_utils/getConnectionsData"
-import RadiatorInCartList from "../../components/pageModels/radiatorInCartList"
-import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions"
-import ImagesOtherList from "../../components/pageModels/imagesOtherList"
-import DownloadsBlock from "../../components/pageModels/downloadsBlock"
+import * as styles from "../../styles/styles";
+import global from "../../variables/global";
+import getModelsData from "../../api_utils/getModelsData";
+import { ColorOrigin } from "../../models/colorOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import getColorsData from "../../api_utils/getColorsData";
+import getConnectionsData from "../../api_utils/getConnectionsData";
+import RadiatorInCartList from "../../components/pageModels/radiatorInCartList";
+import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions";
+import ImagesOtherList from "../../components/pageModels/imagesOtherList";
+import DownloadsBlock from "../../components/pageModels/downloadsBlock";
 
 type Props = {
-  models: ModelOrigin[]
-  colors: ColorOrigin[]
-  connections: ConnectionOrigin[]
-}
+  models: ModelOrigin[];
+  colors: ColorOrigin[];
+  connections: ConnectionOrigin[];
+};
 
 const Model2180: React.FC<SetComponentProps> = ({
   models,
   colors,
   connections,
 }: Props) => {
-  const ref9016 = useRef<HTMLElement>(null)
-  const refSf3 = useRef<HTMLElement>(null)
-  const ref7016 = useRef<HTMLElement>(null)
-  const refOrder = useRef<HTMLElement>(null)
+  const ref9016 = useRef<HTMLElement>(null);
+  const refSf3 = useRef<HTMLElement>(null);
+  const ref7016 = useRef<HTMLElement>(null);
+  const refOrder = useRef<HTMLElement>(null);
 
-  const model = models.find(model => model.id === "2180")
-  if (!model) return null
+  const model = models.find(model => model.id === "2180");
+  if (!model) return null;
 
   return (
     <Box
@@ -79,11 +79,11 @@ const Model2180: React.FC<SetComponentProps> = ({
         >
           <Box
             onClick={() => {
-              if (!ref9016.current) return
+              if (!ref9016.current) return;
               ref9016.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              })
+              });
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -92,11 +92,11 @@ const Model2180: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!ref7016.current) return
+              if (!ref7016.current) return;
               ref7016.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              })
+              });
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -105,11 +105,11 @@ const Model2180: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!refSf3.current) return
+              if (!refSf3.current) return;
               refSf3.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              })
+              });
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -118,11 +118,11 @@ const Model2180: React.FC<SetComponentProps> = ({
           </Box>
           <Box
             onClick={() => {
-              if (!refOrder.current) return
+              if (!refOrder.current) return;
               refOrder.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
-              })
+              });
             }}
           >
             <Typography sx={{ ...styles.smallTextRedLink, cursor: "pointer" }}>
@@ -209,12 +209,13 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   itemProp="image"
                   src="/images/models/2180-1.jpeg"
                   alt="Белый радиатор Arbonia 2180"
+                  style={{ maxWidth: "100%", height: "auto" }}
                   width={600}
-                  height={600}
+                // height={600}
                 />
               </Grid>
               <Grid
@@ -263,11 +264,12 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={4}
               >
-                <Image
+                <img
                   src="/images/models/2180-tvv.jpeg"
                   alt="Белый радиатор Arbonia 2180 69 ТВВ"
+                  style={{ maxWidth: "100%", height: "auto" }}
                   width={600}
-                  height={600}
+                // height={600}
                 />
               </Grid>
 
@@ -346,11 +348,12 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/7016-0.jpeg"
                   alt="Радиатор Arbonia 2180 RAL 7016"
+                  style={{ maxWidth: "100%", height: "auto" }}
                   width={600}
-                  height={600}
+                // height={600}
                 />
               </Grid>
               <Grid
@@ -418,11 +421,12 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/sf-3-2.jpeg"
                   alt="Радиатор Arbonia 2180 (SF-3 Anthrazit metallic)"
+                  style={{ maxWidth: "100%", height: "auto" }}
                   width={600}
-                  height={600}
+                // height={600}
                 />
               </Grid>
               <Grid
@@ -491,11 +495,12 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/2180-9005.jpeg"
                   alt="Радиатор Arbonia 2180 RAL9005 matt"
+                  style={{ maxWidth: "100%", height: "auto" }}
                   width={600}
-                  height={600}
+                // height={600}
                 />
               </Grid>
               <Grid
@@ -647,15 +652,15 @@ const Model2180: React.FC<SetComponentProps> = ({
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Model2180
+export default Model2180;
 
-export async function getStaticProps(): Promise<{ props: Props }> {
-  const models: ModelOrigin[] = await getModelsData()
-  const colors: ColorOrigin[] = await getColorsData()
-  const connections: ConnectionOrigin[] = await getConnectionsData()
+export async function getStaticProps(): Promise<{ props: Props; }> {
+  const models: ModelOrigin[] = await getModelsData();
+  const colors: ColorOrigin[] = await getColorsData();
+  const connections: ConnectionOrigin[] = await getConnectionsData();
 
   return {
     props: {
@@ -663,5 +668,5 @@ export async function getStaticProps(): Promise<{ props: Props }> {
       colors,
       connections,
     },
-  }
+  };
 }

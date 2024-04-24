@@ -22,10 +22,10 @@ const ImagesOtherList: React.FC<ImagesOtherListProps> = ({ imagesString }) => {
               padding={{ sm: "20px", md: "0px" }}
               textAlign={{ sm: "center", md: "left" }}
             >
-              <Image
+              <img
                 src={imagePath}
-                width={500}
-                height={500}
+                style={{ maxWidth: "100%", height: "auto" }}
+                width={"500px"}
                 sizes={"500px"}
                 alt={`Трубчатый радиатор Arbonia`}
               />

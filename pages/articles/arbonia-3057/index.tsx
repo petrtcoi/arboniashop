@@ -79,7 +79,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           установки в старые однотрубные системы отопления.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/20230222.jpg"
             alt="Радиатор Arbonia 3057"
             width={400}

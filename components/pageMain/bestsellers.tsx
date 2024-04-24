@@ -133,7 +133,7 @@ const Bestsellers: React.FC<BestsellersProps> = (props) => {
                     <div
                       style={{ ...styles.roundSquareImage, display: "inline-block" }}
                     >
-                      <Image
+                      <img
                         priority
                         src="/images/models/2180-0.jpeg"
                         width={"200px"}
@@ -242,7 +242,7 @@ const Bestsellers: React.FC<BestsellersProps> = (props) => {
                   <div
                     style={{ ...styles.roundSquareImage, display: "inline-block" }}
                   >
-                    <Image
+                    <img
                       priority
                       src="/images/models/3057-0.jpeg"
                       width={"200px"}
@@ -350,7 +350,7 @@ const Bestsellers: React.FC<BestsellersProps> = (props) => {
                   <div
                     style={{ ...styles.roundSquareImage, display: "inline-block" }}
                   >
-                    <Image
+                    <img
                       priority
                       src="/images/models/3057-2.jpeg"
                       width={"200px"}
@@ -458,7 +458,7 @@ const Bestsellers: React.FC<BestsellersProps> = (props) => {
                   <div
                     style={{ ...styles.roundSquareImage, display: "inline-block" }}
                   >
-                    <Image
+                    <img
                       priority
                       src="/images/models/3030-0.jpeg"
                       width={"200px"}
@@ -567,7 +567,7 @@ const Bestsellers: React.FC<BestsellersProps> = (props) => {
                   <div
                     style={{ ...styles.roundSquareImage, display: "inline-block" }}
                   >
-                    <Image
+                    <img
                       priority
                       src="/images/models/2050-0.jpg"
                       width={"200px"}
@@ -676,7 +676,7 @@ const Bestsellers: React.FC<BestsellersProps> = (props) => {
                   <div
                     style={{ ...styles.roundSquareImage, display: "inline-block" }}
                   >
-                    <Image
+                    <img
                       priority
                       src="/images/models/3057-3.jpeg"
                       width={"200px"}

@@ -128,7 +128,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           более наглядно сравнить и выбрать наиболее подходящий для вас.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/30.jpeg"
             alt="Вертикальные радиаторы Arbonia"
             width={600}

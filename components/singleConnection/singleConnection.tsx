@@ -23,7 +23,7 @@ const SingleConnection: React.FC<SingleConnectionProps> = ({
       onClick={() => handleClick(connection.id ? connection.id : "none")}
     >
       <Box alignContent={"center"}>
-        <Image
+        <img
           src={`/images/connections/${connection.img}`}
           width="150px"
           height="100px"

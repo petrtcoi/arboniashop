@@ -201,11 +201,12 @@ const Model3180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/3180-0.jpeg"
                   alt="Белый радиатор Arbonia 3180"
-                  width={600}
-                  height={600}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                // width={600}
+                // height={600}/
                 />
               </Grid>
               <Grid
@@ -254,12 +255,13 @@ const Model3180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={4}
               >
-                <Image
+                <img
                   itemProp="image"
                   src="/images/models/3180-1.jpeg"
                   alt="Белый радиатор Arbonia 3180 69 ТВВ"
-                  width={600}
-                  height={600}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                // width={600}
+                // height={600}
                 />
               </Grid>
 
@@ -338,11 +340,12 @@ const Model3180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/7016-0.jpeg"
                   alt="Радиатор Arbonia 3180 RAL 7016"
-                  width={600}
-                  height={600}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                // width={600}
+                // height={600}
                 />
               </Grid>
               <Grid
@@ -410,11 +413,12 @@ const Model3180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/sf-3-2.jpeg"
                   alt="Радиатор Arbonia 3180 (SF-3 Anthrazit metallic)"
-                  width={600}
-                  height={600}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                // width={600}
+                // height={600}
                 />
               </Grid>
               <Grid
@@ -530,7 +534,7 @@ const Model3180: React.FC<SetComponentProps> = ({
 
 export default Model3180;
 
-export async function getStaticProps(): Promise<{ props: Props }> {
+export async function getStaticProps(): Promise<{ props: Props; }> {
   const models: ModelOrigin[] = await getModelsData();
   const colors: ColorOrigin[] = await getColorsData();
   const connections: ConnectionOrigin[] = await getConnectionsData();

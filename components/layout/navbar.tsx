@@ -195,7 +195,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
           <Box>
             <Link href="/">
               <a>
-                <Image
+                <img
                   layout="fixed"
                   src="/images/logo.png"
                   alt="Логотип Arbonia"

@@ -131,7 +131,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           </Typography>
         </Box>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/20230126-1.jpg"
             alt="Радиатор Arbonia 2030"
             width={600}
@@ -199,7 +199,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           </Typography>
         </Box>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/20230126_0.jpg"
             alt="Радиатор Arbonia 3030"
             width={600}

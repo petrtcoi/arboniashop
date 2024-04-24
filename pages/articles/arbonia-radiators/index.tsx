@@ -140,7 +140,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
         </Typography>
 
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/1.jpg"
             alt="Радиатор Arbonia 2-трубчатый со встроенным термовентилем"
             width={500}

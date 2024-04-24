@@ -99,7 +99,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           короткую, но более толстую 3-трубчатую.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/90.png"
             alt="2-трубчатый и 3-трубчатый радиаторы Arbonia"
             width={800}

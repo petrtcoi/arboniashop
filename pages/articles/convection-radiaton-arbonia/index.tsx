@@ -104,7 +104,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           конвекторов, чтобы понять, о чем идет речь.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/20230110_1.jpg"
             alt="Панельный и алюминиевый радиаторы"
             width={800}
@@ -231,7 +231,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           представляют из себя плоские алюминиевые листы.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/20230110_2.jpg"
             alt="Трубчатые радиаторы Arbonia"
             width={800}
@@ -305,7 +305,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           </ul>
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/20230110_3.jpg"
             alt="Потолочная инфракрасная панель"
             width={800}

@@ -1,17 +1,17 @@
-import React from "react"
-import { NextPage } from "next"
-import { Box, Typography } from "@mui/material"
-import Link from "next/link"
-import Image from "next/image"
+import React from "react";
+import { NextPage } from "next";
+import { Box, Typography } from "@mui/material";
+import Link from "next/link";
+import Image from "next/image";
 
-import PageTitle from "../../../components/pageTitle/pageTitle"
-import PageHeader from "../../../components/pageHeader/pageHeader"
-import Hero from "../../../components/hero/hero"
+import PageTitle from "../../../components/pageTitle/pageTitle";
+import PageHeader from "../../../components/pageHeader/pageHeader";
+import Hero from "../../../components/hero/hero";
 
-import * as styles from "../../../styles/styles"
-import global from "../../../variables/global"
+import * as styles from "../../../styles/styles";
+import global from "../../../variables/global";
 
-type ArticlePageProps = {}
+type ArticlePageProps = {};
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
   return (
@@ -109,7 +109,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
             </ul>
           </p>
           <Box textAlign={"center"}>
-            <Image
+            <img
               src="/images/articles/panorama/arbonia.jpg"
               alt="Вертикальные радиаторы Arbonia"
               width={600}
@@ -176,7 +176,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
         </Typography>
       </Box>
       <Box textAlign={"center"}>
-        <Image
+        <img
           src="/images/articles/panorama/arbonia1.jpg"
           alt="Низкие радиаторы Arbonia"
           width={600}
@@ -184,13 +184,13 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
         />
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default ArticlePage
+export default ArticlePage;
 
 export async function getStaticProps() {
   return {
     props: {}, // will be passed to the page component as props
-  }
+  };
 }

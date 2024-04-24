@@ -270,7 +270,7 @@ const Model2180: React.FC<SetComponentProps> = ({
                 textAlign="center"
                 marginTop="20px"
               >
-                <Image
+                <img
                   width={500}
                   height={500}
                   sizes={"500px"}
@@ -611,7 +611,7 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   itemProp="image"
                   src="/images/models/2180-1.jpeg"
                   alt={`Белый радиатор Arbonia 2180 ${SECTIONS_STRING} #{SECTIONS_POSTFIX}`}
@@ -786,7 +786,7 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/7016-0.jpeg"
                   alt={`Радиатор Arbonia 2180 ${SECTIONS_STRING} ${SECTIONS_POSTFIX} RAL 7016`}
                   width={600}
@@ -957,7 +957,7 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/sf-3-2.jpeg"
                   alt={`Радиатор Arbonia 2180 ${SECTIONS_QNTY} (SF-3 Anthrazit metallic)`}
                   width={600}
@@ -1132,7 +1132,7 @@ const Model2180: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={5}
               >
-                <Image
+                <img
                   src="/images/models/2180-9005.jpeg"
                   alt={`Радиатор Arbonia 2180 ${SECTIONS_QNTY} ${SECTIONS_POSTFIX} RAL9005 matt`}
                   width={600}

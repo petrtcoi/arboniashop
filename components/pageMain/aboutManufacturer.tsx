@@ -47,7 +47,7 @@ const AboutManufacturer: React.FC<AboutManufacturerProps> = () => {
           xs={12}
           md={6}
         >
-          <Image
+          <img
             loading="lazy"
             style={{ borderRadius: "10px", }}
             src="/images/arbonia-manufacturer.jpg"

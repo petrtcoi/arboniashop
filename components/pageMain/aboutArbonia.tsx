@@ -40,7 +40,7 @@ const AboutArbonia: React.FC<AboutArboniaProps> = () => {
         </Typography>
 
         <Box width="600px" maxWidth={"90%"} marginY="20px" border="1px solid lightgrey" borderRadius={"10px"} marginX="auto">
-          <Image
+          <img
             style={{ borderRadius: "10px", }}
             src="/images/arbonia-schema.jpg"
             width={"600px"}

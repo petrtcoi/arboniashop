@@ -657,7 +657,7 @@ const Catalog: NextPage<CatalogProps> = ({ models, colors, connections }) => {
                     marginTop="20px"
                   >
                     <div style={{ height: "150px" }}>
-                      <Image
+                      <img
                         // layout='fill'
                         height={150}
                         width={120}

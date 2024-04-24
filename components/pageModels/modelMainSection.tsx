@@ -75,7 +75,7 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
           >
             {/* <div style={ { width: '100%', height: '100%', position: 'relative' } }> */}
 
-            <Image
+            <img
               priority
               width="100%"
               height="100%"

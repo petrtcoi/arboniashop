@@ -85,7 +85,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           разместить на нужном расстоянии от стены.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/21.png"
             alt="Arbonia W161 + ZB0280"
             width={700}
@@ -127,7 +127,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           небольшую усадку.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/22.png"
             alt="Arbonia ZB0281 + ZB0282 + ZB0280"
             width={700}

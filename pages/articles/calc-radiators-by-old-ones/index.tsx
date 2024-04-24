@@ -89,7 +89,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           даже между подъездами внутри одного дома.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/2022122701.jpg"
             alt="Горзонтальный 3-трубчатый радиаторы Arbonia"
             width={800}
@@ -140,7 +140,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
           ширину, которые могут быть ограничены.
         </Typography>
         <Box textAlign={"center"}>
-          <Image
+          <img
             src="/images/articles/2022122702.jpg"
             alt="Вертикальный 3-трубчатый радиаторы Arbonia"
             width={800}

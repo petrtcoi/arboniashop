@@ -197,12 +197,12 @@ const Model2050: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={4}
               >
-                <Image
+                <img
                   itemProp="image"
                   src="/images/models/2050-12-2.jpeg"
                   alt="Белый радиатор Arbonia 2050 с боковым подключением"
-                  width={400}
-                  height={400}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                  width={"400px"}
                 />
               </Grid>
               <Grid
@@ -254,11 +254,11 @@ const Model2050: React.FC<SetComponentProps> = ({
                 xs={12}
                 md={4}
               >
-                <Image
+                <img
                   src="/images/models/2050-69.jpg"
                   alt="Радиатор Arbonia 2050 69 ТВВ"
-                  width={400}
-                  height={300}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                  width={"400px"}
                 />
               </Grid>
               <Grid
@@ -357,7 +357,7 @@ const Model2050: React.FC<SetComponentProps> = ({
 
 export default Model2050;
 
-export async function getStaticProps(): Promise<{ props: Props }> {
+export async function getStaticProps(): Promise<{ props: Props; }> {
   const models: ModelOrigin[] = await getModelsData();
   const colors: ColorOrigin[] = await getColorsData();
   const connections: ConnectionOrigin[] = await getConnectionsData();

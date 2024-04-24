@@ -63,7 +63,7 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
                 sm={2}
                 lg={2}
               >
-                <Image
+                <img
                   width={500}
                   height={500}
                   sizes="500px"

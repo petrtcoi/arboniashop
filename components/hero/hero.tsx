@@ -17,19 +17,19 @@ const Hero: React.FC<HeroProps> = ({ imgPath, header, subheader }) => {
       position="relative"
       width={"100%"}
       height={"400px"}
-      // sx={ {
-      //     backgroundImage: `url("${imgPath}")`,
-      //     backgroundSize: "cover",
-      //     textShadow: "0px 0px 5px rgb(0 0 0 / 60%"
-      // } }
+      sx={{
+        backgroundImage: `url("${imgPath}")`,
+        backgroundSize: "cover",
+        textShadow: "0px 0px 5px rgb(0 0 0 / 60%"
+      }}
     >
-      <Image
+      {/* <img
         src={imgPath}
         layout={"fill"}
         objectFit={"cover"}
         objectPosition={"top"}
         alt="Трубчатые радиаторы Arbonia"
-      />
+      /> */}
       <Box
         position="absolute"
         sx={{ bottom: "40px", left: "20px" }}

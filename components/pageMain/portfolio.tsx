@@ -16,7 +16,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
       <Grid container spacing={2}>
         <Grid item xs={6} md={3} textAlign="center">
           <Box marginTop="20px">
-            <Image
+            <img
               src="/images/portfolio/2.jpg"
               width="200px"
               height="200px"
@@ -32,7 +32,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         </Grid>
         <Grid item xs={6} md={3} textAlign="center">
           <Box marginTop="20px">
-            <Image
+            <img
               src="/images/portfolio/0.jpg"
               width={200}
               height={200}
@@ -48,7 +48,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         </Grid>
         <Grid item xs={6} md={3} textAlign="center">
           <Box marginTop="20px">
-            <Image
+            <img
               src="/images/portfolio/1.jpg"
               width="200px"
               height="200px"
@@ -64,7 +64,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         </Grid>
         <Grid item xs={6} md={3} textAlign="center">
           <Box marginTop="20px">
-            <Image
+            <img
               src="/images/portfolio/1.png"
               width="200px"
               height="200px"
@@ -80,7 +80,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         </Grid>
         <Grid item xs={6} md={3} textAlign="center">
           <Box marginTop="20px">
-            <Image
+            <img
               src="/images/portfolio/2.png"
               width="200px"
               height="200px"
@@ -96,7 +96,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         </Grid>
         <Grid item xs={6} md={3} textAlign="center">
           <Box marginTop="20px">
-            <Image
+            <img
               src="/images/portfolio/4.png"
               width="200px"
               height="200px"
@@ -112,7 +112,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         </Grid>
         <Grid item xs={6} md={3} textAlign="center">
           <Box marginTop="20px">
-            <Image
+            <img
               src="/images/portfolio/6.png"
               width="200px"
               height="200px"
@@ -128,7 +128,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         </Grid>
         <Grid item xs={6} md={3} textAlign="center">
           <Box marginTop="20px">
-            <Image
+            <img
               src="/images/portfolio/7.png"
               width="200px"
               height="200px"

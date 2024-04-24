@@ -72,7 +72,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
             textAlign="center"
             marginTop="20px"
           >
-            <Image
+            <img
               width={500}
               height={500}
               sizes={"500px"}

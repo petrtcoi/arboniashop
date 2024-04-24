@@ -35,7 +35,7 @@ const SingleColor: React.FC<SingleColorProps> = ({
           display: "inline-block",
         }}
       >
-        <Image
+        <img
           src={`/images/colors/${color.img}`}
           width={150}
           height={100}

@@ -80,7 +80,7 @@ const Bestsellers: React.FC<BestsellersProps> = (props) => {
     color: color9016,
     connection: connection12,
     currencyRate: rateEuro,
-    sectionQnty: 10,
+    sectionQnty: 8,
   });
 
   const model3050 = models.find(x => x.id === "3050-9016-12") || models[0];
@@ -89,7 +89,7 @@ const Bestsellers: React.FC<BestsellersProps> = (props) => {
     color: color9016,
     connection: connection12,
     currencyRate: rateEuro,
-    sectionQnty: 10,
+    sectionQnty: 8,
   });
 
   return (

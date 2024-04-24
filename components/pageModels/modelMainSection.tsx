@@ -76,11 +76,8 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
             {/* <div style={ { width: '100%', height: '100%', position: 'relative' } }> */}
 
             <img
-              priority
               width="100%"
               height="100%"
-              layout="responsive"
-              objectFit="contain"
               src={imagePrimaryPath}
               itemProp="image"
               alt={`Трубчатый радиатор ${modelCurr.name}`}

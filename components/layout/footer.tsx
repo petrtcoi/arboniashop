@@ -45,7 +45,6 @@ const Footer: NextComponentType<FooterProps> = () => {
         <Link href="/">
           <a itemProp={"url"}>
             <img
-              layout="fixed"
               src="/images/logo.png"
               alt="Arbonia column radiators"
               width={"130px"}

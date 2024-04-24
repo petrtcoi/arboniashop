@@ -25,7 +25,6 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 style={{ ...styles.roundSquareImage, display: "inline-block" }}
               >
                 <img
-                  priority
                   src="/images/advantages/1.jpg"
                   width={"200px"}
                   height={"200px"}
@@ -52,7 +51,6 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 style={{ ...styles.roundSquareImage, display: "inline-block" }}
               >
                 <img
-                  priority
                   src="/images/advantages/2.jpg"
                   width={"200px"}
                   height={"200px"}
@@ -79,7 +77,6 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 style={{ ...styles.roundSquareImage, display: "inline-block" }}
               >
                 <img
-                  priority
                   src="/images/advantages/3.jpg"
                   width={"200px"}
                   height={"200px"}
@@ -106,7 +103,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 style={{ ...styles.roundSquareImage, display: "inline-block" }}
               >
                 <img
-                  priority
+
                   src="/images/advantages/4.jpg"
                   width={"200px"}
                   height={"200px"}
@@ -132,7 +129,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 style={{ ...styles.roundSquareImage, display: "inline-block" }}
               >
                 <img
-                  priority
+
                   src="/images/advantages/5.jpg"
                   width={"200px"}
                   height={"200px"}
@@ -161,7 +158,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
                 style={{ ...styles.roundSquareImage, display: "inline-block" }}
               >
                 <img
-                  priority
+
                   src="/images/advantages/6.jpg"
                   width={"200px"}
                   height={"200px"}

@@ -196,7 +196,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
             <Link href="/">
               <a>
                 <img
-                  layout="fixed"
+                  // layout="fixed"
                   src="/images/logo.png"
                   alt="Логотип Arbonia"
                   width={130}

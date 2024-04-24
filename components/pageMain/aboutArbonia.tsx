@@ -41,10 +41,9 @@ const AboutArbonia: React.FC<AboutArboniaProps> = () => {
 
         <Box width="600px" maxWidth={"90%"} marginY="20px" border="1px solid lightgrey" borderRadius={"10px"} marginX="auto">
           <img
-            style={{ borderRadius: "10px", }}
+            style={{ borderRadius: "10px", maxWidth: "100%", height: "auto" }}
             src="/images/arbonia-schema.jpg"
             width={"600px"}
-            height={"228px"}
             sizes="700px"
             alt="Габариты радиаторов Arbonia"
           />

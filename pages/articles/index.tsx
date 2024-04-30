@@ -169,6 +169,49 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
             </Box>
           </Grid>
 
+
+          <Grid
+            item
+            md={6}
+          >
+            <Box>
+              <Link href="/articles/column-radiators">
+                <a style={{ textDecoration: "none" }}>
+                  <Box textAlign={"center"}>
+                    <img
+                      src="/images/models/sf-3-0.jpeg"
+                      alt="Трубчатые радиаторы"
+                      width={300}
+                      height={300}
+                    />
+                  </Box>
+                  <Box
+                    textAlign={"center"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.standardTextRedLink }}
+                      component="span"
+                    >
+                      Трубчатые радиаторы. Особенности, преимущества и недостатки.
+                    </Typography>
+                  </Box>
+                  <Box
+                    textAlign={"justify"}
+                    marginTop="10px"
+                  >
+                    <Typography
+                      sx={{ ...styles.smallText }}
+                      component="span"
+                    >
+                      Трубчатые радиаторы являются одним из самых востребованных видов отопительного оборудования в России, сочетая в себе практичность, долговечность и высокую теплоотдачу. Современные технологии лазерной сварки, используемые при производстве, гарантируют высокую надёжность и стабильность этих радиаторов...
+                    </Typography>
+                  </Box>
+                </a>
+              </Link>
+            </Box>
+          </Grid>
+
           <Grid
             item
             md={6}

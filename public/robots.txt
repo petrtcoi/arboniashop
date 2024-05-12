@@ -7,8 +7,17 @@ Disallow: /accepted
 # Host
 Host: https://arboniashop.ru
 
+# Clean param
+User-agent: Yandex
+Clean-param: etext /*
+Clean-param: utmattachment_id /*
+Clean-param: yadclid /*
+Clean-param: yadordid /*
+Clean-param: yhyd /*
+Clean-param: p /*
+Clean-param: erid /*
+
 # Sitemaps
 Sitemap: https://arboniashop.ru/sitemap.xml
 Sitemap: https://arboniashop.ru/sitemap-0.xml
 
-Clean-param: etext /*

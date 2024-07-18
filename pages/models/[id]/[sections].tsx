@@ -1,25 +1,25 @@
 import { NextPage } from 'next'
-import { useState } from 'react'
 import Link from 'next/link'
+import { useState } from 'react'
 
-import { Box, Typography, Divider, Tabs, Tab } from '@mui/material'
+import { Box, Divider, Tab, Tabs, Typography } from '@mui/material'
 
-import ImagesOtherList from '../../../components/pageModels/imagesOtherList'
-import DownloadsBlock from '../../../components/pageModels/downloadsBlock'
 import PageHeader from '../../../components/pageHeader/pageHeader'
+import DownloadsBlock from '../../../components/pageModels/downloadsBlock'
+import ImagesOtherList from '../../../components/pageModels/imagesOtherList'
 import RadiatorInfo from '../../../components/pageRadiator/radiatorInfo'
 import PageTitle from '../../../components/pageTitle/pageTitle'
 
-import getModelsData from '../../../api_utils/getModelsData'
-import getConnectionsData from '../../../api_utils/getConnectionsData'
 import getColorsData from '../../../api_utils/getColorsData'
+import getConnectionsData from '../../../api_utils/getConnectionsData'
+import getModelsData from '../../../api_utils/getModelsData'
 
-import { ModelOrigin } from '../../../models/modelOrigin.model'
-import { ConnectionOrigin } from '../../../models/connectionOrigin.model'
 import { ColorOrigin } from '../../../models/colorOrigin.model'
+import { ConnectionOrigin } from '../../../models/connectionOrigin.model'
+import { ModelOrigin } from '../../../models/modelOrigin.model'
 
-import global from '../../../variables/global'
 import GeneralTextAboutArboniaProps from '../../../components/generalTextAboutArbonia'
+import global from '../../../variables/global'
 
 import * as styles from '../../../styles/styles'
 
@@ -53,16 +53,9 @@ const Radiator: NextPage<RadiatorProps> = ({
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
-					{ title: 'Каталог', link: '/catalog' },
 					{
 						title: `Arbonia ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}`,
 						link: `/models/${model.id}`,
-					},
-					{
-						title: `${
-							sectionQnty >= 10 ? sectionQnty : '0' + sectionQnty
-						} секции(й)`,
-						link: '/catalog',
 					},
 				]}
 			/>

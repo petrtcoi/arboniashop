@@ -18,6 +18,11 @@ module.exports = {
 				destination: '/models/2180',
 				permanent: true,
 			},
+			{
+				source: '/catalog',
+				destination: '/',
+				permanent: true,
+			},
 		]
 	},
 	async headers() {

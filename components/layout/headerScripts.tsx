@@ -26,11 +26,11 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
 				}}
 			/>
 
-			<Script
+			{/* <Script
 				id='Jivo'
 				strategy='afterInteractive'
 				src='//code-ya.jivosite.com/widget/y6IaQXr7wR'
-			/>
+			/> */}
 
 			<Script
 				id='top-mail-ru-counter'
@@ -60,6 +60,26 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
 					/>
 				</div>
 			</noscript>
+
+			<Script
+				id='amo-social-button'
+				strategy='afterInteractive'
+				dangerouslySetInnerHTML={{
+					__html: `
+            setTimeout(function() {
+              (function(a,m,o,c,r,m){ 
+                a[m]={id:"414232",hash:"992692e5785bb2206dfa0458ff77f97d80bbe8016218c98fcdb2255819e2feab",locale:"ru",inline:false,setMeta:function(p){this.params=(this.params||[]).concat([p])}};
+                a[o]=a[o]||function(){(a[o].q=a[o].q||[]).push(arguments)};
+                var d=a.document,s=d.createElement('script');
+                s.async=true;
+                s.id=m+'_script';
+                s.src='https://gso.amocrm.ru/js/button.js';
+                d.head&&d.head.appendChild(s);
+              })(window,0,'amoSocialButton',0,0,'amo_social_button');
+            }, 5000);
+          `,
+				}}
+			/>
 		</>
 	)
 }

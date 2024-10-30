@@ -26,12 +26,6 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
 				}}
 			/>
 
-			{/* <Script
-				id='Jivo'
-				strategy='afterInteractive'
-				src='//code-ya.jivosite.com/widget/y6IaQXr7wR'
-			/> */}
-
 			<Script
 				id='top-mail-ru-counter'
 				strategy='afterInteractive'

@@ -4,7 +4,7 @@ const global: { [key: string]: any } = {
 	phone495String: '(495)  204-29-55',
 	phone495: '+74952042955',
 	whatsAppString: '+1 (218) 516-15-29',
-	whatsApp: '12185161529',
+	whatsApp: '79006522658',
 	pages: [
 		['Главная', '/'],
 		['О магазине', '/about'],

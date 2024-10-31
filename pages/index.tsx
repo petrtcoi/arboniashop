@@ -1,11 +1,10 @@
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import type { NextPage } from 'next'
 
 import getColorsData from '../api_utils/getColorsData'
 import getConnectionsData from '../api_utils/getConnectionsData'
 import getModelsData from '../api_utils/getModelsData'
 import BlockHowReadModel from '../components/blockHowReadModel/blockHowReadModel'
-import Hero from '../components/hero/hero'
 import PageHeader from '../components/pageHeader/pageHeader'
 import AboutArbonia from '../components/pageMain/aboutArbonia'
 import AboutManufacturer from '../components/pageMain/aboutManufacturer'
@@ -30,27 +29,35 @@ const Home: NextPage<Props> = (props: Props) => {
 	return (
 		<Box>
 			<PageHeader
-				title={
-					'Радиаторы Arbonia купить в Москве и Петербурге | доставка по Росси | Гарантия 10 лет'
-				}
+				title={'Радиаторы Arbonia купить в Москве и Петербурге | доставка по Росси | Гарантия 10 лет'}
 				description={
 					'Радиаторы Arbonia в наличии и под заказ. Быстрая доставка в любой город России. Официальная гарантия 10 лет. В наличии наиболее популярные модели.'
 				}
 			/>
 			<PageTitle
 				header={'Радиаторы Arbonia с официальной гарантией 10 лет'}
-				subheader={
-					'Доставка со складов в Москве и Санкт-Петербурге в любой город России'
-				}
+				subheader={'Доставка со складов в Москве и Санкт-Петербурге в любой город России'}
 			/>
 
-			<Hero
+			{/* <Hero
 				imgPath={'/images/sliders/high.jpeg'}
 				header={'Трубчатые радиаторы Arbonia'}
-				subheader={
-					'Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ.'
-				}
-			/>
+				subheader={'Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ.'}
+			/> */}
+			<Box>
+				<Typography
+					variant='h4'
+					component={'h1'}
+					align='center'
+					sx={{ marginTop: '50px' }}
+				>
+					Трубчатые радиаторы <span style={{ color: '#EF7D00', fontWeight: 600 }}>Arbonia</span>
+				</Typography>
+				<Typography style={{ fontSize: '0.8rem', textAlign: 'center', opacity: 0.9 }}>
+					Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ
+				</Typography>
+			</Box>
+
 			<Box>
 				<Box
 					marginTop='50px'

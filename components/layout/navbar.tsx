@@ -138,7 +138,10 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 						))}
 					</Box>
 					<Hidden smDown>
-						<Box mr={1}>
+						<Box
+							mr={1}
+							marginLeft={'50px'}
+						>
 							<LocalPhoneIcon
 								color='secondary'
 								sx={{ fontSize: '16px', marginTop: '6px' }}

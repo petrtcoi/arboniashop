@@ -41,49 +41,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						item
 						md={6}
 					>
-						<Box>
-							<Link href='/articles/termostat'>
-								<a style={{ textDecoration: 'none' }}>
-									<Box textAlign={'center'}>
-										<img
-											src='/images/articles/2050-12-2.jpeg'
-											alt='Трубчатый радиатор Arbonia'
-											width={300}
-											height={300}
-										/>
-									</Box>
-									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
-										<Typography
-											sx={{ ...styles.standardTextRedLink }}
-											component='span'
-										>
-											Правильная установка термостата на радиаторы Arbonia
-										</Typography>
-									</Box>
-									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-									>
-										<Typography
-											sx={{ ...styles.smallText }}
-											component='span'
-										>
-											Подборка частых вопросов про радиаторы Arbonia и ответом на них. Где производятся? Какие давление
-											держат? И т.д...
-										</Typography>
-									</Box>
-								</a>
-							</Link>
-						</Box>
-					</Grid>
-					<Grid
-						item
-						md={6}
-					>
-						<Box>
+						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
 							<Link href='/articles/faq'>
 								<a style={{ textDecoration: 'none' }}>
 									<Box textAlign={'center'}>
@@ -108,6 +66,54 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Подборка частых вопросов про радиаторы Arbonia и ответом на них. Где производятся? Какие давление
+											держат? И т.д...
+										</Typography>
+									</Box>
+								</a>
+							</Link>
+						</Box>
+					</Grid>
+					<Grid
+						item
+						md={6}
+					>
+						<Box>
+							<Link href='/articles/termostat'>
+								<a style={{ textDecoration: 'none' }}>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/2050-12-2.jpeg'
+											alt='Трубчатый радиатор Arbonia'
+											width={300}
+											height={300}
+										/>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Правильная установка термостата на радиаторы Arbonia
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -121,6 +127,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 							</Link>
 						</Box>
 					</Grid>
+
 					<Grid
 						item
 						md={6}
@@ -137,8 +144,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -150,6 +159,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -180,8 +191,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -193,6 +206,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -224,8 +239,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -237,6 +254,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -269,8 +288,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -282,6 +303,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -314,8 +337,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -327,6 +352,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -359,8 +386,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -372,6 +401,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -405,8 +436,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -418,6 +451,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -449,8 +484,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -462,6 +499,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -493,8 +532,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -506,6 +547,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -536,8 +579,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -549,6 +594,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -579,8 +626,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -592,6 +641,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -622,8 +673,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -635,6 +688,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -665,8 +720,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -678,6 +735,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}
@@ -708,8 +767,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
+										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
@@ -721,6 +782,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box
 										textAlign={'justify'}
 										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
 									>
 										<Typography
 											sx={{ ...styles.smallText }}

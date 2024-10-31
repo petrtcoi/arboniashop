@@ -6,14 +6,7 @@ import Link from 'next/link'
 
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import MenuIcon from '@mui/icons-material/Menu'
-import {
-	AppBar,
-	Box,
-	Hidden,
-	IconButton,
-	Toolbar,
-	Typography,
-} from '@mui/material'
+import { AppBar, Box, Hidden, IconButton, Toolbar, Typography } from '@mui/material'
 import Container from '@mui/material/Container'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
@@ -36,15 +29,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 	const handleCloseNavMenu = () => {
 		setAnchorElNav(null)
 	}
-	const myLoader = ({
-		src,
-		width,
-		quality,
-	}: {
-		src: any
-		width: number
-		quality: number
-	}) => {
+	const myLoader = ({ src, width, quality }: { src: any; width: number; quality: number }) => {
 		return `{src}?w=${width}&q=${quality || 75}`
 	}
 
@@ -164,7 +149,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 						<Typography
 							textAlign='center'
 							variant='body1'
-							sx={{ ...styles.standardText }}
+							sx={{ ...styles.standardText, minWidth: '120px' }}
 						>
 							<Link href={`tel:${global.phone495}`}>
 								<a
@@ -202,7 +187,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 									// layout="fixed"
 									src='/images/logo.png'
 									alt='Логотип Arbonia'
-									width={130}
+									width={102}
 									height={50}
 								/>
 							</a>

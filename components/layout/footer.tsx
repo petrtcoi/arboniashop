@@ -47,7 +47,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 						<img
 							src='/images/logo.png'
 							alt='Arbonia column radiators'
-							width={'130px'}
+							width={'102px'}
 							height={'50px'}
 							itemProp={'logo'}
 						/>

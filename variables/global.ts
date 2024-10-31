@@ -12,6 +12,7 @@ const global: { [key: string]: any } = {
 		['Доставка и оплата', '/delivery'],
 		['Запрос на радиаторы', '/request'],
 		['Информация', '/articles'],
+		['Вопрос-Ответ', '/articles/faq'],
 	],
 	website: 'www.arboniashop.ru',
 	email: 'mail@arboniashop.ru',

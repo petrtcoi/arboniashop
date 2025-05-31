@@ -85,7 +85,12 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 	}
 
 	return (
-		<Box paddingTop='30px'>
+		<Box
+			paddingTop='30px'
+			display={'flex'}
+			flexDirection='column'
+			alignItems='center'
+		>
 			<Typography
 				variant='h4'
 				component='h2'
@@ -96,16 +101,27 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 				Оформить заказ
 			</Typography>
 
-			<Box paddingTop='30px'>
+			<Box
+				paddingTop='30px'
+				display={'flex'}
+				flexDirection='column'
+				width='100%'
+				alignItems='center'
+			>
 				<Grid
 					container
 					spacing={2}
+					alignItems='center'
+					margin={'auto'}
 				>
 					<Grid
 						item
 						xs={12}
 						md={6}
 						lg={4}
+						alignItems={'center'}
+						margin={'auto'}
+						justifyContent={'center'}
 					>
 						<TextField
 							required
@@ -123,6 +139,7 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 					<Grid
 						item
 						xs={12}
+						margin={'auto'}
 						md={6}
 						lg={4}
 					>
@@ -144,6 +161,7 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 						xs={12}
 						md={6}
 						lg={4}
+						margin={'auto'}
 					>
 						<TextField
 							fullWidth
@@ -154,20 +172,26 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 							onChange={handleDataInput('address')}
 						/>
 					</Grid>
+
 					<Box
 						width='100%'
 						marginTop='30px'
-						paddingLeft='20px'
 					>
-						<Typography sx={errors.contacts ? styles.smallTextBoldRed : styles.smallTextBold}>
-							Пожалуйста, укажите телефон и/или почту для связи:
-						</Typography>
+						<Box
+							maxWidth='540px'
+							margin={'auto'}
+						>
+							<Typography sx={errors.contacts ? styles.smallTextBoldRed : styles.smallTextBold}>
+								Пожалуйста, укажите телефон и/или почту для связи:
+							</Typography>
+						</Box>
 					</Box>
 					<Grid
 						item
 						xs={12}
 						md={6}
 						lg={4}
+						margin={'auto'}
 					>
 						<TextField
 							required
@@ -187,6 +211,7 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 						xs={12}
 						md={6}
 						lg={4}
+						margin={'auto'}
 					>
 						<TextField
 							required
@@ -206,6 +231,7 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 						xs={12}
 						md={6}
 						lg={4}
+						margin={'auto'}
 					>
 						<TextField
 							fullWidth
@@ -231,53 +257,55 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 								md={6}
 								lg={4}
 								textAlign={'right'}
+								margin={'auto'}
 							>
 								<Typography sx={styles.smallTextBoldRed}>Во время отправки заказа возникла ошибка.</Typography>
 							</Grid>
 						</>
 					)}
-
-					<Box
-						marginTop={'30px'}
-						width='100%'
-						display={'flex'}
-						flexDirection='row'
-						gap='10px'
-						alignItems='center'
-						maxWidth={'400px'}
-						padding='20px'
-					>
-						<Checkbox
-							checked={checked}
-							onChange={x => setChecked(x.target.checked)}
-						/>
-						<Typography sx={styles.smallText}>
-							Подтверждая заказ, Вы соглашаетесь с условиями{' '}
-							<a
-								href='/privacy'
-								target='_blank'
-								className='underline hover:no-underline'
-							>
-								Политики конфиденциальности
-							</a>
-							,{' '}
-							<a
-								href='/oferta'
-								target='_blank'
-								className='underline hover:no-underline'
-							>
-								Оферты
-							</a>
-							, и{' '}
-							<a
-								href='/agreement'
-								target='_blank'
-								className='underline hover:no-underline'
-							>
-								Пользовательского соглашения
-							</a>
-							.
-						</Typography>
+					<Box width='100%'>
+						<Box
+							marginTop={'30px'}
+							maxWidth={'400px'}
+							margin={'auto'}
+							display={'flex'}
+							flexDirection='row'
+							gap='10px'
+							alignItems='center'
+							padding='20px'
+						>
+							<Checkbox
+								checked={checked}
+								onChange={x => setChecked(x.target.checked)}
+							/>
+							<Typography sx={styles.smallText}>
+								Подтверждая заказ, Вы соглашаетесь с условиями{' '}
+								<a
+									href='/privacy'
+									target='_blank'
+									className='underline hover:no-underline'
+								>
+									Политики конфиденциальности
+								</a>
+								,{' '}
+								<a
+									href='/oferta'
+									target='_blank'
+									className='underline hover:no-underline'
+								>
+									Оферты
+								</a>
+								, и{' '}
+								<a
+									href='/agreement'
+									target='_blank'
+									className='underline hover:no-underline'
+								>
+									Пользовательского соглашения
+								</a>
+								.
+							</Typography>
+						</Box>
 					</Box>
 
 					<Box width='100%' />

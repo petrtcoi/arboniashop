@@ -266,7 +266,7 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 					<Box width='100%'>
 						<Box
 							marginTop={'30px'}
-							maxWidth={'400px'}
+							maxWidth={'540px'}
 							margin={'auto'}
 							display={'flex'}
 							flexDirection='row'

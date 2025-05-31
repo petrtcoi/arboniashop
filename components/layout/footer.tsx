@@ -229,7 +229,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 					xs={12}
 					md={8}
 				>
-					<Typography sx={footerText}>© 2024 ArboniaShop.ru – магазин радиаторов Arbonia</Typography>
+					<Typography sx={footerText}>© 2025 ArboniaShop.ru – магазин радиаторов Arbonia</Typography>
 				</Grid>
 			</Grid>
 		</Box>

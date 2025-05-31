@@ -4,6 +4,7 @@ import { NextComponentType } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { ReactElement, useEffect, useReducer, useState } from 'react'
+import { CookieAlert } from './CookieAlert'
 
 import theme from './../../theme/theme'
 
@@ -99,6 +100,7 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 					</ShoppingCartContext.Provider>
 				</Container>
 			</ThemeProvider>
+			<CookieAlert />
 		</Box>
 	)
 }

@@ -42,6 +42,50 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
+							<Link href='/articles/montazh-radiatorov-arbonia-rekomendacii'>
+								<a style={{ textDecoration: 'none' }}>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/3030.jpg'
+											alt='Монтаж радиатороа Arbonia'
+											width={300}
+											height={300}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Рекомендации по монтажу радиаторов Arbonia
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Чтобы радиаторы Arbonia работали эффективно и служили долго, установка должна проводиться с
+											соблюдением всех технических требований...
+										</Typography>
+									</Box>
+								</a>
+							</Link>
+						</Box>
+					</Grid>
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
 							<Link href='/articles/faq'>
 								<a style={{ textDecoration: 'none' }}>
 									<Box textAlign={'center'}>

@@ -42,6 +42,50 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
+							<Link href='/articles/care'>
+								<a style={{ textDecoration: 'none' }}>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/20250814.jpg'
+											alt='Правильный уход за радиаторами Arbonia'
+											width={300}
+											height={300}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Правильный уход за радиаторами Arbonia
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Трубчатые радиаторы Arbonia — это не только эффективный источник тепла, но и важный элемент
+											интерьера. Их высококачественное покрытие рассчитано на десятилетия службы...
+										</Typography>
+									</Box>
+								</a>
+							</Link>
+						</Box>
+					</Grid>
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
 							<Link href='/articles/montazh-radiatorov-arbonia-rekomendacii'>
 								<a style={{ textDecoration: 'none' }}>
 									<Box textAlign={'center'}>

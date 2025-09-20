@@ -30,12 +30,7 @@ type RadiatorProps = {
 	sectionQnty: number
 }
 
-const Radiator: NextPage<RadiatorProps> = ({
-	model,
-	color,
-	connection,
-	sectionQnty,
-}) => {
+const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQnty }) => {
 	const [tab, setTab] = useState<string>('docs')
 	const handleChangeTab = (event: React.SyntheticEvent, newTab: string) => {
 		setTab(newTab)
@@ -66,9 +61,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 					<Box>
 						<Link href='/models/2180'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 2180
 								</Typography>
 							</a>
@@ -80,9 +73,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 					<Box>
 						<Link href='/models/2050'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 2050
 								</Typography>
 							</a>
@@ -94,9 +85,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 					<Box>
 						<Link href='/models/3030'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 3030
 								</Typography>
 							</a>
@@ -108,9 +97,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 					<Box>
 						<Link href='/models/2057'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 2057
 								</Typography>
 							</a>
@@ -122,9 +109,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 					<Box>
 						<Link href='/models/3180'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 3180
 								</Typography>
 							</a>
@@ -136,9 +121,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 					<Box>
 						<Link href='/models/3057'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 3057
 								</Typography>
 							</a>
@@ -150,9 +133,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 					<Box>
 						<Link href='/models/3050'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 3050
 								</Typography>
 							</a>
@@ -161,16 +142,12 @@ const Radiator: NextPage<RadiatorProps> = ({
 				)}
 				{/* Shit code end */}
 				<PageHeader
-					title={`Arbonia ${model.nameShort}-${sectionQnty} ${color.nameShort} ${connection.nameShort} | купить выгодно`}
-					description={`Arbonia ${model.nameShort}-${sectionQnty}, ${
-						model.nameShort[0]
-					}-трубчатая модель, ${color.nameShort}, ${connection.nameShort}, ${
-						model.height
-					}x${model.width}x${
+					title={`Радиатор Arbonia ${model.nameShort}-${sectionQnty} ${color.nameShort} ${connection.nameShort} | купить выгодно`}
+					description={`Arbonia ${model.nameShort}-${sectionQnty}, ${model.nameShort[0]}-трубчатая модель, ${
+						color.nameShort
+					}, ${connection.nameShort}, ${model.height}x${model.width}x${
 						parseInt(model.lengthSection) * sectionQnty + 26
-					} мм. ${
-						parseInt(model.dt60) * sectionQnty
-					} Вт (при dT=60C). Выгодные цены. Гарантия 10 лет.`}
+					} мм. ${parseInt(model.dt60) * sectionQnty} Вт (при dT=60C). Выгодные цены. Гарантия 10 лет.`}
 				/>
 				<Box
 					marginBottom={'50px'}
@@ -250,9 +227,7 @@ const Radiator: NextPage<RadiatorProps> = ({
 
 export default Radiator
 
-export async function getStaticProps(context: {
-	params: { id: string; sections: string }
-}) {
+export async function getStaticProps(context: { params: { id: string; sections: string } }) {
 	const modelId = context.params.id
 	const sectionQnty = +context.params.sections
 
@@ -265,8 +240,7 @@ export async function getStaticProps(context: {
 	const connectionId = model.connection || connections[0]
 
 	const color = colors.find(x => x.id === colorId) || colors[0]
-	const connection =
-		connections.find(x => x.id === connectionId) || connections[0]
+	const connection = connections.find(x => x.id === connectionId) || connections[0]
 
 	return {
 		props: {

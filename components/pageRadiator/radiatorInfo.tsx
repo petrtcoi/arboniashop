@@ -1,20 +1,20 @@
-import React, { useContext } from 'react'
 import { Box, Grid, Typography } from '@mui/material'
 import Image from 'next/image'
+import React, { useContext } from 'react'
 
 import AddToCartButton from '../addToCartButton/addToCartButton'
 
-import { ModelOrigin } from '../../models/modelOrigin.model'
-import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ColorOrigin } from '../../models/colorOrigin.model'
+import { ConnectionOrigin } from '../../models/connectionOrigin.model'
+import { ModelOrigin } from '../../models/modelOrigin.model'
 
 import { CurrencyContext } from '../../contexts/currencyContext'
 
-import getRadiatorData from '../../utils/getRadiatorData'
 import calcRadiatorCost from '../../utils/calcRadiatorCost'
+import getRadiatorData from '../../utils/getRadiatorData'
 
-import global from '../../variables/global'
 import * as styles from '../../styles/styles'
+import global from '../../variables/global'
 
 // import FeaturesTable from './featuresTable'
 
@@ -25,12 +25,7 @@ type ModelMainSectionProps = {
 	sectionQnty: number
 }
 
-const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
-	model,
-	color,
-	connection,
-	sectionQnty,
-}) => {
+const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connection, sectionQnty }) => {
 	const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
 	const { rateEuro, isFetching } = useContext(CurrencyContext)
 
@@ -41,14 +36,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
 		sectionQnty,
 		currencyRate: rateEuro,
 	})
-	const {
-		skuString,
-		lengthString,
-		dt50String,
-		dt60String,
-		priceString,
-		oldPriceString,
-	} = getRadiatorData({
+	const { skuString, lengthString, dt50String, dt60String, priceString, oldPriceString } = getRadiatorData({
 		model,
 		color,
 		connection,
@@ -109,10 +97,8 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
 							// sx={{ border: "1px solid #333333", borderRadius: "10px" }}
 							textAlign='left'
 						>
-							<Box visibility={isFetching ? 'visible' : 'hidden'}>
-								<Typography
-									sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}
-								>
+							<Box visibility={isFetching ? 'hidden' : 'hidden'}>
+								<Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
 									подождите, обновляется курс валют...
 								</Typography>
 							</Box>
@@ -139,10 +125,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
 										/>
 										<meta
 											itemProp='price'
-											content={priceString
-												.replace(',', '')
-												.replace(' ', '')
-												.trim()}
+											content={priceString.replace(',', '').replace(' ', '').trim()}
 										/>
 										{priceString}
 									</span>{' '}
@@ -179,9 +162,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
 						{/* БЛОК ХАРАКТЕРИСТИК */}
 						<Box marginTop='30px'>
 							<Box>
-								<Typography sx={{ ...styles.smallTextThin }}>
-									Общие характеристики
-								</Typography>
+								<Typography sx={{ ...styles.smallTextThin }}>Общие характеристики</Typography>
 								<Box paddingLeft='30px'>
 									<Box>
 										<Typography
@@ -287,9 +268,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
 							</Box>
 
 							<Box marginTop='30px'>
-								<Typography sx={{ ...styles.smallTextThin }}>
-									Габариты
-								</Typography>
+								<Typography sx={{ ...styles.smallTextThin }}>Габариты</Typography>
 								<Box paddingLeft='30px'>
 									<Box>
 										<Typography
@@ -340,9 +319,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
 							</Box>
 
 							<Box marginTop='30px'>
-								<Typography sx={{ ...styles.smallTextThin }}>
-									Мощность
-								</Typography>
+								<Typography sx={{ ...styles.smallTextThin }}>Мощность</Typography>
 								<Box paddingLeft='30px'>
 									<Box>
 										<Typography
@@ -390,9 +367,7 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({
 											display='inline'
 											itemProp='weight'
 										>
-											{Math.floor(+model.weightSection * sectionQnty * 100) /
-												100}{' '}
-											кг
+											{Math.floor(+model.weightSection * sectionQnty * 100) / 100} кг
 										</Typography>
 									</Box>
 									<Box>

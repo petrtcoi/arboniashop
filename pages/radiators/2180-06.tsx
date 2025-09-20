@@ -1,27 +1,27 @@
-import React, { useContext, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
 import { Box, Grid, Typography } from "@mui/material";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useContext, useRef } from "react";
 
-import PageHeader from "../../components/pageHeader/pageHeader";
 import Hero from "../../components/hero/hero";
+import PageHeader from "../../components/pageHeader/pageHeader";
 
 import { SetComponentProps } from "../../models/setComponentProps.model";
 
 
-import getModelsData from "../../api_utils/getModelsData";
-import { ColorOrigin } from "../../models/colorOrigin.model";
-import { ModelOrigin } from "../../models/modelOrigin.model";
-import { ConnectionOrigin } from "../../models/connectionOrigin.model";
 import getColorsData from "../../api_utils/getColorsData";
 import getConnectionsData from "../../api_utils/getConnectionsData";
+import getModelsData from "../../api_utils/getModelsData";
+import { ColorOrigin } from "../../models/colorOrigin.model";
+import { ConnectionOrigin } from "../../models/connectionOrigin.model";
+import { ModelOrigin } from "../../models/modelOrigin.model";
 
-import ImagesOtherList from "../../components/pageModels/imagesOtherList";
+import AddToCartButton from "../../components/addToCartButton/addToCartButton";
 import DownloadsBlock from "../../components/pageModels/downloadsBlock";
+import ImagesOtherList from "../../components/pageModels/imagesOtherList";
 import { CurrencyContext } from "../../contexts/currencyContext";
 import calcRadiatorCost from "../../utils/calcRadiatorCost";
 import getRadiatorData from "../../utils/getRadiatorData";
-import AddToCartButton from "../../components/addToCartButton/addToCartButton";
 
 import * as styles from "../../styles/styles";
 import global from "../../variables/global";
@@ -316,7 +316,7 @@ const Model2180: React.FC<SetComponentProps> = ({
                   // sx={{ border: "1px solid #333333", borderRadius: "10px" }}
                   textAlign="left"
                 >
-                  <Box visibility={isFetching ? "visible" : "hidden"}>
+                  <Box visibility={isFetching ? "hidden" : "hidden"}>
                     <Typography
                       sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}
                     >

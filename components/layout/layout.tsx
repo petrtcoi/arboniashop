@@ -34,6 +34,13 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 		trackPage(newPath)
 	}, [router.asPath])
 
+	let canonicalUrl = `https://zehnders.ru${router.asPath}`
+	const paths = canonicalUrl.split('/')
+	if (canonicalUrl.includes('/models/') && paths.length === 6) {
+		const newPaths = paths.slice(0, 5)
+		canonicalUrl = newPaths.join('/')
+	}
+
 	return (
 		<Box padding='0px'>
 			<Head>
@@ -73,7 +80,7 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 				/>
 				<link
 					rel='canonical'
-					href={`https://arboniashop.ru${router.asPath}`}
+					href={canonicalUrl}
 				/>
 			</Head>
 			<ThemeProvider theme={theme}>

@@ -55,9 +55,7 @@ const Model: NextPage<ModelProps> = ({
 	const handleChangeTab = (event: React.SyntheticEvent, newTab: string) => {
 		setTab(newTab)
 	}
-	const [colorCurr, _setColorCurr] = useState<ColorOrigin>(
-		colorInit === null ? colors[0] : colorInit
-	)
+	const [colorCurr, _setColorCurr] = useState<ColorOrigin>(colorInit === null ? colors[0] : colorInit)
 	const [connectionCurr, _setConnectionCurr] = useState<ConnectionOrigin>(
 		connectionInit === null ? connections[0] : connectionInit
 	)
@@ -104,9 +102,7 @@ const Model: NextPage<ModelProps> = ({
 					<Box>
 						<Link href='/models/2180'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 2180
 								</Typography>
 							</a>
@@ -118,9 +114,7 @@ const Model: NextPage<ModelProps> = ({
 					<Box>
 						<Link href='/models/3030'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 3030
 								</Typography>
 							</a>
@@ -132,9 +126,7 @@ const Model: NextPage<ModelProps> = ({
 					<Box>
 						<Link href='/models/2057'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 2057
 								</Typography>
 							</a>
@@ -146,9 +138,7 @@ const Model: NextPage<ModelProps> = ({
 					<Box>
 						<Link href='/models/3057'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 3057
 								</Typography>
 							</a>
@@ -160,9 +150,7 @@ const Model: NextPage<ModelProps> = ({
 					<Box>
 						<Link href='/models/2050'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 2050
 								</Typography>
 							</a>
@@ -174,9 +162,7 @@ const Model: NextPage<ModelProps> = ({
 					<Box>
 						<Link href='/models/3180'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 3180
 								</Typography>
 							</a>
@@ -188,9 +174,7 @@ const Model: NextPage<ModelProps> = ({
 					<Box>
 						<Link href='/models/3050'>
 							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}
-								>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
 									все складские модели Arbonia 3050
 								</Typography>
 							</a>
@@ -265,18 +249,14 @@ const Model: NextPage<ModelProps> = ({
 								Купить {modelCurr.name}
 							</Typography>
 
-							<Box visibility={isFetching ? 'visible' : 'hidden'}>
-								<Typography
-									sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}
-								>
+							<Box visibility={isFetching ? 'hidden' : 'hidden'}>
+								<Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
 									подождите, обновляется курс валют...
 								</Typography>
 							</Box>
 
 							<Box marginTop='20px'>
-								{modelCurr.inStock === 'true' &&
-								colorCurr !== null &&
-								connectionCurr !== null ? (
+								{modelCurr.inStock === 'true' && colorCurr !== null && connectionCurr !== null ? (
 									<RadiatorList
 										model={modelCurr}
 										color={colorCurr}

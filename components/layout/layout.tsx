@@ -40,6 +40,27 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 		const newPaths = paths.slice(0, 5)
 		canonicalUrl = newPaths.join('/')
 	}
+	if (canonicalUrl.includes('/models/2180')) {
+		canonicalUrl = `https://arboniashop.ru/models/2180`
+	}
+	if (canonicalUrl.includes('/models/3180')) {
+		canonicalUrl = `https://arboniashop.ru/models/3180`
+	}
+	if (canonicalUrl.includes('/models/3057')) {
+		canonicalUrl = `https://arboniashop.ru/models/3057`
+	}
+	if (canonicalUrl.includes('/models/2057')) {
+		canonicalUrl = `https://arboniashop.ru/models/2057`
+	}
+	if (canonicalUrl.includes('/models/3050')) {
+		canonicalUrl = `https://arboniashop.ru/models/3050`
+	}
+	if (canonicalUrl.includes('/models/2050')) {
+		canonicalUrl = `https://arboniashop.ru/models/2050`
+	}
+	if (canonicalUrl.includes('/models/3030')) {
+		canonicalUrl = `https://arboniashop.ru/models/3030`
+	}
 
 	return (
 		<Box padding='0px'>

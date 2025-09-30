@@ -56,6 +56,18 @@ const AboutManufacturer: React.FC<AboutManufacturerProps> = () => {
 					>
 						Трубчатые радиаторы отопления производятся на заводе в городе Стршибро (Stříbro), Чехия.
 					</Typography>
+
+					<Typography
+						sx={{ ...styles.standardText }}
+						marginTop='10px'
+						marginBottom='10px'
+					>
+						Знаковым событием последних лет стало то, что климатическое подразделение Arbonia было приобретено китайской
+						корпорацией Midea, одним из крупнейших мировых производителей климатической техники и бытовой электроники.
+						Это позволило объединить опыт Arbonia в области отопления с глобальными ресурсами и инновационными
+						технологиями Midea, открыв новые перспективы для дальнейшего развития и укрепив позиции бренда на
+						международном рынке.
+					</Typography>
 					<div className={'iframeContainer'}>
 						<iframe
 							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104971.25940655338!2d12.908647305941244!3d49.74513818698379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a9a93dc7d9863%3A0x7e4711aedffa7546!2zU3TFmcOtYnJvLCAzNDkgMDEgU3TFmcOtYnJvLCBDemVjaGlh!5e0!3m2!1sen!2srs!4v1713897412851!5m2!1sen!2srs'

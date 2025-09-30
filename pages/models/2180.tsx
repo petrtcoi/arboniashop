@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from '@mui/material'
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 
@@ -44,7 +43,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 		>
 			<meta
 				itemProp='name'
-				content='Arbonia 2180'
+				content='Радиатор Arbonia 2180'
 			/>
 			<meta
 				itemProp='countryOfOrigin'
@@ -93,7 +92,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							})
 						}}
 					>
-						<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>Arbonia 2180 в белом цвете</Typography>
+						<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>Arbonia 2180 RAL9016</Typography>
 					</Box>
 					<Box
 						onClick={() => {
@@ -104,9 +103,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							})
 						}}
 					>
-						<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-							Arbonia 2180 в цвете RAL 7016
-						</Typography>
+						<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>Arbonia 2180 RAL7016</Typography>
 					</Box>
 					<Box
 						onClick={() => {
@@ -155,7 +152,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							, входящих в складскую программу.
 						</p>
 
-						<h2 style={{ marginTop: '40px' }}>Технические характеристики Arbonia 2180</h2>
+						<h2 style={{ marginTop: '40px' }}>Технические характеристики радиаторов Arbonia 2180</h2>
 						<p>
 							<span style={{ ...styles.standardTextRed }}>Высота секции: 180 см.</span> Это идеальный размер для
 							большинства современных квартир и домов. Радиаторы этой высоты не затеряются в просторных помещениях с
@@ -163,11 +160,12 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						</p>
 						<p>
 							<span style={{ ...styles.standardTextRed }}>Глубина секции: 65 мм.</span> Радиатор довольно плоский,
-							поэтому его можно ставить даже в узких коридорах. Частым сценарием для использования Arbonia 2180 является
-							установка рядом с окном в спальне. Если кровать располагается близко от окна, то несколько сантиметров
-							выигрыша по глубине могут быть существенными, ведь нужно еще оставить место для прикроватной тумбочки.
-							Важно отметить, то радиатор располагается на некотором расстоянии от стены, в зависимости от модели
-							кронштейна. Поэтому закладывайте полную глубину радиатора как 9-10 см и тогда вы точно не ошибетесь.
+							поэтому его можно ставить даже в узких коридорах. Частым сценарием для использования радиаторов Arbonia
+							2180 является установка рядом с окном в спальне. Если кровать располагается близко от окна, то несколько
+							сантиметров выигрыша по глубине могут быть существенными, ведь нужно еще оставить место для прикроватной
+							тумбочки. Важно отметить, то радиатор располагается на некотором расстоянии от стены, в зависимости от
+							модели кронштейна. Поэтому закладывайте полную глубину радиатора как 9-10 см и тогда вы точно не
+							ошибетесь.
 						</p>
 						<p>
 							<span style={{ ...styles.standardTextRed }}>Мощность секции: 164 Вт (ΔT=60°).</span> При среднем расчете
@@ -186,7 +184,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					ref={ref9016}
 				>
 					<Typography sx={{ ...styles.standardText }}>
-						<h2>Arbonia 2180 в классическом белом цвете</h2>
+						<h2>Радиаторы Arbonia 2180 RAL 9016</h2>
 						<Grid
 							container
 							spacing={2}
@@ -214,7 +212,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									Белый свет по прежнему остается наиболее актуальным и востребованным, когда речь идет о радиаторах
 									отопления. Ведь это самый нейтральный цвет. Он легко сочетается с любой цветовой схемой помещения.
 									Гармонично смотрится даже в интерьерах, выполненных в темный тонах. Хотите беспроигрышный вариант -
-									берите Arbonia 2180 в белом цвете.
+									берите трубчатый радиатор Arbonia 2180 в белом цвете.
 								</p>
 								<h3 style={{ marginTop: '40px' }}>Боковое подключение 3/4</h3>
 								<p>
@@ -310,7 +308,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					ref={ref7016}
 				>
 					<Typography sx={{ ...styles.standardText }}>
-						<h2>Arbonia 2180 в темном цвете RAL7016</h2>
+						<h2>Радиаторы Arbonia 2180 RAL 7016</h2>
 						<Grid
 							container
 							spacing={2}
@@ -322,7 +320,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							>
 								<img
 									src='/images/models/7016-0.jpeg'
-									alt='Радиатор Arbonia 2180 RAL 7016'
+									alt='Трубчатый радиатор Arbonia 2180 RAL 7016'
 									style={{ maxWidth: '100%', height: 'auto' }}
 									width={600}
 									// height={600}
@@ -374,7 +372,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					ref={refSf3}
 				>
 					<Typography sx={{ ...styles.standardText }}>
-						<h2>Arbonia 2180 в металлизированном цвете SF-3</h2>
+						<h2>Радиатор Arbonia 2180 SF-3 Antrazit metallic</h2>
 						<Grid
 							container
 							spacing={2}
@@ -403,7 +401,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									для интерьеров в стиле лофт.
 								</p>
 								<p>
-									Популярным сценарием использования радиаторов Arbonia именно в этом цвете - замена радиаторов,
+									Популярным сценарием использования радиаторов Arbonia 2180 именно в этом цвете - замена радиаторов,
 									выполненных в цвете прозрачный лак. С одной стороны - внешне он похож, хотя и не имеет характерных
 									видимых следов сварки и шлифовки. С другой - радиатор имеет полноценного покрытие, надежно защищающее
 									его от проникновения влаги, чему подвержены радиаторы, покрытые только прозрачным лаком. Более того,
@@ -437,7 +435,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				{/* 2180 RAL 9005*/}
 				<Box marginTop='80px'>
 					<Typography sx={{ ...styles.standardText }}>
-						<h2>Arbonia 2180 в черном цвете RAL9005</h2>
+						<h2>Радиаторы Arbonia 2180 RAL 9005</h2>
 						<Grid
 							container
 							spacing={2}
@@ -492,9 +490,9 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				</Box>
 				<Box marginTop='50px'>
 					<Typography sx={{ ...styles.standardText }}>
-						Здесь мы отобразили все модели Arbonia 2180 доступные к покупке со склада. Если среди предложенных вариантов
-						не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном исполнении на заводе. Также
-						доступна опция с&#160;
+						Здесь мы отобразили все модели радиаторов Arbonia 2180 доступные к покупке со склада. Если среди
+						предложенных вариантов не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном
+						исполнении на заводе. Также доступна опция с&#160;
 						<Link href='/coloring'>
 							<a style={{ textDecoration: 'none' }}>
 								<Typography
@@ -538,42 +536,52 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						<li>
 							<Link href='/radiators/2180-04'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>Arbonia 2180 04 секции</Typography>
+									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+										Радиаторы Arbonia 2180 04 секции
+									</Typography>
 								</a>
 							</Link>
 						</li>
 						<li>
 							<Link href='/radiators/2180-06'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>Arbonia 2180 06 секций</Typography>
+									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+										РадиаторыArbonia 2180 06 секций
+									</Typography>
 								</a>
 							</Link>
 						</li>
 						<li>
 							<Link href='/radiators/2180-08'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>Arbonia 2180 08 секций</Typography>
+									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+										Радиаторы Arbonia 2180 08 секций
+									</Typography>
 								</a>
 							</Link>
 						</li>
 						<li>
 							<Link href='/radiators/2180-10'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>Arbonia 2180 10 секций</Typography>
+									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+										Радиаторы Arbonia 2180 10 секций
+									</Typography>
 								</a>
 							</Link>
 						</li>
 						<li>
 							<Link href='/radiators/2180-12'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>Arbonia 2180 12 секций</Typography>
+									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+										Радиаторы Arbonia 2180 12 секций
+									</Typography>
 								</a>
 							</Link>
 						</li>
 					</ul>
 				</Box>
 				<Box marginTop='80px'>
-					<h2>Дополнительные изображения радиаторов Arbonia 2180</h2>
+					<h2>Дополнительные изображения трубчатых радиаторов Arbonia 2180</h2>
 					<ImagesOtherList imagesString={model.imagesOther || ''} />
 				</Box>
 				<Box marginTop='80px'>

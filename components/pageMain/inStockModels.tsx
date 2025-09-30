@@ -12,7 +12,7 @@ export function InStockModels() {
 				textAlign='left'
 				// sx={{ textTransform: 'uppercase' }}
 			>
-				Складские модели Arbonia
+				Купить радиаторы Arbonia из наличия
 			</Typography>
 
 			<Box
@@ -20,11 +20,9 @@ export function InStockModels() {
 				maxWidth='700px'
 			>
 				<Typography sx={{ ...styles.standardText }}>
-					В наличии поддерживаются наиболее популярные модели трубчатых
-					радиаторов Arbonia. Сюда входят как невысокие модели высотой 30 см,
-					так и вертикальные батареи 180 см. Склады находятся в Москве и в
-					Санкт-Петербурге. В другие регионы доставка осуществляется
-					транспортными компаниями. Ниже представлен{' '}
+					У нас вы можете купить радиаторов Arbonia из наличия. В складскую программу входят как невысокие модели
+					высотой 30 см, так и вертикальные батареи 180 см. Склады находятся в Москве и в Санкт-Петербурге. В другие
+					регионы доставка осуществляется транспортными компаниями. Ниже представлен{' '}
 					<a
 						href='#all-models'
 						style={{ textDecoration: 'none' }}
@@ -68,43 +66,33 @@ export function InStockModels() {
 						xs={12}
 						md={6}
 					>
-						<Typography sx={{ ...styles.standardText }}>
-							Боковое подключение
-						</Typography>
+						<Typography sx={{ ...styles.standardText }}>Боковое подключение</Typography>
 						<Box paddingLeft='10px'>
 							<Box id='2050-9016-69tvv'>
 								<Link href='/models/2050-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2050
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2050</Typography>
 									</a>
 								</Link>
 							</Box>
 							<Box id='2057-9016-69tvv'>
 								<Link href='/models/2057-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2057
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2057</Typography>
 									</a>
 								</Link>
 							</Box>
 							<Box id='3050-9016-69tvv'>
 								<Link href='/models/3050-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3050
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3050</Typography>
 									</a>
 								</Link>
 							</Box>
 							<Box id='3057-9016-69tvv'>
 								<Link href='/models/3057-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3057
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3057</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -115,43 +103,33 @@ export function InStockModels() {
 						xs={12}
 						md={6}
 					>
-						<Typography sx={{ ...styles.standardText }}>
-							Нижнее подключение
-						</Typography>
+						<Typography sx={{ ...styles.standardText }}>Нижнее подключение</Typography>
 						<Box paddingLeft='10px'>
 							<Box id='2050-9016-12'>
 								<Link href='/models/2050-9016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2050
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2050</Typography>
 									</a>
 								</Link>
 							</Box>
 							<Box id='2057-9016-12'>
 								<Link href='/models/2057-9016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2057
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2057</Typography>
 									</a>
 								</Link>
 							</Box>
 							<Box id='3050-9016-12'>
 								<Link href='/models/3050-9016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3050
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3050</Typography>
 									</a>
 								</Link>
 							</Box>
 							<Box id='3057-9016-12'>
 								<Link href='/models/3057-9016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3057
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3057</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -186,9 +164,7 @@ export function InStockModels() {
 						xs={12}
 						md={6}
 					>
-						<Typography sx={{ ...styles.standardText }}>
-							Боковое подключение
-						</Typography>
+						<Typography sx={{ ...styles.standardText }}>Боковое подключение</Typography>
 						<Box paddingLeft='10px'>
 							<Box
 								id='2180-9016-12'
@@ -197,9 +173,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/2180-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2180
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2180</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -210,9 +184,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/2180-7016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2180 (RAL 7016)
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2180 (RAL 7016)</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -236,9 +208,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/2180-9005-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2180 (RAL 9005 matt)
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2180 (RAL 9005 matt)</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -249,9 +219,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3180-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3180
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3180</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -262,9 +230,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3180-7016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3180 (RAL 7016)
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3180 (RAL 7016)</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -288,9 +254,7 @@ export function InStockModels() {
 						xs={12}
 						md={6}
 					>
-						<Typography sx={{ ...styles.standardText }}>
-							Нижнее подключение
-						</Typography>
+						<Typography sx={{ ...styles.standardText }}>Нижнее подключение</Typography>
 						<Box paddingLeft='10px'>
 							<Box
 								id='2180-9016-69tvv'
@@ -299,9 +263,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/2180-9016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2180
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2180</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -312,9 +274,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/2180-7016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2180 (RAL 7016)
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2180 (RAL 7016)</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -338,9 +298,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/2180-9005-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2180 (RAL 9005 matt)
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2180 (RAL 9005 matt)</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -351,9 +309,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3180-9016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3180
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3180</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -364,9 +320,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3180-7016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3180 (RAL 7016)
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3180 (RAL 7016)</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -414,9 +368,7 @@ export function InStockModels() {
 						xs={12}
 						md={6}
 					>
-						<Typography sx={{ ...styles.standardText }}>
-							Боковое подключение
-						</Typography>
+						<Typography sx={{ ...styles.standardText }}>Боковое подключение</Typography>
 						<Box paddingLeft='10px'>
 							<Box
 								id='2030-9016-12'
@@ -425,9 +377,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/2030-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 2030
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 2030</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -438,9 +388,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3030-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3030
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3030</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -451,9 +399,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3037-9016-12'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3037
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3037</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -464,9 +410,7 @@ export function InStockModels() {
 						xs={12}
 						md={6}
 					>
-						<Typography sx={{ ...styles.standardText }}>
-							Нижнее подключение
-						</Typography>
+						<Typography sx={{ ...styles.standardText }}>Нижнее подключение</Typography>
 						<Box paddingLeft='10px'>
 							<Box
 								id='3030-9016-69tvv'
@@ -475,9 +419,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3030-9016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3030
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3030</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -488,9 +430,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3030-9005-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3030 (RAL 9005 matt)
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3030 (RAL 9005 matt)</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -501,9 +441,7 @@ export function InStockModels() {
 							>
 								<Link href='/models/3037-9016-69tvv'>
 									<a style={{ textDecoration: 'none' }}>
-										<Typography sx={{ ...styles.standartTextThinLink }}>
-											Arbonia 3037
-										</Typography>
+										<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia 3037</Typography>
 									</a>
 								</Link>
 							</Box>
@@ -545,16 +483,12 @@ export function InStockModels() {
 						<Box paddingLeft='10px'>
 							<Link href='/catalog/low-models'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.standartTextThinLink }}>
-										Низкие радиаторы (склад)
-									</Typography>
+									<Typography sx={{ ...styles.standartTextThinLink }}>Низкие радиаторы (склад)</Typography>
 								</a>
 							</Link>
 							<Link href='/catalog/high-models'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.standartTextThinLink }}>
-										Высокие радиаторы (склад)
-									</Typography>
+									<Typography sx={{ ...styles.standartTextThinLink }}>Высокие радиаторы (склад)</Typography>
 								</a>
 							</Link>
 						</Box>
@@ -567,9 +501,7 @@ export function InStockModels() {
 						<Box paddingLeft='10px'>
 							<Link href='/catalog/ral9016'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.standartTextThinLink }}>
-										Arbonia RAL 9016 (склад)
-									</Typography>
+									<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia RAL 9016 (склад)</Typography>
 								</a>
 							</Link>
 						</Box>

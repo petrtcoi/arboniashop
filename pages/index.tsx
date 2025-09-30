@@ -29,13 +29,13 @@ const Home: NextPage<Props> = (props: Props) => {
 	return (
 		<Box>
 			<PageHeader
-				title={'Радиаторы Arbonia купить в Москве и Петербурге | доставка по Росси | Гарантия 10 лет'}
+				title={'Радиаторы Arbonia купить | доставка по Росси | Гарантия 10 лет'}
 				description={
-					'Радиаторы Arbonia в наличии и под заказ. Быстрая доставка в любой город России. Официальная гарантия 10 лет. В наличии наиболее популярные модели.'
+					'Купить радиаторы Arbonia из наличия и под заказ. Склады в Москве и Санкт-Петербурге. Быстрая доставка в любой город России. Официальная гарантия 10 лет. '
 				}
 			/>
 			<PageTitle
-				header={'Радиаторы Arbonia с официальной гарантией 10 лет'}
+				header={'Купить радиаторы Arbonia с официальной гарантией 10 лет'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге в любой город России'}
 			/>
 
@@ -51,7 +51,7 @@ const Home: NextPage<Props> = (props: Props) => {
 					align='center'
 					sx={{ marginTop: '50px' }}
 				>
-					Трубчатые радиаторы <span style={{ color: '#EF7D00', fontWeight: 600 }}>Arbonia</span>
+					Купить трубчатые радиаторы <span style={{ color: '#EF7D00', fontWeight: 600 }}>Arbonia</span>
 				</Typography>
 				<Typography style={{ fontSize: '0.8rem', textAlign: 'center', opacity: 0.9 }}>
 					Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ

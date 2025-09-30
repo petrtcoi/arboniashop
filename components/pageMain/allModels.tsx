@@ -32,7 +32,7 @@ export const AllModels: NextPage<CatalogProps> = ({ models }) => {
 						textAlign='left'
 						// sx={{ textTransform: 'uppercase' }}
 					>
-						Радиаторы Arbonia под заказ
+						Купить трубчатые радиаторы Arbonia под заказ
 					</Typography>
 					<Box marginTop={{ xs: '20px', md: '40px' }} />
 					<Grid
@@ -61,18 +61,14 @@ export const AllModels: NextPage<CatalogProps> = ({ models }) => {
 												alt={`Радиаторы Arbonia ${group.title}`}
 											/>
 										</div>
-										<Typography sx={{ ...styles.standardText }}>
-											{group.title}
-										</Typography>
+										<Typography sx={{ ...styles.standardText }}>{group.title}</Typography>
 									</Box>
 									<Box
 										paddingLeft='10px'
 										textAlign='center'
 									>
 										{outStockModels
-											.filter(
-												(model: ModelOrigin) => model.id[0] === group.firstChar
-											)
+											.filter((model: ModelOrigin) => model.id[0] === group.firstChar)
 											.sort((a, b) => (+a.id > +b.id ? 1 : -1))
 											.map((model: ModelOrigin) => {
 												return (
@@ -84,9 +80,7 @@ export const AllModels: NextPage<CatalogProps> = ({ models }) => {
 													>
 														<Link href={`/models/${model.id}`}>
 															<a style={{ textDecoration: 'none' }}>
-																<Typography
-																	sx={{ ...styles.standartTextThinLink }}
-																>
+																<Typography sx={{ ...styles.standartTextThinLink }}>
 																	Arbonia {model.nameShort}
 																</Typography>
 															</a>

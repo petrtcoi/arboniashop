@@ -135,29 +135,31 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						<Box>
 							<Box textAlign='center'>
 								<Link href='/models/2180'>
-									<div
-										style={{
-											...styles.roundSquareImage,
-											display: 'inline-block',
-										}}
-									>
-										<img
-											src='/images/models/2180-0.jpeg'
-											width={'200px'}
-											height={'200px'}
-											sizes='200px'
-											alt='Трубчатый радиатор Arbonia 2180'
-											itemProp='image'
-										/>
-									</div>
+									<div>
+										<div
+											style={{
+												...styles.roundSquareImage,
+												display: 'inline-block',
+											}}
+										>
+											<img
+												src='/images/models/2180-0.jpeg'
+												width={'200px'}
+												height={'200px'}
+												sizes='200px'
+												alt='Трубчатый радиатор Arbonia 2180'
+												itemProp='image'
+											/>
+										</div>
 
-									<Typography
-										sx={{ ...linkStyle, fontWeight: '600' }}
-										component='h3'
-										itemProp='name'
-									>
-										Радиатор Arbonia 2180
-									</Typography>
+										<Typography
+											sx={{ ...linkStyle, fontWeight: '600' }}
+											component='h3'
+											itemProp='name'
+										>
+											Радиатор Arbonia 2180
+										</Typography>
+									</div>
 								</Link>
 							</Box>
 							<Box paddingX='15px'>
@@ -334,29 +336,31 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					>
 						<Box textAlign='center'>
 							<Link href='/models/3057'>
-								<div
-									style={{
-										...styles.roundSquareImage,
-										display: 'inline-block',
-									}}
-								>
-									<img
-										src='/images/models/3057-0.jpeg'
-										width={'200px'}
-										height={'200px'}
-										sizes='200px'
-										alt='Трубчатый радиатор Arbonia 3057'
-										itemProp='image'
-									/>
-								</div>
+								<div>
+									<div
+										style={{
+											...styles.roundSquareImage,
+											display: 'inline-block',
+										}}
+									>
+										<img
+											src='/images/models/3057-0.jpeg'
+											width={'200px'}
+											height={'200px'}
+											sizes='200px'
+											alt='Трубчатый радиатор Arbonia 3057'
+											itemProp='image'
+										/>
+									</div>
 
-								<Typography
-									sx={{ ...linkStyle, fontWeight: '600' }}
-									component='h3'
-									itemProp='name'
-								>
-									Радиатор Arbonia 3057
-								</Typography>
+									<Typography
+										sx={{ ...linkStyle, fontWeight: '600' }}
+										component='h3'
+										itemProp='name'
+									>
+										Радиатор Arbonia 3057
+									</Typography>
+								</div>
 							</Link>
 						</Box>
 						<Box paddingX='15px'>
@@ -533,29 +537,31 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					>
 						<Box textAlign='center'>
 							<Link href='/models/3180'>
-								<div
-									style={{
-										...styles.roundSquareImage,
-										display: 'inline-block',
-									}}
-								>
-									<img
-										src='/images/models/3057-2.jpeg'
-										width={'200px'}
-										height={'200px'}
-										sizes='200px'
-										alt='Трубчатый радиатор Arbonia 3180'
-										itemProp='image'
-									/>
-								</div>
+								<div>
+									<div
+										style={{
+											...styles.roundSquareImage,
+											display: 'inline-block',
+										}}
+									>
+										<img
+											src='/images/models/3057-2.jpeg'
+											width={'200px'}
+											height={'200px'}
+											sizes='200px'
+											alt='Трубчатый радиатор Arbonia 3180'
+											itemProp='image'
+										/>
+									</div>
 
-								<Typography
-									sx={{ ...linkStyle, fontWeight: '600' }}
-									component='h3'
-									itemProp='name'
-								>
-									Радиатор Arbonia 3180
-								</Typography>
+									<Typography
+										sx={{ ...linkStyle, fontWeight: '600' }}
+										component='h3'
+										itemProp='name'
+									>
+										Радиатор Arbonia 3180
+									</Typography>
+								</div>
 							</Link>
 						</Box>
 						<Box paddingX='15px'>
@@ -731,29 +737,31 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					>
 						<Box textAlign='center'>
 							<Link href='/models/3030'>
-								<div
-									style={{
-										...styles.roundSquareImage,
-										display: 'inline-block',
-									}}
-								>
-									<img
-										src='/images/models/3030-0.jpeg'
-										width={'200px'}
-										height={'200px'}
-										sizes='200px'
-										alt='Трубчатый радиатор Arbonia 3030'
-										itemProp='image'
-									/>
-								</div>
+								<div>
+									<div
+										style={{
+											...styles.roundSquareImage,
+											display: 'inline-block',
+										}}
+									>
+										<img
+											src='/images/models/3030-0.jpeg'
+											width={'200px'}
+											height={'200px'}
+											sizes='200px'
+											alt='Трубчатый радиатор Arbonia 3030'
+											itemProp='image'
+										/>
+									</div>
 
-								<Typography
-									sx={{ ...linkStyle, fontWeight: '600' }}
-									component='h3'
-									itemProp='name'
-								>
-									Радиатор Arbonia 3030
-								</Typography>
+									<Typography
+										sx={{ ...linkStyle, fontWeight: '600' }}
+										component='h3'
+										itemProp='name'
+									>
+										Радиатор Arbonia 3030
+									</Typography>
+								</div>
 							</Link>
 						</Box>
 						<Box paddingX='15px'>
@@ -929,29 +937,31 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					>
 						<Box textAlign='center'>
 							<Link href='/models/2050'>
-								<div
-									style={{
-										...styles.roundSquareImage,
-										display: 'inline-block',
-									}}
-								>
-									<img
-										src='/images/models/2050-0.jpg'
-										width={'200px'}
-										height={'200px'}
-										sizes='200px'
-										alt='Трубчатый радиатор Arbonia 2050'
-										itemProp='image'
-									/>
-								</div>
+								<div>
+									<div
+										style={{
+											...styles.roundSquareImage,
+											display: 'inline-block',
+										}}
+									>
+										<img
+											src='/images/models/2050-0.jpg'
+											width={'200px'}
+											height={'200px'}
+											sizes='200px'
+											alt='Трубчатый радиатор Arbonia 2050'
+											itemProp='image'
+										/>
+									</div>
 
-								<Typography
-									sx={{ ...linkStyle, fontWeight: '600' }}
-									component='h3'
-									itemProp='name'
-								>
-									Радиатор Arbonia 2050
-								</Typography>
+									<Typography
+										sx={{ ...linkStyle, fontWeight: '600' }}
+										component='h3'
+										itemProp='name'
+									>
+										Радиатор Arbonia 2050
+									</Typography>
+								</div>
 							</Link>
 						</Box>
 						<Box paddingX='15px'>
@@ -1127,29 +1137,31 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					>
 						<Box textAlign='center'>
 							<Link href='/models/3050'>
-								<div
-									style={{
-										...styles.roundSquareImage,
-										display: 'inline-block',
-									}}
-								>
-									<img
-										src='/images/models/3057-3.jpeg'
-										width={'200px'}
-										height={'200px'}
-										sizes='200px'
-										alt='Трубчатый радиатор Arbonia 3050'
-										itemProp='image'
-									/>
-								</div>
+								<div>
+									<div
+										style={{
+											...styles.roundSquareImage,
+											display: 'inline-block',
+										}}
+									>
+										<img
+											src='/images/models/3057-3.jpeg'
+											width={'200px'}
+											height={'200px'}
+											sizes='200px'
+											alt='Трубчатый радиатор Arbonia 3050'
+											itemProp='image'
+										/>
+									</div>
 
-								<Typography
-									sx={{ ...linkStyle, fontWeight: '600' }}
-									component='h3'
-									itemProp='name'
-								>
-									Радиатор Arbonia 3050
-								</Typography>
+									<Typography
+										sx={{ ...linkStyle, fontWeight: '600' }}
+										component='h3'
+										itemProp='name'
+									>
+										Радиатор Arbonia 3050
+									</Typography>
+								</div>
 							</Link>
 						</Box>
 						<Box paddingX='15px'>

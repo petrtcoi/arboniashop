@@ -488,7 +488,7 @@ export function InStockModels() {
 							</Link>
 							<Link href='/catalog/high-models'>
 								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.standartTextThinLink }}>Высокие радиаторы (склад)</Typography>
+									<Typography sx={{ ...styles.standartTextThinLink }}>Вертикальные радиаторы (склад)</Typography>
 								</a>
 							</Link>
 						</Box>

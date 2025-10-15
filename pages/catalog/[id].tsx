@@ -25,7 +25,7 @@ const SETS_MAP: {
 		component: SetLowModel,
 	},
 	'high-models': {
-		title: 'Высокие радиаторы ArboniaColumn',
+		title: 'Вертикальные радиаторы Arbonia',
 		component: SetHighModel,
 	},
 	ral9016: {
@@ -45,15 +45,8 @@ type SetPageProps = {
 	setId: string
 }
 
-const SetPage: NextPage<SetPageProps> = ({
-	models,
-	colors,
-	connections,
-	setId,
-}) => {
-	const Component: React.FC<SetComponentProps> | null = SETS_MAP[setId]
-		? SETS_MAP[setId].component
-		: null
+const SetPage: NextPage<SetPageProps> = ({ models, colors, connections, setId }) => {
+	const Component: React.FC<SetComponentProps> | null = SETS_MAP[setId] ? SETS_MAP[setId].component : null
 
 	if (Component === null) return <></>
 

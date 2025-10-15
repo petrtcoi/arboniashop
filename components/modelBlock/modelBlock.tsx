@@ -42,31 +42,21 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
 		<Box marginTop={onlyTable ? '0px' : '70px'}>
 			{!onlyTable && (
 				<>
-					<Box paddingY='10px'>
-						<Typography
-							variant='h6'
-							component='h3'
-							sx={{ textTransform: 'uppercase' }}
-							textAlign='center'
-						>
-							{title}
-						</Typography>
-					</Box>
 					<Box marginTop='20px'>
 						<Grid
 							container
 							spacing={2}
+							alignItems='start'
 						>
 							<Grid
 								item
-								xs={3}
-								sm={2}
-								lg={2}
+								xs={4}
+								md={4}
+								lg={3}
 							>
 								<img
-									width={500}
-									height={500}
-									sizes='500px'
+									width={'100%'}
+									height={'auto'}
 									src={imagePrimaryPath}
 									alt={`Трубчатый радиатор ${model.name}`}
 								/>
@@ -74,15 +64,30 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
 							<Grid
 								item
 								container
-								xs={9}
-								sm={6}
+								xs={8}
+								md={6}
 								lg={6}
 								direction='column'
 								display='flex'
 								justifyContent={'center'}
 							>
 								<Box>
-									<Typography sx={styles.smallText}>{description}</Typography>
+									<Box marginBottom='10px'>
+										<Typography
+											variant='h6'
+											component='h3'
+											sx={{ lineHeight: 1.2, fontWeight: 600 }}
+											textAlign='left'
+										>
+											{title}
+										</Typography>
+									</Box>
+									<Typography
+										// sx={styles.standardText}
+										fontSize={{ xs: '12px', sm: '14px' }}
+									>
+										{description}
+									</Typography>
 
 									{modelLink && (
 										<Box marginTop='10px'>

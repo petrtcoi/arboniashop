@@ -755,7 +755,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box textAlign={'center'}>
 										<img
 											src='/images/articles/30.jpeg'
-											alt='Вертикальный радиатор Arbonia'
+											alt='Arbonia 2180 vs 3180: чем отличаются и когда что выбрать'
 											width={300}
 											height={300}
 										/>
@@ -770,7 +770,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Вертикальные радиаторы Arbonia
+											Arbonia 2180 vs 3180: чем отличаются и когда что выбрать
 										</Typography>
 									</Box>
 									<Box
@@ -783,8 +783,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText }}
 											component='span'
 										>
-											Вертикальные трубчатые радиаторы Arbonia - один из наиболее популярных вариантов отопления
-											помещений. Именно поэтому, в складскую программу входят сразу 2 модели высотой 1.8 м.
+											Сравниваем 2- и 3-трубчатые модели высотой 1,8 м: толщина, мощность, где уместнее 2180, а где
+											лучше 3180.
 										</Typography>
 									</Box>
 								</a>

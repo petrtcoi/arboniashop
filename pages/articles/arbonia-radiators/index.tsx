@@ -59,14 +59,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<li>
 							<Box sx={{ ...styles.standardText }}>
 								<Link href='/'>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.standardTextRedLink }}
-											component='span'
-										>
-											Трубчатые радиаторы Arbonia
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.standardTextRedLink }}
+										component='span'
+									>
+										Трубчатые радиаторы Arbonia
+									</Typography>
 								</Link>
 								&#160; представляют из себя цельную конструкцию: все секции сварены между собой на заводе. Радиаторы
 								приходят в Россию уже полностью готовые к эксплуатации. Здесь нет соединений через ниппеля, а потому и

@@ -42,9 +42,7 @@ const SuccessPage: NextPage<SuccessPageProps> = () => {
 							<li>
 								Вернитесь на{' '}
 								<Link href='/'>
-									<a style={{ textDecoration: 'none' }}>
-										<span style={{ color: '#ef7d00', fontWeight: 600 }}>главную страницу</span>
-									</a>
+									<span style={{ color: '#ef7d00', fontWeight: 600 }}>главную страницу</span>
 								</Link>{' '}
 								и попробуйте найти нужную информацию оттуда.
 							</li>

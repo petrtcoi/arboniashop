@@ -59,14 +59,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				>
 					Именно поэтому, &#160;
 					<Link href='/models/3057'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography
-								sx={{ ...styles.standardTextRedLink }}
-								component='span'
-							>
-								трубчатые радиаторы Arbonia 3057
-							</Typography>
-						</a>
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							трубчатые радиаторы Arbonia 3057
+						</Typography>
 					</Link>
 					&#160; являются наиболее популярными при замене старых радиаторов. Они имеют те же размеры, что и старые
 					чугунные радиаторы, и могут быть установлены на тех же местах, что и старые радиаторы. Также они имеют те же

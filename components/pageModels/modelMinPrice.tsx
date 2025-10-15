@@ -1,91 +1,84 @@
-import React, { useState } from "react";
-import { Box, Button, Typography, Divider } from "@mui/material";
+import { Box, Button, Divider, Typography } from '@mui/material'
+import React, { useState } from 'react'
 
-import { ModelOrigin } from "../../models/modelOrigin.model";
+import { ModelOrigin } from '../../models/modelOrigin.model'
 
-import * as styles from "../../styles/styles";
+import * as styles from '../../styles/styles'
 
 type ModelMinPriceProps = {
-  model: ModelOrigin;
-  minPrice: number;
-  setTabBuy: () => void;
-};
+	model: ModelOrigin
+	minPrice: number
+	setTabBuy: () => void
+}
 
-const ModelMinPrice: React.FC<ModelMinPriceProps> = ({
-  minPrice,
-  setTabBuy,
-}) => {
-  const [hidePriceOffer, setHidePriceOffer] = useState<boolean>(true);
-  const handlePriceOffer = () => {
-    setHidePriceOffer(false);
-  };
+const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ minPrice, setTabBuy }) => {
+	const [hidePriceOffer, setHidePriceOffer] = useState<boolean>(true)
+	const handlePriceOffer = () => {
+		setHidePriceOffer(false)
+	}
 
-  return (
-    <Box>
-      <Box marginRight="10px">
-        <Typography
-          sx={styles.standardText}
-          display="inline"
-        >
-          Цена от:{" "}
-        </Typography>
-        <Typography
-          display="inline"
-          sx={{ fontSize: "30px", fontWeight: 600 }}
-        >
-          <span
-            itemProp="offers"
-            itemScope
-            itemType="https://schema.org/AggregateOffer"
-          >
-            <meta
-              itemProp="priceCurrency"
-              content="RUB"
-            />
-            <meta
-              itemProp="lowPrice"
-              content={minPrice.toString().replace(",", "").trim()}
-            />
-            &nbsp;{minPrice.toLocaleString()} руб
-          </span>
-        </Typography>
-      </Box>
-      <Box display="inline">
-        <Button
-          variant="contained"
-          onClick={() => setTabBuy()}
-          href="#buy-section"
-        >
-          Купить
-        </Button>
-      </Box>
+	return (
+		<Box>
+			<Box marginRight='10px'>
+				<Typography
+					sx={styles.standardText}
+					display='inline'
+				>
+					Цена от:{' '}
+				</Typography>
+				<Typography
+					display='inline'
+					sx={{ fontSize: '30px', fontWeight: 600 }}
+				>
+					<span
+						itemProp='offers'
+						itemScope
+						itemType='https://schema.org/AggregateOffer'
+					>
+						<meta
+							itemProp='priceCurrency'
+							content='RUB'
+						/>
+						<meta
+							itemProp='lowPrice'
+							content={minPrice.toString().replace(',', '').trim()}
+						/>
+						&nbsp;{minPrice.toLocaleString()} руб
+					</span>
+				</Typography>
+			</Box>
+			<Box display='inline'>
+				<Button
+					variant='contained'
+					onClick={() => setTabBuy()}
+					href='#buy-section'
+				>
+					Купить
+				</Button>
+			</Box>
 
-      <Box marginTop="30px">
-        <a onClick={() => handlePriceOffer()}>
-          <Typography sx={styles.smallTextGreenUnderline}>
-            <span style={{ textDecorationStyle: "dotted" }}>
-              {" "}
-              Нашли дешевле? Сделаем дополнительную скидку
-            </span>
-          </Typography>
-        </a>
-      </Box>
+			<Box marginTop='30px'>
+				<a onClick={() => handlePriceOffer()}>
+					<Typography sx={styles.smallTextGreenUnderline}>
+						<span style={{ textDecorationStyle: 'dotted' }}> Нашли дешевле? Сделаем дополнительную скидку</span>
+					</Typography>
+				</a>
+			</Box>
 
-      {hidePriceOffer === false && (
-        <Box marginTop="10px">
-          <Typography sx={styles.smallText}>
-            Мы всегда стремимся дать выгодные цены для наших покупателей. Если
-            вы нашли радиаторы Arbonia по более низким ценам, то свяжитесь с
-            нашими менеджерами и предоставьте ссылку на соответствущую страницу
-            или готовое коммерческое предложение.
-          </Typography>
-          <Box marginTop="10px">
-            <Divider variant="middle" />
-          </Box>
-        </Box>
-      )}
-    </Box>
-  );
-};
+			{hidePriceOffer === false && (
+				<Box marginTop='10px'>
+					<Typography sx={styles.smallText}>
+						Мы всегда стремимся дать выгодные цены для наших покупателей. Если вы нашли радиаторы Arbonia по более
+						низким ценам, то свяжитесь с нашими менеджерами и предоставьте ссылку на соответствущую страницу или готовое
+						коммерческое предложение.
+					</Typography>
+					<Box marginTop='10px'>
+						<Divider variant='middle' />
+					</Box>
+				</Box>
+			)}
+		</Box>
+	)
+}
 
-export default ModelMinPrice;
+export default ModelMinPrice

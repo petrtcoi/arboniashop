@@ -38,51 +38,41 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				</Typography>
 				<Box mt={2}>
 					<Link href='/news/2024-report'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography sx={styles.standardTextLinkUnderline}>
-								2024: Отчет о полугодовых результатах Arbonia за 2024 год
-							</Typography>
-						</a>
+						<Typography sx={styles.standardTextLinkUnderline}>
+							2024: Отчет о полугодовых результатах Arbonia за 2024 год
+						</Typography>
 					</Link>
 				</Box>
 
 				<Box mt={2}>
 					<Link href='/news/2024-midea'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography sx={styles.standardTextLinkUnderline}>
-								2024: Arbonia продает подразделение Climate за 760 миллионов евро компании Midea
-							</Typography>
-						</a>
+						<Typography sx={styles.standardTextLinkUnderline}>
+							2024: Arbonia продает подразделение Climate за 760 миллионов евро компании Midea
+						</Typography>
 					</Link>
 				</Box>
 
 				<Box mt={2}>
 					<Link href='/news/2023-design'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography sx={styles.standardTextLinkUnderline}>
-								2023: Arbonia повышает конкурентоспособность за счет консолидации производства дизайнерских радиаторов
-							</Typography>
-						</a>
+						<Typography sx={styles.standardTextLinkUnderline}>
+							2023: Arbonia повышает конкурентоспособность за счет консолидации производства дизайнерских радиаторов
+						</Typography>
 					</Link>
 				</Box>
 
 				<Box mt={2}>
 					<Link href='/news/redox'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography sx={styles.standardTextLinkUnderline}>
-								2023: Запуск системы хранения энергии на основе редокс-аккумуляторов
-							</Typography>
-						</a>
+						<Typography sx={styles.standardTextLinkUnderline}>
+							2023: Запуск системы хранения энергии на основе редокс-аккумуляторов
+						</Typography>
 					</Link>
 				</Box>
 
 				<Box mt={2}>
 					<Link href='/news/circle'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography sx={styles.standardTextLinkUnderline}>
-								2020: THE CIRCLE – крупнейшая строительная площадка в Швейцарии
-							</Typography>
-						</a>
+						<Typography sx={styles.standardTextLinkUnderline}>
+							2020: THE CIRCLE – крупнейшая строительная площадка в Швейцарии
+						</Typography>
 					</Link>
 				</Box>
 			</Box>

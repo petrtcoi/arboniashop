@@ -79,11 +79,7 @@ export const AllModels: NextPage<CatalogProps> = ({ models }) => {
 														marginTop='-50px'
 													>
 														<Link href={`/models/${model.id}`}>
-															<a style={{ textDecoration: 'none' }}>
-																<Typography sx={{ ...styles.standartTextThinLink }}>
-																	Arbonia {model.nameShort}
-																</Typography>
-															</a>
+															<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia {model.nameShort}</Typography>
 														</Link>
 													</Box>
 												)

@@ -140,14 +140,12 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							тепловую мощность (одна секция может обогреть в среднем от 1.5 до 3 кв.м.) и компактные размеры (толщина
 							радиатора всего 65 мм). Если вас интересуют также 3-трубчатые модели, то посмотрите нашу подборку&#160;
 							<Link href='/catalog/high-models'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography
-										sx={{ ...styles.standardTextLinkUnderline }}
-										component='span'
-									>
-										вертикальных радиаторов Arbonia
-									</Typography>
-								</a>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									вертикальных радиаторов Arbonia
+								</Typography>
 							</Link>
 							, входящих в складскую программу.
 						</p>
@@ -266,18 +264,16 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									мм. Так как радиатор симметричный, то здесь нет разницы, слева или справа подключатся радиатор, его
 									можно просто развернуть нужной стороной. Важно помнить, что подача воды всегда осуществляется в
 									крайнюю секцию. В нашем сообществе Вконтакте есть кроткая заметка о том, как&#160;
-									<Link href='https://vk.com/lovehomekomfort?w=wall-86767719_2238'>
-										<a
-											style={{ textDecoration: 'none' }}
-											rel='nofollow'
+									<Link
+										href='https://vk.com/lovehomekomfort?w=wall-86767719_2238'
+										rel='nofollow'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
 										>
-											<Typography
-												sx={{ ...styles.standardTextRedLink }}
-												component='span'
-											>
-												лучше подключать радиаторы с нижним подключением
-											</Typography>
-										</a>
+											лучше подключать радиаторы с нижним подключением
+										</Typography>
 									</Link>
 									.
 								</p>
@@ -494,14 +490,12 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						предложенных вариантов не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном
 						исполнении на заводе. Также доступна опция с&#160;
 						<Link href='/coloring'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.standardTextRedLink }}
-									component='span'
-								>
-									покраской белого радиатора Arbonia в любой цвет по шкале RAL
-								</Typography>
-							</a>
+							<Typography
+								sx={{ ...styles.standardTextRedLink }}
+								component='span'
+							>
+								покраской белого радиатора Arbonia в любой цвет по шкале RAL
+							</Typography>
 						</Link>
 						&#160;на ваш выбор. Покраска производится на профессиональном оборудовании с сохранением официальной
 						гарантии. Мы будем поддерживать список доступных вариантов в актуальном состоянии.
@@ -535,47 +529,37 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					<ul>
 						<li>
 							<Link href='/radiators/2180-04'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-										Радиаторы Arbonia 2180 04 секции
-									</Typography>
-								</a>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+									Радиаторы Arbonia 2180 04 секции
+								</Typography>
 							</Link>
 						</li>
 						<li>
 							<Link href='/radiators/2180-06'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-										РадиаторыArbonia 2180 06 секций
-									</Typography>
-								</a>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+									РадиаторыArbonia 2180 06 секций
+								</Typography>
 							</Link>
 						</li>
 						<li>
 							<Link href='/radiators/2180-08'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-										Радиаторы Arbonia 2180 08 секций
-									</Typography>
-								</a>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+									Радиаторы Arbonia 2180 08 секций
+								</Typography>
 							</Link>
 						</li>
 						<li>
 							<Link href='/radiators/2180-10'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-										Радиаторы Arbonia 2180 10 секций
-									</Typography>
-								</a>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+									Радиаторы Arbonia 2180 10 секций
+								</Typography>
 							</Link>
 						</li>
 						<li>
 							<Link href='/radiators/2180-12'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-										Радиаторы Arbonia 2180 12 секций
-									</Typography>
-								</a>
+								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+									Радиаторы Arbonia 2180 12 секций
+								</Typography>
 							</Link>
 						</li>
 					</ul>

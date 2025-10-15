@@ -52,206 +52,172 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<ul>
 							<li>
 								<Link href={'#faq-1'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Где производят радиаторы Arbonia?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Где производят радиаторы Arbonia?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-2'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Какие вертикальные радиаторы Arbonia поддерживаются в наличии?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Какие вертикальные радиаторы Arbonia поддерживаются в наличии?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-3'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Подходят ли радиаторы Arbonia для центрального отопления?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Подходят ли радиаторы Arbonia для центрального отопления?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-4'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Возможно ли радиусное исполнение радиаторов Arbonia?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Возможно ли радиусное исполнение радиаторов Arbonia?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-42'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Как соотносятся мощности радиаторов Arbonia c алюминиевыми или биметаллическими радиаторами?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Как соотносятся мощности радиаторов Arbonia c алюминиевыми или биметаллическими радиаторами?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-5'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Какое должно быть расстояние радиатора от стены?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Какое должно быть расстояние радиатора от стены?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-6'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Какое нужно расстояние от пола и от подоконника?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Какое нужно расстояние от пола и от подоконника?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-7'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Возможно ли проходное подключение радиаторов Arbonia
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Возможно ли проходное подключение радиаторов Arbonia
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-8'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Как работает циркуляция теплоносителя в радиаторах большой длины
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Как работает циркуляция теплоносителя в радиаторах большой длины
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-9'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Возможна ли покраска радиаторов в свой цвет?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Возможна ли покраска радиаторов в свой цвет?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-10'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Основные преимущества стальных трубчатых радиаторов
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Основные преимущества стальных трубчатых радиаторов
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-11'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Как приобрести радиатор Arbonia по индивидуальному заказу?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Как приобрести радиатор Arbonia по индивидуальному заказу?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-12'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Что такое объем радиатора в литрах?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Что такое объем радиатора в литрах?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-13'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Зачем нужна перемычка при установки трубчатых радиаторов с боковым подключением?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Зачем нужна перемычка при установки трубчатых радиаторов с боковым подключением?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-14'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Когда лучше менять радиаторы отопления?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Когда лучше менять радиаторы отопления?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-15'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Зачем нужен кран Маевского?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Зачем нужен кран Маевского?
+									</Typography>
 								</Link>
 							</li>
 							<li style={{ marginTop: '5px' }}>
 								<Link href={'#faq-16'}>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.smallTextDotted, ...styles.standardText }}
-											component='span'
-										>
-											Почему трубчатые радиаторы считаются наиболее гигиеничными?
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.smallTextDotted, ...styles.standardText }}
+										component='span'
+									>
+										Почему трубчатые радиаторы считаются наиболее гигиеничными?
+									</Typography>
 								</Link>
 							</li>
 						</ul>
@@ -318,25 +284,21 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							>
 								На складе постоянно поддерживаются радиаторы{' '}
 								<Link href='/models/2180'>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.standardTextRedLink }}
-											component='span'
-										>
-											Arbonia 2180
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.standardTextRedLink }}
+										component='span'
+									>
+										Arbonia 2180
+									</Typography>
 								</Link>{' '}
 								и{' '}
 								<Link href='/models/3180'>
-									<a style={{ textDecoration: 'none' }}>
-										<Typography
-											sx={{ ...styles.standardTextRedLink }}
-											component='span'
-										>
-											Arbonia 3180
-										</Typography>
-									</a>
+									<Typography
+										sx={{ ...styles.standardTextRedLink }}
+										component='span'
+									>
+										Arbonia 3180
+									</Typography>
 								</Link>{' '}
 								- это батареи высотой 180 см в 2-трубчатом и 3-трубчатом исполнении. Вы можете приобрести радиаторы как
 								с нижним, так и с боковым подключением. В большинстве случаев подходит модель 2180. Но если вам

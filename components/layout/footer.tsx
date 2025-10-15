@@ -42,16 +42,17 @@ const Footer: NextComponentType<FooterProps> = () => {
 			/>
 
 			<Box>
-				<Link href='/'>
-					<a itemProp={'url'}>
-						<img
-							src='/images/logo.png'
-							alt='Arbonia column radiators'
-							width={'102px'}
-							height={'50px'}
-							itemProp={'logo'}
-						/>
-					</a>
+				<Link
+					href='/'
+					itemProp={'url'}
+				>
+					<img
+						src='/images/logo.png'
+						alt='Arbonia column radiators'
+						width={'102px'}
+						height={'50px'}
+						itemProp={'logo'}
+					/>
 				</Link>
 			</Box>
 			<Grid
@@ -69,52 +70,46 @@ const Footer: NextComponentType<FooterProps> = () => {
 					</Box>
 					<Box marginTop={'10px'}>
 						<Typography sx={footerText}>
-							<Link href={`tel:${global.phone495}`}>
-								<a
-									style={footerTextButton}
-									onClick={() => trackEvent('phone_click')}
+							<Link
+								href={`tel:${global.phone495}`}
+								style={footerTextButton}
+							>
+								<Typography
+									sx={footerTextButtonUnderline}
+									component='span'
+									itemProp='telephone'
 								>
-									<Typography
-										sx={footerTextButtonUnderline}
-										component='span'
-										itemProp='telephone'
-									>
-										{global.phone495String}
-									</Typography>
-								</a>
+									{global.phone495String}
+								</Typography>
 							</Link>
 							<br />
-							<Link href={`tel:${global.phone812}`}>
-								<a
-									style={footerTextButton}
-									onClick={() => trackEvent('phone_click')}
+							<Link
+								href={`tel:${global.phone812}`}
+								style={footerTextButton}
+							>
+								<Typography
+									sx={footerTextButtonUnderline}
+									component='span'
 								>
-									<Typography
-										sx={footerTextButtonUnderline}
-										component='span'
-									>
-										{global.phone812String}
-									</Typography>
-								</a>
+									{global.phone812String}
+								</Typography>
 							</Link>
 						</Typography>
 					</Box>
 
 					<Box marginTop={'10px'}>
 						<Typography sx={footerText}>
-							<Link href={`mailto:${global.email}`}>
-								<a
-									style={footerTextButton}
-									onClick={() => trackEvent('email_click')}
+							<Link
+								href={`mailto:${global.email}`}
+								style={footerTextButton}
+							>
+								<Typography
+									sx={footerTextButtonUnderline}
+									component='span'
+									itemProp='email'
 								>
-									<Typography
-										sx={footerTextButtonUnderline}
-										component='span'
-										itemProp='email'
-									>
-										{global.email}
-									</Typography>
-								</a>
+									{global.email}
+								</Typography>
 							</Link>
 						</Typography>
 					</Box>
@@ -130,14 +125,12 @@ const Footer: NextComponentType<FooterProps> = () => {
 					{pages.map((page, index) => (
 						<Box key={page[0]}>
 							<Link href={page[1]}>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography
-										sx={footerTextButton}
-										component='span'
-									>
-										{page[0]}
-									</Typography>
-								</a>
+								<Typography
+									sx={footerTextButton}
+									component='span'
+								>
+									{page[0]}
+								</Typography>
 							</Link>
 
 							<br />
@@ -145,16 +138,14 @@ const Footer: NextComponentType<FooterProps> = () => {
 					))}
 					<Box key={'faq'}>
 						<Link href={'/articles/faq'}>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...footerTextButton, lineHeight: 0.1 }}
-									component='span'
-								>
-									<div style={{ marginTop: '10px', lineHeight: 1.2 }}>
-										Ответы на часто задаваемые вопросы про радиаторы Arbonia
-									</div>
-								</Typography>
-							</a>
+							<Typography
+								sx={{ ...footerTextButton, lineHeight: 0.1 }}
+								component='span'
+							>
+								<div style={{ marginTop: '10px', lineHeight: 1.2 }}>
+									Ответы на часто задаваемые вопросы про радиаторы Arbonia
+								</div>
+							</Typography>
 						</Link>
 
 						<br />
@@ -189,38 +180,32 @@ const Footer: NextComponentType<FooterProps> = () => {
 				>
 					<Typography sx={footerTextButton}>
 						<Link href='/privacy'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={footerTextButtonUnderline}
-									component='span'
-								>
-									Политика конфиденциальности
-								</Typography>
-							</a>
+							<Typography
+								sx={footerTextButtonUnderline}
+								component='span'
+							>
+								Политика конфиденциальности
+							</Typography>
 						</Link>
 					</Typography>
 					<Typography sx={footerTextButton}>
 						<Link href='/oferta'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={footerTextButtonUnderline}
-									component='span'
-								>
-									Публичная оферта
-								</Typography>
-							</a>
+							<Typography
+								sx={footerTextButtonUnderline}
+								component='span'
+							>
+								Публичная оферта
+							</Typography>
 						</Link>
 					</Typography>
 					<Typography sx={footerTextButton}>
 						<Link href='/agreement'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={footerTextButtonUnderline}
-									component='span'
-								>
-									Пользовательское соглашение
-								</Typography>
-							</a>
+							<Typography
+								sx={footerTextButtonUnderline}
+								component='span'
+							>
+								Пользовательское соглашение
+							</Typography>
 						</Link>
 					</Typography>
 				</Grid>

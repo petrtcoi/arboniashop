@@ -79,27 +79,24 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 									component={'span'}
 									key={page[0]}
 								>
-									<Link href={page[1]}>
-										<a
-											style={{ textDecoration: 'none' }}
-											href={page[1]}
-											itemProp='url'
-										>
-											<Box component='span'>
-												<MenuItem
-													key={page}
-													onClick={handleCloseNavMenu}
+									<Link
+										href={page[1]}
+										itemProp='url'
+									>
+										<Box component='span'>
+											<MenuItem
+												key={page}
+												onClick={handleCloseNavMenu}
+											>
+												<Typography
+													textAlign='center'
+													variant='body1'
+													sx={{ ...menuButtonDropDown }}
 												>
-													<Typography
-														textAlign='center'
-														variant='body1'
-														sx={{ ...menuButtonDropDown }}
-													>
-														{page[0]}
-													</Typography>
-												</MenuItem>
-											</Box>
-										</a>
+													{page[0]}
+												</Typography>
+											</MenuItem>
+										</Box>
 									</Link>
 								</Box>
 							))}
@@ -118,21 +115,18 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 								component={'span'}
 								key={page[0]}
 							>
-								<Link href={page[1]}>
-									<a
-										style={{ textDecoration: 'none' }}
-										href={page[1]}
-										itemProp='url'
+								<Link
+									href={page[1]}
+									itemProp='url'
+								>
+									<Typography
+										textAlign='center'
+										variant='body1'
+										ml={4}
+										sx={{ ...menuButton, fontSize: '12px' }}
 									>
-										<Typography
-											textAlign='center'
-											variant='body1'
-											ml={4}
-											sx={{ ...menuButton, fontSize: '12px' }}
-										>
-											{page[0]}
-										</Typography>
-									</a>
+										{page[0]}
+									</Typography>
 								</Link>
 							</Box>
 						))}
@@ -155,45 +149,33 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 							sx={{ ...styles.standardText, minWidth: '120px' }}
 						>
 							<Link href={`tel:${global.phone495}`}>
-								<a
-									style={{ textDecoration: 'none' }}
-									onClick={() => trackEvent('phone_click')}
+								<Typography
+									sx={{ ...styles.standardTextLink }}
+									component='span'
 								>
-									<Typography
-										sx={{ ...styles.standardTextLink }}
-										component='span'
-									>
-										{global.phone495String}
-									</Typography>
-								</a>
+									{global.phone495String}
+								</Typography>
 							</Link>
 							<br />
 							<Link href={`tel:${global.phone812}`}>
-								<a
-									style={{ textDecoration: 'none' }}
-									onClick={() => trackEvent('phone_click')}
+								<Typography
+									sx={{ ...styles.standardTextLink }}
+									component='span'
 								>
-									<Typography
-										sx={{ ...styles.standardTextLink }}
-										component='span'
-									>
-										{global.phone812String}
-									</Typography>
-								</a>
+									{global.phone812String}
+								</Typography>
 							</Link>
 						</Typography>
 					</Box>
 					<Box>
 						<Link href='/'>
-							<a>
-								<img
-									// layout="fixed"
-									src='/images/logo.png'
-									alt='Логотип Arbonia'
-									width={102}
-									height={50}
-								/>
-							</a>
+							<img
+								// layout="fixed"
+								src='/images/logo.png'
+								alt='Логотип Arbonia'
+								width={102}
+								height={50}
+							/>
 						</Link>
 					</Box>
 				</Toolbar>

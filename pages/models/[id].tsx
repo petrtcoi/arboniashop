@@ -101,11 +101,9 @@ const Model: NextPage<ModelProps> = ({
 				{modelCurr.id.startsWith('2180') && (
 					<Box>
 						<Link href='/models/2180'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-									все складские модели Arbonia 2180
-								</Typography>
-							</a>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 2180
+							</Typography>
 						</Link>
 					</Box>
 				)}
@@ -113,11 +111,9 @@ const Model: NextPage<ModelProps> = ({
 				{modelCurr.id.startsWith('3030') && (
 					<Box>
 						<Link href='/models/3030'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-									все складские модели Arbonia 3030
-								</Typography>
-							</a>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 3030
+							</Typography>
 						</Link>
 					</Box>
 				)}
@@ -125,11 +121,9 @@ const Model: NextPage<ModelProps> = ({
 				{modelCurr.id.startsWith('2057') && (
 					<Box>
 						<Link href='/models/2057'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-									все складские модели Arbonia 2057
-								</Typography>
-							</a>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 2057
+							</Typography>
 						</Link>
 					</Box>
 				)}
@@ -137,11 +131,9 @@ const Model: NextPage<ModelProps> = ({
 				{modelCurr.id.startsWith('3057') && (
 					<Box>
 						<Link href='/models/3057'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-									все складские модели Arbonia 3057
-								</Typography>
-							</a>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 3057
+							</Typography>
 						</Link>
 					</Box>
 				)}
@@ -149,11 +141,9 @@ const Model: NextPage<ModelProps> = ({
 				{modelCurr.id.startsWith('2050') && (
 					<Box>
 						<Link href='/models/2050'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-									все складские модели Arbonia 2050
-								</Typography>
-							</a>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 2050
+							</Typography>
 						</Link>
 					</Box>
 				)}
@@ -161,11 +151,9 @@ const Model: NextPage<ModelProps> = ({
 				{modelCurr.id.startsWith('3180') && (
 					<Box>
 						<Link href='/models/3180'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-									все складские модели Arbonia 3180
-								</Typography>
-							</a>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 3180
+							</Typography>
 						</Link>
 					</Box>
 				)}
@@ -173,11 +161,9 @@ const Model: NextPage<ModelProps> = ({
 				{modelCurr.id.startsWith('3050') && (
 					<Box>
 						<Link href='/models/3050'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-									все складские модели Arbonia 3050
-								</Typography>
-							</a>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 3050
+							</Typography>
 						</Link>
 					</Box>
 				)}

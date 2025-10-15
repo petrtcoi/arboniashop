@@ -270,11 +270,9 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								{/* БЛОК ЦЕНЫ */}
 								<Box>
 									<Link href='/models/2180'>
-										<a style={{ textDecoration: 'none' }}>
-											<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
-												все складские модели Arbonia 2180
-											</Typography>
-										</a>
+										<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+											все складские модели Arbonia 2180
+										</Typography>
 									</Link>
 								</Box>
 

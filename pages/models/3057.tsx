@@ -123,25 +123,21 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							Если вас интересует радиатор меньшей глубины, то обратите внимание на аналогичную 2-трубчатую модель
 							&#160;
 							<Link href='/models/2057-9016-12'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography
-										sx={{ ...styles.standardTextLinkUnderline }}
-										component='span'
-									>
-										Arbonia 2057 с боковым подключением
-									</Typography>
-								</a>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Arbonia 2057 с боковым подключением
+								</Typography>
 							</Link>
 							&#160;и&#160;
 							<Link href='/models/2057-9016-69tvv'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography
-										sx={{ ...styles.standardTextLinkUnderline }}
-										component='span'
-									>
-										Arbonia 2057 с нижним подключением
-									</Typography>
-								</a>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Arbonia 2057 с нижним подключением
+								</Typography>
 							</Link>
 							.
 						</p>
@@ -282,14 +278,12 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном исполнении на заводе. Также
 						доступна опция с&#160;
 						<Link href='/coloring'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.standardTextRedLink }}
-									component='span'
-								>
-									покраской белого радиатора Arbonia в любой цвет по шкале RAL
-								</Typography>
-							</a>
+							<Typography
+								sx={{ ...styles.standardTextRedLink }}
+								component='span'
+							>
+								покраской белого радиатора Arbonia в любой цвет по шкале RAL
+							</Typography>
 						</Link>
 						&#160;на ваш выбор. Покраска производится на профессиональном оборудовании с сохранением официальной
 						гарантии. Мы будем поддерживать список доступных вариантов в актуальном состоянии.

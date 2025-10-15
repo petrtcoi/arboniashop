@@ -57,14 +57,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</p>
 					<p>
 						<Link href='/'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.standardTextRedLink }}
-									component='span'
-								>
-									Трубчатые радиаторы
-								</Typography>
-							</a>
+							<Typography
+								sx={{ ...styles.standardTextRedLink }}
+								component='span'
+							>
+								Трубчатые радиаторы
+							</Typography>
 						</Link>{' '}
 						представляют современную альтернативу традиционным чугунным батареям и отличаются не только привлекательным
 						дизайном, но и универсальностью установки, что позволяет интегрировать их в любое пространство. Модели

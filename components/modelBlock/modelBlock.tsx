@@ -92,9 +92,7 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
 									{modelLink && (
 										<Box marginTop='10px'>
 											<Link href={`/models/${modelLink}`}>
-												<a style={{ textDecoration: 'none' }}>
-													<Typography sx={styles.smallTextDotted}>подробнее о модели</Typography>
-												</a>
+												<Typography sx={styles.smallTextDotted}>подробнее о модели</Typography>
 											</Link>
 										</Box>
 									)}

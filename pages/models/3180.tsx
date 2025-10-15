@@ -132,14 +132,12 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							кв.м.), и компактные размеры (толщина радиатора всего 105 мм, а длина секции всего 45 мм). Если вам
 							требуется более плоский радиатор, то обратите внимание на 2-трубчатую модель&#160;
 							<Link href='/models/2180'>
-								<a style={{ textDecoration: 'none' }}>
-									<Typography
-										sx={{ ...styles.standardTextLinkUnderline }}
-										component='span'
-									>
-										Arbonia 2180
-									</Typography>
-								</a>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Arbonia 2180
+								</Typography>
 							</Link>
 							, имеющую толщину 62 мм.
 						</p>
@@ -251,18 +249,16 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									мм. Так как радиатор симметричный, то здесь нет разницы, слева или справа подключатся радиатор, его
 									можно просто развернуть нужной стороной. Важно помнить, что подача воды всегда осуществляется в
 									крайнюю секцию. В нашем сообществе Вконтакте есть кроткая заметка о том, как&#160;
-									<Link href='https://vk.com/lovehomekomfort?w=wall-86767719_2238'>
-										<a
-											style={{ textDecoration: 'none' }}
-											rel='nofollow'
+									<Link
+										href='https://vk.com/lovehomekomfort?w=wall-86767719_2238'
+										rel='nofollow'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
 										>
-											<Typography
-												sx={{ ...styles.standardTextRedLink }}
-												component='span'
-											>
-												лучше подключать радиаторы с нижним подключением
-											</Typography>
-										</a>
+											лучше подключать радиаторы с нижним подключением
+										</Typography>
 									</Link>
 									.
 								</p>
@@ -423,14 +419,12 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном исполнении на заводе. Также
 						доступна опция с&#160;
 						<Link href='/coloring'>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.standardTextRedLink }}
-									component='span'
-								>
-									покраской белого радиатора Arbonia в любой цвет по шкале RAL
-								</Typography>
-							</a>
+							<Typography
+								sx={{ ...styles.standardTextRedLink }}
+								component='span'
+							>
+								покраской белого радиатора Arbonia в любой цвет по шкале RAL
+							</Typography>
 						</Link>
 						&#160;на ваш выбор. Покраска производится на профессиональном оборудовании с сохранением официальной
 						гарантии. Мы будем поддерживать список доступных вариантов в актуальном состоянии.

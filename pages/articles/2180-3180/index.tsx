@@ -43,7 +43,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				>
 					Ищете высокие трубчатые решения Arbonia высотой 1,8 м и сомневаетесь между 2180 и 3180? Мы сравнили
 					теплоотдачу, толщину и сценарии применения. Для выбора и покупки переходите в каталог{' '}
-					<Link href='/radiatory/vertical-arbonia'>
+					<Link href='/catalog/high-models'>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
@@ -152,7 +152,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 				<Box sx={{ mt: 4, p: 2, border: '1px solid #eee', borderRadius: '12px', textAlign: 'center' }}>
 					<Typography sx={{ ...styles.standardText }}>Нужны цены, наличие и варианты подключений?</Typography>
-					<Link href='/radiatory/vertical-arbonia'>
+					<Link href='/catalog/high-models'>
 						<Typography sx={{ ...styles.standardTextRedLink }}>
 							Перейти в каталог вертикальных радиаторов Arbonia
 						</Typography>

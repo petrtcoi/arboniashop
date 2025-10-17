@@ -34,11 +34,13 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				marginTop='20px'
 			>
 				<Typography sx={styles.standardText}>
-					2025: Последние актуальные новости от Arbonia. Оставайтесь в курсе всех событий и акций.
+					Последние актуальные новости от Arbonia. Оставайтесь в курсе всех событий и акций.
 				</Typography>
 				<Box mt={2}>
 					<Link href='/news/2025-report'>
-						<Typography sx={styles.standardTextLinkUnderline}>Смена руководства в MBT Climate и Kermi GmbH</Typography>
+						<Typography sx={styles.standardTextLinkUnderline}>
+							2025: Смена руководства в MBT Climate и Kermi GmbH
+						</Typography>
 					</Link>
 				</Box>
 

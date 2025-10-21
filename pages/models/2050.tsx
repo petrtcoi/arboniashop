@@ -15,6 +15,7 @@ import DownloadsBlock from '../../components/pageModels/downloadsBlock'
 import ImagesOtherList from '../../components/pageModels/imagesOtherList'
 import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
 import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
+import PageTitle from '../../components/pageTitle/pageTitle'
 import { ColorOrigin } from '../../models/colorOrigin.model'
 import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
@@ -55,6 +56,14 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			<PageHeader
 				title={'Радиаторы Arbonia 2050 | Выгодные цены | Гарантия'}
 				description='Двухтрубчатые радиаторы Arbonia 2050 в наличии (высота 50 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка по России.'
+			/>
+			<PageTitle
+				header={'Специализированный магазин Arbonia в России'}
+				subheader={'Купить стальной трубчатый радиатор Arbonia 2050'}
+				breadcrumbs={[
+					{ title: 'Главная', link: '/' },
+					{ title: 'Arbonia 2050', link: '/models/2050' },
+				]}
 			/>
 			<Hero
 				imgPath={'/images/sliders/slide.jpeg'}

@@ -108,10 +108,14 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 				>
 					{oldPriceString}
 				</Typography>
-				<span itemProp='price'>
+				<span>
 					<meta
 						itemProp='priceCurrency'
 						content='RUB'
+					/>
+					<meta
+						itemProp='price'
+						content={priceString.replace(/[^0-9]/g, '').trim()}
 					/>
 					{priceString.replace(',', '').replace(' ', '').trim()}
 				</span>

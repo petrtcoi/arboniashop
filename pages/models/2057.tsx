@@ -15,6 +15,7 @@ import DownloadsBlock from '../../components/pageModels/downloadsBlock'
 import ImagesOtherList from '../../components/pageModels/imagesOtherList'
 import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
 import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
+import PageTitle from '../../components/pageTitle/pageTitle'
 import { ColorOrigin } from '../../models/colorOrigin.model'
 import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
@@ -56,11 +57,20 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				title={'Радиаторы Arbonia 2057 | Выгодные цены | Гарантия'}
 				description='Двухтрубчатые радиаторы Arbonia 2057 в наличии (высота 57 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка по России.'
 			/>
+			<PageTitle
+				header={'Специализированный магазин Arbonia в России'}
+				subheader={'Купить стальной трубчатый радиатор Arbonia 2057'}
+				breadcrumbs={[
+					{ title: 'Главная', link: '/' },
+					{ title: 'Arbonia 2057', link: '/models/2057' },
+				]}
+			/>
 			<Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Радиаторы Arbonia 2057 '}
 				subheader={'Двухтрубчатые радиаторы Arbonia высотой 57 см и межосевым расстоянием 50 см'}
 			/>
+
 			<Box sx={{ ...global.pagePadding }}>
 				<Box
 					marginBottom='30px'

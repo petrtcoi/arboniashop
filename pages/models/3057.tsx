@@ -16,6 +16,7 @@ import DownloadsBlock from '../../components/pageModels/downloadsBlock'
 import ImagesOtherList from '../../components/pageModels/imagesOtherList'
 import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
 import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
+import PageTitle from '../../components/pageTitle/pageTitle'
 import { ColorOrigin } from '../../models/colorOrigin.model'
 import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
@@ -56,6 +57,14 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			<PageHeader
 				title={'Радиаторы Arbonia 3057 | Выгодные цены | Гарантия'}
 				description='Трехтрубчатые радиаторы Arbonia 3057 в наличии (высота 57 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка по России.'
+			/>
+			<PageTitle
+				header={'Специализированный магазин Arbonia в России'}
+				subheader={'Купить стальной трубчатый радиатор Arbonia 3050'}
+				breadcrumbs={[
+					{ title: 'Главная', link: '/' },
+					{ title: 'Arbonia 3050', link: '/models/3050' },
+				]}
 			/>
 			<Hero
 				imgPath={'/images/sliders/slide.jpeg'}

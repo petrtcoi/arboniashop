@@ -49,8 +49,12 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{
-						title: `Arbonia ${model.nameShort}, ${color.nameShort}, ${connection.nameShort}`,
+						title: `Arbonia ${model.nameShort}`,
 						link: `/models/${model.id}`,
+					},
+					{
+						title: `${sectionQnty} секций`,
+						link: `/models/${model.id}/${sectionQnty}`,
 					},
 				]}
 			/>

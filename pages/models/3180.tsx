@@ -15,6 +15,7 @@ import DownloadsBlock from '../../components/pageModels/downloadsBlock'
 import ImagesOtherList from '../../components/pageModels/imagesOtherList'
 import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
 import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
+import PageTitle from '../../components/pageTitle/pageTitle'
 import { ColorOrigin } from '../../models/colorOrigin.model'
 import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
@@ -56,6 +57,14 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			<PageHeader
 				title={'Радиаторы Arbonia 3180 | Выгодные цены | Гарантия'}
 				description='Вертикальные радиаторы Arbonia 3180 в наличии (3-трубчатые). Большой выбор моделей. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка в любой город России.'
+			/>
+			<PageTitle
+				header={'Специализированный магазин Arbonia в России'}
+				subheader={'Купить стальной трубчатый радиатор Arbonia 3180'}
+				breadcrumbs={[
+					{ title: 'Главная', link: '/' },
+					{ title: 'Arbonia 3180', link: '/models/3180' },
+				]}
 			/>
 			<Hero
 				imgPath={'/images/sliders/high.jpeg'}

@@ -90,7 +90,7 @@ const Model: NextPage<ModelProps> = ({
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{
-						title: `Arbonia ${modelCurr.nameShort}, ${colorCurr.name}, ${connectionCurr.nameShort}`,
+						title: `Arbonia ${modelCurr.nameShort}`,
 						link: `/models/${modelCurr.id}`,
 					},
 				]}

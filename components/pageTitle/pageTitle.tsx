@@ -2,6 +2,7 @@ import { Box, Grid, Hidden, Typography } from '@mui/material'
 import Link from 'next/link'
 import React from 'react'
 
+import Script from 'next/script'
 import * as styles from '../../styles/styles'
 
 type PageTitleProps = {
@@ -11,111 +12,122 @@ type PageTitleProps = {
 }
 
 const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs }) => {
+	const jsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: (breadcrumbs || []).map((c, i) => {
+			const url = `https://tubogshop.ru${c.link}`
+			return {
+				'@type': 'ListItem',
+				position: i + 1,
+				item: {
+					'@type': 'WebPage',
+					'@id': url,
+					name: c.title,
+				},
+			}
+		}),
+	}
+
 	return (
-		<Box
-			paddingY={'10px'}
-			paddingX={{ xs: '10px', md: '20px' }}
-			sx={{ backgroundColor: '#f6f6f6', borderBottom: '1px solid #e5e5e5' }}
-		>
-			{breadcrumbs && breadcrumbs.length > 0 ? (
-				<Grid
-					container
-					justifyContent='space-between'
-				>
+		<>
+			<Script
+				id='jsonld'
+				type='application/ld+json'
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+			/>
+			<Box
+				paddingY={'10px'}
+				paddingX={{ xs: '10px', md: '20px' }}
+				sx={{ backgroundColor: '#f6f6f6', borderBottom: '1px solid #e5e5e5' }}
+			>
+				{breadcrumbs && breadcrumbs.length > 0 ? (
 					<Grid
-						item
-						itemScope
-						itemType='https://schema.org/BreadcrumbList'
+						container
+						justifyContent='space-between'
 					>
-						{breadcrumbs?.map((item, index) => {
-							return index + 1 < breadcrumbs.length ? (
-								<Box
-									key={index}
-									display='inline'
-									itemProp='itemListElement'
-									itemScope
-									itemType='https://schema.org/ListItem'
-								>
-									<Link
-										href={item.link}
-										itemProp='item'
+						<Grid item>
+							{breadcrumbs?.map((item, index) => {
+								return index + 1 < breadcrumbs.length ? (
+									<Box
+										key={index}
+										display='inline'
+									>
+										<Link
+											href={item.link}
+											itemProp='item'
+										>
+											<a style={{ textDecoration: 'none' }}>
+												<Typography
+													sx={{ ...styles.smallTextThinLink }}
+													display='inline'
+												>
+													{item.title}
+												</Typography>
+											</a>
+										</Link>
+
+										<Typography
+											sx={{ ...styles.smallTextThin }}
+											display='inline'
+										>
+											&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+										</Typography>
+									</Box>
+								) : (
+									<Box
+										key={index}
+										display='inline'
 									>
 										<Typography
-											sx={{ ...styles.smallTextThinLink }}
+											sx={{ ...styles.smallText }}
 											display='inline'
-											itemProp='name'
 										>
 											{item.title}
 										</Typography>
-									</Link>
-									<meta
-										itemProp='name'
-										content={item.title}
-									/>
-									<meta
-										itemProp='position'
-										content={(index + 1).toString()}
-									/>
-									<Typography
-										sx={{ ...styles.smallTextThin }}
-										display='inline'
-									>
-										&nbsp;&nbsp;&gt;&nbsp;&nbsp;
-									</Typography>
-								</Box>
-							) : (
-								<Box
-									key={index}
-									display='inline'
+									</Box>
+								)
+							})}
+						</Grid>
+						<Grid item>
+							<Hidden smDown>
+								<Typography
+									component='h2'
+									sx={{ ...styles.smallTextBold }}
+									textAlign='right'
 								>
-									<Typography
-										sx={{ ...styles.smallText }}
-										display='inline'
-									>
-										{item.title}
-									</Typography>
-								</Box>
-							)
-						})}
+									{header}
+								</Typography>
+								<Typography
+									component='h2'
+									sx={{ ...styles.smallTextThin }}
+									textAlign='right'
+								>
+									{subheader}
+								</Typography>
+							</Hidden>
+						</Grid>
 					</Grid>
-					<Grid item>
-						<Hidden smDown>
-							<Typography
-								component='h2'
-								sx={{ ...styles.smallTextBold }}
-								textAlign='right'
-							>
-								{header}
-							</Typography>
-							<Typography
-								component='h2'
-								sx={{ ...styles.smallTextThin }}
-								textAlign='right'
-							>
-								{subheader}
-							</Typography>
-						</Hidden>
-					</Grid>
-				</Grid>
-			) : (
-				<>
-					<Typography
-						component='h2'
-						sx={{ ...styles.smallTextBold }}
-						textAlign='right'
-					>
-						{header}
-					</Typography>
-					<Typography
-						component='h2'
-						sx={{ ...styles.smallTextThin }}
-						textAlign='right'
-					>
-						{subheader}
-					</Typography>
-				</>
-			)}
-		</Box>
+				) : (
+					<>
+						<Typography
+							component='h2'
+							sx={{ ...styles.smallTextBold }}
+							textAlign='right'
+						>
+							{header}
+						</Typography>
+						<Typography
+							component='h2'
+							sx={{ ...styles.smallTextThin }}
+							textAlign='right'
+						>
+							{subheader}
+						</Typography>
+					</>
+				)}
+			</Box>
+		</>
 	)
 }
 

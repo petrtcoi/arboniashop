@@ -35,7 +35,7 @@ const Home: NextPage<Props> = (props: Props) => {
 				}
 			/>
 			<PageTitle
-				header={'Купить радиаторы Arbonia с официальной гарантией 10 лет'}
+				header={'Купить радиаторы Arbonia. Гарантией 10 лет'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге в любой город России'}
 			/>
 

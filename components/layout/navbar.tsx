@@ -1,7 +1,6 @@
 import { NextComponentType } from 'next'
 import { useState } from 'react'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
@@ -10,8 +9,6 @@ import { AppBar, Box, Hidden, IconButton, Toolbar, Typography } from '@mui/mater
 import Container from '@mui/material/Container'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-
-import trackEvent from '../../utils/trackEvent'
 
 import * as styles from '../../styles/styles'
 import { menuButton, menuButtonDropDown } from '../../styles/stylesNavbarFooter'
@@ -28,9 +25,6 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 	}
 	const handleCloseNavMenu = () => {
 		setAnchorElNav(null)
-	}
-	const myLoader = ({ src, width, quality }: { src: any; width: number; quality: number }) => {
-		return `{src}?w=${width}&q=${quality || 75}`
 	}
 
 	return (

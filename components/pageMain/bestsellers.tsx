@@ -134,7 +134,10 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					>
 						<Box>
 							<Box textAlign='center'>
-								<Link href='/models/2180'>
+								<a
+									style={{ textDecoration: 'none' }}
+									href='/models/2180'
+								>
 									<div>
 										<div
 											style={{
@@ -160,7 +163,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 											Радиатор Arbonia 2180
 										</Typography>
 									</div>
-								</Link>
+								</a>
 							</Box>
 							<Box paddingX='15px'>
 								<Typography sx={{ ...styles.smallText }}>
@@ -335,7 +338,10 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemType='https://schema.org/Product'
 					>
 						<Box textAlign='center'>
-							<Link href='/models/3057'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/models/3057'
+							>
 								<div>
 									<div
 										style={{
@@ -361,7 +367,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 										Радиатор Arbonia 3057
 									</Typography>
 								</div>
-							</Link>
+							</a>
 						</Box>
 						<Box paddingX='15px'>
 							<Typography sx={{ ...styles.smallText }}>
@@ -536,7 +542,10 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemType='https://schema.org/Product'
 					>
 						<Box textAlign='center'>
-							<Link href='/models/3180'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/models/3180'
+							>
 								<div>
 									<div
 										style={{
@@ -562,7 +571,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 										Радиатор Arbonia 3180
 									</Typography>
 								</div>
-							</Link>
+							</a>
 						</Box>
 						<Box paddingX='15px'>
 							<Typography sx={{ ...styles.smallText }}>
@@ -736,7 +745,10 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemType='https://schema.org/Product'
 					>
 						<Box textAlign='center'>
-							<Link href='/models/3030'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/models/3030'
+							>
 								<div>
 									<div
 										style={{
@@ -762,7 +774,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 										Радиатор Arbonia 3030
 									</Typography>
 								</div>
-							</Link>
+							</a>
 						</Box>
 						<Box paddingX='15px'>
 							<Typography sx={{ ...styles.smallText }}>
@@ -936,7 +948,10 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemType='https://schema.org/Product'
 					>
 						<Box textAlign='center'>
-							<Link href='/models/2050'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/models/2050'
+							>
 								<div>
 									<div
 										style={{
@@ -962,7 +977,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 										Радиатор Arbonia 2050
 									</Typography>
 								</div>
-							</Link>
+							</a>
 						</Box>
 						<Box paddingX='15px'>
 							<Typography sx={{ ...styles.smallText }}>
@@ -1136,7 +1151,10 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemType='https://schema.org/Product'
 					>
 						<Box textAlign='center'>
-							<Link href='/models/3050'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/models/3050'
+							>
 								<div>
 									<div
 										style={{
@@ -1162,7 +1180,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 										Радиатор Arbonia 3050
 									</Typography>
 								</div>
-							</Link>
+							</a>
 						</Box>
 						<Box paddingX='15px'>
 							<Typography sx={{ ...styles.smallText }}>

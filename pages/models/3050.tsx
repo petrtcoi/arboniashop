@@ -122,23 +122,29 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						<p>
 							Радиатор Arbonia 3050 - это 3-трубчатая модель высотой 50 см. Если вас интересует радиатор меньшей
 							глубины, то обратите внимание на аналогичную 2-трубчатую модель &#160;
-							<Link href='/models/2050-9016-12'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/models/2050-9016-12'
+							>
 								<Typography
 									sx={{ ...styles.standardTextLinkUnderline }}
 									component='span'
 								>
 									Радиаторы Arbonia 2050 с боковым подключением
 								</Typography>
-							</Link>
+							</a>
 							&#160;и&#160;
-							<Link href='/models/2050-9016-69tvv'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/models/2050-9016-69tvv'
+							>
 								<Typography
 									sx={{ ...styles.standardTextLinkUnderline }}
 									component='span'
 								>
 									РадиаторыArbonia 2050 с нижним подключением
 								</Typography>
-							</Link>
+							</a>
 							.
 						</p>
 
@@ -200,14 +206,17 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									Межосевое расстояние радиатора при боковом подключении составляет 43 см. Если вы меняете чугунный или
 									алюминиевый радиатор,то потребуются дополнительные работы для переноса труб. В этом случае вам может
 									больше подойти модель&#160;
-									<Link href='/models/3057-9016-12'>
+									<a
+										style={{ textDecoration: 'none' }}
+										href='/models/3057-9016-12'
+									>
 										<Typography
 											sx={{ ...styles.standardTextLinkUnderline }}
 											component='span'
 										>
 											Arbonia 3057
 										</Typography>
-									</Link>
+									</a>
 									&#160;с межосевым расстоянием 50 см.
 								</p>
 								<p>
@@ -291,14 +300,17 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						Здесь мы отобразили все модели радиаторов Arbonia 3050 доступные к покупке со склада. Если среди
 						предложенных вариантов не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном
 						исполнении на заводе. Также доступна опция с&#160;
-						<Link href='/coloring'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/coloring'
+						>
 							<Typography
 								sx={{ ...styles.standardTextRedLink }}
 								component='span'
 							>
 								покраской белого радиатора Arbonia в любой цвет по шкале RAL
 							</Typography>
-						</Link>
+						</a>
 						&#160;на ваш выбор. Покраска производится на профессиональном оборудовании с сохранением официальной
 						гарантии. Мы будем поддерживать список доступных вариантов в актуальном состоянии.
 					</Typography>

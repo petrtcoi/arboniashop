@@ -57,14 +57,17 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					<h2>Особенности и преимущества вертикальных радиаторов</h2>
 					<p>
 						Наиболее оптимальным способом отопления для квартиры с панорамными окнами является использование&#160;
-						<Link href='/catalog/high-models'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/catalog/high-models'
+						>
 							<Typography
 								sx={{ ...styles.standardTextRedLink }}
 								component='span'
 							>
 								вертикальных трубчатых радиаторов Arbonia
 							</Typography>
-						</Link>
+						</a>
 						. В модельном ряду производителя можно выбрать устройства, которые можно установить вертикально. Особенности
 						такой установки заключаются в возможности создания необычных дизайнерских решений и сохранении тепла в
 						помещении.
@@ -106,14 +109,17 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					<h2>Низкие радиаторы Arbonia для панорамных окон</h2>
 					<p>
 						Подключение&#160;
-						<Link href='/catalog/low-models'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/catalog/low-models'
+						>
 							<Typography
 								sx={{ ...styles.standardTextRedLink }}
 								component='span'
 							>
 								низкого радиатора Arbonia
 							</Typography>
-						</Link>
+						</a>
 						&#160;представляет собой стандартное решение, при котором он устанавливается под подоконником, аналогично
 						традиционным батареям. Небольшая высота таких отопительных приборов позволяет их использование в помещениях
 						с панорамными окнами.

@@ -41,7 +41,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
-							<Link href='/articles/care'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/care'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -77,7 +80,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 					<Grid
@@ -85,7 +88,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
-							<Link href='/articles/montazh-radiatorov-arbonia-rekomendacii'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/montazh-radiatorov-arbonia-rekomendacii'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -121,7 +127,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 					<Grid
@@ -129,7 +135,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
-							<Link href='/articles/faq'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/faq'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -165,7 +174,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 					<Grid
@@ -173,7 +182,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/termostat'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/termostat'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -211,7 +223,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -220,7 +232,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/high-arbonia'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/high-arbonia'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -258,7 +273,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -267,7 +282,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/panorama'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/panorama'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -306,7 +324,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -315,7 +333,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/column-radiators'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/column-radiators'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -355,7 +376,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -364,7 +385,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/epd'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/epd'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -404,7 +428,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -413,7 +437,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/arbonia-3057'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/arbonia-3057'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -453,7 +480,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -462,7 +489,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/low-models'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/low-models'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -503,7 +533,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -512,7 +542,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/convection-radiaton-arbonia'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/convection-radiaton-arbonia'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -551,7 +584,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -560,7 +593,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/calc-radiators-by-old-ones'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/calc-radiators-by-old-ones'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -599,7 +635,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -608,7 +644,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/2-3-columns'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/2-3-columns'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -646,7 +685,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -655,7 +694,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/arbonia-radiators'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/arbonia-radiators'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -693,7 +735,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -702,7 +744,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/consoles'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/consoles'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -740,7 +785,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -749,7 +794,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/2180-3180'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/2180-3180'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -787,7 +835,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -796,7 +844,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/connections'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/connections'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -834,7 +885,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 
@@ -843,7 +894,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						md={6}
 					>
 						<Box>
-							<Link href='/articles/calculate'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/calculate'
+							>
 								<div>
 									<Box textAlign={'center'}>
 										<img
@@ -881,7 +935,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 								</div>
-							</Link>
+							</a>
 						</Box>
 					</Grid>
 				</Grid>

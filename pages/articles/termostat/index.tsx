@@ -65,14 +65,17 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</p>
 					<p>
 						Модели радиаторов с нижним подключением, например,{' '}
-						<Link href='/models/2180'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/2180'
+						>
 							<Typography
 								sx={{ ...styles.standardTextRedLink }}
 								component='span'
 							>
 								радиатор Arbonia 2180
 							</Typography>
-						</Link>{' '}
+						</a>{' '}
 						с нижним подключением, требуют горизонтальной установки термоголовок, что исключает ошибки.
 					</p>
 					<h2>Неправильное размещение радиаторов Arbonia</h2>

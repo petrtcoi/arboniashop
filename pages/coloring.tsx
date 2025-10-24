@@ -99,14 +99,17 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 							>
 								тел.:&ensp;
 							</Typography>
-							<Link href={`tel:${global.phone495}`}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`tel:${global.phone495}`}
+							>
 								<Typography
 									sx={{ ...styles.standardTextLink, color: 'white' }}
 									display='inline'
 								>
 									{global.phone495String}
 								</Typography>
-							</Link>
+							</a>
 							<Typography
 								sx={{ ...styles.standardText, color: 'white' }}
 								display='inline'
@@ -120,14 +123,17 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 									тел.:&ensp;
 								</Typography>
 							</Typography>
-							<Link href={`tel:${global.phone812}`}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`tel:${global.phone812}`}
+							>
 								<Typography
 									sx={{ ...styles.standardTextLink, color: 'white' }}
 									display='inline'
 								>
 									{global.phone812String}
 								</Typography>
-							</Link>
+							</a>
 						</Grid>
 						<Grid
 							item
@@ -141,14 +147,17 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 							>
 								email:&ensp;
 							</Typography>
-							<Link href={`mailto:${global.email}`}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`mailto:${global.email}`}
+							>
 								<Typography
 									sx={{ ...styles.standardTextLink, color: 'white' }}
 									display='inline'
 								>
 									{global.email}
 								</Typography>
-							</Link>
+							</a>
 						</Grid>
 						<Grid
 							item
@@ -162,14 +171,17 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 							>
 								whatsapp:&ensp;
 							</Typography>
-							<Link href={`https://wa.me/${global.whatsApp}`}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`https://wa.me/${global.whatsApp}`}
+							>
 								<Typography
 									sx={{ ...styles.standardTextLink, color: 'white' }}
 									display='inline'
 								>
 									{global.whatsAppString}
 								</Typography>
-							</Link>
+							</a>
 						</Grid>
 					</Grid>
 				</Box>

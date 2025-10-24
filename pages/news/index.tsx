@@ -37,51 +37,69 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					Последние актуальные новости от Arbonia. Оставайтесь в курсе всех событий и акций.
 				</Typography>
 				<Box mt={2}>
-					<Link href='/news/2025-report'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/news/2025-report'
+					>
 						<Typography sx={styles.standardTextLinkUnderline}>
 							2025: Смена руководства в MBT Climate и Kermi GmbH
 						</Typography>
-					</Link>
+					</a>
 				</Box>
 
 				<Box mt={2}>
-					<Link href='/news/2024-report'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/news/2024-report'
+					>
 						<Typography sx={styles.standardTextLinkUnderline}>
 							2024: Отчет о полугодовых результатах Arbonia за 2024 год
 						</Typography>
-					</Link>
+					</a>
 				</Box>
 
 				<Box mt={2}>
-					<Link href='/news/2024-midea'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/news/2024-midea'
+					>
 						<Typography sx={styles.standardTextLinkUnderline}>
 							2024: Arbonia продает подразделение Climate за 760 миллионов евро компании Midea
 						</Typography>
-					</Link>
+					</a>
 				</Box>
 
 				<Box mt={2}>
-					<Link href='/news/2023-design'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/news/2023-design'
+					>
 						<Typography sx={styles.standardTextLinkUnderline}>
 							2023: Arbonia повышает конкурентоспособность за счет консолидации производства дизайнерских радиаторов
 						</Typography>
-					</Link>
+					</a>
 				</Box>
 
 				<Box mt={2}>
-					<Link href='/news/redox'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/news/redox'
+					>
 						<Typography sx={styles.standardTextLinkUnderline}>
 							2023: Запуск системы хранения энергии на основе редокс-аккумуляторов
 						</Typography>
-					</Link>
+					</a>
 				</Box>
 
 				<Box mt={2}>
-					<Link href='/news/circle'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/news/circle'
+					>
 						<Typography sx={styles.standardTextLinkUnderline}>
 							2020: THE CIRCLE – крупнейшая строительная площадка в Швейцарии
 						</Typography>
-					</Link>
+					</a>
 				</Box>
 			</Box>
 		</Box>

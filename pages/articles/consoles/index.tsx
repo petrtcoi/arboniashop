@@ -40,14 +40,17 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					sx={{ ...styles.standardText }}
 					marginY='20px'
 				>
-					<Link href='/'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/'
+					>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
 						>
 							Радиаторы Arbonia
 						</Typography>
-					</Link>
+					</a>
 					&#160; чаще всего комплектуются одним из двух вариантов кронштейнов:
 					<ul>
 						<li>

@@ -91,14 +91,17 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 								>
 									тел.:&nbsp;
 								</Typography>
-								<Link href={`tel:${global.phone495}`}>
+								<a
+									style={{ textDecoration: 'none' }}
+									href={`tel:${global.phone495}`}
+								>
 									<Typography
 										sx={{ ...styles.standardTextLink }}
 										display='inline'
 									>
 										{global.phone495String}
 									</Typography>
-								</Link>
+								</a>
 								<br />
 								<Typography
 									sx={{ ...styles.smallTextBold, color: '#ffffff' }}
@@ -106,14 +109,17 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 								>
 									тел.:&nbsp;
 								</Typography>
-								<Link href={`tel:${global.phone812}`}>
+								<a
+									style={{ textDecoration: 'none' }}
+									href={`tel:${global.phone812}`}
+								>
 									<Typography
 										sx={{ ...styles.standardTextLink }}
 										display='inline'
 									>
 										{global.phone812String}
 									</Typography>
-								</Link>
+								</a>
 							</Box>
 							<Box>
 								<Typography
@@ -122,14 +128,17 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 								>
 									email:&nbsp;
 								</Typography>
-								<Link href={`mailto:${global.email}`}>
+								<a
+									style={{ textDecoration: 'none' }}
+									href={`mailto:${global.email}`}
+								>
 									<Typography
 										sx={{ ...styles.standardTextLink }}
 										display='inline'
 									>
 										{global.email}
 									</Typography>
-								</Link>
+								</a>
 							</Box>
 
 							<Box>
@@ -139,14 +148,17 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 								>
 									whatsapp:&nbsp;
 								</Typography>
-								<Link href={`https://wa.me/${global.whatsApp}`}>
+								<a
+									style={{ textDecoration: 'none' }}
+									href={`https://wa.me/${global.whatsApp}`}
+								>
 									<Typography
 										sx={{ ...styles.standardTextLink }}
 										display='inline'
 									>
 										{global.whatsAppString}
 									</Typography>
-								</Link>
+								</a>
 							</Box>
 
 							<Box>
@@ -156,14 +168,17 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 								>
 									telegram:&nbsp;
 								</Typography>
-								<Link href={`https://t.me/Arboniashopbot`}>
+								<a
+									style={{ textDecoration: 'none' }}
+									href={`https://t.me/Arboniashopbot`}
+								>
 									<Typography
 										sx={{ ...styles.standardTextLink }}
 										display='inline'
 									>
 										@Arboniashopbot
 									</Typography>
-								</Link>
+								</a>
 							</Box>
 						</Grid>
 					</Grid>

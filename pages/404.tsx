@@ -41,9 +41,12 @@ const SuccessPage: NextPage<SuccessPageProps> = () => {
 							<li>Проверьте правильность введённого URL.</li>
 							<li>
 								Вернитесь на{' '}
-								<Link href='/'>
+								<a
+									style={{ textDecoration: 'none' }}
+									href='/'
+								>
 									<span style={{ color: '#ef7d00', fontWeight: 600 }}>главную страницу</span>
-								</Link>{' '}
+								</a>{' '}
 								и попробуйте найти нужную информацию оттуда.
 							</li>
 							<li>Воспользуйтесь меню навигации или поиском на сайте.</li>

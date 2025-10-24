@@ -67,56 +67,71 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						В наличии мы поддерживаем трубчатые радиаторы белого цвета:
 						<ul>
 							<li>
-								<Link href='/models/2030-9016-12'>
+								<a
+									style={{ textDecoration: 'none' }}
+									href='/models/2030-9016-12'
+								>
 									<Typography
 										sx={{ ...styles.standardTextRedLink }}
 										component='span'
 									>
 										Arbonia 2030
 									</Typography>
-								</Link>
+								</a>
 								. Двухтрубчатый радиатор высотой 30 см. Доступен с боковым подключением.
 							</li>
 							<li>
 								Arbonia 3030. Трехтрубчатая модель высотой 30 см. В наличии поддерживаются &#160;
-								<Link href='/models/3030-9016-12'>
+								<a
+									style={{ textDecoration: 'none' }}
+									href='/models/3030-9016-12'
+								>
 									<Typography
 										sx={{ ...styles.standardTextRedLink }}
 										component='span'
 									>
 										радиаторы как с боковым
 									</Typography>
-								</Link>
+								</a>
 								, так и с &#160;
-								<Link href='/models/3030-9016-69tvv'>
+								<a
+									style={{ textDecoration: 'none' }}
+									href='/models/3030-9016-69tvv'
+								>
 									<Typography
 										sx={{ ...styles.standardTextRedLink }}
 										component='span'
 									>
 										нижним подключением
 									</Typography>
-								</Link>
+								</a>
 								.
 							</li>
 							<li>
 								Arbonia 3037. Также трехтрубчатый радиатор высотой 37 см. Подключения доступны &#160;
-								<Link href='/models/3037-9016-12'>
+								<a
+									style={{ textDecoration: 'none' }}
+									href='/models/3037-9016-12'
+								>
 									<Typography
 										sx={{ ...styles.standardTextRedLink }}
 										component='span'
 									>
 										боковое
 									</Typography>
-								</Link>
+								</a>
 								&#160; и &#160;
-								<Link href='/models/3037-9016-69tvv'>
+								<a
+									style={{ textDecoration: 'none' }}
+									href='/models/3037-9016-69tvv'
+								>
 									<Typography
 										sx={{ ...styles.standardTextRedLink }}
 										component='span'
 									>
 										нижнее
 									</Typography>
-								</Link>
+								</a>
 								.
 							</li>
 						</ul>

@@ -131,14 +131,17 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						</p>
 						<p>
 							Если вам требуется радиатор немного меньшей высоты, то рассмотрите модель&#160;
-							<Link href='/models/2050'>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/models/2050'
+							>
 								<Typography
 									sx={{ ...styles.standardTextLinkUnderline }}
 									component='span'
 								>
 									Arbonia 2050
 								</Typography>
-							</Link>
+							</a>
 							, высотой 50 см.
 						</p>
 
@@ -273,14 +276,17 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						Здесь мы отобразили все модели трубчатых радиаторов Arbonia 2057 доступные к покупке со склада. Если среди
 						предложенных вариантов не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном
 						исполнении на заводе. Также доступна опция с&#160;
-						<Link href='/coloring'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/coloring'
+						>
 							<Typography
 								sx={{ ...styles.standardTextRedLink }}
 								component='span'
 							>
 								покраской белого радиатора Arbonia в любой цвет по шкале RAL
 							</Typography>
-						</Link>
+						</a>
 						&#160;на ваш выбор. Покраска производится на профессиональном оборудовании с сохранением официальной
 						гарантии. Мы будем поддерживать список доступных вариантов в актуальном состоянии.
 					</Typography>

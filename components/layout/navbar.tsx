@@ -73,7 +73,8 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 									component={'span'}
 									key={page[0]}
 								>
-									<Link
+									<a
+										style={{ textDecoration: 'none' }}
 										href={page[1]}
 										itemProp='url'
 									>
@@ -91,7 +92,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 												</Typography>
 											</MenuItem>
 										</Box>
-									</Link>
+									</a>
 								</Box>
 							))}
 						</Menu>
@@ -109,7 +110,8 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 								component={'span'}
 								key={page[0]}
 							>
-								<Link
+								<a
+									style={{ textDecoration: 'none' }}
 									href={page[1]}
 									itemProp='url'
 								>
@@ -121,7 +123,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 									>
 										{page[0]}
 									</Typography>
-								</Link>
+								</a>
 							</Box>
 						))}
 					</Box>
@@ -142,27 +144,36 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 							variant='body1'
 							sx={{ ...styles.standardText, minWidth: '120px' }}
 						>
-							<Link href={`tel:${global.phone495}`}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`tel:${global.phone495}`}
+							>
 								<Typography
 									sx={{ ...styles.standardTextLink }}
 									component='span'
 								>
 									{global.phone495String}
 								</Typography>
-							</Link>
+							</a>
 							<br />
-							<Link href={`tel:${global.phone812}`}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`tel:${global.phone812}`}
+							>
 								<Typography
 									sx={{ ...styles.standardTextLink }}
 									component='span'
 								>
 									{global.phone812String}
 								</Typography>
-							</Link>
+							</a>
 						</Typography>
 					</Box>
 					<Box>
-						<Link href='/'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/'
+						>
 							<img
 								// layout="fixed"
 								src='/images/logo.png'
@@ -170,7 +181,7 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 								width={102}
 								height={50}
 							/>
-						</Link>
+						</a>
 					</Box>
 				</Toolbar>
 			</Container>

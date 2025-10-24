@@ -30,7 +30,8 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
 						позволяет нам подобрать оптимальный вариант для каждого заказчика, исходя из его предпочтений, желаемого
 						бюджета и технических особенностей строительного объекта. Среди наших клиентов есть как частные лица, так и
 						организации: строительные компании, рестораны, государственные учреждения.&nbsp;
-						<Link
+						<a
+							style={{ textDecoration: 'none' }}
 							href='/about'
 							target='_blank'
 						>
@@ -40,7 +41,7 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
 							>
 								Подбронее о нашей компании...
 							</Typography>
-						</Link>
+						</a>
 					</Typography>
 				</Grid>
 				<Grid

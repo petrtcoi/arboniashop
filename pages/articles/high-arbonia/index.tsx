@@ -75,14 +75,17 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</Typography>
 
 					<p>
-						<Link href='/catalog/high-models'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/catalog/high-models'
+						>
 							<Typography
 								sx={{ ...styles.standardTextRedLink }}
 								component='span'
 							>
 								Высокие радиаторы Arbonia
 							</Typography>
-						</Link>{' '}
+						</a>{' '}
 						превосходят многие традиционные отопительные устройства благодаря своей способности к эффективной
 						теплоотдаче. Уникальность этих радиаторов заключается в их конструкции: большая высота увеличивает
 						поверхность контакта с воздухом, что способствует более эффективному распределению тепла по помещению. Это
@@ -120,23 +123,29 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
 					<p>
 						Arbonia предлагает широкий ассортимент высоких трубчатых радиаторов, среди которых особенно популярны модели{' '}
-						<Link href='/models/2180'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/2180'
+						>
 							<Typography
 								sx={{ ...styles.standardTextRedLink }}
 								component='span'
 							>
 								Arbonia 2180
 							</Typography>
-						</Link>{' '}
+						</a>{' '}
 						и{' '}
-						<Link href='/models/3180'>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/3180'
+						>
 							<Typography
 								sx={{ ...styles.standardTextRedLink }}
 								component='span'
 							>
 								Arbonia 3180
 							</Typography>
-						</Link>
+						</a>
 						. Эти модели доступны со склада, что обеспечивает быструю доставку и установку. Кроме того, компания Arbonia
 						идет навстречу индивидуальным потребностям клиентов, предлагая возможность заказа радиаторов высотой до 3
 						метров. Это означает, что вы можете получить радиатор, идеально подходящий под параметры вашего помещения,

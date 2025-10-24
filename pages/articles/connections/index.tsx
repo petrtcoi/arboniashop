@@ -83,14 +83,17 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					marginY='20px'
 				>
 					Самой популярной моделью с боковым подключением является &#160;
-					<Link href='/models/3057-9016-12'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/models/3057-9016-12'
+					>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
 						>
 							Arbonia 3057
 						</Typography>
-					</Link>
+					</a>
 					- 3-трубчатый радиатор с межосевым расстоянием 500 мм. Его популярность обусловлена высокой теплоотдачей и
 					возможностью использовать его при замене старых чугунных илил алюминиевых радиаторов без переноса труб.
 				</Typography>
@@ -134,41 +137,53 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				>
 					Так как нижнее подключение используется в современных домах, то здесь и больше разнообразие используемых
 					типоразмеров радиаторов Arbonia. Чаще всего для низких подоконников подходят &#160;
-					<Link href='/models/3030-9016-69tvv'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/models/3030-9016-69tvv'
+					>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
 						>
 							Arbonia 3030 №69 ТВВ
 						</Typography>
-					</Link>
+					</a>
 					. Для подоконников высотой 80-90 см чаще всего берут ту же модель &#160;
-					<Link href='/models/3057-9016-69tvv'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/models/3057-9016-69tvv'
+					>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
 						>
 							Arbonia 3057 №69 ТВВ
 						</Typography>
-					</Link>
+					</a>
 					. Если же используется вертикальный радиатор, то здесь два равноценных варианта: &#160;
-					<Link href='/models/2180-9016-69tvv'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/models/2180-9016-69tvv'
+					>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
 						>
 							Arbonia 2180
 						</Typography>
-					</Link>
+					</a>
 					&#160; и &#160;
-					<Link href='/models/3180-9016-69tvv'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/models/3180-9016-69tvv'
+					>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
 						>
 							Arbonia 3180
 						</Typography>
-					</Link>
+					</a>
 					.
 				</Typography>
 				<Box textAlign={'center'}>

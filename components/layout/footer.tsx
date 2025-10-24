@@ -1,11 +1,6 @@
 import { Box, Divider, Grid, Typography } from '@mui/material'
 import { NextComponentType } from 'next'
 
-import Image from 'next/image'
-import Link from 'next/link'
-
-import trackEvent from '../../utils/trackEvent'
-
 import {
 	footerText,
 	footerTextBold,
@@ -42,7 +37,8 @@ const Footer: NextComponentType<FooterProps> = () => {
 			/>
 
 			<Box>
-				<Link
+				<a
+					style={{ ...footerTextButton, textDecoration: 'none' }}
 					href='/'
 					itemProp={'url'}
 				>
@@ -53,7 +49,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 						height={'50px'}
 						itemProp={'logo'}
 					/>
-				</Link>
+				</a>
 			</Box>
 			<Grid
 				container
@@ -70,22 +66,22 @@ const Footer: NextComponentType<FooterProps> = () => {
 					</Box>
 					<Box marginTop={'10px'}>
 						<Typography sx={footerText}>
-							<Link
+							<a
+								style={{ ...footerTextButton, textDecoration: 'none' }}
 								href={`tel:${global.phone495}`}
-								style={footerTextButton}
 							>
 								<Typography
-									sx={footerTextButtonUnderline}
+									sx={{ ...footerTextButtonUnderline, textDecoration: 'none' }}
 									component='span'
 									itemProp='telephone'
 								>
 									{global.phone495String}
 								</Typography>
-							</Link>
+							</a>
 							<br />
-							<Link
+							<a
+								style={{ ...footerTextButton, textDecoration: 'none' }}
 								href={`tel:${global.phone812}`}
-								style={footerTextButton}
 							>
 								<Typography
 									sx={footerTextButtonUnderline}
@@ -93,15 +89,15 @@ const Footer: NextComponentType<FooterProps> = () => {
 								>
 									{global.phone812String}
 								</Typography>
-							</Link>
+							</a>
 						</Typography>
 					</Box>
 
 					<Box marginTop={'10px'}>
 						<Typography sx={footerText}>
-							<Link
+							<a
+								style={{ ...footerTextButton, textDecoration: 'none' }}
 								href={`mailto:${global.email}`}
-								style={footerTextButton}
 							>
 								<Typography
 									sx={footerTextButtonUnderline}
@@ -110,7 +106,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 								>
 									{global.email}
 								</Typography>
-							</Link>
+							</a>
 						</Typography>
 					</Box>
 					<Box marginTop={'10px'}>
@@ -124,20 +120,26 @@ const Footer: NextComponentType<FooterProps> = () => {
 				>
 					{pages.map((page, index) => (
 						<Box key={page[0]}>
-							<Link href={page[1]}>
+							<a
+								style={{ ...footerTextButton, textDecoration: 'none' }}
+								href={page[1]}
+							>
 								<Typography
 									sx={footerTextButton}
 									component='span'
 								>
 									{page[0]}
 								</Typography>
-							</Link>
+							</a>
 
 							<br />
 						</Box>
 					))}
 					<Box key={'faq'}>
-						<Link href={'/articles/faq'}>
+						<a
+							style={{ ...footerTextButton, textDecoration: 'none' }}
+							href={'/articles/faq'}
+						>
 							<Typography
 								sx={{ ...footerTextButton, lineHeight: 0.1 }}
 								component='span'
@@ -146,7 +148,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 									Ответы на часто задаваемые вопросы про радиаторы Arbonia
 								</div>
 							</Typography>
-						</Link>
+						</a>
 
 						<br />
 					</Box>
@@ -179,34 +181,43 @@ const Footer: NextComponentType<FooterProps> = () => {
 					md={4}
 				>
 					<Typography sx={footerTextButton}>
-						<Link href='/privacy'>
+						<a
+							style={{ ...footerTextButton, textDecoration: 'none' }}
+							href='/privacy'
+						>
 							<Typography
 								sx={footerTextButtonUnderline}
 								component='span'
 							>
 								Политика конфиденциальности
 							</Typography>
-						</Link>
+						</a>
 					</Typography>
 					<Typography sx={footerTextButton}>
-						<Link href='/oferta'>
+						<a
+							style={{ ...footerTextButton, textDecoration: 'none' }}
+							href='/oferta'
+						>
 							<Typography
 								sx={footerTextButtonUnderline}
 								component='span'
 							>
 								Публичная оферта
 							</Typography>
-						</Link>
+						</a>
 					</Typography>
 					<Typography sx={footerTextButton}>
-						<Link href='/agreement'>
+						<a
+							style={{ ...footerTextButton, textDecoration: 'none' }}
+							href='/agreement'
+						>
 							<Typography
 								sx={footerTextButtonUnderline}
 								component='span'
 							>
 								Пользовательское соглашение
 							</Typography>
-						</Link>
+						</a>
 					</Typography>
 				</Grid>
 				<Grid

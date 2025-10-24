@@ -43,23 +43,29 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				>
 					Мы стараемся поддерживать в наличии наиболее популярные модели радиаторов Arbonia. Это наиболее универсальные
 					модели, которые подходят для большинства случаев. В складскую программу входят, как &#160;
-					<Link href='/catalog/high-models'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/catalog/high-models'
+					>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
 						>
 							высокие радиаторы Arbonia высотой 1.8 м
 						</Typography>
-					</Link>
+					</a>
 					, так и &#160;
-					<Link href='/catalog/low-models'>
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/catalog/low-models'
+					>
 						<Typography
 							sx={{ ...styles.standardTextRedLink }}
 							component='span'
 						>
 							низкие радиаторы Arbonia высотой 30-37 см
 						</Typography>
-					</Link>
+					</a>
 					. Боковое или нижнее подключение, в зависимости от того, какая система отопления используется в доме.
 				</Typography>
 				<Typography

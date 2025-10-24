@@ -50,7 +50,10 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 			>
 				<Box padding={{ xs: '5px', sm: '5px', md: '0px' }}>
 					<Typography sx={{ ...styles.smallText }}>
-						<Link href={`/models/${model.id}/${sectionQnty}`}>
+						<a
+							style={{ textDecoration: 'none' }}
+							href={`/models/${model.id}/${sectionQnty}`}
+						>
 							<a style={{ textDecoration: 'none' }}>
 								<Typography
 									sx={{ ...styles.smallTextRedLink }}
@@ -59,7 +62,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 									{titleString}
 								</Typography>
 							</a>
-						</Link>
+						</a>
 					</Typography>
 					{/* <Typography sx={ styles.smallTextRed }></Typography> */}
 					<Hidden mdUp>

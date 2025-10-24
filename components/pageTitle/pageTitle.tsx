@@ -39,7 +39,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 			<Box
 				paddingY={'10px'}
 				paddingX={{ xs: '10px', md: '20px' }}
-				sx={{ backgroundColor: '#f6f6f6', borderBottom: '1px solid #e5e5e5' }}
+				sx={{ backgroundColor: '#f6f6f6', borderBottom: '1px solid #e5e5e5', width: '100%' }}
 			>
 				{breadcrumbs && breadcrumbs.length > 0 ? (
 					<Grid
@@ -53,7 +53,8 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 										key={index}
 										display='inline'
 									>
-										<Link
+										<a
+											style={{ textDecoration: 'none' }}
 											href={item.link}
 											itemProp='item'
 										>
@@ -65,7 +66,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 													{item.title}
 												</Typography>
 											</a>
-										</Link>
+										</a>
 
 										<Typography
 											sx={{ ...styles.smallTextThin }}

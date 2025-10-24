@@ -39,7 +39,10 @@ const ShoppingCart: React.FC<ShoppingCartProps> = () => {
 	if (itemsQnty === 0) return <></>
 
 	return (
-		<Link href='/order/cart'>
+		<a
+			style={{ textDecoration: 'none' }}
+			href='/order/cart'
+		>
 			<Fab
 				color='primary'
 				aria-label='Корзина покупок'
@@ -69,7 +72,7 @@ const ShoppingCart: React.FC<ShoppingCartProps> = () => {
 					}}
 				/>
 			</Fab>
-		</Link>
+		</a>
 	)
 }
 

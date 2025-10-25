@@ -3,8 +3,8 @@ const global: { [key: string]: any } = {
 	phone812: '+78124093855',
 	phone495String: '(495)  204-29-55',
 	phone495: '+74952042955',
-	whatsAppString: '+79667569655',
-	whatsApp: '79667569655',
+	whatsAppString: '+79667589202',
+	whatsApp: '79667589202',
 	pages: [
 		['Главная', '/'],
 		['О магазине', '/about'],

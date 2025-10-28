@@ -54,14 +54,12 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 							style={{ textDecoration: 'none' }}
 							href={`/models/${model.id}/${sectionQnty}`}
 						>
-							<a style={{ textDecoration: 'none' }}>
-								<Typography
-									sx={{ ...styles.smallTextRedLink }}
-									component='span'
-								>
-									{titleString}
-								</Typography>
-							</a>
+							<Typography
+								sx={{ ...styles.smallTextRedLink }}
+								component='span'
+							>
+								{titleString}
+							</Typography>
 						</a>
 					</Typography>
 					{/* <Typography sx={ styles.smallTextRed }></Typography> */}

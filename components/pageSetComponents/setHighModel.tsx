@@ -1,5 +1,4 @@
 import { Box, Typography } from '@mui/material'
-import Link from 'next/link'
 import React from 'react'
 
 import Hero from '../../components/hero/hero'
@@ -160,6 +159,57 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 					color={colors.find(x => x.id === 'sf3') || colors[0]}
 					connection={connections.find(x => x.id === '69tvv') || connections[0]}
 				/>
+
+				<Box marginTop='60px'>
+					<Typography
+						component='h2'
+						variant='h5'
+					>
+						Полезные материалы
+					</Typography>
+
+					<ul>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/high-arbonia`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Высокие радиаторы Arbonia
+								</Typography>
+							</a>
+						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/panorama`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Радиаторы Arbonia для панорамных окон
+								</Typography>
+							</a>
+						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/2180-3180`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Arbonia 2180 vs 3180: чем отличаются и когда что выбрать
+								</Typography>
+							</a>
+						</li>
+					</ul>
+				</Box>
 			</Box>
 		</Box>
 	)

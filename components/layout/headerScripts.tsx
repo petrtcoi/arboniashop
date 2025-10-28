@@ -57,7 +57,6 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
 
 			<Script
 				id='amo-social-button'
-				strategy='afterInteractive'
 				dangerouslySetInnerHTML={{
 					__html: `
             setTimeout(function() {

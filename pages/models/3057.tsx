@@ -338,6 +338,31 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
 				</Box>
+
+				<Box marginTop='60px'>
+					<Typography
+						component='h2'
+						variant='h5'
+					>
+						Полезные материалы
+					</Typography>
+
+					<ul>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/arbonia-3057`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Замена чугунных радиаторов на Arbonia 3057
+								</Typography>
+							</a>
+						</li>
+					</ul>
+				</Box>
 			</Box>
 		</Box>
 	)

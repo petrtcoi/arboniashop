@@ -526,6 +526,31 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 					</Typography>
 				</Box>
+
+				<Box marginTop='60px'>
+					<Typography
+						component='h2'
+						variant='h5'
+					>
+						Полезные материалы
+					</Typography>
+
+					<ul>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/catalog/ral9016`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Что такое RAL 9016 и почему его выбирают архитекторы
+								</Typography>
+							</a>
+						</li>
+					</ul>
+				</Box>
 			</Box>
 		</Box>
 	)

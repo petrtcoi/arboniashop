@@ -603,6 +603,31 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
 				</Box>
+
+				<Box marginTop='60px'>
+					<Typography
+						component='h2'
+						variant='h5'
+					>
+						Полезные материалы
+					</Typography>
+
+					<ul>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/arbonia-2180-calc`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Сколько секций радиатора Arbonia 2180 нужно для комнаты 10–20 м²
+								</Typography>
+							</a>
+						</li>
+					</ul>
+				</Box>
 			</Box>
 		</Box>
 	)

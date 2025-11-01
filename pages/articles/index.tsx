@@ -91,6 +91,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/arbonia-2180-calc'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/2180-4.jpeg'
+											alt='Трубчатый радиатор отопления Arbonia 2180'
+											width={300}
+											height={300}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+										sx={{ maxWidth: '420px', margin: 'auto' }}
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Сколько секций радиатора Arbonia 2180 нужно для комнаты 10–20 м²
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Разбираемся, как рассчитать количество секций радиатора Arbonia 2180 для помещений разной площади.
+											Примеры расчетов, коэффициенты и советы по выбору...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/care'
 							>
 								<div>

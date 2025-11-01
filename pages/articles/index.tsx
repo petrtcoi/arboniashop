@@ -40,7 +40,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						item
 						md={6}
 					>
-						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/ral-9016-pochemu-vybirayut-arkhitektory'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/ral9016.jpg'
+											alt='RAL 9016 — универсальный белый цвет для интерьера и радиаторов'
+											width={300}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											RAL 9016 — универсальный белый цвет для интерьера и радиаторов
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Белый цвет RAL 9016 — стандарт архитектуры и дизайна. Узнайте, почему его выбирают для радиаторов
+											Arbonia и современных минималистичных интерьеров...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/care'
@@ -87,7 +135,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						item
 						md={6}
 					>
-						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
+						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/montazh-radiatorov-arbonia-rekomendacii'
@@ -134,7 +182,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						item
 						md={6}
 					>
-						<Box sx={{ backgroundColor: '#EEE', borderRadius: '8px' }}>
+						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/faq'

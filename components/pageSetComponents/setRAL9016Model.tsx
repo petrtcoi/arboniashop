@@ -539,7 +539,7 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						<li>
 							<a
 								style={{ textDecoration: 'none' }}
-								href={`/catalog/ral9016`}
+								href={`/articles/ral-9016-pochemu-vybirayut-arkhitektory`}
 							>
 								<Typography
 									sx={{ ...styles.standardTextLinkUnderline }}

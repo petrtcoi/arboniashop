@@ -31,11 +31,13 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 
 	return (
 		<>
-			<Script
-				id='jsonld'
-				type='application/ld+json'
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-			/>
+			{!breadcrumbs || breadcrumbs.length === 0 ? (
+				<Script
+					id='jsonld'
+					type='application/ld+json'
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+				/>
+			) : null}
 			<Box
 				paddingY={'10px'}
 				paddingX={{ xs: '10px', md: '20px' }}

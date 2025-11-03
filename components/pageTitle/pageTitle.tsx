@@ -31,7 +31,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 
 	return (
 		<>
-			{!breadcrumbs || breadcrumbs.length === 0 ? (
+			{!!breadcrumbs && breadcrumbs.length > 0 ? (
 				<Script
 					id='jsonld'
 					type='application/ld+json'

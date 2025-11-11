@@ -40,9 +40,8 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					{ title: 'Запрос на подбор радиаторов', link: '/request' },
 				]}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
-				<PageHeader title={'Запрос на подбор радиаторов Arbonia'} />
-				<Box marginY={'30px'}>
+			<Box sx={{ ...global.pagePadding, maxWidth: '800px', margin: 'auto' }}>
+				<Box marginTop={'40px'}>
 					<Typography
 						variant='h4'
 						component='h1'
@@ -54,170 +53,21 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					</Typography>
 				</Box>
 				<Typography
-					sx={{ ...styles.standardText }}
+					sx={{ fontSize: '14px', lineHeight: '1.5', fontWeight: 300, opacity: 0.9, letterSpacing: '0.02em' }}
+					marginTop='30px'
+					variant='body1'
 					textAlign='center'
 				>
-					Если вам требуется консультация, расчет или подбор радиаторов по проекту,то свяжитесь с нами любым удобным вам
-					способом.
+					Опишите в удобной форме ваши требования и пожелания. Мы подготовим расчет и пришлем{' '}
+					<span style={{ fontWeight: 700, color: '#E53935' }}>на почту</span> или{' '}
+					<span style={{ fontWeight: 700, color: '#E53935' }}>в мессенджер</span> коммерческое предложение. В случае
+					необходимости, мы предварительно свяжемся с вами для уточнения деталей. Пожалуйста, укажите в форме, если вам
+					не удобно, <span style={{ fontWeight: 700, color: '#1976D2' }}>чтобы мы звонили вам на телефон</span> лишний
+					раз.
 				</Typography>
-				<Box
-					marginY='20px'
-					padding='10px'
-					sx={{ backgroundColor: '#333333', borderRadius: '10px' }}
-				>
-					<Grid
-						container
-						spacing={2}
-						alignItems={'center'}
-					>
-						<Grid
-							item
-							xs={12}
-							sm={4}
-							textAlign='center'
-						>
-							<Typography
-								sx={{ ...styles.smallText, color: '#e6e6e6' }}
-								display='inline'
-							>
-								тел.:&ensp;
-							</Typography>
-							<a
-								style={{ textDecoration: 'none' }}
-								href={`tel:${global.phone495}`}
-							>
-								<Typography
-									sx={{ ...styles.standardTextLink, color: 'white' }}
-									display='inline'
-								>
-									{global.phone495String}
-								</Typography>
-							</a>
-							<Typography
-								sx={{ ...styles.standardText, color: 'white' }}
-								display='inline'
-							>
-								<br />
-								<Typography
-									sx={{ ...styles.smallText, color: '#333333' }}
-									display='inline'
-									component='span'
-								>
-									тел.:&ensp;
-								</Typography>
-							</Typography>
-							<a
-								style={{ textDecoration: 'none' }}
-								href={`tel:${global.phone812}`}
-							>
-								<Typography
-									sx={{ ...styles.standardTextLink, color: 'white' }}
-									display='inline'
-								>
-									{global.phone812String}
-								</Typography>
-							</a>
-						</Grid>
-						<Grid
-							item
-							xs={12}
-							sm={4}
-							textAlign='center'
-						>
-							<Typography
-								sx={{ ...styles.smallText, color: '#e6e6e6' }}
-								display='inline'
-							>
-								email:&ensp;
-							</Typography>
-							<a
-								style={{ textDecoration: 'none' }}
-								href={`mailto:${global.email}`}
-							>
-								<Typography
-									sx={{ ...styles.standardTextLink, color: 'white' }}
-									display='inline'
-								>
-									{global.email}
-								</Typography>
-							</a>
-						</Grid>
-						<Grid
-							item
-							xs={12}
-							sm={4}
-							textAlign='center'
-						>
-							<Typography
-								sx={{ ...styles.smallText, color: '#e6e6e6' }}
-								display='inline'
-							>
-								whatsapp:&ensp;
-							</Typography>
-							<a
-								style={{ textDecoration: 'none' }}
-								href={`https://wa.me/${global.whatsApp}`}
-							>
-								<Typography
-									sx={{ ...styles.standardTextLink, color: 'white' }}
-									display='inline'
-								>
-									{global.whatsAppString}
-								</Typography>
-							</a>
-						</Grid>
-					</Grid>
-				</Box>
-				<Typography
-					sx={{ ...styles.standardText }}
-					textAlign='center'
-				>
-					Также вы можете заполнить форму, представленную ниже.
-				</Typography>
-				<Box marginTop='20px'>
-					<a onClick={() => toggleShow()}>
-						<Typography
-							sx={styles.smallTextGreenUnderline}
-							textAlign='center'
-						>
-							<span style={{ textDecorationStyle: 'dotted' }}>Какая информация нам нужна</span>
-						</Typography>
-					</a>
-				</Box>
 
-				{show && (
-					<Box
-						padding='20px'
-						sx={{ backgroundColor: '#e6e6e6', borderRadius: '10px' }}
-					>
-						<Typography
-							sx={{ ...styles.standardText }}
-							component={'span'}
-						>
-							Информация, которая нужна для правильного побора радиаторов: (если каких-то данных пока нет - то можно
-							отправить то, что уже известно)
-							<ul>
-								<li>Размеры помещений, высота потолков</li>
-								<li>
-									Желаемое место расположения радиаторов. Доступные габариты. Например, если радиатор ставится под окно,
-									то: высота подоконника и длина окна
-								</li>
-								<li>Если возможно - план квартиры / дома, что упростит общение</li>
-								<li>
-									Тип подключения радиаторов в вашем доме: индивидуальная разводка труб по полу или общий стояк
-									отопления
-								</li>
-								<li>Город доставки</li>
-							</ul>
-							Любую иную информацию, которая вам кажется важной и которую нам необходимо учесть. Оставьте ваши
-							контактные данные, чтобы мы могли связаться с вами и получить дополнительную информацию в случае
-							необходимости.
-						</Typography>
-					</Box>
-				)}
-
-				<Box marginTop='50px'>
-					<div className='uCalc_403860'></div>
+				<Box marginTop='30px'>
+					<div className='uCalc_472577'></div>
 				</Box>
 			</Box>
 		</Box>

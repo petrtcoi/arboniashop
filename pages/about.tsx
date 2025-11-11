@@ -170,13 +170,13 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 								</Typography>
 								<a
 									style={{ textDecoration: 'none' }}
-									href={`https://t.me/Arboniashopbot`}
+									href={`https://t.me/RadiatorLuxBot`}
 								>
 									<Typography
 										sx={{ ...styles.standardTextLink }}
 										display='inline'
 									>
-										@Arboniashopbot
+										@RadiatorLuxBot
 									</Typography>
 								</a>
 							</Box>

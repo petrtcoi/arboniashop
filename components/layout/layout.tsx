@@ -18,6 +18,7 @@ import { initialState, reducer, ShoppingCartContext } from './../../contexts/sho
 
 import useGetCurrency from '../../api_utils/useGetCurrency'
 import { trackPage } from '../../utils/trackEvent'
+import { GoToFormButton } from '../GoToFormButton'
 
 type LayoutProps = ReactElement
 
@@ -116,6 +117,7 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 						<CurrencyContext.Provider value={{ rateEuro, isFetching }}>
 							<HeaderScripts />
 							<Navbar />
+							<GoToFormButton />
 							<ShoppingCart />
 							<Box
 								paddingX={'0px'}

@@ -327,7 +327,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 								{
 									'@type': 'ContactPoint',
 									contactType: 'Telegram',
-									url: 'https://t.me/Arboniashopbot',
+									url: 'https://t.me/RadiatorLuxBot',
 								},
 							],
 						},

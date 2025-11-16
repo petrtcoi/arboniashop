@@ -18,7 +18,7 @@ export function GoToFormButton() {
 			style={{ textDecoration: 'none' }}
 		>
 			<div className={styles.container}>
-				<div>💎 Получить расчет и финальную цену в течение дня</div>
+				<div>💎 Получить расчет и цену в течение дня</div>
 				<div className={styles.smallText}>Пришлем предложение на почту или в мессенджер</div>
 			</div>
 		</a>

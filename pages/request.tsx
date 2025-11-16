@@ -46,27 +46,30 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 						variant='h4'
 						component='h1'
 						gutterBottom
-						textAlign='center'
-						sx={{ textTransform: 'uppercase' }}
+						// textAlign='center'
+						// sx={{ textTransform: 'uppercase' }}
 					>
-						Запрос на подбор радиаторов
+						Получите персональный расчёт радиаторов Arbonia
 					</Typography>
 				</Box>
 				<Typography
 					sx={{ fontSize: '14px', lineHeight: '1.5', fontWeight: 300, opacity: 0.9, letterSpacing: '0.02em' }}
 					marginTop='30px'
 					variant='body1'
-					textAlign='center'
+					textAlign='justify'
 				>
-					Опишите в удобной форме ваши требования и пожелания. Мы подготовим расчет и пришлем{' '}
-					<span style={{ fontWeight: 700, color: '#E53935' }}>на почту</span> или{' '}
-					<span style={{ fontWeight: 700, color: '#E53935' }}>в мессенджер</span> коммерческое предложение. В случае
-					необходимости, мы предварительно свяжемся с вами для уточнения деталей. Пожалуйста, укажите в форме, если вам
-					не удобно, <span style={{ fontWeight: 700, color: '#1976D2' }}>чтобы мы звонили вам на телефон</span> лишний
-					раз.
+					Опишите ваш проект ниже, и наши специалисты оперативно подготовят полный тепловой расчет и финальную смету (с
+					учетом скидки и доставки). Мы отправим результат в выбранный Вами мессенджер или на почту в течение дня. Мы
+					уважаем Ваше время и{' '}
+					<span style={{ fontWeight: 700, color: '#ef7d00' }}>не будем звонить без Вашего прямого запроса</span>.
 				</Typography>
 
-				<Box marginTop='30px'>
+				<Box
+					marginTop='30px'
+					border='1px solid gray'
+					padding='20px'
+					borderRadius='10px'
+				>
 					<div className='uCalc_472577'></div>
 				</Box>
 			</Box>

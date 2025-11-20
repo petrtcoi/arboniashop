@@ -60,16 +60,8 @@ const HeaderScripts: React.FC<HeaderScriptsProps> = () => {
 				dangerouslySetInnerHTML={{
 					__html: `
             setTimeout(function() {
-              (function(a,m,o,c,r,m){ 
-                a[m]={id:"414232",hash:"992692e5785bb2206dfa0458ff77f97d80bbe8016218c98fcdb2255819e2feab",locale:"ru",inline:false,setMeta:function(p){this.params=(this.params||[]).concat([p])}};
-                a[o]=a[o]||function(){(a[o].q=a[o].q||[]).push(arguments)};
-                var d=a.document,s=d.createElement('script');
-                s.async=true;
-                s.id=m+'_script';
-                s.src='https://gso.amocrm.ru/js/button.js';
-                d.head&&d.head.appendChild(s);
-              })(window,0,'amoSocialButton',0,0,'amo_social_button');
-            }, 5000);
+              ((function(a,m,o,c,r,m){a[m]={id:"414362",hash:"509187c68d29450273b17f2ae6d4210ac5056e7f2da3ada5c8110e45083e4c12",locale:"ru",inline:false,setMeta:function(p){this.params=(this.params||[]).concat([p])}};a[o]=a[o]||function(){(a[o].q=a[o].q||[]).push(arguments)};var d=a.document,s=d.createElement('script');s.async=true;s.id=m+'_script';s.src='https://gso.amocrm.ru/js/button.js';d.head&&d.head.appendChild(s)}(window,0,'amoSocialButton',0,0,'amo_social_button'));
+            }, 1000);
           `,
 				}}
 			/>

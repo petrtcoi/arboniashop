@@ -310,7 +310,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 										flexGrow={1}
 									/>
 									<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-										от {model2180MinPrice.noConsole.toLocaleString('ru-RU')} руб.
+										от {model2180MinPrice.noConsole.toLocaleString()} руб.
 									</Box>
 								</Box>
 							</Box>
@@ -515,7 +515,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model3057MinPrice.noConsole.toLocaleString('ru-RU')} руб.
+									от {model3057MinPrice.noConsole.toLocaleString()} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>
@@ -718,7 +718,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model3180MinPrice.noConsole.toLocaleString('ru-RU')} руб.
+									от {model3180MinPrice.noConsole.toLocaleString()} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>
@@ -921,7 +921,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model3030MinPrice.noConsole.toLocaleString('ru-RU')} руб.
+									от {model3030MinPrice.noConsole.toLocaleString()} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>
@@ -1124,7 +1124,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model2050MinPrice.noConsole.toLocaleString('ru-RU')} руб.
+									от {model2050MinPrice.noConsole.toLocaleString()} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>
@@ -1327,7 +1327,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model3050MinPrice.noConsole.toLocaleString('ru-RU')} руб.
+									от {model3050MinPrice.noConsole.toLocaleString()} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>

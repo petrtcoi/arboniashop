@@ -35,7 +35,7 @@ const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
 				sx={styles.smallText}
 				align='right'
 			>
-				{item.price.noConsole.toLocaleString('ru-RU')}
+				{item.price.noConsole.toLocaleString()}
 			</TableCell>
 			<TableCell
 				component='th'
@@ -51,7 +51,7 @@ const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
 				sx={styles.smallText}
 				align='right'
 			>
-				{(item.price.noConsole * item.qnty).toLocaleString('ru-RU')}
+				{(item.price.noConsole * item.qnty).toLocaleString()}
 			</TableCell>
 
 			<TableCell

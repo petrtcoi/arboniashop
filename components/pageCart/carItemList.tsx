@@ -88,7 +88,7 @@ const CartItemList: React.FC<CartItemListProps> = ({ items, showSummary = true }
 									colSpan={1}
 									sx={{ ...styles.smallTextBold, borderBottom: 0 }}
 								>
-									{total.toLocaleString('ru-RU')}
+									{total.toLocaleString()}
 								</TableCell>
 								{/* <TableCell align="right" sx={ { ...styles.smallTextBold, borderBottom: 0 } }></TableCell>
                                 <TableCell sx={ { borderBottom: 0 } }></TableCell> */}

@@ -35,7 +35,7 @@ const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
 							sx={styles.smallText}
 							align='right'
 						>
-							{Math.floor(consolePrice).toLocaleString('ru-RU')}
+							{Math.floor(consolePrice).toLocaleString()}
 						</TableCell>
 						<TableCell
 							component='th'
@@ -51,7 +51,7 @@ const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
 							sx={styles.smallText}
 							align='right'
 						>
-							{console.totalSum.toLocaleString('ru-RU')}
+							{console.totalSum.toLocaleString()}
 						</TableCell>
 
 						<TableCell

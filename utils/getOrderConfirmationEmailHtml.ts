@@ -37,7 +37,7 @@ const getOrderConfirmationEmailHtml = (props: Props): string => {
 	items.forEach((item, index) => {
 		html += `<tr><td>${index + 1}</td><td>${item.title}</td><td>${item.price.noConsole.toLocaleString(
 			'ru-RU'
-		)} руб.</td><td>${item.qnty}</td><td>${(item.price.noConsole * item.qnty).toLocaleString('ru-RU')} руб.</td></tr> `
+		)} руб.</td><td>${item.qnty}</td><td>${(item.price.noConsole * item.qnty).toLocaleString()} руб.</td></tr> `
 	})
 
 	if (consoleType === 'w161h121') {
@@ -45,9 +45,9 @@ const getOrderConfirmationEmailHtml = (props: Props): string => {
 			const consolePrice = Math.floor(console.totalSum / console.qnty)
 			html += `<tr> <td></td><td>Кронштейн ${console.title}, ${
 				console.colorName
-			}</td> <td>${consolePrice.toLocaleString('ru-RU')} руб.</td><td>${
+			}</td> <td>${consolePrice.toLocaleString()} руб.</td><td>${
 				console.qnty
-			}</td> <td>${console.totalSum.toLocaleString('ru-RU')} руб.</td></tr> `
+			}</td> <td>${console.totalSum.toLocaleString()} руб.</td></tr> `
 		})
 	}
 
@@ -57,7 +57,7 @@ const getOrderConfirmationEmailHtml = (props: Props): string => {
 		html += `<p> Итого: <strong>${getCartTotal({
 			items,
 			consoleType,
-		}).toLocaleString('ru-RU')} руб.</strong></p> `
+		}).toLocaleString()} руб.</strong></p> `
 
 	html += `<br/> <br/><hr/> <p>С уважением, <br/>Магазин радиаторов Arbonia<br/ > <br/>сайт: ${global.website}
   <br/> тел.: +7 ${global.phone495String} <br/>тел.: +7 ${global.phone812String}<br/>email: ${global.email} </p>`

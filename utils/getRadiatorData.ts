@@ -29,8 +29,8 @@ const getRadiatorData = ({ model, color, connection, sectionQnty, price }: Props
 		lengthString: `${+model.lengthSection * sectionQnty + 26}`,
 		dt50String: `${Math.floor(+model.dt50 * sectionQnty)}`,
 		dt60String: `${Math.floor(+model.dt60 * sectionQnty)}`,
-		priceString: price.toLocaleString('ru-RU'),
-		oldPriceString: Math.floor(price / DISCOUNT).toLocaleString('ru-RU'),
+		priceString: price.toLocaleString(),
+		oldPriceString: Math.floor(price / DISCOUNT).toLocaleString(),
 	}
 }
 

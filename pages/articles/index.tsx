@@ -43,6 +43,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/gde-razmestit-radiator-otopleniya'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/underwindow-thumb.jpeg'
+											alt='Радиатор Arbonia под окном'
+											width={300}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Где разместить радиатор отопления: лучшие места и советы
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Большинство людей привыкли видеть радиаторы под окном и считают, что другого варианта просто нет.
+											Однако современные технологии, двойные стеклопакеты и новые форматы приборов отопления дают
+											гораздо больше свободы...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/ral-9016-pochemu-vybirayut-arkhitektory'
 							>
 								<div>

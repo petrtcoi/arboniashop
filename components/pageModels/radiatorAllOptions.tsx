@@ -298,7 +298,7 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 									display='inline'
 									sx={{ fontSize: '20px', fontWeight: 600 }}
 								>
-									&nbsp;{radiatorCost.toLocaleString()} руб
+									&nbsp;{radiatorCost.toLocaleString('ru-RU')} руб
 								</Typography>
 								<Box
 									marginLeft='20px'

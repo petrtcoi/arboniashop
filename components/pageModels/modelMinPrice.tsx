@@ -43,7 +43,7 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ minPrice, setTabBuy }) =>
 							itemProp='lowPrice'
 							content={minPrice.toString().replace(',', '').trim()}
 						/>
-						&nbsp;{minPrice.toLocaleString()} руб
+						&nbsp;{minPrice.toLocaleString('ru-RU')} руб
 					</span>
 				</Typography>
 			</Box>

@@ -84,11 +84,14 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					балконных блоков.
 				</p>
 
-				<Box textAlign={'center'}>
+				<Box
+					textAlign={'center'}
+					maxWidth={700}
+				>
 					<img
 						src='/images/articles/underwindow.jpeg'
 						alt='Трубчатый радиатор Arbonia под окном'
-						width={700}
+						width={'100%'}
 						height={'auto'}
 						style={{ borderRadius: '12px' }}
 					/>

@@ -51,7 +51,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 							</li>
 							<li>
 								<strong>EBITDA:</strong> CHF 47,4 млн (2023: CHF 17,5 млн), рост на CHF 30 млн, из которых CHF 26,2 млн
-								— единовременные эффекты (продажа участка и реструктуризация).
+								- единовременные эффекты (продажа участка и реструктуризация).
 							</li>
 							<li>
 								<strong>EBITDA margin:</strong> увеличилась с 6,3% до 17,0%.

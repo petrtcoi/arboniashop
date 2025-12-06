@@ -43,6 +43,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/vertical-vs-horizontal'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/vertical-vs-horizontal.jpg'
+											alt='Вертикальный и горизонтальный радиаторы Arbonia'
+											width={300}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Какой радиатор выбрать: вертикальный или горизонтальный
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Вертикальные и горизонтальные радиаторы отличаются прежде всего способом размещения:
+											горизонтальные лучше подходят для установки под окнами, дают более равномерный прогрев и проще в
+											замене без переделки труб...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/gde-razmestit-radiator-otopleniya'
 							>
 								<div>
@@ -98,7 +147,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box textAlign={'center'}>
 										<img
 											src='/images/articles/ral9016.jpg'
-											alt='RAL 9016 — универсальный белый цвет для интерьера и радиаторов'
+											alt='RAL 9016 - универсальный белый цвет для интерьера и радиаторов'
 											width={300}
 											height={'auto'}
 										/>
@@ -111,7 +160,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											RAL 9016 — универсальный белый цвет для интерьера и радиаторов
+											RAL 9016 - универсальный белый цвет для интерьера и радиаторов
 										</Typography>
 									</Box>
 									<Box
@@ -124,7 +173,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Белый цвет RAL 9016 — стандарт архитектуры и дизайна. Узнайте, почему его выбирают для радиаторов
+											Белый цвет RAL 9016 - стандарт архитектуры и дизайна. Узнайте, почему его выбирают для радиаторов
 											Arbonia и современных минималистичных интерьеров...
 										</Typography>
 									</Box>
@@ -221,7 +270,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Трубчатые радиаторы Arbonia — это не только эффективный источник тепла, но и важный элемент
+											Трубчатые радиаторы Arbonia - это не только эффективный источник тепла, но и важный элемент
 											интерьера. Их высококачественное покрытие рассчитано на десятилетия службы...
 										</Typography>
 									</Box>

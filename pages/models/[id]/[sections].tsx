@@ -58,7 +58,7 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 					},
 				]}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				{/* Shit code! */}
 
 				{model.id.startsWith('2180') && (

@@ -17,6 +17,8 @@ import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
 import { SetComponentProps } from '../../models/setComponentProps.model'
 
+import global from '../../variables/global'
+
 const SETS_MAP: {
 	[key: string]: { title: string; component: React.FC<SetComponentProps> }
 } = {
@@ -60,7 +62,7 @@ const SetPage: NextPage<SetPageProps> = ({ models, colors, connections, setId })
 					{ title: SETS_MAP[setId].title, link: `/catalog/${setId}` },
 				]}
 			/>
-			<Box>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Component
 					models={models}
 					connections={connections}

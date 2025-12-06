@@ -19,6 +19,8 @@ import { ColorOrigin } from '../models/colorOrigin.model'
 import { ConnectionOrigin } from '../models/connectionOrigin.model'
 import { ModelOrigin } from '../models/modelOrigin.model'
 
+import global from '../variables/global'
+
 type Props = {
 	models: ModelOrigin[]
 	colors: ColorOrigin[]
@@ -44,7 +46,7 @@ const Home: NextPage<Props> = (props: Props) => {
 				header={'Трубчатые радиаторы Arbonia'}
 				subheader={'Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ.'}
 			/> */}
-			<Box>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Typography
 					variant='h4'
 					component={'h1'}
@@ -58,7 +60,7 @@ const Home: NextPage<Props> = (props: Props) => {
 				</Typography>
 			</Box>
 
-			<Box>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Box
 					marginTop='50px'
 					paddingX={{ xs: '10px', md: '20px' }}

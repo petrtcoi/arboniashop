@@ -70,7 +70,7 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				header={'Радиаторы Arbonia 2050 '}
 				subheader={'Двухтрубчатые радиаторы Arbonia высотой 50 см'}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Box
 					marginBottom='30px'
 					display='flex'

@@ -95,7 +95,7 @@ const Model: NextPage<ModelProps> = ({
 					},
 				]}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				{/* Shit code! */}
 
 				{modelCurr.id.startsWith('2180') && (

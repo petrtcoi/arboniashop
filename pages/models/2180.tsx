@@ -84,7 +84,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ
 				</Typography>
 			</Box> */}
-			<Box sx={{ ...global.pagePadding }}>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Box
 					marginBottom='30px'
 					display='flex'

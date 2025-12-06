@@ -71,7 +71,7 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				header={'Радиаторы Arbonia 3057 '}
 				subheader={'Трехтурбчатые радиаторы Arbonia высотой 57 см и межосевым расстоянием 50 см'}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Box
 					marginBottom='30px'
 					display='flex'

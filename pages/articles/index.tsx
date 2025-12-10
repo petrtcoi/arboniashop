@@ -43,6 +43,56 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/tsvet-radiatorov-v-interiere'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/tsvet-radiatorov-v-interiere.jpg'
+											alt='Цвет радиаторов в интерьере'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Цвет радиаторов в интерьере: как выбрать оттенок для дизайна и комфорта
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Цвет радиатора давно перестал быть чем-то второстепенным. Современные дизайнерские модели
+											выпускаются в десятках оттенков: от спокойных белых и серых до выразительных глубоких цветовых
+											акцентов...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/vertical-vs-horizontal'
 							>
 								<div>
@@ -51,6 +101,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/vertical-vs-horizontal.jpg'
 											alt='Вертикальный и горизонтальный радиаторы Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={'auto'}
 										/>
 									</Box>
@@ -100,6 +151,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/underwindow-thumb.jpeg'
 											alt='Радиатор Arbonia под окном'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={'auto'}
 										/>
 									</Box>
@@ -149,6 +201,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/ral9016.jpg'
 											alt='RAL 9016 - универсальный белый цвет для интерьера и радиаторов'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={'auto'}
 										/>
 									</Box>
@@ -197,6 +250,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/2180-4.jpeg'
 											alt='Трубчатый радиатор отопления Arbonia 2180'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -246,6 +300,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/20250814.jpg'
 											alt='Правильный уход за радиаторами Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -293,6 +348,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/3030.jpg'
 											alt='Монтаж радиатороа Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -340,6 +396,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/sf-3-0.jpeg'
 											alt='Высокий радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -387,6 +444,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/2050-12-2.jpeg'
 											alt='Трубчатый радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -437,6 +495,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/2022122702.jpg'
 											alt='Высокий радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -487,6 +546,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/panorama/arbonia-00.jpg'
 											alt='Вертикальный радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -538,6 +598,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/models/sf-3-0.jpeg'
 											alt='Трубчатые радиаторы'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -590,6 +651,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/epd.jpg'
 											alt='Сертификат EPD для трубчатых радиаторов Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -642,6 +704,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/20230222.jpg'
 											alt='Радиатор Arbonia 3057'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -694,6 +757,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/20230126_0.jpg'
 											alt='Радиатор Arbonia 3030'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -747,6 +811,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/20230110_0.jpg'
 											alt='Вертикальный радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -798,6 +863,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/2022122701.jpg'
 											alt='3-трубчатый белый радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -849,6 +915,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/90-1.jpeg'
 											alt='3-трубчатый радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -899,6 +966,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/1.jpg'
 											alt='Трубчатый радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -949,6 +1017,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/20.jpg'
 											alt='Нижний упор Arbonia ZB0280'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -999,6 +1068,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/30.jpeg'
 											alt='Arbonia 2180 vs 3180: чем отличаются и когда что выбрать'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -1049,6 +1119,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/articles/100.jpg'
 											alt='Радиатор Arbonia'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>
@@ -1099,6 +1170,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											src='/images/models/2-columns-3.jpeg'
 											alt='Как подбирать радиаторы Zehnder Charleston по мощности'
 											width={300}
+											style={{ borderRadius: '8px' }}
 											height={300}
 										/>
 									</Box>

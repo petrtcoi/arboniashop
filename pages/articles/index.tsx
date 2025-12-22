@@ -43,6 +43,57 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/radiator-postoyanno-vyklyuchaetsya'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/radiator-postoyanno-vyklyuchaetsya.webp'
+											alt='Почему радиатор постоянно выключается'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Почему радиатор постоянно выключается - причины и решения
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Если радиатор постоянно выключается, это означает, что подача горячей воды в прибор периодически
+											прерывается из-за работы клапанов, настроек котла или проблем внутри системы отопления. В
+											большинстве случаев причину можно определить по симптомам и устранить самостоятельно за 10-30
+											минут...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/tsvet-radiatorov-v-interiere'
 							>
 								<div>

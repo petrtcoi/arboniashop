@@ -203,7 +203,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 						xs={12}
 						md={8}
 					>
-						<Typography sx={footerText}>© 2025 ArboniaShop.ru – магазин радиаторов Arbonia</Typography>
+						<Typography sx={footerText}>© 2026 ArboniaShop.ru – магазин радиаторов Arbonia</Typography>
 						<Typography sx={{ ...footerText, marginTop: '12px' }}>
 							<Box
 								marginTop={'12px'}

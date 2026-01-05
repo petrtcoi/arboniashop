@@ -368,6 +368,30 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
 				</Box>
+				<Box marginTop='60px'>
+					<Typography
+						component='h2'
+						variant='h5'
+					>
+						Полезные материалы
+					</Typography>
+
+					<ul>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/arbonia-3030-vs-3037`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Arbonia 3030 против 3037: как выбрать идеальный радиатор под низкий подоконник
+								</Typography>
+							</a>
+						</li>
+					</ul>
+				</Box>
 			</Box>
 		</Box>
 	)

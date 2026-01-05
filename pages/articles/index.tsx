@@ -43,6 +43,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/arbonia-3030-vs-3037'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/3030-3037.jpg'
+											alt='Низкий радиатор Arbonia 3030'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Arbonia 3030 против 3037: как выбрать идеальный радиатор под низкий подоконник
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Подробное сравнение радиаторов Arbonia высотой 300 и 370 мм. Что лучше для панорамных окон, как
+											сэкономить на секциях и сохранить эстетику интерьера...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/radiator-postoyanno-vyklyuchaetsya'
 							>
 								<div>

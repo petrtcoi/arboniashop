@@ -43,6 +43,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/montazh-vysokih-radiatorov-arbonia-instrukciya'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/montazh-vysokih-radiatorov-arbonia-instrukciya-1.avif'
+											alt='Кронштейны радиаторов Arbonia'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Монтаж высоких радиаторов Arbonia: требования и расчет кронштейнов
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Техническое руководство по установке радиаторов Arbonia 2180 и 3180. Расчет количества креплений,
+											допустимые нагрузки на стены и правила гидравлического пуска...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-3030-vs-3037'
 							>
 								<div>

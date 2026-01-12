@@ -221,6 +221,19 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 								</Typography>
 							</a>
 						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/montazh-vysokih-radiatorov-arbonia-instrukciya`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Монтаж высоких радиаторов Arbonia: требования и расчет кронштейнов
+								</Typography>
+							</a>
+						</li>
 					</ul>
 				</Box>
 			</Box>

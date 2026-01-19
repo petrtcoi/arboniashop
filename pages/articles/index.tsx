@@ -1,14 +1,14 @@
-import { Box, Grid, Typography } from '@mui/material'
-import { NextPage } from 'next'
-import Link from 'next/link'
-import React from 'react'
+import { Box, Grid, Typography } from '@mui/material';
+import { NextPage } from 'next';
+import Link from 'next/link';
+import React from 'react';
 
-import Hero from '../../components/hero/hero'
-import PageHeader from '../../components/pageHeader/pageHeader'
-import PageTitle from '../../components/pageTitle/pageTitle'
+import Hero from '../../components/hero/hero';
+import PageHeader from '../../components/pageHeader/pageHeader';
+import PageTitle from '../../components/pageTitle/pageTitle';
 
-import * as styles from '../../styles/styles'
-import global from '../../variables/global'
+import * as styles from '../../styles/styles';
+import global from '../../variables/global';
 
 type ArticlesListPageProps = {}
 
@@ -36,6 +36,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					container
 					spacing={5}
 				>
+	<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/montazh-arbonia-2180-na-gkl'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/montazh-arbonia-2180-na-gkl.avif'
+											alt='Кронштейны радиаторов Arbonia'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Монтаж радиатора Arbonia 2180 на гипсокартон: правила и расчеты
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Вертикальный радиатор Arbonia 2180 относится к категории тяжелых отопительных приборов, и его установка на гипсокартонную стену требует инженерного подхода...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+
 					<Grid
 						item
 						md={6}

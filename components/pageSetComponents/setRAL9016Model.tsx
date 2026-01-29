@@ -549,6 +549,19 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 								</Typography>
 							</a>
 						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/belye-radiatory-v-temnom-interiere`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Белый радиатор на темной стене: ошибка или осознанный стиль?
+								</Typography>
+							</a>
+						</li>
 					</ul>
 				</Box>
 			</Box>

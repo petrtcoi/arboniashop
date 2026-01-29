@@ -1,14 +1,14 @@
-import { Box, Grid, Typography } from '@mui/material';
-import { NextPage } from 'next';
-import Link from 'next/link';
-import React from 'react';
+import { Box, Grid, Typography } from '@mui/material'
+import { NextPage } from 'next'
+import Link from 'next/link'
+import React from 'react'
 
-import Hero from '../../components/hero/hero';
-import PageHeader from '../../components/pageHeader/pageHeader';
-import PageTitle from '../../components/pageTitle/pageTitle';
+import Hero from '../../components/hero/hero'
+import PageHeader from '../../components/pageHeader/pageHeader'
+import PageTitle from '../../components/pageTitle/pageTitle'
 
-import * as styles from '../../styles/styles';
-import global from '../../variables/global';
+import * as styles from '../../styles/styles'
+import global from '../../variables/global'
 
 type ArticlesListPageProps = {}
 
@@ -36,7 +36,56 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					container
 					spacing={5}
 				>
-	<Grid
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/belye-radiatory-v-temnom-interiere'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/belye-radiatory-v-temnom-interiere.jpeg'
+											alt='Кронштейны радиаторов Arbonia'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Белый радиатор на темной стене: ошибка или осознанный стиль?
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Многие боятся, что белый радиатор на темной стене будет выглядеть «больнично», случайно или просто
+											дешево. Есть страх, что он станет тем самым «белым пятном»...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
 						item
 						md={6}
 					>
@@ -76,14 +125,14 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Вертикальный радиатор Arbonia 2180 относится к категории тяжелых отопительных приборов, и его установка на гипсокартонную стену требует инженерного подхода...
+											Вертикальный радиатор Arbonia 2180 относится к категории тяжелых отопительных приборов, и его
+											установка на гипсокартонную стену требует инженерного подхода...
 										</Typography>
 									</Box>
 								</div>
 							</a>
 						</Box>
 					</Grid>
-
 
 					<Grid
 						item

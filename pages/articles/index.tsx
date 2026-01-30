@@ -1,14 +1,14 @@
-import { Box, Grid, Typography } from '@mui/material'
-import { NextPage } from 'next'
-import Link from 'next/link'
-import React from 'react'
+import { Box, Grid, Typography } from '@mui/material';
+import { NextPage } from 'next';
+import Link from 'next/link';
+import React from 'react';
 
-import Hero from '../../components/hero/hero'
-import PageHeader from '../../components/pageHeader/pageHeader'
-import PageTitle from '../../components/pageTitle/pageTitle'
+import Hero from '../../components/hero/hero';
+import PageHeader from '../../components/pageHeader/pageHeader';
+import PageTitle from '../../components/pageTitle/pageTitle';
 
-import * as styles from '../../styles/styles'
-import global from '../../variables/global'
+import * as styles from '../../styles/styles';
+import global from '../../variables/global';
 
 type ArticlesListPageProps = {}
 
@@ -1415,7 +1415,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									<Box textAlign={'center'}>
 										<img
 											src='/images/models/2-columns-3.jpeg'
-											alt='Как подбирать радиаторы Zehnder Charleston по мощности'
+											alt='Как подбирать радиаторы Arbonia по мощности'
 											width={300}
 											style={{ borderRadius: '8px' }}
 											height={300}

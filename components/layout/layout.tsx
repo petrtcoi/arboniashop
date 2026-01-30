@@ -1,24 +1,24 @@
-import { Box, Container, CssBaseline } from '@mui/material'
-import { ThemeProvider } from '@mui/system'
-import { NextComponentType } from 'next'
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { ReactElement, useEffect, useReducer, useState } from 'react'
-import { CookieAlert } from './CookieAlert'
+import { Box, Container, CssBaseline } from '@mui/material';
+import { ThemeProvider } from '@mui/system';
+import { NextComponentType } from 'next';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { ReactElement, useEffect, useReducer, useState } from 'react';
+import { CookieAlert } from './CookieAlert';
 
-import theme from './../../theme/theme'
+import theme from './../../theme/theme';
 
-import ShoppingCart from './../shoppingCart/shoppingCart'
-import Footer from './footer'
-import HeaderScripts from './headerScripts'
-import Navbar from './navbar'
+import ShoppingCart from './../shoppingCart/shoppingCart';
+import Footer from './footer';
+import HeaderScripts from './headerScripts';
+import Navbar from './navbar';
 
-import { CurrencyContext } from '../../contexts/currencyContext'
-import { initialState, reducer, ShoppingCartContext } from './../../contexts/shoppingCartContext'
+import { CurrencyContext } from '../../contexts/currencyContext';
+import { initialState, reducer, ShoppingCartContext } from './../../contexts/shoppingCartContext';
 
-import useGetCurrency from '../../api_utils/useGetCurrency'
-import { trackPage } from '../../utils/trackEvent'
-import { GoToFormButton } from '../GoToFormButton'
+import useGetCurrency from '../../api_utils/useGetCurrency';
+import { trackPage } from '../../utils/trackEvent';
+import { GoToFormButton } from '../GoToFormButton';
 
 type LayoutProps = ReactElement
 
@@ -35,7 +35,7 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 		trackPage(newPath)
 	}, [router.asPath])
 
-	let canonicalUrl = `https://zehnders.ru${router.asPath}`
+	let canonicalUrl = `https://arboniashop.ru${router.asPath}`
 	const paths = canonicalUrl.split('/')
 	if (canonicalUrl.includes('/models/') && paths.length === 6) {
 		const newPaths = paths.slice(0, 5)

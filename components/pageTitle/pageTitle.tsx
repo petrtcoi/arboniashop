@@ -1,9 +1,9 @@
-import { Box, Grid, Hidden, Typography } from '@mui/material'
-import Link from 'next/link'
-import React from 'react'
+import { Box, Grid, Hidden, Typography } from '@mui/material';
+import Link from 'next/link';
+import React from 'react';
 
-import Script from 'next/script'
-import * as styles from '../../styles/styles'
+import Script from 'next/script';
+import * as styles from '../../styles/styles';
 
 type PageTitleProps = {
 	header?: string
@@ -16,7 +16,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 		'@context': 'https://schema.org',
 		'@type': 'BreadcrumbList',
 		itemListElement: (breadcrumbs || []).map((c, i) => {
-			const url = `https://tubogshop.ru${c.link}`
+			const url = `https://arboniashop.ru${c.link}`
 			return {
 				'@type': 'ListItem',
 				position: i + 1,

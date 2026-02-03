@@ -1,14 +1,14 @@
-import { Box, Grid, Typography } from '@mui/material';
-import { NextPage } from 'next';
-import Link from 'next/link';
-import React from 'react';
+import { Box, Grid, Typography } from '@mui/material'
+import { NextPage } from 'next'
+import Link from 'next/link'
+import React from 'react'
 
-import Hero from '../../components/hero/hero';
-import PageHeader from '../../components/pageHeader/pageHeader';
-import PageTitle from '../../components/pageTitle/pageTitle';
+import Hero from '../../components/hero/hero'
+import PageHeader from '../../components/pageHeader/pageHeader'
+import PageTitle from '../../components/pageTitle/pageTitle'
 
-import * as styles from '../../styles/styles';
-import global from '../../variables/global';
+import * as styles from '../../styles/styles'
+import global from '../../variables/global'
 
 type ArticlesListPageProps = {}
 
@@ -36,6 +36,56 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					container
 					spacing={5}
 				>
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/arbonia-3180-ral-9016-vs-anthracite'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/models/3180-1.jpeg'
+											alt='Трубчатый радиатор Arbonia 3180'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Arbonia 3180: RAL 9016 или Anthracite Metallic - какой цвет выбрать
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Если вы рассматриваете Arbonia 3180, вы выбираете не просто радиатор, а заметный вертикальный
+											элемент интерьера. При высоте около 180 см эта модель всегда остается в поле зрения и работает как
+											архитектурная линия на стене..
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
 					<Grid
 						item
 						md={6}

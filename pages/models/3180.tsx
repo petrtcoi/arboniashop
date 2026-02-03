@@ -473,9 +473,29 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					<h2>Дополнительные изображения радиаторов Arbonia 3180</h2>
 					<ImagesOtherList imagesString={model.imagesOther || ''} />
 				</Box>
+
 				<Box marginTop='80px'>
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
+				</Box>
+				<Box marginTop='60px'>
+					<h2>Полезные материалы</h2>
+
+					<ul>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/arbonia-3180-ral-9016-vs-anthracite`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Цвет имеет значение: RAL 9016 или Anthracite Metallic для Arbonia 3180?
+								</Typography>
+							</a>
+						</li>
+					</ul>
 				</Box>
 			</Box>
 		</Box>

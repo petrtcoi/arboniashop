@@ -1,26 +1,26 @@
-import { Box, Grid, Typography } from '@mui/material';
-import Link from 'next/link';
-import React, { useRef } from 'react';
+import { Box, Grid, Typography } from '@mui/material'
+import Link from 'next/link'
+import React, { useRef } from 'react'
 
-import Hero from '../../components/hero/hero';
-import ModelBlock from '../../components/modelBlock/modelBlock';
-import PageHeader from '../../components/pageHeader/pageHeader';
+import Hero from '../../components/hero/hero'
+import ModelBlock from '../../components/modelBlock/modelBlock'
+import PageHeader from '../../components/pageHeader/pageHeader'
 
-import { SetComponentProps } from '../../models/setComponentProps.model';
+import { SetComponentProps } from '../../models/setComponentProps.model'
 
-import getColorsData from '../../api_utils/getColorsData';
-import getConnectionsData from '../../api_utils/getConnectionsData';
-import getModelsData from '../../api_utils/getModelsData';
-import DownloadsBlock from '../../components/pageModels/downloadsBlock';
-import ImagesOtherList from '../../components/pageModels/imagesOtherList';
-import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions';
-import RadiatorInCartList from '../../components/pageModels/radiatorInCartList';
-import PageTitle from '../../components/pageTitle/pageTitle';
-import { ColorOrigin } from '../../models/colorOrigin.model';
-import { ConnectionOrigin } from '../../models/connectionOrigin.model';
-import { ModelOrigin } from '../../models/modelOrigin.model';
-import * as styles from '../../styles/styles';
-import global from '../../variables/global';
+import getColorsData from '../../api_utils/getColorsData'
+import getConnectionsData from '../../api_utils/getConnectionsData'
+import getModelsData from '../../api_utils/getModelsData'
+import DownloadsBlock from '../../components/pageModels/downloadsBlock'
+import ImagesOtherList from '../../components/pageModels/imagesOtherList'
+import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
+import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
+import PageTitle from '../../components/pageTitle/pageTitle'
+import { ColorOrigin } from '../../models/colorOrigin.model'
+import { ConnectionOrigin } from '../../models/connectionOrigin.model'
+import { ModelOrigin } from '../../models/modelOrigin.model'
+import * as styles from '../../styles/styles'
+import global from '../../variables/global'
 
 type Props = {
 	models: ModelOrigin[]
@@ -605,12 +605,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				</Box>
 
 				<Box marginTop='60px'>
-					<Typography
-						component='h2'
-						variant='h5'
-					>
-						Полезные материалы
-					</Typography>
+					<h2>Полезные материалы</h2>
 
 					<ul>
 						<li>

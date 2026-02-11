@@ -64,7 +64,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					data-store='ArboniaShop.ru'
 					data-primary='#ef7d00'
 					data-border='#ef7d00'
-					data-success-url='/success'
+					data-success-url='/accepted'
 					data-privacy-url='/privacy'
 					strategy='afterInteractive'
 				/>

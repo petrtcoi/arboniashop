@@ -22,16 +22,6 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 
 	return (
 		<Box>
-			<Script
-				id={'ucalc'}
-				strategy='lazyOnload'
-				dangerouslySetInnerHTML={{
-					__html: `
-                    var widgetOptions472577 = { bg_color: "transparent" }; 
-                    (function () { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=472577&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();
-                    `,
-				}}
-			/>
 			<PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
@@ -65,13 +55,19 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 				</Typography>
 
 				<Box
-					marginTop='30px'
-					border='1px solid gray'
-					padding='20px'
-					borderRadius='10px'
-				>
-					<div className='uCalc_472577'></div>
-				</Box>
+					id='leadWidget'
+					marginTop='24px'
+				/>
+				<Script
+					src='/widgets/lead-widget.js'
+					data-mount='#leadWidget'
+					data-store='ArboniaShop.ru'
+					data-primary='#ef7d00'
+					data-border='#ef7d00'
+					data-success-url='/success'
+					data-privacy-url='/privacy'
+					strategy='afterInteractive'
+				/>
 			</Box>
 		</Box>
 	)

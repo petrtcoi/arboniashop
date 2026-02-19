@@ -43,6 +43,56 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/arbonia-2180-po-ploshadi'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/2180-4.jpeg'
+											alt='Подбор радиатора Arbonia 2180 по площади'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={300}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+										sx={{ maxWidth: '420px', margin: 'auto' }}
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Подбор Arbonia 2180 по площади: как рассчитать мощность без переплаты
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Подробно разбираем, почему расчет по площади является ориентиром, как сверяться с данными УК и
+											радиаторами от застройщика, и почему большой запас мощности часто не нужен...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-3180-ral-9016-vs-anthracite'
 							>
 								<div>

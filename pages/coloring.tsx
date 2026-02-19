@@ -1,19 +1,19 @@
-import Link from 'next/link'
-import Script from 'next/script'
-import { useState } from 'react'
+import Link from 'next/link';
+import Script from 'next/script';
+import { useState } from 'react';
 
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Grid, Typography } from '@mui/material';
 
-import PageHeader from '../components/pageHeader/pageHeader'
-import PageTitle from '../components/pageTitle/pageTitle'
+import PageHeader from '../components/pageHeader/pageHeader';
+import PageTitle from '../components/pageTitle/pageTitle';
 
-import trackEvent from '../utils/trackEvent'
+import trackEvent from '../utils/trackEvent';
 
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
 
-import Hero from '../components/hero/hero'
-import * as styles from '../styles/styles'
-import global from '../variables/global'
+import Hero from '../components/hero/hero';
+import * as styles from '../styles/styles';
+import global from '../variables/global';
 
 type PageRequestProps = {}
 
@@ -233,7 +233,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					data-store='ArboniaShop.ru'
 					data-primary='#ef7d00'
 					data-border='#ef7d00'
-					data-success-url='/success'
+					data-success-url='/accepted'
 					data-privacy-url='/privacy'
 					strategy='afterInteractive'
 				/>

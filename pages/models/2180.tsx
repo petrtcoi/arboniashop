@@ -634,6 +634,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								</Typography>
 							</a>
 						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/arbonia-2180-po-ploshadi`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Подбор Arbonia 2180 по площади: как рассчитать мощность без переплаты
+								</Typography>
+							</a>
+						</li>
 					</ul>
 				</Box>
 			</Box>

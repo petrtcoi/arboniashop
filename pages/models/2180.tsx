@@ -647,6 +647,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								</Typography>
 							</a>
 						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/arbonia-2180-interior`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Arbonia 2180 в интерьере: как вертикальный радиатор меняет пространство
+								</Typography>
+							</a>
+						</li>
 					</ul>
 				</Box>
 			</Box>

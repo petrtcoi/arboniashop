@@ -1,0 +1,20 @@
+/* Pages/articles/arbonia-2180-interior/index.module.css */
+.table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 12px 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}

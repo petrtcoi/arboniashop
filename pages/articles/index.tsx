@@ -1,14 +1,14 @@
-import { Box, Grid, Typography } from '@mui/material'
-import { NextPage } from 'next'
-import Link from 'next/link'
-import React from 'react'
+import { Box, Grid, Typography } from '@mui/material';
+import { NextPage } from 'next';
+import Link from 'next/link';
+import React from 'react';
 
-import Hero from '../../components/hero/hero'
-import PageHeader from '../../components/pageHeader/pageHeader'
-import PageTitle from '../../components/pageTitle/pageTitle'
+import Hero from '../../components/hero/hero';
+import PageHeader from '../../components/pageHeader/pageHeader';
+import PageTitle from '../../components/pageTitle/pageTitle';
 
-import * as styles from '../../styles/styles'
-import global from '../../variables/global'
+import * as styles from '../../styles/styles';
+import global from '../../variables/global';
 
 type ArticlesListPageProps = {}
 
@@ -36,6 +36,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					container
 					spacing={5}
 				>
+					
+
 					<Grid
 						item
 						md={6}
@@ -770,6 +772,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										>
 											Подборка частых вопросов про радиаторы Arbonia и ответом на них. Где производятся? Какие давление
 											держат? И т.д...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/arbonia-2180-calc'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/2180-4.jpeg'
+											alt='Расчёт секций Arbonia 2180'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={300}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+										sx={{ maxWidth: '420px', margin: 'auto' }}
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Как рассчитать Arbonia 2180 — подбор секций онлайн
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Подробный расчет количества секций Arbonia 2180 по площади и объёму помещения. Онлайн-калькулятор,
+											поправочные коэффициенты и практические примеры...
 										</Typography>
 									</Box>
 								</div>

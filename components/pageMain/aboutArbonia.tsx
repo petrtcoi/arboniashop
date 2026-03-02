@@ -116,11 +116,11 @@ const AboutArbonia: React.FC<AboutArboniaProps> = () => {
 							src={'/certs/1_sm.avif'}
 							width={'100%'}
 							height={'auto'}
-							alt='Сертификаты соответствия дизайн-радиаторы Kermi'
+							alt='Сертификаты соответствия на декоративные радиаторы Kermi'
 						/>
 					</a>
 					<Typography style={{ textAlign: 'center', fontSize: '12px' }}>
-						Сертификаты соответствия дизайн-радиаторы Kermi
+						Сертификаты соответствия на декоративные радиаторы Kermi
 					</Typography>
 				</Grid>
 				<Grid

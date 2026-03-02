@@ -217,7 +217,7 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 							required
 							fullWidth
 							id='email'
-							label='Email'
+							label='Электронная почта'
 							variant='outlined'
 							type='email'
 							value={inputData.email}

@@ -69,7 +69,7 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			<Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Радиаторы Arbonia 3030'}
-				subheader={'Низкие трехтурбчатые радиаторы Arbonia высотой 30 в наличии'}
+				subheader={'Низкие трёхтрубчатые радиаторы Arbonia высотой 30 см в наличии'}
 			/>
 			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Box

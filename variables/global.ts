@@ -13,7 +13,7 @@ const global: { [key: string]: any } = {
 		['Сделать запрос', '/request'],
 		['Статьи', '/articles'],
 		['Новости', '/news'],
-		['Вопрос-Ответ', '/articles/faq'],
+		['Часто задаваемые вопросы', '/articles/faq'],
 	],
 	website: 'www.arboniashop.ru',
 	email: 'mail@arboniashop.ru',

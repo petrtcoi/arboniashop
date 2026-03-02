@@ -306,7 +306,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					variant='h5'
 					component='h2'
 				>
-					❓ FAQ по выбору вертикальных и горизонтальных радиаторов
+					❓ Часто задаваемые вопросы по выбору вертикальных и горизонтальных радиаторов
 				</Typography>
 
 				<p>

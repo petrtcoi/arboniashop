@@ -337,7 +337,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</a>
 				</div>
 
-				<h2 style={{ marginTop: '40px' }}>❓ FAQ</h2>
+				<h2 style={{ marginTop: '40px' }}>❓ Часто задаваемые вопросы</h2>
 
 				<h3 style={{ marginTop: '20px' }}>Почему радиатор нагревается и через 10-20 минут остывает?</h3>
 				<p>

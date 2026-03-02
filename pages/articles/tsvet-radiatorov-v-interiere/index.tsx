@@ -317,7 +317,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					variant='h5'
 					component='h2'
 				>
-					❓ FAQ: Частые вопросы о выборе цвета радиатора
+					❓ Часто задаваемые вопросы о выборе цвета радиатора
 				</Typography>
 
 				<p>

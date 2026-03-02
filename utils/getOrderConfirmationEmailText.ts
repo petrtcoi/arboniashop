@@ -27,7 +27,7 @@ const getOrderConfirmationEmailText = (props: Props): string => {
 	if (props.city.length > 0) text += `Город:\t ${props.city}\n`
 	if (props.address.length > 0) text += `Адрес:\t ${props.address}\n`
 	if (props.phone.length > 0) text += `Тел:\t\t ${props.phone}\n`
-	if (props.email.length > 0) text += `Email:\t ${props.email}\n`
+	if (props.email.length > 0) text += `Электронная почта:\t ${props.email}\n`
 	if (props.comments.length > 0) text += `Комментарий: ${props.comments}\n`
 
 	if (items.length > 0) text += `\n\nЗАКАЗ:\n\n`

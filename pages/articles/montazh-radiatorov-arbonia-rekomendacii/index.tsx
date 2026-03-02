@@ -19,14 +19,14 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 			<PageHeader
 				title={'Рекомендации по монтажу радиаторов Arbonia'}
 				description={
-					'Как правильно установить радиаторы Arbonia: практические советы, FAQ, типичные ошибки. Пошаговые рекомендации от профессионалов.'
+					'Как правильно установить радиаторы Arbonia: практические советы, часто задаваемые вопросы, типичные ошибки. Пошаговые рекомендации от профессионалов.'
 				}
 			/>
 			<PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
-					{ title: 'Монтаж радиторов Arbonia', link: '/articles/montazh-radiatorov-arbonia-rekomendacii' },
+					{ title: 'Монтаж радиаторов Arbonia', link: '/articles/montazh-radiatorov-arbonia-rekomendacii' },
 				]}
 			/>
 			<Hero
@@ -188,7 +188,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					variant='h5'
 					component='h2'
 				>
-					FAQ по монтажу Arbonia
+					Часто задаваемые вопросы по монтажу Arbonia
 				</Typography>
 
 				<Typography

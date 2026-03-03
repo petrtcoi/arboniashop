@@ -346,6 +346,30 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
 				</Box>
+				<Box marginTop='60px'>
+					<Typography
+						component='h2'
+						variant='h5'
+					>
+						Полезные материалы
+					</Typography>
+
+					<ul>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Arbonia 3050 или 3057 - какую высоту радиатора выбрать
+								</Typography>
+							</a>
+						</li>
+					</ul>
+				</Box>
 			</Box>
 		</Box>
 	)

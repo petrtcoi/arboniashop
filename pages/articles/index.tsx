@@ -1,14 +1,14 @@
-import { Box, Grid, Typography } from '@mui/material';
-import { NextPage } from 'next';
-import Link from 'next/link';
-import React from 'react';
+import { Box, Grid, Typography } from '@mui/material'
+import { NextPage } from 'next'
+import Link from 'next/link'
+import React from 'react'
 
-import Hero from '../../components/hero/hero';
-import PageHeader from '../../components/pageHeader/pageHeader';
-import PageTitle from '../../components/pageTitle/pageTitle';
+import Hero from '../../components/hero/hero'
+import PageHeader from '../../components/pageHeader/pageHeader'
+import PageTitle from '../../components/pageTitle/pageTitle'
 
-import * as styles from '../../styles/styles';
-import global from '../../variables/global';
+import * as styles from '../../styles/styles'
+import global from '../../variables/global'
 
 type ArticlesListPageProps = {}
 
@@ -36,7 +36,54 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					container
 					spacing={5}
 				>
-					
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/models/2-columns-3.jpeg'
+											alt='Радиатор под окном'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Arbonia 3050 или 3057 - какую высоту радиатора выбрать
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Разбираемся, какой радиатор лучше под низкий подоконник и как сохранить межосевое расстояние 50 см
+											без переделки труб.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
 
 					<Grid
 						item
@@ -806,7 +853,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Как рассчитать Arbonia 2180 — подбор секций онлайн
+											Как рассчитать Arbonia 2180 - подбор секций онлайн
 										</Typography>
 									</Box>
 									<Box

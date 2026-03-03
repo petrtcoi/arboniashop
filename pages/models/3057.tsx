@@ -361,6 +361,19 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								</Typography>
 							</a>
 						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href={`/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat`}
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Arbonia 3050 или 3057 - какую высоту радиатора выбрать
+								</Typography>
+							</a>
+						</li>
 					</ul>
 				</Box>
 			</Box>

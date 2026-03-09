@@ -92,6 +92,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/vertical-radiator-power'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/models/sf-3-01.jpg'
+											alt='Расчет мощности вертикального радиатора Arbonia'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Как рассчитать мощность вертикального радиатора Arbonia
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Простая формула расчета, таблица мощности по площади комнаты и рекомендации по подбору
+											вертикальной модели Arbonia с учетом окон, потолков и теплопотерь...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-2180-po-ploshadi'
 							>
 								<div>

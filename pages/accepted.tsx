@@ -13,7 +13,10 @@ type PageAcceptedProps = {}
 const PageAccepted: NextPage<PageAcceptedProps> = () => {
 	return (
 		<Box sx={{ ...global.pagePadding }}>
-			<PageHeader title={'Запрос на радиаторы Arbonia принят'} />
+			<PageHeader
+				title={'Запрос на радиаторы Arbonia принят'}
+				noindex
+			/>
 
 			<Typography
 				variant='h5'

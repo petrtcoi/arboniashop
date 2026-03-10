@@ -31,7 +31,7 @@ const CartPage: NextPage<CartPageProps> = ({ models, colors, connections }) => {
 
   return (
     <Box sx={{ ...global.pagePadding }}>
-      <PageHeader title={"Коризна покупок"} />
+      <PageHeader title={"Корзина покупок"} noindex />
       <Box paddingTop="20px">
         <Typography
           variant="h4"

@@ -9,11 +9,14 @@ type SuccessPageProps = {}
 
 const SuccessPage: NextPage<SuccessPageProps> = () => {
 	return (
-		<Box
-			height='50vh'
-			width='100hh'
-		>
-			<PageHeader title={'Заказ оформлен!'} />
+			<Box
+				height='50vh'
+				width='100hh'
+			>
+				<PageHeader
+					title={'Страница не найдена (404) | ArboniaShop'}
+					noindex
+				/>
 			<Box
 				marginTop='10vh'
 				width='400px'

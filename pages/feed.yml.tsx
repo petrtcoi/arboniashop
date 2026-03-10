@@ -26,6 +26,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
 
   if (res) {
     res.setHeader("Content-Type", "text/xml");
+    res.setHeader("X-Robots-Tag", "noindex, nofollow");
 
     const models: ModelOrigin[] = await getModelsData();
     const colors: ColorOrigin[] = await getColorsData();

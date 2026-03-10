@@ -1,5 +1,4 @@
 import { Box, Checkbox, FormControlLabel, FormGroup, TextField, Typography } from '@mui/material'
-import Head from 'next/head'
 import { NextPage } from 'next'
 import React, { useMemo, useState } from 'react'
 
@@ -50,63 +49,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
 	return (
 		<Box>
-			<Head>
-				<link
-					rel='canonical'
-					href={pageUrl}
-				/>
-				<meta
-					name='robots'
-					content='index,follow,max-image-preview:large'
-				/>
-				<meta
-					property='og:type'
-					content='article'
-				/>
-				<meta
-					property='og:site_name'
-					content='ArboniaShop'
-				/>
-				<meta
-					property='og:locale'
-					content='ru_RU'
-				/>
-				<meta
-					property='og:title'
-					content={pageTitle}
-				/>
-				<meta
-					property='og:description'
-					content={pageDescription}
-				/>
-				<meta
-					property='og:url'
-					content={pageUrl}
-				/>
-				<meta
-					property='og:image'
-					content={pageImage}
-				/>
-				<meta
-					name='twitter:card'
-					content='summary_large_image'
-				/>
-				<meta
-					name='twitter:title'
-					content={pageTitle}
-				/>
-				<meta
-					name='twitter:description'
-					content={pageDescription}
-				/>
-				<meta
-					name='twitter:image'
-					content={pageImage}
-				/>
-			</Head>
 			<PageHeader
 				title={pageTitle}
 				description={pageDescription}
+				type='article'
+				image={pageImage}
 			/>
 			<PageTitle
 				breadcrumbs={[

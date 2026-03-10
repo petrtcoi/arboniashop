@@ -47,16 +47,18 @@ const Hero: React.FC<HeroProps> = ({ imgPath, header, subheader }) => {
         >
           {header}
         </Typography>
-        <Typography
-          sx={{
-            ...styles.smallText,
-            color: "#ffffff",
-            textShadow: "1px 1px 10px black",
-          }}
-          component="h2"
-        >
-          {subheader}
-        </Typography>
+        {subheader ? (
+          <Typography
+            sx={{
+              ...styles.smallText,
+              color: "#ffffff",
+              textShadow: "1px 1px 10px black",
+            }}
+            component="h2"
+          >
+            {subheader}
+          </Typography>
+        ) : null}
       </Box>
     </Box>
   );

@@ -21,6 +21,17 @@ import { trackPage } from '../../utils/trackEvent';
 import { GoToFormButton } from '../GoToFormButton';
 
 type LayoutProps = ReactElement
+const SITE_URL = 'https://arboniashop.ru'
+const MODEL_CANONICAL_IDS = ['2180', '3180', '3057', '2057', '3050', '2050', '3030'] as const
+
+const normalizePath = (path: string) => {
+	const pathWithoutHash = path.split('#')[0]
+	const pathWithoutQuery = pathWithoutHash.split('?')[0]
+	if (pathWithoutQuery.length > 1 && pathWithoutQuery.endsWith('/')) {
+		return pathWithoutQuery.slice(0, -1)
+	}
+	return pathWithoutQuery || '/'
+}
 
 const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 	const [state, dispatch] = useReducer(reducer, initialState)
@@ -29,39 +40,28 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 	const [pageUrl, setPageUrl] = useState<string>('')
 	const router = useRouter()
 	useEffect(() => {
-		const newPath = router.asPath.split('#')[0]
+		const newPath = normalizePath(router.asPath)
 		if (pageUrl === newPath) return
 		setPageUrl(newPath)
 		trackPage(newPath)
 	}, [router.asPath])
 
-	let canonicalUrl = `https://arboniashop.ru${router.asPath}`
-	const paths = canonicalUrl.split('/')
-	if (canonicalUrl.includes('/models/') && paths.length === 6) {
-		const newPaths = paths.slice(0, 5)
-		canonicalUrl = newPaths.join('/')
+	const normalizedPath = normalizePath(router.asPath)
+	let canonicalPath = normalizedPath
+	if (/^\/models\/[^/]+\/[^/]+$/.test(canonicalPath)) {
+		const parts = canonicalPath.split('/')
+		canonicalPath = `/models/${parts[2]}`
 	}
-	if (canonicalUrl.includes('/models/2180')) {
-		canonicalUrl = `https://arboniashop.ru/models/2180`
+	const canonicalModelId = MODEL_CANONICAL_IDS.find(
+		id =>
+			canonicalPath === `/models/${id}` ||
+			canonicalPath.startsWith(`/models/${id}-`) ||
+			canonicalPath.startsWith(`/models/${id}/`)
+	)
+	if (canonicalModelId) {
+		canonicalPath = `/models/${canonicalModelId}`
 	}
-	if (canonicalUrl.includes('/models/3180')) {
-		canonicalUrl = `https://arboniashop.ru/models/3180`
-	}
-	if (canonicalUrl.includes('/models/3057')) {
-		canonicalUrl = `https://arboniashop.ru/models/3057`
-	}
-	if (canonicalUrl.includes('/models/2057')) {
-		canonicalUrl = `https://arboniashop.ru/models/2057`
-	}
-	if (canonicalUrl.includes('/models/3050')) {
-		canonicalUrl = `https://arboniashop.ru/models/3050`
-	}
-	if (canonicalUrl.includes('/models/2050')) {
-		canonicalUrl = `https://arboniashop.ru/models/2050`
-	}
-	if (canonicalUrl.includes('/models/3030')) {
-		canonicalUrl = `https://arboniashop.ru/models/3030`
-	}
+	const canonicalUrl = `${SITE_URL}${canonicalPath}`
 
 	return (
 		<Box padding='0px'>
@@ -101,6 +101,7 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 					content='9ac1785e06142cc3'
 				/>
 				<link
+					key='canonical'
 					rel='canonical'
 					href={canonicalUrl}
 				/>

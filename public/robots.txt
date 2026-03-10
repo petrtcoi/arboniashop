@@ -1,8 +1,6 @@
 # *
 User-agent: *
 Allow: /
-Disallow: /order/*
-Disallow: /accepted
 
 # Host
 Host: https://arboniashop.ru
@@ -19,5 +17,3 @@ Clean-param: erid /*
 
 # Sitemaps
 Sitemap: https://arboniashop.ru/sitemap.xml
-Sitemap: https://arboniashop.ru/sitemap-0.xml
-

@@ -43,6 +43,56 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/kogda-vertikalnyy-radiator-arbonia-ne-podkhodit'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/models/sf-3-01.jpg'
+											alt='Расчет мощности вертикального радиатора Arbonia'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Когда вертикальный радиатор Arbonia не подходит - честный разбор
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Вертикальный радиатор Arbonia не всегда является лучшим решением, даже если внешне он идеально
+											подходит к интерьеру. Главная причина в том, что высокий и узкий прибор распределяет тепло иначе,
+											чем классический горизонтальный радиатор под окном...
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat'
 							>
 								<div>

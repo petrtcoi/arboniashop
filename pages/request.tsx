@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import Script from 'next/script'
 import { useState } from 'react'
 
 import { Box, Grid, Typography } from '@mui/material'
+import LeadWidget from '../components/leadWidget/LeadWidget'
 
 import PageHeader from '../components/pageHeader/pageHeader'
 import PageTitle from '../components/pageTitle/pageTitle'
@@ -54,20 +54,14 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					<span style={{ fontWeight: 700, color: '#ef7d00' }}>не будем звонить без Вашего прямого запроса</span>.
 				</Typography>
 
-				<Box
-					id='leadWidget'
-					marginTop='24px'
-				/>
-				<Script
-					src='/widgets/lead-widget.js'
-					data-mount='#leadWidget'
-					data-store='ArboniaShop.ru'
-					data-primary='#ef7d00'
-					data-border='#ef7d00'
-					data-success-url='/accepted'
-					data-privacy-url='/privacy'
-					strategy='afterInteractive'
-				/>
+				<Box marginTop='24px'>
+					<LeadWidget
+						store='ArboniaShop.ru'
+						successUrl='/accepted'
+						privacyUrl='/privacy'
+						termsUrl='/agreement'
+					/>
+				</Box>
 			</Box>
 		</Box>
 	)

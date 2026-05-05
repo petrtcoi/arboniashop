@@ -38,7 +38,9 @@ const EMPTY_ERRORS: InputErrors = {
 }
 
 const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
-	const [checked, setChecked] = useState<boolean>(false)
+	const [privacyChecked, setPrivacyChecked] = useState<boolean>(false)
+	const [termsChecked, setTermsChecked] = useState<boolean>(false)
+	const [consentErrors, setConsentErrors] = useState<boolean>(false)
 
 	const shoppingCartContext = useContext(ShoppingCartContext)
 	const consoleType = shoppingCartContext.state.consoleType
@@ -67,8 +69,8 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 	const handleSendEmail = async () => {
 		setCheckErrors(true)
 		const isErrors = Object.values(errors).filter(x => x).length > 0 ? true : false
-		// console.log(isErrors)
-		if (isErrors === false) {
+		setConsentErrors(!privacyChecked || !termsChecked)
+		if (isErrors === false && privacyChecked && termsChecked) {
 			trackEvent('order_placed')
 			const res = await sendOrderConfirmation({
 				...inputData,
@@ -268,43 +270,53 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 							marginTop={'30px'}
 							maxWidth={'540px'}
 							margin={'auto'}
-							display={'flex'}
-							flexDirection='row'
-							gap='10px'
-							alignItems='center'
 							padding='20px'
+							border='1px solid'
+							borderColor={consentErrors ? '#c8102e' : '#d3d3d3'}
+							borderRadius='12px'
+							bgcolor='#f2eff0'
 						>
-							<Checkbox
-								checked={checked}
-								onChange={x => setChecked(x.target.checked)}
-							/>
-							<Typography sx={styles.smallText}>
-								Подтверждая заказ, Вы соглашаетесь с условиями{' '}
-								<a
-									href='/privacy'
-									target='_blank'
-									className='underline hover:no-underline'
-								>
-									Политики конфиденциальности
-								</a>
-								,{' '}
-								<a
-									href='/oferta'
-									target='_blank'
-									className='underline hover:no-underline'
-								>
-									Оферты
-								</a>
-								, и{' '}
-								<a
-									href='/agreement'
-									target='_blank'
-									className='underline hover:no-underline'
-								>
-									Пользовательского соглашения
-								</a>
-								.
+							<Typography sx={{ ...styles.smallText, color: '#6a6a6a' }} marginBottom='10px'>
+								Для отправки формы необходимо подтвердить согласие с условиями обработки персональных данных и правилами
+								использования сайта.
 							</Typography>
+							<Box display='flex' flexDirection='row' gap='10px' alignItems='center'>
+								<Checkbox
+									checked={privacyChecked}
+									onChange={x => {
+										setPrivacyChecked(x.target.checked)
+										if (x.target.checked && termsChecked) setConsentErrors(false)
+									}}
+								/>
+								<Typography sx={styles.smallText}>
+									Я подтверждаю согласие на обработку персональных данных в соответствии с{' '}
+									<a href='/privacy' target='_blank' className='underline hover:no-underline'>
+										Политикой конфиденциальности
+									</a>
+									.
+								</Typography>
+							</Box>
+							<Box display='flex' flexDirection='row' gap='10px' alignItems='center' marginTop='8px'>
+								<Checkbox
+									checked={termsChecked}
+									onChange={x => {
+										setTermsChecked(x.target.checked)
+										if (x.target.checked && privacyChecked) setConsentErrors(false)
+									}}
+								/>
+								<Typography sx={styles.smallText}>
+									Я принимаю условия{' '}
+									<a href='/agreement' target='_blank' className='underline hover:no-underline'>
+										Пользовательским соглашением
+									</a>
+									.
+								</Typography>
+							</Box>
+							{consentErrors ? (
+								<Typography sx={styles.smallTextBoldRed} marginTop='10px'>
+									Подтвердите согласие с Политикой конфиденциальности и Пользовательским соглашением.
+								</Typography>
+							) : null}
 						</Box>
 					</Box>
 
@@ -316,7 +328,7 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 					>
 						<Box marginTop='30px' />
 						<Button
-							disabled={!checked || Object.values(errors).filter(x => x).length > 0}
+							disabled={Object.values(errors).filter(x => x).length > 0}
 							variant='contained'
 							onClick={() => handleSendEmail()}
 						>

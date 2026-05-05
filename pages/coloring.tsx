@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Script from 'next/script';
 import { useState } from 'react';
 
 import { Box, Grid, Typography } from '@mui/material';
@@ -12,6 +11,7 @@ import trackEvent from '../utils/trackEvent';
 import type { NextPage } from 'next';
 
 import Hero from '../components/hero/hero';
+import LeadWidget from '../components/leadWidget/LeadWidget'
 import * as styles from '../styles/styles';
 import global from '../variables/global';
 
@@ -223,20 +223,14 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					</Box>
 				)}
 
-				<Box
-					id='leadWidget'
-					marginTop='24px'
-				/>
-				<Script
-					src='/widgets/lead-widget.js'
-					data-mount='#leadWidget'
-					data-store='ArboniaShop.ru'
-					data-primary='#ef7d00'
-					data-border='#ef7d00'
-					data-success-url='/accepted'
-					data-privacy-url='/privacy'
-					strategy='afterInteractive'
-				/>
+				<Box marginTop='24px'>
+					<LeadWidget
+						store='ArboniaShop.ru'
+						successUrl='/accepted'
+						privacyUrl='/privacy'
+						termsUrl='/agreement'
+					/>
+				</Box>
 			</Box>
 		</Box>
 	)

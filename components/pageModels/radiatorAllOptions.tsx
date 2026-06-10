@@ -10,6 +10,7 @@ import SingleColor from '../singleColor/singleColor'
 import SingleConnection from '../singleConnection/singleConnection'
 
 import calcRadiatorCost from '../../utils/calcRadiatorCost'
+import formatPrice from '../../utils/formatPrice'
 import range from '../../utils/range'
 
 import { CurrencyContext } from '../../contexts/currencyContext'
@@ -298,7 +299,7 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 									display='inline'
 									sx={{ fontSize: '20px', fontWeight: 600 }}
 								>
-									&nbsp;{radiatorCost.toLocaleString()} руб
+									&nbsp;{formatPrice(radiatorCost)} руб
 								</Typography>
 								<Box
 									marginLeft='20px'

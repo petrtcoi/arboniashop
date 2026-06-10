@@ -79,6 +79,24 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					sx={{ ...styles.standardText }}
 					marginY='20px'
 				>
+					Если вы рассматриваете не только 3057, но и соседние складские модели 50-57 см, посмотрите&#160;
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/catalog/standard'
+					>
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							трубчатые радиаторы Arbonia под окно
+						</Typography>
+					</a>
+					&#160;с боковым и нижним подключением.
+				</Typography>
+				<Typography
+					sx={{ ...styles.standardText }}
+					marginY='20px'
+				>
 					Кроме того, радиаторы Arbonia - один из немногих вариантов радиаторов премиум-класса, обладающих диамтером
 					подключение 3/4, необходимым для установки в старые однотрубные системы отопления.
 				</Typography>

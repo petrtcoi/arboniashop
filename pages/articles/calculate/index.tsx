@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { NextPage } from 'next'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import React from 'react'
 
@@ -87,6 +87,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<Box marginTop='20px' />
 						Главным и единственным преимуществом такого подхода является его простота и то, что в большинстве случаев
 						подобранных таким образом радиаторов оказывается достаточно для отопления.
+						<Box marginTop='20px' />
+						Если задача типовая -&#160;
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/catalog/standard'
+						>
+							<Typography
+								sx={{ ...styles.standardTextRedLink }}
+								component='span'
+							>
+								подобрать радиатор под окно
+							</Typography>
+						</a>
+						&#160;высотой 50-57 см, расчет мощности сразу помогает выбрать между 2- и 3-трубчатой моделью.
 						<Box marginTop='20px' />
 						Мы рекомендуем прибегать к подобному расчету мощностей радиаторов только в крайнем случае. Данный расчет
 						никак не учитывает:

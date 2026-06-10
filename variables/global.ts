@@ -7,6 +7,7 @@ const global: { [key: string]: any } = {
 	whatsApp: '79667589202',
 	pages: [
 		['Главная', '/'],
+		['Радиаторы под окно', '/catalog/standard'],
 		['О магазине', '/about'],
 		['Покраска', '/coloring'],
 		['Доставка и оплата', '/delivery'],

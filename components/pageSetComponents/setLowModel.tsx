@@ -4,6 +4,7 @@ import { Box, Typography } from "@mui/material";
 import ModelBlock from "../modelBlock/modelBlock";
 import PageHeader from "../../components/pageHeader/pageHeader";
 import Hero from "../../components/hero/hero";
+import CatalogPopularLinks from "./catalogPopularLinks";
 
 import { SetComponentProps } from "../../models/setComponentProps.model";
 
@@ -99,6 +100,7 @@ const SetLowModel: React.FC<SetComponentProps> = ({
             connections.find((x) => x.id === "69tvv") || connections[0]
           }
         />
+        <CatalogPopularLinks current="low-models" />
       </Box>
     </Box>
   );

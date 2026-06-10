@@ -2,7 +2,7 @@ import React from 'react'
 import { NextPage } from 'next'
 import { Box, Typography } from '@mui/material'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 import PageTitle from '../../../components/pageTitle/pageTitle'
 import PageHeader from '../../../components/pageHeader/pageHeader'

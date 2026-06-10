@@ -10,6 +10,7 @@ import getModelsData from '../../api_utils/getModelsData'
 import SetHighModel from '../../components/pageSetComponents/setHighModel'
 import SetLowModel from '../../components/pageSetComponents/setLowModel'
 import SetRAL9016Model from '../../components/pageSetComponents/setRAL9016Model'
+import SetStandardModel from '../../components/pageSetComponents/setStandardModel'
 import Set2180Stock from '../models/2180'
 
 import { ColorOrigin } from '../../models/colorOrigin.model'
@@ -25,6 +26,10 @@ const SETS_MAP: {
 	'low-models': {
 		title: 'Низкие радиаторы ArboniaColumn',
 		component: SetLowModel,
+	},
+	standard: {
+		title: 'Радиаторы под окно',
+		component: SetStandardModel,
 	},
 	'high-models': {
 		title: 'Вертикальные радиаторы Arbonia',

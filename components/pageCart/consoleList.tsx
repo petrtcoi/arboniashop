@@ -4,6 +4,7 @@ import React from 'react'
 import { CartItemExtended } from '../../models/cartItemExtended.model'
 
 import getGroupedConsoles from '../../utils/getGroupedConsoles'
+import formatPrice from '../../utils/formatPrice'
 
 import * as styles from './../../styles/styles'
 
@@ -35,7 +36,7 @@ const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
 							sx={styles.smallText}
 							align='right'
 						>
-							{Math.floor(consolePrice).toLocaleString()}
+							{formatPrice(Math.floor(consolePrice))}
 						</TableCell>
 						<TableCell
 							component='th'
@@ -51,7 +52,7 @@ const ConsoleList: React.FC<ConsoleListProps> = ({ items }) => {
 							sx={styles.smallText}
 							align='right'
 						>
-							{console.totalSum.toLocaleString()}
+							{formatPrice(console.totalSum)}
 						</TableCell>
 
 						<TableCell

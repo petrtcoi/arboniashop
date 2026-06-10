@@ -8,6 +8,8 @@ import { CartItemExtended } from '../../models/cartItemExtended.model'
 
 import { ShoppingCartContext } from '../../contexts/shoppingCartContext'
 
+import formatPrice from '../../utils/formatPrice'
+
 import * as styles from './../../styles/styles'
 
 type CartItemRowProps = {
@@ -35,7 +37,7 @@ const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
 				sx={styles.smallText}
 				align='right'
 			>
-				{item.price.noConsole.toLocaleString()}
+				{formatPrice(item.price.noConsole)}
 			</TableCell>
 			<TableCell
 				component='th'
@@ -51,7 +53,7 @@ const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
 				sx={styles.smallText}
 				align='right'
 			>
-				{(item.price.noConsole * item.qnty).toLocaleString()}
+				{formatPrice(item.price.noConsole * item.qnty)}
 			</TableCell>
 
 			<TableCell

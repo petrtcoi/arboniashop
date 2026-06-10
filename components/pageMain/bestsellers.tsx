@@ -9,6 +9,7 @@ import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
 import * as styles from '../../styles/styles'
 import calcRadiatorCost from '../../utils/calcRadiatorCost'
+import formatPrice from '../../utils/formatPrice'
 
 export const linkStyle = {
 	marginTop: '5px',
@@ -310,7 +311,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 										flexGrow={1}
 									/>
 									<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-										от {model2180MinPrice.noConsole.toLocaleString()} руб.
+										от {formatPrice(model2180MinPrice.noConsole)} руб.
 									</Box>
 								</Box>
 							</Box>
@@ -515,7 +516,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model3057MinPrice.noConsole.toLocaleString()} руб.
+									от {formatPrice(model3057MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>
@@ -718,7 +719,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model3180MinPrice.noConsole.toLocaleString()} руб.
+									от {formatPrice(model3180MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>
@@ -921,7 +922,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model3030MinPrice.noConsole.toLocaleString()} руб.
+									от {formatPrice(model3030MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>
@@ -1124,7 +1125,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model2050MinPrice.noConsole.toLocaleString()} руб.
+									от {formatPrice(model2050MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>
@@ -1327,7 +1328,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									flexGrow={1}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
-									от {model3050MinPrice.noConsole.toLocaleString()} руб.
+									от {formatPrice(model3050MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
 							<Box marginTop='25px'>

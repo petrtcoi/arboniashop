@@ -85,7 +85,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					Традиционная зона установки горизонтального радиатора - пространство под окном. Эта точка изначально считалась
 					зоной холодного воздуха, и прибор формировал тёплую воздушную завесу. Даже сегодня эта схема остаётся
 					актуальной: горизонтальная модель равномерно прогревает помещение благодаря длинной поверхности и устойчивой
-					конвекции.
+					конвекции. Для такого сценария удобнее смотреть сразу&#160;
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/catalog/standard'
+					>
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							горизонтальные радиаторы под окно
+						</Typography>
+					</a>
+					&#160;в складских размерах 50-57 см.
 				</p>
 				<p>
 					В больших комнатах горизонтальные радиаторы удобны тем, что формируют широкий поток тепла, обеспечивая быстрый
@@ -135,15 +147,15 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 				<p>
 					Особенно востребованы современные трубчатые модели. Например,{' '}
-					<Link href='/catalog/high-models'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography
-								sx={{ ...styles.standardTextRedLink }}
-								component='span'
-							>
-								вертикальные радиаторы Arbonia
-							</Typography>
-						</a>
+					<Link href='/catalog/high-models' style={{ textDecoration: 'none' }}>
+
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							вертикальные радиаторы Arbonia
+						</Typography>
+
 					</Link>{' '}
 					универсальны благодаря узким секциям и большому выбору высот, что позволяет установить их в самых сложных
 					местах - от узких простенков до зон рядом с панорамными окнами.
@@ -482,7 +494,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				})}
 			</script>
 		</Box>
-	)
+	);
 }
 
 export default ArticlePage

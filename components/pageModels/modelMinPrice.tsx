@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 
 import { ModelOrigin } from '../../models/modelOrigin.model'
 
+import formatPrice from '../../utils/formatPrice'
+
 import * as styles from '../../styles/styles'
 
 type ModelMinPriceProps = {
@@ -43,7 +45,7 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ minPrice, setTabBuy }) =>
 							itemProp='lowPrice'
 							content={minPrice.toString().replace(',', '').trim()}
 						/>
-						&nbsp;{minPrice.toLocaleString()} руб
+						&nbsp;{formatPrice(minPrice)} руб
 					</span>
 				</Typography>
 			</Box>

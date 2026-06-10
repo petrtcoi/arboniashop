@@ -26,6 +26,8 @@ import GeneralTextAboutArboniaProps from '../../components/generalTextAboutArbon
 import global from '../../variables/global'
 import * as styles from './../../styles/styles'
 
+const STANDARD_MODEL_IDS = ['2050', '2057', '3050', '3057']
+
 type ModelProps = {
 	modelCurr: ModelOrigin
 	models: ModelOrigin[]
@@ -61,6 +63,17 @@ const Model: NextPage<ModelProps> = ({
 	)
 
 	const { rateEuro, isFetching } = useContext(CurrencyContext)
+	const modelFamilyId = modelCurr.id.split('-')[0]
+	const modelBreadcrumbs = [
+		{ title: 'Главная', link: '/' },
+		...(STANDARD_MODEL_IDS.includes(modelFamilyId)
+			? [{ title: 'Радиаторы под окно', link: '/catalog/standard' }]
+			: []),
+		{
+			title: `Arbonia ${modelCurr.nameShort}`,
+			link: `/models/${modelCurr.id}`,
+		},
+	]
 
 	const setTabBuy = () => {
 		setTab('buy')
@@ -87,13 +100,7 @@ const Model: NextPage<ModelProps> = ({
 			<PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
-				breadcrumbs={[
-					{ title: 'Главная', link: '/' },
-					{
-						title: `Arbonia ${modelCurr.nameShort}`,
-						link: `/models/${modelCurr.id}`,
-					},
-				]}
+				breadcrumbs={modelBreadcrumbs}
 			/>
 			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				{/* Shit code! */}

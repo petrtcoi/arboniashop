@@ -107,15 +107,15 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
 				<div className={pageStyle.linkBox}>
 					Подходящие модели для такого расчета собраны в разделе{' '}
-					<Link href='/catalog/high-models'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography
-								sx={{ ...styles.standardTextRedLink }}
-								component='span'
-							>
-								вертикальные радиаторы Arbonia
-							</Typography>
-						</a>
+					<Link href='/catalog/high-models' style={{ textDecoration: 'none' }}>
+
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							вертикальные радиаторы Arbonia
+						</Typography>
+
 					</Link>
 					.
 				</div>
@@ -296,15 +296,15 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 				<p>
 					Для комнат с большим остеклением ориентируйтесь на повышенные теплопотери и дополнительно посмотрите обзор{' '}
-					<Link href='/articles/panorama'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography
-								sx={{ ...styles.standardTextRedLink }}
-								component='span'
-							>
-								радиаторов Arbonia для панорамных окон
-							</Typography>
-						</a>
+					<Link href='/articles/panorama' style={{ textDecoration: 'none' }}>
+
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							радиаторов Arbonia для панорамных окон
+						</Typography>
+
 					</Link>
 					.
 				</p>
@@ -411,15 +411,15 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 				<p>
 					Подробное сравнение по конструкции и применению смотрите в статье{' '}
-					<Link href='/articles/2180-3180'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography
-								sx={{ ...styles.standardTextRedLink }}
-								component='span'
-							>
-								Arbonia 2180 vs 3180
-							</Typography>
-						</a>
+					<Link href='/articles/2180-3180' style={{ textDecoration: 'none' }}>
+
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							Arbonia 2180 vs 3180
+						</Typography>
+
 					</Link>
 					.
 				</p>
@@ -569,7 +569,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</div>
 			</Box>
 		</Box>
-	)
+	);
 }
 
 export default ArticlePage

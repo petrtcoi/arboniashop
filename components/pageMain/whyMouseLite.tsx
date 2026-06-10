@@ -49,9 +49,9 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
 					xs={12}
 					md={6}
 				>
-					<Typography
+					<Box
+						component='div'
 						sx={{ ...styles.standardText, lineHeight: '2rem' }}
-						component='span'
 					>
 						<ul>
 							<li>Расчет и подбор радиаторов</li>
@@ -62,7 +62,7 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
 							<li>Работаем как с физическими, так и юридическими лицами</li>
 							<li>Сотрудничаем с дизайнерами и строителями</li>
 						</ul>
-					</Typography>
+					</Box>
 				</Grid>
 			</Grid>
 		</Box>

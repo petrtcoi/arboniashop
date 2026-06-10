@@ -4,6 +4,7 @@ import React from 'react'
 import Hero from '../../components/hero/hero'
 import PageHeader from '../../components/pageHeader/pageHeader'
 import ModelBlock from '../modelBlock/modelBlock'
+import CatalogPopularLinks from './catalogPopularLinks'
 
 import { SetComponentProps } from '../../models/setComponentProps.model'
 
@@ -159,6 +160,8 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 					color={colors.find(x => x.id === 'sf3') || colors[0]}
 					connection={connections.find(x => x.id === '69tvv') || connections[0]}
 				/>
+
+				<CatalogPopularLinks current='high-models' />
 
 				<Box marginTop='60px'>
 					<Typography

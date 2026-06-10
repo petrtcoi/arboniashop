@@ -14,6 +14,7 @@ import { ColorOrigin } from '../../models/colorOrigin.model'
 import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
 import global from '../../variables/global'
+import CatalogPopularLinks from './catalogPopularLinks'
 
 import * as styles from '../../styles/styles'
 
@@ -526,6 +527,8 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 					</Typography>
 				</Box>
+
+				<CatalogPopularLinks current='ral9016' />
 
 				<Box marginTop='60px'>
 					<Typography

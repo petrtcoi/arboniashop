@@ -1,9 +1,8 @@
 import { Box, Container, CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/system';
-import { NextComponentType } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { ReactElement, useEffect, useReducer, useState } from 'react';
+import { ReactNode, useEffect, useReducer, useState } from 'react';
 import { CookieAlert } from './CookieAlert';
 
 import theme from './../../theme/theme';
@@ -20,7 +19,7 @@ import useGetCurrency from '../../api_utils/useGetCurrency';
 import { trackPage } from '../../utils/trackEvent';
 import { GoToFormButton } from '../GoToFormButton';
 
-type LayoutProps = ReactElement
+type LayoutProps = { children: ReactNode }
 const SITE_URL = 'https://arboniashop.ru'
 const MODEL_CANONICAL_IDS = ['2180', '3180', '3057', '2057', '3050', '2050', '3030'] as const
 
@@ -33,7 +32,7 @@ const normalizePath = (path: string) => {
 	return pathWithoutQuery || '/'
 }
 
-const Layout: NextComponentType<LayoutProps> = ({ children }) => {
+const Layout = ({ children }: LayoutProps) => {
 	const [state, dispatch] = useReducer(reducer, initialState)
 	const { rateEuro, isFetching } = useGetCurrency()
 

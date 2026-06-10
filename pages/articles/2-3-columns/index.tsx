@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { NextPage } from 'next'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import React from 'react'
 
@@ -106,7 +106,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					marginY='20px'
 				>
 					Таким образом, при подборе нужной модели по мощности, вы можете выбирать: взять более длинную и тонкую
-					2-трубчатую модель, или более короткую, но более толстую 3-трубчатую.
+					2-трубчатую модель, или более короткую, но более толстую 3-трубчатую. Для установки под стандартным окном
+					есть отдельная подборка&#160;
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/catalog/standard'
+					>
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							2- и 3-трубчатые радиаторы под окно
+						</Typography>
+					</a>
+					&#160;с моделями 2050, 2057, 3050 и 3057.
 				</Typography>
 				<Box textAlign={'center'}>
 					<img

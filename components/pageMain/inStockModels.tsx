@@ -510,6 +510,12 @@ export function InStockModels() {
 						<Box paddingLeft='10px'>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/catalog/standard'
+							>
+								<Typography sx={{ ...styles.standartTextThinLink }}>Радиаторы под окно (склад)</Typography>
+							</a>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/catalog/low-models'
 							>
 								<Typography sx={{ ...styles.standartTextThinLink }}>Низкие радиаторы (склад)</Typography>

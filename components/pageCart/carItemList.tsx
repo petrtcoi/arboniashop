@@ -7,6 +7,7 @@ import ConsoleList from './consoleList'
 import ConsoleSwitch from './consoleSwitch'
 
 import getCartTotal from '../../utils/getCartTotal'
+import formatPrice from '../../utils/formatPrice'
 
 import { CartItemExtended } from '../../models/cartItemExtended.model'
 
@@ -88,7 +89,7 @@ const CartItemList: React.FC<CartItemListProps> = ({ items, showSummary = true }
 									colSpan={1}
 									sx={{ ...styles.smallTextBold, borderBottom: 0 }}
 								>
-									{total.toLocaleString()}
+									{formatPrice(total)}
 								</TableCell>
 								{/* <TableCell align="right" sx={ { ...styles.smallTextBold, borderBottom: 0 } }></TableCell>
                                 <TableCell sx={ { borderBottom: 0 } }></TableCell> */}

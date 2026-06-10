@@ -26,6 +26,11 @@ module.exports = {
 		]
 	},
 	async headers() {
+		// В dev кэширование ломает HMR: браузер держит старые webpack-чанки
+		// и страница уходит в бесконечный цикл full reload
+		if (process.env.NODE_ENV !== 'production') {
+			return []
+		}
 		return [
 			{
 				source: '/:path*',

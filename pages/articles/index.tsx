@@ -81,6 +81,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											чем классический горизонтальный радиатор под окном...
 										</Typography>
 									</Box>
+										</div>
+									</a>
+								</Box>
+							</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/trubchatye-radiatory-dlya-kvartiry'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/articles/underwindow-thumb.jpeg'
+											alt='Трубчатые радиаторы для квартиры'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Трубчатые радиаторы для квартиры: какие модели выбрать
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Разбираем квартирные сценарии: установка под окном, замена старой батареи, вертикальные модели для
+											ниш и панорамных окон, а также расчёт секций.
+										</Typography>
+									</Box>
 								</div>
 							</a>
 						</Box>

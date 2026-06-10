@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { NextPage } from 'next'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import React from 'react'
 
@@ -73,7 +73,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					, мы всегда рекомендуем в первую очередь обращать внимание на то, какие радиаторы уже установлены и, если есть
 					возможность, проверять, хватает ли их мощности в зимнее время. Этот подход более надежен, чем подбор
 					радиаторов по некоторым формулам из интернета, которые могут дать лишь примерное представление о том, какая
-					мощность требуется.
+					мощность требуется. Для типовой замены под окном отдельно собраны&#160;
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/catalog/standard'
+					>
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							модели на замену старых батарей
+						</Typography>
+					</a>
+					&#160;с межосевым 500 мм и складскими вариантами подключения.
 				</Typography>
 				<Typography
 					sx={{ ...styles.standardText }}

@@ -241,7 +241,20 @@ const ArboniaHowToChooseTubularRadiatorPage: NextPage = () => {
 				>
 					Высота радиатора определяет, можно ли установить его под окно или в нишу. Это один из первых параметров,
 					который задает ограничения. Длина радиатора напрямую связана с теплоотдачей - чем больше длина, тем больше
-					площадь теплообмена.
+					площадь теплообмена. Для типовых подоконников обычно начинают с раздела&#160;
+					<Link
+						href='/catalog/standard'
+						passHref
+						legacyBehavior
+					>
+						<Typography
+							component='a'
+							sx={{ ...styles.standardTextRedLink }}
+						>
+							радиаторы под окно стандартной высоты
+						</Typography>
+					</Link>
+					, где собраны складские модели 50-57 см.
 				</Typography>
 				<Typography
 					component={'p'}

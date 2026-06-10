@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { NextPage } from 'next'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import React from 'react'
 
@@ -42,7 +42,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					marginY='20px'
 				>
 					Два наиболее используемых варианта подключения для радиаторов Arbonia: боковое ¾” и нижнее со встроенным
-					термовентилем. Именно они входят в нашу складскую программу.
+					термовентилем. Именно они входят в нашу складскую программу. В отдельной подборке собраны&#160;
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/catalog/standard'
+					>
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							радиаторы с боковым и нижним подключением
+						</Typography>
+					</a>
+					&#160;для установки под стандартное окно.
 				</Typography>
 				<Typography
 					marginTop='40px'

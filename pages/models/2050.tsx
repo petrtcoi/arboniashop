@@ -62,6 +62,7 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				subheader={'Купить стальной трубчатый радиатор Arbonia 2050'}
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
+					{ title: 'Радиаторы под окно', link: '/catalog/standard' },
 					{ title: 'Arbonia 2050', link: '/models/2050' },
 				]}
 			/>

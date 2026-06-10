@@ -61,15 +61,15 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					Разберём, как цвет влияет на интерьер, каким оттенкам отдать предпочтение в разных комнатах, что говорит
 					психология цвета и почему в одних пространствах лучше работает яркий акцент, а в других - универсальный
 					классический белый, например{' '}
-					<Link href='/catalog/ral9016'>
-						<a style={{ textDecoration: 'none' }}>
-							<Typography
-								sx={{ ...styles.standardTextRedLink }}
-								component='span'
-							>
-								радиаторы Arbonia в цвете RAL 9016
-							</Typography>
-						</a>
+					<Link href='/catalog/ral9016' style={{ textDecoration: 'none' }}>
+
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							радиаторы Arbonia в цвете RAL 9016
+						</Typography>
+
 					</Link>
 					.
 				</p>
@@ -459,7 +459,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				})}
 			</script>
 		</Box>
-	)
+	);
 }
 
 export default ArticlePage

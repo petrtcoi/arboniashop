@@ -28,7 +28,7 @@ const SETS_MAP: {
 		component: SetLowModel,
 	},
 	standard: {
-		title: 'Радиаторы под окно',
+		title: 'Стандартные радиаторы под окно',
 		component: SetStandardModel,
 	},
 	'high-models': {

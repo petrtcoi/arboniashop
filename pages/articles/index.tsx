@@ -1254,7 +1254,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Трубчатые радиаторы. Особенности, преимущества и недостатки.
+											Трубчатые радиаторы Arbonia: плюсы, минусы и как выбрать модель.
 										</Typography>
 									</Box>
 									<Box
@@ -1267,10 +1267,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText }}
 											component='span'
 										>
-											Трубчатые радиаторы являются одним из самых востребованных видов отопительного оборудования в
-											России, сочетая в себе практичность, долговечность и высокую теплоотдачу. Современные технологии
-											лазерной сварки, используемые при производстве, гарантируют высокую надёжность и стабильность этих
-											радиаторов...
+											Разбираем плюсы и минусы трубчатых радиаторов Arbonia и помогаем выбрать высоту, число труб,
+											подключение, цвет и конкретную модель под окно, панорамное остекление или узкий простенок...
 										</Typography>
 									</Box>
 								</div>
@@ -1841,6 +1839,55 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										>
 											Трубчатые радиаторы Arbonia предоставляют широкие возможности по подбору конкретных моделей под
 											каждый случай: практически любая высота и длина доступны для изготовления.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/radiatory-arbonia-pod-okno'
+							>
+								<div>
+									<Box textAlign={'center'}>
+										<img
+											src='/images/models/3057-1.jpeg'
+											alt='Стандартные радиаторы Arbonia под окно'
+											width={300}
+											style={{ borderRadius: '8px' }}
+											height={'auto'}
+										/>
+									</Box>
+									<Box
+										textAlign={'center'}
+										marginTop='10px'
+									>
+										<Typography
+											sx={{ ...styles.standardTextRedLink }}
+											component='span'
+										>
+											Стандартные радиаторы Arbonia под окно
+										</Typography>
+									</Box>
+									<Box
+										textAlign={'justify'}
+										marginTop='10px'
+										maxWidth={360}
+										margin={'auto'}
+									>
+										<Typography
+											sx={{ ...styles.smallText, lineHeight: 0.3 }}
+											component='span'
+										>
+											Модели 2050, 2057, 3050 и 3057 высотой 50-57 см: как выбрать высоту, число труб и подключение
+											под обычное окно или замену старой батареи.
 										</Typography>
 									</Box>
 								</div>

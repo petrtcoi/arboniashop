@@ -43,6 +43,76 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/radiator-pod-nizkiy-podokonnik'
+							>
+								<div>
+									<Box textAlign='center'>
+										<img
+											src='/images/models/3030-0.jpeg'
+											alt='Радиатор под низкий подоконник Arbonia'
+											width={300}
+											height='auto'
+											style={{ borderRadius: '8px' }}
+										/>
+									</Box>
+									<Box textAlign='center' marginTop='10px'>
+										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+											Радиатор под низкий подоконник - как выбрать Arbonia
+										</Typography>
+									</Box>
+									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
+											Замер ниши, сравнение Arbonia 2030 и 3030, мощность, число секций и выбор подключения
+											для подоконника высотой около 50 см.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/mezhosevoe-rasstoyanie-500-mm-arbonia'
+							>
+								<div>
+									<Box textAlign='center'>
+										<img
+											src='/images/articles/20230222.jpg'
+											alt='Межосевое расстояние 500 мм Arbonia'
+											width={300}
+											height={300}
+											style={{ borderRadius: '8px' }}
+										/>
+									</Box>
+									<Box textAlign='center' marginTop='10px'>
+										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+											Межосевое расстояние 500 мм Arbonia - замена батареи
+										</Typography>
+									</Box>
+									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
+											Как измерить старые выводы, сравнить Arbonia 2057 и 3057 и проверить возможность
+											замены без переноса труб.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/kogda-vertikalnyy-radiator-arbonia-ne-podkhodit'
 							>
 								<div>
@@ -1016,55 +1086,6 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										>
 											Подборка частых вопросов про радиаторы Arbonia и ответом на них. Где производятся? Какие давление
 											держат? И т.д...
-										</Typography>
-									</Box>
-								</div>
-							</a>
-						</Box>
-					</Grid>
-					<Grid
-						item
-						md={6}
-					>
-						<Box sx={{ borderRadius: '8px' }}>
-							<a
-								style={{ textDecoration: 'none' }}
-								href='/articles/arbonia-2180-calc'
-							>
-								<div>
-									<Box textAlign={'center'}>
-										<img
-											src='/images/articles/2180-4.jpeg'
-											alt='Расчёт секций Arbonia 2180'
-											width={300}
-											style={{ borderRadius: '8px' }}
-											height={300}
-										/>
-									</Box>
-									<Box
-										textAlign={'center'}
-										marginTop='10px'
-										sx={{ maxWidth: '420px', margin: 'auto' }}
-									>
-										<Typography
-											sx={{ ...styles.standardTextRedLink }}
-											component='span'
-										>
-											Как рассчитать Arbonia 2180 - подбор секций онлайн
-										</Typography>
-									</Box>
-									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
-										<Typography
-											sx={{ ...styles.smallText, lineHeight: 0.3 }}
-											component='span'
-										>
-											Подробный расчет количества секций Arbonia 2180 по площади и объёму помещения. Онлайн-калькулятор,
-											поправочные коэффициенты и практические примеры...
 										</Typography>
 									</Box>
 								</div>

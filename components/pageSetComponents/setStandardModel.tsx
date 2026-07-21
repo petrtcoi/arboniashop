@@ -513,7 +513,20 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						marginTop='20px'
 					>
 						Arbonia 2057 и 3057 особенно важны для сценария замены: высота 57 см и межосевое расстояние 500 мм при
-						боковом подключении часто позволяют поставить радиатор без переделки труб. Если старая батарея грела
+						боковом подключении часто позволяют поставить радиатор без переделки труб. До заказа проверьте не только этот
+						размер, но и глубину выводов, резьбу, сторону подачи и мощность по руководству{' '}
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/articles/mezhosevoe-rasstoyanie-500-mm-arbonia'
+						>
+							<Typography
+								sx={{ ...styles.standardTextRedLink }}
+								component='span'
+							>
+								межосевое расстояние 500 мм Arbonia
+							</Typography>
+						</a>
+						. Если старая батарея грела
 						нормально, можно использовать её как ориентир по мощности, но лучше пересчитать помещение - подробнее в
 						статье{' '}
 						<a
@@ -754,6 +767,19 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 									component='span'
 								>
 									Замена чугунных радиаторов на Arbonia 3057
+								</Typography>
+							</a>
+						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/mezhosevoe-rasstoyanie-500-mm-arbonia'
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Межосевое расстояние 500 мм Arbonia - проверка замены
 								</Typography>
 							</a>
 						</li>

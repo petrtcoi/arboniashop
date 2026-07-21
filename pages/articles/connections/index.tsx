@@ -107,7 +107,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						</Typography>
 					</a>
 					- 3-трубчатый радиатор с межосевым расстоянием 500 мм. Его популярность обусловлена высокой теплоотдачей и
-					возможностью использовать его при замене старых чугунных илил алюминиевых радиаторов без переноса труб.
+					возможностью использовать его при замене старых чугунных или алюминиевых радиаторов. Совпадение размера не
+					гарантирует монтаж без изменений: перед заказом проверьте трубы по инструкции{' '}
+					<a
+						style={{ textDecoration: 'none' }}
+						href='/articles/mezhosevoe-rasstoyanie-500-mm-arbonia'
+					>
+						<Typography
+							sx={{ ...styles.standardTextRedLink }}
+							component='span'
+						>
+							как измерить межосевое расстояние 500 мм Arbonia
+						</Typography>
+					</a>
+					.
 				</Typography>
 				<Box textAlign={'center'}>
 					<img

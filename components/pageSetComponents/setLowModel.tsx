@@ -45,6 +45,37 @@ const SetLowModel: React.FC<SetComponentProps> = ({
             не требуется дополнительное место для подвода труб снизу.
           </Typography>
         </Box>
+        <Box marginTop="20px">
+          <Typography sx={{ ...styles.standardText }}>
+            Если известна только высота оконной ниши, начните с руководства{" "}
+            <a
+              href="/articles/radiator-pod-nizkiy-podokonnik"
+              style={{ textDecoration: "none" }}
+            >
+              <Typography
+                sx={{ ...styles.standardTextRedLink }}
+                component="span"
+              >
+                как выбрать радиатор под низкий подоконник
+              </Typography>
+            </a>
+            . В нем показано, как учесть чистовой пол, монтажные зазоры,
+            глубину моделей 2030 и 3030, подключение и число секций. Сравнение
+            моделей высотой 30 и 37 см вынесено в отдельный{" "}
+            <a
+              href="/articles/arbonia-3030-vs-3037"
+              style={{ textDecoration: "none" }}
+            >
+              <Typography
+                sx={{ ...styles.standardTextRedLink }}
+                component="span"
+              >
+                разбор Arbonia 3030 и 3037
+              </Typography>
+            </a>
+            .
+          </Typography>
+        </Box>
 
         {/* 2030 белый*/}
         <ModelBlock

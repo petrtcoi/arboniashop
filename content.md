@@ -15,7 +15,7 @@
 
 ## Главная проблема текущей структуры
 
-На сайте уже **39 статей** с учетом публикаций от 2026-07-21, но часть материалов по-прежнему не привязана к кластеру входящими и исходящими ссылками. Кластер нужно перестроить из вида:
+На сайте уже **41 статья** с учетом публикаций от 2026-08-05, но часть материалов по-прежнему не привязана к кластеру входящими и исходящими ссылками. Кластер нужно перестроить из вида:
 
 ```txt
 Коммерческая страница
@@ -299,7 +299,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 │
 ├── [добавить] /catalog/anthracite
 │   ├── [есть] /articles/arbonia-3180-ral-9016-vs-anthracite
-│   ├── [добавить] /articles/chernyy-radiator-arbonia-anthracite
+│   ├── [2026.08.05] /articles/chernyy-radiator-arbonia
 │   └── [добавить] /articles/temno-serye-radiatory-v-interere
 │
 └── [есть / усилить] /coloring
@@ -321,7 +321,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 
 ## Что добавить
 - **`/articles/kak-vybrat-cvet-radiatora-pod-interer`** (Tier-1) — главный гид по цвету. Связи: `/coloring`, `/catalog/ral9016`, `/catalog/anthracite`.
-- **`/articles/chernyy-radiator-arbonia-anthracite`** (Tier-2) — чёрный/антрацит в интерьере. Связи: `/catalog/anthracite`, `/models/3180`.
+- **`/articles/chernyy-radiator-arbonia`** (Tier-2, добавлено 2026-08-05) — черный/антрацит: RAL 9005, RAL 7016 и SF-3, модели и роль в интерьере. Связи: `/catalog/high-models`, `/models/2180`, `/models/3180`, `/models/3030`, `/coloring`, `/request`. После создания хаба добавить ссылку на `/catalog/anthracite`.
 - **`/articles/pokraska-radiatora-v-lyuboy-cvet-ral`** (Tier-2) — покраска под заказ. Связи: `/coloring`, `/request`.
 - **`/articles/radiator-v-cvet-steny-ili-akcentnyy`** (Tier-2) — слиться vs выделить. Связи: `/coloring`, `/articles/tsvet-radiatorov-v-interiere`.
 
@@ -391,7 +391,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
     ├── [есть] /articles/consoles
     ├── [есть] /articles/termostat
     ├── [добавить] /articles/raschet-sekciy-radiatora-onlayn
-    ├── [добавить] /articles/delta-t-i-teplootdacha-radiatora
+    ├── [2026.08.05] /articles/delta-t-teplootdacha
     ├── [объединить с существующей] /articles/connections
     └── [добавить] /articles/kakie-dannye-nuzhny-dlya-rascheta-radiatora
 ```
@@ -406,7 +406,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 
 ## Что добавить
 - **`/articles/raschet-sekciy-radiatora-onlayn`** (Tier-1) — калькулятор-хаб, сильная AI-страница. Связи: все каталоги, `/request`.
-- **`/articles/delta-t-i-teplootdacha-radiatora`** (Tier-2) — почему мощность зависит от ΔT. Связи: `/articles/calculate`.
+- **`/articles/delta-t-teplootdacha`** (Tier-2, добавлено 2026-08-05) — почему теплоотдача зависит от ΔT и как сравнивать паспортную мощность при разных температурных графиках. Связи: `/articles/calculate`, `/articles/vertical-radiator-power`, `/articles/2-3-columns`, `/request`.
 - **`/articles/connections`** (Tier-2, углубить) — расширить существующую страницу сравнением бокового и нижнего подключения. Отдельный URL с тем же интентом не создавать. Связи: модели, `/articles/low-models`.
 - **`/articles/kakie-dannye-nuzhny-dlya-rascheta-radiatora`** (Tier-2) — что прислать менеджеру. Прямой мост к `/request`.
 
@@ -589,7 +589,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 /articles/2-3-columns                                       — углубить, добавить 4-трубчатые
 /articles/arbonia-2050-ili-3050-chto-vybrat
 /articles/arbonia-2030-ili-3030-chto-vybrat
-/articles/chernyy-radiator-arbonia-anthracite
+/articles/chernyy-radiator-arbonia                          — добавлено 2026-08-05
 /articles/mezhosevoe-rasstoyanie-500-mm-arbonia             — сделано 2026-07-21
 /articles/connections                                       — углубить без нового URL
 /articles/arbonia-2180-obzor-i-harakteristiki
@@ -631,7 +631,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 /coloring — усилить до money page
 /articles/kak-vybrat-cvet-radiatora-pod-interer — добавить
 /articles/radiator-pod-nizkiy-podokonnik — добавлено 2026-07-21
-/articles/chernyy-radiator-arbonia-anthracite — добавить
+/articles/chernyy-radiator-arbonia — добавлено 2026-08-05
 /articles/mezhosevoe-rasstoyanie-500-mm-arbonia — добавлено 2026-07-21
 /articles/calculate — углубить
 /articles/arbonia-3057 — поднять до Tier-1
@@ -647,6 +647,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 /articles/arbonia-3180-obzor-i-harakteristiki
 /articles/kak-chistit-trubchatyy-radiator-arbonia
 /articles/kakie-dannye-nuzhny-dlya-rascheta-radiatora
+/articles/delta-t-teplootdacha — добавлено 2026-08-05
 ```
 
 ---
@@ -679,11 +680,13 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 | /articles/tsvet-radiatorov-v-interiere | Цвет | отмечена |
 | /articles/belye-radiatory-v-temnom-interiere | Цвет | отмечена |
 | /articles/arbonia-3180-ral-9016-vs-anthracite | Цвет / 3180 / Антрацит | отмечена |
+| /articles/chernyy-radiator-arbonia | Цвет / Антрацит / 2180 / 3180 / 3030 | добавлена 2026-08-05 |
 | /articles/arbonia-2180-po-ploshadi | Модель 2180 | отмечена |
 | /articles/arbonia-2180-calc | Модель 2180 | не отмечена |
 | /articles/arbonia-2180-interior | Модель 2180 | отмечена (нет в индексе) |
 | /articles/montazh-arbonia-2180-na-gkl | Модель 2180 / Монтаж | отмечена |
 | /articles/calculate | Подбор и расчёт | не отмечена |
+| /articles/delta-t-teplootdacha | Подбор и расчёт | добавлена 2026-08-05 |
 | /articles/calc-radiators-by-old-ones | Подбор и расчёт | не отмечена |
 | /articles/connections | Подбор и расчёт | не отмечена |
 | /articles/consoles | Подбор / Монтаж | не отмечена |
@@ -698,7 +701,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 
 # 17. Итог
 
-У ArboniaShop уже сильная база: каталожные хабы, десятки моделей и **39 статей**. Но часть статей не отмечена в рабочей таблице и не работает как система вокруг money pages.
+У ArboniaShop уже сильная база: каталожные хабы, десятки моделей и **41 статья**. Но часть статей не отмечена в рабочей таблице и не работает как система вокруг money pages.
 
 Главная задача — превратить структуру:
 ```txt

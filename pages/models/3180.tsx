@@ -495,6 +495,19 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								</Typography>
 							</a>
 						</li>
+						<li>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/chernyy-radiator-arbonia'
+							>
+								<Typography
+									sx={{ ...styles.standardTextLinkUnderline }}
+									component='span'
+								>
+									Черные и антрацитовые радиаторы Arbonia: выбор темного оттенка
+								</Typography>
+							</a>
+						</li>
 					</ul>
 				</Box>
 			</Box>

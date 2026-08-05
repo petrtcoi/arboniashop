@@ -43,6 +43,76 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
+								href='/articles/delta-t-teplootdacha'
+							>
+								<div>
+									<Box textAlign='center'>
+										<img
+											src='/images/arbonia-schema.jpg'
+											alt='Схема трубчатых радиаторов Arbonia'
+											width={300}
+											height='auto'
+											style={{ borderRadius: '8px' }}
+										/>
+									</Box>
+									<Box textAlign='center' marginTop='10px'>
+										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+											Теплоотдача радиатора - как влияет ΔT
+										</Typography>
+									</Box>
+									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
+											Почему одна и та же модель Arbonia дает разную мощность при разных температурах воды и как
+											сравнивать паспортные характеристики без ошибки.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
+								href='/articles/chernyy-radiator-arbonia'
+							>
+								<div>
+									<Box textAlign='center'>
+										<img
+											src='/images/models/2180-9005.jpeg'
+											alt='Черный радиатор Arbonia в цвете RAL 9005'
+											width={300}
+											height='auto'
+											style={{ borderRadius: '8px' }}
+										/>
+									</Box>
+									<Box textAlign='center' marginTop='10px'>
+										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+											Черные радиаторы Arbonia - выбор цвета и модели
+										</Typography>
+									</Box>
+									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
+											Сравниваем RAL 9005, RAL 7016 и SF-3, выбираем модель и заранее учитываем свет,
+											арматуру, подключение и мощность.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid
+						item
+						md={6}
+					>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a
+								style={{ textDecoration: 'none' }}
 								href='/articles/radiator-pod-nizkiy-podokonnik'
 							>
 								<div>

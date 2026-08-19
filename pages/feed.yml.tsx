@@ -16,8 +16,8 @@ import { DISCOUNT, GET_RATE_URL } from '../variables/currency'
 import global from '../variables/global'
 
 const BASE_URL = 'https://arboniashop.ru'
-const DEF_RATE_EURO = 91
-const DEF_DISCOUT_RATE = 0.72
+const DEF_RATE_EURO = 104.54
+const DEF_DISCOUT_RATE = 0.75
 
 const YandexFeed: React.FC = () => null
 

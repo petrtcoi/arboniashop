@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { DISCOUNT, GET_RATE_URL } from '../variables/currency'
 
-const DEFAULT_CURRENCY_RATE = 91
+const DEFAULT_CURRENCY_RATE = 104.54
 
 const DISCOUNTED_DEF_PRICE = DEFAULT_CURRENCY_RATE * DISCOUNT
 

@@ -121,6 +121,16 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</a>
 					&#160;с моделями 2050, 2057, 3050 и 3057.
 				</Typography>
+				<Typography sx={{ ...styles.standardText }} marginY='20px'>
+					Для одинаковой высоты 500 мм есть отдельное сравнение{' '}
+					<a style={{ textDecoration: 'none' }} href='/articles/arbonia-2050-ili-3050'>
+						<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+							Arbonia 2050 и 3050
+						</Typography>
+					</a>
+					: в нем мощность приведена при одинаковом ΔT, показаны полный компромисс по глубине и длине, а также пример
+					расчета секций для нагрузки 1000 Вт.
+				</Typography>
 				<Box textAlign={'center'}>
 					<img
 						src='/images/articles/90.png'

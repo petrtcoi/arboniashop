@@ -15,7 +15,7 @@
 
 ## Главная проблема текущей структуры
 
-На сайте уже **41 статья** с учетом публикаций от 2026-08-05, но часть материалов по-прежнему не привязана к кластеру входящими и исходящими ссылками. Кластер нужно перестроить из вида:
+На сайте уже **43 статьи** с учетом публикаций от 2026-08-23, но часть материалов по-прежнему не привязана к кластеру входящими и исходящими ссылками. Кластер нужно перестроить из вида:
 
 ```txt
 Коммерческая страница
@@ -264,7 +264,7 @@ Money page: **`/catalog/standard`** (создать). Сейчас станда�
     ├── [есть] /articles/radiatory-arbonia-pod-okno
     ├── [не создавать отдельно — развести роли существующих страниц] сценарий замены старых батарей
     ├── [2026.07.21] /articles/mezhosevoe-rasstoyanie-500-mm-arbonia
-    └── [добавить] /articles/arbonia-2050-ili-3050-chto-vybrat
+    └── [2026.08.23] /articles/arbonia-2050-ili-3050
 ```
 
 ## Роли страниц
@@ -279,7 +279,7 @@ Money page: **`/catalog/standard`** (создать). Сейчас станда�
 - **`/articles/radiatory-arbonia-pod-okno`** (Tier-1, уже реализовано) — опорный гид под окно: высота, межосевое, подключение, число секций. Связи: `/catalog/standard`, модели, `/request`.
 - **Сценарий замены старых батарей** — не создавать новый общий URL до переработки существующих материалов. `/articles/arbonia-3057` должен отвечать за конкретную модель и замену чугуна, `/articles/calc-radiators-by-old-ones` — за расчет по установленному прибору, `/articles/mezhosevoe-rasstoyanie-500-mm-arbonia` — за геометрию подключения.
 - **`/articles/mezhosevoe-rasstoyanie-500-mm-arbonia`** (Tier-2, добавлено 2026-07-21) — проверка замены на Arbonia 2057/3057 без обещания обязательного сохранения труб. Входящие связи: `/catalog/standard`, `/articles/connections`, `/articles/arbonia-3057`. Исходящие связи: хаб, обе модели, расчет, монтаж и `/request`.
-- **`/articles/arbonia-2050-ili-3050-chto-vybrat`** (Tier-2) — 2- vs 3-трубчатый под окно. Связи: `/models/2050`, `/models/3050`.
+- **`/articles/arbonia-2050-ili-3050`** (Tier-2, добавлено 2026-08-23) - 2- vs 3-трубчатый под окно. Входящие связи: `/catalog/standard`, `/articles/radiatory-arbonia-pod-okno`, `/articles/2-3-columns`. Исходящие связи: хаб, обе модели, расчет, подключения, цвет и `/request`.
 
 ---
 
@@ -295,7 +295,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 │   ├── [есть / углубить] /articles/ral-9016-pochemu-vybirayut-arkhitektory
 │   ├── [есть] /articles/tsvet-radiatorov-v-interiere
 │   ├── [есть] /articles/belye-radiatory-v-temnom-interiere
-│   └── [добавить] /articles/kak-vybrat-cvet-radiatora-pod-interer
+│   └── [2026.08.23] /articles/kak-vybrat-cvet-radiatora-pod-interer
 │
 ├── [добавить] /catalog/anthracite
 │   ├── [есть] /articles/arbonia-3180-ral-9016-vs-anthracite
@@ -320,7 +320,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 Хаб антрацитовых/чёрных моделей (SF-3 Anthrazit metallic, RAL 9005). Высокий коммерческий интент: «чёрный радиатор», «антрацитовый радиатор отопления».
 
 ## Что добавить
-- **`/articles/kak-vybrat-cvet-radiatora-pod-interer`** (Tier-1) — главный гид по цвету. Связи: `/coloring`, `/catalog/ral9016`, `/catalog/anthracite`.
+- **`/articles/kak-vybrat-cvet-radiatora-pod-interer`** (Tier-1, добавлено 2026-08-23) - главный гид по цвету. Входящие связи: `/coloring`, `/catalog/ral9016`, `/articles`. Исходящие связи: белый хаб, покраска, темные и белые сценарии, главный гид выбора и `/request`. Ссылку на `/catalog/anthracite` добавить после создания коммерческого хаба.
 - **`/articles/chernyy-radiator-arbonia`** (Tier-2, добавлено 2026-08-05) — черный/антрацит: RAL 9005, RAL 7016 и SF-3, модели и роль в интерьере. Связи: `/catalog/high-models`, `/models/2180`, `/models/3180`, `/models/3030`, `/coloring`, `/request`. После создания хаба добавить ссылку на `/catalog/anthracite`.
 - **`/articles/pokraska-radiatora-v-lyuboy-cvet-ral`** (Tier-2) — покраска под заказ. Связи: `/coloring`, `/request`.
 - **`/articles/radiator-v-cvet-steny-ili-akcentnyy`** (Tier-2) — слиться vs выделить. Связи: `/coloring`, `/articles/tsvet-radiatorov-v-interiere`.
@@ -359,7 +359,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 
 ## `/models/3050` / `/models/2050`
 ```txt
-[есть] /articles/arbonia-2050-ili-3050-chto-vybrat  (план, кластер 6)
+[есть] /articles/arbonia-2050-ili-3050  (добавлено 2026-08-23, кластер 6)
 [добавить] /articles/arbonia-3050-obzor
 [добавить] /articles/arbonia-2050-obzor
 ```
@@ -580,14 +580,14 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 ```txt
 /articles/radiatory-arbonia-pod-okno                         — сделано
 /articles/radiator-pod-nizkiy-podokonnik                    — сделано 2026-07-21
-/articles/kak-vybrat-cvet-radiatora-pod-interer
+/articles/kak-vybrat-cvet-radiatora-pod-interer              - добавлено 2026-08-23
 /articles/raschet-sekciy-radiatora-onlayn                   — только вместе с рабочим калькулятором
 ```
 
 ## Этап 4. Приоритетные Tier-2
 ```txt
 /articles/2-3-columns                                       — углубить, добавить 4-трубчатые
-/articles/arbonia-2050-ili-3050-chto-vybrat
+/articles/arbonia-2050-ili-3050                              - добавлено 2026-08-23
 /articles/arbonia-2030-ili-3030-chto-vybrat
 /articles/chernyy-radiator-arbonia                          — добавлено 2026-08-05
 /articles/mezhosevoe-rasstoyanie-500-mm-arbonia             — сделано 2026-07-21
@@ -629,7 +629,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 ```txt
 /catalog/anthracite — создать хаб
 /coloring — усилить до money page
-/articles/kak-vybrat-cvet-radiatora-pod-interer — добавить
+/articles/kak-vybrat-cvet-radiatora-pod-interer - добавлено 2026-08-23
 /articles/radiator-pod-nizkiy-podokonnik — добавлено 2026-07-21
 /articles/chernyy-radiator-arbonia — добавлено 2026-08-05
 /articles/mezhosevoe-rasstoyanie-500-mm-arbonia — добавлено 2026-07-21
@@ -639,7 +639,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 
 ## Средний приоритет
 ```txt
-/articles/arbonia-2050-ili-3050-chto-vybrat
+/articles/arbonia-2050-ili-3050 - добавлено 2026-08-23
 /articles/arbonia-2030-ili-3030-chto-vybrat
 /articles/connections — углубить, не создавать дублирующий URL
 /articles/vertikalnyy-radiator-dlya-gostinoy
@@ -674,10 +674,12 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 | /articles/radiator-pod-nizkiy-podokonnik | Низкие → /catalog/low-models | добавлена 2026-07-21 |
 | /articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat | Низкие / Стандарт | не отмечена |
 | /articles/radiatory-arbonia-pod-okno | Стандарт → /catalog/standard | существует |
+| /articles/arbonia-2050-ili-3050 | Стандарт → /catalog/standard / модели 2050 и 3050 | добавлена 2026-08-23 |
 | /articles/arbonia-3057 | Стандарт → /catalog/standard | отмечена (3057) |
 | /articles/mezhosevoe-rasstoyanie-500-mm-arbonia | Стандарт → /catalog/standard | добавлена 2026-07-21 |
 | /articles/ral-9016-pochemu-vybirayut-arkhitektory | Цвет → /catalog/ral9016 | отмечена |
 | /articles/tsvet-radiatorov-v-interiere | Цвет | отмечена |
+| /articles/kak-vybrat-cvet-radiatora-pod-interer | Цвет → /catalog/ral9016 / /coloring | добавлена 2026-08-23 |
 | /articles/belye-radiatory-v-temnom-interiere | Цвет | отмечена |
 | /articles/arbonia-3180-ral-9016-vs-anthracite | Цвет / 3180 / Антрацит | отмечена |
 | /articles/chernyy-radiator-arbonia | Цвет / Антрацит / 2180 / 3180 / 3030 | добавлена 2026-08-05 |

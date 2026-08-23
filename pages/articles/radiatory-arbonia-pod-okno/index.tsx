@@ -591,6 +591,12 @@ const ArticlePage: NextPage = () => {
 					или <LinkText href='/models/2057'>2057</LinkText>. Эти модели меньше выступают от стены и хорошо подходят
 					для спокойного интерьера.
 				</Typography>
+				<Typography component='p' sx={{ ...styles.standardText }}>
+					Если высота 500 мм уже определена, используйте детальное <LinkText href='/articles/arbonia-2050-ili-3050'>
+						сравнение Arbonia 2050 и 3050
+					</LinkText>. В нем показано, сколько длины экономит трехтрубчатая модель при той же мощности и какой полный
+					вылет от стены нужно проверить у двухтрубчатого и трехтрубчатого вариантов.
+				</Typography>
 				<Typography
 					component='p'
 					marginTop='14px'

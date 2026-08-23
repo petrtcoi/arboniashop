@@ -54,6 +54,16 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 						удобным для вас способом для уточнения актуальных на данный момент сроков покраски, наличия и стоимости
 						радиаторов. Также, вы можете заполнить форму ниже, указав в комментариях желаемый цвет радиаторов.
 					</Typography>
+					<Typography sx={{ ...styles.standardText, marginTop: '20px' }}>
+						До заявки определите, должен ли прибор совпасть со стеной или стать акцентом, и проверьте оттенок при разном
+						освещении. Пошаговый алгоритм, сравнение RAL 9016, антрацита и заказной палитры собраны в статье{' '}
+						<Link href='/articles/kak-vybrat-cvet-radiatora-pod-interer' style={{ textDecoration: 'none' }}>
+							<Typography component='span' sx={{ ...styles.standardTextRedLink }}>
+								как выбрать цвет радиатора Arbonia под интерьер
+							</Typography>
+						</Link>
+						.
+					</Typography>
 					<Typography sx={{ ...styles.standardText, marginTop: '20px' }}></Typography>
 				</Box>
 				<Box marginY={'30px'}>

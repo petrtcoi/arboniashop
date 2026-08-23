@@ -732,6 +732,13 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Typography>
 					<ul>
 						<li>
+							<a style={{ textDecoration: 'none' }} href='/articles/arbonia-2050-ili-3050'>
+								<Typography sx={{ ...styles.standardTextLinkUnderline }} component='span'>
+									Arbonia 2050 или 3050 - сравнение глубины и мощности
+								</Typography>
+							</a>
+						</li>
+						<li>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/radiatory-arbonia-pod-okno'

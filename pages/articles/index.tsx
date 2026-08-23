@@ -36,6 +36,62 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					container
 					spacing={5}
 				>
+					<Grid item md={6}>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a style={{ textDecoration: 'none' }} href='/articles/kak-vybrat-cvet-radiatora-pod-interer'>
+								<div>
+									<Box textAlign='center'>
+										<img
+											src='/images/sliders/slide-colors.jpg'
+											alt='Выбор цвета радиатора Arbonia для интерьера'
+											width={300}
+											height={174}
+											style={{ borderRadius: '8px', objectFit: 'cover' }}
+										/>
+									</Box>
+									<Box textAlign='center' marginTop='10px'>
+										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+											Как выбрать цвет радиатора Arbonia под интерьер
+										</Typography>
+									</Box>
+									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
+											Фон или акцент, RAL 9016, антрацит и покраска по RAL - проверяем свет, образцы, модель и арматуру до заказа.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid item md={6}>
+						<Box sx={{ borderRadius: '8px' }}>
+							<a style={{ textDecoration: 'none' }} href='/articles/arbonia-2050-ili-3050'>
+								<div>
+									<Box textAlign='center'>
+										<img
+											src='/images/models/2050-0.jpg'
+											alt='Сравнение радиаторов Arbonia 2050 и 3050'
+											width={300}
+											height={174}
+											style={{ borderRadius: '8px', objectFit: 'cover' }}
+										/>
+									</Box>
+									<Box textAlign='center' marginTop='10px'>
+										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+											Arbonia 2050 или 3050 - какой радиатор выбрать
+										</Typography>
+									</Box>
+									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
+											Глубина 65 или 105 мм, мощность при одинаковом ΔT, число секций и длина под окном - сравнение на конкретном расчете.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
 					<Grid
 						item
 						md={6}

@@ -540,6 +540,13 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 
 					<ul>
 						<li>
+							<a style={{ textDecoration: 'none' }} href='/articles/kak-vybrat-cvet-radiatora-pod-interer'>
+								<Typography sx={{ ...styles.standardTextLinkUnderline }} component='span'>
+									Как выбрать цвет радиатора Arbonia под интерьер
+								</Typography>
+							</a>
+						</li>
+						<li>
 							<a
 								style={{ textDecoration: 'none' }}
 								href={`/articles/ral-9016-pochemu-vybirayut-arkhitektory`}

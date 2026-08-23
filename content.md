@@ -264,7 +264,7 @@ Money page: **`/catalog/standard`** (создать). Сейчас станда�
     ├── [есть] /articles/radiatory-arbonia-pod-okno
     ├── [не создавать отдельно — развести роли существующих страниц] сценарий замены старых батарей
     ├── [2026.07.21] /articles/mezhosevoe-rasstoyanie-500-mm-arbonia
-    └── [2026.08.23] /articles/arbonia-2050-ili-3050
+    └── [добавлено 2026.08.23] /articles/arbonia-2050-ili-3050
 ```
 
 ## Роли страниц
@@ -295,7 +295,7 @@ Money pages: **`/catalog/ral9016`** + **`/coloring`** (+ новый **`/catalog/
 │   ├── [есть / углубить] /articles/ral-9016-pochemu-vybirayut-arkhitektory
 │   ├── [есть] /articles/tsvet-radiatorov-v-interiere
 │   ├── [есть] /articles/belye-radiatory-v-temnom-interiere
-│   └── [2026.08.23] /articles/kak-vybrat-cvet-radiatora-pod-interer
+│   └── [добавлено 2026.08.23] /articles/kak-vybrat-cvet-radiatora-pod-interer
 │
 ├── [добавить] /catalog/anthracite
 │   ├── [есть] /articles/arbonia-3180-ral-9016-vs-anthracite

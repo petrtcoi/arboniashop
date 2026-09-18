@@ -8,34 +8,16 @@ type CatalogHubId =
 	| 'low-models'
 	| 'high-models'
 	| 'ral9016'
-	| 'stalnye-trubchatye-radiatory'
-	| 'radiatory-dlya-panoramnyh-okon'
-	| 'arbonia-s-nizhnim-podklyucheniem'
 
 type CatalogPopularLinksProps = {
 	current?: CatalogHubId
 }
 
 const catalogLinks: { id: CatalogHubId; href: string; title: string }[] = [
-	{
-		id: 'stalnye-trubchatye-radiatory',
-		href: '/catalog/stalnye-trubchatye-radiatory',
-		title: 'Стальные трубчатые радиаторы Arbonia',
-	},
 	{ id: 'standard', href: '/catalog/standard', title: 'Радиаторы под окно (склад)' },
 	{ id: 'low-models', href: '/catalog/low-models', title: 'Низкие радиаторы (склад)' },
 	{ id: 'high-models', href: '/catalog/high-models', title: 'Вертикальные радиаторы (склад)' },
 	{ id: 'ral9016', href: '/catalog/ral9016', title: 'Arbonia RAL 9016 (склад)' },
-	{
-		id: 'radiatory-dlya-panoramnyh-okon',
-		href: '/catalog/radiatory-dlya-panoramnyh-okon',
-		title: 'Радиаторы для панорамных окон',
-	},
-	{
-		id: 'arbonia-s-nizhnim-podklyucheniem',
-		href: '/catalog/arbonia-s-nizhnim-podklyucheniem',
-		title: 'Arbonia с нижним подключением №69 ТВВ',
-	},
 ]
 
 const CatalogPopularLinks: React.FC<CatalogPopularLinksProps> = ({ current }) => {

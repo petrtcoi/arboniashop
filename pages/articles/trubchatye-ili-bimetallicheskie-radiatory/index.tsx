@@ -276,7 +276,7 @@ const ArticlePage: NextPage = () => {
 						Подробнее об устройстве — в статье «<a href='/articles/column-radiators'>что такое трубчатый радиатор</a>».
 					</Typography>
 					<Box marginTop='22px' display='flex' flexWrap='wrap' gap='12px'>
-						<a href='/catalog/stalnye-trubchatye-radiatory' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Смотреть трубчатые Arbonia</Button></a>
+						<a href='/' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Смотреть трубчатые Arbonia</Button></a>
 						<a href='/request' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Получить расчёт</Button></a>
 					</Box>
 				</Box>

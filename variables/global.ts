@@ -7,7 +7,6 @@ const global: { [key: string]: any } = {
 	whatsApp: '79667589202',
 	pages: [
 		['Главная', '/'],
-		['Трубчатые радиаторы', '/catalog/stalnye-trubchatye-radiatory'],
 		['Радиаторы под окно', '/catalog/standard'],
 		['О магазине', '/about'],
 		['Покраска', '/coloring'],

@@ -95,8 +95,8 @@ const ArticlePage: NextPage = () => {
 				<Typography sx={{ ...styles.standardText }} marginTop='18px'>
 					В этом руководстве разберём всю цепочку: чем №69 ТВВ отличается от бокового №12, как работает встроенный
 					клапан, зачем нужна термоголовка, что входит в нижний узел и какие данные передать монтажнику. Если модель уже
-					выбрана, можно сразу перейти к <a href='/catalog/arbonia-s-nizhnim-podklyucheniem'>радиаторам Arbonia с
-					нижним подключением в наличии</a>. Для окончательной комплектации всё равно сверяйте документацию конкретной
+					выбрана, можно сразу перейти к <a href='/catalog/standard'>складским радиаторам Arbonia под окно</a> и
+					проверить доступные варианты подключения. Для окончательной комплектации всё равно сверяйте документацию конкретной
 					позиции: расположение элементов и состав поставки могут различаться.
 				</Typography>
 
@@ -234,7 +234,7 @@ const ArticlePage: NextPage = () => {
 						мощности. Белый RAL 9016 чаще доступен быстрее, а другие цвета и исполнения требуют проверки срока.
 					</Typography>
 					<Box marginTop='22px' display='flex' flexWrap='wrap' gap='12px'>
-						<a href='/catalog/arbonia-s-nizhnim-podklyucheniem' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Смотреть модели №69 ТВВ</Button></a>
+						<a href='/catalog/standard' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Смотреть модели под окно</Button></a>
 						<a href='/request' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Проверить расчёт и комплект</Button></a>
 					</Box>
 				</Box>

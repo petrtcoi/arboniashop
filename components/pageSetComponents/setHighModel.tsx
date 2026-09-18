@@ -44,7 +44,7 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 				</Box>
 				<Box marginTop='24px' display='flex' flexWrap='wrap' gap='12px'>
 					<a href='/request' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Рассчитать вертикальный радиатор</Button></a>
-					<a href='/catalog/radiatory-dlya-panoramnyh-okon' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Решения для панорамных окон</Button></a>
+					<a href='/articles/panorama' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Как выбрать радиатор для панорамного окна</Button></a>
 				</Box>
 
 				{/* 2180 белый*/}

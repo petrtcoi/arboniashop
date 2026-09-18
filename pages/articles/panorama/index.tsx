@@ -220,7 +220,8 @@ const ArticlePage: NextPage = () => {
 						удобная отправная точка, но перед заказом мы рекомендуем проверить мощность, монтажные зазоры и подключение.
 					</Typography>
 					<Box marginTop='22px' display='flex' flexWrap='wrap' gap='12px'>
-						<a href='/catalog/radiatory-dlya-panoramnyh-okon' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Радиаторы для панорамных окон</Button></a>
+						<a href='/catalog/low-models' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Низкие радиаторы</Button></a>
+						<a href='/catalog/high-models' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Вертикальные радиаторы</Button></a>
 						<a href='/request' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Получить расчёт</Button></a>
 					</Box>
 				</Box>

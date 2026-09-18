@@ -9,6 +9,16 @@ module.exports = {
 	async redirects() {
 		return [
 			{
+				source: '/articles/arbonia-radiators',
+				destination: '/articles/column-radiators',
+				permanent: true,
+			},
+			{
+				source: '/articles/arbonia-kak-vybrat-trubchatyj-radiator',
+				destination: '/articles/column-radiators',
+				permanent: true,
+			},
+			{
 				source: '/arbonia-radiators',
 				destination: '/',
 				permanent: true,

@@ -83,7 +83,7 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
 				</Box>
 				<Box marginTop='26px' display='flex' flexWrap='wrap' gap='12px'>
 					<a href='/request' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Подобрать низкий радиатор</Button></a>
-					<a href='/catalog/radiatory-dlya-panoramnyh-okon' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Для панорамных окон</Button></a>
+					<a href='/articles/panorama' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Как выбрать для панорамного окна</Button></a>
 				</Box>
 
 				<Box marginTop='46px'>

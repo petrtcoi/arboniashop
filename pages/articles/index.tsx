@@ -366,55 +366,6 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
-								href='/articles/arbonia-kak-vybrat-trubchatyj-radiator'
-							>
-								<div>
-									<Box textAlign={'center'}>
-										<img
-											src='/images/articles/2050-12-2.jpeg'
-											alt='Как выбрать трубчатый радиатор Arbonia'
-											width={300}
-											style={{ borderRadius: '8px' }}
-											height={'auto'}
-										/>
-									</Box>
-									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
-										<Typography
-											sx={{ ...styles.standardTextRedLink }}
-											component='span'
-										>
-											Как выбрать трубчатый радиатор Arbonia для квартиры и дома
-										</Typography>
-									</Box>
-									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
-										<Typography
-											sx={{ ...styles.smallText, lineHeight: 0.3 }}
-											component='span'
-										>
-											Разбор мощности, размеров, подключения и типичных ошибок при выборе трубчатого радиатора Arbonia
-											для квартиры и частного дома.
-										</Typography>
-									</Box>
-								</div>
-							</a>
-						</Box>
-					</Grid>
-
-					<Grid
-						item
-						md={6}
-					>
-						<Box sx={{ borderRadius: '8px' }}>
-							<a
-								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat'
 							>
 								<div>
@@ -1759,57 +1710,6 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										>
 											Мы стараемся поддерживать в наличии наиболее популярные модели радиаторов Arbonia. Это наиболее
 											универсальные модели, которые подходят для большинства случаев...
-										</Typography>
-									</Box>
-								</div>
-							</a>
-						</Box>
-					</Grid>
-
-					<Grid
-						item
-						md={6}
-					>
-						<Box>
-							<a
-								style={{ textDecoration: 'none' }}
-								href='/articles/arbonia-radiators'
-							>
-								<div>
-									<Box textAlign={'center'}>
-										<img
-											src='/images/articles/1.jpg'
-											alt='Трубчатый радиатор Arbonia'
-											width={300}
-											style={{ borderRadius: '8px' }}
-											height={300}
-										/>
-									</Box>
-									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
-										<Typography
-											sx={{ ...styles.standardTextRedLink }}
-											component='span'
-										>
-											Преимущества и недостатки трубчатых радиаторов Arbonia
-										</Typography>
-									</Box>
-									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
-										<Typography
-											sx={{ ...styles.smallText }}
-											component='span'
-										>
-											Arbonia является один из лидеров в производстве стальных трубчатых радиаторов. Бренд имеет давнюю
-											историю и хорошо зарекомендовал себя на российском рынке...
 										</Typography>
 									</Box>
 								</div>

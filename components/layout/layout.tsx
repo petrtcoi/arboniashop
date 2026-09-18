@@ -21,7 +21,6 @@ import { GoToFormButton } from '../GoToFormButton';
 
 type LayoutProps = { children: ReactNode }
 const SITE_URL = 'https://arboniashop.ru'
-const MODEL_CANONICAL_IDS = ['2180', '3180', '3057', '2057', '3050', '2050', '3030'] as const
 
 const normalizePath = (path: string) => {
 	const pathWithoutHash = path.split('#')[0]
@@ -50,15 +49,6 @@ const Layout = ({ children }: LayoutProps) => {
 	if (/^\/models\/[^/]+\/[^/]+$/.test(canonicalPath)) {
 		const parts = canonicalPath.split('/')
 		canonicalPath = `/models/${parts[2]}`
-	}
-	const canonicalModelId = MODEL_CANONICAL_IDS.find(
-		id =>
-			canonicalPath === `/models/${id}` ||
-			canonicalPath.startsWith(`/models/${id}-`) ||
-			canonicalPath.startsWith(`/models/${id}/`)
-	)
-	if (canonicalModelId) {
-		canonicalPath = `/models/${canonicalModelId}`
 	}
 	const canonicalUrl = `${SITE_URL}${canonicalPath}`
 

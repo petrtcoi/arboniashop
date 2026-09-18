@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material'
+import Head from 'next/head'
 import React from 'react'
 
 import PageHeader from '../../../components/pageHeader/pageHeader'
@@ -14,10 +15,11 @@ type ArticlePageProps = {}
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
 		<Box>
+			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya' /></Head>
 			<PageHeader
-				title={'Где разместить радиатор отопления: практичные советы'}
+				title={'Где установить радиатор: расстояние от пола, стены и подоконника'}
 				description={
-					'Разбираемся, как рассчитать количество секций радиатора Arbonia 2180 для помещений разной площади. Примеры расчетов, коэффициенты и советы по выбору.'
+					'Где установить радиатор отопления и какие зазоры оставить до пола, стены, подоконника, мебели и штор. Размещение под окном, в нише и на простенке, частые ошибки монтажа.'
 				}
 			/>
 			<PageTitle
@@ -110,6 +112,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</ul>
 
 				<h2 style={{ marginTop: '40px' }}>Основные расстояния при монтаже</h2>
+				<p>
+					Значения ниже — практические ориентиры, а не замена инструкции. Приоритет имеют монтажный чертёж конкретной
+					модели, требования производителя, проект системы и выбранные кронштейны. Зазор должен обеспечивать движение
+					воздуха и доступ к соединениям, но фактическая величина зависит от глубины подоконника и геометрии ниши.
+				</p>
 				<table className={tableStyle.table}>
 					<tr>
 						<th>Расстояние</th>

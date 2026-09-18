@@ -1,5 +1,6 @@
 import { Box, Divider, Tab, Tabs, Typography } from '@mui/material'
 import { NextPage } from 'next'
+import Head from 'next/head'
 import { useContext, useState } from 'react'
 
 import PageHeader from '../../components/pageHeader/pageHeader'
@@ -27,6 +28,33 @@ import global from '../../variables/global'
 import * as styles from './../../styles/styles'
 
 const STANDARD_MODEL_IDS = ['2050', '2057', '3050', '3057']
+const CORE_VARIANT_MODEL_IDS = new Set([
+	'2030-9016-12',
+	'2050-9016-12',
+	'2050-9016-69tvv',
+	'2057-9016-12',
+	'2057-9016-69tvv',
+	'2180-9016-12',
+	'2180-9016-69tvv',
+	'2180-7016-12',
+	'2180-7016-69tvv',
+	'2180-sf3-12',
+	'2180-sf3-69tvv',
+	'3030-9016-12',
+	'3030-9016-69tvv',
+	'3037-9016-12',
+	'3037-9016-69tvv',
+	'3050-9016-12',
+	'3050-9016-69tvv',
+	'3057-9016-12',
+	'3057-9016-69tvv',
+	'3180-9016-12',
+	'3180-9016-69tvv',
+	'3180-7016-12',
+	'3180-7016-69tvv',
+	'3180-sf3-12',
+	'3180-sf3-69tvv',
+])
 
 type ModelProps = {
 	modelCurr: ModelOrigin
@@ -84,6 +112,7 @@ const Model: NextPage<ModelProps> = ({
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${modelCurr.id}`} /></Head>
 			<meta
 				itemProp='countryOfOrigin'
 				content='Чехия'
@@ -94,8 +123,9 @@ const Model: NextPage<ModelProps> = ({
 			/>
 
 			<PageHeader
-				title={`${metaTitle} | выгодно`}
-				description={`${metaTitle} - ${modelCurr.nameShort[0]}-трубчатая модель (ширина ${modelCurr.width} мм) высотой ${modelCurr.height} мм. Гарантия 10 лет. 🚚 Доставка в любой город России. Выгодные условия покупки.`}
+				title={`${metaTitle} — цена, размеры, мощность и наличие`}
+				description={`${metaTitle}: ${modelCurr.nameShort[0]}-трубчатая модель высотой ${modelCurr.height} мм и глубиной ${modelCurr.width} мм. Цены по числу секций, теплоотдача, размеры, подключение, гарантия 10 лет и доставка по России.`}
+				noindex={!CORE_VARIANT_MODEL_IDS.has(modelCurr.id)}
 			/>
 			<PageTitle
 				header={'Специализированный магазин Arbonia в России'}

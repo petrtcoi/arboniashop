@@ -1,4 +1,5 @@
 import { Box, Grid, Typography } from '@mui/material'
+import Head from 'next/head'
 import React, { useRef } from 'react'
 
 import Hero from '../../components/hero/hero'
@@ -31,9 +32,10 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 
 	return (
 		<Box>
+			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/ral9016' /></Head>
 			<PageHeader
-				title={'Купить радиаторы Arbonia RAL 9016 | в наличии'}
-				description='Трубчатые радиаторы Arbonia в белом цвете в наличии. Выгодные цены и доставка в любой город России. Официальная гарантия на всю продукцию.'
+				title={'Радиаторы Arbonia RAL 9016 — купить белые модели в наличии'}
+				description='Белые трубчатые радиаторы Arbonia RAL 9016: низкие, стандартные и вертикальные модели, боковое и нижнее подключение. Цены, размеры, наличие, гарантия 10 лет и доставка по России.'
 			/>
 			<Hero
 				imgPath={'/images/sliders/slide.jpeg'}
@@ -95,10 +97,13 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 				>
 					<Typography fontSize={{ xs: '12px', sm: '14px' }}>
 						<p>
-							Белые радиаторы Arbonia RAL 9016 - универсальное решение для любого интерьера. Классический белый цвет
-							подчёркивает элегантность форм и гармонирует со стенами любого оттенка. Радиаторы Arbonia отличаются
-							немецким качеством, высокой теплоотдачей и долговечностью. В линейке представлены низкие, стандартные и
-							вертикальные модели для разных задач отопления.
+							Белые радиаторы Arbonia RAL 9016 входят в складскую программу: в этом разделе собраны низкие, стандартные
+							и вертикальные модели с актуальными вариантами длины и подключения. RAL 9016 называют транспортным белым;
+							он заметно отличается от более тёплого RAL 9010 и холодного сигнального RAL 9003, поэтому оттенок лучше
+							сверять с физическим образцом при сложном подборе к стене или мебели. Для выбора самого радиатора важнее
+							сначала рассчитать мощность, высоту, глубину и число секций, а затем определить боковое или нижнее
+							подключение. Все стальные трубчатые серии можно сравнить в <a href='/catalog/stalnye-trubchatye-radiatory'>общем
+							каталоге Arbonia</a>.
 						</p>
 					</Typography>
 				</Box>
@@ -317,7 +322,7 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 							title={''}
 							description={''}
 							onlyTable={true}
-							model={models.find(x => x.id === '3057-9016-12') || models[0]}
+							model={models.find(x => x.id === '2057-9016-12') || models[0]}
 							color={colors.find(x => x.id === '9016') || colors[0]}
 							connection={connections.find(x => x.id === '12') || connections[0]}
 						/>
@@ -332,7 +337,7 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 							title={''}
 							description={''}
 							onlyTable={true}
-							model={models.find(x => x.id === '3057-9016-69tvv') || models[0]}
+							model={models.find(x => x.id === '2057-9016-69tvv') || models[0]}
 							color={colors.find(x => x.id === '9016') || colors[0]}
 							connection={connections.find(x => x.id === '69tvv') || connections[0]}
 						/>

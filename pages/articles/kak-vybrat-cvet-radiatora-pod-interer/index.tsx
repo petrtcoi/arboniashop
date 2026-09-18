@@ -134,7 +134,7 @@ const ArticlePage: NextPage = () => {
 	return (
 		<Box>
 			<Head>
-				<link rel='canonical' href={`${siteUrl}/articles/${slug}`} />
+				<link key='canonical' rel='canonical' href={`${siteUrl}/articles/${slug}`} />
 				<script id={`${slug}-article-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 				<script id={`${slug}-breadcrumb-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 				<script id={`${slug}-faq-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />

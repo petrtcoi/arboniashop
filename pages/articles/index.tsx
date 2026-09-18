@@ -38,6 +38,34 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				>
 					<Grid item md={6}>
 						<Box sx={{ borderRadius: '8px' }}>
+							<a style={{ textDecoration: 'none' }} href='/articles/trubchatye-ili-bimetallicheskie-radiatory'>
+								<div>
+									<Box textAlign='center'>
+										<img
+											src='/images/articles/underwindow.jpeg'
+											alt='Сравнение трубчатых и биметаллических радиаторов'
+											width={300}
+											height={174}
+											style={{ borderRadius: '8px', objectFit: 'cover' }}
+										/>
+									</Box>
+									<Box textAlign='center' marginTop='10px'>
+										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+											Трубчатые или биметаллические радиаторы: что выбрать
+										</Typography>
+									</Box>
+									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
+											Сравниваем конструкцию, давление, мощность, размеры, уход, подключение и полную стоимость для квартиры и дома.
+										</Typography>
+									</Box>
+								</div>
+							</a>
+						</Box>
+					</Grid>
+
+					<Grid item md={6}>
+						<Box sx={{ borderRadius: '8px' }}>
 							<a style={{ textDecoration: 'none' }} href='/articles/kak-vybrat-cvet-radiatora-pod-interer'>
 								<div>
 									<Box textAlign='center'>
@@ -1920,7 +1948,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Радиаторы Arbonia с боковым и нижним подключением
+											Нижнее подключение Arbonia №69 ТВВ: схема и комплект
 										</Typography>
 									</Box>
 									<Box
@@ -1933,8 +1961,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText }}
 											component='span'
 										>
-											Два наиболее используемых варианта подключения для радиаторов Arbonia: боковое ¾” и нижнее со
-											встроенным термовентилем. Именно они входят в нашу складскую программу.
+											Подробно о выводах 50 мм, подаче и обратке, встроенном клапане, нижнем узле, термоголовке и типичных ошибках монтажа.
 										</Typography>
 									</Box>
 								</div>

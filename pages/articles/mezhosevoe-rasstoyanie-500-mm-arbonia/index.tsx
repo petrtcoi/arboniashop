@@ -153,7 +153,7 @@ const ArticlePage: NextPage = () => {
 	return (
 		<Box>
 			<Head>
-				<link rel='canonical' href={`${siteUrl}/articles/${slug}`} />
+				<link key='canonical' rel='canonical' href={`${siteUrl}/articles/${slug}`} />
 			</Head>
 			<Script
 				id='mezhosevoe-500-article-jsonld'

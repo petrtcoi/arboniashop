@@ -9,7 +9,10 @@ import getModelsData from '../../api_utils/getModelsData'
 
 import SetHighModel from '../../components/pageSetComponents/setHighModel'
 import SetLowModel from '../../components/pageSetComponents/setLowModel'
+import SetBottomConnectionModel from '../../components/pageSetComponents/setBottomConnectionModel'
+import SetPanoramicModel from '../../components/pageSetComponents/setPanoramicModel'
 import SetRAL9016Model from '../../components/pageSetComponents/setRAL9016Model'
+import SetTubularModel from '../../components/pageSetComponents/setTubularModel'
 import SetStandardModel from '../../components/pageSetComponents/setStandardModel'
 import Set2180Stock from '../models/2180'
 
@@ -42,6 +45,18 @@ const SETS_MAP: {
 	'2180-stock': {
 		title: 'Радиаторы Arbonia 2180 (склад)',
 		component: Set2180Stock,
+	},
+	'stalnye-trubchatye-radiatory': {
+		title: 'Стальные трубчатые радиаторы Arbonia',
+		component: SetTubularModel,
+	},
+	'radiatory-dlya-panoramnyh-okon': {
+		title: 'Радиаторы для панорамных окон',
+		component: SetPanoramicModel,
+	},
+	'arbonia-s-nizhnim-podklyucheniem': {
+		title: 'Радиаторы Arbonia с нижним подключением',
+		component: SetBottomConnectionModel,
 	},
 }
 

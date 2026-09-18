@@ -113,6 +113,7 @@ const ArticlePage: NextPage = () => {
 		<Box>
 			<Head>
 				<link
+					key='canonical'
 					rel='canonical'
 					href={`${siteUrl}/articles/${slug}`}
 				/>

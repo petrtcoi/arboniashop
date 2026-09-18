@@ -1,4 +1,30 @@
-const MODEL_CANONICAL_IDS = new Set(['2050', '2057', '2180', '3030', '3050', '3057', '3180'])
+const INDEXABLE_MODEL_VARIANT_IDS = new Set([
+	'2030-9016-12',
+	'2050-9016-12',
+	'2050-9016-69tvv',
+	'2057-9016-12',
+	'2057-9016-69tvv',
+	'2180-9016-12',
+	'2180-9016-69tvv',
+	'2180-7016-12',
+	'2180-7016-69tvv',
+	'2180-sf3-12',
+	'2180-sf3-69tvv',
+	'3030-9016-12',
+	'3030-9016-69tvv',
+	'3037-9016-12',
+	'3037-9016-69tvv',
+	'3050-9016-12',
+	'3050-9016-69tvv',
+	'3057-9016-12',
+	'3057-9016-69tvv',
+	'3180-9016-12',
+	'3180-9016-69tvv',
+	'3180-7016-12',
+	'3180-7016-69tvv',
+	'3180-sf3-12',
+	'3180-sf3-69tvv',
+])
 
 module.exports = {
 	siteUrl: process.env.SITE_URL || 'https://arboniashop.ru',
@@ -12,8 +38,8 @@ module.exports = {
 				return null
 			}
 
-			// Keep only canonical model family pages in sitemap for /models/:id.
-			if (modelPath.includes('-') && !MODEL_CANONICAL_IDS.has(modelPath)) {
+			// Keep family hubs and the stable, commercially useful stock variants.
+			if (modelPath.includes('-') && !INDEXABLE_MODEL_VARIANT_IDS.has(modelPath)) {
 				return null
 			}
 		}

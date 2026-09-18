@@ -1,4 +1,5 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
+import Head from 'next/head'
 import React from 'react'
 
 import Hero from '../../components/hero/hero'
@@ -14,9 +15,10 @@ import global from '../../variables/global'
 const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
 	return (
 		<Box>
+			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/high-models' /></Head>
 			<PageHeader
-				title={'Вертикальные трубчатые Arbonia | в наличии'}
-				description='Вертикальные трубчатые Arbonia. Популярные модели 2180 и 3180. Купить по выгодным ценам с официальной гарантией 10 лет. Доставка по России.'
+				title={'Вертикальные радиаторы Arbonia — купить модели 2180 и 3180'}
+				description='Вертикальные трубчатые радиаторы Arbonia 2180 и 3180 высотой 180 см: цены, размеры, мощность, цвета, боковое и нижнее подключение. В наличии, гарантия 10 лет, доставка по России.'
 			/>
 			<Hero
 				imgPath={'/images/sliders/high.jpeg'}
@@ -26,19 +28,23 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 			<Box sx={{ ...global.pagePadding }}>
 				<Box marginTop='20px'>
 					<Typography sx={{ ...styles.standardText }}>
-						Вертикальные радиаторы Arbonia - одна из самых популярных и любимых моделей среди владельцев квартир, домов,
-						выбор профессиональных дизайнеров и архитекторов. Стальные трубчатые вертикальные радиаторы уже стали
-						важным, а иногда и центральным элементом или акцентом в интерьере помещения. Забудьте те времена, когда
-						радиатор скрывали в интерьерах. Arbonia Column не нужно скрывать под декоративными панелями.
+						Вертикальные радиаторы Arbonia 2180 и 3180 используют высоту стены, когда под обычным окном нет места:
+						рядом с панорамным остеклением, на узком простенке, в кухне-гостиной или прихожей. Модель 2180 — более
+						тонкая двухтрубчатая, 3180 — более глубокая трёхтрубчатая и при сопоставимой ширине даёт больше тепла.
+						Нужное число секций определяют по расчётной мощности, а не только по свободной ширине стены.
 					</Typography>
 				</Box>
 				<Box marginTop='20px'>
 					<Typography sx={{ ...styles.standardText }}>
-						Стальные трубчатые вертикальные радиаторы функциональны, так как подходят для помещения с высокими окнами,
-						их можно разместить на узких стенах по бокам от окон, в различных выступах, узких угловых пространствах.
-						Вертикальные радиаторы Arbonia впишутся в любую концепцию интерьера – от минимализма и модерна до хайтека,
-						лофта, фьюжн и многих других.
+						В наличии представлены белый RAL 9016, антрацит RAL 7016 и Anthrazit metallic SF-3, модификации с боковым
+						подключением №12 и нижним №69 ТВВ. Перед покупкой нужно проверить теплопотери помещения, габарит с
+						кронштейнами, прочность стены, расположение подачи и комплект арматуры. Для центрального отопления параметры
+						прибора и схему монтажа согласуют с требованиями дома.
 					</Typography>
+				</Box>
+				<Box marginTop='24px' display='flex' flexWrap='wrap' gap='12px'>
+					<a href='/request' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Рассчитать вертикальный радиатор</Button></a>
+					<a href='/catalog/radiatory-dlya-panoramnyh-okon' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Решения для панорамных окон</Button></a>
 				</Box>
 
 				{/* 2180 белый*/}

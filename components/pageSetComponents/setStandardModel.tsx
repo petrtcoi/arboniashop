@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
+import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
 
@@ -135,6 +136,7 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 
 	return (
 		<Box>
+			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/standard' /></Head>
 			<Script
 				id='standard-radiators-faq-jsonld'
 				type='application/ld+json'

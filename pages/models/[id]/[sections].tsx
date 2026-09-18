@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -43,6 +44,7 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 			itemScope
 			itemType='https://schema.org/IndividualProduct'
 		>
+			<Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${model.id}`} /></Head>
 			<PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
@@ -153,12 +155,13 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 				)}
 				{/* Shit code end */}
 				<PageHeader
-					title={`Радиатор Arbonia ${model.nameShort}-${sectionQnty} ${color.nameShort} ${connection.nameShort} | купить выгодно`}
+					title={`Радиатор Arbonia ${model.nameShort}-${sectionQnty} ${color.nameShort} ${connection.nameShort} — цена и мощность`}
 					description={`Arbonia ${model.nameShort}-${sectionQnty}, ${model.nameShort[0]}-трубчатая модель, ${
 						color.nameShort
 					}, ${connection.nameShort}, ${model.height}x${model.width}x${
 						parseInt(model.lengthSection) * sectionQnty + 26
-					} мм. ${parseInt(model.dt60) * sectionQnty} Вт (при dT=60C). Выгодные цены. Гарантия 10 лет.`}
+					} мм. ${parseInt(model.dt60) * sectionQnty} Вт (при ΔT=60 °C). Цена, наличие и гарантия 10 лет.`}
+					noindex
 				/>
 				<Box
 					marginBottom={'50px'}

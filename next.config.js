@@ -23,6 +23,16 @@ module.exports = {
 				destination: '/',
 				permanent: true,
 			},
+			{
+				source: '/articles/gde-razmestit-radiator-otopleniya-praktichnye-sovety',
+				destination: '/articles/gde-razmestit-radiator-otopleniya',
+				permanent: true,
+			},
+			{
+				source: '/articles/razmestit-radiator-otopleniya-praktichnye-sovety',
+				destination: '/articles/gde-razmestit-radiator-otopleniya',
+				permanent: true,
+			},
 		]
 	},
 	async headers() {

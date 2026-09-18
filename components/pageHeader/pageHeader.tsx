@@ -37,7 +37,7 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
   const pageUrl = `${SITE_URL}${normalizedPath}`;
   const imageUrl = toAbsoluteUrl(props.image);
   const robotsContent = props.noindex
-    ? "noindex,nofollow,max-image-preview:large"
+    ? "noindex,follow,max-image-preview:large"
     : "index,follow,max-image-preview:large";
 
   return (

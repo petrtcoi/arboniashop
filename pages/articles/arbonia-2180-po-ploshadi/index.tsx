@@ -1,4 +1,5 @@
-import { Box, Checkbox, FormControlLabel, FormGroup, TextField, Typography } from '@mui/material'
+import JsonLd from '../../../components/seo/JsonLd'
+import { Box, Checkbox, FormControlLabel, FormGroup, MenuItem, TextField, Typography } from '@mui/material'
 import { NextPage } from 'next'
 import React, { useMemo, useState } from 'react'
 
@@ -10,6 +11,25 @@ import * as styles from '../../../styles/styles'
 import global from '../../../variables/global'
 
 type ArticlePageProps = {}
+
+const faqItems = [
+  {
+    "question": "Можно ли подобрать Arbonia 2180 только по площади?",
+    "answer": "Площадь позволяет получить предварительный ориентир. Калькулятор использует условную базу и поправки; окончательный выбор сверяют с проектной нагрузкой и режимом отопления."
+  },
+  {
+    "question": "Какую мощность секции использует калькулятор?",
+    "answer": "При выборе ΔT50 используется 130 Вт на секцию, при ΔT60 — 164 Вт. Эти значения относятся к одной модели при разных температурах системы."
+  },
+  {
+    "question": "Расчётное число секций означает готовое исполнение в наличии?",
+    "answer": "Нет. Это минимальное число по выбранным допущениям. Для заказа выбирают ближайшее доступное исполнение с не меньшей мощностью и проверяют его длину с арматурой."
+  },
+  {
+    "question": "Что делать, если есть нагрузка из проекта?",
+    "answer": "Использовать актуальную проектную нагрузку вместо оценки по площади и разделить её на мощность секции при предусмотренном температурном режиме с округлением вверх."
+  }
+]
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	const [area, setArea] = useState<number>(16)
@@ -23,7 +43,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 		goodInsulation: false,
 	})
 
-	const sectionPower = 164
+	const [deltaT, setDeltaT] = useState<50 | 60>(50)
+	const sectionPower = deltaT === 50 ? 130 : 164
 	const heightCoef = Math.max(0.8, ceilingHeight / 2.7)
 	const heatLossCoef = useMemo(() => {
 		let coef = 1.0
@@ -38,9 +59,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 	const requiredPower = useMemo(() => area * 100 * heightCoef * heatLossCoef, [area, heightCoef, heatLossCoef])
 	const sections = Math.max(1, Math.ceil(requiredPower / sectionPower))
 	const pageUrl = 'https://arboniashop.ru/articles/arbonia-2180-po-ploshadi'
-	const pageTitle = 'Подбор Arbonia 2180 по площади: как рассчитать мощность без переплаты'
+	const pageTitle = 'Калькулятор Arbonia 2180 — подбор секций по площади и температуре'
 	const pageDescription =
-		'Онлайн калькулятор подбора радиатора Arbonia 2180 по площади и высоте потолков. Как считать мощность, почему расчет по площади ориентировочный и почему не стоит брать большой запас.'
+		'Калькулятор секций Arbonia 2180: площадь, высота потолков, условия помещения и температурный режим ΔT=50 или 60 °C. Предварительный расчёт мощности перед подбором.'
 	const pageImage = 'https://arboniashop.ru/images/articles/2180-4.jpeg'
 
 	const handleFactorChange = (key: keyof typeof heatLossFactors) => (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -67,31 +88,23 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 			/>
 			<Hero
 				imgPath={'/images/sliders/high.jpeg'}
-				header={'Подбор радиатора Arbonia 2180 по мощности: как считать по площади'}
+				header={'Калькулятор количества секций Arbonia 2180'}
 			/>
 			<Typography
 				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
 				marginY='20px'
 				component={'div'}
 			>
-				<p>
-					Подбор мощности для{' '}
-					<a
-						href='/models/2180'
-						style={{ textDecoration: 'none' }}
-					>
-						<Typography
-							sx={{ ...styles.standardTextRedLink }}
-							component={'span'}
-						>
-							Arbonia 2180
-						</Typography>
-					</a>{' '}
-					чаще всего начинают с расчета по площади: это простой и понятный ориентир, который помогает быстро выбрать
-					диапазон секций. Для квартир со стандартной высотой потолков обычно используют базовое правило 100 Вт на 1 м².
-					Например, для комнаты 16 м² нужно около 1600 Вт тепловой мощности.
-				</p>
+                <p>Калькулятор Arbonia 2180 позволяет менять площадь, высоту потолка, условия комнаты и ΔT50 или ΔT60,
+                    чтобы получить предварительный минимум секций. База 100 Вт на 1 м² и поправочные коэффициенты —
+                    условная модель оценки, а не индивидуальный расчёт теплопотерь. Если проектная нагрузка уже известна,
+                    используйте её и <a href='/articles/vertical-radiator-power'> мощность 2180 при нужном режиме</a>.</p>
 
+				<p>
+					Этот калькулятор позволяет менять исходные данные и сравнивать результат. Если нужны готовые примеры,
+					откройте <a href='/articles/arbonia-2180-calc'>таблицу секций Arbonia 2180 для комнат 10–20 м²</a>.
+					При другом температурном режиме используйте <a href='/articles/delta-t-teplootdacha'>пояснение к расчёту ΔT</a>.
+				</p>
 				<h2 style={{ marginTop: '40px' }}>Почему расчет по площади - это только ориентир</h2>
 				<p>
 					Формула по площади не учитывает важные факторы: высоту потолков, этаж, количество наружных стен, площадь
@@ -104,7 +117,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					первый шаг, а не как окончательное инженерное решение.
 				</p>
 
-				<h2 style={{ marginTop: '40px' }}>Как уточнить мощность для Arbonia 2180</h2>
+				<h2 style={{ marginTop: '40px' }}>Как проверить исходные данные калькулятора</h2>
 				<p>
 					После базового расчета сравните его с фактическими данными объекта. Самый практичный путь для квартиры в
 					многоквартирном доме - проверить проектные параметры отопления и согласовать замену с управляющей компанией.
@@ -119,7 +132,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
 				<h2 style={{ marginTop: '40px' }}>Онлайн калькулятор подбора радиатора Arbonia 2180</h2>
 				<p>
-					Мощность секции Arbonia 2180 (ΔT=60): <b>164 Вт</b>.
+					Мощность секции Arbonia 2180 при ΔT={deltaT} °C: <b>{sectionPower} Вт</b>.
+					Режим 75/65/20 соответствует ΔT=50 °C, 85/75/20 — ΔT=60 °C.
 				</p>
 				<Box
 					sx={{
@@ -138,6 +152,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							gap: '12px',
 						}}
 					>
+						<TextField select label='Температурный режим' value={deltaT}
+							onChange={e => setDeltaT(Number(e.target.value) as 50 | 60)} size='small'>
+							<MenuItem value={50}>75/65/20 — ΔT=50 °C</MenuItem>
+							<MenuItem value={60}>85/75/20 — ΔT=60 °C</MenuItem>
+						</TextField>
 						<TextField
 							label='Площадь, м²'
 							type='number'
@@ -238,8 +257,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							Требуемая мощность: <b>{Math.round(requiredPower)} Вт</b>
 						</p>
 						<p style={{ margin: '6px 0' }}>
-							Рекомендуемое количество секций Arbonia 2180: <b>{sections}</b>
+							Расчётный минимум секций Arbonia 2180 при ΔT={deltaT} °C: <b>{sections}</b>
 						</p>
+						<p>Складские варианты: 4, 6, 8, 10 и 12 секций. Выбирайте ближайшее большее доступное число.
+						Если требуется больше 12, рассмотрите заказное исполнение, два прибора или
+						<a href='/models/3180'> более мощную модель Arbonia 3180</a>.</p>
 					</Box>
 				</Box>
 
@@ -262,12 +284,14 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					ошибки в обе стороны: и недостатка тепла, и необоснованного завышения мощности.
 				</p>
 				<p>
-					Итоговый выбор обычно получается технически обоснованным и более выгодным: радиатор обеспечивает комфортную
-					температуру, не занимает лишнее место и не требует лишних затрат на оборудование.
+					Перед заказом результат сопоставляют с проектной нагрузкой и доступным исполнением. Расчётный минимум не является подтверждением наличия: выберите ближайший больший размер и проверьте его полный габарит.
 				</p>
-			</Typography>
-			<script type='application/ld+json'>
-				{JSON.stringify({
+                <h2 style={{ marginTop: '40px' }}>Частые вопросы о калькуляторе</h2>
+                {faqItems.map(item => <React.Fragment key={item.question}>
+                    <h3>{item.question}</h3><p>{item.answer}</p>
+                </React.Fragment>)}
+            </Typography>
+            <JsonLd data={{
 					'@context': 'https://schema.org',
 					'@type': 'Article',
 					mainEntityOfPage: {
@@ -276,6 +300,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 					headline: pageTitle,
 					description: pageDescription,
+					dateModified: '2026-10-13',
 					image: [pageImage],
 					author: {
 						'@type': 'Organization',
@@ -290,74 +315,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						},
 					},
 					inLanguage: 'ru-RU',
-				})}
-			</script>
-			<script type='application/ld+json'>
-				{JSON.stringify({
-					'@context': 'https://schema.org',
-					'@type': 'BreadcrumbList',
-					itemListElement: [
-						{
-							'@type': 'ListItem',
-							position: 1,
-							name: 'Главная',
-							item: 'https://arboniashop.ru/',
-						},
-						{
-							'@type': 'ListItem',
-							position: 2,
-							name: 'Полезная информация',
-							item: 'https://arboniashop.ru/articles',
-						},
-						{
-							'@type': 'ListItem',
-							position: 3,
-							name: 'Подбор Arbonia 2180 по площади',
-							item: pageUrl,
-						},
-					],
-				})}
-			</script>
-			<script type='application/ld+json'>
-				{JSON.stringify({
-					'@context': 'https://schema.org',
-					'@type': 'FAQPage',
-					mainEntity: [
-						{
-							'@type': 'Question',
-							name: 'Можно ли подобрать Arbonia 2180 только по площади?',
-							acceptedAnswer: {
-								'@type': 'Answer',
-								text: 'Можно, но это ориентировочный расчет. Для точного подбора нужно учитывать высоту потолков, утепление, остекление и фактические условия системы отопления.',
-							},
-						},
-						{
-							'@type': 'Question',
-							name: 'Какой тепловой поток одной секции Arbonia 2180 использован в калькуляторе?',
-							acceptedAnswer: {
-								'@type': 'Answer',
-								text: 'В калькуляторе используется 164 Вт на секцию при ΔT=60.',
-							},
-						},
-						{
-							'@type': 'Question',
-							name: 'Почему не рекомендуется брать радиатор с большим запасом мощности?',
-							acceptedAnswer: {
-								'@type': 'Answer',
-								text: 'Слишком большой запас обычно ведет к переплате и увеличивает габариты радиатора, что ухудшает использование пространства без заметной практической пользы.',
-							},
-						},
-						{
-							'@type': 'Question',
-							name: 'Нужно ли согласовывать подбор радиатора с управляющей компанией?',
-							acceptedAnswer: {
-								'@type': 'Answer',
-								text: 'Да, для квартиры в многоквартирном доме это надежный путь: управляющая компания может подтвердить параметры системы отопления и допустимую тепловую нагрузку.',
-							},
-						},
-					],
-				})}
-			</script>
+				}} />
+            <JsonLd data={{ '@context': 'https://schema.org', '@type': 'FAQPage',
+                mainEntity: faqItems.map(item => ({ '@type': 'Question', name: item.question,
+                    acceptedAnswer: { '@type': 'Answer', text: item.answer } })),
+            }} />
 		</Box>
 	)
 }

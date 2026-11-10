@@ -10,7 +10,7 @@ import { OrderData } from '../models/orderData.model'
 import global from './../variables/global'
 
 // const API_URL = 'https://us-central1-mouselite-helpers.cloudfunctions.net/api/email/send'
-// const API_URL = "https://docker.homekomfort.ru/email";
+// const API_URL = "https://cloud.homekomfort.ru/api/new-order-notification";
 
 type SendOrderConfirmationProps = OrderData & {
 	items: CartItemExtended[]
@@ -52,7 +52,7 @@ const sendOrderConfirmation = async (props: SendOrderConfirmationProps): Promise
 
 		// return res1.data === "ok" && res2.data === "ok" ? "ok" : "error";
 
-		const result = await axios.post('https://arufefet.beget.app/webhook/homekomfort-email', {
+		const result = await axios.post('https://cloud.homekomfort.ru/api/new-order-notification', {
 			to: props.email,
 			from: global.emailFrom,
 			subject: 'ArboniaShop.ru: ваш запрос принят',

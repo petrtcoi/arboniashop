@@ -1,3 +1,4 @@
+import JsonLd from '../../../components/seo/JsonLd'
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 
@@ -363,8 +364,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					признаки шлама и засоров, самостоятельные меры дадут лишь временный эффект и лучше вызвать специалиста.
 				</p>
 			</Typography>
-			<script type='application/ld+json'>
-				{JSON.stringify({
+			<JsonLd data={{
 					'@context': 'https://schema.org',
 					'@type': 'FAQPage',
 					mainEntity: [
@@ -433,8 +433,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							},
 						},
 					],
-				})}
-			</script>
+				}} />
 		</Box>
 	)
 }

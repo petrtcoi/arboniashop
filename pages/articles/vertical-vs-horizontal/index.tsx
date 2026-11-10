@@ -1,3 +1,4 @@
+import JsonLd from '../../../components/seo/JsonLd'
 import { Box, Typography } from '@mui/material'
 import { NextPage } from 'next'
 import Link from 'next/link'
@@ -397,8 +398,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					выбор размеров и выразительный внешний вид, подходящий для современных интерьеров.
 				</p>
 			</Box>
-			<script type='application/ld+json'>
-				{JSON.stringify({
+			<JsonLd data={{
 					'@context': 'https://schema.org',
 					'@type': 'FAQPage',
 					mainEntity: [
@@ -491,8 +491,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							},
 						},
 					],
-				})}
-			</script>
+				}} />
 		</Box>
 	);
 }

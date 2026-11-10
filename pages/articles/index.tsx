@@ -12,6 +12,46 @@ import global from '../../variables/global'
 
 type ArticlesListPageProps = {}
 
+const clusterArticles = [
+	{
+		slug: "arbonia-3057-skolko-sektsiy-dlina-moshchnost",
+		title: "Сколько секций Arbonia 3057 нужно: мощность и длина при разных температурах",
+		description: "Сколько секций Arbonia 3057 нужно при 75/65/20 и 55/45/20: таблица мощности и длины, пример на 1000 Вт и проверка радиатора после снижения температуры воды.",
+		image: "/images/models/3057-0.jpeg",
+	},
+	{
+		slug: "nizkiy-arbonia-ili-vnutripolnyy-konvektor",
+		title: "Низкий радиатор Arbonia или внутрипольный конвектор: что выбрать у панорамного окна",
+		description: "Низкий Arbonia или внутрипольный конвектор у панорамного окна: холодный поток от стекла, размеры ниши, пример мощности KRP91, вентилятор и стоимость установки.",
+		image: "/images/articles/panorama/arbonia1.jpg",
+	},
+	{
+		slug: "zavodskoy-cvet-arbonia-ili-perekraska-iz-nalichiya",
+		title: "Заводской цвет Arbonia или перекраска радиатора из наличия: как выбрать способ заказа",
+		description: "Как получить выбранный цвет Arbonia: заводской заказ или перекраска радиатора из наличия официальным дилером. Комплектация, сроки, образцы и гарантия.",
+		image: "/images/sliders/slide-colors.jpg",
+	},
+
+	{
+		slug: 'ral-9016-9010-9003-kakoy-belyy-vybrat',
+		title: 'RAL 9016, RAL 9010 или RAL 9003: какой белый выбрать для радиатора',
+		description: 'Сравниваем три белых оттенка, блеск покрытия и сочетание со стеной, окнами и мебелью.',
+		image: '/images/sliders/slide-colors.jpg',
+	},
+	{
+		slug: 'arbonia-3030-skolko-sektsiy-dlina-moshchnost',
+		title: 'Сколько секций Arbonia 3030 нужно: длина и мощность',
+		description: 'Таблица от 10 до 32 секций, расчёты при ΔT50 и ΔT60 и проверка доступной длины.',
+		image: '/images/models/3030-12.jpeg',
+	},
+	{
+		slug: 'radiator-pod-glubokim-podokonnikom-stoleshnitsey',
+		title: 'Радиатор под глубоким подоконником или столешницей',
+		description: 'Проверяем размеры ниши, движение воздуха, место термоголовки и доступ для обслуживания.',
+		image: '/images/articles/underwindow.jpeg',
+	},
+]
+
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 	return (
 		<Box>
@@ -36,6 +76,22 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					container
 					spacing={5}
 				>
+					{clusterArticles.map(article => (
+						<Grid item xs={12} md={6} key={article.slug}>
+							<a href={`/articles/${article.slug}`} style={{ textDecoration: 'none' }}>
+								<Box textAlign='center'>
+									<img src={article.image} alt={article.title} width={300} height={174}
+										style={{ maxWidth: '100%', borderRadius: '8px', objectFit: 'contain' }} />
+									<Typography sx={{ ...styles.standardTextRedLink, marginTop: '10px' }} component='div'>
+										{article.title}
+									</Typography>
+								</Box>
+								<Box maxWidth={360} margin='10px auto 0'>
+									<Typography sx={{ ...styles.smallText }} component='p'>{article.description}</Typography>
+								</Box>
+							</a>
+							</Grid>
+					))}
 					<Grid item md={6}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a style={{ textDecoration: 'none' }} href='/articles/trubchatye-ili-bimetallicheskie-radiatory'>
@@ -84,7 +140,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									</Box>
 									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
-											Фон или акцент, RAL 9016, антрацит и покраска по RAL - проверяем свет, образцы, модель и арматуру до заказа.
+											Порядок согласования модели, физических образцов, блеска, арматуры и покрытия перед заказом.
 										</Typography>
 									</Box>
 								</div>
@@ -211,13 +267,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									</Box>
 									<Box textAlign='center' marginTop='10px'>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
-											Радиатор под низкий подоконник - как выбрать Arbonia
+											Радиатор под низкий подоконник: замер ниши и выбор высоты
 										</Typography>
 									</Box>
 									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
-											Замер ниши, сравнение Arbonia 2030 и 3030, мощность, число секций и выбор подключения
-											для подоконника высотой около 50 см.
+											Чистовой пол, доступная высота и глубина ниши, подключение и монтажное пространство.
 										</Typography>
 									</Box>
 								</div>
@@ -246,13 +301,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 									</Box>
 									<Box textAlign='center' marginTop='10px'>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
-											Межосевое расстояние 500 мм Arbonia - замена батареи
+											Межосевое 500 мм Arbonia: измерение и геометрия подключения
 										</Typography>
 									</Box>
 									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
-											Как измерить старые выводы, сравнить Arbonia 2057 и 3057 и проверить возможность
-											замены без переноса труб.
+											Центры труб, высота осей, расстояние до стены и место арматуры для боковых 2057 и 3057.
 										</Typography>
 									</Box>
 								</div>
@@ -337,7 +391,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Трубчатые радиаторы для квартиры: какие модели выбрать
+											Трубчатый радиатор в квартире: совместимость с системой и подготовка замены
 										</Typography>
 									</Box>
 									<Box
@@ -350,8 +404,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Разбираем квартирные сценарии: установка под окном, замена старой батареи, вертикальные модели для
-											ниш и панорамных окон, а также расчёт секций.
+											Что проверить перед установкой трубчатого радиатора в квартире: параметры системы дома, стояк, схема подключения, мощность старого прибора и порядок работ.
 										</Typography>
 									</Box>
 								</div>
@@ -435,7 +488,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Как рассчитать мощность вертикального радиатора Arbonia
+											Мощность вертикальных Arbonia 2180 и 3180 при разных температурах
 										</Typography>
 									</Box>
 									<Box
@@ -448,8 +501,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Простая формула расчета, таблица мощности по площади комнаты и рекомендации по подбору
-											вертикальной модели Arbonia с учетом окон, потолков и теплопотерь...
+											Таблицы мощности Arbonia 2180 и 3180 при ΔT50 и ΔT60. Как перевести известную тепловую нагрузку в число секций и проверить ограниченную ширину простенка.
 										</Typography>
 									</Box>
 								</div>
@@ -485,7 +537,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Подбор Arbonia 2180 по площади: как рассчитать мощность без переплаты
+											Калькулятор секций Arbonia 2180
 										</Typography>
 									</Box>
 									<Box
@@ -498,8 +550,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Подробно разбираем, почему расчет по площади является ориентиром, как сверяться с данными УК и
-											радиаторами от застройщика, и почему большой запас мощности часто не нужен...
+											Изменяем площадь, высоту потолка, условия комнаты и ΔT для предварительного подбора.
 										</Typography>
 									</Box>
 								</div>
@@ -633,7 +684,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Монтаж радиатора Arbonia 2180 на гипсокартон: правила и расчеты
+											Arbonia 2180 на гипсокартонной стене: закладные и передача нагрузки
 										</Typography>
 									</Box>
 									<Box
@@ -646,8 +697,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Вертикальный радиатор Arbonia 2180 относится к категории тяжелых отопительных приборов, и его
-											установка на гипсокартонную стену требует инженерного подхода...
+											Как подготовить гипсокартонную стену под Arbonia 2180: определить основание, согласовать закладные с креплениями и проверить массу заполненного прибора.
 										</Typography>
 									</Box>
 								</div>
@@ -682,7 +732,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Монтаж высоких радиаторов Arbonia: требования и расчет кронштейнов
+											Монтаж Arbonia 2180 и 3180: масса, крепления и фиксация корпуса 1800 мм
 										</Typography>
 									</Box>
 									<Box
@@ -695,8 +745,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Техническое руководство по установке радиаторов Arbonia 2180 и 3180. Расчет количества креплений,
-											допустимые нагрузки на стены и правила гидравлического пуска...
+											Как подготовить установку высоких Arbonia 2180 и 3180: масса с теплоносителем, несущая стена, совместимый комплект и фиксация от смещения.
 										</Typography>
 									</Box>
 								</div>
@@ -731,7 +780,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Arbonia 3030 против 3037: как выбрать идеальный радиатор под низкий подоконник
+											Arbonia 3030 или 3037: сравнение радиаторов высотой 300 и 370 мм
 										</Typography>
 									</Box>
 									<Box
@@ -744,8 +793,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Подробное сравнение радиаторов Arbonia высотой 300 и 370 мм. Что лучше для панорамных окон, как
-											сэкономить на секциях и сохранить эстетику интерьера...
+											Чем отличаются Arbonia 3030 и 3037: высота, межосевое расстояние, мощность при ΔT50 и ΔT60. Сравнение длины при одинаковой нагрузке и ограниченной нише.
 										</Typography>
 									</Box>
 								</div>
@@ -831,7 +879,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Цвет радиаторов в интерьере: как выбрать оттенок для дизайна и комфорта
+											Цветные радиаторы в интерьере: сочетания со стенами, деревом и металлом
 										</Typography>
 									</Box>
 									<Box
@@ -844,9 +892,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Цвет радиатора давно перестал быть чем-то второстепенным. Современные дизайнерские модели
-											выпускаются в десятках оттенков: от спокойных белых и серых до выразительных глубоких цветовых
-											акцентов...
+											Идеи сочетаний цветного радиатора со стенами, деревом, камнем и металлическими деталями. Фон, контраст и цветовой акцент в разных комнатах.
 										</Typography>
 									</Box>
 								</div>
@@ -981,7 +1027,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											RAL 9016 - универсальный белый цвет для интерьера и радиаторов
+											RAL 9016: какой это цвет радиатора Arbonia
 										</Typography>
 									</Box>
 									<Box
@@ -994,8 +1040,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Белый цвет RAL 9016 - стандарт архитектуры и дизайна. Узнайте, почему его выбирают для радиаторов
-											Arbonia и современных минималистичных интерьеров...
+											Что означает транспортный белый и как его воспринимают рядом с отделкой и при разном освещении.
 										</Typography>
 									</Box>
 								</div>
@@ -1031,7 +1076,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Сколько секций радиатора Arbonia 2180 нужно для комнаты 10–20 м²
+											Arbonia 2180: таблица секций для комнат 10–20 м²
 										</Typography>
 									</Box>
 									<Box
@@ -1044,8 +1089,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Разбираемся, как рассчитать количество секций радиатора Arbonia 2180 для помещений разной площади.
-											Примеры расчетов, коэффициенты и советы по выбору...
+											Готовые примеры при условной нагрузке 100 Вт/м² и двух температурных режимах.
 										</Typography>
 									</Box>
 								</div>
@@ -1128,7 +1172,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Рекомендации по монтажу радиаторов Arbonia
+											Монтаж радиатора Arbonia: подготовка, подключение и проверка после установки
 										</Typography>
 									</Box>
 									<Box
@@ -1141,8 +1185,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Чтобы радиаторы Arbonia работали эффективно и служили долго, установка должна проводиться с
-											соблюдением всех технических требований...
+											Общая последовательность монтажа Arbonia: проверка комплектации и стены, разметка, подключение, заполнение, удаление воздуха и проверка герметичности.
 										</Typography>
 									</Box>
 								</div>
@@ -1277,7 +1320,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Высокие радиаторы Arbonia
+											Как выбрать высокий радиатор Arbonia для простенка и планировки комнаты
 										</Typography>
 									</Box>
 									<Box
@@ -1290,8 +1333,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText }}
 											component='span'
 										>
-											Высокие радиаторы, которые мы определяем как устройства отопления с высотой от 1 метра и выше,
-											становятся все более популярными в современных архитектурных и дизайнерских решениях...
+											Проверяем место для вертикального Arbonia: высоту и ширину простенка, открывание дверей, мебель, подводки и распределение тепла в комнате.
 										</Typography>
 									</Box>
 								</div>
@@ -1484,7 +1526,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Замена чугунных радиаторов на Arbonia 3057
+											Замена чугунного радиатора на Arbonia 3057: что проверить до демонтажа
 										</Typography>
 									</Box>
 									<Box
@@ -1497,10 +1539,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText }}
 											component='span'
 										>
-											Отопление является одним из важнейших аспектов комфорта в жилом помещении. Чтобы система работала
-											надежно и эффективно, важно выбрать правильное оборудование и правильно его установить. В данной
-											статье мы рассмотрим особенности установки и замены трубчатых радиаторов Arbonia вместо старых
-											чугунных или алюминиевых радиаторов...
+											Проверка замены старой батареи на Arbonia 3057: глубина 105 мм, боковая арматура, мощность, состояние труб и порядок подготовки работ.
 										</Typography>
 									</Box>
 								</div>
@@ -1537,7 +1576,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Невысокие модели радиаторов Arbonia в наличии
+											Низкие Arbonia 2030, 3030 и 3037: сравнение высоты, глубины и мощности
 										</Typography>
 									</Box>
 									<Box
@@ -1550,11 +1589,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText }}
 											component='span'
 										>
-											Радиаторы небольшой высоты набирают всю большую популярность в нашей стране. Связано это с тем,
-											что в современных домах все чаще устанавливают большие окна с низкими подоконниками, под которыми
-											батарею стандартной высоты разместить уже не получится. Поэтому, радиаторы Arbonia высотой до 40
-											см входят в нашу складскую программу. Ведь дома с большими окнами - это чаще всего дома бизнес-
-											или премиум-класса...
+											Сравниваем Arbonia 2030, 3030 и 3037: высота 300 или 370 мм, глубина 65 или 105 мм и мощность при ΔT50. Как выбрать модель по ограничениям ниши.
 										</Typography>
 									</Box>
 								</div>
@@ -1797,7 +1832,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Arbonia 2180 vs 3180: чем отличаются и когда что выбрать
+											Arbonia 2180 или 3180: сравнение двух вертикальных моделей
 										</Typography>
 									</Box>
 									<Box
@@ -1810,8 +1845,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText }}
 											component='span'
 										>
-											Сравниваем 2- и 3-трубчатые модели высотой 1,8 м: толщина, мощность, где уместнее 2180, а где
-											лучше 3180.
+											Глубина 65 или 105 мм, мощность при одинаковом ΔT, масса и условия выбора.
 										</Typography>
 									</Box>
 								</div>
@@ -1898,7 +1932,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Как подбирать радиаторы Arbonia по мощности
+											Какая мощность отопления нужна комнате: проект, теплопотери и предварительная оценка
 										</Typography>
 									</Box>
 									<Box
@@ -1911,8 +1945,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText }}
 											component='span'
 										>
-											Трубчатые радиаторы Arbonia предоставляют широкие возможности по подбору конкретных моделей под
-											каждый случай: практически любая высота и длина доступны для изготовления.
+											Как определить требуемую тепловую нагрузку перед выбором радиатора Arbonia: данные проекта, расчёт теплопотерь, замена старого прибора и ограничения формул по площади.
 										</Typography>
 									</Box>
 								</div>
@@ -1947,7 +1980,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
 										>
-											Стандартные радиаторы Arbonia под окно
+											Arbonia под стандартное окно: выбор между 2050, 2057, 3050 и 3057
 										</Typography>
 									</Box>
 									<Box
@@ -1960,8 +1993,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
 										>
-											Модели 2050, 2057, 3050 и 3057 высотой 50-57 см: как выбрать высоту, число труб и подключение
-											под обычное окно или замену старой батареи.
+											Как выбрать радиатор Arbonia высотой 500 или 570 мм под обычное окно: таблица 2050, 2057, 3050, 3057, глубина, мощность при ΔT50 и место для подключения.
 										</Typography>
 									</Box>
 								</div>

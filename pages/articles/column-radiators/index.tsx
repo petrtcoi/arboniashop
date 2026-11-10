@@ -454,6 +454,13 @@ const ArticlePage: NextPage = () => {
 					неподходящей для монтажа покупки.
 				</Typography>
 
+                <p>Если конструкция подходит, переходите к задаче своего места установки:
+                    <LinkText href='/articles/trubchatye-radiatory-dlya-kvartiry'> совместимость с отоплением квартиры</LinkText>,
+                    <LinkText href='/articles/radiatory-arbonia-pod-okno'> выбор стандартного корпуса под окно</LinkText>,
+                    <LinkText href='/articles/radiator-pod-nizkiy-podokonnik'> замер низкой ниши</LinkText> или
+                    <LinkText href='/articles/high-arbonia'> выбор высокого радиатора для простенка</LinkText>.
+                    Ниже — общие этапы, которые связывают эти решения.</p>
+
 				<Typography
 					component='h3'
 					variant='h6'
@@ -584,7 +591,7 @@ const ArticlePage: NextPage = () => {
 					проекта дизайнера, доступна{' '}
 					<LinkText href='/coloring'>покраска радиаторов Arbonia в цвет RAL</LinkText>. Больше идей по сочетанию
 					цвета радиатора с интерьером - в статье{' '}
-					<LinkText href='/articles/tsvet-radiatorov-v-interiere'>цвет радиаторов в интерьере</LinkText>.
+					<LinkText href='/articles/kak-vybrat-cvet-radiatora-pod-interer'>практическом порядке выбора цвета Arbonia</LinkText>.
 				</Typography>
 
 				<Typography

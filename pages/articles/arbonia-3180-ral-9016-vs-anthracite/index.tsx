@@ -27,7 +27,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					{ title: 'Полезная информация', link: '/articles' },
 					{
 						title: 'RAL 9016 или Anthracite Metallic для Arbonia 3180',
-						link: '/articles/arbonia-3180-ral-9016-vs-anthracite-metallic',
+						link: '/articles/arbonia-3180-ral-9016-vs-anthracite',
 					},
 				]}
 			/>

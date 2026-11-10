@@ -1,0 +1,47 @@
+{
+  "published": true,
+  "domain": "arboniashop.ru",
+  "published_at_utc": "2026-10-13T10:16:26.115778+00:00",
+  "release_path": "/root/releases/arboniashop-articles-20261013",
+  "build_id": "Lrhtfi_fgYolHaR9eXLVt",
+  "previous_release": "/root/releases/arboniashop-seo-20261013-final",
+  "rollback_config": "/root/releases/arboniashop-articles-20261013/ecosystem-rollback.json",
+  "other_processes_unchanged": true,
+  "production_port": 3001,
+  "staging_port": 3903,
+  "switch_method": "recreate_only_arboniashop_process",
+  "source_checks": "/Users/petrtcoi/Desktop/_code/arboniashop/audit/2026-10-13/articles-external-sources.json",
+  "public_verification": "/Users/petrtcoi/Desktop/_code/arboniashop/audit/2026-10-13/production-articles-verification.json",
+  "articles": [
+    "https://arboniashop.ru/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+    "https://arboniashop.ru/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+    "https://arboniashop.ru/articles/ral-9016-9010-9003-kakoy-belyy-vybrat"
+  ],
+  "gsc_indexing_requested": true,
+  "gsc_status": "All 3 URL requests accepted by Google Search Console; indexing itself is pending",
+  "schema_org_validator": {
+    "errors": 0,
+    "warnings": 0,
+    "pages_checked": 3
+  },
+  "incoming_links_checked": 13,
+  "artifact_sha256": "ec7c2d83c30fe95beb15c1b2357a8bd8be7817489fca5238d0f2307512c28328",
+  "gsc_receipts": [
+    {
+      "url": "https://arboniashop.ru/articles/ral-9016-9010-9003-kakoy-belyy-vybrat",
+      "requestedAt": "2026-10-13T10:27:00.733Z",
+      "status": "Indexing requested"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+      "requestedAt": "2026-10-13T10:31:57.324Z",
+      "status": "Indexing requested"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+      "requestedAt": "2026-10-13T10:35:52.654Z",
+      "status": "Indexing requested"
+    }
+  ],
+  "temporary_staging_process_removed": true
+}

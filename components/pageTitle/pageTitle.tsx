@@ -1,7 +1,7 @@
 import { Box, Grid, Hidden, Typography } from '@mui/material';
 import React from 'react';
 
-import Script from 'next/script';
+import JsonLd from '../seo/JsonLd';
 import * as styles from '../../styles/styles';
 
 type PageTitleProps = {
@@ -31,11 +31,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 	return (
 		<>
 			{!!breadcrumbs && breadcrumbs.length > 0 ? (
-				<Script
-					id='jsonld'
-					type='application/ld+json'
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-				/>
+				<JsonLd data={jsonLd} />
 			) : null}
 			<Box
 				paddingY={'10px'}
@@ -57,12 +53,10 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 										<a
 											style={{ textDecoration: 'none' }}
 											href={item.link}
-											itemProp='item'
 										>
 											<Typography
 												sx={{ ...styles.smallTextThinLink }}
 												display='inline'
-												itemProp='name'
 											>
 												{item.title}
 											</Typography>

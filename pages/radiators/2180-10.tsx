@@ -1,3 +1,5 @@
+import OfferMetadata from '../../components/seo/OfferMetadata'
+import ProductMetadata from '../../components/seo/ProductMetadata'
 import { Box, Grid, Typography } from '@mui/material'
 import Image from "next/legacy/image"
 import Link from 'next/link'
@@ -43,6 +45,7 @@ const SECTIONS_POSTFIX = 'секций'
 
 const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }: Props) => {
 	const refPrices = useRef<HTMLElement>(null)
+	const { rateEuro, isFetching } = useContext(CurrencyContext)
 
 	const model = models.find(model => model.id === '2180')
 	if (!model) return null
@@ -53,10 +56,9 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 	const power50 = Math.floor(SECTIONS_QNTY * +model.dt50)
 	const square = Math.round(power / 100)
 
-	const width = Math.round(SECTIONS_QNTY * +model.width + 26)
+	const width = Math.round(SECTIONS_QNTY * +model.lengthSection + 26)
 
 	const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
-	const { rateEuro, isFetching } = useContext(CurrencyContext)
 
 	const color9016 = colors.find(x => x.id === '9016')
 	const color7016 = colors.find(x => x.id === '7016')
@@ -211,6 +213,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<ProductMetadata description={`Вертикальный трубчатый радиатор Arbonia 2180, ${SECTIONS_QNTY} секций, высота 1800 мм, глубина 65 мм. Боковое и нижнее подключение, цвета RAL 9016, RAL 7016, SF-3 и RAL 9005.`} sku={`2180-${SECTIONS_STRING}`} />
 			<meta
 				itemProp='name'
 				content={`Arbonia 2180 ${SECTIONS_STRING}`}
@@ -318,14 +321,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 												itemScope
 												itemType='https://schema.org/Offer'
 											>
-												<span itemProp='price'>
+												<span>
+													<OfferMetadata inStock={true} />
 													<meta
 														itemProp='priceCurrency'
 														content='RUB'
 													/>
 													<meta
 														itemProp='price'
-														content={rad_12_9016_data.priceString.replace(',', '').replace(' ', '').trim()}
+														content={rad_12_9016_data.priceString.replace(/[^0-9]/g, '')}
 													/>
 													{rad_12_9016_data.priceString}
 												</span>{' '}
@@ -605,14 +609,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											itemScope
 											itemType='https://schema.org/Offer'
 										>
-											<span itemProp='price'>
+											<span>
+												<OfferMetadata inStock={true} />
 												<meta
 													itemProp='priceCurrency'
 													content='RUB'
 												/>
 												<meta
 													itemProp='price'
-													content={rad_12_9016_data.priceString.replace(',', '').replace(' ', '').trim()}
+													content={rad_12_9016_data.priceString.replace(/[^0-9]/g, '')}
 												/>
 												{rad_12_9016_data.priceString}
 											</span>{' '}
@@ -666,14 +671,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											itemScope
 											itemType='https://schema.org/Offer'
 										>
-											<span itemProp='price'>
+											<span>
+												<OfferMetadata inStock={true} />
 												<meta
 													itemProp='priceCurrency'
 													content='RUB'
 												/>
 												<meta
 													itemProp='price'
-													content={rad_69_9016_data.priceString.replace(',', '').replace(' ', '').trim()}
+													content={rad_69_9016_data.priceString.replace(/[^0-9]/g, '')}
 												/>
 												{rad_69_9016_data.priceString}
 											</span>{' '}
@@ -764,14 +770,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											itemScope
 											itemType='https://schema.org/Offer'
 										>
-											<span itemProp='price'>
+											<span>
+												<OfferMetadata inStock={true} />
 												<meta
 													itemProp='priceCurrency'
 													content='RUB'
 												/>
 												<meta
 													itemProp='price'
-													content={rad_12_7016_data.priceString.replace(',', '').replace(' ', '').trim()}
+													content={rad_12_7016_data.priceString.replace(/[^0-9]/g, '')}
 												/>
 												{rad_12_7016_data.priceString}
 											</span>{' '}
@@ -825,14 +832,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											itemScope
 											itemType='https://schema.org/Offer'
 										>
-											<span itemProp='price'>
+											<span>
+												<OfferMetadata inStock={true} />
 												<meta
 													itemProp='priceCurrency'
 													content='RUB'
 												/>
 												<meta
 													itemProp='price'
-													content={rad_69_7016_data.priceString.replace(',', '').replace(' ', '').trim()}
+													content={rad_69_7016_data.priceString.replace(/[^0-9]/g, '')}
 												/>
 												{rad_69_7016_data.priceString}
 											</span>{' '}
@@ -929,14 +937,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											itemScope
 											itemType='https://schema.org/Offer'
 										>
-											<span itemProp='price'>
+											<span>
+												<OfferMetadata inStock={true} />
 												<meta
 													itemProp='priceCurrency'
 													content='RUB'
 												/>
 												<meta
 													itemProp='price'
-													content={rad_12_sf3_data.priceString.replace(',', '').replace(' ', '').trim()}
+													content={rad_12_sf3_data.priceString.replace(/[^0-9]/g, '')}
 												/>
 												{rad_12_sf3_data.priceString}
 											</span>{' '}
@@ -990,14 +999,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											itemScope
 											itemType='https://schema.org/Offer'
 										>
-											<span itemProp='price'>
+											<span>
+												<OfferMetadata inStock={true} />
 												<meta
 													itemProp='priceCurrency'
 													content='RUB'
 												/>
 												<meta
 													itemProp='price'
-													content={rad_69_sf3_data.priceString.replace(',', '').replace(' ', '').trim()}
+													content={rad_69_sf3_data.priceString.replace(/[^0-9]/g, '')}
 												/>
 												{rad_69_sf3_data.priceString}
 											</span>{' '}
@@ -1087,14 +1097,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											itemScope
 											itemType='https://schema.org/Offer'
 										>
-											<span itemProp='price'>
+											<span>
+												<OfferMetadata inStock={true} />
 												<meta
 													itemProp='priceCurrency'
 													content='RUB'
 												/>
 												<meta
 													itemProp='price'
-													content={rad_12_9005_data.priceString.replace(',', '').replace(' ', '').trim()}
+													content={rad_12_9005_data.priceString.replace(/[^0-9]/g, '')}
 												/>
 												{rad_12_9005_data.priceString}
 											</span>{' '}
@@ -1148,14 +1159,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											itemScope
 											itemType='https://schema.org/Offer'
 										>
-											<span itemProp='price'>
+											<span>
+												<OfferMetadata inStock={true} />
 												<meta
 													itemProp='priceCurrency'
 													content='RUB'
 												/>
 												<meta
 													itemProp='price'
-													content={rad_69_9005_data.priceString.replace(',', '').replace(' ', '').trim()}
+													content={rad_69_9005_data.priceString.replace(/[^0-9]/g, '')}
 												/>
 												{rad_69_9005_data.priceString}
 											</span>{' '}

@@ -3,6 +3,7 @@ import { NextPage } from 'next'
 import Link from 'next/link'
 
 import AddToCartButton from '../addToCartButton/addToCartButton'
+import OfferMetadata from '../seo/OfferMetadata'
 
 import getRadiatorData from '../../utils/getRadiatorData'
 
@@ -21,7 +22,7 @@ type RadiatorListRowProps = {
 }
 
 const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connection, sectionQnty, price }) => {
-	const { titleString, skuString, lengthString, dt60String, priceString, oldPriceString } = getRadiatorData({
+	const { titleString, skuString, lengthString, dt50String, dt60String, priceString, oldPriceString } = getRadiatorData({
 		model,
 		color,
 		connection,
@@ -90,6 +91,11 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 					sx={styles.smallText}
 					align='center'
 				>
+					{dt50String}
+				</TableCell>
+			</Hidden>
+			<Hidden mdDown>
+				<TableCell component='th' scope='row' sx={styles.smallText} align='center'>
 					{dt60String}
 				</TableCell>
 			</Hidden>
@@ -112,6 +118,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 					{oldPriceString}
 				</Typography>
 				<span>
+					<OfferMetadata inStock={model.inStock === 'true'} url={`https://arboniashop.ru/models/${model.id}/${sectionQnty}`} />
 					<meta
 						itemProp='priceCurrency'
 						content='RUB'

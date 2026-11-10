@@ -1,0 +1,107 @@
+{
+  "base": "http://127.0.0.1:3915",
+  "build_id": "STPGep00RxoYAnvybMHaW",
+  "articles": [
+    {
+      "path": "/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+      "h1": 1,
+      "h2": 7,
+      "h3": 5,
+      "faq": 3
+    },
+    {
+      "path": "/articles/arbonia-3057-skolko-sektsiy-dlina-moshchnost",
+      "h1": 1,
+      "h2": 8,
+      "h3": 3,
+      "faq": 3
+    },
+    {
+      "path": "/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor",
+      "h1": 1,
+      "h2": 8,
+      "h3": 3,
+      "faq": 3
+    },
+    {
+      "path": "/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+      "h1": 1,
+      "h2": 8,
+      "h3": 3,
+      "faq": 3
+    },
+    {
+      "path": "/articles/ral-9016-9010-9003-kakoy-belyy-vybrat",
+      "h1": 1,
+      "h2": 8,
+      "h3": 3,
+      "faq": 3
+    },
+    {
+      "path": "/articles/zavodskoy-cvet-arbonia-ili-perekraska-iz-nalichiya",
+      "h1": 1,
+      "h2": 8,
+      "h3": 3,
+      "faq": 3
+    }
+  ],
+  "incoming_links": 17,
+  "parents": 14,
+  "cards": [
+    {
+      "path": "/models/2057-9016-12",
+      "dt50": 42.0,
+      "dt60": 53.0
+    },
+    {
+      "path": "/models/2057-9016-69tvv",
+      "dt50": 42.0,
+      "dt60": 53.0
+    },
+    {
+      "path": "/models/2100",
+      "dt50": 74.0,
+      "dt60": 93.0
+    },
+    {
+      "path": "/models/3037",
+      "dt50": 38.0,
+      "dt60": 48.0
+    },
+    {
+      "path": "/models/3037-9016-12",
+      "dt50": 38.0,
+      "dt60": 48.0
+    },
+    {
+      "path": "/models/3037-9016-69tvv",
+      "dt50": 38.0,
+      "dt60": 48.0
+    },
+    {
+      "path": "/models/3057-9016-12",
+      "dt50": 58.0,
+      "dt60": 73.0
+    },
+    {
+      "path": "/models/3057-9016-69tvv",
+      "dt50": 58.0,
+      "dt60": 73.0
+    },
+    {
+      "path": "/models/5045",
+      "dt50": 77.0,
+      "dt60": 98.0
+    },
+    {
+      "path": "/models/3057-9016-12/18",
+      "dt50": 58.0,
+      "dt60": 73.0
+    }
+  ],
+  "generated_corrected_variants": 85,
+  "faq_3057_rows_corrected": 11,
+  "linked_pages_and_images": 26,
+  "sitemap_urls": 206,
+  "errors": []
+}

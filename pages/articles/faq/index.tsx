@@ -480,7 +480,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											476 мм
 											<br />
-											780 Вт
+											730 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											5 секций
@@ -510,7 +510,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											566 мм
 											<br />
-											936 Вт
+											876 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											6 секций
@@ -540,7 +540,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											656 мм
 											<br />
-											1092 Вт
+											1022 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											7 секций
@@ -570,7 +570,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											746 мм
 											<br />
-											1248 Вт
+											1168 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											8 секций
@@ -600,7 +600,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											836 мм
 											<br />
-											1404 Вт
+											1314 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											9 секций
@@ -630,7 +630,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											926 мм
 											<br />
-											1560 Вт
+											1460 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											10 секций
@@ -660,7 +660,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1016 мм
 											<br />
-											1716 Вт
+											1606 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											11 секций
@@ -690,7 +690,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1106 мм
 											<br />
-											1872 Вт
+											1752 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											12 секций
@@ -720,7 +720,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1196 мм
 											<br />
-											2028 Вт
+											1898 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											13 секций
@@ -750,7 +750,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1286 мм
 											<br />
-											2184 Вт
+											2044 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											13 секций
@@ -780,7 +780,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1376 мм
 											<br />
-											2340 Вт
+											2190 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											14 секций

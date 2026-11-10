@@ -1,0 +1,22 @@
+[
+  {
+    "source": "/articles/arbonia-3180-ral-9016-vs-anthracite-metallic",
+    "destination": "/articles/arbonia-3180-ral-9016-vs-anthracite",
+    "status": 308
+  },
+  {
+    "source": "/models/3057-9016-1270-34",
+    "destination": "/models/3057-9016-12",
+    "status": 308
+  },
+  {
+    "source": "/news/2023-report",
+    "destination": "/news/2024-report",
+    "status": 308
+  },
+  {
+    "source": "/policy",
+    "destination": "/privacy",
+    "status": 308
+  }
+]

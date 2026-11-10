@@ -1,3 +1,4 @@
+import ProductMetadata from '../../components/seo/ProductMetadata'
 import { Box, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
 import React, { useRef } from 'react'
@@ -42,6 +43,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<ProductMetadata description={`Стальной трубчатый радиатор Arbonia 2180: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='2180' />
 			<meta
 				itemProp='name'
 				content='Радиатор Arbonia 2180'
@@ -55,7 +57,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				content='Сталь'
 			/>
 			<PageHeader
-				title={'Радиаторы Arbonia 2180 | Выгодные цены | Гарантия'}
+				title={'Arbonia 2180 — вертикальный радиатор 180 см: цены и наличие'}
 				description='Вертикальные радиаторы Arbonia 2180 в наличии (2-трубчатые). Большой выбор моделей. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка в любой город России.'
 			/>
 			<PageTitle
@@ -643,7 +645,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									sx={{ ...styles.standardTextLinkUnderline }}
 									component='span'
 								>
-									Подбор Arbonia 2180 по площади: как рассчитать мощность без переплаты
+									Калькулятор секций Arbonia 2180 по площади и температуре
 								</Typography>
 							</a>
 						</li>

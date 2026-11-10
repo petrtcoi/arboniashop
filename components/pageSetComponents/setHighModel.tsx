@@ -6,6 +6,7 @@ import Hero from '../../components/hero/hero'
 import PageHeader from '../../components/pageHeader/pageHeader'
 import ModelBlock from '../modelBlock/modelBlock'
 import CatalogPopularLinks from './catalogPopularLinks'
+import VerticalComparison from './VerticalComparison'
 
 import { SetComponentProps } from '../../models/setComponentProps.model'
 
@@ -47,6 +48,7 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 					<a href='/articles/panorama' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Как выбрать радиатор для панорамного окна</Button></a>
 				</Box>
 
+				<VerticalComparison models={models} colors={colors} connections={connections} />
 				{/* 2180 белый*/}
 				<ModelBlock
 					title={'Arbonia 2180 RAL 9016, боковое подключение 3/4'}

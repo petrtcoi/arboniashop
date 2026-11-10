@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { ModelOrigin } from '../../models/modelOrigin.model'
 
 import formatPrice from '../../utils/formatPrice'
+import OfferMetadata from '../seo/OfferMetadata'
 
 import * as styles from '../../styles/styles'
 
@@ -13,7 +14,7 @@ type ModelMinPriceProps = {
 	setTabBuy: () => void
 }
 
-const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ minPrice, setTabBuy }) => {
+const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ model, minPrice, setTabBuy }) => {
 	const [hidePriceOffer, setHidePriceOffer] = useState<boolean>(true)
 	const handlePriceOffer = () => {
 		setHidePriceOffer(false)
@@ -35,14 +36,18 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ minPrice, setTabBuy }) =>
 					<span
 						itemProp='offers'
 						itemScope
-						itemType='https://schema.org/AggregateOffer'
+						itemType='https://schema.org/Offer'
 					>
+						<OfferMetadata
+							inStock={model.inStock === 'true'}
+							url={model.inStock === 'true' ? `https://arboniashop.ru/models/${model.id}/${model.inStockSections?.split(',')[0] || 4}` : `https://arboniashop.ru/models/${model.id}`}
+						/>
 						<meta
 							itemProp='priceCurrency'
 							content='RUB'
 						/>
 						<meta
-							itemProp='lowPrice'
+							itemProp='price'
 							content={minPrice.toString().replace(',', '').trim()}
 						/>
 						&nbsp;{formatPrice(minPrice)} руб

@@ -90,7 +90,7 @@ const ArticlePage: NextPage = () => {
 		description: metaDescription,
 		image: `${siteUrl}/images/arbonia-schema.jpg`,
 		datePublished: '2026-08-05',
-		dateModified: '2026-08-05',
+		dateModified: '2026-10-13',
 		mainEntityOfPage: `${siteUrl}/articles/${slug}`,
 		about: keyword,
 		keywords: [keyword, 'ΔT радиатора', 'мощность радиатора', 'температурный график отопления'],
@@ -316,6 +316,7 @@ const ArticlePage: NextPage = () => {
 					</table>
 				</Box>
 
+				<Paragraph>Применение режима к конкретным моделям показано в <LinkText href='/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost'>расчёте мощности и длины Arbonia 3030</LinkText> и в <LinkText href='/articles/arbonia-3057-skolko-sektsiy-dlina-moshchnost'>примере расчёта Arbonia 3057 для 75/65/20 и 55/45/20</LinkText>. У 3030 основной акцент сделан на доступной длине, у 3057 — на работе при более низкой температуре воды.</Paragraph>
 				<SectionHeading>Что прислать для точного подбора</SectionHeading>
 				<Paragraph>
 					Для точного подбора достаточно начать не с длинного технического задания, а с понятных исходных данных по

@@ -44,6 +44,12 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                 доставка осуществляется через транспортные компании (Деловые
                 Линии, Возовоз, Байкал-Сервис, ПЭК и т.д.).
               </Typography>
+              <Typography sx={{ ...styles.standardText }} marginTop="12px">
+                Стоимость и срок доставки до покупателя рассчитываются
+                индивидуально и согласуются при подтверждении заказа.
+                Бесплатная доставка до терминала отправления не включает
+                перевозку транспортной компанией до города покупателя.
+              </Typography>
               <Typography
                 variant="h6"
                 component="h3"
@@ -173,7 +179,7 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
           <Divider />
         </Box>
         <Box>
-          <Typography variant="h6" component="h2">
+          <Typography variant="h6" component="h2" id="returns">
             Возврат товара
           </Typography>
           <Box>

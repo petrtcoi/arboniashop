@@ -1,3 +1,5 @@
+import ProductMetadata from '../seo/ProductMetadata'
+import OfferMetadata from '../seo/OfferMetadata'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import Image from 'next/image'
 import React, { useContext } from 'react'
@@ -133,6 +135,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemScope
 						itemType='https://schema.org/Product'
 					>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 2180, высота ${model2180.height} мм, глубина ${model2180.width} мм. Белое боковое исполнение RAL 9016 от 4 секций.`} sku='2180' />
 						<Box>
 							<Box textAlign='center'>
 								<a
@@ -295,14 +298,15 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									gap={1}
 									itemProp='offers'
 									itemScope
-									itemType='https://schema.org/AggregateOffer'
+									itemType='https://schema.org/Offer'
 								>
+									<OfferMetadata inStock={model2180.inStock === 'true'} url='https://arboniashop.ru/models/2180-9016-12/4' />
 									<meta
 										itemProp='priceCurrency'
 										content='RUB'
 									/>
 									<meta
-										itemProp='lowPrice'
+										itemProp='price'
 										content={model2180MinPrice.noConsole.toString()}
 									/>
 									<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
@@ -338,6 +342,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemScope
 						itemType='https://schema.org/Product'
 					>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 3057, высота ${model3057.height} мм, глубина ${model3057.width} мм. Белое боковое исполнение RAL 9016 от 8 секций.`} sku='3057' />
 						<Box textAlign='center'>
 							<a
 								style={{ textDecoration: 'none' }}
@@ -500,14 +505,15 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								gap={1}
 								itemProp='offers'
 								itemScope
-								itemType='https://schema.org/AggregateOffer'
+								itemType='https://schema.org/Offer'
 							>
+									<OfferMetadata inStock={model3057.inStock === 'true'} url='https://arboniashop.ru/models/3057-9016-12/8' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model3057MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
@@ -542,6 +548,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemScope
 						itemType='https://schema.org/Product'
 					>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 3180, высота ${model3180.height} мм, глубина ${model3180.width} мм. Белое боковое исполнение RAL 9016 от 4 секций.`} sku='3180' />
 						<Box textAlign='center'>
 							<a
 								style={{ textDecoration: 'none' }}
@@ -703,14 +710,15 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								gap={1}
 								itemProp='offers'
 								itemScope
-								itemType='https://schema.org/AggregateOffer'
+								itemType='https://schema.org/Offer'
 							>
+									<OfferMetadata inStock={model3180.inStock === 'true'} url='https://arboniashop.ru/models/3180-9016-12/4' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model3180MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
@@ -745,6 +753,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemScope
 						itemType='https://schema.org/Product'
 					>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 3030, высота ${model3030.height} мм, глубина ${model3030.width} мм. Белое боковое исполнение RAL 9016 от 10 секций.`} sku='3030' />
 						<Box textAlign='center'>
 							<a
 								style={{ textDecoration: 'none' }}
@@ -906,14 +915,15 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								gap={1}
 								itemProp='offers'
 								itemScope
-								itemType='https://schema.org/AggregateOffer'
+								itemType='https://schema.org/Offer'
 							>
+									<OfferMetadata inStock={model3030.inStock === 'true'} url='https://arboniashop.ru/models/3030-9016-12/10' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model3030MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
@@ -948,6 +958,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemScope
 						itemType='https://schema.org/Product'
 					>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 2050, высота ${model2050.height} мм, глубина ${model2050.width} мм. Белое боковое исполнение RAL 9016 от 8 секций.`} sku='2050' />
 						<Box textAlign='center'>
 							<a
 								style={{ textDecoration: 'none' }}
@@ -1109,14 +1120,15 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								gap={1}
 								itemProp='offers'
 								itemScope
-								itemType='https://schema.org/AggregateOffer'
+								itemType='https://schema.org/Offer'
 							>
+									<OfferMetadata inStock={model2050.inStock === 'true'} url='https://arboniashop.ru/models/2050-9016-12/8' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model2050MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
@@ -1151,6 +1163,7 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 						itemScope
 						itemType='https://schema.org/Product'
 					>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 3050, высота ${model3050.height} мм, глубина ${model3050.width} мм. Белое боковое исполнение RAL 9016 от 8 секций.`} sku='3050' />
 						<Box textAlign='center'>
 							<a
 								style={{ textDecoration: 'none' }}
@@ -1312,14 +1325,15 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								gap={1}
 								itemProp='offers'
 								itemScope
-								itemType='https://schema.org/AggregateOffer'
+								itemType='https://schema.org/Offer'
 							>
+									<OfferMetadata inStock={model3050.inStock === 'true'} url='https://arboniashop.ru/models/3050-9016-12/8' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model3050MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>

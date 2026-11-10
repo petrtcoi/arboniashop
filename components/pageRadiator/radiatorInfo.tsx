@@ -1,3 +1,4 @@
+import OfferMetadata from '../seo/OfferMetadata'
 import { Box, Grid, Typography } from '@mui/material'
 import Image from 'next/image'
 import React, { useContext } from 'react'
@@ -118,14 +119,15 @@ const RadiatorInfo: React.FC<ModelMainSectionProps> = ({ model, color, connectio
 									itemScope
 									itemType='https://schema.org/Offer'
 								>
-									<span itemProp='price'>
+									<OfferMetadata inStock={model.inStock === 'true'} />
+									<span>
 										<meta
 											itemProp='priceCurrency'
 											content='RUB'
 										/>
 										<meta
 											itemProp='price'
-											content={priceString.replace(',', '').replace(' ', '').trim()}
+											content={priceString.replace(/[^0-9]/g, '')}
 										/>
 										{priceString}
 									</span>{' '}

@@ -100,6 +100,13 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Box>
 
 				<h2 style={{ marginTop: '40px' }}>Лучшие места для размещения радиатора сегодня</h2>
+				<p>
+					Под обычным окном сравните <a href='/catalog/standard'>радиаторы Arbonia высотой 50–57 см</a>:
+					например, <a href='/models/3057'>Arbonia 3057</a>. Для низкого подоконника подойдут по габаритам
+					<a href='/catalog/low-models'> низкие модели 30–37 см</a>, а для узкого простенка можно рассмотреть
+					<a href='/catalog/high-models'> вертикальные Arbonia 2180 и 3180</a>. Окончательный выбор зависит
+					от теплопотерь и монтажных размеров, а не только от свободного места.
+				</p>
 				<p>Теперь возможны разные варианты. Главное правило - прибор должен свободно отдавать тепло.</p>
 
 				<ul>
@@ -157,6 +164,13 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 
 				<h2 style={{ marginTop: '40px' }}>Ниши: можно или нельзя</h2>
+				<p>
+					Если ниша ограничивает высоту, сначала выполните <a href='/articles/radiator-pod-nizkiy-podokonnik'>замер
+					низкого подоконника</a>. Белый <a href='/models/3030-9016-12'>Arbonia 3030 с боковым подключением</a>
+					занимает 300 мм по высоте; к этому размеру добавляют зазоры из монтажного чертежа.
+					Для установки на простенке полезна <a href='/articles/montazh-vysokih-radiatorov-arbonia-instrukciya'>инструкция
+					по креплению высоких радиаторов</a>.
+				</p>
 				<table className={tableStyle.table}>
 					<tr>
 						<th>Вид ниши</th>
@@ -180,6 +194,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</tr>
 				</table>
 
+				<p>
+					Перед изготовлением мебели используйте <a href='/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey'>проверку
+					радиатора под глубоким подоконником или столешницей</a>. В ней разобраны размеры ниши, решётки,
+					термоголовка и доступ для обслуживания.
+				</p>
 				<h2 style={{ marginTop: '40px' }}>Как выбрать стиль радиатора под конкретное место</h2>
 				<ul>
 					<li>

@@ -1,3 +1,4 @@
+import ProductMetadata from '../../components/seo/ProductMetadata'
 import { Box, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
 import React, { useRef } from 'react'
@@ -42,6 +43,7 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<ProductMetadata description={`Стальной трубчатый радиатор Arbonia 3030: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='3030' />
 			<meta
 				itemProp='name'
 				content='Радиаторы Arbonia 3030'
@@ -55,7 +57,7 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				content='Сталь'
 			/>
 			<PageHeader
-				title={'Радиаторы Arbonia 3030 | Выгодные цены | Гарантия'}
+				title={'Arbonia 3030 — низкий радиатор высотой 30 см: цены и наличие'}
 				description='Низкие радиаторы Arbonia 3030 в наличии (высота 30 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка в любой город России.'
 			/>
 			<PageTitle
@@ -72,6 +74,8 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				subheader={'Низкие трёхтрубчатые радиаторы Arbonia высотой 30 см в наличии'}
 			/>
 			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+				<p>Выберите подключение: <a href='/models/3030-9016-12'>белый Arbonia 3030 с боковым №12</a> или <a href='/models/3030-9016-69tvv'>нижним №69 ТВВ</a>. Для сравнения по высоте и мощности откройте <a href='/catalog/low-models'>низкие радиаторы 30–37 см</a>.</p>
+				<p>Для выбора исполнения используйте <a href='/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost'>расчёт числа секций Arbonia 3030</a>: таблицу длины и мощности при ΔT50 и ΔT60 и примеры на 800–1000 Вт.</p>
 				<Box
 					marginBottom='30px'
 					display='flex'

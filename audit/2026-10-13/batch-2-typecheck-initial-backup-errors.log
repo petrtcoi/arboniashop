@@ -1,0 +1,110 @@
+audit/2026-10-13/batch-2-before/api_utils/getModelsData.ts(3,27): error TS2307: Cannot find module './readGoogleCsv' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/api_utils/getModelsData.ts(4,29): error TS2307: Cannot find module '../models/modelOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(6,18): error TS2307: Cannot find module '../hero/hero' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(7,24): error TS2307: Cannot find module '../modelBlock/modelBlock' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(8,24): error TS2307: Cannot find module '../pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(9,35): error TS2307: Cannot find module '../../models/setComponentProps.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(10,25): error TS2307: Cannot find module '../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(11,20): error TS2307: Cannot find module '../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(12,33): error TS2307: Cannot find module './catalogPopularLinks' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(50,28): error TS7006: Parameter 'item' implicitly has an 'any' type.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(51,32): error TS7006: Parameter 'item' implicitly has an 'any' type.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(52,34): error TS7006: Parameter 'item' implicitly has an 'any' type.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(132,25): error TS7006: Parameter 'item' implicitly has an 'any' type.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(139,25): error TS7006: Parameter 'item' implicitly has an 'any' type.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(146,25): error TS7006: Parameter 'item' implicitly has an 'any' type.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(153,25): error TS7006: Parameter 'item' implicitly has an 'any' type.
+audit/2026-10-13/batch-2-before/components/pageSetComponents/setLowModel.tsx(160,25): error TS7006: Parameter 'item' implicitly has an 'any' type.
+audit/2026-10-13/batch-2-before/pages/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat/index.tsx(6,24): error TS2307: Cannot find module '../../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat/index.tsx(7,23): error TS2307: Cannot find module '../../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat/index.tsx(9,25): error TS2307: Cannot find module '../../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat/index.tsx(10,20): error TS2307: Cannot find module '../../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/delta-t-teplootdacha/index.tsx(7,24): error TS2307: Cannot find module '../../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/delta-t-teplootdacha/index.tsx(8,23): error TS2307: Cannot find module '../../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/delta-t-teplootdacha/index.tsx(10,25): error TS2307: Cannot find module '../../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/delta-t-teplootdacha/index.tsx(11,20): error TS2307: Cannot find module '../../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/faq/index.tsx(7,18): error TS2307: Cannot find module '../../../components/hero/hero' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/faq/index.tsx(8,24): error TS2307: Cannot find module '../../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/faq/index.tsx(9,23): error TS2307: Cannot find module '../../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/faq/index.tsx(11,25): error TS2307: Cannot find module '../../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/faq/index.tsx(12,20): error TS2307: Cannot find module '../../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/index.tsx(6,18): error TS2307: Cannot find module '../../components/hero/hero' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/index.tsx(7,24): error TS2307: Cannot find module '../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/index.tsx(8,23): error TS2307: Cannot find module '../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/index.tsx(10,25): error TS2307: Cannot find module '../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/index.tsx(11,20): error TS2307: Cannot find module '../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/kak-vybrat-cvet-radiatora-pod-interer/index.tsx(6,24): error TS2307: Cannot find module '../../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/kak-vybrat-cvet-radiatora-pod-interer/index.tsx(7,23): error TS2307: Cannot find module '../../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/kak-vybrat-cvet-radiatora-pod-interer/index.tsx(9,25): error TS2307: Cannot find module '../../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/kak-vybrat-cvet-radiatora-pod-interer/index.tsx(10,20): error TS2307: Cannot find module '../../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/panorama/index.tsx(7,18): error TS2307: Cannot find module '../../../components/hero/hero' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/panorama/index.tsx(8,24): error TS2307: Cannot find module '../../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/panorama/index.tsx(9,23): error TS2307: Cannot find module '../../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/panorama/index.tsx(10,25): error TS2307: Cannot find module '../../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/panorama/index.tsx(11,20): error TS2307: Cannot find module '../../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/radiator-pod-nizkiy-podokonnik/index.tsx(7,24): error TS2307: Cannot find module '../../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/radiator-pod-nizkiy-podokonnik/index.tsx(8,23): error TS2307: Cannot find module '../../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/radiator-pod-nizkiy-podokonnik/index.tsx(10,25): error TS2307: Cannot find module '../../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/articles/radiator-pod-nizkiy-podokonnik/index.tsx(11,20): error TS2307: Cannot find module '../../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/coloring.tsx(6,24): error TS2307: Cannot find module '../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/coloring.tsx(7,23): error TS2307: Cannot find module '../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/coloring.tsx(9,24): error TS2307: Cannot find module '../utils/trackEvent' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/coloring.tsx(13,18): error TS2307: Cannot find module '../components/hero/hero' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/coloring.tsx(14,24): error TS2307: Cannot find module '../components/leadWidget/LeadWidget' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/coloring.tsx(15,25): error TS2307: Cannot find module '../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/coloring.tsx(16,20): error TS2307: Cannot find module '../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(1,29): error TS2307: Cannot find module '../../components/seo/ProductMetadata' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(6,18): error TS2307: Cannot find module '../../components/hero/hero' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(7,24): error TS2307: Cannot find module '../../components/modelBlock/modelBlock' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(8,24): error TS2307: Cannot find module '../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(10,35): error TS2307: Cannot find module '../../models/setComponentProps.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(12,27): error TS2307: Cannot find module '../../api_utils/getColorsData' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(13,32): error TS2307: Cannot find module '../../api_utils/getConnectionsData' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(15,28): error TS2307: Cannot find module '../../components/pageModels/downloadsBlock' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(16,29): error TS2307: Cannot find module '../../components/pageModels/imagesOtherList' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(17,32): error TS2307: Cannot find module '../../components/pageModels/radiatorAllOptions' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(18,32): error TS2307: Cannot find module '../../components/pageModels/radiatorInCartList' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(19,23): error TS2307: Cannot find module '../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(20,29): error TS2307: Cannot find module '../../models/colorOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(21,34): error TS2307: Cannot find module '../../models/connectionOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(22,29): error TS2307: Cannot find module '../../models/modelOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(23,25): error TS2307: Cannot find module '../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/2057.tsx(24,20): error TS2307: Cannot find module '../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(1,29): error TS2307: Cannot find module '../../components/seo/ProductMetadata' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(7,18): error TS2307: Cannot find module '../../components/hero/hero' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(8,24): error TS2307: Cannot find module '../../components/modelBlock/modelBlock' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(9,24): error TS2307: Cannot find module '../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(11,35): error TS2307: Cannot find module '../../models/setComponentProps.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(13,27): error TS2307: Cannot find module '../../api_utils/getColorsData' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(14,32): error TS2307: Cannot find module '../../api_utils/getConnectionsData' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(16,28): error TS2307: Cannot find module '../../components/pageModels/downloadsBlock' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(17,29): error TS2307: Cannot find module '../../components/pageModels/imagesOtherList' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(18,32): error TS2307: Cannot find module '../../components/pageModels/radiatorAllOptions' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(19,32): error TS2307: Cannot find module '../../components/pageModels/radiatorInCartList' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(20,23): error TS2307: Cannot find module '../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(21,29): error TS2307: Cannot find module '../../models/colorOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(22,34): error TS2307: Cannot find module '../../models/connectionOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(23,29): error TS2307: Cannot find module '../../models/modelOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(24,25): error TS2307: Cannot find module '../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/3057.tsx(25,20): error TS2307: Cannot find module '../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(6,24): error TS2307: Cannot find module '../../components/pageHeader/pageHeader' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(7,29): error TS2307: Cannot find module '../../components/seo/ProductMetadata' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(8,28): error TS2307: Cannot find module '../../components/pageModels/Stock3030Guide' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(9,28): error TS2307: Cannot find module '../../components/pageModels/downloadsBlock' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(10,29): error TS2307: Cannot find module '../../components/pageModels/imagesOtherList' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(11,30): error TS2307: Cannot find module '../../components/pageModels/modelMainSection' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(12,32): error TS2307: Cannot find module '../../components/pageModels/radiatorAllOptions' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(13,32): error TS2307: Cannot find module '../../components/pageModels/radiatorInCartList' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(14,23): error TS2307: Cannot find module '../../components/pageTitle/pageTitle' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(15,26): error TS2307: Cannot find module '../../components/radiatorList/radiatorList' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(17,27): error TS2307: Cannot find module '../../api_utils/getColorsData' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(18,32): error TS2307: Cannot find module '../../api_utils/getConnectionsData' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(21,33): error TS2307: Cannot find module '../../contexts/currencyContext' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(23,29): error TS2307: Cannot find module '../../models/colorOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(24,34): error TS2307: Cannot find module '../../models/connectionOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(25,29): error TS2307: Cannot find module '../../models/modelOrigin.model' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(28,42): error TS2307: Cannot find module '../../components/generalTextAboutArbonia' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(29,20): error TS2307: Cannot find module '../../variables/global' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(30,25): error TS2307: Cannot find module './../../styles/styles' or its corresponding type declarations.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(95,10): error TS2339: Property 'rateEuro' does not exist on type 'ServerContextJSONValue'.
+audit/2026-10-13/batch-2-before/pages/models/[id].tsx(95,20): error TS2339: Property 'isFetching' does not exist on type 'ServerContextJSONValue'.

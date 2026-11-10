@@ -1,3 +1,4 @@
+import ProductMetadata from '../../../components/seo/ProductMetadata'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -44,6 +45,7 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 			itemScope
 			itemType='https://schema.org/IndividualProduct'
 		>
+			<ProductMetadata description={`${radiatorTitle}: ${sectionQnty} секций, высота ${model.height} мм, глубина ${model.width} мм.`} sku={`${model.id}-${sectionQnty}`} />
 			<Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${model.id}`} /></Head>
 			<PageTitle
 				header={'Специализированный магазин Arbonia в России'}

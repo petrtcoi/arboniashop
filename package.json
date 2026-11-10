@@ -2,37 +2,37 @@
   "name": "charleston_store",
   "private": true,
   "engines": {
-    "node": ">=18.17"
+    "node": ">=22.12.0"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap --config next-sitemap.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.2.5",
     "@mui/material": "^5.2.7",
-    "axios": "^0.24.0",
+    "axios": "^1.21.0",
     "csv-string": "^4.0.1",
-    "next": "14.2.35",
-    "next-sitemap": "^2.0.7",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "next": "^16.4.4",
+    "next-sitemap": "^4.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-ga": "^3.3.0",
     "react-material-ui-carousel": "^3.1.1",
     "react-yandex-metrika": "^2.6.0",
     "styled-jsx": "^5.1.6"
   },
   "devDependencies": {
-    "@types/node": "^20.14.0",
-    "@types/react": "^18.3.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
-    "eslint": "8.6.0",
-    "eslint-config-next": "14.2.35",
-    "typescript": "^5.4.5"
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.4.3",
+    "typescript": "^5.9.3"
   }
 }

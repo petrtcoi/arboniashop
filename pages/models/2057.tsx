@@ -1,3 +1,4 @@
+import ProductMetadata from '../../components/seo/ProductMetadata'
 import { Box, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
 import React, { useRef } from 'react'
@@ -41,6 +42,7 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<ProductMetadata description={`Стальной трубчатый радиатор Arbonia 2057: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='2057' />
 			<meta
 				itemProp='name'
 				content='Радиатор Arbonia 2057'
@@ -54,7 +56,7 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				content='Сталь'
 			/>
 			<PageHeader
-				title={'Радиаторы Arbonia 2057 | Выгодные цены | Гарантия'}
+				title={'Arbonia 2057 — радиатор высотой 57 см: цены и наличие'}
 				description='Двухтрубчатые радиаторы Arbonia 2057 в наличии (высота 57 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка по России.'
 			/>
 			<PageTitle
@@ -127,7 +129,7 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							Радиатор Arbonia 2057 - двухтрубчатая модель высотой 57 см. Он идеально подойдет для установки под
 							стандартные окна, оставляя достаточно места для подключения снизу и под подоконником. Толщина радиатора
 							составляет всего 65 мм, что придает ему изысканный внешний вид. При небольших габаритах, радиатор обладает
-							достаточно высокой тепловой мощностью: 54 Вт (ΔT=60°). Модель доступна в наличии с боковым и с нижним
+							достаточно высокой тепловой мощностью: 53 Вт (ΔT=60°). Модель доступна в наличии с боковым и с нижним
 							подключением.
 						</p>
 						<p>
@@ -158,9 +160,7 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							полную глубину радиатора как 9-10 см и тогда вы точно не ошибетесь.
 						</p>
 						<p>
-							<span style={{ ...styles.smallTextBold }}>Мощность секции: 54 Вт (ΔT=60°).</span> При среднем расчете 100
-							Вт/м2, такой секции будет достаточно для обогрева 0.54 кв.м. В случае хорошей теплоизоляции дома, одной
-							секции может быть достаточно для обогрева 1.5 кв.м.
+							<span style={{ ...styles.smallTextBold }}>Мощность секции: 42 Вт при ΔT50 и 53 Вт при ΔT60.</span> Число секций подбирают по нагрузке помещения и фактическому температурному режиму, затем проверяют длину корпуса и подключения.
 						</p>
 					</Typography>
 				</Box>

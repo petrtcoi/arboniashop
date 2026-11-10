@@ -1,3 +1,4 @@
+import ProductMetadata from '../../components/seo/ProductMetadata'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 
@@ -42,6 +43,7 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<ProductMetadata description={`Стальной трубчатый радиатор Arbonia 3057: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='3057' />
 			<meta
 				itemProp='name'
 				content='Радиатор Arbonia 3057'
@@ -55,7 +57,7 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				content='Сталь'
 			/>
 			<PageHeader
-				title={'Радиаторы Arbonia 3057 | Выгодные цены | Гарантия'}
+				title={'Arbonia 3057 — радиатор 57 см, межосевое 500 мм: цены и наличие'}
 				description='Трехтрубчатые радиаторы Arbonia 3057 в наличии (высота 57 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка по России.'
 			/>
 			<PageTitle
@@ -123,7 +125,7 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					<Typography sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 3057 - является наиболее универсальной моделью от Arbonia. С одной стороны, он обладает
-							высокой тепловой мощностью в 78 Вт / секция (ΔT=60°). С другой, его толщина составляет всего 105 мм. При
+							высокой тепловой мощностью в 73 Вт / секция (ΔT=60°). С другой, его толщина составляет всего 105 мм. При
 							подборе радиатора взамен старых панельных или чугунных батарей, Arbonia 3057 должен быть вашим базовым
 							вариантом. Еще одним преимуществом 3-трубчатого радиатора является более низкая стоимость по сравнению с
 							более тонкими 2-трубчатыми радиаторами аналогичной мощности. Модель доступна в наличии с боковым и с
@@ -169,12 +171,12 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							глубину, сопоставимую с большинством современных моделей.
 						</p>
 						<p>
-							<span style={{ ...styles.smallTextBold }}>Мощность секции: 78 Вт (ΔT=60°).</span> При среднем расчете 100
-							Вт/м2, такой секции будет достаточно для обогрева 0.8 кв.м. В случае хорошей теплоизоляции дома, одной
-							секции может быть достаточно для обогрева 2.5 кв.м.
+							<span style={{ ...styles.smallTextBold }}>Мощность секции: 58 Вт при ΔT50 и 73 Вт при ΔT60.</span> Число секций подбирают по нагрузке помещения и фактическому температурному режиму, затем проверяют длину корпуса и подключения.
 						</p>
 					</Typography>
 				</Box>
+
+				<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}><Typography component='p' sx={styles.standardText}>По известной нагрузке воспользуйтесь <a href='/articles/arbonia-3057-skolko-sektsiy-dlina-moshchnost'>таблицей секций, мощности и длины Arbonia 3057</a>: в ней отдельно показан режим 55/45/20.</Typography></Box>
 
 				{/* 3057 боковое*/}
 				<Box

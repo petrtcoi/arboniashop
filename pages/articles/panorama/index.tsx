@@ -1,12 +1,12 @@
 import { Box, Button, Typography } from '@mui/material'
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Script from 'next/script'
 import React from 'react'
 
 import Hero from '../../../components/hero/hero'
 import PageHeader from '../../../components/pageHeader/pageHeader'
 import PageTitle from '../../../components/pageTitle/pageTitle'
+import JsonLd from '../../../components/seo/JsonLd'
 import * as styles from '../../../styles/styles'
 import global from '../../../variables/global'
 
@@ -24,7 +24,7 @@ const faqItems = [
 	{
 		question: 'Что выбрать: низкий радиатор или внутрипольный конвектор?',
 		answer:
-			'Низкий радиатор проще обслуживать и он остаётся видимым. Внутрипольный конвектор сохраняет свободный обзор, но требует ниши в полу, регулярной очистки и корректного проекта. Сравнивают мощность, шум, глубину пола, монтаж и сервис.',
+			'Низкий радиатор устанавливается над полом, конвектору требуется подходящая ниша. Решение зависит от конструкции пола, нагрузки, режима отопления и обслуживания. Монтаж и эксплуатация двух вариантов разобраны в подробном сравнении низкого Arbonia и внутрипольного конвектора.',
 	},
 	{
 		question: 'Можно ли обойтись только тёплым полом?',
@@ -40,6 +40,7 @@ const articleJsonLd = {
 	description:
 		'Как выбрать отопление для панорамного окна: расчёт теплопотерь, низкие и вертикальные радиаторы Arbonia, внутрипольные конвекторы, тёплый пол и монтажные зазоры.',
 	mainEntityOfPage: 'https://arboniashop.ru/articles/panorama',
+	dateModified: '2026-10-13',
 	author: { '@type': 'Organization', name: 'ArboniaShop' },
 	publisher: { '@type': 'Organization', name: 'ArboniaShop' },
 }
@@ -60,8 +61,8 @@ const ArticlePage: NextPage = () => {
 	return (
 		<Box>
 			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/panorama' /></Head>
-			<Script id='panorama-article-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-			<Script id='panorama-faq-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+			<JsonLd data={articleJsonLd} />
+			<JsonLd data={faqJsonLd} />
 			<PageHeader
 				title='Радиаторы для панорамных окон: низкие или вертикальные'
 				description='Как выбрать отопление для панорамного окна: низкие и вертикальные радиаторы Arbonia, расчёт теплопотерь, размещение, подключение, сравнение с конвектором и тёплым полом.'
@@ -124,6 +125,7 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Box marginTop='38px'>
+					<Typography component='p' sx={styles.standardText} marginBottom='22px'>Два решения для оконной зоны разобраны в <a href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>подробном сравнении низкого Arbonia и внутрипольного конвектора</a>.</Typography>
 					<Typography component='h2' variant='h5'>Низкий радиатор перед панорамным окном</Typography>
 					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
 						Низкая модель повторяет логику классического расположения под окном: холодный воздух возле стекла
@@ -228,7 +230,7 @@ const ArticlePage: NextPage = () => {
 
 				<Box marginTop='44px'>
 					<Typography component='h2' variant='h5'>Частые вопросы</Typography>
-					{faqItems.map(item => <Box key={item.question} marginTop='22px'><Typography component='h3' variant='h6'>{item.question}</Typography><Typography sx={{ ...styles.standardText }} marginTop='8px'>{item.answer}</Typography></Box>)}
+					{faqItems.map(item => <Box key={item.question} marginTop='22px'><Typography component='h3' variant='h6'>{item.question}</Typography><Typography sx={{ ...styles.standardText }} marginTop='8px'>{item.question === 'Что выбрать: низкий радиатор или внутрипольный конвектор?' ? <>Низкий радиатор устанавливается над полом, конвектору требуется подходящая ниша. Решение зависит от конструкции пола, нагрузки, режима отопления и обслуживания. Монтаж и эксплуатация двух вариантов разобраны в <a href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>подробном сравнении низкого Arbonia и внутрипольного конвектора</a>.</> : item.answer}</Typography></Box>)}
 				</Box>
 				<Box marginTop='44px' marginBottom='30px'>
 					<Typography component='h2' variant='h5'>Итог</Typography>

@@ -4,6 +4,8 @@ import Head from 'next/head'
 import { useContext, useState } from 'react'
 
 import PageHeader from '../../components/pageHeader/pageHeader'
+import ProductMetadata from '../../components/seo/ProductMetadata'
+import Stock3030Guide from '../../components/pageModels/Stock3030Guide'
 import DownloadsBlock from '../../components/pageModels/downloadsBlock'
 import ImagesOtherList from '../../components/pageModels/imagesOtherList'
 import ModelMainSection from '../../components/pageModels/modelMainSection'
@@ -112,6 +114,7 @@ const Model: NextPage<ModelProps> = ({
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<ProductMetadata description={`${metaTitle}: стальной трубчатый радиатор высотой ${modelCurr.height} мм и глубиной ${modelCurr.width} мм. Размеры, мощность и цены по числу секций.`} sku={modelCurr.id} />
 			<Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${modelCurr.id}`} /></Head>
 			<meta
 				itemProp='countryOfOrigin'
@@ -125,7 +128,7 @@ const Model: NextPage<ModelProps> = ({
 			<PageHeader
 				title={`${metaTitle} — цена, размеры, мощность и наличие`}
 				description={`${metaTitle}: ${modelCurr.nameShort[0]}-трубчатая модель высотой ${modelCurr.height} мм и глубиной ${modelCurr.width} мм. Цены по числу секций, теплоотдача, размеры, подключение, гарантия 10 лет и доставка по России.`}
-				noindex={!CORE_VARIANT_MODEL_IDS.has(modelCurr.id)}
+				noindex={modelCurr.id.includes('-') && !CORE_VARIANT_MODEL_IDS.has(modelCurr.id)}
 			/>
 			<PageTitle
 				header={'Специализированный магазин Arbonia в России'}
@@ -251,6 +254,8 @@ const Model: NextPage<ModelProps> = ({
 					connectionTitle={connectionTitle}
 					handleBuyButton={setTabBuy}
 				/>
+				{modelCurr.id === '3030-9016-12' && <Stock3030Guide model={modelCurr} />}
+				{modelCurr.id.split('-')[0] === '3057' && <Typography component='p' sx={styles.standardText} marginTop='24px'>Для выбранного режима отопления посмотрите <a href='/articles/arbonia-3057-skolko-sektsiy-dlina-moshchnost'>как рассчитать число секций Arbonia 3057</a>.</Typography>}
 				<Box marginTop='40px'>
 					<Divider variant='middle' />
 				</Box>

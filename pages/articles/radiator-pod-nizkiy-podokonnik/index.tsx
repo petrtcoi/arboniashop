@@ -13,10 +13,10 @@ import global from '../../../variables/global'
 const siteUrl = 'https://arboniashop.ru'
 const slug = 'radiator-pod-nizkiy-podokonnik'
 const keyword = 'радиатор под низкий подоконник'
-const h1 = 'Радиатор под низкий подоконник - как выбрать Arbonia'
-const metaTitle = 'Радиатор под низкий подоконник - выбор Arbonia'
+const h1 = 'Радиатор под низкий подоконник: замер ниши и выбор высоты'
+const metaTitle = 'Радиатор под низкий подоконник: высота и размеры ниши'
 const metaDescription =
-	'Как выбрать радиатор под низкий подоконник: расчет доступной высоты, сравнение Arbonia 2030 и 3030, мощность, подключение и монтажные зазоры.'
+	'Как измерить нишу под низким подоконником: чистовой пол, высота корпуса, глубина, место подключения и монтажное пространство для радиатора Arbonia.'
 
 const quickPickRows = [
 	{
@@ -135,7 +135,7 @@ const ArticlePage: NextPage = () => {
 		description: metaDescription,
 		image: `${siteUrl}/images/models/3030-0.jpeg`,
 		datePublished: '2026-07-21',
-		dateModified: '2026-07-21',
+		dateModified: '2026-10-13',
 		mainEntityOfPage: `${siteUrl}/articles/${slug}`,
 		about: keyword,
 		keywords: [keyword, 'низкие радиаторы Arbonia', 'Arbonia 2030', 'Arbonia 3030'],
@@ -155,15 +155,6 @@ const ArticlePage: NextPage = () => {
 		})),
 	}
 
-	const breadcrumbJsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: [
-			{ '@type': 'ListItem', position: 1, name: 'Главная', item: siteUrl },
-			{ '@type': 'ListItem', position: 2, name: 'Полезная информация', item: `${siteUrl}/articles` },
-			{ '@type': 'ListItem', position: 3, name: h1, item: `${siteUrl}/articles/${slug}` },
-		],
-	}
 
 	return (
 		<Box>
@@ -183,11 +174,6 @@ const ArticlePage: NextPage = () => {
 				id='radiator-pod-nizkiy-podokonnik-faq-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-			/>
-			<Script
-				id='radiator-pod-nizkiy-podokonnik-breadcrumb-jsonld'
-				type='application/ld+json'
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
 			/>
 
 			<PageHeader
@@ -277,25 +263,22 @@ const ArticlePage: NextPage = () => {
 					/>
 				</Box>
 
-				<SectionHeading>Arbonia 2030 или 3030 - сравнение по мощности</SectionHeading>
-				<Paragraph marginTop='0'>
-					В техническом каталоге Arbonia для режима 75/65/20 и высоты 300 мм указано 24 Вт на элемент у модели 2030 и
-					33 Вт у модели 3030. При одинаковом числе секций 3030 дает примерно на 38% больше номинальной мощности, но
-					занимает на 40 мм больше в глубину. Для условной нагрузки 900 Вт при том же температурном режиме расчет дает
-					38 секций 2030 или 28 секций 3030 после округления вверх. Это иллюстрация разницы, а не готовый подбор для
-					комнаты, потому что мощность меняется вместе с температурой подачи, обратки и воздуха. Для реального объекта
-					нужен <LinkText href='/articles/calculate'>расчет радиатора по мощности</LinkText> с поправкой на режим системы.
-				</Paragraph>
-				<Paragraph>
-					Низкий прибор нередко приходится делать длиннее стандартной батареи, и это нормально, если он помещается в
-					оконной зоне. Более длинный радиатор перекрывает большую часть холодного остекления и равномернее распределяет
-					тепло вдоль него. Однако длина не должна мешать шторам, дверям на балкон, мебели и доступу к запорной арматуре.
-					Если рассчитанное число секций не помещается, простое уменьшение прибора приведет к дефициту мощности. В такой
-					ситуации переходят с 2030 на <LinkText href='/models/3030'>Arbonia 3030</LinkText>, добавляют второй радиатор или
-					переносят часть нагрузки на другой отопительный прибор.
-				</Paragraph>
+				<SectionHeading>Что делать, если нужная мощность не помещается по длине</SectionHeading>
+                <Paragraph marginTop='0'>После замера высоты проверьте доступную длину и допустимый выступ от стены.
+                    Меньшая глубина корпуса может потребовать больше секций, а более глубокий прибор — оставить меньше
+                    места для прохода. Не сокращайте радиатор ниже требуемой мощности только ради размещения в нише.</Paragraph>
+                <Paragraph>Для выбора базовой модели используйте
+                    <LinkText href='/articles/low-models'> сравнение низких Arbonia 2030, 3030 и 3037</LinkText>.
+                    Если остаётся выбор между высотой 300 и 370 мм, его разбирает
+                    <LinkText href='/articles/arbonia-3030-vs-3037'> сравнение 3030 и 3037</LinkText>.
+                    Расчёт уже выбранного 3030 приведён отдельно в таблице секций ниже по ссылке.</Paragraph>
 
 				<SectionHeading>Боковое и нижнее подключение в низкой нише</SectionHeading>
+				<Paragraph>
+					Для модели высотой 300 мм воспользуйтесь
+					<LinkText href='/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost'> таблицей мощности и числа секций Arbonia 3030</LinkText>.
+					В ней разобраны расчёты при ΔT50 и ΔT60 и проверка длины под окном.
+				</Paragraph>
 				<Paragraph marginTop='0'>
 					Боковое подключение удобно, когда трубы уже выходят из стены или проходят вдоль нее. Для низкой ниши оно часто
 					оказывается компактнее по вертикали, потому что под корпусом не размещается соединительный узел целиком.
@@ -319,10 +302,15 @@ const ArticlePage: NextPage = () => {
 					Вертикальная модель на простенке освобождает место под окном, но переносит тепловой прибор в сторону и меняет
 					распределение температуры. Поэтому решение принимают не по фотографии интерьера, а после сравнения теплопотерь,
 					доступной длины и размещения мебели. Для панорамного окна стоит также изучить отдельный разбор
-					<LinkText href='/articles/panorama'>радиаторов Arbonia для панорамного остекления</LinkText>.
+					<LinkText href='/articles/panorama'>радиаторов Arbonia для панорамного остекления</LinkText>. Для окна до пола есть <LinkText href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>сравнение низкого радиатора и конвектора в полу</LinkText>.
 				</Paragraph>
 
 				<SectionHeading>Ошибки при подборе</SectionHeading>
+				<Paragraph>
+					Если над прибором будет рабочая поверхность или мебель, прочитайте
+					<LinkText href='/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey'> что проверить у радиатора под глубокой столешницей</LinkText>:
+					движение воздуха, положение термоголовки и доступ к соединениям.
+				</Paragraph>
 				<Paragraph marginTop='0'>
 					Большинство ошибок появляется еще до расчета секций, когда в заказ передают только площадь комнаты и примерную
 					высоту подоконника. Для надежного подбора нужен единый комплект исходных данных, который позволяет проверить

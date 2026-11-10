@@ -1,3 +1,4 @@
+import ProductMetadata from '../../components/seo/ProductMetadata'
 import { Box, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
 import React, { useRef } from 'react'
@@ -41,6 +42,7 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<ProductMetadata description={`Стальной трубчатый радиатор Arbonia 3050: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='3050' />
 			<meta
 				itemProp='name'
 				content='РадиаторArbonia 3050'
@@ -54,7 +56,7 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				content='Сталь'
 			/>
 			<PageHeader
-				title={'Радиаторы Arbonia 3050 | Выгодные цены | Гарантия'}
+				title={'Arbonia 3050 — трёхтрубчатый радиатор 50 см: цены и наличие'}
 				description='Трехтрубчатые радиаторы Arbonia 3050 в наличии (высота 50 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка по России.'
 			/>
 			<PageTitle

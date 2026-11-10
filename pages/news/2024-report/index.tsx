@@ -21,7 +21,7 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Новости', link: '/news' },
-					{ title: 'Отчет за полугодие 2024', link: '/news/2023-report' },
+					{ title: 'Отчет за полугодие 2024', link: '/news/2024-report' },
 				]}
 			/>
 

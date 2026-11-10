@@ -1,3 +1,4 @@
+import ProductMetadata from '../../components/seo/ProductMetadata'
 import { Box, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
 import React, { useRef } from 'react'
@@ -42,6 +43,7 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
+			<ProductMetadata description={`Стальной трубчатый радиатор Arbonia 3180: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='3180' />
 			<meta
 				itemProp='name'
 				content='Радиатор Arbonia 3180'
@@ -55,7 +57,7 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				content='Сталь'
 			/>
 			<PageHeader
-				title={'Радиаторы Arbonia 3180 | Выгодные цены | Гарантия'}
+				title={'Arbonia 3180 — вертикальный трёхтрубчатый радиатор 180 см: цены и наличие'}
 				description='Вертикальные радиаторы Arbonia 3180 в наличии (3-трубчатые). Большой выбор моделей. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка в любой город России.'
 			/>
 			<PageTitle

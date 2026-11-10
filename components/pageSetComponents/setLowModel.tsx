@@ -111,7 +111,7 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
 					</Typography>
 					<Typography sx={{ ...styles.standardText, marginTop: '12px' }}>
 						Пошаговые замеры приведены в руководстве «<a href='/articles/radiator-pod-nizkiy-podokonnik'>как выбрать
-						радиатор под низкий подоконник</a>», а различия близких моделей — в сравнении «<a href='/articles/arbonia-3030-vs-3037'>Arbonia 3030 или 3037</a>».
+						радиатор под низкий подоконник</a>», а различия близких моделей — в сравнении «<a href='/articles/arbonia-3030-vs-3037'>Arbonia 3030 или 3037</a>». Для панорамного окна узнайте, <a href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>когда вместо низкого радиатора нужен внутрипольный конвектор</a>.
 					</Typography>
 				</Box>
 				<Box marginTop='42px'>

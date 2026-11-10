@@ -1,6 +1,5 @@
 import { Box, Divider, Grid, Typography } from '@mui/material'
 import { NextComponentType } from 'next'
-import Script from 'next/script'
 
 import {
 	footerText,
@@ -245,7 +244,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 				</Grid>
 			</Box>
 
-			<Script
+			<script
 				id='organization-schema-arboniashop'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{
@@ -253,6 +252,8 @@ const Footer: NextComponentType<FooterProps> = () => {
 						{
 							'@context': 'https://schema.org',
 							'@type': 'Organization',
+							'@id': 'https://arboniashop.ru/#organization',
+							hasMerchantReturnPolicy: { '@type': 'MerchantReturnPolicy', merchantReturnLink: 'https://arboniashop.ru/delivery#returns' },
 							name: 'ArboniaShop',
 							legalName: 'ООО «ХОУМ КОМФОРТ»',
 							url: 'https://arboniashop.ru',

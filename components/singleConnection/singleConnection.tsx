@@ -22,7 +22,9 @@ const SingleConnection: React.FC<SingleConnectionProps> = ({
       sx={{ ...styles.textLinkBlock, color: highlighted ? "red" : "" }}
       onClick={() => handleClick(connection.id ? connection.id : "none")}
     >
-      <Box alignContent={"center"}>
+      <Box sx={{
+        alignContent: "center"
+      }}>
         <img
           src={`/images/connections/${connection.img}`}
           width="150px"
@@ -30,7 +32,9 @@ const SingleConnection: React.FC<SingleConnectionProps> = ({
           alt={`Подключение радиатора Arbonia: ${connection.name}`}
         />
       </Box>
-      <Box marginTop={"-10px"}>
+      <Box sx={{
+        marginTop: "-10px"
+      }}>
         <Typography sx={{ ...styles.smallText, color: "inherit" }}>
           {connection.description}
         </Typography>

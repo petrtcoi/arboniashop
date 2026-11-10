@@ -1,4 +1,5 @@
 import { Box, Button, Typography } from '@mui/material'
+import { formatPriceFrom, getStockPriceFrom } from '../../utils/getPriceFrom'
 import Head from 'next/head'
 import React from 'react'
 
@@ -14,20 +15,24 @@ import * as styles from '../../styles/styles'
 import global from '../../variables/global'
 
 const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
+	// Цена «от» — минимальная цена складских исполнений, показанных в подборке (первая строка таблиц ModelBlock).
+	const priceFrom = getStockPriceFrom({ models, colors, connections, ids: ['2180-7016-12', '2180-7016-69tvv', '2180-9016-12', '2180-9016-69tvv', '2180-sf3-12', '2180-sf3-69tvv', '3180-7016-12', '3180-7016-69tvv', '3180-9016-12', '3180-9016-69tvv', '3180-sf3-12', '3180-sf3-69tvv'] })
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/high-models' /></Head>
-			<PageHeader
-				title={'Вертикальные радиаторы Arbonia — купить модели 2180 и 3180'}
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/high-models' /></Head>
+            <PageHeader
+				title={priceFrom ? `Вертикальные радиаторы Arbonia 2180 и 3180 — цены от ${formatPriceFrom(priceFrom)}` : 'Вертикальные радиаторы Arbonia — купить модели 2180 и 3180'}
 				description='Вертикальные трубчатые радиаторы Arbonia 2180 и 3180 высотой 180 см: цены, размеры, мощность, цвета, боковое и нижнее подключение. В наличии, гарантия 10 лет, доставка по России.'
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/high.jpeg'}
 				header={'Вертикальные радиаторы Arbonia'}
 				subheader={'Складские модели радиаторов высотой 180 см'}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
-				<Box marginTop='20px'>
+            <Box sx={{ ...global.pagePadding }}>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Вертикальные радиаторы Arbonia 2180 и 3180 используют высоту стены, когда под обычным окном нет места:
 						рядом с панорамным остеклением, на узком простенке, в кухне-гостиной или прихожей. Модель 2180 — более
@@ -35,7 +40,9 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 						Нужное число секций определяют по расчётной мощности, а не только по свободной ширине стены.
 					</Typography>
 				</Box>
-				<Box marginTop='20px'>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						В наличии представлены белый RAL 9016, антрацит RAL 7016 и Anthrazit metallic SF-3, модификации с боковым
 						подключением №12 и нижним №69 ТВВ. Перед покупкой нужно проверить теплопотери помещения, габарит с
@@ -43,7 +50,13 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 						прибора и схему монтажа согласуют с требованиями дома.
 					</Typography>
 				</Box>
-				<Box marginTop='24px' display='flex' flexWrap='wrap' gap='12px'>
+				<Box
+                    sx={{
+                        marginTop: '24px',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '12px'
+                    }}>
 					<a href='/request' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Рассчитать вертикальный радиатор</Button></a>
 					<a href='/articles/panorama' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Как выбрать радиатор для панорамного окна</Button></a>
 				</Box>
@@ -171,7 +184,9 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 
 				<CatalogPopularLinks current='high-models' />
 
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -261,8 +276,8 @@ const SetHighModel: React.FC<SetComponentProps> = ({ models, colors, connections
 					</ul>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default SetHighModel

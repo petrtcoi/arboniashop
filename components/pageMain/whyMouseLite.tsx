@@ -8,23 +8,25 @@ type WhyMouseLiteProps = {}
 
 const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
 	return (
-		<Box>
-			<Grid
+        <Box>
+            <Grid
 				container
 				spacing={2}
 			>
 				<Grid
-					item
-					xs={12}
-					md={6}
-				>
+                    size={{
+                        xs: 12,
+                        md: 6
+                    }}>
 					<Typography
 						variant='h5'
 						component='h2'
 					>
 						Покупайте Arbonia у профессионалов
 					</Typography>
-					<Box marginTop='20px' />
+					<Box sx={{
+                        marginTop: '20px'
+                    }} />
 					<Typography sx={{ ...styles.standardText }}>
 						Мы работаем с 2009 года и за это время накопили огромный опыт работы с продукцией фирмы Arbonia. Он
 						позволяет нам подобрать оптимальный вариант для каждого заказчика, исходя из его предпочтений, желаемого
@@ -45,10 +47,10 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
 					</Typography>
 				</Grid>
 				<Grid
-					item
-					xs={12}
-					md={6}
-				>
+                    size={{
+                        xs: 12,
+                        md: 6
+                    }}>
 					<Box
 						component='div'
 						sx={{ ...styles.standardText, lineHeight: '2rem' }}
@@ -65,8 +67,8 @@ const WhyMouseLite: React.FC<WhyMouseLiteProps> = () => {
 					</Box>
 				</Grid>
 			</Grid>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default WhyMouseLite

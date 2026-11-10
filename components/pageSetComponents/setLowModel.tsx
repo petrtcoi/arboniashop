@@ -1,4 +1,5 @@
 import { Box, Button, Typography } from '@mui/material'
+import { formatPriceFrom, getStockPriceFrom } from '../../utils/getPriceFrom'
 import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
@@ -47,25 +48,29 @@ const faqJsonLd = {
 const cellStyle: React.CSSProperties = { border: '1px solid #dddddd', padding: '10px 12px', verticalAlign: 'top' }
 
 const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
+	// Цена «от» — минимальная цена складских исполнений, показанных в подборке (первая строка таблиц ModelBlock).
+	const priceFrom = getStockPriceFrom({ models, colors, connections, ids: ['2030-9016-12', '3030-9016-12', '3030-9016-69tvv', '3037-9016-12', '3037-9016-69tvv'] })
 	const white = colors.find(item => item.id === '9016') || colors[0]
 	const side = connections.find(item => item.id === '12') || connections[0]
 	const bottom = connections.find(item => item.id === '69tvv') || connections[0]
 
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/low-models' /></Head>
-			<Script id='low-radiators-faq-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-			<PageHeader
-				title='Низкие радиаторы Arbonia 30–37 см — цены, размеры и наличие'
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/low-models' /></Head>
+            <Script id='low-radiators-faq-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+            <PageHeader
+				title={priceFrom ? `Низкие радиаторы Arbonia 30–37 см — цены от ${formatPriceFrom(priceFrom)}` : 'Низкие радиаторы Arbonia 30–37 см — цены, размеры и наличие'}
 				description='Низкие трубчатые радиаторы Arbonia 2030, 3030 и 3037 высотой 30–37 см: цены, мощность, боковое и нижнее подключение. Для низких подоконников и панорамных окон.'
 			/>
-			<Hero
+            <Hero
 				imgPath='/images/sliders/slide.jpeg'
 				header='Низкие радиаторы Arbonia'
 				subheader='Складские модели высотой 30–37 см для низких подоконников и остекления'
 			/>
-			<Box sx={{ ...global.pagePadding }}>
-				<Box marginTop='24px'>
+            <Box sx={{ ...global.pagePadding }}>
+				<Box sx={{
+                    marginTop: '24px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Низкие радиаторы Arbonia применяют там, где стандартный прибор высотой 50–57 см не помещается: под
 						невысоким подоконником, перед остеклением, в мансарде или в нише. В складскую программу входят Arbonia
@@ -73,7 +78,9 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
 						нельзя оценивать только по высоте корпуса — нужны зазоры для движения воздуха, кронштейнов, труб и арматуры.
 					</Typography>
 				</Box>
-				<Box marginTop='18px'>
+				<Box sx={{
+                    marginTop: '18px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Модель 2030 — двухтрубчатая и глубиной 65 мм. Модели 3030 и 3037 — трёхтрубчатые, поэтому глубже и
 						мощнее при одинаковой длине. Низкая высота сама по себе не означает низкую мощность: можно увеличить число
@@ -81,12 +88,20 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
 						дверь на балкон или доступ к окну, поэтому подбор всегда связывает тепловой расчёт с планировкой.
 					</Typography>
 				</Box>
-				<Box marginTop='26px' display='flex' flexWrap='wrap' gap='12px'>
+				<Box
+                    sx={{
+                        marginTop: '26px',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '12px'
+                    }}>
 					<a href='/request' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Подобрать низкий радиатор</Button></a>
 					<a href='/articles/panorama' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Как выбрать для панорамного окна</Button></a>
 				</Box>
 
-				<Box marginTop='46px'>
+				<Box sx={{
+                    marginTop: '46px'
+                }}>
 					<Typography component='h2' variant='h5'>Сравнение моделей 2030, 3030 и 3037</Typography>
 					<Box sx={{ overflowX: 'auto', marginTop: '18px' }}>
 						<table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px' }}>
@@ -100,7 +115,9 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
 					</Box>
 				</Box>
 
-				<Box marginTop='42px'>
+				<Box sx={{
+                    marginTop: '42px'
+                }}>
 					<Typography component='h2' variant='h5'>Как измерить нишу</Typography>
 					<Typography sx={{ ...styles.standardText, marginTop: '14px' }}>
 						Измеряйте расстояние от чистового пола до нижней поверхности подоконника или рамы. Из этой величины нужно
@@ -114,7 +131,9 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
 						радиатор под низкий подоконник</a>», а различия близких моделей — в сравнении «<a href='/articles/arbonia-3030-vs-3037'>Arbonia 3030 или 3037</a>». Для панорамного окна узнайте, <a href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>когда вместо низкого радиатора нужен внутрипольный конвектор</a>.
 					</Typography>
 				</Box>
-				<Box marginTop='42px'>
+				<Box sx={{
+                    marginTop: '42px'
+                }}>
 					<Typography component='h2' variant='h5'>Мощность и размещение у стекла</Typography>
 					<Typography sx={{ ...styles.standardText, marginTop: '14px' }}>
 						Чем ниже радиатор, тем больше секций обычно требуется для той же тепловой нагрузки. При панорамном
@@ -125,7 +144,9 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
 					</Typography>
 				</Box>
 
-				<Box marginTop='52px'><Typography component='h2' variant='h4'>Низкие модели в наличии</Typography></Box>
+				<Box sx={{
+                    marginTop: '52px'
+                }}><Typography component='h2' variant='h4'>Низкие модели в наличии</Typography></Box>
 				<ModelBlock
 					title='Arbonia 2030 RAL 9016, боковое подключение 3/4'
 					description='Самая тонкая низкая модель складской подборки: высота около 30 см и глубина 65 мм. Подходит для небольших ниш, если расчётной мощности достаточно.'
@@ -162,14 +183,18 @@ const SetLowModel: React.FC<SetComponentProps> = ({ models, colors, connections 
 					connection={bottom}
 				/>
 
-				<Box marginTop='48px'>
+				<Box sx={{
+                    marginTop: '48px'
+                }}>
 					<Typography component='h2' variant='h5'>Частые вопросы</Typography>
-					{faqItems.map(item => <Box key={item.question} marginTop='22px'><Typography component='h3' variant='h6'>{item.question}</Typography><Typography sx={{ ...styles.standardText, marginTop: '8px' }}>{item.answer}</Typography></Box>)}
+					{faqItems.map(item => <Box key={item.question} sx={{
+                        marginTop: '22px'
+                    }}><Typography component='h3' variant='h6'>{item.question}</Typography><Typography sx={{ ...styles.standardText, marginTop: '8px' }}>{item.answer}</Typography></Box>)}
 				</Box>
 				<CatalogPopularLinks current='low-models' />
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default SetLowModel

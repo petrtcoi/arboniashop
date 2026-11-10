@@ -13,8 +13,16 @@ type WhyBuyProps = {};
 const WhyBuy: React.FC<WhyBuyProps> = () => {
   return (
     <Grid container spacing={2}>
-      <Grid item xs={6} md={3}>
-        <Box textAlign="center" marginBottom="5px">
+      <Grid
+        size={{
+          xs: 6,
+          md: 3
+        }}>
+        <Box
+          sx={{
+            textAlign: "center",
+            marginBottom: "5px"
+          }}>
           <LocalShippingOutlinedIcon
             sx={{ fontSize: "60px", color: colors.dark }}
           />
@@ -23,9 +31,19 @@ const WhyBuy: React.FC<WhyBuyProps> = () => {
           Быстрая доставка
         </Typography>
       </Grid>
-      <Grid item xs={6} md={3}>
-        <Box alignItems="center">
-          <Box textAlign="center" marginBottom="5px">
+      <Grid
+        size={{
+          xs: 6,
+          md: 3
+        }}>
+        <Box sx={{
+          alignItems: "center"
+        }}>
+          <Box
+            sx={{
+              textAlign: "center",
+              marginBottom: "5px"
+            }}>
             <LocalPoliceOutlinedIcon
               sx={{ fontSize: "60px", color: colors.dark }}
             />
@@ -35,16 +53,32 @@ const WhyBuy: React.FC<WhyBuyProps> = () => {
           </Typography>
         </Box>
       </Grid>
-      <Grid item xs={6} md={3}>
-        <Box textAlign="center" marginBottom="5px">
+      <Grid
+        size={{
+          xs: 6,
+          md: 3
+        }}>
+        <Box
+          sx={{
+            textAlign: "center",
+            marginBottom: "5px"
+          }}>
           <PaymentOutlinedIcon sx={{ fontSize: "60px", color: colors.dark }} />
         </Box>
         <Typography sx={styles.smallText} align="center">
           Оплата для физ. и юр. лиц
         </Typography>
       </Grid>
-      <Grid item xs={6} md={3}>
-        <Box textAlign="center" marginBottom="5px">
+      <Grid
+        size={{
+          xs: 6,
+          md: 3
+        }}>
+        <Box
+          sx={{
+            textAlign: "center",
+            marginBottom: "5px"
+          }}>
           <SquareFootOutlinedIcon
             sx={{ fontSize: "60px", color: colors.dark }}
           />

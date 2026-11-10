@@ -69,14 +69,14 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 	}
 
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={pageTitle}
 				description={pageDescription}
 				type='article'
 				image={pageImage}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -86,15 +86,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/high.jpeg'}
 				header={'Калькулятор количества секций Arbonia 2180'}
 			/>
-			<Typography
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Typography
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
                 <p>Калькулятор Arbonia 2180 позволяет менять площадь, высоту потолка, условия комнаты и ΔT50 или ΔT60,
                     чтобы получить предварительный минимум секций. База 100 Вт на 1 м² и поправочные коэффициенты —
                     условная модель оценки, а не индивидуальный расчёт теплопотерь. Если проектная нагрузка уже известна,
@@ -162,7 +166,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							type='number'
 							value={area}
 							onChange={(e) => setArea(Math.max(1, Number(e.target.value) || 1))}
-							inputProps={{ min: 1, step: 0.1 }}
+							slotProps={{ htmlInput: { min: 1, step: 0.1 } }}
 							size='small'
 							sx={{
 								'& .MuiInputBase-input': { fontSize: '14px' },
@@ -174,7 +178,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							type='number'
 							value={ceilingHeight}
 							onChange={(e) => setCeilingHeight(Math.max(2, Number(e.target.value) || 2))}
-							inputProps={{ min: 2, step: 0.1 }}
+							slotProps={{ htmlInput: { min: 2, step: 0.1 } }}
 							size='small'
 							sx={{
 								'& .MuiInputBase-input': { fontSize: '14px' },
@@ -184,7 +188,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<Box />
 					</Box>
 
-					<Box marginTop='12px'>
+					<Box sx={{
+                        marginTop: '12px'
+                    }}>
 						<Typography sx={{ fontWeight: 600, marginBottom: '6px', fontSize: '14px' }}>
 							Факторы теплопотерь (отметьте, что подходит):
 						</Typography>
@@ -246,7 +252,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						</FormGroup>
 					</Box>
 
-					<Box marginTop='16px'>
+					<Box sx={{
+                        marginTop: '16px'
+                    }}>
 						<p style={{ margin: '6px 0' }}>
 							Коэффициент по высоте потолка: <b>{heightCoef.toFixed(2)}</b>
 						</p>
@@ -320,8 +328,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                 mainEntity: faqItems.map(item => ({ '@type': 'Question', name: item.question,
                     acceptedAnswer: { '@type': 'Answer', text: item.answer } })),
             }} />
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

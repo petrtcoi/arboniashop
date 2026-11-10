@@ -14,15 +14,15 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya' /></Head>
-			<PageHeader
-				title={'Где установить радиатор: расстояние от пола, стены и подоконника'}
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya' /></Head>
+            <PageHeader
+				title={'Где разместить радиатор отопления: расстояния от пола, стены и окна'}
 				description={
-					'Где установить радиатор отопления и какие зазоры оставить до пола, стены, подоконника, мебели и штор. Размещение под окном, в нише и на простенке, частые ошибки монтажа.'
+					'Расстояния при монтаже: от пола 80–120 мм, от подоконника 60–100 мм, от стены 20–50 мм. Где ставить радиатор: под окном, в нише, на простенке, и где нельзя.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -33,17 +33,22 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				]}
 			/>
 
-			<Typography
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Typography
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component={'h1'}
-					variant='h4'
-					marginTop='10px'
-					marginBottom={'30px'}
-				>
+                    component={'h1'}
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '30px'
+                    }}>
 					Где разместить радиатор отопления: лучшие места и советы
 				</Typography>
 
@@ -87,9 +92,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 
 				<Box
-					textAlign={'center'}
-					maxWidth={700}
-				>
+                    sx={{
+                        textAlign: 'center',
+                        maxWidth: 700
+                    }}>
 					<img
 						src='/images/articles/underwindow.jpeg'
 						alt='Трубчатый радиатор Arbonia под окном'
@@ -258,8 +264,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					энергопотребление.
 				</p>
 			</Typography>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

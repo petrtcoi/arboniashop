@@ -33,12 +33,6 @@ const clusterArticles = [
 	},
 
 	{
-		slug: 'ral-9016-9010-9003-kakoy-belyy-vybrat',
-		title: 'RAL 9016, RAL 9010 или RAL 9003: какой белый выбрать для радиатора',
-		description: 'Сравниваем три белых оттенка, блеск покрытия и сочетание со стеной, окнами и мебелью.',
-		image: '/images/sliders/slide-colors.jpg',
-	},
-	{
 		slug: 'arbonia-3030-skolko-sektsiy-dlina-moshchnost',
 		title: 'Сколько секций Arbonia 3030 нужно: длина и мощность',
 		description: 'Таблица от 10 до 32 секций, расчёты при ΔT50 и ΔT60 и проверка доступной длины.',
@@ -54,9 +48,9 @@ const clusterArticles = [
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 	return (
-		<Box>
-			<PageHeader title={'Полезная информация Arbonia'} />
-			<PageTitle
+        <Box>
+            <PageHeader title={'Полезная информация о радиаторах Arbonia: статьи и советы'} description={'Статьи о трубчатых радиаторах Arbonia: выбор модели и цвета, расчёт мощности, размещение, подключение, монтаж и уход. Практические советы перед заказом.'} />
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
@@ -64,39 +58,56 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					{ title: 'Полезная информация', link: '/articles' },
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Полезная информация Arbonia'}
 			/>
-			<Box
-				sx={{ ...global.pagePadding }}
-				marginTop='50px'
-			>
+            <Box
+                sx={{
+                    marginTop: '50px',
+                    ...global.pagePadding
+                }}>
 				<Grid
 					container
 					spacing={5}
 				>
 					{clusterArticles.map(article => (
-						<Grid item xs={12} md={6} key={article.slug}>
+						<Grid
+                            key={article.slug}
+                            size={{
+                                xs: 12,
+                                md: 6
+                            }}>
 							<a href={`/articles/${article.slug}`} style={{ textDecoration: 'none' }}>
-								<Box textAlign='center'>
+								<Box sx={{
+                                    textAlign: 'center'
+                                }}>
 									<img src={article.image} alt={article.title} width={300} height={174}
 										style={{ maxWidth: '100%', borderRadius: '8px', objectFit: 'contain' }} />
 									<Typography sx={{ ...styles.standardTextRedLink, marginTop: '10px' }} component='div'>
 										{article.title}
 									</Typography>
 								</Box>
-								<Box maxWidth={360} margin='10px auto 0'>
+								<Box
+                                    sx={{
+                                        maxWidth: 360,
+                                        margin: '10px auto 0'
+                                    }}>
 									<Typography sx={{ ...styles.smallText }} component='p'>{article.description}</Typography>
 								</Box>
 							</a>
 							</Grid>
 					))}
-					<Grid item md={6}>
+					<Grid
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a style={{ textDecoration: 'none' }} href='/articles/trubchatye-ili-bimetallicheskie-radiatory'>
 								<div>
-									<Box textAlign='center'>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/underwindow.jpeg'
 											alt='Сравнение трубчатых и биметаллических радиаторов'
@@ -105,12 +116,22 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											style={{ borderRadius: '8px', objectFit: 'cover' }}
 										/>
 									</Box>
-									<Box textAlign='center' marginTop='10px'>
+									<Box
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
 											Трубчатые или биметаллические радиаторы: что выбрать
 										</Typography>
 									</Box>
-									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+									<Box
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
 											Сравниваем конструкцию, давление, мощность, размеры, уход, подключение и полную стоимость для квартиры и дома.
 										</Typography>
@@ -120,11 +141,16 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						</Box>
 					</Grid>
 
-					<Grid item md={6}>
+					<Grid
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a style={{ textDecoration: 'none' }} href='/articles/kak-vybrat-cvet-radiatora-pod-interer'>
 								<div>
-									<Box textAlign='center'>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/sliders/slide-colors.jpg'
 											alt='Выбор цвета радиатора Arbonia для интерьера'
@@ -133,12 +159,22 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											style={{ borderRadius: '8px', objectFit: 'cover' }}
 										/>
 									</Box>
-									<Box textAlign='center' marginTop='10px'>
+									<Box
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
 											Как выбрать цвет радиатора Arbonia под интерьер
 										</Typography>
 									</Box>
-									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+									<Box
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
 											Порядок согласования модели, физических образцов, блеска, арматуры и покрытия перед заказом.
 										</Typography>
@@ -148,11 +184,16 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						</Box>
 					</Grid>
 
-					<Grid item md={6}>
+					<Grid
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a style={{ textDecoration: 'none' }} href='/articles/arbonia-2050-ili-3050'>
 								<div>
-									<Box textAlign='center'>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/2050-0.jpg'
 											alt='Сравнение радиаторов Arbonia 2050 и 3050'
@@ -161,12 +202,22 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											style={{ borderRadius: '8px', objectFit: 'cover' }}
 										/>
 									</Box>
-									<Box textAlign='center' marginTop='10px'>
+									<Box
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
 											Arbonia 2050 или 3050 - какой радиатор выбрать
 										</Typography>
 									</Box>
-									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+									<Box
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
 											Глубина 65 или 105 мм, мощность при одинаковом ΔT, число секций и длина под окном - сравнение на конкретном расчете.
 										</Typography>
@@ -177,16 +228,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/delta-t-teplootdacha'
 							>
 								<div>
-									<Box textAlign='center'>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/arbonia-schema.jpg'
 											alt='Схема трубчатых радиаторов Arbonia'
@@ -195,12 +248,22 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											style={{ borderRadius: '8px' }}
 										/>
 									</Box>
-									<Box textAlign='center' marginTop='10px'>
+									<Box
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
 											Теплоотдача радиатора - как влияет ΔT
 										</Typography>
 									</Box>
-									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+									<Box
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
 											Почему одна и та же модель Arbonia дает разную мощность при разных температурах воды и как
 											сравнивать паспортные характеристики без ошибки.
@@ -212,16 +275,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/chernyy-radiator-arbonia'
 							>
 								<div>
-									<Box textAlign='center'>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/2180-9005.jpeg'
 											alt='Черный радиатор Arbonia в цвете RAL 9005'
@@ -230,12 +295,22 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											style={{ borderRadius: '8px' }}
 										/>
 									</Box>
-									<Box textAlign='center' marginTop='10px'>
+									<Box
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
 											Черные радиаторы Arbonia - выбор цвета и модели
 										</Typography>
 									</Box>
-									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+									<Box
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
 											Сравниваем RAL 9005, RAL 7016 и SF-3, выбираем модель и заранее учитываем свет,
 											арматуру, подключение и мощность.
@@ -247,16 +322,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/radiator-pod-nizkiy-podokonnik'
 							>
 								<div>
-									<Box textAlign='center'>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/3030-0.jpeg'
 											alt='Радиатор под низкий подоконник Arbonia'
@@ -265,12 +342,22 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											style={{ borderRadius: '8px' }}
 										/>
 									</Box>
-									<Box textAlign='center' marginTop='10px'>
+									<Box
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
 											Радиатор под низкий подоконник: замер ниши и выбор высоты
 										</Typography>
 									</Box>
-									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+									<Box
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
 											Чистовой пол, доступная высота и глубина ниши, подключение и монтажное пространство.
 										</Typography>
@@ -281,16 +368,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/mezhosevoe-rasstoyanie-500-mm-arbonia'
 							>
 								<div>
-									<Box textAlign='center'>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/20230222.jpg'
 											alt='Межосевое расстояние 500 мм Arbonia'
@@ -299,12 +388,22 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 											style={{ borderRadius: '8px' }}
 										/>
 									</Box>
-									<Box textAlign='center' marginTop='10px'>
+									<Box
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
 											Межосевое 500 мм Arbonia: измерение и геометрия подключения
 										</Typography>
 									</Box>
-									<Box textAlign='justify' marginTop='10px' maxWidth={360} margin='auto'>
+									<Box
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography sx={{ ...styles.smallText, lineHeight: 0.3 }} component='span'>
 											Центры труб, высота осей, расстояние до стены и место арматуры для боковых 2057 и 3057.
 										</Typography>
@@ -315,16 +414,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/kogda-vertikalnyy-radiator-arbonia-ne-podkhodit'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/sf-3-01.jpg'
 											alt='Расчет мощности вертикального радиатора Arbonia'
@@ -334,9 +435,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -345,11 +447,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -365,16 +468,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 							</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/trubchatye-radiatory-dlya-kvartiry'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/underwindow-thumb.jpeg'
 											alt='Трубчатые радиаторы для квартиры'
@@ -384,9 +489,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -395,11 +501,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -413,16 +520,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/2-columns-3.jpeg'
 											alt='Радиатор под окном'
@@ -432,9 +541,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -443,11 +553,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -462,16 +573,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/vertical-radiator-power'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/sf-3-01.jpg'
 											alt='Расчет мощности вертикального радиатора Arbonia'
@@ -481,9 +594,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -492,11 +606,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -510,16 +625,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-2180-po-ploshadi'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/2180-4.jpeg'
 											alt='Подбор радиатора Arbonia 2180 по площади'
@@ -529,10 +646,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-										sx={{ maxWidth: '420px', margin: 'auto' }}
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px',
+                                            maxWidth: '420px',
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -541,11 +660,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -559,16 +679,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-3180-ral-9016-vs-anthracite'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/3180-1.jpeg'
 											alt='Трубчатый радиатор Arbonia 3180'
@@ -578,9 +700,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -589,11 +712,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -609,16 +733,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/belye-radiatory-v-temnom-interiere'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/belye-radiatory-v-temnom-interiere.jpeg'
 											alt='Кронштейны радиаторов Arbonia'
@@ -628,9 +754,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -639,11 +766,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -658,16 +786,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/montazh-arbonia-2180-na-gkl'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/montazh-arbonia-2180-na-gkl.avif'
 											alt='Кронштейны радиаторов Arbonia'
@@ -677,9 +807,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -688,11 +819,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -706,16 +838,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/montazh-vysokih-radiatorov-arbonia-instrukciya'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/montazh-vysokih-radiatorov-arbonia-instrukciya-1.avif'
 											alt='Кронштейны радиаторов Arbonia'
@@ -725,9 +859,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -736,11 +871,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -754,16 +890,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-3030-vs-3037'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/3030-3037.jpg'
 											alt='Низкий радиатор Arbonia 3030'
@@ -773,9 +911,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -784,11 +923,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -802,16 +942,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/radiator-postoyanno-vyklyuchaetsya'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/radiator-postoyanno-vyklyuchaetsya.webp'
 											alt='Почему радиатор постоянно выключается'
@@ -821,9 +963,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -832,11 +975,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -853,16 +997,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/tsvet-radiatorov-v-interiere'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/tsvet-radiatorov-v-interiere.jpg'
 											alt='Цвет радиаторов в интерьере'
@@ -872,9 +1018,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -883,11 +1030,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -901,16 +1049,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/vertical-vs-horizontal'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/vertical-vs-horizontal.jpg'
 											alt='Вертикальный и горизонтальный радиаторы Arbonia'
@@ -920,9 +1070,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -931,11 +1082,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -951,16 +1103,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/gde-razmestit-radiator-otopleniya'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/underwindow-thumb.jpeg'
 											alt='Радиатор Arbonia под окном'
@@ -970,9 +1124,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -981,11 +1136,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -1001,16 +1157,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/ral-9016-pochemu-vybirayut-arkhitektory'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/ral9016.jpg'
 											alt='RAL 9016 - универсальный белый цвет для интерьера и радиаторов'
@@ -1020,9 +1178,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1031,11 +1190,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -1049,16 +1209,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-2180-calc'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/2180-4.jpeg'
 											alt='Трубчатый радиатор отопления Arbonia 2180'
@@ -1068,10 +1230,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-										sx={{ maxWidth: '420px', margin: 'auto' }}
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px',
+                                            maxWidth: '420px',
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1080,11 +1244,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -1098,16 +1263,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/care'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/20250814.jpg'
 											alt='Правильный уход за радиаторами Arbonia'
@@ -1117,9 +1284,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1128,11 +1296,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -1146,16 +1315,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						</Box>
 					</Grid>
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/montazh-radiatorov-arbonia-rekomendacii'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/3030.jpg'
 											alt='Монтаж радиатороа Arbonia'
@@ -1165,9 +1336,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1176,11 +1348,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -1193,16 +1366,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						</Box>
 					</Grid>
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box sx={{ borderRadius: '8px' }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/faq'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/sf-3-0.jpeg'
 											alt='Высокий радиатор Arbonia'
@@ -1212,9 +1387,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1223,11 +1399,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -1241,16 +1418,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 						</Box>
 					</Grid>
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/termostat'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/2050-12-2.jpeg'
 											alt='Трубчатый радиатор Arbonia'
@@ -1260,11 +1439,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1273,11 +1453,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1292,16 +1473,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/high-arbonia'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/2022122702.jpg'
 											alt='Высокий радиатор Arbonia'
@@ -1311,11 +1494,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1324,11 +1508,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1342,16 +1527,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/panorama'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/panorama/arbonia-00.jpg'
 											alt='Вертикальный радиатор Arbonia'
@@ -1361,11 +1548,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1374,11 +1562,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1394,16 +1583,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/column-radiators'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/sf-3-0.jpeg'
 											alt='Трубчатые радиаторы'
@@ -1413,11 +1604,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1426,11 +1618,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1445,16 +1638,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/epd'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/epd.jpg'
 											alt='Сертификат EPD для трубчатых радиаторов Arbonia'
@@ -1464,11 +1659,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1477,11 +1673,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1498,16 +1695,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/arbonia-3057'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/20230222.jpg'
 											alt='Радиатор Arbonia 3057'
@@ -1517,11 +1716,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1530,11 +1730,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1548,16 +1749,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/low-models'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/20230126_0.jpg'
 											alt='Радиатор Arbonia 3030'
@@ -1567,11 +1770,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1580,11 +1784,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1598,16 +1803,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/convection-radiaton-arbonia'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/20230110_0.jpg'
 											alt='Вертикальный радиатор Arbonia'
@@ -1617,11 +1824,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1630,11 +1838,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1650,16 +1859,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/calc-radiators-by-old-ones'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/2022122701.jpg'
 											alt='3-трубчатый белый радиатор Arbonia'
@@ -1669,11 +1880,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1682,11 +1894,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1702,16 +1915,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/2-3-columns'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/90-1.jpeg'
 											alt='3-трубчатый радиатор Arbonia'
@@ -1721,11 +1936,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1734,11 +1950,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1753,16 +1970,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/consoles'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/20.jpg'
 											alt='Нижний упор Arbonia ZB0280'
@@ -1772,11 +1991,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1785,11 +2005,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1804,16 +2025,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/2180-3180'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/30.jpeg'
 											alt='Arbonia 2180 vs 3180: чем отличаются и когда что выбрать'
@@ -1823,11 +2046,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1836,11 +2060,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1854,16 +2079,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/connections'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/articles/100.jpg'
 											alt='Радиатор Arbonia'
@@ -1873,11 +2100,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1886,11 +2114,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1904,16 +2133,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/calculate'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/2-columns-3.jpeg'
 											alt='Как подбирать радиаторы Arbonia по мощности'
@@ -1923,11 +2154,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1936,11 +2168,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText }}
 											component='span'
@@ -1954,16 +2187,18 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						md={6}
-					>
+                        size={{
+                            md: 6
+                        }}>
 						<Box>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/articles/radiatory-arbonia-pod-okno'
 							>
 								<div>
-									<Box textAlign={'center'}>
+									<Box sx={{
+                                        textAlign: 'center'
+                                    }}>
 										<img
 											src='/images/models/3057-1.jpeg'
 											alt='Стандартные радиаторы Arbonia под окно'
@@ -1973,9 +2208,10 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										/>
 									</Box>
 									<Box
-										textAlign={'center'}
-										marginTop='10px'
-									>
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '10px'
+                                        }}>
 										<Typography
 											sx={{ ...styles.standardTextRedLink }}
 											component='span'
@@ -1984,11 +2220,12 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 										</Typography>
 									</Box>
 									<Box
-										textAlign={'justify'}
-										marginTop='10px'
-										maxWidth={360}
-										margin={'auto'}
-									>
+                                        sx={{
+                                            textAlign: 'justify',
+                                            marginTop: '10px',
+                                            maxWidth: 360,
+                                            margin: 'auto'
+                                        }}>
 										<Typography
 											sx={{ ...styles.smallText, lineHeight: 0.3 }}
 											component='span'
@@ -2002,8 +2239,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Grid>
 				</Grid>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlesListPage

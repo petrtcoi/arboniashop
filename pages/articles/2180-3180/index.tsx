@@ -15,14 +15,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Arbonia 2180 vs 3180: чем отличаются и когда что выбрать'}
 				description={
 					'Сравниваем 2- и 3-трубчатые модели высотой 1,8 м: толщина, мощность, где уместнее 2180, а где лучше 3180. Практические сценарии и советы под подбор.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -32,15 +32,16 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide-5.jpeg'}
 				header={'Arbonia 2180 vs 3180: чем отличаются и когда что выбрать'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Ищете высокие трубчатые решения Arbonia высотой 1,8 м и сомневаетесь между 2180 и 3180? Мы сравнили
 					теплоотдачу, толщину и сценарии применения. Для выбора и покупки переходите в каталог{' '}
 					<a
@@ -74,42 +75,48 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                     <a href='/articles/high-arbonia'> руководство по простенку и планировке</a>.</p>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					2180 или 3180? Что выбрать?
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Модели Arbonia 2180 и Arbonia 3180 относятся к одной серии, но различаются по конструкции и, как следствие, по
 					тепловым характеристикам. Основное отличие заключается в числе трубок: радиатор 2180 - двухтрубчатый, а 3180 -
 					трёхтрубчатый.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					При одинаковой высоте 1,8 метра радиатор Arbonia 2180 имеет толщину всего 65 мм, в то время как более мощная
 					версия 3180 - 105 мм. Дополнительная трубка в каждой секции повышает теплоотдачу, поэтому модель 3180
 					обеспечивает более интенсивный прогрев воздуха и лучше подходит для помещений с большими теплопотерями или
 					высокими потолками.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Тем не менее, выбор не всегда очевиден. Если площадь комнаты позволяет установить радиатор с большей шириной и
 					тепловой мощности модели 2180 при рабочем режиме достаточно для расчётной нагрузки, именно она станет оптимальным решением. Эта
 					модель легче, визуально изящнее и универсальнее в установке - её можно монтировать даже в узких пространствах,
 					где каждый сантиметр важен.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Радиатор Arbonia 2180 имеет следующие преимущества перед своим 3-трубчатым “родственником”:
 					<ul>
 						<li>
@@ -119,9 +126,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						</li>
 						<li>
 							<Box
-								sx={{ ...styles.standardText }}
-								paddingTop='10px'
-							>
+                                sx={{
+                                    paddingTop: '10px',
+                                    ...styles.standardText
+                                }}>
 								<strong>Меньшая глубина корпуса</strong>. Разница в 4 см может показаться незначительной, но при монтаже
 								рядом с дверными проёмами, в узких проходах или возле мебели она становится ощутимой. Радиатор 2180
 								компактнее и аккуратнее смотрится в небольших помещениях.
@@ -129,9 +137,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						</li>
 						<li>
 							<Box
-								sx={{ ...styles.standardText }}
-								paddingTop='10px'
-							>
+                                sx={{
+                                    paddingTop: '10px',
+                                    ...styles.standardText
+                                }}>
 								<strong>Простота ухода и чистки</strong>. Меньшее количество трубок облегчает доступ к внутренним
 								поверхностям. Пыль и загрязнения удаляются быстрее, что особенно актуально в городских квартирах и
 								помещениях с pets-friendly интерьером.
@@ -158,9 +167,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</a>
 				</Box>
 				<Box
-					textAlign={'center'}
-					marginTop={'30px'}
-				>
+                    sx={{
+                        textAlign: 'center',
+                        marginTop: '30px'
+                    }}>
 					<img
 						src='/images/articles/30.jpeg'
 						alt='Вертикальные радиаторы Arbonia'
@@ -169,8 +179,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					/>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

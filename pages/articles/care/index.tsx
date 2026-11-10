@@ -13,14 +13,14 @@ type ArticlePageProps = {}
 
 const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Правильный уход за радиаторами Arbonia: чистота и долговечность'}
 				description={
 					'Узнайте, как правильно чистить трубчатые радиаторы Arbonia, какие средства использовать, как ухаживать за покрытием и что делать при появлении царапин, чтобы ваши радиаторы служили долго и выглядели как новые.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -30,15 +30,16 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'} // Рекомендую подобрать подходящее изображение
 				header={'Правильный уход за радиаторами Arbonia'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Трубчатые радиаторы Arbonia - это не только эффективный источник тепла, но и важный элемент интерьера. Их
 					высококачественное покрытие рассчитано на десятилетия службы. Правильный и регулярный уход поможет сохранить
 					их безупречный внешний вид и продлить срок эксплуатации. В этой статье мы расскажем об основных правилах
@@ -46,16 +47,19 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Регулярная сухая чистка от пыли
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Пыль, скапливающаяся между секциями, не только портит вид, но и незначительно снижает теплоотдачу. Для ее
 					удаления идеально подходят:
 					<ul>
@@ -76,9 +80,10 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 					перед началом и после окончания отопительного сезона.
 				</Typography>
 				<Box
-					textAlign={'center'}
-					marginY='30px'
-				>
+                    sx={{
+                        textAlign: 'center',
+                        marginY: '30px'
+                    }}>
 					<img
 						src='/images/articles/20250814.jpg'
 						alt='Трубчатый радиатор Arbonia'
@@ -86,23 +91,28 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 					/>
 				</Box>
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Влажная уборка и удаление загрязнений
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Для удаления более стойких загрязнений, например, на кухне или в детской, используйте мягкую ткань, смоченную
 					в теплой воде с добавлением нейтрального моющего средства (например, обычного средства для мытья посуды).
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText, fontWeight: 'bold' }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText,
+                        fontWeight: 'bold'
+                    }}>
 					Категорически запрещено использовать:
 					<ul>
 						<li>
@@ -122,24 +132,28 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Устранение мелких повреждений (царапин и сколов)
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Несмотря на прочность порошкового покрытия, в процессе эксплуатации или ремонта могут случайно появиться
 					царапины. Для их устранения Arbonia предлагает специальные ремкомплекты (краска-карандаш или жидкая эмаль) в
 					фирменных цветах палитры RAL.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Процесс реставрации прост:
 					<ol>
 						<li>
@@ -159,16 +173,19 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Общие рекомендации
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<ul>
 						<li>
 							<Box sx={{ ...styles.standardText }}>
@@ -187,8 +204,8 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 					стилем долгие годы.
 				</Typography>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticleCarePage

@@ -52,32 +52,35 @@ const LinkText = ({ href, children }: { href: string; children: React.ReactNode 
 
 const Paragraph = ({ children, marginTop = '14px' }: { children: React.ReactNode; marginTop?: string }) => (
 	<Typography
-		component='p'
-		marginTop={marginTop}
-		sx={{ ...styles.standardText }}
-	>
+        component='p'
+        sx={{
+            marginTop: marginTop,
+            ...styles.standardText
+        }}>
 		{children}
 	</Typography>
 )
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 	<Typography
-		component='h2'
-		variant='h5'
-		marginTop='44px'
-		marginBottom='12px'
-	>
+        component='h2'
+        variant='h5'
+        sx={{
+            marginTop: '44px',
+            marginBottom: '12px'
+        }}>
 		{children}
 	</Typography>
 )
 
 const Subheading = ({ children }: { children: React.ReactNode }) => (
 	<Typography
-		component='h3'
-		variant='h6'
-		marginTop='30px'
-		marginBottom='10px'
-	>
+        component='h3'
+        variant='h6'
+        sx={{
+            marginTop: '30px',
+            marginBottom: '10px'
+        }}>
 		{children}
 	</Typography>
 )
@@ -110,32 +113,32 @@ const ArticlePage: NextPage = () => {
 	}
 
 	return (
-		<Box>
-			<Head>
+        <Box>
+            <Head>
 				<link
 					key='canonical'
 					rel='canonical'
 					href={`${siteUrl}/articles/${slug}`}
 				/>
 			</Head>
-			<Script
+            <Script
 				id='delta-t-teplootdacha-article-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
 			/>
-			<Script
+            <Script
 				id='delta-t-teplootdacha-breadcrumb-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
 			/>
 
-			<PageHeader
+            <PageHeader
 				title={metaTitle}
 				description={metaDescription}
 				type='article'
 				image='/images/arbonia-schema.jpg'
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -143,17 +146,22 @@ const ArticlePage: NextPage = () => {
 				]}
 			/>
 
-			<Box
-				component='article'
-				sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto', ...styles.standardText }}
-				marginTop='20px'
-			>
+            <Box
+                component='article'
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component='h1'
-					variant='h4'
-					marginTop='10px'
-					marginBottom='24px'
-				>
+                    component='h1'
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '24px'
+                    }}>
 					{h1}
 				</Typography>
 
@@ -260,7 +268,11 @@ const ArticlePage: NextPage = () => {
 					реально работала после монтажа.
 				</Paragraph>
 
-				<Box textAlign='center' marginY='30px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginY: '30px'
+                    }}>
 					<img
 						src='/images/arbonia-schema.jpg'
 						alt='Схема глубины трубчатых радиаторов Arbonia'
@@ -341,8 +353,8 @@ const ArticlePage: NextPage = () => {
 					варианты с понятной мощностью, длиной и подключением.
 				</Paragraph>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

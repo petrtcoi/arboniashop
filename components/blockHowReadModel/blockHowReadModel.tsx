@@ -12,57 +12,65 @@ const BlockHowReadModel: React.FC<BlockHowReadModelProps> = () => {
 	}
 
 	return (
-		<Box>
-			<div onClick={() => handleToggleShowHowReadModelBlock()}>
+        <Box>
+            <div onClick={() => handleToggleShowHowReadModelBlock()}>
 				<Typography sx={styles.smallTextGreenUnderline}>
 					<span style={{ textDecorationStyle: 'dotted' }}>Как читать наименования моделей?</span>
 				</Typography>
 			</div>
 
-			{showHowReadModelBlock === true && (
+            {showHowReadModelBlock === true && (
 				<Box
-					marginTop='10px'
-					padding='10px'
-					sx={{ border: '1px solid #333333', borderRadius: '5px' }}
-				>
+                    sx={{
+                        marginTop: '10px',
+                        padding: '10px',
+                        border: '1px solid #333333',
+                        borderRadius: '5px'
+                    }}>
 					<Typography sx={styles.standardText}>
 						По цифромому обозначению модели Arbonia можно понять ее глубину и высоту.
 					</Typography>
 					<Box
-						textAlign='center'
-						marginTop='30px'
-					>
+                        sx={{
+                            textAlign: 'center',
+                            marginTop: '30px'
+                        }}>
 						<Typography
-							sx={{ ...styles.standardText }}
-							display='inline'
-						>
+                            sx={{
+                                display: 'inline',
+                                ...styles.standardText
+                            }}>
 							На примере модели &nbsp;
 						</Typography>
 						<Typography
-							sx={{ ...styles.standardText, fontSize: '20px' }}
-							display='inline'
-						>
+                            sx={{
+                                display: 'inline',
+                                ...styles.standardText,
+                                fontSize: '20px'
+                            }}>
 							Arbonia 3057:
 						</Typography>
 					</Box>
 					<Box
-						textAlign='center'
-						marginTop='20px'
-					>
+                        sx={{
+                            textAlign: 'center',
+                            marginTop: '20px'
+                        }}>
 						<Typography
-							sx={{
-								...styles.standardTextBold,
-								fontSize: '20px',
-								color: 'red',
-							}}
-							display='inline'
-						>
+                            sx={{
+                                display: 'inline',
+                                ...styles.standardTextBold,
+                                fontSize: '20px',
+                                color: 'red'
+                            }}>
 							3
 						</Typography>
 						<Typography
-							sx={{ ...styles.standardTextThin, fontSize: '20px' }}
-							display='inline'
-						>
+                            sx={{
+                                display: 'inline',
+                                ...styles.standardTextThin,
+                                fontSize: '20px'
+                            }}>
 							057
 						</Typography>
 						<Typography sx={{ ...styles.smallText }}>
@@ -86,23 +94,25 @@ const BlockHowReadModel: React.FC<BlockHowReadModelProps> = () => {
 						</Typography>
 					</Box>
 					<Box
-						textAlign='center'
-						marginTop='30px'
-					>
+                        sx={{
+                            textAlign: 'center',
+                            marginTop: '30px'
+                        }}>
 						<Typography
-							sx={{ ...styles.standardTextThin, fontSize: '20px' }}
-							display='inline'
-						>
+                            sx={{
+                                display: 'inline',
+                                ...styles.standardTextThin,
+                                fontSize: '20px'
+                            }}>
 							3
 						</Typography>
 						<Typography
-							sx={{
-								...styles.standardTextBold,
-								fontSize: '20px',
-								color: 'red',
-							}}
-							display='inline'
-						>
+                            sx={{
+                                display: 'inline',
+                                ...styles.standardTextBold,
+                                fontSize: '20px',
+                                color: 'red'
+                            }}>
 							057
 						</Typography>
 						<Typography sx={{ ...styles.smallText }}>
@@ -113,11 +123,13 @@ const BlockHowReadModel: React.FC<BlockHowReadModelProps> = () => {
 							<br />В данном примере радиатор имеет высоту 570 мм (примерно 57 см)
 						</Typography>
 					</Box>
-					<Box marginTop='20px' />
+					<Box sx={{
+                        marginTop: '20px'
+                    }} />
 				</Box>
 			)}
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default BlockHowReadModel

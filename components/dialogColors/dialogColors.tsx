@@ -61,7 +61,13 @@ const DialogColors: React.FC<DialogColorsProps> = ({
 
   const renderColor = (color: any) => {
     return (
-      <Grid item xs={6} sm={4} md={3} key={color.id}>
+      <Grid
+        key={color.id}
+        size={{
+          xs: 6,
+          sm: 4,
+          md: 3
+        }}>
         <SingleColor
           color={color}
           highlighted={colorCurrId === color.id}
@@ -77,7 +83,7 @@ const DialogColors: React.FC<DialogColorsProps> = ({
         onClose={closeDialog}
         open={show}
         fullScreen
-        TransitionComponent={Transition}
+        slots={{ transition: Transition }}
       >
         <AppBar sx={{ position: "relative" }} color="transparent">
           <Toolbar>
@@ -95,7 +101,9 @@ const DialogColors: React.FC<DialogColorsProps> = ({
           </Toolbar>
         </AppBar>
         <DialogContent>
-          <Box marginTop="20px">
+          <Box sx={{
+            marginTop: "20px"
+          }}>
             <Typography sx={{ ...styles.smallText }}>
               По техническим причинам не является возможным абсолютно точно
               передать цвета.
@@ -104,16 +112,19 @@ const DialogColors: React.FC<DialogColorsProps> = ({
 
           {COLOR_GROUPS.map((group) => {
             return (
-              <Box marginTop={"50px"} key={group}>
-                <Box marginBottom="20px">
+              <Box key={group} sx={{
+                marginTop: "50px"
+              }}>
+                <Box sx={{
+                  marginBottom: "20px"
+                }}>
                   <Typography
                     sx={{
+                      display: "inline",
                       color: "#333333",
                       fontSize: "14px",
-                      textTransform: "uppercase",
-                    }}
-                    display="inline"
-                  >
+                      textTransform: "uppercase"
+                    }}>
                     {group}
                   </Typography>
                 </Box>
@@ -128,7 +139,9 @@ const DialogColors: React.FC<DialogColorsProps> = ({
             );
           })}
 
-          <Box marginTop="30px" />
+          <Box sx={{
+            marginTop: "30px"
+          }} />
         </DialogContent>
       </Dialog>
     </Box>

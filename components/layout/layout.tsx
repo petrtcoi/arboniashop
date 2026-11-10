@@ -53,8 +53,10 @@ const Layout = ({ children }: LayoutProps) => {
 	const canonicalUrl = `${SITE_URL}${canonicalPath}`
 
 	return (
-		<Box padding='0px'>
-			<Head>
+        <Box sx={{
+            padding: '0px'
+        }}>
+            <Head>
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'
@@ -95,7 +97,7 @@ const Layout = ({ children }: LayoutProps) => {
 					href={canonicalUrl}
 				/>
 			</Head>
-			<ThemeProvider theme={theme}>
+            <ThemeProvider theme={theme}>
 				<Container
 					style={{
 						minWidth: '100%',
@@ -110,9 +112,10 @@ const Layout = ({ children }: LayoutProps) => {
 							<GoToFormButton />
 							<ShoppingCart />
 							<Box
-								paddingX={'0px'}
-								marginBottom='50px'
-							>
+                                sx={{
+                                    paddingX: '0px',
+                                    marginBottom: '50px'
+                                }}>
 								<main>{children}</main>
 							</Box>
 							<Footer />
@@ -120,9 +123,9 @@ const Layout = ({ children }: LayoutProps) => {
 					</ShoppingCartContext.Provider>
 				</Container>
 			</ThemeProvider>
-			<CookieAlert />
-		</Box>
-	)
+            <CookieAlert />
+        </Box>
+    );
 }
 
 export default Layout

@@ -4,7 +4,10 @@ import { ModelOrigin } from '../../models/modelOrigin.model'
 import * as styles from '../../styles/styles'
 
 const Stock3030Guide: React.FC<{ model: ModelOrigin }> = ({ model }) => (
-	<Box marginTop='36px' sx={styles.standardText}>
+	<Box
+        sx={[{
+            marginTop: '36px'
+        }, styles.standardText]}>
 		<Typography component='h2' variant='h5'>Как выбрать Arbonia 3030 RAL 9016 с боковым подключением</Typography>
 		<p>
 			Эта модификация — белый трёхтрубчатый радиатор высотой {model.height} мм и глубиной {model.width} мм

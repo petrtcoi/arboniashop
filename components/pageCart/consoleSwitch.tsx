@@ -22,29 +22,27 @@ const ConsoleSwitch: React.FC<ConsoleSwitchProps> = () => {
   return (
     <Box>
       <Grid container spacing={2}>
-        <Grid item>
+        <Grid>
           <Box
-            textAlign="center"
-            sx={{
-              opacity: consoleType === "w161h121" ? "1" : "0.4",
-              "&:hover": { cursor: "pointer", opacity: "1" },
-            }}
             onClick={() =>
               shoppingCartContext.dispatch({
                 type: "SET_CONSOLE_TYPE",
                 value: "w161h121",
               })
             }
-          >
+            sx={{
+              textAlign: "center",
+              opacity: consoleType === "w161h121" ? "1" : "0.4",
+              "&:hover": { cursor: "pointer", opacity: "1" }
+            }}>
             <Box
-              marginX="auto"
               sx={{
+                marginX: "auto",
                 ...boxStyle,
                 borderColor: consoleType === "w161h121" ? "#000000" : "#e6e6e6",
                 backgroundImage: `url('/images/other/w161h121.jpg')`,
-                backgroundSize: "cover",
-              }}
-            />
+                backgroundSize: "cover"
+              }} />
             <Typography sx={{ ...styles.smallTextThin }}>
               W161 + DS
               <br />
@@ -52,29 +50,27 @@ const ConsoleSwitch: React.FC<ConsoleSwitchProps> = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item>
+        <Grid>
           <Box
-            textAlign="center"
-            sx={{
-              opacity: consoleType === "none" ? "1" : "0.4",
-              "&:hover": { cursor: "pointer", opacity: "1" },
-            }}
             onClick={() =>
               shoppingCartContext.dispatch({
                 type: "SET_CONSOLE_TYPE",
                 value: "none",
               })
             }
-          >
+            sx={{
+              textAlign: "center",
+              opacity: consoleType === "none" ? "1" : "0.4",
+              "&:hover": { cursor: "pointer", opacity: "1" }
+            }}>
             <Box
-              marginX="auto"
               sx={{
+                marginX: "auto",
                 ...boxStyle,
                 borderColor: consoleType === "none" ? "#000000" : "#e6e6e6",
                 backgroundImage: `url('/images/other/empty-wall.jpg')`,
-                backgroundSize: "cover",
-              }}
-            />
+                backgroundSize: "cover"
+              }} />
             <Typography sx={{ ...styles.smallText }}>
               Без кронштейнов
             </Typography>

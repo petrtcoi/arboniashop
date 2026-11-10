@@ -22,8 +22,8 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 	const toggleShow = () => setShow(!show)
 
 	return (
-		<Box>
-			<PageTitle
+        <Box>
+            <PageTitle
 				header={'Покраска Arbonia в ваш цвет с гарантией'}
 				subheader={'Радиаторы Arbonia любого цвета на ваш выбор'}
 				breadcrumbs={[
@@ -31,15 +31,15 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					{ title: 'Покраска радиаторов Arbonia', link: '/coloring' },
 				]}
 			/>
-			<PageHeader
+            <PageHeader
 				title={'Порошковая покраска радиаторов Arbonia с гарантией'}
 				description='Порошковая покраска радиатора Arbonia из наличия официальным дилером с сохранением гарантии. Выбранный цвет, сроки и стоимость для вашего исполнения.'
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide-colors.jpg'}
 				header={'Покраска радиаторов Arbonia'}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
+            <Box sx={{ ...global.pagePadding }}>
 				<Box sx={{ maxWidth: '900px', margin: 'auto' }}>
 					<Typography sx={{ ...styles.standardText, marginTop: '20px' }}>
 						В складскую программу входят наиболее популярные цвета радиаторов Arbonia. Если нужной конфигурации или
@@ -58,7 +58,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 						<a href='/articles/zavodskoy-cvet-arbonia-ili-perekraska-iz-nalichiya'>заводской цвет или перекраска из наличия: как выбрать</a>.
 					</Typography>
 					<Typography sx={{ ...styles.standardText, marginTop: '20px' }}>
-						Для белого покрытия прочитайте <a href='/articles/ral-9016-9010-9003-kakoy-belyy-vybrat'>чем отличаются
+						Для белого покрытия прочитайте <a href='/articles/ral-9016-pochemu-vybirayut-arkhitektory'>чем отличаются
 						RAL 9016, RAL 9010 и RAL 9003</a>: вместе с оттенком нужно согласовать степень блеска и образец покрытия.
 					</Typography>
 					<Typography sx={{ ...styles.standardText, marginTop: '20px' }}>
@@ -73,37 +73,48 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					</Typography>
 					<Typography sx={{ ...styles.standardText, marginTop: '20px' }}></Typography>
 				</Box>
-				<Box marginY={'30px'}>
+				<Box sx={{
+                    marginY: '30px'
+                }}>
 					<Typography
-						variant='h4'
-						component='h2'
-						gutterBottom
-						textAlign='center'
-						sx={{ textTransform: 'uppercase' }}
-					>
+                        variant='h4'
+                        component='h2'
+                        gutterBottom
+                        sx={{
+                            textAlign: 'center',
+                            textTransform: 'uppercase'
+                        }}>
 						Запрос на подбор и покраску радиаторов
 					</Typography>
 				</Box>
 				<Box
-					marginY='20px'
-					padding='10px'
-					sx={{ backgroundColor: '#333333', borderRadius: '10px' }}
-				>
+                    sx={{
+                        marginY: '20px',
+                        padding: '10px',
+                        backgroundColor: '#333333',
+                        borderRadius: '10px'
+                    }}>
 					<Grid
 						container
 						spacing={2}
-						alignItems={'center'}
+						sx={{
+                            alignItems: 'center'
+                        }}
 					>
 						<Grid
-							item
-							xs={12}
-							sm={4}
-							textAlign='center'
-						>
+                            sx={{
+                                textAlign: 'center'
+                            }}
+                            size={{
+                                xs: 12,
+                                sm: 4
+                            }}>
 							<Typography
-								sx={{ ...styles.smallText, color: '#e6e6e6' }}
-								display='inline'
-							>
+                                sx={{
+                                    display: 'inline',
+                                    ...styles.smallText,
+                                    color: '#e6e6e6'
+                                }}>
 								тел.:&ensp;
 							</Typography>
 							<a
@@ -111,22 +122,28 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 								href={`tel:${global.phone495}`}
 							>
 								<Typography
-									sx={{ ...styles.standardTextLink, color: 'white' }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.standardTextLink,
+                                        color: 'white'
+                                    }}>
 									{global.phone495String}
 								</Typography>
 							</a>
 							<Typography
-								sx={{ ...styles.standardText, color: 'white' }}
-								display='inline'
-							>
+                                sx={{
+                                    display: 'inline',
+                                    ...styles.standardText,
+                                    color: 'white'
+                                }}>
 								<br />
 								<Typography
-									sx={{ ...styles.smallText, color: '#333333' }}
-									display='inline'
-									component='span'
-								>
+                                    component='span'
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.smallText,
+                                        color: '#333333'
+                                    }}>
 									тел.:&ensp;
 								</Typography>
 							</Typography>
@@ -135,23 +152,29 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 								href={`tel:${global.phone812}`}
 							>
 								<Typography
-									sx={{ ...styles.standardTextLink, color: 'white' }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.standardTextLink,
+                                        color: 'white'
+                                    }}>
 									{global.phone812String}
 								</Typography>
 							</a>
 						</Grid>
 						<Grid
-							item
-							xs={12}
-							sm={4}
-							textAlign='center'
-						>
+                            sx={{
+                                textAlign: 'center'
+                            }}
+                            size={{
+                                xs: 12,
+                                sm: 4
+                            }}>
 							<Typography
-								sx={{ ...styles.smallText, color: '#e6e6e6' }}
-								display='inline'
-							>
+                                sx={{
+                                    display: 'inline',
+                                    ...styles.smallText,
+                                    color: '#e6e6e6'
+                                }}>
 								электронная почта:&ensp;
 							</Typography>
 							<a
@@ -159,23 +182,29 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 								href={`mailto:${global.email}`}
 							>
 								<Typography
-									sx={{ ...styles.standardTextLink, color: 'white' }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.standardTextLink,
+                                        color: 'white'
+                                    }}>
 									{global.email}
 								</Typography>
 							</a>
 						</Grid>
 						<Grid
-							item
-							xs={12}
-							sm={4}
-							textAlign='center'
-						>
+                            sx={{
+                                textAlign: 'center'
+                            }}
+                            size={{
+                                xs: 12,
+                                sm: 4
+                            }}>
 							<Typography
-								sx={{ ...styles.smallText, color: '#e6e6e6' }}
-								display='inline'
-							>
+                                sx={{
+                                    display: 'inline',
+                                    ...styles.smallText,
+                                    color: '#e6e6e6'
+                                }}>
 								whatsapp:&ensp;
 							</Typography>
 							<a
@@ -183,9 +212,11 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 								href={`https://wa.me/${global.whatsApp}`}
 							>
 								<Typography
-									sx={{ ...styles.standardTextLink, color: 'white' }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.standardTextLink,
+                                        color: 'white'
+                                    }}>
 									{global.whatsAppString}
 								</Typography>
 							</a>
@@ -193,17 +224,20 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					</Grid>
 				</Box>
 				<Typography
-					sx={{ ...styles.standardText }}
-					textAlign='center'
-				>
+                    sx={{
+                        textAlign: 'center',
+                        ...styles.standardText
+                    }}>
 					Также вы можете заполнить форму, представленную ниже.
 				</Typography>
-				<Box marginTop='20px'>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<a onClick={() => toggleShow()}>
 						<Typography
-							sx={styles.smallTextGreenUnderline}
-							textAlign='center'
-						>
+                            sx={[{
+                                textAlign: 'center'
+                            }, styles.smallTextGreenUnderline]}>
 							<span style={{ textDecorationStyle: 'dotted' }}>Какая информация нам нужна</span>
 						</Typography>
 					</a>
@@ -211,9 +245,11 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 
 				{show && (
 					<Box
-						padding='20px'
-						sx={{ backgroundColor: '#e6e6e6', borderRadius: '10px' }}
-					>
+                        sx={{
+                            padding: '20px',
+                            backgroundColor: '#e6e6e6',
+                            borderRadius: '10px'
+                        }}>
 						<Typography
 							sx={{ ...styles.standardText }}
 							component={'span'}
@@ -240,7 +276,9 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					</Box>
 				)}
 
-				<Box marginTop='24px'>
+				<Box sx={{
+                    marginTop: '24px'
+                }}>
 					<LeadWidget
 						store='ArboniaShop.ru'
 						successUrl='/accepted'
@@ -249,8 +287,8 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					/>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default PageRequest

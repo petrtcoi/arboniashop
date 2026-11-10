@@ -198,31 +198,31 @@ const ArticlePage: NextPage = () => {
 	}
 
 	return (
-		<Box>
-			<Head>
+        <Box>
+            <Head>
 				<link
 					key='canonical'
 					rel='canonical'
 					href={`${siteUrl}/articles/column-radiators`}
 				/>
 			</Head>
-			<Script
+            <Script
 				id='article-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
 			/>
-			<Script
+            <Script
 				id='faq-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
 			/>
-			<PageHeader
+            <PageHeader
 				title={metaTitle}
 				description={metaDescription}
 				type='article'
 				image='/images/sliders/slide-5.jpeg'
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -233,30 +233,31 @@ const ArticlePage: NextPage = () => {
 				]}
 			/>
 
-			<Box
-				component='article'
-				sx={{
-					...global.pagePadding,
-					maxWidth: '920px',
-					margin: 'auto',
-					...styles.standardText,
-				}}
-				marginTop='20px'
-			>
+            <Box
+                component='article'
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component='h1'
-					variant='h4'
-					marginTop='10px'
-					marginBottom='24px'
-				>
+                    component='h1'
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '24px'
+                    }}>
 					{metaTitle}
 				</Typography>
 
 				<Typography
-					component='p'
-					marginBottom='20px'
-					sx={{ ...styles.standardText }}
-				>
+                    component='p'
+                    sx={{
+                        marginBottom: '20px',
+                        ...styles.standardText
+                    }}>
 					Трубчатые радиаторы Arbonia выбирают, когда нужен не просто источник тепла, а аккуратный стальной радиатор
 					под интерьер, замену старых батарей или нестандартную зону: низкий подоконник, панорамное окно, узкий
 					простенок. Это не абстрактный класс отопительных приборов, а конкретный товар: на{' '}
@@ -267,11 +268,12 @@ const ArticlePage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Быстрый выбор
 				</Typography>
 				<Box sx={{ overflowX: 'auto', marginTop: '12px' }}>
@@ -298,11 +300,12 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Что такое трубчатый радиатор
 				</Typography>
 				<Typography
@@ -320,10 +323,11 @@ const ArticlePage: NextPage = () => {
 					.
 				</Typography>
 				<Typography
-					component='p'
-					marginTop='14px'
-					sx={{ ...styles.standardText }}
-				>
+                    component='p'
+                    sx={{
+                        marginTop: '14px',
+                        ...styles.standardText
+                    }}>
 					У трубчатых радиаторов Arbonia можно отдельно выбирать высоту, глубину, число труб, цвет и тип подключения -
 					это не декоративный элемент, а полноценный рабочий прибор отопления для квартиры и частного дома. Каждый
 					стальной радиатор Arbonia сопровождается экологическим сертификатом{' '}
@@ -332,11 +336,12 @@ const ArticlePage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Плюсы трубчатых радиаторов Arbonia
 				</Typography>
 				<Box
@@ -389,11 +394,12 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Минусы трубчатых радиаторов
 				</Typography>
 				<Box
@@ -427,21 +433,23 @@ const ArticlePage: NextPage = () => {
 					</li>
 				</Box>
 				<Typography
-					component='p'
-					marginTop='14px'
-					sx={{ ...styles.standardText }}
-				>
+                    component='p'
+                    sx={{
+                        marginTop: '14px',
+                        ...styles.standardText
+                    }}>
 					Эти ограничения обычно решаются подбором модели, числа секций и подключения. Поэтому перед заказом лучше{' '}
 					<LinkText href='/request'>прислать размеры помещения</LinkText>, окна или ниши и фото существующего
 					подключения - менеджер рассчитает мощность и предложит подходящие варианты Arbonia.
 				</Typography>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Как выбрать трубчатый радиатор Arbonia
 				</Typography>
 				<Typography
@@ -462,11 +470,12 @@ const ArticlePage: NextPage = () => {
                     Ниже — общие этапы, которые связывают эти решения.</p>
 
 				<Typography
-					component='h3'
-					variant='h6'
-					marginTop='28px'
-					marginBottom='8px'
-				>
+                    component='h3'
+                    variant='h6'
+                    sx={{
+                        marginTop: '28px',
+                        marginBottom: '8px'
+                    }}>
 					По высоте
 				</Typography>
 				<Typography
@@ -484,7 +493,9 @@ const ArticlePage: NextPage = () => {
 					панорамным остеклением: <LinkText href='/catalog/high-models'>высокие радиаторы Arbonia</LinkText>, модели{' '}
 					<LinkText href='/models/2180'>2180</LinkText> и <LinkText href='/models/3180'>3180</LinkText>.
 				</Typography>
-				<Box textAlign='center'>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/models/3030-1.jpeg'
 						alt='Низкий трубчатый радиатор Arbonia с нижним подключением'
@@ -495,11 +506,12 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Typography
-					component='h3'
-					variant='h6'
-					marginTop='28px'
-					marginBottom='8px'
-				>
+                    component='h3'
+                    variant='h6'
+                    sx={{
+                        marginTop: '28px',
+                        marginBottom: '8px'
+                    }}>
 					По числу труб
 				</Typography>
 				<Typography
@@ -514,7 +526,9 @@ const ArticlePage: NextPage = () => {
 					<LinkText href='/articles/2-3-columns'>2-трубчатые и 3-трубчатые радиаторы Arbonia: в чём отличия</LinkText>
 					.
 				</Typography>
-				<Box textAlign='center'>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/models/5-columns.jpeg'
 						alt='Многотрубчатый радиатор Arbonia с повышенной теплоотдачей'
@@ -525,11 +539,12 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Typography
-					component='h3'
-					variant='h6'
-					marginTop='28px'
-					marginBottom='8px'
-				>
+                    component='h3'
+                    variant='h6'
+                    sx={{
+                        marginTop: '28px',
+                        marginBottom: '8px'
+                    }}>
 					По мощности и числу секций
 				</Typography>
 				<Typography
@@ -544,10 +559,11 @@ const ArticlePage: NextPage = () => {
 					<LinkText href='/articles/calculate'>руководстве по мощности радиатора</LinkText>.
 				</Typography>
 				<Typography
-					component='p'
-					marginTop='14px'
-					sx={{ ...styles.standardText }}
-				>
+                    component='p'
+                    sx={{
+                        marginTop: '14px',
+                        ...styles.standardText
+                    }}>
 					Если длина стены ограничена, требуемую мощность можно получить более глубокой 3- или 4-трубчатой моделью.
 					Если глубина критична из-за узкого подоконника или прохода, выбирают 2-трубчатую модель и увеличивают
 					число секций. Поэтому размеры и мощность проверяют одновременно: короткий глубокий радиатор и длинный
@@ -555,11 +571,12 @@ const ArticlePage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component='h3'
-					variant='h6'
-					marginTop='28px'
-					marginBottom='8px'
-				>
+                    component='h3'
+                    variant='h6'
+                    sx={{
+                        marginTop: '28px',
+                        marginBottom: '8px'
+                    }}>
 					По подключению
 				</Typography>
 				<Typography
@@ -574,11 +591,12 @@ const ArticlePage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component='h3'
-					variant='h6'
-					marginTop='28px'
-					marginBottom='8px'
-				>
+                    component='h3'
+                    variant='h6'
+                    sx={{
+                        marginTop: '28px',
+                        marginBottom: '8px'
+                    }}>
 					По цвету
 				</Typography>
 				<Typography
@@ -595,11 +613,12 @@ const ArticlePage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Квартира или частный дом: что проверить
 				</Typography>
 				<Typography
@@ -641,11 +660,12 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Порядок выбора за 7 шагов
 				</Typography>
 				<Box
@@ -662,11 +682,12 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Типичные ошибки при выборе
 				</Typography>
 				<Box
@@ -681,10 +702,11 @@ const ArticlePage: NextPage = () => {
 					<li><Typography sx={{ ...styles.standardText }}>Покупать цветную заказную модель до окончательной проверки размеров и подключения.</Typography></li>
 				</Box>
 				<Typography
-					component='p'
-					marginTop='14px'
-					sx={{ ...styles.standardText }}
-				>
+                    component='p'
+                    sx={{
+                        marginTop: '14px',
+                        ...styles.standardText
+                    }}>
 					Для проверки подбора достаточно прислать план или размеры комнаты, высоту потолка, фотографию окна и
 					существующих труб, сведения о системе отопления и желаемый цвет через{' '}
 					<LinkText href='/request'>форму расчёта</LinkText>. Это позволяет проверить мощность, габариты и
@@ -692,11 +714,12 @@ const ArticlePage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Какие модели Arbonia посмотреть
 				</Typography>
 				<Box sx={{ overflowX: 'auto', marginTop: '12px' }}>
@@ -725,11 +748,12 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					Когда лучше заказать расчёт
 				</Typography>
 				<div className='cta'>
@@ -745,23 +769,28 @@ const ArticlePage: NextPage = () => {
 				</div>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='40px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					FAQ
 				</Typography>
 				<Box>
 					{faqItems.map(item => (
 						<Box
 							key={item.question}
-							marginBottom='26px'
+							sx={{
+                                marginBottom: '26px'
+                            }}
 						>
 							<Typography
 								component='h3'
 								variant='h6'
-								marginBottom='10px'
+								sx={{
+                                    marginBottom: '10px'
+                                }}
 							>
 								{item.question}
 							</Typography>
@@ -776,11 +805,12 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<Typography
-					component='h2'
-					variant='h5'
-					marginTop='20px'
-					marginBottom='10px'
-				>
+                    component='h2'
+                    variant='h5'
+                    sx={{
+                        marginTop: '20px',
+                        marginBottom: '10px'
+                    }}>
 					Вывод
 				</Typography>
 				<Typography
@@ -792,17 +822,18 @@ const ArticlePage: NextPage = () => {
 					низкого подоконника - 3030, а для панорамного окна или узкого простенка - вертикальные 2180 и 3180.
 				</Typography>
 				<Typography
-					component='p'
-					marginTop='14px'
-					sx={{ ...styles.standardText }}
-				>
+                    component='p'
+                    sx={{
+                        marginTop: '14px',
+                        ...styles.standardText
+                    }}>
 					Если сомневаетесь в выборе, не нужно гадать - пришлите параметры помещения через{' '}
 					<LinkText href='/request'>заявку на расчёт</LinkText>, и мы подберём подходящую модель Arbonia, посчитаем
 					нужное число секций и предложим варианты по цвету и подключению.
 				</Typography>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

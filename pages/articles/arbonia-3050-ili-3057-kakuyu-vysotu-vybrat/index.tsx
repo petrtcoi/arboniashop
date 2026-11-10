@@ -12,15 +12,15 @@ import tableStyle from './index.module.css'
 
 const ArboniaHeightComparisonPage: NextPage = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Arbonia 3050 или 3057 - что выбрать'}
 				description={
 					'Сравнение радиаторов Arbonia 3050 и 3057. Разница 7 см по высоте, межосевое расстояние 50 см, замена чугунных батарей и выбор под подоконник 70-80 см.'
 				}
 			/>
 
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -31,30 +31,31 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				]}
 			/>
 
-			<Box
-				component={'article'}
-				sx={{
-					...global.pagePadding,
-					maxWidth: '920px',
-					margin: 'auto',
-					...styles.standardText,
-				}}
-				marginTop='20px'
-			>
+            <Box
+                component={'article'}
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component={'h1'}
-					variant='h4'
-					marginTop='10px'
-					marginBottom={'30px'}
-				>
+                    component={'h1'}
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '30px'
+                    }}>
 					Arbonia 3050 или 3057 - какую высоту радиатора выбрать
 				</Typography>
 
 				<Typography
-					component={'p'}
-					marginBottom='20px'
-					sx={{ ...styles.standardText }}
-				>
+                    component={'p'}
+                    sx={{
+                        marginBottom: '20px',
+                        ...styles.standardText
+                    }}>
 					Если вы выбираете между радиаторами, ключевое различие кроется не только в дополнительных 7 см, а в
 					дифференцированном сценарии монтажа. Во-первых, под каким подоконником вы будете устанавливать радиатор.
 					Во-вторых, нужно ли сохранять существующую разводку с межосевым расстоянием 50 см. В большинстве случаев
@@ -63,11 +64,12 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component={'h2'}
-					variant='h5'
-					marginTop={'40px'}
-					marginBottom='10px'
-				>
+                    component={'h2'}
+                    variant='h5'
+                    sx={{
+                        marginTop: '40px',
+                        marginBottom: '10px'
+                    }}>
 					📊 Краткое сравнение Arbonia 3050 и 3057
 				</Typography>
 
@@ -119,11 +121,12 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</table>
 
 				<Typography
-					component={'h2'}
-					variant='h5'
-					marginTop={'50px'}
-					marginBottom='10px'
-				>
+                    component={'h2'}
+                    variant='h5'
+                    sx={{
+                        marginTop: '50px',
+                        marginBottom: '10px'
+                    }}>
 					📐 Главная разница - 7 см высоты
 				</Typography>
 
@@ -139,20 +142,22 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component={'p'}
-					marginTop='10px'
-					sx={{ ...styles.standardText }}
-				>
+                    component={'p'}
+                    sx={{
+                        marginTop: '10px',
+                        ...styles.standardText
+                    }}>
 					При подоконниках 70–75 см пространство становится ещё более чувствительным. 3057 тогда приходится поджимать к
 					верхней границе, а 3050 спокойно держит рабочие зазоры, не выглядывая «вписанным» в нишу.
 				</Typography>
 
 				<Typography
-					component={'h2'}
-					variant='h5'
-					marginTop={'50px'}
-					marginBottom='10px'
-				>
+                    component={'h2'}
+                    variant='h5'
+                    sx={{
+                        marginTop: '50px',
+                        marginBottom: '10px'
+                    }}>
 					🔥 Влияет ли высота на мощность
 				</Typography>
 
@@ -167,11 +172,12 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component={'h2'}
-					variant='h5'
-					marginTop={'50px'}
-					marginBottom='10px'
-				>
+                    component={'h2'}
+                    variant='h5'
+                    sx={{
+                        marginTop: '50px',
+                        marginBottom: '10px'
+                    }}>
 					🏗 Когда удобнее Arbonia 3057 при боковом подключении
 				</Typography>
 
@@ -201,11 +207,12 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component={'h2'}
-					variant='h5'
-					marginTop={'50px'}
-					marginBottom='10px'
-				>
+                    component={'h2'}
+                    variant='h5'
+                    sx={{
+                        marginTop: '50px',
+                        marginBottom: '10px'
+                    }}>
 					🏢 А если подключение нижнее
 				</Typography>
 
@@ -220,11 +227,12 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component={'h2'}
-					variant='h5'
-					marginTop={'50px'}
-					marginBottom='10px'
-				>
+                    component={'h2'}
+                    variant='h5'
+                    sx={{
+                        marginTop: '50px',
+                        marginBottom: '10px'
+                    }}>
 					🎨 Вопрос дизайна и пропорций
 				</Typography>
 
@@ -239,11 +247,12 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</Typography>
 
 				<Typography
-					component={'h2'}
-					variant='h5'
-					marginTop={'50px'}
-					marginBottom='10px'
-				>
+                    component={'h2'}
+                    variant='h5'
+                    sx={{
+                        marginTop: '50px',
+                        marginBottom: '10px'
+                    }}>
 					📌 Итог - что выбрать
 				</Typography>
 
@@ -273,10 +282,11 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</ul>
 
 				<Typography
-					component={'p'}
-					marginTop='20px'
-					sx={{ ...styles.standardText }}
-				>
+                    component={'p'}
+                    sx={{
+                        marginTop: '20px',
+                        ...styles.standardText
+                    }}>
 					Выбирайте{' '}
 					<Link
 						href='/models/3050'
@@ -300,16 +310,17 @@ const ArboniaHeightComparisonPage: NextPage = () => {
 				</ul>
 
 				<Typography
-					component={'p'}
-					marginTop='20px'
-					sx={{ ...styles.standardText }}
-				>
+                    component={'p'}
+                    sx={{
+                        marginTop: '20px',
+                        ...styles.standardText
+                    }}>
 					Разница между моделями не в мощности, а в монтажной логике. Именно она определяет правильный выбор радиатора
 					для вашей ниши.
 				</Typography>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArboniaHeightComparisonPage

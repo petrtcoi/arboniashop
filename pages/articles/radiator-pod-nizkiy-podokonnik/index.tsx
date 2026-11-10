@@ -108,21 +108,23 @@ const LinkText = ({ href, children }: { href: string; children: React.ReactNode 
 
 const Paragraph = ({ children, marginTop = '14px' }: { children: React.ReactNode; marginTop?: string }) => (
 	<Typography
-		component='p'
-		marginTop={marginTop}
-		sx={{ ...styles.standardText }}
-	>
+        component='p'
+        sx={{
+            marginTop: marginTop,
+            ...styles.standardText
+        }}>
 		{children}
 	</Typography>
 )
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 	<Typography
-		component='h2'
-		variant='h5'
-		marginTop='44px'
-		marginBottom='12px'
-	>
+        component='h2'
+        variant='h5'
+        sx={{
+            marginTop: '44px',
+            marginBottom: '12px'
+        }}>
 		{children}
 	</Typography>
 )
@@ -157,32 +159,32 @@ const ArticlePage: NextPage = () => {
 
 
 	return (
-		<Box>
-			<Head>
+        <Box>
+            <Head>
 				<link
 					key='canonical'
 					rel='canonical'
 					href={`${siteUrl}/articles/${slug}`}
 				/>
 			</Head>
-			<Script
+            <Script
 				id='radiator-pod-nizkiy-podokonnik-article-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
 			/>
-			<Script
+            <Script
 				id='radiator-pod-nizkiy-podokonnik-faq-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
 			/>
 
-			<PageHeader
+            <PageHeader
 				title={metaTitle}
 				description={metaDescription}
 				type='article'
 				image='/images/models/3030-0.jpeg'
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -190,17 +192,22 @@ const ArticlePage: NextPage = () => {
 				]}
 			/>
 
-			<Box
-				component='article'
-				sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto', ...styles.standardText }}
-				marginTop='20px'
-			>
+            <Box
+                component='article'
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component='h1'
-					variant='h4'
-					marginTop='10px'
-					marginBottom='24px'
-				>
+                    component='h1'
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '24px'
+                    }}>
 					{h1}
 				</Typography>
 
@@ -254,7 +261,11 @@ const ArticlePage: NextPage = () => {
 					обеих моделей можно в каталоге <LinkText href='/catalog/low-models'>низких радиаторов Arbonia</LinkText>.
 				</Paragraph>
 
-				<Box textAlign='center' marginTop='28px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginTop: '28px'
+                    }}>
 					<img
 						src='/images/models/3030-0.jpeg'
 						alt='Низкий радиатор Arbonia 3030 под подоконником'
@@ -329,7 +340,9 @@ const ArticlePage: NextPage = () => {
 
 				<SectionHeading>Частые вопросы</SectionHeading>
 				{faqItems.map(item => (
-					<Box key={item.question} marginTop='24px'>
+					<Box key={item.question} sx={{
+                        marginTop: '24px'
+                    }}>
 						<Typography component='h3' variant='h6' sx={{ fontSize: '17px' }}>
 							{item.question}
 						</Typography>
@@ -337,9 +350,21 @@ const ArticlePage: NextPage = () => {
 					</Box>
 				))}
 
-				<Box marginTop='52px' padding='25px' sx={{ backgroundColor: '#f6f6f6', border: '1px solid #e5e5e5' }}>
-					<Grid container spacing={2} alignItems='center'>
-						<Grid item xs={12} md={8}>
+				<Box
+                    sx={{
+                        marginTop: '52px',
+                        padding: '25px',
+                        backgroundColor: '#f6f6f6',
+                        border: '1px solid #e5e5e5'
+                    }}>
+					<Grid container spacing={2} sx={{
+                        alignItems: 'center'
+                    }}>
+						<Grid
+                            size={{
+                                xs: 12,
+                                md: 8
+                            }}>
 							<Typography component='h2' variant='h5'>
 								Получить расчет низкого радиатора
 							</Typography>
@@ -350,7 +375,11 @@ const ArticlePage: NextPage = () => {
 								реальный монтажный габарит до покупки, а не исправлять выводы труб после доставки.
 							</Paragraph>
 						</Grid>
-						<Grid item xs={12} md={4}>
+						<Grid
+                            size={{
+                                xs: 12,
+                                md: 4
+                            }}>
 							<a href='/request' style={{ textDecoration: 'none' }}>
 								<Button variant='contained' color='secondary'>
 									Запросить подбор
@@ -360,8 +389,8 @@ const ArticlePage: NextPage = () => {
 					</Grid>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

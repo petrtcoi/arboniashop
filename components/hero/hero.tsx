@@ -14,15 +14,14 @@ type HeroProps = {
 const Hero: React.FC<HeroProps> = ({ imgPath, header, subheader }) => {
   return (
     <Box
-      position="relative"
-      width={"100%"}
-      height={"400px"}
       sx={{
+        position: "relative",
+        width: "100%",
+        height: "400px",
         backgroundImage: `url("${imgPath}")`,
         backgroundSize: "cover",
         textShadow: "0px 0px 5px rgb(0 0 0 / 60%"
-      }}
-    >
+      }}>
       {/* <img
         src={imgPath}
         layout={"fill"}
@@ -31,10 +30,12 @@ const Hero: React.FC<HeroProps> = ({ imgPath, header, subheader }) => {
         alt="Трубчатые радиаторы Arbonia"
       /> */}
       <Box
-        position="absolute"
-        sx={{ bottom: "40px", left: "20px" }}
-        paddingRight="20px"
-      >
+        sx={{
+          position: "absolute",
+          paddingRight: "20px",
+          bottom: "40px",
+          left: "20px"
+        }}>
         <Typography
           sx={{
             ...styles.standardText,

@@ -29,24 +29,24 @@ type Props = {
 
 const Home: NextPage<Props> = (props: Props) => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Купить радиаторы Arbonia в Москве — цены, наличие, доставка по России'}
 				description={
 					'Радиаторы Arbonia в наличии и под заказ: актуальные цены, модели под окно, вертикальные и низкие радиаторы, боковое и нижнее подключение. Склады в Москве и Санкт-Петербурге, доставка по России, официальная гарантия 10 лет.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				header={'Купить радиаторы Arbonia с гарантией 10 лет'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге в любой город России'}
 			/>
 
-			{/* <Hero
+            {/* <Hero
 				imgPath={'/images/sliders/high.jpeg'}
 				header={'Трубчатые радиаторы Arbonia'}
 				subheader={'Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ.'}
 			/> */}
-			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Typography
 					variant='h4'
 					component={'h1'}
@@ -60,75 +60,89 @@ const Home: NextPage<Props> = (props: Props) => {
 				</Typography>
 			</Box>
 
-			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Box
-					marginTop='50px'
-					paddingX={{ xs: '10px', md: '20px' }}
-				>
+                    sx={{
+                        marginTop: '50px',
+                        paddingX: { xs: '10px', md: '20px' }
+                    }}>
 					<Bestsellers {...props} />
 				</Box>
 
 				<Box
-					marginTop='50px'
-					paddingX={{ xs: '10px', md: '40px' }}
-				>
+                    sx={{
+                        marginTop: '50px',
+                        paddingX: { xs: '10px', md: '40px' }
+                    }}>
 					<InStockModels />
-					<Box marginTop='30px'>
+					<Box sx={{
+                        marginTop: '30px'
+                    }}>
 						<BlockHowReadModel />
 					</Box>
 				</Box>
 
 				<Box
-					marginTop='50px'
-					paddingX={{ xs: '10px', md: '20px' }}
-				>
+                    sx={{
+                        marginTop: '50px',
+                        paddingX: { xs: '10px', md: '20px' }
+                    }}>
 					<AboutArbonia />
 				</Box>
 
 				<Box
-					marginTop='40px'
-					paddingY='40px'
-					sx={{ backgroundColor: '#e6e6e6' }}
-				>
-					<Box paddingX={{ xs: '10px', md: '20px' }}>
+                    sx={{
+                        marginTop: '40px',
+                        paddingY: '40px',
+                        backgroundColor: '#e6e6e6'
+                    }}>
+					<Box sx={{
+                        paddingX: { xs: '10px', md: '20px' }
+                    }}>
 						<WhyMouseLite />
 					</Box>
 				</Box>
 
 				<Box
-					marginTop='50px'
-					paddingX={{ xs: '20px', md: '30px' }}
-				>
+                    sx={{
+                        marginTop: '50px',
+                        paddingX: { xs: '20px', md: '30px' }
+                    }}>
 					<Advantages />
 				</Box>
 
 				<Box
-					marginTop='40px'
-					paddingY='40px'
-				>
-					<Box paddingX={{ xs: '20px', md: '20px' }}>
+                    sx={{
+                        marginTop: '40px',
+                        paddingY: '40px'
+                    }}>
+					<Box sx={{
+                        paddingX: { xs: '20px', md: '20px' }
+                    }}>
 						<AboutManufacturer />
 					</Box>
 				</Box>
 
 				<Box
-					id='all-models'
-					marginTop='-100px'
-					paddingTop='50px'
-					paddingX={{ xs: '10px', md: '20px' }}
-				>
+                    id='all-models'
+                    sx={{
+                        marginTop: '-100px',
+                        paddingTop: '50px',
+                        paddingX: { xs: '10px', md: '20px' }
+                    }}>
 					<AllModels models={props.models} />
 				</Box>
 
 				<Box
-					marginTop='40px'
-					paddingX={{ xs: '10px', md: '20px' }}
-				>
+                    sx={{
+                        marginTop: '40px',
+                        paddingX: { xs: '10px', md: '20px' }
+                    }}>
 					<Portfolio />
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export async function getStaticProps() {

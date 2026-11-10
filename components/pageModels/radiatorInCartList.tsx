@@ -34,7 +34,11 @@ const RadiatorInCartList: React.FC<RadiatorInCartListProps> = ({
 
   return (
     <Box>
-      <Box marginTop="60px" marginBottom="20px">
+      <Box
+        sx={{
+          marginTop: "60px",
+          marginBottom: "20px"
+        }}>
         <Typography variant="h4" component="h3">
           Ваша спецификация
         </Typography>

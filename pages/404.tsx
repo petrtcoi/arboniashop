@@ -9,19 +9,21 @@ type SuccessPageProps = {}
 
 const SuccessPage: NextPage<SuccessPageProps> = () => {
 	return (
-			<Box
-				height='50vh'
-				width='100hh'
-			>
-				<PageHeader
-					title={'Страница не найдена (404) | ArboniaShop'}
-					noindex
-				/>
-			<Box
-				marginTop='10vh'
-				width='400px'
-				marginX='auto'
-			>
+        <Box
+            sx={{
+                height: '50vh',
+                width: '100hh'
+            }}>
+            <PageHeader
+                title={'Страница не найдена (404) | ArboniaShop'}
+                noindex
+            />
+            <Box
+                sx={{
+                    marginTop: '10vh',
+                    width: '400px',
+                    marginX: 'auto'
+                }}>
 				<Typography
 					variant='h5'
 					component='h1'
@@ -31,9 +33,10 @@ const SuccessPage: NextPage<SuccessPageProps> = () => {
 					Страница не найдена (404)
 				</Typography>
 				<Box
-					marginTop='40px'
-					paddingX={'1rem'}
-				>
+                    sx={{
+                        marginTop: '40px',
+                        paddingX: '1rem'
+                    }}>
 					<Typography sx={style.standardText}>
 						<p>
 							К сожалению, запрашиваемая страница не существует. Возможно, вы ввели неверный адрес или перешли по
@@ -58,8 +61,8 @@ const SuccessPage: NextPage<SuccessPageProps> = () => {
 					</Typography>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default SuccessPage

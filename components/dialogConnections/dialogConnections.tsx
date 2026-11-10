@@ -54,7 +54,7 @@ const DialogConnections: React.FC<DialogConnectionsProps> = ({
         onClose={closeDialog}
         open={show}
         fullScreen
-        TransitionComponent={Transition}
+        slots={{ transition: Transition }}
       >
         <AppBar sx={{ position: "relative" }} color="transparent">
           <Toolbar>
@@ -75,7 +75,13 @@ const DialogConnections: React.FC<DialogConnectionsProps> = ({
           <Grid container spacing={3}>
             {connections.map((connection) => {
               return (
-                <Grid item xs={6} sm={4} md={3} key={connection.id}>
+                <Grid
+                  key={connection.id}
+                  size={{
+                    xs: 6,
+                    sm: 4,
+                    md: 3
+                  }}>
                   <SingleConnection
                     connection={connection}
                     highlighted={connectionCurrId === connection.id}
@@ -85,7 +91,9 @@ const DialogConnections: React.FC<DialogConnectionsProps> = ({
               );
             })}
           </Grid>
-          <Box marginY="20px">
+          <Box sx={{
+            marginY: "20px"
+          }}>
             <Typography sx={{ ...styles.smallTextThin }}>
               &#42;Цены за подключения указаны в Евро. Оплата по курсу ЦБ +2%.
               Данные цены носят информативный характер. Пожалуйста, уточняйте

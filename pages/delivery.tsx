@@ -32,9 +32,16 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
         }
       />
       <Box sx={{ ...global.pagePadding }}>
-        <Box marginTop="30px">
+        <Box sx={{
+          marginTop: "30px"
+        }}>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6} lg={5}>
+            <Grid
+              size={{
+                xs: 12,
+                md: 6,
+                lg: 5
+              }}>
               <Typography variant="h4" component="h2" gutterBottom>
                 Доставка
               </Typography>
@@ -44,7 +51,11 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                 доставка осуществляется через транспортные компании (Деловые
                 Линии, Возовоз, Байкал-Сервис, ПЭК и т.д.).
               </Typography>
-              <Typography sx={{ ...styles.standardText }} marginTop="12px">
+              <Typography
+                sx={{
+                  marginTop: "12px",
+                  ...styles.standardText
+                }}>
                 Стоимость и срок доставки до покупателя рассчитываются
                 индивидуально и согласуются при подтверждении заказа.
                 Бесплатная доставка до терминала отправления не включает
@@ -54,7 +65,9 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                 variant="h6"
                 component="h3"
                 gutterBottom
-                marginTop="20px"
+                sx={{
+                  marginTop: "20px"
+                }}
               >
                 Москва и Санкт-Петербург
               </Typography>
@@ -76,7 +89,9 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                 variant="h6"
                 component="h3"
                 gutterBottom
-                marginTop="20px"
+                sx={{
+                  marginTop: "20px"
+                }}
               >
                 Доставка по России
               </Typography>
@@ -99,10 +114,20 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                 </ul>
               </Typography>
             </Grid>
-            <Grid item xs={12} md={1} lg={1}>
+            <Grid
+              size={{
+                xs: 12,
+                md: 1,
+                lg: 1
+              }}>
               <Divider orientation="vertical" />
             </Grid>
-            <Grid item xs={12} md={5} lg={4}>
+            <Grid
+              size={{
+                xs: 12,
+                md: 5,
+                lg: 4
+              }}>
               <Box>
                 <Typography variant="h4" component="h2" gutterBottom>
                   Оплата
@@ -115,7 +140,9 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                   variant="h6"
                   component="h3"
                   gutterBottom
-                  marginTop="20px"
+                  sx={{
+                    marginTop: "20px"
+                  }}
                 >
                   Оплата наличными
                 </Typography>
@@ -127,7 +154,9 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                   variant="h6"
                   component="h3"
                   gutterBottom
-                  marginTop="20px"
+                  sx={{
+                    marginTop: "20px"
+                  }}
                 >
                   Безналичный перевод
                 </Typography>
@@ -138,7 +167,9 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
                   variant="h6"
                   component="h3"
                   gutterBottom
-                  marginTop="20px"
+                  sx={{
+                    marginTop: "20px"
+                  }}
                 >
                   Банковские карты
                 </Typography>
@@ -149,7 +180,9 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
             </Grid>
           </Grid>
         </Box>
-        <Box marginY="30px">
+        <Box sx={{
+          marginY: "30px"
+        }}>
           <Divider />
         </Box>
         <Box>
@@ -167,7 +200,11 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
               повреждения изделия переходит к Покупателю с момента передачи
               товара Покупателю Продавцом.
             </Typography>
-            <Typography sx={{ ...styles.standardText }} marginTop="20px">
+            <Typography
+              sx={{
+                marginTop: "20px",
+                ...styles.standardText
+              }}>
               Если товарный вид приобретаемой техники не соответствует
               надлежащему, Вы вправе не принимать товар. При возникновении
               проблемы такого характера настоятельно рекомендуем связаться с
@@ -175,7 +212,9 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
             </Typography>
           </Box>
         </Box>
-        <Box marginY="30px">
+        <Box sx={{
+          marginY: "30px"
+        }}>
           <Divider />
         </Box>
         <Box>

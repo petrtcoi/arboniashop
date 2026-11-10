@@ -13,14 +13,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
-				title={'Белые радиаторы в темном интерьере: правила идеального сочетания'}
+        <Box>
+            <PageHeader
+				title={'Белый радиатор на тёмной стене: как сочетать и не ошибиться'}
 				description={
-					'Разбираемся, как вписать белый радиатор Arbonia RAL 9016 в темный интерьер без эффекта «больничной палаты». Практические правила, таблица сочетаний, советы по арматуре и освещению.'
+					'Белый радиатор RAL 9016 в тёмном интерьере: когда он смотрится акцентом, а когда лишним. Таблица сочетаний со стенами, советы по арматуре, освещению и выбору модели Arbonia.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -31,17 +31,22 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				]}
 			/>
 
-			<Typography
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Typography
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component={'h1'}
-					variant='h4'
-					marginTop='10px'
-					marginBottom={'30px'}
-				>
+                    component={'h1'}
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '30px'
+                    }}>
 					Белый радиатор на темной стене: ошибка или осознанный стиль?
 				</Typography>
 
@@ -99,9 +104,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</ul>
 
 				<Box
-					textAlign={'center'}
-					maxWidth={700}
-				>
+                    sx={{
+                        textAlign: 'center',
+                        maxWidth: 700
+                    }}>
 					<img
 						src='/images/articles/belye-radiatory-v-temnom-interiere.avif'
 						alt='Белый вертикальный радиатор Arbonia на темной стене в интерьере'
@@ -248,8 +254,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</li>
 				</ul>
 			</Typography>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

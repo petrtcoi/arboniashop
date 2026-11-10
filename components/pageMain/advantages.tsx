@@ -9,26 +9,34 @@ type AdvantagesProps = {}
 
 const Advantages: React.FC<AdvantagesProps> = () => {
 	return (
-		<Box paddingX={{ xs: '10px', md: '20px' }}>
-			<Typography
+        <Box sx={{
+            paddingX: { xs: '10px', md: '20px' }
+        }}>
+            <Typography
 				variant='h5'
 				component='h2'
-				textAlign='left'
+				sx={{
+                    textAlign: 'left'
+                }}
 			>
 				Почему стоит купить радиаторы Arbonia
 			</Typography>
-			<Box marginTop='30px'>
+            <Box sx={{
+                marginTop: '30px'
+            }}>
 				<Grid
 					container
 					spacing={4}
 				>
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-					>
-						<Box textAlign='center'>
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<div style={{ ...styles.roundSquareImage, display: 'inline-block' }}>
 								<img
 									src='/images/advantages/1.jpg'
@@ -46,11 +54,12 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 							</Typography>
 						</Box>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth={400}
-							marginX='auto'
-							marginTop='10px'
-						>
+                            sx={{
+                                maxWidth: 400,
+                                marginX: 'auto',
+                                marginTop: '10px',
+                                ...styles.smallText
+                            }}>
 							Arbonia - известный европейский производитель, ведущий свою историю с 1954 года. Компания специализируется
 							на производстве отопительного и вентиляционного оборудования. Помимо трубчатых радиаторов, компания
 							занимается изготовлением полотенцесушителей и панельных радиаторов.
@@ -58,12 +67,14 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-					>
-						<Box textAlign='center'>
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<div style={{ ...styles.roundSquareImage, display: 'inline-block' }}>
 								<img
 									src='/images/advantages/2.jpg'
@@ -81,11 +92,12 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 							</Typography>
 						</Box>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth={400}
-							marginX='auto'
-							marginTop='10px'
-						>
+                            sx={{
+                                maxWidth: 400,
+                                marginX: 'auto',
+                                marginTop: '10px',
+                                ...styles.smallText
+                            }}>
 							В модельном ряде трубчатых радиаторов Arbonia имеется 5 вариантов глубины. Высота батарей возможна от 19
 							см до 3 м. Длина до 66 секций вместо 40 секций, как у большинства производителей. Радиаторы Arbonia
 							продолжают поставляться в Россию, в том числе и по индивидуальным заказам.
@@ -93,12 +105,14 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-					>
-						<Box textAlign='center'>
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<div style={{ ...styles.roundSquareImage, display: 'inline-block' }}>
 								<img
 									src='/images/advantages/3.jpg'
@@ -116,11 +130,12 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 							</Typography>
 						</Box>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth={400}
-							marginX='auto'
-							marginTop='10px'
-						>
+                            sx={{
+                                maxWidth: 400,
+                                marginX: 'auto',
+                                marginTop: '10px',
+                                ...styles.smallText
+                            }}>
 							Форма трубчатого радиатора позволяет его легко чистить щеткой или мыть. Базовая покраска имеет гладкую
 							поверхность, на которой не накапливаются пыль и грязь. Это преимущество играет особенно важную роль в
 							случаях, когда в доме живут люди, страдающие аллергией.
@@ -128,12 +143,14 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-					>
-						<Box textAlign='center'>
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<div style={{ ...styles.roundSquareImage, display: 'inline-block' }}>
 								<img
 									src='/images/advantages/4.jpg'
@@ -151,11 +168,12 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 							</Typography>
 						</Box>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth={400}
-							marginX='auto'
-							marginTop='10px'
-						>
+                            sx={{
+                                maxWidth: 400,
+                                marginX: 'auto',
+                                marginTop: '10px',
+                                ...styles.smallText
+                            }}>
 							Гарантия на радиаторы Arbonia составляет 10 лет. Радиаторы подходят для работы в российских условиях и для
 							установки в многоквартирные дома. Благодаря полностью автоматизированному процессу производства
 							исключается человеческий фактор.
@@ -163,12 +181,14 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-					>
-						<Box textAlign='center'>
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<div style={{ ...styles.roundSquareImage, display: 'inline-block' }}>
 								<img
 									src='/images/advantages/5.jpg'
@@ -186,11 +206,12 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 							</Typography>
 						</Box>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth={400}
-							marginX='auto'
-							marginTop='10px'
-						>
+                            sx={{
+                                maxWidth: 400,
+                                marginX: 'auto',
+                                marginTop: '10px',
+                                ...styles.smallText
+                            }}>
 							В наличии поддерживаются наиболее популярные модели Arbonia. От небольших 2030, до вертикальных и мощных
 							3180. Вертикальные модели также доступны в цветном исполнении: черный и темно-серый оттенки. В подавляющем
 							большинству случаев наши покупатели находят радиаторы с требуемыми характеристиками у нас в наличии. Для
@@ -199,12 +220,14 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-					>
-						<Box textAlign='center'>
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<div style={{ ...styles.roundSquareImage, display: 'inline-block' }}>
 								<img
 									src='/images/advantages/6.jpg'
@@ -222,11 +245,12 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 							</Typography>
 						</Box>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth={400}
-							marginX='auto'
-							marginTop='10px'
-						>
+                            sx={{
+                                maxWidth: 400,
+                                marginX: 'auto',
+                                marginTop: '10px',
+                                ...styles.smallText
+                            }}>
 							Arbonia отгружаются со складов, расположенных в Москве и Санкт-Петербурге. Доставка возможна в любой город
 							России. Благодаря надежной заводской упаковке радиаторы будут доставлены без досадных повреждений. Мы
 							имеем опыт доставки радиаторов от Калининграда до Владивостока, а также в Казахстан.
@@ -234,8 +258,8 @@ const Advantages: React.FC<AdvantagesProps> = () => {
 					</Grid>
 				</Grid>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default Advantages

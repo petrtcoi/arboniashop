@@ -15,14 +15,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
-				title={'Радиаторы Arbonia: способы передачи тепла, конвекция и тепловое излучение'}
+        <Box>
+            <PageHeader
+				title={'Конвекция и тепловое излучение: как радиатор греет комнату'}
 				description={
-					'Трубчатые радиаторы Arbonia передают тепло как с помощью теплового излучения, так и с помощью конвекции. Какой вид передачи тепла эффективнее? Какие у каждого есть преимущества и недостатки? Разбираем в этой статье.'
+					'Радиатор отдаёт тепло двумя способами — конвекцией и излучением. Соотношение — от 50/50 у плоских панелей до 90% конвекции у конвекторов. Что это меняет на практике.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -32,47 +32,53 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Что такое конвекция и тепловое излучение радиатора'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Все радиаторы отопления, без исключения, обогревают помещение за счет двух физических явлений: конвекция
 					воздуха и тепловое (инфракрасное) излучение. Разные конструкции и модели радиаторов обладают разным
 					соотношением доли тепла, передаваемой тем или иным способом: от 50/50 для абсолютно плоских радиаторов,
 					состоящих из одной панели, до 90% и более конвекции для мощных конвекторов.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Разберем, от чего зависит мощность радиатора, передаваемая тем или иным путем и в чем их различие с точки
 					зрения эффективности и комфорта. Ведь более мощный радиатор - это и менее комфортный для жизни радиатор.
 					Достаточно сравнить показатели и стоимость недорогих и практичных панельных радиаторов с премиальными
 					трубчатыми радиаторами Arbonia.
 				</Typography>
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Конвекция
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Передача тепла через теплый воздух - это основной вид передачи для всех радиаторов отопления. Обогрев
 					помещения осуществляется в несколько шагов:
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<ol>
 						<li>Радиатор нагревает соприкасающийся с ним воздух</li>
 						<li>Нагретый воздух поднимается вверх, освобождая место у поверхности радиатора</li>
@@ -83,15 +89,17 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</ol>
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Мощность радиатора, передаваемая через конвекцию, зависит от двух факторов
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<ul>
 						<li>
 							Площадь радиатора: чем большая площадь соприкосновения горячих частей радиатора с воздухом, тем большее
@@ -104,16 +112,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</ul>
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Для того, чтобы добиться большей площади соприкосновения радиатора с воздухом, инженеры делают радиатор
 					“проветриваемым”, давая возможность воздуху свободно проходить сквозь него и размещая внутри отопительного
 					прибора как можно больше пластин (абсолютно тот же принцип, что и на автомобильных радиаторах охлаждения).
 					Достаточно взглянуть на внутреннюю часть панельных, алюминиевых радиаторов, а также конвекторов, чтобы понять,
 					о чем идет речь.
 				</Typography>
-				<Box textAlign={'center'}>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/articles/20230110_1.jpg'
 						alt='Панельный и алюминиевый радиаторы'
@@ -122,31 +133,36 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					/>
 				</Box>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Добавленные пластины выполняют также функцию ускорения потока воздуха: закрытые вертикальные каналы создают
 					тягу. Нагретый воздух не распыляется, но движется строго вертикально, нагреваясь и ускоряясь, подтягивая снизу
 					новую порцию холодного воздуха. Если это конвектор с принудительной конвекцией (внутрипольный или настенный),
 					то его мощность уже на порядок больше, чем у точно таких же конвекторов, но с естественной конвекцией.
 				</Typography>
 				<Typography
-					marginTop='40px'
 					variant='h6'
 					component={'h3'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Преимущества и недостатки конвекторов
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Какие преимущества имеют отопительные приборы, делающие ставку на конвекцию:
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<ul>
 						<li>
 							Цена. В большинстве случаев, это радиаторы из бюджетного сегмента: батареи с такой конструкцией
@@ -164,17 +180,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Почему же конвекторы не являются единственным типом отопительных приборов и их основная сфера применения - это
 					жилье эконом / комфорт - класса? Для этого есть ряд причин, вытекающих из преимуществ конвекторов, а потому
 					неустранимых принципиально.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<ul>
 						<li>
 							Скорость нагрева. Передача тепла через воздух не является эффективной. Да, конвекторы эффективно передают
@@ -204,25 +222,29 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Тепловое излучение
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Если при конвекции передача тепла осуществляется опосредованно, через воздух, в три этапа, то при тепловом
 					излучении шаг только один: нагретый радиатор греет предметы вокруг себя напрямую через инфракрасное излучение.
 					В этом простота и сила подобных приборов. Мощность теплового излучения также зависит от двух факторов:
 				</Typography>
 
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<ul>
 						<li>
 							Площадь видимой части радиатора. Речь идет не об общей площади поверхности, как было с конвекторами, а
@@ -236,16 +258,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Именно поэтому радиаторы, имеющую высокую долю теплового излучения, внешне выглядят проще. Для того, чтобы
 					лучше понять принцип работы инфракрасного излучения, можно посмотреть на потолочные инфракрасные панели. Эти
 					отопительные приборы, за редким исключением, используются только на коммерческих объектах большого объема, где
 					конвекторы являются малоэффективными: складские помещения, терминалы аэропортов, спортивные спортивные
 					сооружения и т.д. Внешне такие панели представляют из себя плоские алюминиевые листы.
 				</Typography>
-				<Box textAlign={'center'}>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/articles/20230110_2.jpg'
 						alt='Трубчатые радиаторы Arbonia'
@@ -255,22 +280,26 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Box>
 
 				<Typography
-					marginTop='40px'
 					variant='h6'
 					component={'h3'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Преимущества и недостатки инфракрасного излучения
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Какие преимущества имеют отопительные приборы, делающие ставку на конвекцию:
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<ul>
 						<li>
 							Скорость. При таком типе передачи тепла устраняется воздух в виде посредника. Радиатор сразу же передает
@@ -295,15 +324,17 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Но есть здесь и недостатки:
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<ul>
 						<li>
 							Стоимость. Первое, что бросается в глаза - это стоимость. Трубчатые радиаторы стоят дороже стальных
@@ -322,7 +353,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						</li>
 					</ul>
 				</Typography>
-				<Box textAlign={'center'}>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/articles/20230110_3.jpg'
 						alt='Потолочная инфракрасная панель'
@@ -331,25 +364,29 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					/>
 				</Box>
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Заключение
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					В данной статье мы кратко рассмотрели основные отличия конвекционного способа передачи тепла от инфракрасного.
 					Первый, как правило, является более дешевым и компактным решением. Конвекция прекрасно подходит для небольших
 					и средних помещений с потолками до 3 метров. Если оставить в стороне вопросы дизайна и гигиены, то конвекторы
 					вроде панельных, алюминиевых или биметаллических радиаторов - это отличный вариант.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Если же вам требуется обогреть большую комнату с высокими потолками, количество пыли в воздухе имеет
 					существенное значение, а интерьер требует решений из соответствующего сегмента, то &#160;
 					<a
@@ -368,15 +405,16 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					доля теплового излучения и проще уборка.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					В нашем магазине вы можете приобрести как складские модели Arbonia, так и заказать их изготовление по
 					индивидуальным параметрам на заводе.
 				</Typography>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

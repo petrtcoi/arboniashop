@@ -4,21 +4,25 @@ import * as styles from '../../styles/styles'
 
 export function InStockModels() {
 	return (
-		<Box marginTop='70px'>
-			<Typography
+        <Box sx={{
+            marginTop: '70px'
+        }}>
+            <Typography
 				variant='h5'
 				component='h2'
 				id='in_stock_section'
-				textAlign='left'
-				// sx={{ textTransform: 'uppercase' }}
+				sx={{
+                    textAlign: 'left'
+                }}
 			>
 				Купить радиаторы Arbonia из наличия
 			</Typography>
 
-			<Box
-				marginTop='20px'
-				maxWidth='700px'
-			>
+            <Box
+                sx={{
+                    marginTop: '20px',
+                    maxWidth: '700px'
+                }}>
 				<Typography sx={{ ...styles.standardText }}>
 					У нас вы можете купить радиаторов Arbonia из наличия. В складскую программу входят как невысокие модели
 					высотой 30 см, так и вертикальные батареи 180 см. Склады находятся в Москве и в Санкт-Петербурге. В другие
@@ -38,16 +42,15 @@ export function InStockModels() {
 				</Typography>
 			</Box>
 
-			{/* Стандартная высота */}
-			<Box marginTop='40px'>
+            {/* Стандартная высота */}
+            <Box sx={{
+                marginTop: '40px'
+            }}>
 				<Grid
 					container
 					spacing={2}
 				>
-					<Grid
-						item
-						xs={12}
-					>
+					<Grid size={12}>
 						<Divider
 							variant='fullWidth'
 							textAlign='left'
@@ -61,12 +64,14 @@ export function InStockModels() {
 						</Divider>
 					</Grid>
 					<Grid
-						item
-						xs={12}
-						md={6}
-					>
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
 						<Typography sx={{ ...styles.standardText }}>Боковое подключение</Typography>
-						<Box paddingLeft='10px'>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<Box id='2050-9016-69tvv'>
 								<a
 									style={{ textDecoration: 'none' }}
@@ -102,12 +107,14 @@ export function InStockModels() {
 						</Box>
 					</Grid>
 					<Grid
-						item
-						xs={12}
-						md={6}
-					>
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
 						<Typography sx={{ ...styles.standardText }}>Нижнее подключение</Typography>
-						<Box paddingLeft='10px'>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<Box id='2050-9016-12'>
 								<a
 									style={{ textDecoration: 'none' }}
@@ -145,8 +152,10 @@ export function InStockModels() {
 				</Grid>
 			</Box>
 
-			{/* Высокие */}
-			<Box marginTop='40px'>
+            {/* Высокие */}
+            <Box sx={{
+                marginTop: '40px'
+            }}>
 				<Divider
 					variant='fullWidth'
 					textAlign='left'
@@ -164,20 +173,26 @@ export function InStockModels() {
 				<Grid
 					container
 					spacing={2}
-					marginTop={'5px'}
+					sx={{
+                        // Grid v2 считает spacing через gap: +16px вместо прежнего padding-top элементов
+                        marginTop: '21px'
+                    }}
 				>
 					<Grid
-						item
-						xs={12}
-						md={6}
-					>
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
 						<Typography sx={{ ...styles.standardText }}>Боковое подключение</Typography>
-						<Box paddingLeft='10px'>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<Box
-								id='2180-9016-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2180-9016-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180-9016-12'
@@ -186,10 +201,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='2180-7016-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2180-7016-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180-7016-12'
@@ -198,10 +214,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='2180-sf3-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2180-sf3-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180-sf3-12'
@@ -212,10 +229,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='2180-9005-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2180-9005-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180-9005-12'
@@ -224,10 +242,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3180-9016-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3180-9016-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3180-9016-12'
@@ -236,10 +255,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3180-7016-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3180-7016-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3180-7016-12'
@@ -248,10 +268,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3180-sf3-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3180-sf3-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3180-sf3-12'
@@ -264,17 +285,20 @@ export function InStockModels() {
 						</Box>
 					</Grid>
 					<Grid
-						item
-						xs={12}
-						md={6}
-					>
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
 						<Typography sx={{ ...styles.standardText }}>Нижнее подключение</Typography>
-						<Box paddingLeft='10px'>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<Box
-								id='2180-9016-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2180-9016-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180-9016-69tvv'
@@ -283,10 +307,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='2180-7016-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2180-7016-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180-7016-69tvv'
@@ -295,10 +320,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='2180-sf3-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2180-sf3-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180-sf3-69tvv'
@@ -309,10 +335,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='2180-9005-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2180-9005-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180-9005-69tvv'
@@ -321,10 +348,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3180-9016-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3180-9016-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3180-9016-69tvv'
@@ -333,10 +361,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3180-7016-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3180-7016-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3180-7016-69tvv'
@@ -345,10 +374,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3180-sf3-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3180-sf3-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3180-sf3-69tvv'
@@ -363,8 +393,10 @@ export function InStockModels() {
 				</Grid>
 			</Box>
 
-			{/* Низкие радиаторы */}
-			<Box marginTop='40px'>
+            {/* Низкие радиаторы */}
+            <Box sx={{
+                marginTop: '40px'
+            }}>
 				<Divider
 					variant='fullWidth'
 					textAlign='left'
@@ -382,20 +414,26 @@ export function InStockModels() {
 				<Grid
 					container
 					spacing={2}
-					marginTop={'5px'}
+					sx={{
+                        // Grid v2 считает spacing через gap: +16px вместо прежнего padding-top элементов
+                        marginTop: '21px'
+                    }}
 				>
 					<Grid
-						item
-						xs={12}
-						md={6}
-					>
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
 						<Typography sx={{ ...styles.standardText }}>Боковое подключение</Typography>
-						<Box paddingLeft='10px'>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<Box
-								id='2030-9016-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='2030-9016-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2030-9016-12'
@@ -404,10 +442,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3030-9016-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3030-9016-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3030-9016-12'
@@ -416,10 +455,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3037-9016-12'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3037-9016-12'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3037-9016-12'
@@ -430,17 +470,20 @@ export function InStockModels() {
 						</Box>
 					</Grid>
 					<Grid
-						item
-						xs={12}
-						md={6}
-					>
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
 						<Typography sx={{ ...styles.standardText }}>Нижнее подключение</Typography>
-						<Box paddingLeft='10px'>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<Box
-								id='3030-9016-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3030-9016-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3030-9016-69tvv'
@@ -449,10 +492,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3030-9005-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3030-9005-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3030-9005-69tvv'
@@ -461,10 +505,11 @@ export function InStockModels() {
 								</a>
 							</Box>
 							<Box
-								id='3037-9016-69tvv'
-								paddingTop='50px'
-								marginTop='-50px'
-							>
+                                id='3037-9016-69tvv'
+                                sx={{
+                                    paddingTop: '50px',
+                                    marginTop: '-50px'
+                                }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/3037-9016-69tvv'
@@ -477,16 +522,15 @@ export function InStockModels() {
 				</Grid>
 			</Box>
 
-			{/* Популярные подборки */}
-			<Box marginTop='40px'>
+            {/* Популярные подборки */}
+            <Box sx={{
+                marginTop: '40px'
+            }}>
 				<Grid
 					container
 					spacing={2}
 				>
-					<Grid
-						item
-						xs={12}
-					>
+					<Grid size={12}>
 						<Divider
 							variant='fullWidth'
 							textAlign='left'
@@ -500,14 +544,16 @@ export function InStockModels() {
 						</Divider>
 					</Grid>
 					<Grid
-						item
-						xs={12}
-						md={6}
-					>
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
 						{/* <Typography sx={ { ...styles.standardText } }>
                               По цвету
                           </Typography> */}
-						<Box paddingLeft='10px'>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/catalog/standard'
@@ -529,11 +575,13 @@ export function InStockModels() {
 						</Box>
 					</Grid>
 					<Grid
-						item
-						xs={12}
-						md={6}
-					>
-						<Box paddingLeft='10px'>
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/catalog/ral9016'
@@ -544,6 +592,6 @@ export function InStockModels() {
 					</Grid>
 				</Grid>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }

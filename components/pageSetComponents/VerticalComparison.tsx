@@ -18,11 +18,13 @@ const VerticalComparison: React.FC<SetComponentProps> = ({ models, colors, conne
 		return { model, price: price.noConsole }
 	})
 	return (
-		<Box marginTop='36px'>
-			<Typography component='h2' variant='h5'>Сравнение Arbonia 2180 и 3180 на 8 секций</Typography>
-			<p>Обе модели имеют высоту 180 см. Сравним белое боковое исполнение RAL 9016 при одинаковом числе секций.
+        <Box sx={{
+            marginTop: '36px'
+        }}>
+            <Typography component='h2' variant='h5'>Сравнение Arbonia 2180 и 3180 на 8 секций</Typography>
+            <p>Обе модели имеют высоту 180 см. Сравним белое боковое исполнение RAL 9016 при одинаковом числе секций.
 			2180 занимает меньше места по глубине, а 3180 даёт больше мощности при той же длине корпуса.</p>
-			<TableContainer>
+            <TableContainer>
 				<Table size='small' sx={{ minWidth: 640 }}>
 					<TableHead><TableRow>
 						<TableCell>Модель</TableCell><TableCell>Высота / глубина / длина, мм</TableCell>
@@ -36,14 +38,14 @@ const VerticalComparison: React.FC<SetComponentProps> = ({ models, colors, conne
 					</TableRow>)}</TableBody>
 				</Table>
 			</TableContainer>
-			<p>ΔT=50 °C соответствует режиму 75/65/20, ΔT=60 °C — 85/75/20. Для другого режима мощность пересчитывают.
+            <p>ΔT=50 °C соответствует режиму 75/65/20, ΔT=60 °C — 85/75/20. Для другого режима мощность пересчитывают.
 			Цена указана за радиатор на 8 секций. Кронштейны и арматуру подбирают отдельно.</p>
-			<p>Если глубина стены ограничена, начните с <a href='/models/2180'>Arbonia 2180</a>.
+            <p>Если глубина стены ограничена, начните с <a href='/models/2180'>Arbonia 2180</a>.
 			Если при доступной длине не хватает мощности, сравните <a href='/models/3180'>Arbonia 3180</a>.
 			Для окончательного подбора используйте <a href='/articles/2180-3180'>подробное сравнение моделей</a>
 			и <a href='/articles/vertical-radiator-power'>расчёт мощности вертикального радиатора</a>.</p>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default VerticalComparison

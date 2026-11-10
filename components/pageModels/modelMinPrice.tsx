@@ -21,18 +21,22 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ model, minPrice, setTabBu
 	}
 
 	return (
-		<Box>
-			<Box marginRight='10px'>
+        <Box>
+            <Box sx={{
+                marginRight: '10px'
+            }}>
 				<Typography
-					sx={styles.standardText}
-					display='inline'
-				>
+                    sx={[{
+                        display: 'inline'
+                    }, styles.standardText]}>
 					Цена от:{' '}
 				</Typography>
 				<Typography
-					display='inline'
-					sx={{ fontSize: '30px', fontWeight: 600 }}
-				>
+                    sx={{
+                        display: 'inline',
+                        fontSize: '30px',
+                        fontWeight: 600
+                    }}>
 					<span
 						itemProp='offers'
 						itemScope
@@ -54,7 +58,9 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ model, minPrice, setTabBu
 					</span>
 				</Typography>
 			</Box>
-			<Box display='inline'>
+            <Box sx={{
+                display: 'inline'
+            }}>
 				<Button
 					variant='contained'
 					onClick={() => setTabBuy()}
@@ -64,7 +70,9 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ model, minPrice, setTabBu
 				</Button>
 			</Box>
 
-			<Box marginTop='30px'>
+            <Box sx={{
+                marginTop: '30px'
+            }}>
 				<a onClick={() => handlePriceOffer()}>
 					<Typography sx={styles.smallTextGreenUnderline}>
 						<span style={{ textDecorationStyle: 'dotted' }}> Нашли дешевле? Сделаем дополнительную скидку</span>
@@ -72,20 +80,24 @@ const ModelMinPrice: React.FC<ModelMinPriceProps> = ({ model, minPrice, setTabBu
 				</a>
 			</Box>
 
-			{hidePriceOffer === false && (
-				<Box marginTop='10px'>
+            {hidePriceOffer === false && (
+				<Box sx={{
+                    marginTop: '10px'
+                }}>
 					<Typography sx={styles.smallText}>
 						Мы всегда стремимся дать выгодные цены для наших покупателей. Если вы нашли радиаторы Arbonia по более
 						низким ценам, то свяжитесь с нашими специалистами и предоставьте ссылку на соответствущую страницу или готовое
 						коммерческое предложение.
 					</Typography>
-					<Box marginTop='10px'>
+					<Box sx={{
+                        marginTop: '10px'
+                    }}>
 						<Divider variant='middle' />
 					</Box>
 				</Box>
 			)}
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ModelMinPrice

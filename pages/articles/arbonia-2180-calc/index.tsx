@@ -15,14 +15,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Arbonia 2180 — таблица секций для комнаты 10–20 м²'}
 				description={
 					'Готовые примеры расчёта секций Arbonia 2180 для комнат 10, 12, 15, 16, 18 и 20 м². Таблица при ΔT=50 и 60 °C, выбор складского размера и ограничения метода.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -32,15 +32,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/high.jpeg'}
 				header={'Сколько секций радиатора Arbonia 2180 нужно для комнаты 10–20 м²'}
 			/>
-			<Typography
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Typography
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
                 <p>Ниже — готовые примеры для комнат 10–20 м² при условной нагрузке 100 Вт на 1 м².
                     Таблица показывает разницу между ΔT50 и ΔT60 для одной модели Arbonia 2180.
                     Если нужно менять площадь, высоту потолка и условия комнаты, используйте
@@ -86,7 +90,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					12 секций недостаточно даже при ΔT=60 °C: их мощность составляет 1968 Вт. В таком случае сравнивают
 					заказной размер, два прибора или <a href='/models/3180'>трёхтрубчатый Arbonia 3180</a>.
 				</p>
-				<Box textAlign='center'>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img src='/images/articles/20250814.jpg' alt='Вертикальный трубчатый радиатор Arbonia 2180'
 						width={700} height='auto' style={{ maxWidth: '100%', height: 'auto' }} />
 				</Box>
@@ -108,8 +114,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					и фактический режим отопления. Для нестандартной комнаты передайте эти данные специалисту вместе с планом.
 				</p>
 			</Typography>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

@@ -44,19 +44,36 @@ const LinkText = ({ href, children }: { href: string; children: React.ReactNode 
 )
 
 const Paragraph = ({ children, marginTop = '14px' }: { children: React.ReactNode; marginTop?: string }) => (
-	<Typography component='p' marginTop={marginTop} sx={{ ...styles.standardText }}>
+	<Typography
+        component='p'
+        sx={{
+            marginTop: marginTop,
+            ...styles.standardText
+        }}>
 		{children}
 	</Typography>
 )
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
-	<Typography component='h2' variant='h5' marginTop='44px' marginBottom='12px'>
+	<Typography
+        component='h2'
+        variant='h5'
+        sx={{
+            marginTop: '44px',
+            marginBottom: '12px'
+        }}>
 		{children}
 	</Typography>
 )
 
 const Subheading = ({ children }: { children: React.ReactNode }) => (
-	<Typography component='h3' variant='h6' marginTop='30px' marginBottom='10px'>
+	<Typography
+        component='h3'
+        variant='h6'
+        sx={{
+            marginTop: '30px',
+            marginBottom: '10px'
+        }}>
 		{children}
 	</Typography>
 )
@@ -123,15 +140,15 @@ const ArticlePage: NextPage = () => {
 	}
 
 	return (
-		<Box>
-			<Head>
+        <Box>
+            <Head>
 				<link key='canonical' rel='canonical' href={`${siteUrl}/articles/${slug}`} />
 				<script id={`${slug}-article-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 				<script id={`${slug}-faq-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 			</Head>
 
-			<PageHeader title={metaTitle} description={metaDescription} type='article' image='/images/sliders/slide-colors.jpg' />
-			<PageTitle
+            <PageHeader title={metaTitle} description={metaDescription} type='article' image='/images/sliders/slide-colors.jpg' />
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -139,8 +156,22 @@ const ArticlePage: NextPage = () => {
 				]}
 			/>
 
-			<Box component='article' sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto', ...styles.standardText }} marginTop='20px'>
-				<Typography component='h1' variant='h4' marginTop='10px' marginBottom='24px'>
+            <Box
+                component='article'
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
+				<Typography
+                    component='h1'
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '24px'
+                    }}>
 					{h1}
 				</Typography>
 
@@ -206,7 +237,11 @@ const ArticlePage: NextPage = () => {
 					Контраст работает убедительно, когда радиатор не остается единственным предметом своего цвета. Черный прибор можно связать с рамами, трековыми светильниками и ручками, терракотовый - с текстилем и керамикой, сложный зеленый - с креслом или картиной. Повторять цвет крупными пятнами не нужно, обычно достаточно двух или трех небольших поддерживающих деталей. Как альтернатива чистому черному подходит антрацит: он сохраняет графику, но меньше утяжеляет стену. Если вы рассматриваете темную модель, отдельный материал про <LinkText href='/articles/chernyy-radiator-arbonia'>черные радиаторы Arbonia</LinkText> поможет сравнить RAL 9005, RAL 7016 и SF-3.
 				</Paragraph>
 
-				<Box textAlign='center' marginY='30px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginY: '30px'
+                    }}>
 					<img src='/images/sliders/slide-colors.jpg' alt='Палитра цветов радиаторов Arbonia для интерьера' style={{ maxWidth: '100%', height: 'auto' }} width={760} />
 				</Box>
 
@@ -261,11 +296,13 @@ const ArticlePage: NextPage = () => {
 				<SectionHeading>Частые вопросы</SectionHeading>
 				<Paragraph>
 					Если выбор остановился на белом, используйте
-					<LinkText href='/articles/ral-9016-9010-9003-kakoy-belyy-vybrat'> сравнение RAL 9016, RAL 9010 и RAL 9003</LinkText>:
+					<LinkText href='/articles/ral-9016-pochemu-vybirayut-arkhitektory'> сравнение RAL 9016, RAL 9010 и RAL 9003</LinkText>:
 					оно помогает согласовать радиатор со стеной, оконным профилем и мебелью.
 				</Paragraph>
 				{faqItems.map(item => (
-					<Box key={item.question} marginTop='24px'>
+					<Box key={item.question} sx={{
+                        marginTop: '24px'
+                    }}>
 						<Typography component='h3' variant='h6' sx={{ fontSize: '17px' }}>
 							{item.question}
 						</Typography>
@@ -273,22 +310,41 @@ const ArticlePage: NextPage = () => {
 					</Box>
 				))}
 
-				<Box marginTop='52px' padding='25px' sx={{ backgroundColor: '#f6f6f6', border: '1px solid #e5e5e5' }}>
-					<Grid container spacing={2} alignItems='center'>
-						<Grid item xs={12} md={8}>
+				<Box
+                    sx={{
+                        marginTop: '52px',
+                        padding: '25px',
+                        backgroundColor: '#f6f6f6',
+                        border: '1px solid #e5e5e5'
+                    }}>
+					<Grid container spacing={2} sx={{
+                        alignItems: 'center'
+                    }}>
+						<Grid
+                            size={{
+                                xs: 12,
+                                md: 8
+                            }}>
 							<Typography component='h2' variant='h5'>Подобрать модель и цвет Arbonia</Typography>
 							<Paragraph marginTop='10px'>
 								Пришлите размеры стены или ниши, фотографию помещения при дневном свете, нужную мощность и примеры отделки. Мы сравним складские цвета и покраску, проверим модель, подключение и сроки, а затем предложим несколько решений с понятными плюсами и минусами. Если точного кода пока нет, достаточно фотографии и общего описания желаемого эффекта. Финальный оттенок согласуем по образцу до заказа.
 							</Paragraph>
 						</Grid>
-						<Grid item xs={12} md={4} textAlign={{ xs: 'left', md: 'right' }}>
+						<Grid
+                            sx={{
+                                textAlign: { xs: 'left', md: 'right' }
+                            }}
+                            size={{
+                                xs: 12,
+                                md: 4
+                            }}>
 							<a href='/request' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Получить подбор</Button></a>
 						</Grid>
 					</Grid>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

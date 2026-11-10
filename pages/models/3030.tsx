@@ -1,4 +1,5 @@
 import ProductMetadata from '../../components/seo/ProductMetadata'
+import { formatPriceFrom, getStockPriceFrom } from '../../utils/getPriceFrom'
 import { Box, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
 import React, { useRef } from 'react'
@@ -38,29 +39,30 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 	const model = models.find(model => model.id === '3030')
 	if (!model) return null
 
+	const priceFrom = getStockPriceFrom({ models, colors, connections, familyCodes: ['3030'] })
 	return (
-		<Box
+        <Box
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
-			<ProductMetadata description={`Стальной трубчатый радиатор Arbonia 3030: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='3030' />
-			<meta
+            <ProductMetadata description={`Стальной трубчатый радиатор Arbonia 3030: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='3030' />
+            <meta
 				itemProp='name'
 				content='Радиаторы Arbonia 3030'
 			/>
-			<meta
+            <meta
 				itemProp='countryOfOrigin'
 				content='Чехия'
 			/>
-			<meta
+            <meta
 				itemProp='material'
 				content='Сталь'
 			/>
-			<PageHeader
-				title={'Arbonia 3030 — низкий радиатор высотой 30 см: цены и наличие'}
+            <PageHeader
+				title={priceFrom ? `Arbonia 3030 — низкий радиатор высотой 30 см: цена от ${formatPriceFrom(priceFrom)}` : 'Arbonia 3030 — низкий радиатор высотой 30 см: цены и наличие'}
 				description='Низкие радиаторы Arbonia 3030 в наличии (высота 30 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка в любой город России.'
 			/>
-			<PageTitle
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Купить стальной трубчатый радиатор Arbonia 3030'}
 				breadcrumbs={[
@@ -68,21 +70,22 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					{ title: 'Arbonia 3030', link: '/models/3030' },
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Радиаторы Arbonia 3030'}
 				subheader={'Низкие трёхтрубчатые радиаторы Arbonia высотой 30 см в наличии'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<p>Выберите подключение: <a href='/models/3030-9016-12'>белый Arbonia 3030 с боковым №12</a> или <a href='/models/3030-9016-69tvv'>нижним №69 ТВВ</a>. Для сравнения по высоте и мощности откройте <a href='/catalog/low-models'>низкие радиаторы 30–37 см</a>.</p>
 				<p>Для выбора исполнения используйте <a href='/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost'>расчёт числа секций Arbonia 3030</a>: таблицу длины и мощности при ΔT50 и ΔT60 и примеры на 800–1000 Вт.</p>
 				<Box
-					marginBottom='30px'
-					display='flex'
-					flexDirection='row'
-					gap='15px'
-					flexWrap='wrap'
-				>
+                    sx={{
+                        marginBottom: '30px',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        gap: '15px',
+                        flexWrap: 'wrap'
+                    }}>
 					<Box
 						onClick={() => {
 							if (!refLateral.current) return
@@ -137,7 +140,9 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Box>
 				</Box>
 
-				<Box marginTop='20px'>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 3030 - это 3-трубчатая модель высотой всего 30 см Это наиболее низкая модель из имеющихся
@@ -166,8 +171,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 
 				{/* 3030 боковое*/}
 				<Box
-					marginTop='40px'
 					ref={refLateral}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3030 с боковым подключением</h2>
@@ -176,10 +183,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={4}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 4
+                                }}>
 								<img
 									itemProp='image'
 									src='/images/models/3030-12.jpeg'
@@ -190,10 +197,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={8}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 8
+                                }}>
 								<p>
 									Боковое подключение является универсальным, так как подходит для установки в домах с вертикальной
 									разводкой труб, а также для установки в квартирах с разводкой труб по полу. В наличии поддерживаются
@@ -220,8 +227,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 
 				{/* 3030 нижнее*/}
 				<Box
-					marginTop='80px'
 					ref={refBottom}
+					sx={{
+                        marginTop: '80px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3030 с нижним подключением</h2>
@@ -230,10 +239,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={4}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 4
+                                }}>
 								<img
 									src='/images/models/3030-5.jpeg'
 									alt='Радиатор Arbonia 3030 69 ТВВ'
@@ -243,10 +252,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={8}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 8
+                                }}>
 								<p>
 									Нижнее подключение является стандартом для всех современных домов. Оно позволяет более свободно
 									размещать радиаторы внутри помещения, исходя из ваших нужд, а не из расположения стояков отопления.
@@ -278,8 +287,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 
 				{/* 3030 нижнее RAL9005*/}
 				<Box
-					marginTop='80px'
 					ref={refBottom9005}
+					sx={{
+                        marginTop: '80px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3030 69 ТВВ в черном цвете RAL 9005 matt</h2>
@@ -288,10 +299,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={4}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 4
+                                }}>
 								<img
 									src='/images/models/3030-9005.jpg'
 									alt='Трубчатый радиатор Arbonia 3030 69 ТВВ RAL 9005 matt'
@@ -300,10 +311,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={8}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 8
+                                }}>
 								<p>
 									Черный цвет - это стильное современное решение. Он столь же универсален, как и белый цвет, но придает
 									интерьеру больше изысканности и оригинальности.
@@ -321,7 +332,9 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Typography>
 				</Box>
 
-				<Box marginTop='50px'>
+				<Box sx={{
+                    marginTop: '50px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Здесь мы отобразили все модели Arbonia 3030 доступные к покупке со склада. Если среди предложенных вариантов
 						не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном исполнении на заводе. Также
@@ -342,8 +355,10 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Typography>
 				</Box>
 				<Box
-					marginTop='60px'
 					ref={refOrder}
+					sx={{
+                        marginTop: '60px'
+                    }}
 				>
 					<h2>Купить радиаторы Arbonia 3030 под заказ</h2>
 					<Typography sx={{ ...styles.standardText }}>
@@ -364,15 +379,21 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						connections={connections}
 					/>
 				</Box>
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<h2>Дополнительные изображения трубчатых радиаторов Arbonia 3030</h2>
 					<ImagesOtherList imagesString={model.imagesOther || ''} />
 				</Box>
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
 				</Box>
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -397,8 +418,8 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</ul>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default Model3030

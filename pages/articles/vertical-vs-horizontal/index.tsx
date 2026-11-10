@@ -15,14 +15,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
-				title={'Какой радиатор выбрать: вертикальный или горизонтальный'}
+        <Box>
+            <PageHeader
+				title={'Вертикальный или горизонтальный радиатор: что лучше для комнаты'}
 				description={
-					'Подробно разбираем, какой радиатор лучше для вашей комнаты - вертикальный или горизонтальный. Объясняем отличия по теплоотдаче, экономии места, дизайну и установке.'
+					'Чем вертикальный радиатор отличается от горизонтального: мощность на метр стены, прогрев у окна, место под мебель и монтаж. Когда какой выбрать — на примерах Arbonia.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -33,17 +33,22 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				]}
 			/>
 
-			<Box
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Box
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component={'h1'}
-					variant='h4'
-					marginTop='10px'
-					marginBottom={'30px'}
-				>
+                    component={'h1'}
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '30px'
+                    }}>
 					Какой радиатор выбрать: вертикальный или горизонтальный
 				</Typography>
 				<p>
@@ -56,9 +61,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					комнаты, дизайна и требуемой мощности.
 				</p>
 				<Typography
-					marginTop='60px'
 					variant='h5'
 					component='h2'
+					sx={{
+                        marginTop: '60px'
+                    }}
 				>
 					🔍 Как выбрать радиатор для дома: вертикальный или горизонтальный
 				</Typography>
@@ -70,9 +77,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					важно понимать преимущества и ограничения каждого варианта.
 				</p>
 				<Typography
-					marginTop='30px'
 					variant='h6'
 					component='h3'
+					sx={{
+                        marginTop: '30px'
+                    }}
 				>
 					Когда горизонтальный радиатор становится оптимальным выбором
 				</Typography>
@@ -106,9 +115,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					свободными стенами.
 				</p>
 				<Typography
-					marginTop='30px'
 					variant='h6'
 					component='h3'
+					sx={{
+                        marginTop: '30px'
+                    }}
 				>
 					Недостатки горизонтальных радиаторов
 				</Typography>
@@ -123,9 +134,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 
 				<Typography
-					marginTop='60px'
 					variant='h5'
 					component='h2'
+					sx={{
+                        marginTop: '60px'
+                    }}
 				>
 					↕️ Преимущества вертикальных радиаторов
 				</Typography>
@@ -135,9 +148,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					ограниченной площадью стен.
 				</p>
 				<Typography
-					marginTop='30px'
 					variant='h6'
 					component='h3'
+					sx={{
+                        marginTop: '30px'
+                    }}
 				>
 					Экономия пространства и свобода планировки
 				</Typography>
@@ -162,9 +177,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					местах - от узких простенков до зон рядом с панорамными окнами.
 				</p>
 				<Typography
-					marginTop='30px'
 					variant='h6'
 					component='h3'
+					sx={{
+                        marginTop: '30px'
+                    }}
 				>
 					Гибкость дизайна и новые возможности интерьера
 				</Typography>
@@ -179,9 +196,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					композиции.
 				</p>
 				<Typography
-					marginTop='30px'
 					variant='h6'
 					component='h3'
+					sx={{
+                        marginTop: '30px'
+                    }}
 				>
 					Теплоотдача и эффективность
 				</Typography>
@@ -196,9 +215,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					несколько стандартных секций горизонтальной модели.
 				</p>
 				<Typography
-					marginTop='30px'
 					variant='h6'
 					component='h3'
+					sx={{
+                        marginTop: '30px'
+                    }}
 				>
 					Особенности монтажа
 				</Typography>
@@ -226,9 +247,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</div>
 
 				<Typography
-					marginTop='60px'
 					variant='h5'
 					component='h2'
+					sx={{
+                        marginTop: '60px'
+                    }}
 				>
 					🧾 Какой радиатор выбрать: итоговые рекомендации
 				</Typography>
@@ -266,9 +289,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					просторных современных интерьеров.
 				</p>
 				<Typography
-					marginTop='30px'
 					variant='h6'
 					component='h3'
+					sx={{
+                        marginTop: '30px'
+                    }}
 				>
 					✅ Таблица сравнения - какой радиатор выбрать
 				</Typography>
@@ -315,9 +340,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Box>
 
 				<Typography
-					marginTop='60px'
 					variant='h5'
 					component='h2'
+					sx={{
+                        marginTop: '60px'
+                    }}
 				>
 					❓ Часто задаваемые вопросы по выбору вертикальных и горизонтальных радиаторов
 				</Typography>
@@ -398,7 +425,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					выбор размеров и выразительный внешний вид, подходящий для современных интерьеров.
 				</p>
 			</Box>
-			<JsonLd data={{
+            <JsonLd data={{
 					'@context': 'https://schema.org',
 					'@type': 'FAQPage',
 					mainEntity: [
@@ -492,8 +519,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						},
 					],
 				}} />
-		</Box>
-	);
+        </Box>
+    );
 }
 
 export default ArticlePage

@@ -63,28 +63,32 @@ const cellStyle: React.CSSProperties = { border: '1px solid #dddddd', padding: '
 
 const ArticlePage: NextPage = () => {
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/connections' /></Head>
-			<Script id='connections-article-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-			<Script id='connections-faq-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-			<PageHeader
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/connections' /></Head>
+            <Script id='connections-article-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+            <Script id='connections-faq-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+            <PageHeader
 				title='Нижнее подключение Arbonia №69 ТВВ: схема, клапан и термоголовка'
 				description='Как устроено нижнее подключение радиаторов Arbonia №69 ТВВ: межосевое расстояние 50 мм, подача и обратка, встроенный клапан, узел, термоголовка, монтаж и частые ошибки.'
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
 					{ title: 'Нижнее подключение Arbonia №69 ТВВ', link: '/articles/connections' },
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath='/images/articles/100.jpg'
 				header='Нижнее подключение Arbonia №69 ТВВ'
 				subheader='Как подготовить выводы, выбрать узел и не перепутать подачу с обраткой'
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto' }}>
-				<Typography sx={{ ...styles.standardText }} marginTop='28px'>
+            <Box sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto' }}>
+				<Typography
+                    sx={{
+                        marginTop: '28px',
+                        ...styles.standardText
+                    }}>
 					Нижнее подключение удобно тем, что трубы подходят к радиатору снизу и не занимают боковые части прибора.
 					Такую схему часто закладывают в новом доме или во время капитального ремонта, когда разводку можно спрятать
 					в полу или стене. У Arbonia популярное исполнение обозначается №69 ТВВ: нижние выводы находятся на
@@ -92,7 +96,11 @@ const ArticlePage: NextPage = () => {
 					вид не означает, что монтаж можно спланировать по одной фотографии. До стяжки нужны точная модель,
 					монтажный чертёж, сторона подачи и список арматуры.
 				</Typography>
-				<Typography sx={{ ...styles.standardText }} marginTop='18px'>
+				<Typography
+                    sx={{
+                        marginTop: '18px',
+                        ...styles.standardText
+                    }}>
 					В этом руководстве разберём всю цепочку: чем №69 ТВВ отличается от бокового №12, как работает встроенный
 					клапан, зачем нужна термоголовка, что входит в нижний узел и какие данные передать монтажнику. Если модель уже
 					выбрана, можно сразу перейти к <a href='/catalog/standard'>складским радиаторам Arbonia под окно</a> и
@@ -100,15 +108,25 @@ const ArticlePage: NextPage = () => {
 					позиции: расположение элементов и состав поставки могут различаться.
 				</Typography>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Что означает маркировка №69 ТВВ</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						№69 ТВВ — это вариант присоединения, а не отдельная модель радиатора. Например, Arbonia 3050 может быть
 						выполнена с боковыми отверстиями №12 или с нижними выводами №69 ТВВ. У нижней версии теплоноситель поступает
 						через один из патрубков, проходит через клапан и каналы прибора, а затем возвращается в систему через второй
 						патрубок. Между осями выводов — 50 мм, что позволяет использовать компактный Н-образный узел подключения.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Встроенный клапан находится в верхней части одного из коллекторов и управляет расходом теплоносителя. На
 						него устанавливается термостатическая головка. Она измеряет температуру воздуха вокруг себя и механически
 						прикрывает или открывает клапан. Таким образом, встроенный клапан, декоративная термоголовка и нижний узел —
@@ -117,7 +135,9 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Боковое №12 или нижнее №69 ТВВ: практическое сравнение</Typography>
 					<Box sx={{ overflowX: 'auto', marginTop: '18px' }}>
 						<table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px' }}>
@@ -131,7 +151,11 @@ const ArticlePage: NextPage = () => {
 							</tbody>
 						</table>
 					</Box>
-					<Typography sx={{ ...styles.standardText }} marginTop='16px'>
+					<Typography
+                        sx={{
+                            marginTop: '16px',
+                            ...styles.standardText
+                        }}>
 						Нижнее подключение не является автоматически «лучшим»: оно эстетично при подготовленной разводке, но
 						требует более точной разметки. При замене старой батареи боковой вариант часто экономит время и снижает риск
 						повреждения отделки. Выбирать нужно не по внешнему виду одного элемента, а по всей схеме — от стояка или
@@ -139,16 +163,26 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Подача и обратка: почему их нельзя менять местами</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Термостатический клапан рассчитан на определённое направление потока. Если подать воду с обратной стороны,
 						клапан может работать нестабильно: появляется шум, вибрация, хуже поддерживается температура. Сам радиатор
 						при этом иногда остаётся тёплым, поэтому ошибку замечают не сразу. Ориентироваться только на правило «подача
 						слева» или «подача справа» нельзя. Исполнение радиатора, расположение клапана и схема производителя имеют
 						приоритет.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Правильный порядок такой: сначала выбирают точный артикул и число секций, затем получают монтажный чертёж,
 						после чего монтажник отмечает подающий и обратный трубопровод. Если трубы уже выведены, до заказа проверяют,
 						можно ли выбрать нужное исполнение или безопасно изменить разводку. Перекрёстное подключение и случайные
@@ -156,9 +190,16 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Из чего состоит комплект нижнего подключения</Typography>
-					<Typography component='div' sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        component='div'
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						<ul>
 							<li><strong>Радиатор в исполнении №69 ТВВ.</strong> Внутри него находится клапанная вставка, а снизу — два патрубка.</li>
 							<li><strong>Нижний узел.</strong> Соединяет патрубки с трубами и позволяет изолировать прибор для обслуживания. Бывает прямым или угловым.</li>
@@ -167,31 +208,52 @@ const ArticlePage: NextPage = () => {
 							<li><strong>Кронштейны и воздухоотводчик.</strong> Состав поставки проверяют отдельно, особенно для вертикальных моделей.</li>
 						</ul>
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Прямой нижний узел чаще используют, когда трубы выходят вертикально из пола. Угловой — когда они подходят из
 						стены. Это общий принцип, но конкретная геометрия зависит от отделки и положения радиатора. Узел не должен
 						испытывать усилие от криво выведенных труб; соединения должны оставаться доступными для проверки и сервиса.
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Как выбрать термоголовку</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Сначала проверяют совместимость с клапанной вставкой, затем форму и условия измерения температуры. Обычная
 						головка работает корректно, когда вокруг неё свободно циркулирует комнатный воздух. Если радиатор закрыт
 						плотной шторой, экраном или мебелью, датчик оказывается в локальной тёплой зоне и преждевременно уменьшает
 						подачу. В таких случаях рассматривают головку с выносным датчиком или меняют расположение текстиля и мебели.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Термоголовка не увеличивает максимальную мощность радиатора. Она лишь ограничивает расход, когда в комнате
 						достигнута заданная температура. Если прибор изначально выбран слишком маленьким или температура
 						теплоносителя ниже расчётной, установка регулятора не компенсирует недостаток тепла.
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Монтаж: последовательность работ</Typography>
-					<Typography component='div' sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        component='div'
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						<ol>
 							<li><strong>Тепловой расчёт.</strong> Определите серию и число секций с учётом температурного графика системы.</li>
 							<li><strong>Проверка места.</strong> Измерьте стену, чистовой пол, подоконник, плинтус и зазоры для конвекции.</li>
@@ -202,7 +264,11 @@ const ArticlePage: NextPage = () => {
 							<li><strong>Пуск.</strong> Удалите воздух, проверьте прогрев секций, отсутствие шума и работу клапана.</li>
 						</ol>
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						В многоквартирном доме работы выполняют с учётом правил управляющей организации. Особенно внимательно
 						относятся к однотрубным стоякам: байпас и запорная арматура не должны позволять пользователю случайно
 						перекрыть общий поток. Рабочее и испытательное давление, качество теплоносителя и допустимость конкретного
@@ -210,9 +276,16 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Семь частых ошибок</Typography>
-					<Typography component='div' sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        component='div'
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						<ol>
 							<li>Вывести трубы до выбора модели и числа секций.</li>
 							<li>Считать, что шаг 50 мм автоматически гарантирует совместимость.</li>
@@ -225,27 +298,55 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Какие модели Arbonia бывают с №69 ТВВ</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						В складской программе есть низкие 3030 и 3037, стандартные 2050, 2057, 3050 и 3057, а также вертикальные
 						2180 и 3180. Двухтрубчатые модели тоньше; трёхтрубчатые глубже, но дают больше тепла на сопоставимой длине.
 						Высоту выбирают по месту установки, глубину — по доступному пространству, число секций — по расчётной
 						мощности. Белый RAL 9016 чаще доступен быстрее, а другие цвета и исполнения требуют проверки срока.
 					</Typography>
-					<Box marginTop='22px' display='flex' flexWrap='wrap' gap='12px'>
+					<Box
+                        sx={{
+                            marginTop: '22px',
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            gap: '12px'
+                        }}>
 						<a href='/catalog/standard' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Смотреть модели под окно</Button></a>
 						<a href='/request' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Проверить расчёт и комплект</Button></a>
 					</Box>
 				</Box>
 
-				<Box marginTop='44px'>
+				<Box sx={{
+                    marginTop: '44px'
+                }}>
 					<Typography component='h2' variant='h5'>Частые вопросы</Typography>
-					{faqItems.map(item => <Box key={item.question} marginTop='22px'><Typography component='h3' variant='h6'>{item.question}</Typography><Typography sx={{ ...styles.standardText }} marginTop='8px'>{item.answer}</Typography></Box>)}
+					{faqItems.map(item => <Box key={item.question} sx={{
+                        marginTop: '22px'
+                    }}><Typography component='h3' variant='h6'>{item.question}</Typography><Typography
+                        sx={{
+                            marginTop: '8px',
+                            ...styles.standardText
+                        }}>{item.answer}</Typography></Box>)}
 				</Box>
-				<Box marginTop='44px' marginBottom='30px'>
+				<Box
+                    sx={{
+                        marginTop: '44px',
+                        marginBottom: '30px'
+                    }}>
 					<Typography component='h2' variant='h5'>Итог</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						№69 ТВВ — аккуратное решение для проекта, где разводку можно подготовить заранее. Надёжный результат дают
 						не сами «50 мм», а согласованная цепочка: тепловой расчёт, точный артикул, монтажный чертёж, правильная
 						подача, совместимый узел и проверенная комплектация. Если трубы уже выведены сбоку, сравните стоимость
@@ -253,8 +354,8 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

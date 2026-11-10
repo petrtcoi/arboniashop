@@ -59,49 +59,67 @@ const cellStyle: React.CSSProperties = { border: '1px solid #dddddd', padding: '
 
 const ArticlePage: NextPage = () => {
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/panorama' /></Head>
-			<JsonLd data={articleJsonLd} />
-			<JsonLd data={faqJsonLd} />
-			<PageHeader
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/panorama' /></Head>
+            <JsonLd data={articleJsonLd} />
+            <JsonLd data={faqJsonLd} />
+            <PageHeader
 				title='Радиаторы для панорамных окон: низкие или вертикальные'
 				description='Как выбрать отопление для панорамного окна: низкие и вертикальные радиаторы Arbonia, расчёт теплопотерь, размещение, подключение, сравнение с конвектором и тёплым полом.'
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
 					{ title: 'Радиаторы для панорамных окон', link: '/articles/panorama' },
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath='/images/sliders/high.jpeg'
 				header='Радиаторы для панорамных окон'
 				subheader='Как сохранить обзор и компенсировать теплопотери большой площади остекления'
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto' }}>
-				<Typography sx={{ ...styles.standardText }} marginTop='28px'>
+            <Box sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto' }}>
+				<Typography
+                    sx={{
+                        marginTop: '28px',
+                        ...styles.standardText
+                    }}>
 					Панорамное окно меняет привычную схему отопления: подоконника нет, стекло начинается почти от пола, а
 					обычная батарея перекрывает вид или проход. При этом наружное остекление остаётся одной из основных зон
 					теплопотерь. Задача проекта — не просто найти «самый низкий» прибор, а компенсировать нагрузку, организовать
 					комфортное движение воздуха и сохранить доступ к двери, шторам и арматуре.
 				</Typography>
-				<Typography sx={{ ...styles.standardText }} marginTop='18px'>
+				<Typography
+                    sx={{
+                        marginTop: '18px',
+                        ...styles.standardText
+                    }}>
 					Для Arbonia обычно сравнивают два решения: низкие модели 2030, 3030 и 3037 перед нижней частью окна или
 					вертикальные 2180 и 3180 на ближайшем простенке. В сложном проекте к ним добавляют внутрипольный конвектор
 					или тёплый пол. Ни одно решение не выбирают только по фотографии: сначала нужен расчёт теплопотерь, затем
 					проверка мощности прибора в реальном температурном режиме.
 				</Typography>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Почему зона остекления требует отдельного расчёта</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Через современный стеклопакет теряется меньше тепла, чем через старое одинарное окно, но обычно больше, чем
 						через утеплённую стену той же площади. Чем выше и шире витраж, тем заметнее влияние его коэффициента
 						теплопередачи. На результат также влияют ориентация фасада, ветер, расчётная температура региона, высота
 						потолка, наружные стены и инфильтрация воздуха через двери.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Мощность радиатора в каталоге указана для определённого температурного напора. Если котёл или тепловой насос
 						работает при более низкой температуре воды, фактическая отдача уменьшается. Поэтому нельзя просто взять
 						значение «100 Вт на квадратный метр» и выбрать ближайшую длину. Проектировщик считает помещение, задаёт
@@ -109,7 +127,9 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Четыре варианта отопления у панорамного окна</Typography>
 					<Box sx={{ overflowX: 'auto', marginTop: '18px' }}>
 						<table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px' }}>
@@ -124,16 +144,30 @@ const ArticlePage: NextPage = () => {
 					</Box>
 				</Box>
 
-				<Box marginTop='38px'>
-					<Typography component='p' sx={styles.standardText} marginBottom='22px'>Два решения для оконной зоны разобраны в <a href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>подробном сравнении низкого Arbonia и внутрипольного конвектора</a>.</Typography>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
+					<Typography
+                        component='p'
+                        sx={[{
+                            marginBottom: '22px'
+                        }, styles.standardText]}>Два решения для оконной зоны разобраны в <a href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>подробном сравнении низкого Arbonia и внутрипольного конвектора</a>.</Typography>
 					<Typography component='h2' variant='h5'>Низкий радиатор перед панорамным окном</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Низкая модель повторяет логику классического расположения под окном: холодный воздух возле стекла
 						смешивается с восходящим тёплым потоком. Arbonia 2030 имеет два ряда трубок и глубину 65 мм; 3030 и 3037 —
 						три ряда, они глубже и мощнее при сопоставимой длине. Выбор зависит от того, что ограничено сильнее: глубина,
 						длина или высота доступной зоны.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Измеряют расстояние от чистового пола до нижней границы рамы, но корпус нельзя вписывать в этот размер
 						впритык. Снизу и сверху оставляют зазоры для конвекции и монтажа. Учитывают ножки или кронштейны, нижний
 						узел, плинтус, шторы и траекторию открывания двери. Радиатор перед стеклом также должен быть защищён от
@@ -141,19 +175,33 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box textAlign='center' marginTop='26px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginTop: '26px'
+                    }}>
 					<img src='/images/articles/panorama/arbonia1.jpg' alt='Низкий радиатор Arbonia перед панорамным окном' width={600} height={540} style={{ maxWidth: '100%', height: 'auto' }} />
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Вертикальный радиатор на простенке</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Высокий прибор подходит, если перед окном нельзя ничего ставить. Arbonia 2180 двухтрубчатая и тоньше,
 						Arbonia 3180 трёхтрубчатая и при одинаковом числе секций мощнее. Итоговая ширина определяется расчётом.
 						На стене должны поместиться сам радиатор, кронштейны, трубы и термостатическая головка; дверь, мебель и
 						штора не должны блокировать воздух или регулирование.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Так как источник тепла удалён от центральной части окна, проектировщик проверяет, не останется ли у стекла
 						холодная зона. Результат зависит от качества стеклопакета, ширины комнаты и воздухообмена. Иногда одного
 						вертикального радиатора достаточно, иногда его дополняют тёплым полом или конвектором. Утверждение, что
@@ -161,13 +209,23 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box textAlign='center' marginTop='26px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginTop: '26px'
+                    }}>
 					<img src='/images/articles/panorama/arbonia.jpg' alt='Вертикальный радиатор Arbonia рядом с панорамным окном' width={600} height={600} style={{ maxWidth: '100%', height: 'auto' }} />
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Боковое или нижнее подключение</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Боковое подключение №12 проще использовать, если трубы уже проходят по стене. Нижнее №69 ТВВ удобно
 						заложить при новом ремонте: выводы находятся снизу с шагом 50 мм, а в прибор встроен термовентиль. Узел и
 						термоголовка могут приобретаться отдельно. До выполнения стяжки фиксируют точную модель, число секций,
@@ -176,9 +234,15 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Конденсат на окне: что действительно влияет</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Тёплый поток у стекла может повысить температуру его внутренней поверхности, но радиатор не является
 						гарантией отсутствия конденсата. Влага появляется, когда поверхность охлаждается ниже точки росы. На это
 						влияют температура и влажность воздуха, качество стеклопакета, монтаж окон, вентиляция и наружная погода.
@@ -186,9 +250,16 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Данные, которые нужны для подбора</Typography>
-					<Typography component='div' sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        component='div'
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						<ul>
 							<li>город и расчётная наружная температура;</li>
 							<li>план, площадь комнаты и высота потолка;</li>
@@ -201,9 +272,16 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Частые ошибки</Typography>
-					<Typography component='div' sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        component='div'
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						<ol>
 							<li>Выбрать прибор только по площади комнаты без расчёта остекления.</li>
 							<li>Сравнить каталожные мощности, указанные для разных температурных режимов.</li>
@@ -215,26 +293,54 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Готовые модели и расчёт</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						На коммерческой странице собраны низкие и вертикальные складские модели с ценами по числу секций. Это
 						удобная отправная точка, но перед заказом мы рекомендуем проверить мощность, монтажные зазоры и подключение.
 					</Typography>
-					<Box marginTop='22px' display='flex' flexWrap='wrap' gap='12px'>
+					<Box
+                        sx={{
+                            marginTop: '22px',
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            gap: '12px'
+                        }}>
 						<a href='/catalog/low-models' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Низкие радиаторы</Button></a>
 						<a href='/catalog/high-models' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Вертикальные радиаторы</Button></a>
 						<a href='/request' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Получить расчёт</Button></a>
 					</Box>
 				</Box>
 
-				<Box marginTop='44px'>
+				<Box sx={{
+                    marginTop: '44px'
+                }}>
 					<Typography component='h2' variant='h5'>Частые вопросы</Typography>
-					{faqItems.map(item => <Box key={item.question} marginTop='22px'><Typography component='h3' variant='h6'>{item.question}</Typography><Typography sx={{ ...styles.standardText }} marginTop='8px'>{item.question === 'Что выбрать: низкий радиатор или внутрипольный конвектор?' ? <>Низкий радиатор устанавливается над полом, конвектору требуется подходящая ниша. Решение зависит от конструкции пола, нагрузки, режима отопления и обслуживания. Монтаж и эксплуатация двух вариантов разобраны в <a href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>подробном сравнении низкого Arbonia и внутрипольного конвектора</a>.</> : item.answer}</Typography></Box>)}
+					{faqItems.map(item => <Box key={item.question} sx={{
+                        marginTop: '22px'
+                    }}><Typography component='h3' variant='h6'>{item.question}</Typography><Typography
+                        sx={{
+                            marginTop: '8px',
+                            ...styles.standardText
+                        }}>{item.question === 'Что выбрать: низкий радиатор или внутрипольный конвектор?' ? <>Низкий радиатор устанавливается над полом, конвектору требуется подходящая ниша. Решение зависит от конструкции пола, нагрузки, режима отопления и обслуживания. Монтаж и эксплуатация двух вариантов разобраны в <a href='/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor'>подробном сравнении низкого Arbonia и внутрипольного конвектора</a>.</> : item.answer}</Typography></Box>)}
 				</Box>
-				<Box marginTop='44px' marginBottom='30px'>
+				<Box
+                    sx={{
+                        marginTop: '44px',
+                        marginBottom: '30px'
+                    }}>
 					<Typography component='h2' variant='h5'>Итог</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Низкий радиатор лучше работает непосредственно у остекления, вертикальный сохраняет свободный обзор,
 						внутрипольный конвектор прячется в полу, а тёплый пол освобождает стены. Выбор определяется не модой, а
 						теплопотерями, архитектурой и возможностью обслуживания. Если расчёт и монтажная схема подготовлены до
@@ -242,8 +348,8 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

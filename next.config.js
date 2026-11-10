@@ -9,6 +9,12 @@ module.exports = {
 	// },
 	async redirects() {
 		return [
+			// 10.11.2026: две статьи о белых RAL делили запросы «ral 9016»; объединены по старому адресу.
+			{
+				source: '/articles/ral-9016-9010-9003-kakoy-belyy-vybrat',
+				destination: '/articles/ral-9016-pochemu-vybirayut-arkhitektory',
+				permanent: true,
+			},
 			{
 				source: '/articles/arbonia-3180-ral-9016-vs-anthracite-metallic',
 				destination: '/articles/arbonia-3180-ral-9016-vs-anthracite',

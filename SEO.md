@@ -42,3 +42,15 @@
 3. Исправить мета: title и description у `/request`, свой description у `/articles` и новостей, title `/news/2025-report`.
 4. Сниппеты статей с CTR < 1% при позиции 5–7 (список выше).
 5. После мержа PR #3 — проверить, что алерты Dependabot по `next` / `axios` закрылись.
+
+## Сделано 10.11.2026 (в ветке `security-and-seo-sync-20261110`, PR #3)
+
+- **Две статьи о RAL 9016 объединены** по адресу `/articles/ral-9016-pochemu-vybirayut-arkhitektory` (у него больше показов и внутренних ссылок): что за цвет RAL 9016 + сравнение с RAL 9010 и 9003, блеск, пять шагов выбора, FAQ. Title «RAL 9016: какой это цвет и чем отличается от RAL 9010 и 9003». `/articles/ral-9016-9010-9003-kakoy-belyy-vybrat` — 308 на объединённую статью; ссылки на неё в `/coloring`, `/articles`, `kak-vybrat-cvet-radiatora-pod-interer`, `tsvet-radiatorov-v-interiere` заменены.
+- **Сниппеты статей с низким CTR:** `gde-razmestit-radiator-otopleniya` (в description — нормы 80–120 / 60–100 / 20–50 мм), `vertical-vs-horizontal`, `convection-radiaton-arbonia`, `faq`, `belye-radiatory-v-temnom-interiere`, `radiator-pod-glubokim-podokonnikom-stoleshnitsey`. Запросы по страницам не смотрел (Chrome был отключён) — сниппеты написаны по содержанию; проверить CTR после переобхода.
+- **Мета:** `/request` получил title и description; свой description у `/articles`, `/news` и всех новостей; title `/news/2025-report` исправлен (смена руководства MBT Climate / Kermi), title `/news/2023-design` сокращён.
+- **Цена «от N ₽» в title:** подборки `high-models` (14 247), `low-models` (12 896), `standard` (13 981), `ral9016` (12 896); серии 2050, 2057, 2180, 3030, 3050, 3057, 3180 и все `/models/<код>` / SKU. Цена — та же, что на странице (минимальная складская позиция в таблицах ModelBlock / «Цена от» в ModelMainSection), helper `utils/getPriceFrom.ts`. Все 13 контрольных значений совпали с ценами на живом сайте.
+- **Пакеты обновлены до текущих:** next 16.4.6, react / react-dom 19.3.1, @mui/material и icons 9.5.0, axios 1.21.1, typescript 7.0.2, eslint 10.14.0, eslint-config-next 16.4.6, @types/react 19; @types/node оставлен на 22 (на сервере Node 22). Удалён неиспользуемый `react-material-ui-carousel`.
+  - MUI 9: system props (`<Box marginTop=…>`) перенесены в `sx` и Grid на новый API (`size`) codemod'ами `@mui/codemod@7.3` (`v6.0.0/system-props`, `v7.0.0/grid-props`); `Hidden` заменён своим `components/ui/Hidden.tsx` (CSS, без обёртки); `TransitionComponent` → `slots.transition`, `inputProps` → `slotProps.htmlInput`; `tsconfig` target ES5 → ES2017 (TS 7).
+  - Grid v2 считает `spacing` через gap: у контейнеров с собственным `marginTop` пропадали 16 px — на главной компенсировано (`marginTop: 21px`).
+  - Проверка: сравнение раскладки (высота страницы, позиции заголовков, картинок, кнопок, таблиц) с production на 12 типовых страницах при 1280 и 375 px — совпадает; мета всех 205 URL — те же изменения, что до обновления пакетов. `/accepted` отличается на 4–6 px; оформление заказа в корзине с товарами не проверялось.
+- Известная проблема, не новая: на всех страницах в консоли ошибка гидратации React #418 (есть и на production до изменений) — разобрать отдельно.

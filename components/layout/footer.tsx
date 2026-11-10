@@ -15,13 +15,14 @@ type FooterProps = {}
 
 const Footer: NextComponentType<FooterProps> = () => {
 	return (
-		<>
-			<Box
-				marginX={{ xs: '0px', md: '0px' }}
-				paddingX={{ xs: '15px', md: '40px' }}
-				paddingY={'30px'}
-				bgcolor={'#E6E6E6'}
-			>
+        <>
+            <Box
+                sx={{
+                    marginX: { xs: '0px', md: '0px' },
+                    paddingX: { xs: '15px', md: '40px' },
+                    paddingY: '30px',
+                    bgcolor: '#E6E6E6'
+                }}>
 				<Box>
 					<a
 						style={{ ...footerTextButton, textDecoration: 'none' }}
@@ -40,15 +41,17 @@ const Footer: NextComponentType<FooterProps> = () => {
 					spacing={2}
 				>
 					<Grid
-						item
-						xs={6}
-						md={4}
-					>
+                        size={{
+                            xs: 6,
+                            md: 4
+                        }}>
 						<Box>
 							<Typography sx={footerTextBold}>Специализированный магазин</Typography>
 							<Typography sx={footerTextBold}>трубчатых радиаторов Arbonia в России</Typography>
 						</Box>
-						<Box marginTop={'10px'}>
+						<Box sx={{
+                            marginTop: '10px'
+                        }}>
 							<Typography sx={footerText}>
 								<a
 									style={{ ...footerTextButton, textDecoration: 'none' }}
@@ -76,7 +79,9 @@ const Footer: NextComponentType<FooterProps> = () => {
 							</Typography>
 						</Box>
 
-						<Box marginTop={'10px'}>
+						<Box sx={{
+                            marginTop: '10px'
+                        }}>
 							<Typography sx={footerText}>
 								<a
 									style={{ ...footerTextButton, textDecoration: 'none' }}
@@ -91,15 +96,17 @@ const Footer: NextComponentType<FooterProps> = () => {
 								</a>
 							</Typography>
 						</Box>
-						<Box marginTop={'10px'}>
+						<Box sx={{
+                            marginTop: '10px'
+                        }}>
 							<Typography sx={footerText}>пн. - пт. с 10:00 до 19:00</Typography>
 						</Box>
 					</Grid>
 					<Grid
-						item
-						xs={6}
-						md={4}
-					>
+                        size={{
+                            xs: 6,
+                            md: 4
+                        }}>
 						{pages.map((page, index) => (
 							<Box key={page[0]}>
 								<a
@@ -136,16 +143,18 @@ const Footer: NextComponentType<FooterProps> = () => {
 						</Box>
 					</Grid>
 					<Grid
-						item
-						xs={12}
-						md={4}
-					>
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
 						<Typography sx={footerText}>ООО &quot;ХОУМ КОМФОРТ&quot;</Typography>
 						<Typography sx={footerText}>&zwj;ИНН 7811788339 / КПП 781101001</Typography>
 						<Typography sx={footerText}>ОГРН 1237800065865</Typography>
 					</Grid>
 				</Grid>
-				<Box marginY={'15px'}>
+				<Box sx={{
+                    marginY: '15px'
+                }}>
 					<Divider variant='middle' />
 				</Box>
 				<Grid
@@ -153,10 +162,10 @@ const Footer: NextComponentType<FooterProps> = () => {
 					spacing={2}
 				>
 					<Grid
-						item
-						xs={12}
-						md={4}
-					>
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
 						<Typography sx={footerTextButton}>
 							<a
 								style={{ ...footerTextButton, textDecoration: 'none' }}
@@ -198,17 +207,18 @@ const Footer: NextComponentType<FooterProps> = () => {
 						</Typography>
 					</Grid>
 					<Grid
-						item
-						xs={12}
-						md={8}
-					>
+                        size={{
+                            xs: 12,
+                            md: 8
+                        }}>
 						<Typography sx={footerText}>© 2026 ArboniaShop.ru – магазин радиаторов Arbonia</Typography>
 						<Box sx={{ ...footerText, marginTop: '12px' }}>
 							<Box
-								marginTop={'12px'}
-								display={'flex'}
-								gap={'10px'}
-							>
+                                sx={{
+                                    marginTop: '12px',
+                                    display: 'flex',
+                                    gap: '10px'
+                                }}>
 								Будьте в курсе:
 								<a
 									href='https://dtf.ru/id3140499'
@@ -244,7 +254,7 @@ const Footer: NextComponentType<FooterProps> = () => {
 				</Grid>
 			</Box>
 
-			<script
+            <script
 				id='organization-schema-arboniashop'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{
@@ -337,8 +347,8 @@ const Footer: NextComponentType<FooterProps> = () => {
 					),
 				}}
 			/>
-		</>
-	)
+        </>
+    );
 }
 
 export default Footer

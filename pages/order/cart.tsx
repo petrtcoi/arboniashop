@@ -32,21 +32,28 @@ const CartPage: NextPage<CartPageProps> = ({ models, colors, connections }) => {
   return (
     <Box sx={{ ...global.pagePadding }}>
       <PageHeader title={"Корзина покупок"} noindex />
-      <Box paddingTop="20px">
+      <Box sx={{
+        paddingTop: "20px"
+      }}>
         <Typography
           variant="h4"
           component="h1"
           gutterBottom
-          textAlign="center"
-          sx={{ textTransform: "uppercase" }}
-        >
+          sx={{
+            textAlign: "center",
+            textTransform: "uppercase"
+          }}>
           Корзина
         </Typography>
         {items.length === 0 && <EmptyCartMessage />}
         {items.length !== 0 && (
-          <Box paddingTop="30px">
+          <Box sx={{
+            paddingTop: "30px"
+          }}>
             <CartItemList items={items} />
-            <Box marginTop="50px">
+            <Box sx={{
+              marginTop: "50px"
+            }}>
               <CartOrderData items={items} />
             </Box>
           </Box>

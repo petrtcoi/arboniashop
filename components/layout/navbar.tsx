@@ -1,3 +1,4 @@
+import Hidden from '../ui/Hidden'
 import { NextComponentType } from 'next'
 import { useState } from 'react'
 
@@ -5,7 +6,7 @@ import Link from 'next/link'
 
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import MenuIcon from '@mui/icons-material/Menu'
-import { AppBar, Box, Hidden, IconButton, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material'
 import Container from '@mui/material/Container'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
@@ -28,12 +29,12 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 	}
 
 	return (
-		<AppBar
+        <AppBar
 			position='static'
 			color='transparent'
 			style={{ borderBottom: '1px solid #e5e5e5', boxShadow: 'none' }}
 		>
-			<Container maxWidth='xl'>
+            <Container maxWidth='xl'>
 				<Toolbar
 					disableGutters
 					itemScope
@@ -84,10 +85,11 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 												onClick={handleCloseNavMenu}
 											>
 												<Typography
-													textAlign='center'
-													variant='body1'
-													sx={{ ...menuButtonDropDown }}
-												>
+                                                    variant='body1'
+                                                    sx={{
+                                                        textAlign: 'center',
+                                                        ...menuButtonDropDown
+                                                    }}>
 													{page[0]}
 												</Typography>
 											</MenuItem>
@@ -116,11 +118,13 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 									itemProp='url'
 								>
 									<Typography
-										textAlign='center'
-										variant='body1'
-										ml={4}
-										sx={{ ...menuButton, fontSize: '12px' }}
-									>
+                                        variant='body1'
+                                        sx={{
+                                            textAlign: 'center',
+                                            ml: 4,
+                                            ...menuButton,
+                                            fontSize: '12px'
+                                        }}>
 										{page[0]}
 									</Typography>
 								</a>
@@ -129,21 +133,26 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 					</Box>
 					<Hidden smDown>
 						<Box
-							mr={1}
-							marginLeft={'50px'}
-						>
+                            sx={{
+                                mr: 1,
+                                marginLeft: '50px'
+                            }}>
 							<LocalPhoneIcon
 								color='secondary'
 								sx={{ fontSize: '16px', marginTop: '6px' }}
 							/>
 						</Box>
 					</Hidden>
-					<Box mr={4}>
+					<Box sx={{
+                        mr: 4
+                    }}>
 						<Typography
-							textAlign='center'
-							variant='body1'
-							sx={{ ...styles.standardText, minWidth: '120px' }}
-						>
+                            variant='body1'
+                            sx={{
+                                textAlign: 'center',
+                                ...styles.standardText,
+                                minWidth: '120px'
+                            }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href={`tel:${global.phone495}`}
@@ -185,8 +194,8 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 					</Box>
 				</Toolbar>
 			</Container>
-		</AppBar>
-	)
+        </AppBar>
+    );
 }
 
 export default Navbar

@@ -209,34 +209,34 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 	// -------------------------------
 
 	return (
-		<Box
+        <Box
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
-			<ProductMetadata description={`Вертикальный трубчатый радиатор Arbonia 2180, ${SECTIONS_QNTY} секций, высота 1800 мм, глубина 65 мм. Боковое и нижнее подключение, цвета RAL 9016, RAL 7016, SF-3 и RAL 9005.`} sku={`2180-${SECTIONS_STRING}`} />
-			<meta
+            <ProductMetadata description={`Вертикальный трубчатый радиатор Arbonia 2180, ${SECTIONS_QNTY} секций, высота 1800 мм, глубина 65 мм. Боковое и нижнее подключение, цвета RAL 9016, RAL 7016, SF-3 и RAL 9005.`} sku={`2180-${SECTIONS_STRING}`} />
+            <meta
 				itemProp='name'
 				content={`Arbonia 2180 ${SECTIONS_STRING}`}
 			/>
-			<meta
+            <meta
 				itemProp='countryOfOrigin'
 				content='Чехия'
 			/>
-			<meta
+            <meta
 				itemProp='material'
 				content='Сталь'
 			/>
-			<PageHeader
+            <PageHeader
 				title={`Arbonia 2180 ${SECTIONS_STRING} ${SECTIONS_POSTFIX} | 1800х65х${width} мм | ${power} Вт | Выгодные цены | Гарантия`}
 				description={`Вертикальный радиатор Arbonia 2180 ${SECTIONS_STRING} ${SECTIONS_POSTFIX}: 1800 х 65 х ${width} мм. Мощность ${power} Вт. Боковое и нижнее подключение. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка в любой город России.`}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/high.jpeg'}
 				header={`Радиатор Arbonia 2180 ${SECTIONS_STRING} ${SECTIONS_POSTFIX}`}
 				subheader={'Боковое и нижнее (№69 ТВВ) подключение в наличии'}
 			/>
 
-			<Box sx={{ ...global.pagePadding }}>
+            <Box sx={{ ...global.pagePadding }}>
 				<Box>
 					<Grid
 						container
@@ -244,14 +244,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					>
 						{/* ИЗОБРАЖЕНИЕ */}
 						<Grid
-							item
-							xs={12}
-							sm={6}
-						>
+                            size={{
+                                xs: 12,
+                                sm: 6
+                            }}>
 							<Box
-								textAlign='center'
-								marginTop='20px'
-							>
+                                sx={{
+                                    textAlign: 'center',
+                                    marginTop: '20px'
+                                }}>
 								<img
 									width={500}
 									height={500}
@@ -263,14 +264,15 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							</Box>
 						</Grid>
 						<Grid
-							item
-							xs={12}
-							sm={6}
-						>
+                            size={{
+                                xs: 12,
+                                sm: 6
+                            }}>
 							<Box
-								marginTop='30px'
-								marginLeft='20px'
-							>
+                                sx={{
+                                    marginTop: '30px',
+                                    marginLeft: '20px'
+                                }}>
 								{/* БЛОК ЦЕНЫ */}
 								<Box>
 									<a
@@ -298,11 +300,13 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								</Typography>
 
 								<Box
-									marginTop='10px'
-									// sx={{ border: "1px solid #333333", borderRadius: "10px" }}
-									textAlign='left'
-								>
-									<Box visibility={isFetching ? 'hidden' : 'hidden'}>
+                                    sx={{
+                                        marginTop: '10px',
+                                        textAlign: 'left'
+                                    }}>
+									<Box sx={{
+                                        visibility: isFetching ? 'hidden' : 'hidden'
+                                    }}>
 										<Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
 											подождите, обновляется курс валют...
 										</Typography>
@@ -310,17 +314,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 
 									<Box>
 										<Typography
-											sx={styles.standardText}
-											display='inline'
-										>
+                                            sx={[{
+                                                display: 'inline'
+                                            }, styles.standardText]}>
 											Цена от:{' '}
 											<Typography
-												sx={{ fontSize: '22px', fontWeight: 600 }}
-												display='inline'
-												itemProp='offers'
-												itemScope
-												itemType='https://schema.org/Offer'
-											>
+                                                itemProp='offers'
+                                                itemScope
+                                                itemType='https://schema.org/Offer'
+                                                sx={{
+                                                    display: 'inline',
+                                                    fontSize: '22px',
+                                                    fontWeight: 600
+                                                }}>
 												<span>
 													<OfferMetadata inStock={true} />
 													<meta
@@ -336,27 +342,26 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 												руб
 											</Typography>
 											<Typography
-												sx={{
-													fontSize: '16px',
-													fontWeight: 200,
-													textDecoration: 'line-through',
-													color: 'gray',
-												}}
-												display='inline'
-												marginX='15px'
-											>
+                                                sx={{
+                                                    display: 'inline',
+                                                    marginX: '15px',
+                                                    fontSize: '16px',
+                                                    fontWeight: 200,
+                                                    textDecoration: 'line-through',
+                                                    color: 'gray'
+                                                }}>
 												{rad_12_9016_data.oldPriceString} руб
 											</Typography>
 										</Typography>
 										<Box
-											marginBottom='30px'
-											display='flex'
-											flexDirection='row'
-											gap='15px'
-											flexWrap='wrap'
-										>
+                                            sx={{
+                                                marginBottom: '30px',
+                                                display: 'flex',
+                                                flexDirection: 'row',
+                                                gap: '15px',
+                                                flexWrap: 'wrap'
+                                            }}>
 											<Box
-												marginTop='10px'
 												onClick={() => {
 													if (!refPrices.current) return
 													refPrices.current.scrollIntoView({
@@ -364,6 +369,9 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 														block: 'start',
 													})
 												}}
+												sx={{
+                                                    marginTop: '10px'
+                                                }}
 											>
 												<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>перейти к ценам</Typography>
 											</Box>
@@ -372,184 +380,190 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								</Box>
 
 								{/* БЛОК ХАРАКТЕРИСТИК */}
-								<Box marginTop='30px'>
+								<Box sx={{
+                                    marginTop: '30px'
+                                }}>
 									<Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-												itemProp='model'
-											>
+                                                itemProp='model'
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Модель:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												{model.nameShort}
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-												itemProp='color'
-											>
+                                                itemProp='color'
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Цвет:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												белый RAL 9016, RAL 7016, RAL 9005 matt и SF-3
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Подключение:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												боковое 3/4" или нижнее №69 ТВВ
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Число секций:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												{SECTIONS_QNTY}
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Рабочее давление:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												10 бар
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Испытательное давление:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												15 бар
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Гарантия:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												10 лет
 											</Typography>
 										</Box>
 									</Box>
 
-									<Box marginTop='10px'>
+									<Box sx={{
+                                        marginTop: '10px'
+                                    }}>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Длина:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-												itemProp='width'
-											>
+                                                itemProp='width'
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												{width} мм
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Высота:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-												itemProp='height'
-											>
+                                                itemProp='height'
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												{model.height} мм
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Глубина:&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-												itemProp='depth'
-											>
+                                                itemProp='depth'
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												{model.width} мм
 											</Typography>
 										</Box>
 									</Box>
 
-									<Box marginTop='10px'>
+									<Box sx={{
+                                        marginTop: '10px'
+                                    }}>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Мощность (ΔT=50°):&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												{power50} Вт
 											</Typography>
 										</Box>
 										<Box>
 											<Typography
-												sx={styles.smallText}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallText]}>
 												Мощность (ΔT=60°):&nbsp;
 											</Typography>
 											<Typography
-												sx={styles.smallTextBold}
-												display='inline'
-											>
+                                                sx={[{
+                                                    display: 'inline'
+                                                }, styles.smallTextBold]}>
 												{power} Вт
 											</Typography>
 										</Box>
@@ -563,7 +577,9 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box ref={refPrices}></Box>
 
 				{/* 2180 белый*/}
-				<Box marginTop='40px'>
+				<Box sx={{
+                    marginTop: '40px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 {SECTIONS_STRING} в цвете RAL 9016</h2>
 						<Grid
@@ -571,10 +587,10 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={5}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 5
+                                }}>
 								<img
 									itemProp='image'
 									src='/images/models/2180-1.jpeg'
@@ -584,10 +600,10 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={7}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 7
+                                }}>
 								<p>
 									Белый свет по прежнему остается наиболее актуальным и востребованным, когда речь идет о радиаторах
 									отопления. Ведь это самый нейтральный цвет. Он легко сочетается с любой цветовой схемой помещения.
@@ -598,17 +614,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<h3 style={{ marginTop: '40px', fontWeight: 200 }}>Боковое подключение 3/4"</h3>
 								<Box>
 									<Typography
-										sx={styles.standardText}
-										display='inline'
-									>
+                                        sx={[{
+                                            display: 'inline'
+                                        }, styles.standardText]}>
 										Цена:{' '}
 										<Typography
-											sx={{ fontSize: '22px', fontWeight: 600 }}
-											display='inline'
-											itemProp='offers'
-											itemScope
-											itemType='https://schema.org/Offer'
-										>
+                                            itemProp='offers'
+                                            itemScope
+                                            itemType='https://schema.org/Offer'
+                                            sx={{
+                                                display: 'inline',
+                                                fontSize: '22px',
+                                                fontWeight: 600
+                                            }}>
 											<span>
 												<OfferMetadata inStock={true} />
 												<meta
@@ -624,27 +642,27 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											руб
 										</Typography>
 										<Typography
-											sx={{
-												fontSize: '16px',
-												fontWeight: 200,
-												textDecoration: 'line-through',
-												color: 'gray',
-											}}
-											display='inline'
-											marginX='15px'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                marginX: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: 200,
+                                                textDecoration: 'line-through',
+                                                color: 'gray'
+                                            }}>
 											{rad_12_9016_data.oldPriceString} руб
 										</Typography>
 									</Typography>
 									<Box
-										marginTop='15px'
-										marginBottom='30px'
-										display='flex'
-										flexDirection='row'
-										gap='15px'
-										flexWrap='wrap'
-										width={'100%'}
-									>
+                                        sx={{
+                                            marginTop: '15px',
+                                            marginBottom: '30px',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            gap: '15px',
+                                            flexWrap: 'wrap',
+                                            width: '100%'
+                                        }}>
 										<AddToCartButton
 											model={model}
 											colorId={color9016.id}
@@ -660,17 +678,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<h3 style={{ marginTop: '40px', fontWeight: 200 }}>Нижнее подключение №69 ТВВ</h3>
 								<Box>
 									<Typography
-										sx={styles.standardText}
-										display='inline'
-									>
+                                        sx={[{
+                                            display: 'inline'
+                                        }, styles.standardText]}>
 										Цена:{' '}
 										<Typography
-											sx={{ fontSize: '22px', fontWeight: 600 }}
-											display='inline'
-											itemProp='offers'
-											itemScope
-											itemType='https://schema.org/Offer'
-										>
+                                            itemProp='offers'
+                                            itemScope
+                                            itemType='https://schema.org/Offer'
+                                            sx={{
+                                                display: 'inline',
+                                                fontSize: '22px',
+                                                fontWeight: 600
+                                            }}>
 											<span>
 												<OfferMetadata inStock={true} />
 												<meta
@@ -686,27 +706,27 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											руб
 										</Typography>
 										<Typography
-											sx={{
-												fontSize: '16px',
-												fontWeight: 200,
-												textDecoration: 'line-through',
-												color: 'gray',
-											}}
-											display='inline'
-											marginX='15px'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                marginX: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: 200,
+                                                textDecoration: 'line-through',
+                                                color: 'gray'
+                                            }}>
 											{rad_69_9016_data.oldPriceString} руб
 										</Typography>
 									</Typography>
 									<Box
-										marginTop='15px'
-										marginBottom='30px'
-										display='flex'
-										flexDirection='row'
-										gap='15px'
-										flexWrap='wrap'
-										width={'100%'}
-									>
+                                        sx={{
+                                            marginTop: '15px',
+                                            marginBottom: '30px',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            gap: '15px',
+                                            flexWrap: 'wrap',
+                                            width: '100%'
+                                        }}>
 										<AddToCartButton
 											model={model}
 											colorId={color9016.id}
@@ -725,7 +745,9 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				</Box>
 
 				{/* 2180 RAL 7016*/}
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 {SECTIONS_STRING} в темном цвете RAL7016</h2>
 						<Grid
@@ -733,10 +755,10 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={5}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 5
+                                }}>
 								<img
 									src='/images/models/7016-0.jpeg'
 									alt={`Радиатор Arbonia 2180 ${SECTIONS_STRING} ${SECTIONS_POSTFIX} RAL 7016`}
@@ -745,10 +767,10 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={7}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 7
+                                }}>
 								<p>
 									Цвет можно охарактеризовать как темно-серый. Это не стандартный белый цвет и, в то же время, не совсем
 									черный. Он хорошо сочетается с темными оттенками пола и мебели, а также с белыми стенами. В отличие от
@@ -759,17 +781,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<h3 style={{ marginTop: '40px', fontWeight: 200 }}>Боковое подключение 3/4"</h3>
 								<Box>
 									<Typography
-										sx={styles.standardText}
-										display='inline'
-									>
+                                        sx={[{
+                                            display: 'inline'
+                                        }, styles.standardText]}>
 										Цена:{' '}
 										<Typography
-											sx={{ fontSize: '22px', fontWeight: 600 }}
-											display='inline'
-											itemProp='offers'
-											itemScope
-											itemType='https://schema.org/Offer'
-										>
+                                            itemProp='offers'
+                                            itemScope
+                                            itemType='https://schema.org/Offer'
+                                            sx={{
+                                                display: 'inline',
+                                                fontSize: '22px',
+                                                fontWeight: 600
+                                            }}>
 											<span>
 												<OfferMetadata inStock={true} />
 												<meta
@@ -785,27 +809,27 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											руб
 										</Typography>
 										<Typography
-											sx={{
-												fontSize: '16px',
-												fontWeight: 200,
-												textDecoration: 'line-through',
-												color: 'gray',
-											}}
-											display='inline'
-											marginX='15px'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                marginX: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: 200,
+                                                textDecoration: 'line-through',
+                                                color: 'gray'
+                                            }}>
 											{rad_12_7016_data.oldPriceString} руб
 										</Typography>
 									</Typography>
 									<Box
-										marginTop='15px'
-										marginBottom='30px'
-										display='flex'
-										flexDirection='row'
-										gap='15px'
-										flexWrap='wrap'
-										width={'100%'}
-									>
+                                        sx={{
+                                            marginTop: '15px',
+                                            marginBottom: '30px',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            gap: '15px',
+                                            flexWrap: 'wrap',
+                                            width: '100%'
+                                        }}>
 										<AddToCartButton
 											model={model}
 											colorId={color7016.id}
@@ -821,17 +845,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<h3 style={{ marginTop: '40px', fontWeight: 200 }}>Нижнее подключение №69 ТВВ</h3>
 								<Box>
 									<Typography
-										sx={styles.standardText}
-										display='inline'
-									>
+                                        sx={[{
+                                            display: 'inline'
+                                        }, styles.standardText]}>
 										Цена:{' '}
 										<Typography
-											sx={{ fontSize: '22px', fontWeight: 600 }}
-											display='inline'
-											itemProp='offers'
-											itemScope
-											itemType='https://schema.org/Offer'
-										>
+                                            itemProp='offers'
+                                            itemScope
+                                            itemType='https://schema.org/Offer'
+                                            sx={{
+                                                display: 'inline',
+                                                fontSize: '22px',
+                                                fontWeight: 600
+                                            }}>
 											<span>
 												<OfferMetadata inStock={true} />
 												<meta
@@ -847,27 +873,27 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											руб
 										</Typography>
 										<Typography
-											sx={{
-												fontSize: '16px',
-												fontWeight: 200,
-												textDecoration: 'line-through',
-												color: 'gray',
-											}}
-											display='inline'
-											marginX='15px'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                marginX: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: 200,
+                                                textDecoration: 'line-through',
+                                                color: 'gray'
+                                            }}>
 											{rad_69_7016_data.oldPriceString} руб
 										</Typography>
 									</Typography>
 									<Box
-										marginTop='15px'
-										marginBottom='30px'
-										display='flex'
-										flexDirection='row'
-										gap='15px'
-										flexWrap='wrap'
-										width={'100%'}
-									>
+                                        sx={{
+                                            marginTop: '15px',
+                                            marginBottom: '30px',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            gap: '15px',
+                                            flexWrap: 'wrap',
+                                            width: '100%'
+                                        }}>
 										<AddToCartButton
 											model={model}
 											colorId={color7016.id}
@@ -886,7 +912,9 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				</Box>
 
 				{/* 2180 SF-3*/}
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 {SECTIONS_STRING} в металлизированном цвете SF-3</h2>
 						<Grid
@@ -894,10 +922,10 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={5}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 5
+                                }}>
 								<img
 									src='/images/models/sf-3-2.jpeg'
 									alt={`Радиатор Arbonia 2180 ${SECTIONS_QNTY} (SF-3 Anthrazit metallic)`}
@@ -906,10 +934,10 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={7}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 7
+                                }}>
 								<p>
 									Да - это еще один темный, но не черный цвет. От предыдущего он отличается тем, что имеет
 									металлизированный блеск и внешне выглядит более светлым. Данный вариант отлично подойдет, например,
@@ -926,17 +954,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<h3 style={{ marginTop: '40px', fontWeight: 200 }}>Боковое подключение 3/4"</h3>
 								<Box>
 									<Typography
-										sx={styles.standardText}
-										display='inline'
-									>
+                                        sx={[{
+                                            display: 'inline'
+                                        }, styles.standardText]}>
 										Цена:{' '}
 										<Typography
-											sx={{ fontSize: '22px', fontWeight: 600 }}
-											display='inline'
-											itemProp='offers'
-											itemScope
-											itemType='https://schema.org/Offer'
-										>
+                                            itemProp='offers'
+                                            itemScope
+                                            itemType='https://schema.org/Offer'
+                                            sx={{
+                                                display: 'inline',
+                                                fontSize: '22px',
+                                                fontWeight: 600
+                                            }}>
 											<span>
 												<OfferMetadata inStock={true} />
 												<meta
@@ -952,27 +982,27 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											руб
 										</Typography>
 										<Typography
-											sx={{
-												fontSize: '16px',
-												fontWeight: 200,
-												textDecoration: 'line-through',
-												color: 'gray',
-											}}
-											display='inline'
-											marginX='15px'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                marginX: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: 200,
+                                                textDecoration: 'line-through',
+                                                color: 'gray'
+                                            }}>
 											{rad_12_sf3_data.oldPriceString} руб
 										</Typography>
 									</Typography>
 									<Box
-										marginTop='15px'
-										marginBottom='30px'
-										display='flex'
-										flexDirection='row'
-										gap='15px'
-										flexWrap='wrap'
-										width={'100%'}
-									>
+                                        sx={{
+                                            marginTop: '15px',
+                                            marginBottom: '30px',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            gap: '15px',
+                                            flexWrap: 'wrap',
+                                            width: '100%'
+                                        }}>
 										<AddToCartButton
 											model={model}
 											colorId={colorSf3.id}
@@ -988,17 +1018,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<h3 style={{ marginTop: '40px', fontWeight: 200 }}>Нижнее подключение №69 ТВВ</h3>
 								<Box>
 									<Typography
-										sx={styles.standardText}
-										display='inline'
-									>
+                                        sx={[{
+                                            display: 'inline'
+                                        }, styles.standardText]}>
 										Цена:{' '}
 										<Typography
-											sx={{ fontSize: '22px', fontWeight: 600 }}
-											display='inline'
-											itemProp='offers'
-											itemScope
-											itemType='https://schema.org/Offer'
-										>
+                                            itemProp='offers'
+                                            itemScope
+                                            itemType='https://schema.org/Offer'
+                                            sx={{
+                                                display: 'inline',
+                                                fontSize: '22px',
+                                                fontWeight: 600
+                                            }}>
 											<span>
 												<OfferMetadata inStock={true} />
 												<meta
@@ -1014,27 +1046,27 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											руб
 										</Typography>
 										<Typography
-											sx={{
-												fontSize: '16px',
-												fontWeight: 200,
-												textDecoration: 'line-through',
-												color: 'gray',
-											}}
-											display='inline'
-											marginX='15px'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                marginX: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: 200,
+                                                textDecoration: 'line-through',
+                                                color: 'gray'
+                                            }}>
 											{rad_69_sf3_data.oldPriceString} руб
 										</Typography>
 									</Typography>
 									<Box
-										marginTop='15px'
-										marginBottom='30px'
-										display='flex'
-										flexDirection='row'
-										gap='15px'
-										flexWrap='wrap'
-										width={'100%'}
-									>
+                                        sx={{
+                                            marginTop: '15px',
+                                            marginBottom: '30px',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            gap: '15px',
+                                            flexWrap: 'wrap',
+                                            width: '100%'
+                                        }}>
 										<AddToCartButton
 											model={model}
 											colorId={colorSf3.id}
@@ -1053,7 +1085,9 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				</Box>
 
 				{/* 2180 RAL 9005*/}
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 {SECTIONS_QNTY} в черном цвете RAL9005</h2>
 						<Grid
@@ -1061,10 +1095,10 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={5}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 5
+                                }}>
 								<img
 									src='/images/models/2180-9005.jpeg'
 									alt={`Радиатор Arbonia 2180 ${SECTIONS_QNTY} ${SECTIONS_POSTFIX} RAL9005 matt`}
@@ -1073,10 +1107,10 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={7}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 7
+                                }}>
 								<p>
 									Черный матовый цвет также является одним из самых популярных для радиаторов Arbonia. Как и белый,
 									черный цвет легко встраивается в любой интерьер, а его матовость придает ему особый шарм. Радиатор не
@@ -1086,17 +1120,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<h3 style={{ marginTop: '40px', fontWeight: 200 }}>Боковое подключение 3/4"</h3>
 								<Box>
 									<Typography
-										sx={styles.standardText}
-										display='inline'
-									>
+                                        sx={[{
+                                            display: 'inline'
+                                        }, styles.standardText]}>
 										Цена:{' '}
 										<Typography
-											sx={{ fontSize: '22px', fontWeight: 600 }}
-											display='inline'
-											itemProp='offers'
-											itemScope
-											itemType='https://schema.org/Offer'
-										>
+                                            itemProp='offers'
+                                            itemScope
+                                            itemType='https://schema.org/Offer'
+                                            sx={{
+                                                display: 'inline',
+                                                fontSize: '22px',
+                                                fontWeight: 600
+                                            }}>
 											<span>
 												<OfferMetadata inStock={true} />
 												<meta
@@ -1112,27 +1148,27 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											руб
 										</Typography>
 										<Typography
-											sx={{
-												fontSize: '16px',
-												fontWeight: 200,
-												textDecoration: 'line-through',
-												color: 'gray',
-											}}
-											display='inline'
-											marginX='15px'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                marginX: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: 200,
+                                                textDecoration: 'line-through',
+                                                color: 'gray'
+                                            }}>
 											{rad_12_9005_data.oldPriceString} руб
 										</Typography>
 									</Typography>
 									<Box
-										marginTop='15px'
-										marginBottom='30px'
-										display='flex'
-										flexDirection='row'
-										gap='15px'
-										flexWrap='wrap'
-										width={'100%'}
-									>
+                                        sx={{
+                                            marginTop: '15px',
+                                            marginBottom: '30px',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            gap: '15px',
+                                            flexWrap: 'wrap',
+                                            width: '100%'
+                                        }}>
 										<AddToCartButton
 											model={model}
 											colorId={color9005.id}
@@ -1148,17 +1184,19 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<h3 style={{ marginTop: '40px', fontWeight: 200 }}>Нижнее подключение №69 ТВВ</h3>
 								<Box>
 									<Typography
-										sx={styles.standardText}
-										display='inline'
-									>
+                                        sx={[{
+                                            display: 'inline'
+                                        }, styles.standardText]}>
 										Цена:{' '}
 										<Typography
-											sx={{ fontSize: '22px', fontWeight: 600 }}
-											display='inline'
-											itemProp='offers'
-											itemScope
-											itemType='https://schema.org/Offer'
-										>
+                                            itemProp='offers'
+                                            itemScope
+                                            itemType='https://schema.org/Offer'
+                                            sx={{
+                                                display: 'inline',
+                                                fontSize: '22px',
+                                                fontWeight: 600
+                                            }}>
 											<span>
 												<OfferMetadata inStock={true} />
 												<meta
@@ -1174,27 +1212,27 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											руб
 										</Typography>
 										<Typography
-											sx={{
-												fontSize: '16px',
-												fontWeight: 200,
-												textDecoration: 'line-through',
-												color: 'gray',
-											}}
-											display='inline'
-											marginX='15px'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                marginX: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: 200,
+                                                textDecoration: 'line-through',
+                                                color: 'gray'
+                                            }}>
 											{rad_69_9005_data.oldPriceString} руб
 										</Typography>
 									</Typography>
 									<Box
-										marginTop='15px'
-										marginBottom='30px'
-										display='flex'
-										flexDirection='row'
-										gap='15px'
-										flexWrap='wrap'
-										width={'100%'}
-									>
+                                        sx={{
+                                            marginTop: '15px',
+                                            marginBottom: '30px',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            gap: '15px',
+                                            flexWrap: 'wrap',
+                                            width: '100%'
+                                        }}>
 										<AddToCartButton
 											model={model}
 											colorId={color9005.id}
@@ -1212,17 +1250,21 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Typography>
 				</Box>
 
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<h2>Дополнительные изображения радиаторов Arbonia 2180</h2>
 					<ImagesOtherList imagesString={model.imagesOther || ''} />
 				</Box>
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default Model2180

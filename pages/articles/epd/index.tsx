@@ -15,14 +15,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Сертификат EPD для трубчатых радиаторов Arbonia'}
 				description={
 					'Сертификат EPD, выданный в соответствии со стандартами ISO 14025 и EN 15804, предоставляет экологический баланс строительных изделий и превышает текущие законодательные требования. '
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -32,15 +32,16 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide-5.jpeg'}
 				header={'Сертификат EPD для трубчатых радиаторов Arbonia'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<p>
 						Arbonia получили сертификат Environmental Product Declaration (EPD)
 						на все свои стальные радиаторы. Этот сертификат присваивается
@@ -68,7 +69,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						e.V.).
 					</p>
 				</Typography>
-				<Box textAlign={'center'}>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/articles/epd2.jpg'
 						alt='Сертификат EPD для трубчатых радиаторов Arbonia'
@@ -77,8 +80,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					/>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

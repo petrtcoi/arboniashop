@@ -1,4 +1,5 @@
 import { Box, Grid, Typography } from '@mui/material'
+import { formatPriceFrom, getStockPriceFrom } from '../../utils/getPriceFrom'
 import Head from 'next/head'
 import React, { useRef } from 'react'
 
@@ -26,30 +27,33 @@ type Props = {
 }
 
 const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connections }: Props) => {
+	// Цена «от» — минимальная цена складских исполнений, показанных в подборке (первая строка таблиц ModelBlock).
+	const priceFrom = getStockPriceFrom({ models, colors, connections, ids: ['2030-9016-12', '2050-9016-12', '2050-9016-69tvv', '2057-9016-12', '2057-9016-69tvv', '2180-9016-12', '2180-9016-69tvv', '3030-9016-12', '3030-9016-69tvv', '3037-9016-12', '3037-9016-69tvv', '3050-9016-12', '3050-9016-69tvv', '3057-9016-12', '3057-9016-69tvv', '3180-9016-12', '3180-9016-69tvv'] })
 	const refUnder40 = useRef<HTMLElement>(null)
 	const refAbout50 = useRef<HTMLElement>(null)
 	const refHigh = useRef<HTMLElement>(null)
 
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/ral9016' /></Head>
-			<PageHeader
-				title={'Радиаторы Arbonia RAL 9016 — купить белые модели в наличии'}
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/ral9016' /></Head>
+            <PageHeader
+				title={priceFrom ? `Белые радиаторы Arbonia RAL 9016 в наличии — цены от ${formatPriceFrom(priceFrom)}` : 'Радиаторы Arbonia RAL 9016 — купить белые модели в наличии'}
 				description='Белые трубчатые радиаторы Arbonia RAL 9016: низкие, стандартные и вертикальные модели, боковое и нижнее подключение. Цены, размеры, наличие, гарантия 10 лет и доставка по России.'
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Arbonia RAL 9016'}
 				subheader={'Трубчатые радиаторы белого цвета в наличии'}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
+            <Box sx={{ ...global.pagePadding }}>
 				<Box
-					marginBottom='30px'
-					display='flex'
-					flexDirection='row'
-					gap='15px'
-					flexWrap='wrap'
-				>
+                    sx={{
+                        marginBottom: '30px',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        gap: '15px',
+                        flexWrap: 'wrap'
+                    }}>
 					<Box
 						onClick={() => {
 							if (!refUnder40.current) return
@@ -92,10 +96,13 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 				</Box>
 
 				<Box
-					marginTop='20px'
-					maxWidth='800px'
-				>
-					<Typography fontSize={{ xs: '12px', sm: '14px' }}>
+                    sx={{
+                        marginTop: '20px',
+                        maxWidth: '800px'
+                    }}>
+					<Typography sx={{
+                        fontSize: { xs: '12px', sm: '14px' }
+                    }}>
 						<p>
 							Белые радиаторы Arbonia RAL 9016 входят в складскую программу: в этом разделе собраны низкие, стандартные
 							и вертикальные модели с актуальными вариантами длины и подключения. RAL 9016 называют транспортным белым;
@@ -110,16 +117,21 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 
 				{/* Невысокие радиаторы */}
 				<Box
-					marginTop='40px'
 					ref={refUnder40}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia RAL 9016 небольшой высоты (до 40 см)</h2>
 						<Box
-							marginTop='20px'
-							maxWidth='800px'
-						>
-							<Typography fontSize={{ xs: '12px', sm: '14px' }}>
+                            sx={{
+                                marginTop: '20px',
+                                maxWidth: '800px'
+                            }}>
+							<Typography sx={{
+                                fontSize: { xs: '12px', sm: '14px' }
+                            }}>
 								<p>
 									Оптимальный выбор для установки под низкими подоконниками. Благодаря высоте до 40 см они идеально
 									подходят для панорамных окон и современных интерьеров с минималистичной архитектурой. Покрытие RAL
@@ -136,9 +148,10 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 
 						<h3>Arbonia 2030 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Самая маленькая модель среди складских радиаторов Arbonia. Это 2-трубчатый радиатор высотой всего 30 см. В
 							наличии доступен только с боковым подключением.
 						</Typography>
@@ -156,16 +169,19 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						<Box style={{ height: '30px' }} />
 						<h3>Arbonia 3030 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Трехтрубчатые радиаторы высотой 30 см обладают достаточной мощностью для отопления небольших и средних
 							помещений. В наличии в белом цвете как с боковым, так и с нижним подключением.
 						</Typography>
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Боковое подключение
 						</Typography>
 						<ModelBlock
@@ -178,9 +194,11 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '40px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '40px'
+                            }}>
 							Нижнее подключение
 						</Typography>
 						<ModelBlock
@@ -197,16 +215,19 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						<Box style={{ height: '30px' }} />
 						<h3>Arbonia 3037 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Трехтрубчатые радиаторы высотой 37 см - наиболее крупные и мощные радиаторы в данном классе. При боковом
 							подключении имеют стандартное межосевое расстояние 30 см.
 						</Typography>
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Боковое подключение
 						</Typography>
 						<ModelBlock
@@ -219,9 +240,11 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '40px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '40px'
+                            }}>
 							Нижнее подключение
 						</Typography>
 						<ModelBlock
@@ -237,16 +260,21 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 
 				{/* Стандартные радиаторы */}
 				<Box
-					marginTop='40px'
 					ref={refAbout50}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia RAL 9016 стандартной высоты</h2>
 						<Box
-							marginTop='20px'
-							maxWidth='800px'
-						>
-							<Typography fontSize={{ xs: '12px', sm: '14px' }}>
+                            sx={{
+                                marginTop: '20px',
+                                maxWidth: '800px'
+                            }}>
+							<Typography sx={{
+                                fontSize: { xs: '12px', sm: '14px' }
+                            }}>
 								<p>
 									Белые радиаторы Arbonia RAL 9016 стандартной высоты - это универсальные модели, которые чаще всего
 									устанавливаются под окнами с подоконниками 80–90 см. Белое порошковое покрытие RAL 9016 подчёркивает
@@ -263,18 +291,21 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 
 						<h3>Arbonia 2050 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Элегантный 2-трубчатый радиатор высотой 50 см. Подойдет для помещений, не требующих установки отопительных
 							приборов с большой тепловой мощностью (небольшая площадь или хорошая теплоизоляция). В наличии радиаторы
 							как с боковым, так и с нижним подключением.
 						</Typography>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Боковое подключение
 						</Typography>
 						<ModelBlock
@@ -287,9 +318,11 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Нижнее подключение
 						</Typography>
 						<ModelBlock
@@ -306,16 +339,19 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						<Box style={{ height: '30px' }} />
 						<h3>Arbonia 2057 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Радиатор имеет высоту 57 см и имеет стандартное межосевое расстояние 50 см при боковом подключении. В
 							наличии также имеются модели с нижним подключением.
 						</Typography>
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Боковое подключение
 						</Typography>
 						<ModelBlock
@@ -328,9 +364,11 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '40px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '40px'
+                            }}>
 							Нижнее подключение
 						</Typography>
 						<ModelBlock
@@ -347,15 +385,18 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						<Box style={{ height: '30px' }} />
 						<h3>Arbonia 3050 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Трехтрубчатые радиаторы высотой 50 см - подойдут для установки под подоконники высотой от 70 см.
 						</Typography>
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Боковое подключение
 						</Typography>
 						<ModelBlock
@@ -368,9 +409,11 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '40px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '40px'
+                            }}>
 							Нижнее подключение
 						</Typography>
 						<ModelBlock
@@ -387,17 +430,20 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						<Box style={{ height: '30px' }} />
 						<h3>Arbonia 3057 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Самая популярная модель среди радиаторов стандартной высоты. Это 3-трубчатый радиатор высотой 57 см и с
 							межосевым расстоянием 50 см при боковом подключении. Идеально подходит для замены старых чугунных или
 							алюминиевых батарей.
 						</Typography>
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Боковое подключение
 						</Typography>
 						<ModelBlock
@@ -410,9 +456,11 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '40px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '40px'
+                            }}>
 							Нижнее подключение
 						</Typography>
 						<ModelBlock
@@ -427,16 +475,21 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 				</Box>
 				{/* Вертикальные радиаторы */}
 				<Box
-					marginTop='40px'
 					ref={refHigh}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia RAL 9016 высотой 1.8 м</h2>
 						<Box
-							marginTop='20px'
-							maxWidth='800px'
-						>
-							<Typography fontSize={{ xs: '12px', sm: '14px' }}>
+                            sx={{
+                                marginTop: '20px',
+                                maxWidth: '800px'
+                            }}>
+							<Typography sx={{
+                                fontSize: { xs: '12px', sm: '14px' }
+                            }}>
 								<p>
 									Вертикальные радиаторы Arbonia в белом цвете RAL 9016 - это сочетание архитектурной выразительности и
 									функциональности. Они особенно востребованы там, где мало свободного места по ширине, но требуется
@@ -455,15 +508,18 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						<Box style={{ height: '30px' }} />
 						<h3>Arbonia 2180 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Одна из наиболее популярных моделей. Сочетает в себе высокую тепловую мощность и плоскую форму.
 						</Typography>
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Боковое подключение
 						</Typography>
 						<ModelBlock
@@ -476,9 +532,11 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '40px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '40px'
+                            }}>
 							Нижнее подключение
 						</Typography>
 						<ModelBlock
@@ -495,16 +553,19 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						<Box style={{ height: '30px' }} />
 						<h3>Arbonia 3180 RAL 9016</h3>
 						<Typography
-							sx={{ ...styles.smallText }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallText
+                            }}>
 							Трехтрубчатый радиатор Arbonia 3180 имеет высокую теплоотдачу и подходит для отопления помещений большой
 							площади.
 						</Typography>
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '20px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '20px'
+                            }}>
 							Боковое подключение
 						</Typography>
 						<ModelBlock
@@ -517,9 +578,11 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 						/>
 
 						<Typography
-							sx={{ ...styles.smallTextBold, marginTop: '40px' }}
-							maxWidth='400px'
-						>
+                            sx={{
+                                maxWidth: '400px',
+                                ...styles.smallTextBold,
+                                marginTop: '40px'
+                            }}>
 							Нижнее подключение
 						</Typography>
 						<ModelBlock
@@ -535,7 +598,9 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 
 				<CatalogPopularLinks current='ral9016' />
 
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -580,8 +645,8 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
 					</ul>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default SetRAL9016Model

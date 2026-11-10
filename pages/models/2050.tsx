@@ -1,4 +1,5 @@
 import ProductMetadata from '../../components/seo/ProductMetadata'
+import { formatPriceFrom, getStockPriceFrom } from '../../utils/getPriceFrom'
 import { Box, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
 import React, { useRef } from 'react'
@@ -37,29 +38,30 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 	const model = models.find(model => model.id === '2050')
 	if (!model) return null
 
+	const priceFrom = getStockPriceFrom({ models, colors, connections, familyCodes: ['2050'] })
 	return (
-		<Box
+        <Box
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
-			<ProductMetadata description={`Стальной трубчатый радиатор Arbonia 2050: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='2050' />
-			<meta
+            <ProductMetadata description={`Стальной трубчатый радиатор Arbonia 2050: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='2050' />
+            <meta
 				itemProp='name'
 				content='Радиатор Arbonia 2050'
 			/>
-			<meta
+            <meta
 				itemProp='countryOfOrigin'
 				content='Чехия'
 			/>
-			<meta
+            <meta
 				itemProp='material'
 				content='Сталь'
 			/>
-			<PageHeader
-				title={'Arbonia 2050 — радиатор высотой 50 см: цены и наличие'}
+            <PageHeader
+				title={priceFrom ? `Arbonia 2050 — радиатор высотой 50 см: цена от ${formatPriceFrom(priceFrom)}` : 'Arbonia 2050 — радиатор высотой 50 см: цены и наличие'}
 				description='Двухтрубчатые радиаторы Arbonia 2050 в наличии (высота 50 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка по России.'
 			/>
-			<PageTitle
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Купить стальной трубчатый радиатор Arbonia 2050'}
 				breadcrumbs={[
@@ -68,19 +70,20 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					{ title: 'Arbonia 2050', link: '/models/2050' },
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Радиаторы Arbonia 2050 '}
 				subheader={'Двухтрубчатые радиаторы Arbonia высотой 50 см'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Box
-					marginBottom='30px'
-					display='flex'
-					flexDirection='row'
-					gap='15px'
-					flexWrap='wrap'
-				>
+                    sx={{
+                        marginBottom: '30px',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        gap: '15px',
+                        flexWrap: 'wrap'
+                    }}>
 					<Box
 						onClick={() => {
 							if (!refLateral.current) return
@@ -120,7 +123,9 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Box>
 				</Box>
 
-				<Box marginTop='20px'>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						<p>
 							Трубчатый радиатор Arbonia 2050 - двухтрубчатый радиатор высотой 50 см. Он идеально подойдет для установки
@@ -175,8 +180,10 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 
 				{/* 2050 белый*/}
 				<Box
-					marginTop='40px'
 					ref={refLateral}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 2050 с боковым подключением</h2>
@@ -185,10 +192,10 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={4}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 4
+                                }}>
 								<img
 									itemProp='image'
 									src='/images/models/2050-12-2.jpeg'
@@ -198,10 +205,10 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={8}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 8
+                                }}>
 								<p>
 									Боковое подключение является универсальным, так как подходит для установки в домах с вертикальной
 									разводкой труб, а также для установки в квартирах с разводкой труб по полу. В наличии поддерживаются
@@ -227,8 +234,10 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 
 				{/* 2050 нижнее*/}
 				<Box
-					marginTop='80px'
 					ref={refBottom}
+					sx={{
+                        marginTop: '80px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 2050 с нижним подключением</h2>
@@ -237,10 +246,10 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={4}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 4
+                                }}>
 								<img
 									src='/images/models/2050-69.jpg'
 									alt='Радиатор Arbonia 2050 69 ТВВ'
@@ -249,10 +258,10 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={8}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 8
+                                }}>
 								<p>
 									Нижнее подключение является стандартом для всех современных домов. Оно позволяет более свободно
 									размещать радиаторы внутри помещения, исходя из ваших нужд, а не из расположения стояков отопления.
@@ -277,7 +286,9 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Typography>
 				</Box>
 
-				<Box marginTop='50px'>
+				<Box sx={{
+                    marginTop: '50px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Здесь мы отобразили все модели Arbonia 2050 доступные к покупке со склада. Если среди предложенных вариантов
 						не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном исполнении на заводе. Также
@@ -298,8 +309,10 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Typography>
 				</Box>
 				<Box
-					marginTop='60px'
 					ref={refOrder}
+					sx={{
+                        marginTop: '60px'
+                    }}
 				>
 					<h2>Купить радиаторы Arbonia 2050 под заказ</h2>
 					<Typography sx={{ ...styles.standardText }}>
@@ -320,17 +333,21 @@ const Model2050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						connections={connections}
 					/>
 				</Box>
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<h2>Дополнительные изображения радиаторов Arbonia 2050</h2>
 					<ImagesOtherList imagesString={model.imagesOther || ''} />
 				</Box>
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default Model2050

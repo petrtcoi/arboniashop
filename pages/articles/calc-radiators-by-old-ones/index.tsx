@@ -91,7 +91,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</a>
 					&#160;с межосевым 500 мм и складскими вариантами подключения.
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText

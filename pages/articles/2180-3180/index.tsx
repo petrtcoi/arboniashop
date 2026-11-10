@@ -112,7 +112,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					модель легче, визуально изящнее и универсальнее в установке - её можно монтировать даже в узких пространствах,
 					где каждый сантиметр важен.
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText

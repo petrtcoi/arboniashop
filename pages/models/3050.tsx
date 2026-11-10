@@ -126,7 +126,7 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '20px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 3050 - это 3-трубчатая модель высотой 50 см. Если вас интересует радиатор меньшей
 							глубины, то обратите внимание на аналогичную 2-трубчатую модель &#160;
@@ -182,7 +182,7 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиатор Arbonia 3050 с боковым подключением</h2>
 						<Grid
 							container
@@ -254,7 +254,7 @@ const Model3050: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиатор Arbonia 3050 с нижним подключением</h2>
 						<Grid
 							container

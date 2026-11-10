@@ -55,7 +55,7 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 				>
 					Регулярная сухая чистка от пыли
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText
@@ -107,7 +107,7 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 					Для удаления более стойких загрязнений, например, на кухне или в детской, используйте мягкую ткань, смоченную
 					в теплой воде с добавлением нейтрального моющего средства (например, обычного средства для мытья посуды).
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText,
@@ -149,7 +149,7 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 					царапины. Для их устранения Arbonia предлагает специальные ремкомплекты (краска-карандаш или жидкая эмаль) в
 					фирменных цветах палитры RAL.
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText
@@ -181,7 +181,7 @@ const ArticleCarePage: NextPage<ArticlePageProps> = () => {
 				>
 					Общие рекомендации
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText

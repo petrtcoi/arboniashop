@@ -222,7 +222,7 @@ const PageDelivery: NextPage<PageDeliveryProps> = () => {
             Возврат товара
           </Typography>
           <Box>
-            <Typography sx={{ ...styles.standardText }}>
+            <Typography component='div' sx={{ ...styles.standardText }}>
               <p>
                 При обнаружении скрытых дефектов в товаре, сразу сообщите нам об
                 этом. Обмен товара или возврат денежных средств Покупателю

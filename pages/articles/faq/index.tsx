@@ -48,7 +48,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						Содержание:
 					</Typography>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<ul>
 							<li>
 								<a
@@ -452,7 +452,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 								мощности популярных моделей радиаторов Arbonia в сравнении с алюминиевыми батареями (мощности указаны
 								при dT=60C).
 							</Typography>
-							<Typography
+							<Typography component='div'
                                 sx={{
                                     marginY: '20px',
                                     ...styles.smallText
@@ -842,7 +842,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						itemType='https://schema.org/Answer'
 					>
 						<div itemProp='text'>
-							<Typography
+							<Typography component='div'
                                 sx={{
                                     marginY: '20px',
                                     ...styles.standardText
@@ -954,7 +954,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						itemType='https://schema.org/Answer'
 					>
 						<div itemProp='text'>
-							<Typography
+							<Typography component='div'
                                 sx={{
                                     marginY: '20px',
                                     ...styles.standardText

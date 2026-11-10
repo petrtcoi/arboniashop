@@ -150,7 +150,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '20px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 2180 - это самая популярная модель от данного производителя. Она сочетает в себе высокую
 							тепловую мощность (одна секция может обогреть в среднем от 1.5 до 3 кв.м.) и компактные размеры (толщина
@@ -202,7 +202,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 2180 RAL 9016</h2>
 						<Grid
 							container
@@ -327,7 +327,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 2180 RAL 7016</h2>
 						<Grid
 							container
@@ -393,7 +393,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиатор Arbonia 2180 SF-3 Antrazit metallic</h2>
 						<Grid
 							container
@@ -458,7 +458,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '80px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 2180 RAL 9005</h2>
 						<Grid
 							container

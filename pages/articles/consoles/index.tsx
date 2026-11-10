@@ -36,7 +36,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				header={'Регулируемые кронштейны W161 или фиксирующий зажим ZB0281'}
 			/>
             <Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText

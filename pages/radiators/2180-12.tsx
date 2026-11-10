@@ -318,7 +318,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                                 display: 'inline'
                                             }, styles.standardText]}>
 											Цена от:{' '}
-											<Typography
+											<Typography component='span'
                                                 itemProp='offers'
                                                 itemScope
                                                 itemType='https://schema.org/Offer'
@@ -341,7 +341,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 												</span>{' '}
 												руб
 											</Typography>
-											<Typography
+											<Typography component='span'
                                                 sx={{
                                                     display: 'inline',
                                                     marginX: '15px',
@@ -594,7 +594,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<img
 									itemProp='image'
 									src='/images/models/2180-1.jpeg'
-									alt={`Белый радиатор Arbonia 2180 ${SECTIONS_STRING} #{SECTIONS_POSTFIX}`}
+									alt={`Белый радиатор Arbonia 2180 ${SECTIONS_STRING} ${SECTIONS_POSTFIX}`}
 									width={600}
 									height={600}
 								/>
@@ -618,7 +618,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -641,7 +641,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -682,7 +682,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -705,7 +705,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -785,7 +785,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -808,7 +808,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -849,7 +849,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -872,7 +872,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -958,7 +958,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -981,7 +981,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -1022,7 +1022,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -1045,7 +1045,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -1124,7 +1124,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -1147,7 +1147,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -1188,7 +1188,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -1211,7 +1211,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',

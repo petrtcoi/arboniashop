@@ -464,7 +464,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 										borderCollapse: 'collapse',
 										overflowX: 'auto',
 									}}
-								>
+								><tbody>
 									<tr>
 										<th style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: 'lightgrey' }}>
 											Алюминиевый
@@ -811,7 +811,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											2409 Вт
 										</td>
 									</tr>
-								</table>
+								</tbody></table>
 							</Typography>
 						</div>
 					</div>

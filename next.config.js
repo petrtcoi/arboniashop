@@ -2,9 +2,6 @@
 
 module.exports = {
 	reactStrictMode: true,
-	// Собирать вместе с приложением: иначе на сервере у AppCacheProvider своя копия
-	// @emotion/react, кэш не подхватывается и классы расходятся при гидратации.
-	transpilePackages: ['@mui/material-nextjs'],
 	experimental: { cpus: Number(process.env.NEXT_BUILD_CPUS || 1) },
 	// i18n: {
 	//   locales: ['ru'],

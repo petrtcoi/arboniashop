@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ imgPath, header, subheader }) => {
         height: "400px",
         backgroundImage: `url("${imgPath}")`,
         backgroundSize: "cover",
-        textShadow: "0px 0px 5px rgb(0 0 0 / 60%"
+        textShadow: "0px 0px 5px rgb(0 0 0 / 60%)"
       }}>
       {/* <img
         src={imgPath}

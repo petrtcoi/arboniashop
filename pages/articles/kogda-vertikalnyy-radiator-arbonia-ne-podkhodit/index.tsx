@@ -13,14 +13,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Когда вертикальный радиатор Arbonia не подходит - честный разбор'}
 				description={
 					'Разбираем, в каких случаях вертикальный радиатор Arbonia не является лучшим решением: большие теплопотери у окна, недостаточная ширина теплоотдачи, ошибки выбора радиатора только из-за дизайна.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -31,17 +31,22 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				]}
 			/>
 
-			<Typography
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Typography
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component={'h1'}
-					variant='h4'
-					marginTop='10px'
-					marginBottom={'30px'}
-				>
+                    component={'h1'}
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '30px'
+                    }}>
 					Когда вертикальный радиатор Arbonia не подходит - честный разбор
 				</Typography>
 				<p>
@@ -333,8 +338,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</li>
 				</ul>
 			</Typography>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

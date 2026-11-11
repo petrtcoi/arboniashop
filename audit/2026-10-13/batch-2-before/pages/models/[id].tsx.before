@@ -1,0 +1,437 @@
+import { Box, Divider, Tab, Tabs, Typography } from '@mui/material'
+import { NextPage } from 'next'
+import Head from 'next/head'
+import { useContext, useState } from 'react'
+
+import PageHeader from '../../components/pageHeader/pageHeader'
+import ProductMetadata from '../../components/seo/ProductMetadata'
+import Stock3030Guide from '../../components/pageModels/Stock3030Guide'
+import DownloadsBlock from '../../components/pageModels/downloadsBlock'
+import ImagesOtherList from '../../components/pageModels/imagesOtherList'
+import ModelMainSection from '../../components/pageModels/modelMainSection'
+import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
+import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
+import PageTitle from '../../components/pageTitle/pageTitle'
+import RadiatorList from '../../components/radiatorList/radiatorList'
+
+import getColorsData from '../../api_utils/getColorsData'
+import getConnectionsData from '../../api_utils/getConnectionsData'
+import getModelsData from '../../api_utils/getModelsData'
+
+import { CurrencyContext } from '../../contexts/currencyContext'
+
+import { ColorOrigin } from '../../models/colorOrigin.model'
+import { ConnectionOrigin } from '../../models/connectionOrigin.model'
+import { ModelOrigin } from '../../models/modelOrigin.model'
+
+import Link from 'next/link'
+import GeneralTextAboutArboniaProps from '../../components/generalTextAboutArbonia'
+import global from '../../variables/global'
+import * as styles from './../../styles/styles'
+
+const STANDARD_MODEL_IDS = ['2050', '2057', '3050', '3057']
+const CORE_VARIANT_MODEL_IDS = new Set([
+	'2030-9016-12',
+	'2050-9016-12',
+	'2050-9016-69tvv',
+	'2057-9016-12',
+	'2057-9016-69tvv',
+	'2180-9016-12',
+	'2180-9016-69tvv',
+	'2180-7016-12',
+	'2180-7016-69tvv',
+	'2180-sf3-12',
+	'2180-sf3-69tvv',
+	'3030-9016-12',
+	'3030-9016-69tvv',
+	'3037-9016-12',
+	'3037-9016-69tvv',
+	'3050-9016-12',
+	'3050-9016-69tvv',
+	'3057-9016-12',
+	'3057-9016-69tvv',
+	'3180-9016-12',
+	'3180-9016-69tvv',
+	'3180-7016-12',
+	'3180-7016-69tvv',
+	'3180-sf3-12',
+	'3180-sf3-69tvv',
+])
+
+type ModelProps = {
+	modelCurr: ModelOrigin
+	models: ModelOrigin[]
+	colors: ColorOrigin[]
+	connections: ConnectionOrigin[]
+	modelTitle: string
+	metaTitle: string
+	colorTitle: string
+	connectionTitle: string
+	colorInit: ColorOrigin | null
+	connectionInit: ConnectionOrigin | null
+}
+
+const Model: NextPage<ModelProps> = ({
+	modelCurr,
+	models,
+	colors,
+	connections,
+	modelTitle,
+	metaTitle,
+	colorTitle,
+	connectionTitle,
+	colorInit,
+	connectionInit,
+}) => {
+	const [tab, setTab] = useState<string>('buy')
+	const handleChangeTab = (event: React.SyntheticEvent, newTab: string) => {
+		setTab(newTab)
+	}
+	const [colorCurr, _setColorCurr] = useState<ColorOrigin>(colorInit === null ? colors[0] : colorInit)
+	const [connectionCurr, _setConnectionCurr] = useState<ConnectionOrigin>(
+		connectionInit === null ? connections[0] : connectionInit
+	)
+
+	const { rateEuro, isFetching } = useContext(CurrencyContext)
+	const modelFamilyId = modelCurr.id.split('-')[0]
+	const modelBreadcrumbs = [
+		{ title: 'Главная', link: '/' },
+		...(STANDARD_MODEL_IDS.includes(modelFamilyId)
+			? [{ title: 'Радиаторы под окно', link: '/catalog/standard' }]
+			: []),
+		{
+			title: `Arbonia ${modelCurr.nameShort}`,
+			link: `/models/${modelCurr.id}`,
+		},
+	]
+
+	const setTabBuy = () => {
+		setTab('buy')
+	}
+
+	return (
+		<Box
+			itemScope
+			itemType='https://schema.org/ProductModel'
+		>
+			<ProductMetadata description={`${metaTitle}: стальной трубчатый радиатор высотой ${modelCurr.height} мм и глубиной ${modelCurr.width} мм. Размеры, мощность и цены по числу секций.`} sku={modelCurr.id} />
+			<Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${modelCurr.id}`} /></Head>
+			<meta
+				itemProp='countryOfOrigin'
+				content='Чехия'
+			/>
+			<meta
+				itemProp='material'
+				content='Сталь'
+			/>
+
+			<PageHeader
+				title={`${metaTitle} — цена, размеры, мощность и наличие`}
+				description={`${metaTitle}: ${modelCurr.nameShort[0]}-трубчатая модель высотой ${modelCurr.height} мм и глубиной ${modelCurr.width} мм. Цены по числу секций, теплоотдача, размеры, подключение, гарантия 10 лет и доставка по России.`}
+				noindex={modelCurr.id.includes('-') && !CORE_VARIANT_MODEL_IDS.has(modelCurr.id)}
+			/>
+			<PageTitle
+				header={'Специализированный магазин Arbonia в России'}
+				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
+				breadcrumbs={modelBreadcrumbs}
+			/>
+			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+				{/* Shit code! */}
+
+				{modelCurr.id.startsWith('2180') && (
+					<Box>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/2180'
+						>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 2180
+							</Typography>
+						</a>
+					</Box>
+				)}
+
+				{modelCurr.id.startsWith('3030') && (
+					<Box>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/3030'
+						>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 3030
+							</Typography>
+						</a>
+					</Box>
+				)}
+
+				{modelCurr.id.startsWith('2057') && (
+					<Box>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/2057'
+						>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 2057
+							</Typography>
+						</a>
+					</Box>
+				)}
+
+				{modelCurr.id.startsWith('3057') && (
+					<Box>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/3057'
+						>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 3057
+							</Typography>
+						</a>
+					</Box>
+				)}
+
+				{modelCurr.id.startsWith('2050') && (
+					<Box>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/2050'
+						>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 2050
+							</Typography>
+						</a>
+					</Box>
+				)}
+
+				{modelCurr.id.startsWith('3180') && (
+					<Box>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/3180'
+						>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 3180
+							</Typography>
+						</a>
+					</Box>
+				)}
+
+				{modelCurr.id.startsWith('3050') && (
+					<Box>
+						<a
+							style={{ textDecoration: 'none' }}
+							href='/models/3050'
+						>
+							<Typography sx={{ ...styles.smallTextRedLink, cursor: 'pointer' }}>
+								все складские модели Arbonia 3050
+							</Typography>
+						</a>
+					</Box>
+				)}
+
+				{/* Shit code end */}
+
+				<Box
+					marginBottom={'50px'}
+					marginTop={'20px'}
+				>
+					<Typography
+						variant='h5'
+						component='h1'
+						gutterBottom
+						textAlign='center'
+						itemProp='name'
+					>
+						{modelTitle}
+					</Typography>
+				</Box>
+				<ModelMainSection
+					modelCurr={modelCurr}
+					colorCurr={colorCurr}
+					connectionCurr={connectionCurr}
+					modelTitle={modelTitle}
+					colorTitle={colorTitle}
+					connectionTitle={connectionTitle}
+					handleBuyButton={setTabBuy}
+				/>
+				{modelCurr.id === '3030-9016-12' && <Stock3030Guide model={modelCurr} />}
+				<Box marginTop='40px'>
+					<Divider variant='middle' />
+				</Box>
+				{/* ВКЛАДКИ С ИНФОРМАЦИЕЙ */}
+				<Box
+					marginTop='20px'
+					marginBottom='40px'
+				>
+					<Tabs
+						value={tab}
+						onChange={handleChangeTab}
+					>
+						<Tab
+							label='Купить'
+							value='buy'
+							sx={styles.smallText}
+						/>
+						{modelCurr.imagesOther && (
+							<Tab
+								label='Изображения'
+								value='images'
+								sx={styles.smallText}
+							/>
+						)}
+						<Tab
+							label='Документы'
+							value='docs'
+							sx={styles.smallText}
+						/>
+					</Tabs>
+				</Box>
+				{tab === 'buy' && (
+					<Box>
+						<Box id='buy-section'>
+							<Typography
+								variant='h4'
+								component='h2'
+								marginBottom='20px'
+							>
+								Купить {modelCurr.name}
+							</Typography>
+
+							<Box visibility={isFetching ? 'hidden' : 'hidden'}>
+								<Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
+									подождите, обновляется курс валют...
+								</Typography>
+							</Box>
+
+							<Box marginTop='20px'>
+								{modelCurr.inStock === 'true' && colorCurr !== null && connectionCurr !== null ? (
+									<RadiatorList
+										model={modelCurr}
+										color={colorCurr}
+										connection={connectionCurr}
+										currencyRate={rateEuro}
+									/>
+								) : (
+									<>
+										<RadiatorAllOptions
+											modelInit={modelCurr ? modelCurr : models[0]}
+											connectionInit={connections[0]}
+											colorInit={colors[0]}
+											models={models}
+											colors={colors}
+											connections={connections}
+										/>
+										<RadiatorInCartList
+											modelCurrentId={modelCurr.id}
+											models={models}
+											colors={colors}
+											connections={connections}
+										/>
+									</>
+								)}
+							</Box>
+						</Box>
+					</Box>
+				)}
+				{tab === 'images' && modelCurr.imagesOther && (
+					<Box>
+						<Typography
+							variant='h4'
+							component='h2'
+							marginBottom='20px'
+						>
+							Дополнительные изображения
+						</Typography>
+						<ImagesOtherList imagesString={modelCurr.imagesOther} />
+					</Box>
+				)}
+				{tab === 'docs' && (
+					<Box>
+						<Typography
+							variant='h4'
+							component='h2'
+							marginBottom='20px'
+						>
+							Документы для скачивания
+						</Typography>
+						<DownloadsBlock />
+					</Box>
+				)}
+				<GeneralTextAboutArboniaProps />
+			</Box>
+		</Box>
+	)
+}
+
+export default Model
+
+export async function getStaticProps(context: { params: { id: string } }) {
+	const modelId = context.params.id
+	const models: ModelOrigin[] = await getModelsData()
+	const modelCurr = models.find(x => x.id === modelId)
+
+	const colors: ColorOrigin[] = await getColorsData()
+	const connections: ConnectionOrigin[] = await getConnectionsData()
+
+	let modelTitle = `Радиатор Arbonia Column ${modelCurr?.nameShort}`
+	let metaTitle = `Радиатор Arbonia ${modelCurr?.nameShort}`
+
+	let colorTitle = 'палитра Arbonia'
+	let colorInit = null
+	if (modelCurr != undefined && modelCurr.color) {
+		const color = colors.find(x => x.id === modelCurr.color)
+		if (color !== undefined) {
+			colorTitle = color.name
+			colorInit = color
+			modelTitle += `, ${colorTitle}`
+			metaTitle += ` ${color.nameShort}`
+		}
+	}
+
+	let connectionTitle = 'из каталога Arbonia'
+	let connectionInit = null
+	if (modelCurr != undefined && modelCurr.connection) {
+		const connection = connections.find(x => x.id === modelCurr.connection)
+		if (connection !== undefined) {
+			connectionInit = connection
+			connectionTitle = connection.nameShort
+			modelTitle += `, ${connectionTitle}`
+			metaTitle += ` ${connection.nameShort}`
+		}
+	}
+
+	return {
+		props: {
+			modelCurr,
+			models,
+			colors,
+			connections,
+			modelTitle,
+			metaTitle,
+			colorTitle,
+			connectionTitle,
+			connectionInit,
+			colorInit,
+		},
+	}
+}
+
+export async function getStaticPaths() {
+	const models: ModelOrigin[] = await getModelsData()
+	const paths = models
+		.filter(model => model.id !== '2180')
+		.filter(model => model.id !== '2050')
+		.filter(model => model.id !== '2057')
+		.filter(model => model.id !== '3057')
+		.filter(model => model.id !== '3050')
+		.filter(model => model.id !== '3180')
+		.filter(model => model.id !== '3030')
+		.map(model => {
+			return { params: model }
+		})
+
+	return {
+		paths: paths,
+		fallback: false, // See the "fallback" section below
+	}
+}

@@ -63,41 +63,51 @@ const cellStyle: React.CSSProperties = { border: '1px solid #dddddd', padding: '
 
 const ArticlePage: NextPage = () => {
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/trubchatye-ili-bimetallicheskie-radiatory' /></Head>
-			<Script id='tubular-vs-bimetal-article-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-			<Script id='tubular-vs-bimetal-faq-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-			<PageHeader
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/trubchatye-ili-bimetallicheskie-radiatory' /></Head>
+            <Script id='tubular-vs-bimetal-article-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+            <Script id='tubular-vs-bimetal-faq-jsonld' type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+            <PageHeader
 				title='Трубчатые или биметаллические радиаторы: что лучше выбрать'
 				description='Сравниваем стальные трубчатые и биметаллические радиаторы для квартиры и дома: давление, мощность, размеры, уход, подключение, дизайн и ограничения системы отопления.'
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
 					{ title: 'Трубчатые или биметаллические радиаторы', link: '/articles/trubchatye-ili-bimetallicheskie-radiatory' },
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath='/images/articles/underwindow.jpeg'
 				header='Трубчатые или биметаллические радиаторы'
 				subheader='Сравнение без универсального победителя: выбираем под систему, помещение и монтаж'
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto' }}>
-				<Typography sx={{ ...styles.standardText }} marginTop='28px'>
+            <Box sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto' }}>
+				<Typography
+                    sx={{
+                        marginTop: '28px',
+                        ...styles.standardText
+                    }}>
 					Покупатель часто начинает с вопроса «что лучше — трубчатый или биметаллический радиатор», хотя правильный
 					порядок обратный: сначала нужно узнать параметры системы отопления и теплопотери комнаты, а затем сравнивать
 					приборы, которые этим условиям соответствуют. Биметаллический радиатор может быть рациональным стандартным
 					решением для квартиры, а стальной трубчатый — дать больше вариантов по высоте, длине, цвету и размещению.
 					Но материал и форма не отменяют паспортных ограничений конкретной модели.
 				</Typography>
-				<Typography sx={{ ...styles.standardText }} marginTop='18px'>
+				<Typography
+                    sx={{
+                        marginTop: '18px',
+                        ...styles.standardText
+                    }}>
 					Ниже сравним конструкцию, давление, теплоотдачу, размеры, регулирование, уборку и стоимость владения. Речь
 					идёт о водяном отоплении. Для квартиры с центральной системой окончательное решение согласуют с проектом
 					дома или управляющей организацией; для частного дома — с проектировщиком котельной и отопительного контура.
 				</Typography>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Короткий ответ</Typography>
 					<Box sx={{ overflowX: 'auto', marginTop: '18px' }}>
 						<table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px' }}>
@@ -114,16 +124,26 @@ const ArticlePage: NextPage = () => {
 					</Box>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Как устроены радиаторы</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Стальной трубчатый радиатор состоит из верхнего и нижнего коллекторов, соединённых вертикальными трубками.
 						Секции сварены в единый прибор. Количество трубок в глубину влияет на габарит и мощность: у Arbonia первая
 						цифра модели указывает на два или три ряда, например 2050 и 3050. Производитель может выпускать одну серию
 						разной высоты, с разным числом секций, боковым или нижним подключением. Благодаря этому прибор подбирают под
 						низкий подоконник, стандартное окно или высокий простенок.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Биметаллический радиатор обычно набирается из отдельных секций. Внутренний канал, контактирующий с
 						теплоносителем, выполняют из стали, а наружное алюминиевое оребрение увеличивает площадь теплообмена. Такая
 						компоновка позволяет многим моделям сочетать компактный стандартный формат и высокие паспортные значения
@@ -132,16 +152,26 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Рабочее давление и центральное отопление</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Именно здесь опаснее всего выбирать по общему названию. У системы есть рабочее давление, испытательный
 						режим, возможные скачки, требования к материалам и качеству теплоносителя. У радиатора — собственные
 						допустимые параметры, указанные в паспорте. Некоторые биметаллические модели проектируют под более высокое
 						давление, что делает их частым выбором для высотных домов. Но фраза «биметалл всегда подходит, а сталь —
 						никогда» неверна: соответствие проверяют для конкретного здания и конкретного артикула.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Перед заменой запросите параметры у управляющей организации, уточните однотрубная или двухтрубная разводка
 						используется, есть ли байпас и ограничения на регулирующую арматуру. Совпадение межосевого расстояния не
 						заменяет эту проверку. Радиатор должен выдерживать режим системы, а монтаж не должен ухудшать циркуляцию у
@@ -149,16 +179,26 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Теплоотдача: сравнивать нужно в одинаковом режиме</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Число ватт в каталоге имеет смысл только вместе с температурным напором. Один производитель может указать
 						мощность при более горячем теплоносителе, другой — при другом режиме. Поэтому значения приводят к условиям
 						вашей системы. Это особенно важно для частного дома с конденсационным котлом или тепловым насосом, где
 						температура подачи ниже традиционной. В таком режиме потребуется прибор большей площади, независимо от его
 						конструкции.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						У биметаллических секций развитое оребрение формирует заметную конвективную составляющую. У трубчатого
 						радиатора тепло передают и движение воздуха между трубками, и нагретая поверхность. На комфорт влияют место
 						установки, длина прибора, температура поверхности и циркуляция в комнате. Для реального выбора полезнее
@@ -166,47 +206,77 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Размеры и свобода планировки</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Типовой биметаллический радиатор хорошо вписывается под обычное окно. Секции можно набрать по длине в
 						пределах, разрешённых производителем, но выбор высоты и глубины конкретной серии обычно ограничен. У
 						трубчатых радиаторов диапазон форм шире: низкие модели 30–37 см, стандартные 50–57 см, вертикальные около
 						180 см, два или три ряда трубок. Это помогает решить нестандартную архитектурную задачу без декоративного
 						экрана.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						За гибкость приходится платить вниманием к проекту. Вертикальный прибор требует надёжного основания и
 						проверки распределения тепла, низкий — может оказаться очень длинным, трёхтрубчатый — сильнее выступать от
 						стены. Размеры оценивают вместе с кронштейнами, подводкой, термоголовкой, плинтусом и шторами.
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Подключение и регулирование</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Боковое подключение удобно при замене существующего прибора: главное — совпадение осей и возможность
 						установить правильную арматуру. У некоторых трубчатых моделей высотой 57 см межосевое расстояние при боковом
 						подключении составляет 500 мм, поэтому они могут подойти вместо распространённой батареи. Но трубы редко
 						бывают идеально ровными, а фактический габарит нового радиатора отличается — место всё равно измеряют.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Нижнее подключение удобнее заложить в новом ремонте. У Arbonia исполнение №69 ТВВ имеет выводы с шагом 50
 						мм и встроенный термовентиль. Узел и термоголовка подбираются отдельно, а подачу и обратку сверяют по схеме.
 						Подробная инструкция есть в материале «<a href='/articles/connections'>нижнее подключение Arbonia №69 ТВВ</a>».
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Уборка, безопасность и внешний вид</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Между гладкими трубками обычно проще пройти щёткой или салфеткой, чем между частыми рёбрами секционного
 						прибора. Это может быть важно для спальни, детской и помещений, где стараются уменьшить накопление пыли.
 						Однако доступ определяется монтажом: если любой радиатор прижат к стене, спрятан в нише или закрыт мебелью,
 						обслуживание усложняется. Наружные поверхности нагреваются, поэтому в детской оценивают температуру,
 						выступающие элементы и расположение прибора в зоне движения.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						По дизайну биметаллические модели чаще выглядят как привычная секционная батарея и легко остаются нейтральным
 						фоном. Трубчатые радиаторы имеют более архитектурную вертикальную ритмику, выпускаются в разных пропорциях и
 						цветах. Белый RAL 9016 обычно проще найти в складской программе; нестандартный оттенок увеличивает срок и
@@ -214,25 +284,41 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Цена: сравнивайте готовую систему, а не одну секцию</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Типовой биметаллический прибор часто дешевле дизайнерского трубчатого по первоначальной цене. Но корректное
 						сравнение включает нужную мощность, количество секций, кронштейны, переходники, запорную арматуру,
 						терморегулятор, доставку и монтаж. Если дешёвый прибор требует переноса труб или декоративного экрана,
 						разница уменьшается. И наоборот, нестандартный цвет или заказное исполнение трубчатой модели заметно увеличит
 						бюджет и срок.
 					</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Не менее важна стоимость ошибки. Неподходящее давление, неверная мощность или перепутанная подача приводят к
 						переделке, которая дороже предварительного расчёта. Поэтому коммерческое предложение должно содержать не
 						только название радиатора, но и точный артикул, режим расчёта, габарит, подключение и состав комплекта.
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Выбор для квартиры</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Начните не с материала, а с управляющей организации: узнайте давление, схему стояка и допустимость замены.
 						Если требуется высокий запас по паспортным параметрам и нужен обычный прибор под окно, подходящая
 						биметаллическая модель может быть самым простым решением. Если параметры системы допускают стальной
@@ -241,9 +327,15 @@ const ArticlePage: NextPage = () => {
 						стояк.
 					</Typography>
 				</Box>
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Выбор для частного дома</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						В автономной системе владелец контролирует давление и качество теплоносителя, поэтому на первый план выходят
 						температурный режим, теплопотери и размещение. Для низкотемпературного отопления нужен увеличенный прибор;
 						это нужно учесть ещё до разводки труб. Трубчатые модели удобны разнообразием размеров и нижним подключением,
@@ -252,9 +344,16 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Алгоритм выбора за семь шагов</Typography>
-					<Typography component='div' sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        component='div'
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						<ol>
 							<li>Получите параметры системы: давление, температуры, тип разводки и требования к прибору.</li>
 							<li>Рассчитайте теплопотери каждой комнаты, а не только общую площадь дома.</li>
@@ -267,27 +366,55 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 
-				<Box marginTop='38px'>
+				<Box sx={{
+                    marginTop: '38px'
+                }}>
 					<Typography component='h2' variant='h5'>Когда стоит рассмотреть Arbonia</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Стальные трубчатые радиаторы особенно полезны, когда типовой секционный прибор не решает задачу по форме:
 						подоконник слишком низкий, остекление панорамное, свободен только узкий простенок или радиатор должен стать
 						частью интерьера. В каталоге Arbonia есть двух- и трёхтрубчатые, низкие, стандартные и вертикальные серии.
 						Подробнее об устройстве — в статье «<a href='/articles/column-radiators'>что такое трубчатый радиатор</a>».
 					</Typography>
-					<Box marginTop='22px' display='flex' flexWrap='wrap' gap='12px'>
+					<Box
+                        sx={{
+                            marginTop: '22px',
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            gap: '12px'
+                        }}>
 						<a href='/' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Смотреть трубчатые Arbonia</Button></a>
 						<a href='/request' style={{ textDecoration: 'none' }}><Button variant='outlined' color='secondary'>Получить расчёт</Button></a>
 					</Box>
 				</Box>
 
-				<Box marginTop='44px'>
+				<Box sx={{
+                    marginTop: '44px'
+                }}>
 					<Typography component='h2' variant='h5'>Частые вопросы</Typography>
-					{faqItems.map(item => <Box key={item.question} marginTop='22px'><Typography component='h3' variant='h6'>{item.question}</Typography><Typography sx={{ ...styles.standardText }} marginTop='8px'>{item.answer}</Typography></Box>)}
+					{faqItems.map(item => <Box key={item.question} sx={{
+                        marginTop: '22px'
+                    }}><Typography component='h3' variant='h6'>{item.question}</Typography><Typography
+                        sx={{
+                            marginTop: '8px',
+                            ...styles.standardText
+                        }}>{item.answer}</Typography></Box>)}
 				</Box>
-				<Box marginTop='44px' marginBottom='30px'>
+				<Box
+                    sx={{
+                        marginTop: '44px',
+                        marginBottom: '30px'
+                    }}>
 					<Typography component='h2' variant='h5'>Вывод</Typography>
-					<Typography sx={{ ...styles.standardText }} marginTop='14px'>
+					<Typography
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Биметалл и стальной трубчатый радиатор решают одну задачу разными конструктивными средствами. Биметалл
 						часто выигрывает как компактное типовое решение с высокими паспортными параметрами; трубчатый прибор — в
 						вариативности размеров, размещения и внешнего вида. Лучшим будет не тип сам по себе, а конкретная модель,
@@ -295,8 +422,8 @@ const ArticlePage: NextPage = () => {
 					</Typography>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

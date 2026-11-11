@@ -39,21 +39,27 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
 	const imagePrimaryPath = global.imagesModelPath + model.imagePrimary
 
 	return (
-		<Box marginTop={onlyTable ? '0px' : '70px'}>
-			{!onlyTable && (
+        <Box sx={{
+            marginTop: onlyTable ? '0px' : '70px'
+        }}>
+            {!onlyTable && (
 				<>
-					<Box marginTop='20px'>
+					<Box sx={{
+                        marginTop: '20px'
+                    }}>
 						<Grid
 							container
 							spacing={2}
-							alignItems='start'
+							sx={{
+                                alignItems: 'start'
+                            }}
 						>
 							<Grid
-								item
-								xs={4}
-								md={4}
-								lg={3}
-							>
+                                size={{
+                                    xs: 4,
+                                    md: 4,
+                                    lg: 3
+                                }}>
 								<img
 									width={'100%'}
 									height={'auto'}
@@ -62,35 +68,44 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
 								/>
 							</Grid>
 							<Grid
-								item
-								container
-								xs={8}
-								md={6}
-								lg={6}
-								direction='column'
-								display='flex'
-								justifyContent={'center'}
-							>
+                                container
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'center'
+                                }}
+                                size={{
+                                    xs: 8,
+                                    md: 6,
+                                    lg: 6
+                                }}>
 								<Box>
-									<Box marginBottom='10px'>
+									<Box sx={{
+                                        marginBottom: '10px'
+                                    }}>
 										<Typography
-											variant='h6'
-											component='h3'
-											sx={{ lineHeight: 1.2, fontWeight: 600 }}
-											textAlign='left'
-										>
+                                            variant='h6'
+                                            component='h3'
+                                            sx={{
+                                                textAlign: 'left',
+                                                lineHeight: 1.2,
+                                                fontWeight: 600
+                                            }}>
 											{title}
 										</Typography>
 									</Box>
 									<Typography
-										// sx={styles.standardText}
-										fontSize={{ xs: '12px', sm: '14px' }}
+										sx={{
+                                            fontSize: { xs: '12px', sm: '14px' }
+                                        }}
 									>
 										{description}
 									</Typography>
 
 									{modelLink && (
-										<Box marginTop='10px'>
+										<Box sx={{
+                                            marginTop: '10px'
+                                        }}>
 											<a
 												style={{ textDecoration: 'none' }}
 												href={`/models/${modelLink}`}
@@ -106,13 +121,17 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
 				</>
 			)}
 
-			<Box visibility={isFetching ? 'hidden' : 'hidden'}>
+            <Box sx={{
+                visibility: isFetching ? 'hidden' : 'hidden'
+            }}>
 				<Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
 					подождите, обновляется курс валют...
 				</Typography>
 			</Box>
 
-			<Box marginTop={'20px'}>
+            <Box sx={{
+                marginTop: '20px'
+            }}>
 				<RadiatorList
 					model={model}
 					color={color}
@@ -120,8 +139,8 @@ const ModelBlock: React.FC<ModelBlockProps> = ({
 					currencyRate={rateEuro}
 				/>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ModelBlock

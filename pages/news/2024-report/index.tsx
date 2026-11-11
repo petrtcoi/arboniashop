@@ -13,22 +13,25 @@ type ArticlesListPageProps = {}
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 	return (
-		<Box>
-			<PageHeader title={'Отчет о полугодовых результатах Arbonia за 2024 год'} />
-			<PageTitle
+        <Box>
+            <PageHeader title={'Отчет о полугодовых результатах Arbonia за 2024 год'} description={'Полугодовые результаты Arbonia за 2024 год: основные финансовые показатели, дверное направление, продажа климатического подразделения и прогноз.'} />
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Новости', link: '/news' },
-					{ title: 'Отчет за полугодие 2024', link: '/news/2023-report' },
+					{ title: 'Отчет за полугодие 2024', link: '/news/2024-report' },
 				]}
 			/>
 
-			<Box
-				sx={{ ...global.pagePadding, maxWidth: '800px', margin: 'auto' }}
-				marginTop='20px'
-			>
+            <Box
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '800px',
+                    margin: 'auto'
+                }}>
 				<Typography
 					variant='h6'
 					component='h1'
@@ -37,7 +40,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				>
 					Отчет о полугодовых результатах Arbonia за 2024 год
 				</Typography>
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<Typography
 						style={{ ...styles.standardText }}
 						component='div'
@@ -115,8 +120,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Typography>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlesListPage

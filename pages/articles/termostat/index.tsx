@@ -15,14 +15,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Советы по правильной установке термостатов для трубчатых радиаторов Arbonia'}
 				description={
 					'Термостаты, регулирующие подачу теплоносителя в трубчатый радиатор Arbonia, обеспечивают поддержание заданной температуры в комнате.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -32,15 +32,16 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide-5.jpeg'}
 				header={'Термостаты для трубчатых радиаторов Arbonia'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<p>
 						Термоголовки, регулирующие подачу теплоносителя в радиатор, обеспечивают поддержание заданной температуры в
 						комнате. Наиболее распространённый вариант - механические термоголовки, которые реагируют на изменение
@@ -91,8 +92,15 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						Такие факторы мешают термостату измерять реальную температуру воздуха в комнате. В этих случаях можно
 						использовать выносные термостаты или ручные регулировки.
 					</p>
+					<p>
+						Если прибор будет закрыт мебелью, заранее проверьте <a href='/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey'>место
+						термоголовки под столешницей и в нише</a>. Датчик должен измерять температуру комнаты, а не нагретого
+						воздуха внутри тумбы.
+					</p>
 				</Typography>
-				<Box textAlign={'center'}>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/articles/2050-12-2.jpeg'
 						alt='Радиатор Arbonia с термостатом'
@@ -101,8 +109,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					/>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

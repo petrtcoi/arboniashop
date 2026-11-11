@@ -1,0 +1,50 @@
+id,name,nameShort,baseRate,group,img
+9016,Белый RAL 9016,RAL 9016,1,Серийный цвет,RAL_9016_3c_h.jpg
+7016,RAL 7016 серый антрацит,RAL 7016,1.15,RAL Classic,7016.jpg
+9005,RAL 9005 глубокий черный,RAL 9005,1.15,RAL Classic,9005.png
+sf3,SF-3 Anthrazit metallic,SF-3,1.15,Серия Metallic,
+ral,Цвет из RAL Classic,RAL classic,1.15,RAL Classic,RAL_Classic_3c_h.jpg
+artcic_blue,Arctic Blue,Arctic Blue,1.15,New Inspiration,ANB__Arbonia_01_NIC_Cool_arctic-blue_3c_h.jpg
+ice_blue,Ice Blue,Ice Blue,1.15,New Inspiration,ANB__Arbonia_01_NIC_Cool_ice-blue_3c_h.jpg
+snow,Snow,Snow,1.15,New Inspiration,ANB__Arbonia_01_NIC_Cool_snow_3c_h.jpg
+iron,Iron,Iron,1.15,New Inspiration,ANB__Arbonia_01_NIC_Cool_iron_3c_h.jpg
+sahara,Sahara,Sahara,1.15,New Inspiration,ANB__Arbonia_01_NIC_Warm_sahara_3c_h.jpg
+sunnyday,Sunnyday,Sunnyday,1.15,New Inspiration,ANB__Arbonia_01_NIC_Warm_sunyday_3c_h.jpg
+chili,Chili,Chili,1.15,New Inspiration,ANB__Arbonia_01_NIC_Warm_chili_3c_h.jpg
+reed,Reed,Reed,1.15,New Inspiration,ANB__Arbonia_01_NIC_Warm_reed_3c_h.jpg
+curry,Curry,Curry,1.15,New Inspiration,ANB__Arbonia_01_NIC_Warm_curry_3c_h.jpg
+ivory,Ivory,Ivory,1.15,New Inspiration,ANB__Arbonia_01_NIC_Warm_ivory_3c_h.jpg
+cherry,Cherry,Cherry,1.15,New Inspiration,Farben_cherry_3c_h.jpg
+papaya,Papaya,Papaya,1.15,New Inspiration,Farben_papaya_3c_h.jpg
+bamboo,Bamboo,Bamboo,1.15,New Inspiration,Farben_bamboo_3c_h.jpg
+amazonas,Amazonas,Amazonas,1.15,New Inspiration,Farben_amazonas_3c_h.jpg
+deep_ocean,Deep Ocean,Deep Ocean,1.15,New Inspiration,Farben_deepocean_3c_h.jpg
+sky_blue,Sky Blue,Sky Blue,1.15,New Inspiration,Farben_skyblue_3c_h.jpg
+onyx,Onyx,Onyx,1.15,Серия Metallic,ANB__Arbonia_01_NIC_Cool_onyx_3c_h.jpg
+slate,Slate,Slate,1.15,Серия Metallic,ANB__Arbonia_01_NIC_Cool_slate_3c_h.jpg
+lava,Lava,Lava,1.15,Серия Metallic,Lava_3c_h.jpg
+anthracite_grey,Anthracite Grey,Anthracite Grey,1.15,Серия Metallic,Anthracite_Grey_3c_h.jpg
+graphit_metallic,Graphit Metallic,Graphit Metallic,1.15,Серия Metallic,Graphit_Metallic_3c_h.jpg
+aluminium_grey,Aluminium Grey,Aluminium Grey,1.15,Серия Metallic,Aluminium_Grey_3c_h.jpg
+classic_grey,Classic Grey,Classic Grey,1.15,Серия Metallic,Classic_Grey_3c_h.jpg
+aluminium_january,Aluminium January,Aluminium January,1.15,Серия Metallic,Aluminium_January_3c_h.jpg
+glanzsilber_metallic,Glanzsilber Metallic,Glanzsilber Metallic,1.15,Серия Metallic,Glanzsilber_Metallic_3c_h.jpg
+mid_blue,Mid Blue,Mid Blue,1.15,Серия Metallic,Mid_Blue_3c_h.jpg
+ripol,Ripol,Ripol,1.15,Серия Metallic,Ripol_3c_h.jpg
+dark_brown,Dark Brown,Dark Brown,1.15,Серия Terra,Dark_Brown_3c_h.jpg
+classic_kupfer,Classic Kupfer,Classic Kupfer,1.15,Серия Terra,Classic_Kupfer_3c_h.jpg
+noble_gold,Noble Gold,Noble Gold,1.15,Серия Terra,Noble_Gold_3c_h.jpg
+orange_brown,Orange Brown,Orange Brown,1.15,Серия Terra,Orange_Brown_3c_h.jpg
+noble_pink,Noble Pink,Noble Pink,1.15,Серия Terra,Noble_Pink_3c_h.jpg
+quarts_brown,Quarts Brown,Quarts Brown,1.15,Серия Terra,Quarts_Brown_3c_h.jpg
+sahara_brown,Sahara Brown,Sahara Brown,1.15,Серия Terra,Sahara_Brown_3c_h.jpg
+grey_gold,Grey Gold,Grey Gold,1.15,Серия Terra,Grey_Gold_3c_h.jpg
+tranquil,Tranquil,Tranquil,1.15,Серия Pastell,Tranquil_3c_h.jpg
+aegaeis,Ägäis,Ägäis,1.15,Серия Pastell,Aegaeis_3c_h.jpg
+pergamon,Pergamon,Pergamon,1.15,Серия Pastell,Pergamon_3c_h.jpg
+breeze,Breeze,Breeze,1.15,Серия Pastell,Breeze_3c_h.jpg
+edelweiss,Edelweiss,Edelweiss,1.15,Серия Pastell,Edelweiss_3c_h.jpg
+teak,Teak,Teak,1.15,Серия Nature,Teak_3c_h.jpg
+maple,Maple,Maple,1.15,Серия Nature,Maple_3c_h.jpg
+solaris,Solaris,Solaris,1.15,Серия Nature,Solaris_3c_h.jpg
+forest,Forest,Forest,1.15,Серия Nature,Forest_3c_h.jpg

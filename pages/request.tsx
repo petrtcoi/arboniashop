@@ -21,8 +21,12 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 	const toggleShow = () => setShow(!show)
 
 	return (
-		<Box>
-			<PageTitle
+        <Box>
+            <PageHeader
+				title={'Запрос на подбор радиаторов Arbonia — расчёт и цена'}
+				description={'Отправьте размеры, мощность и подключение — подберём радиатор Arbonia, рассчитаем стоимость и срок поставки. Доставка со складов в Москве и Санкт-Петербурге.'}
+			/>
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
@@ -30,8 +34,10 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					{ title: 'Запрос на подбор радиаторов', link: '/request' },
 				]}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '800px', margin: 'auto' }}>
-				<Box marginTop={'40px'}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '800px', margin: 'auto' }}>
+				<Box sx={{
+                    marginTop: '40px'
+                }}>
 					<Typography
 						variant='h4'
 						component='h1'
@@ -43,18 +49,25 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					</Typography>
 				</Box>
 				<Typography
-					sx={{ fontSize: '14px', lineHeight: '1.5', fontWeight: 300, opacity: 0.9, letterSpacing: '0.02em' }}
-					marginTop='30px'
-					variant='body1'
-					textAlign='justify'
-				>
+                    variant='body1'
+                    sx={{
+                        marginTop: '30px',
+                        textAlign: 'justify',
+                        fontSize: '14px',
+                        lineHeight: '1.5',
+                        fontWeight: 300,
+                        opacity: 0.9,
+                        letterSpacing: '0.02em'
+                    }}>
 					Опишите ваш проект ниже, и наши специалисты оперативно подготовят полный тепловой расчет и финальную смету (с
 					учетом скидки и доставки). Мы отправим результат в выбранный Вами мессенджер или на почту в течение дня. Мы
 					уважаем Ваше время и{' '}
 					<span style={{ fontWeight: 700, color: '#ef7d00' }}>не будем звонить без Вашего прямого запроса</span>.
 				</Typography>
 
-				<Box marginTop='24px'>
+				<Box sx={{
+                    marginTop: '24px'
+                }}>
 					<LeadWidget
 						store='ArboniaShop.ru'
 						successUrl='/accepted'
@@ -63,8 +76,8 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 					/>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default PageRequest

@@ -14,14 +14,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Регулируемые кронштейны W161 или фиксирующий зажим ZB0281'}
 				description={
 					'Для настенного монтажа радиаторов Arbonia чаще всего применяются регулируемые кронштейны W161 или нерегулируемые зажимы ZB0281 (скрытый монтаж). В этой статье мы рассмотрим их особенности, преимущества и недостатки.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -31,15 +31,16 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide-5.jpeg'}
 				header={'Регулируемые кронштейны W161 или фиксирующий зажим ZB0281'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					<a
 						style={{ textDecoration: 'none' }}
 						href='/'
@@ -68,30 +69,36 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Кронштейн W161 и упор ZB0280
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Верхний кронштейн представляет собой обычный крючок на котором можно регулировать вынос оси радиатора от стены
 					от 7 до 9 см. Внизу радиатор упирается в стену упорами ZB0280 - они отвечают за то, чтобы радиатор висел
 					вертикально ровно и болтался.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Данный вариант крепления радиаторов близок к классическому. Он хорошо подходит для ситуаций, когда радиатор
 					необходимо вывести на уже готовые трубы. Например, при замене старый чугунных радиаторов на модель Arbonia
 					3057 с боковым подключением. Данный радиатор имеет стандартное межосевое расстояние 50 см и его просто
 					требуется разместить на нужном расстоянии от стены.
 				</Typography>
-				<Box textAlign={'center'}>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/articles/21.png'
 						alt='Arbonia W161 + ZB0280'
@@ -100,52 +107,61 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					/>
 				</Box>
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Кронштейн ZB0281/ZB0282 и упор ZB0280
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Данный тип креплений относится к скрытому, так как зажим ZB0281 держит радиатор за трубки, расположенные ближе
 					к стене. Кронштейн ZB0282 крепится к стене и в него уже вставляется зажим. Упор выполняет ту же роль, что и в
 					предыдущем случае - отвечает за ровное расположение радиатора.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Кронштейны менее заметны, чем стандартный крючок, также они имеют фиксированное расстояние от стены (33 мм),
 					поэтому подходят только в том случае, если трубы будут переноситься под новый радиатор, исходя из его
 					расположения, а не наоборот.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Другим отличием, которое наиболее важно для цветных радиаторов, является возможность изготовления кронштейнов
 					в цвет радиатора. Если кронштейн W161 больше подходит только для моделей в белом цвете, то кронштейны ZB0281 /
 					ZB0282 поставляются в том же цвете, что и радиатор.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Нижние упоры ZB0280 имеют только 2 цвета: белый и темно-серый.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Интересным бонусом скрытых кронштейнов является небольшая степень свободы в расположении радиатора по
 					вертикали: зажимы можно крепить к радиатору выше или ниже, в зависимости от того, нужно расположить радиатор
 					ниже или выше относительно настенных кронштейнов. Это может быть удобно в некоторых случаях. Например, если
 					деревянный дом дал небольшую усадку.
 				</Typography>
-				<Box textAlign={'center'}>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/articles/22.png'
 						alt='Arbonia ZB0281 + ZB0282 + ZB0280'
@@ -154,8 +170,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					/>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

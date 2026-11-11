@@ -1,0 +1,132 @@
+{
+  "updated_on": "2026-10-13",
+  "revisions": [
+    {
+      "slug": "tsvet-radiatorov-v-interiere",
+      "title": "Цветные радиаторы в интерьере: сочетания со стенами, деревом и металлом",
+      "intent": "Цветные радиаторы в интерьере: идеи сочетаний",
+      "words": 758
+    },
+    {
+      "slug": "low-models",
+      "title": "Низкие Arbonia 2030, 3030 и 3037: сравнение высоты, глубины и мощности",
+      "intent": "Сравнение низких Arbonia 2030, 3030 и 3037",
+      "words": 727
+    },
+    {
+      "slug": "arbonia-3030-vs-3037",
+      "title": "Arbonia 3030 или 3037: сравнение радиаторов высотой 300 и 370 мм",
+      "intent": "Arbonia 3030 или 3037",
+      "words": 713
+    },
+    {
+      "slug": "vertical-radiator-power",
+      "title": "Мощность вертикальных Arbonia 2180 и 3180 при разных температурах",
+      "intent": "Мощность вертикальных Arbonia 2180 и 3180",
+      "words": 680
+    },
+    {
+      "slug": "calculate",
+      "title": "Какая мощность отопления нужна комнате: проект, теплопотери и предварительная оценка",
+      "intent": "Определение требуемой тепловой нагрузки комнаты",
+      "words": 761
+    },
+    {
+      "slug": "arbonia-3057",
+      "title": "Замена чугунного радиатора на Arbonia 3057: что проверить до демонтажа",
+      "intent": "Замена старого радиатора на Arbonia 3057",
+      "words": 722
+    },
+    {
+      "slug": "montazh-radiatorov-arbonia-rekomendacii",
+      "title": "Монтаж радиатора Arbonia: подготовка, подключение и проверка после установки",
+      "intent": "Общая последовательность монтажа радиатора Arbonia",
+      "words": 684
+    },
+    {
+      "slug": "montazh-vysokih-radiatorov-arbonia-instrukciya",
+      "title": "Монтаж Arbonia 2180 и 3180: масса, крепления и фиксация корпуса 1800 мм",
+      "intent": "Крепление высоких Arbonia 2180 и 3180",
+      "words": 682
+    },
+    {
+      "slug": "montazh-arbonia-2180-na-gkl",
+      "title": "Arbonia 2180 на гипсокартонной стене: закладные и передача нагрузки",
+      "intent": "Усиление гипсокартонной стены для Arbonia 2180",
+      "words": 757
+    },
+    {
+      "slug": "trubchatye-radiatory-dlya-kvartiry",
+      "title": "Трубчатый радиатор в квартире: совместимость с системой и подготовка замены",
+      "intent": "Совместимость трубчатого радиатора с отоплением квартиры",
+      "words": 762
+    },
+    {
+      "slug": "radiatory-arbonia-pod-okno",
+      "title": "Arbonia под стандартное окно: выбор между 2050, 2057, 3050 и 3057",
+      "intent": "Выбор стандартных моделей Arbonia под окно",
+      "words": 764
+    },
+    {
+      "slug": "high-arbonia",
+      "title": "Как выбрать высокий радиатор Arbonia для простенка и планировки комнаты",
+      "intent": "Выбор места и формы высокого радиатора Arbonia",
+      "words": 761
+    }
+  ],
+  "targeted_revisions": [
+    {
+      "slug": "ral-9016-pochemu-vybirayut-arkhitektory",
+      "intent": "Что означает RAL 9016 и как выглядит этот цвет на радиаторе"
+    },
+    {
+      "slug": "kak-vybrat-cvet-radiatora-pod-interer",
+      "intent": "Практическое согласование покрытия и комплектации перед заказом"
+    },
+    {
+      "slug": "radiator-pod-nizkiy-podokonnik",
+      "intent": "Замер низкой оконной ниши и определение монтажного габарита"
+    },
+    {
+      "slug": "mezhosevoe-rasstoyanie-500-mm-arbonia",
+      "intent": "Измерение межосевого 500 мм и геометрическая совместимость подводок"
+    },
+    {
+      "slug": "arbonia-2180-calc",
+      "intent": "Готовые табличные примеры 2180 для фиксированных площадей 10–20 м²"
+    },
+    {
+      "slug": "arbonia-2180-po-ploshadi",
+      "intent": "Интерактивный предварительный подбор секций только Arbonia 2180"
+    },
+    {
+      "slug": "2180-3180",
+      "intent": "Сравнение 2180 и 3180 по глубине, массе, внешнему виду и условиям выбора"
+    },
+    {
+      "slug": "column-radiators",
+      "intent": "Общий обзор конструкции, преимуществ, ограничений и этапов выбора"
+    }
+  ],
+  "listing_cards_updated": [
+    "2180-3180",
+    "arbonia-2180-calc",
+    "arbonia-2180-po-ploshadi",
+    "arbonia-3030-vs-3037",
+    "arbonia-3057",
+    "calculate",
+    "high-arbonia",
+    "kak-vybrat-cvet-radiatora-pod-interer",
+    "low-models",
+    "mezhosevoe-rasstoyanie-500-mm-arbonia",
+    "montazh-arbonia-2180-na-gkl",
+    "montazh-radiatorov-arbonia-rekomendacii",
+    "montazh-vysokih-radiatorov-arbonia-instrukciya",
+    "radiator-pod-nizkiy-podokonnik",
+    "radiatory-arbonia-pod-okno",
+    "ral-9016-pochemu-vybirayut-arkhitektory",
+    "trubchatye-radiatory-dlya-kvartiry",
+    "tsvet-radiatorov-v-interiere",
+    "vertical-radiator-power"
+  ]
+}

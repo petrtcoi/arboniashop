@@ -9,9 +9,18 @@ type SuccessPageProps = {};
 
 const SuccessPage: NextPage<SuccessPageProps> = () => {
   return (
-    <Box height="50vh" width="100hh">
+    <Box
+      sx={{
+        height: "50vh",
+        width: "100hh"
+      }}>
       <PageHeader title={"Запрос принят | ArboniaShop"} noindex />
-      <Box marginTop="20vh" width="400px" marginX="auto">
+      <Box
+        sx={{
+          marginTop: "20vh",
+          width: "400px",
+          marginX: "auto"
+        }}>
         <Typography
           variant="h5"
           component="h1"
@@ -20,13 +29,19 @@ const SuccessPage: NextPage<SuccessPageProps> = () => {
         >
           Запрос принят
         </Typography>
-        <Box marginTop="40px">
+        <Box sx={{
+          marginTop: "40px"
+        }}>
           <Typography sx={style.standardText}>
             Спасибо за заказ. Мы свяжемся с вами в ближайшие рабочие часы для
             уточнения и согласования деталей заказа.
           </Typography>
         </Box>
-        <Box marginTop="40px" textAlign={"center"}>
+        <Box
+          sx={{
+            marginTop: "40px",
+            textAlign: "center"
+          }}>
           <Typography sx={style.standardText}>
             Команда ArboniaShop.ru
           </Typography>

@@ -1,0 +1,73 @@
+{
+  "status": "published",
+  "published_at_utc": "2026-10-13T14:56:12.835287+00:00",
+  "date_published": "2026-10-13",
+  "release": "/root/releases/arboniashop-clusters-20261013",
+  "build_id": "STPGep00RxoYAnvybMHaW",
+  "artifact_sha256": "f9f0487346c108edecb12f56e38de65b9268ecb76eccd5f59474ecd268eb3df5",
+  "articles": [
+    {
+      "url": "https://arboniashop.ru/articles/arbonia-3057-skolko-sektsiy-dlina-moshchnost",
+      "body_words": 1101,
+      "h2": 8,
+      "faq_h3": 3
+    },
+    {
+      "url": "https://arboniashop.ru/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor",
+      "body_words": 1009,
+      "h2": 8,
+      "faq_h3": 3
+    },
+    {
+      "url": "https://arboniashop.ru/articles/zavodskoy-cvet-arbonia-ili-perekraska-iz-nalichiya",
+      "body_words": 670,
+      "h2": 8,
+      "faq_h3": 3
+    }
+  ],
+  "card_corrections": {
+    "2057": {
+      "dt60": 53
+    },
+    "2100": {
+      "dt60": 93
+    },
+    "3037": {
+      "dt60": 48
+    },
+    "3057": {
+      "dt60": 73
+    },
+    "5045": {
+      "dt50": 77,
+      "dt60": 98
+    }
+  },
+  "correction_scope": "Shared website model loader applies verified outputs to all finishes, connections and section variants. Fixed prose in hubs, comparisons and the 3057 FAQ power column updated too. Original Google sheet was not edited.",
+  "service_facts_confirmed_by_owner": [
+    "official dealer",
+    "warranty retained",
+    "powder coating"
+  ],
+  "service_page_synchronized": true,
+  "irrelevant_pyradia_link_removed": true,
+  "delta_t_parent_links_to_both_3030_and_3057": true,
+  "verification": {
+    "server_http_pages": 207,
+    "server_failures": 0,
+    "published_incoming_links": 17,
+    "generated_corrected_variants": 85,
+    "faq_3057_rows": 11,
+    "production_errors": [],
+    "typescript": "passed",
+    "build": "passed"
+  },
+  "proof_screenshot": "audit/2026-10-13/batch-2-published-paint.jpg",
+  "other_pm2_processes_unchanged": true,
+  "staging_removed": true,
+  "local_test_server_stopped": true,
+  "ssh_tunnel_stopped": true,
+  "rollback_config": "/root/releases/arboniashop-clusters-20261013/ecosystem-rollback.json",
+  "gsc_recrawl_requested": false,
+  "search_console_note": "No connected Chrome profile at publication; sitemap updated. No claim of indexing or ranking effect."
+}

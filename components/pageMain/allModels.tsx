@@ -21,37 +21,43 @@ export const AllModels: NextPage<CatalogProps> = ({ models }) => {
 	const outStockModels = models.filter(x => !x.inStock)
 
 	return (
-		<Box>
-			<Box sx={{ ...global.pagePadding }}>
+        <Box>
+            <Box sx={{ ...global.pagePadding }}>
 				{/* Радиаторы под заказ */}
-				<Box marginTop='100px'>
+				<Box sx={{
+                    marginTop: '100px'
+                }}>
 					<Typography
 						variant='h5'
 						component='h2'
 						id='out_stock_section'
-						textAlign='left'
-						// sx={{ textTransform: 'uppercase' }}
+						sx={{
+                            textAlign: 'left'
+                        }}
 					>
 						Купить трубчатые радиаторы Arbonia под заказ
 					</Typography>
-					<Box marginTop={{ xs: '20px', md: '40px' }} />
+					<Box sx={{
+                        marginTop: { xs: '20px', md: '40px' }
+                    }} />
 					<Grid
 						container
 						spacing={2}
 					>
 						{MODELS_GROUPS.map(group => {
 							return (
-								<Grid
-									item
-									xs={12}
-									sm={6}
-									md={4}
-									key={group.title}
-								>
-									<Box
-										textAlign='center'
-										marginTop='20px'
-									>
+                                <Grid
+                                    key={group.title}
+                                    size={{
+                                        xs: 12,
+                                        sm: 6,
+                                        md: 4
+                                    }}>
+                                    <Box
+                                        sx={{
+                                            textAlign: 'center',
+                                            marginTop: '20px'
+                                        }}>
 										<div style={{ height: '150px' }}>
 											<img
 												// layout='fill'
@@ -63,37 +69,39 @@ export const AllModels: NextPage<CatalogProps> = ({ models }) => {
 										</div>
 										<Typography sx={{ ...styles.standardText }}>{group.title}</Typography>
 									</Box>
-									<Box
-										paddingLeft='10px'
-										textAlign='center'
-									>
+                                    <Box
+                                        sx={{
+                                            paddingLeft: '10px',
+                                            textAlign: 'center'
+                                        }}>
 										{outStockModels
 											.filter((model: ModelOrigin) => model.id[0] === group.firstChar)
 											.sort((a, b) => (+a.id > +b.id ? 1 : -1))
 											.map((model: ModelOrigin) => {
 												return (
-													<Box
-														key={model.id}
-														id={model.id}
-														paddingTop='50px'
-														marginTop='-50px'
-													>
-														<a
+                                                    <Box
+                                                        key={model.id}
+                                                        id={model.id}
+                                                        sx={{
+                                                            paddingTop: '50px',
+                                                            marginTop: '-50px'
+                                                        }}>
+                                                        <a
 															href={`/models/${model.id}`}
 															style={{ textDecoration: 'none' }}
 														>
 															<Typography sx={{ ...styles.standartTextThinLink }}>Arbonia {model.nameShort}</Typography>
 														</a>
-													</Box>
-												)
+                                                    </Box>
+                                                );
 											})}
 									</Box>
-								</Grid>
-							)
+                                </Grid>
+                            );
 						})}
 					</Grid>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }

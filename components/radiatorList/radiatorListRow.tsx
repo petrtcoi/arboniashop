@@ -1,8 +1,10 @@
-import { Box, Hidden, TableCell, TableRow, Typography } from '@mui/material'
+import Hidden from '../ui/Hidden'
+import { Box, TableCell, TableRow, Typography } from '@mui/material'
 import { NextPage } from 'next'
 import Link from 'next/link'
 
 import AddToCartButton from '../addToCartButton/addToCartButton'
+import OfferMetadata from '../seo/OfferMetadata'
 
 import getRadiatorData from '../../utils/getRadiatorData'
 
@@ -21,7 +23,7 @@ type RadiatorListRowProps = {
 }
 
 const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connection, sectionQnty, price }) => {
-	const { titleString, skuString, lengthString, dt60String, priceString, oldPriceString } = getRadiatorData({
+	const { titleString, skuString, lengthString, dt50String, dt60String, priceString, oldPriceString } = getRadiatorData({
 		model,
 		color,
 		connection,
@@ -30,13 +32,13 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 	})
 
 	return (
-		<TableRow
+        <TableRow
 			sx={{ '&:hover': { backgroundColor: '#eeeeee' } }}
 			itemProp='offers'
 			itemScope
 			itemType='https://schema.org/Offer'
 		>
-			<Hidden smDown>
+            <Hidden smDown>
 				<TableCell
 					align='left'
 					sx={styles.smallText}
@@ -44,11 +46,13 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 					{skuString}
 				</TableCell>
 			</Hidden>
-			<TableCell
+            <TableCell
 				component='th'
 				scope='row'
 			>
-				<Box padding={{ xs: '5px', sm: '5px', md: '0px' }}>
+				<Box sx={{
+                    padding: { xs: '5px', sm: '5px', md: '0px' }
+                }}>
 					<Typography sx={{ ...styles.smallText }}>
 						<a
 							style={{ textDecoration: 'none' }}
@@ -73,7 +77,7 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 					</Hidden>
 				</Box>
 			</TableCell>
-			<Hidden mdDown>
+            <Hidden mdDown>
 				<TableCell
 					component='th'
 					scope='row'
@@ -83,35 +87,40 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 					{lengthString}
 				</TableCell>
 			</Hidden>
-			<Hidden mdDown>
+            <Hidden mdDown>
 				<TableCell
 					component='th'
 					scope='row'
 					sx={styles.smallText}
 					align='center'
 				>
+					{dt50String}
+				</TableCell>
+			</Hidden>
+            <Hidden mdDown>
+				<TableCell component='th' scope='row' sx={styles.smallText} align='center'>
 					{dt60String}
 				</TableCell>
 			</Hidden>
-			<TableCell
+            <TableCell
 				component='th'
 				scope='row'
 				sx={styles.smallText}
 				align='right'
 			>
 				<Typography
-					sx={{
-						...styles.smallText,
-						color: 'gray',
-						textDecoration: 'line-through',
-						fontWeight: 200,
-					}}
-					display='inline'
-					marginRight='10px'
-				>
+                    sx={{
+                        display: 'inline',
+                        marginRight: '10px',
+                        ...styles.smallText,
+                        color: 'gray',
+                        textDecoration: 'line-through',
+                        fontWeight: 200
+                    }}>
 					{oldPriceString}
 				</Typography>
 				<span>
+					<OfferMetadata inStock={model.inStock === 'true'} url={`https://arboniashop.ru/models/${model.id}/${sectionQnty}`} />
 					<meta
 						itemProp='priceCurrency'
 						content='RUB'
@@ -123,13 +132,15 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 					{priceString.replace(',', '').replace(' ', '').trim()}
 				</span>
 			</TableCell>
-			<TableCell
+            <TableCell
 				component='th'
 				scope='row'
 				sx={styles.smallText}
 				align='center'
 			>
-				<Box paddingLeft='20px'>
+				<Box sx={{
+                    paddingLeft: '20px'
+                }}>
 					<AddToCartButton
 						model={model}
 						colorId={color.id}
@@ -142,8 +153,8 @@ const RadiatorListRow: NextPage<RadiatorListRowProps> = ({ model, color, connect
 					/>
 				</Box>
 			</TableCell>
-		</TableRow>
-	)
+        </TableRow>
+    );
 }
 
 export default RadiatorListRow

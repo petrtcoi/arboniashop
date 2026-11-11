@@ -87,44 +87,50 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 	}
 
 	return (
-		<Box
-			paddingTop='30px'
-			display={'flex'}
-			flexDirection='column'
-			alignItems='center'
-		>
-			<Typography
-				variant='h4'
-				component='h2'
-				gutterBottom
-				textAlign='center'
-				sx={{ textTransform: 'uppercase' }}
-			>
+        <Box
+            sx={{
+                paddingTop: '30px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center'
+            }}>
+            <Typography
+                variant='h4'
+                component='h2'
+                gutterBottom
+                sx={{
+                    textAlign: 'center',
+                    textTransform: 'uppercase'
+                }}>
 				Оформить заказ
 			</Typography>
 
-			<Box
-				paddingTop='30px'
-				display={'flex'}
-				flexDirection='column'
-				width='100%'
-				alignItems='center'
-			>
+            <Box
+                sx={{
+                    paddingTop: '30px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    width: '100%',
+                    alignItems: 'center'
+                }}>
 				<Grid
-					container
-					spacing={2}
-					alignItems='center'
-					margin={'auto'}
-				>
+                    container
+                    spacing={2}
+                    sx={{
+                        alignItems: 'center',
+                        margin: 'auto'
+                    }}>
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-						alignItems={'center'}
-						margin={'auto'}
-						justifyContent={'center'}
-					>
+                        sx={{
+                            alignItems: 'center',
+                            margin: 'auto',
+                            justifyContent: 'center'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
 						<TextField
 							required
 							fullWidth
@@ -137,14 +143,18 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 							helperText={errors.name ? 'Пожалуйста, укажите ваше имя' : ''}
 						/>
 					</Grid>
-					<Box width='100%' />
+					<Box sx={{
+                        width: '100%'
+                    }} />
 					<Grid
-						item
-						xs={12}
-						margin={'auto'}
-						md={6}
-						lg={4}
-					>
+                        sx={{
+                            margin: 'auto'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
 						<TextField
 							required
 							fullWidth
@@ -157,14 +167,18 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 							helperText={errors.city ? 'Укажите город доставки' : ''}
 						/>
 					</Grid>
-					<Box width='100%' />
+					<Box sx={{
+                        width: '100%'
+                    }} />
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-						margin={'auto'}
-					>
+                        sx={{
+                            margin: 'auto'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
 						<TextField
 							fullWidth
 							id='address'
@@ -176,25 +190,29 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 					</Grid>
 
 					<Box
-						width='100%'
-						marginTop='30px'
-					>
+                        sx={{
+                            width: '100%',
+                            marginTop: '30px'
+                        }}>
 						<Box
-							maxWidth='540px'
-							margin={'auto'}
-						>
+                            sx={{
+                                maxWidth: '540px',
+                                margin: 'auto'
+                            }}>
 							<Typography sx={errors.contacts ? styles.smallTextBoldRed : styles.smallTextBold}>
 								Пожалуйста, укажите телефон и/или почту для связи:
 							</Typography>
 						</Box>
 					</Box>
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-						margin={'auto'}
-					>
+                        sx={{
+                            margin: 'auto'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
 						<TextField
 							required
 							fullWidth
@@ -207,14 +225,18 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 							error={errors.contacts}
 						/>
 					</Grid>
-					<Box width='100%' />
+					<Box sx={{
+                        width: '100%'
+                    }} />
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-						margin={'auto'}
-					>
+                        sx={{
+                            margin: 'auto'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
 						<TextField
 							required
 							fullWidth
@@ -227,14 +249,18 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 							error={errors.contacts}
 						/>
 					</Grid>
-					<Box width='100%' />
+					<Box sx={{
+                        width: '100%'
+                    }} />
 					<Grid
-						item
-						xs={12}
-						md={6}
-						lg={4}
-						margin={'auto'}
-					>
+                        sx={{
+                            margin: 'auto'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 6,
+                            lg: 4
+                        }}>
 						<TextField
 							fullWidth
 							multiline
@@ -252,35 +278,53 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 
 					{sendEmailError && (
 						<>
-							<Box width='100%' />
+							<Box sx={{
+                                width: '100%'
+                            }} />
 							<Grid
-								item
-								xs={12}
-								md={6}
-								lg={4}
-								textAlign={'right'}
-								margin={'auto'}
-							>
+                                sx={{
+                                    textAlign: 'right',
+                                    margin: 'auto'
+                                }}
+                                size={{
+                                    xs: 12,
+                                    md: 6,
+                                    lg: 4
+                                }}>
 								<Typography sx={styles.smallTextBoldRed}>Во время отправки заказа возникла ошибка.</Typography>
 							</Grid>
 						</>
 					)}
-					<Box width='100%'>
+					<Box sx={{
+                        width: '100%'
+                    }}>
 						<Box
-							marginTop={'30px'}
-							maxWidth={'540px'}
-							margin={'auto'}
-							padding='20px'
-							border='1px solid'
-							borderColor={consentErrors ? '#c8102e' : '#d3d3d3'}
-							borderRadius='12px'
-							bgcolor='#f2eff0'
-						>
-							<Typography sx={{ ...styles.smallText, color: '#6a6a6a' }} marginBottom='10px'>
+                            sx={{
+                                marginTop: '30px',
+                                maxWidth: '540px',
+                                margin: 'auto',
+                                padding: '20px',
+                                border: '1px solid',
+                                borderColor: consentErrors ? '#c8102e' : '#d3d3d3',
+                                borderRadius: '12px',
+                                bgcolor: '#f2eff0'
+                            }}>
+							<Typography
+                                sx={{
+                                    marginBottom: '10px',
+                                    ...styles.smallText,
+                                    color: '#6a6a6a'
+                                }}>
 								Для отправки формы необходимо подтвердить согласие с условиями обработки персональных данных и правилами
 								использования сайта.
 							</Typography>
-							<Box display='flex' flexDirection='row' gap='10px' alignItems='center'>
+							<Box
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    gap: '10px',
+                                    alignItems: 'center'
+                                }}>
 								<Checkbox
 									checked={privacyChecked}
 									onChange={x => {
@@ -296,7 +340,14 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 									.
 								</Typography>
 							</Box>
-							<Box display='flex' flexDirection='row' gap='10px' alignItems='center' marginTop='8px'>
+							<Box
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    gap: '10px',
+                                    alignItems: 'center',
+                                    marginTop: '8px'
+                                }}>
 								<Checkbox
 									checked={termsChecked}
 									onChange={x => {
@@ -313,20 +364,27 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 								</Typography>
 							</Box>
 							{consentErrors ? (
-								<Typography sx={styles.smallTextBoldRed} marginTop='10px'>
+								<Typography
+                                    sx={[{
+                                        marginTop: '10px'
+                                    }, styles.smallTextBoldRed]}>
 									Подтвердите согласие с Политикой конфиденциальности и Пользовательским соглашением.
 								</Typography>
 							) : null}
 						</Box>
 					</Box>
 
-					<Box width='100%' />
+					<Box sx={{
+                        width: '100%'
+                    }} />
 					<Grid
-						item
-						xs={12}
-						textAlign={'center'}
-					>
-						<Box marginTop='30px' />
+                        sx={{
+                            textAlign: 'center'
+                        }}
+                        size={12}>
+						<Box sx={{
+                            marginTop: '30px'
+                        }} />
 						<Button
 							disabled={Object.values(errors).filter(x => x).length > 0}
 							variant='contained'
@@ -337,8 +395,8 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
 					</Grid>
 				</Grid>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default CartOrderData

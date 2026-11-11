@@ -13,36 +13,41 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Цвет имеет значение: RAL 9016 или Anthracite Metallic для Arbonia 3180?'}
 				description={
 					'Что выбрать для вертикального радиатора Arbonia 3180: белый RAL 9016 или Anthracite Metallic? Разбор по стилю, практичности, освещению и арматуре + таблица быстрого выбора.'
 				}
 			/>
 
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
 					{
 						title: 'RAL 9016 или Anthracite Metallic для Arbonia 3180',
-						link: '/articles/arbonia-3180-ral-9016-vs-anthracite-metallic',
+						link: '/articles/arbonia-3180-ral-9016-vs-anthracite',
 					},
 				]}
 			/>
 
-			<Typography
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Typography
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component={'h1'}
-					variant='h4'
-					marginTop='10px'
-					marginBottom={'30px'}
-				>
+                    component={'h1'}
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '30px'
+                    }}>
 					Arbonia 3180: RAL 9016 или Anthracite Metallic - какой цвет выбрать
 				</Typography>
 
@@ -211,8 +216,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					бетоном, кирпичом и темной палитрой.
 				</p>
 			</Typography>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

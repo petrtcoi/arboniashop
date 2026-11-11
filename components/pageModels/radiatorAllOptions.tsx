@@ -104,23 +104,25 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 	}
 
 	return (
-		<Box>
-			<DialogColors
+        <Box>
+            <DialogColors
 				closeDialog={toggleShowColors}
 				setColor={setColorById}
 				show={showColors}
 				colors={colors}
 				colorCurrId={colorCurr.id}
 			/>
-			<DialogConnections
+            <DialogConnections
 				closeDialog={toggleShowConnections}
 				connections={connections}
 				setConnection={setConnectionById}
 				show={showConnections}
 				connectionCurrId={connectionCurr.id}
 			/>
-			{modelFreeze && modelCurr && (
-				<Box marginY='20px'>
+            {modelFreeze && modelCurr && (
+				<Box sx={{
+                    marginY: '20px'
+                }}>
 					<Typography sx={styles.standardText}>
 						Выберете интересующие вас характеристики для модели радиатора {modelCurr.name}.
 					</Typography>
@@ -131,31 +133,40 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 				</Box>
 			)}
 
-			<Box visibility={isFetching ? 'hidden' : 'hidden'}>
+            <Box sx={{
+                visibility: isFetching ? 'hidden' : 'hidden'
+            }}>
 				<Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
 					подождите, обновляется курс валют...
 				</Typography>
 			</Box>
 
-			<Box
-				sx={{ border: '1px solid black', borderRadius: '10px' }}
-				padding='30px'
-				borderRadius='5px'
-			>
+            <Box
+                sx={{
+                    padding: '30px',
+                    border: '1px solid black',
+                    borderRadius: '10px'
+                }}>
 				<Grid
 					container
 					spacing={2}
 				>
 					{/* ВЫБОР МОДЕЛИ */}
 					<Grid
-						item
-						xs={12}
-						sm={2}
-						textAlign={{ xs: 'left', md: 'center' }}
-					>
-						<Box marginTop='10px' />
+                        sx={{
+                            textAlign: { xs: 'left', md: 'center' }
+                        }}
+                        size={{
+                            xs: 12,
+                            sm: 2
+                        }}>
+						<Box sx={{
+                            marginTop: '10px'
+                        }} />
 						<Typography sx={styles.smallTextBold}>модель</Typography>
-						<Box marginTop='10px' />
+						<Box sx={{
+                            marginTop: '10px'
+                        }} />
 						{modelFreeze ? (
 							<Typography
 								variant='h5'
@@ -194,14 +205,20 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						sm={2}
-						textAlign={{ xs: 'left', md: 'center' }}
-					>
-						<Box marginTop='10px' />
+                        sx={{
+                            textAlign: { xs: 'left', md: 'center' }
+                        }}
+                        size={{
+                            xs: 12,
+                            sm: 2
+                        }}>
+						<Box sx={{
+                            marginTop: '10px'
+                        }} />
 						<Typography sx={styles.smallTextBold}>число секций</Typography>
-						<Box marginTop='10px' />
+						<Box sx={{
+                            marginTop: '10px'
+                        }} />
 						<NativeSelect
 							value={sectionsCurr}
 							onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setSectionsCurr(+e.target.value)}
@@ -218,14 +235,20 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={4}
-						textAlign={{ xs: 'left', md: 'center' }}
-					>
-						<Box marginTop='10px' />
+                        sx={{
+                            textAlign: { xs: 'left', md: 'center' }
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
+						<Box sx={{
+                            marginTop: '10px'
+                        }} />
 						<Typography sx={styles.smallTextBold}>цвет</Typography>
-						<Box marginTop='10px' />
+						<Box sx={{
+                            marginTop: '10px'
+                        }} />
 						<SingleColor
 							color={colorCurr}
 							highlighted={false}
@@ -234,14 +257,20 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						sm={4}
-						textAlign={{ xs: 'left', md: 'center' }}
-					>
-						<Box marginTop='10px' />
+                        sx={{
+                            textAlign: { xs: 'left', md: 'center' }
+                        }}
+                        size={{
+                            xs: 12,
+                            sm: 4
+                        }}>
+						<Box sx={{
+                            marginTop: '10px'
+                        }} />
 						<Typography sx={styles.smallTextBold}>подключение</Typography>
-						<Box marginTop='10px' />
+						<Box sx={{
+                            marginTop: '10px'
+                        }} />
 						<SingleConnection
 							connection={connectionCurr}
 							highlighted={false}
@@ -250,17 +279,18 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 					</Grid>
 
 					{/* БЛОК ИНФОРМАЦИИ О МОДЕЛИ */}
-					<Grid
-						item
-						xs={12}
-					>
-						<Box marginTop='50px'>
+					<Grid size={12}>
+						<Box sx={{
+                            marginTop: '50px'
+                        }}>
 							{/* <Box>
                                 <Typography sx={ styles.smallTextBold } textAlign="center">
                                     радиатор
                                 </Typography>
                             </Box> */}
-							<Box marginTop='20px'>
+							<Box sx={{
+                                marginTop: '20px'
+                            }}>
 								<Typography
 									sx={{
 										...styles.standardText,
@@ -273,9 +303,10 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 							</Box>
 
 							<Box
-								marginTop='10px'
-								paddingLeft='10px'
-							>
+                                sx={{
+                                    marginTop: '10px',
+                                    paddingLeft: '10px'
+                                }}>
 								<Typography sx={styles.standardTextThin}>высота: {modelCurr.height} мм</Typography>
 								<Typography sx={styles.standardTextThin}>глубина: {modelCurr.width} мм</Typography>
 								<Typography sx={styles.standardTextThin}>
@@ -288,23 +319,28 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 									мощность (ΔT=60°C): {Math.floor(+modelCurr.dt60 * sectionsCurr)} Вт
 								</Typography>
 							</Box>
-							<Box marginTop='40px'>
+							<Box sx={{
+                                marginTop: '40px'
+                            }}>
 								<Typography
-									sx={styles.standardTextThin}
-									display='inline'
-								>
+                                    sx={[{
+                                        display: 'inline'
+                                    }, styles.standardTextThin]}>
 									цена:
 								</Typography>
 								<Typography
-									display='inline'
-									sx={{ fontSize: '20px', fontWeight: 600 }}
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        fontSize: '20px',
+                                        fontWeight: 600
+                                    }}>
 									&nbsp;{formatPrice(radiatorCost)} руб
 								</Typography>
 								<Box
-									marginLeft='20px'
-									display='inline-block'
-								>
+                                    sx={{
+                                        marginLeft: '20px',
+                                        display: 'inline-block'
+                                    }}>
 									<AddToCartButton
 										model={modelCurr}
 										colorId={colorCurr.id}
@@ -320,8 +356,8 @@ const RadiatorAllOptions: React.FC<RadiatorAllOptionsProps> = ({
 					</Grid>
 				</Grid>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default RadiatorAllOptions

@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
+import { formatPriceFrom, getStockPriceFrom } from '../../utils/getPriceFrom'
 import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
@@ -130,29 +131,33 @@ const faqJsonLd = {
 }
 
 const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connections }) => {
+	// Цена «от» — минимальная цена складских исполнений, показанных в подборке (первая строка таблиц ModelBlock).
+	const priceFrom = getStockPriceFrom({ models, colors, connections, ids: ['2050-9016-12', '2050-9016-69tvv', '2057-9016-12', '2057-9016-69tvv', '3050-9016-12', '3050-9016-69tvv', '3057-9016-12', '3057-9016-69tvv'] })
 	const color9016 = colors.find(x => x.id === '9016') || colors[0]
 	const lateralConnection = connections.find(x => x.id === '12') || connections[0]
 	const bottomConnection = connections.find(x => x.id === '69tvv') || connections[0]
 
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/standard' /></Head>
-			<Script
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/catalog/standard' /></Head>
+            <Script
 				id='standard-radiators-faq-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
 			/>
-			<PageHeader
-				title={'Стандартные радиаторы Arbonia под окно 50–57 см — 2050, 2057, 3050, 3057'}
+            <PageHeader
+				title={priceFrom ? `Радиаторы Arbonia под окно 50–57 см: 2050, 2057, 3050, 3057 — цены от ${formatPriceFrom(priceFrom)}` : 'Стандартные радиаторы Arbonia под окно 50–57 см — 2050, 2057, 3050, 3057'}
 				description='Стандартные трубчатые радиаторы Arbonia под окно: модели 2050, 2057, 3050 и 3057 высотой 50–57 см. Подбор для замены старых батарей, бокового или нижнего подключения, расчёт секций и цены.'
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Стандартные радиаторы Arbonia под окно'}
 				subheader={'Складские модели высотой 50–57 см: 2050, 2057, 3050, 3057'}
 			/>
-			<Box sx={{ ...global.pagePadding }}>
-				<Box marginTop='20px'>
+            <Box sx={{ ...global.pagePadding }}>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Стандартные радиаторы Arbonia высотой 50–57 см выбирают для установки под обычное окно, замены старых
 						батарей и аккуратного подбора отопления без сложной переделки интерьера. В этом разделе собраны модели
@@ -160,14 +165,18 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						размеры помещения - рассчитаем мощность, секции, подключение и цену.
 					</Typography>
 				</Box>
-				<Box marginTop='20px'>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Главный практический плюс моделей высотой 57 см - межосевое расстояние 500 мм при боковом подключении.
 						Arbonia 2057 и 3057 часто можно поставить вместо старых чугунных или алюминиевых батарей без переделки труб.
 						Если трубы выведены снизу, для тех же моделей доступны складские версии с нижним подключением №69 ТВВ.
 					</Typography>
 				</Box>
-				<Box marginTop='20px'>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Все модели изготовлены из стали, окрашены порошковой эмалью, рассчитаны на рабочее давление 10-12 атм и
 						поставляются с официальной гарантией 10 лет. Доставка выполняется по России со складов в Москве и
@@ -175,11 +184,12 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Typography>
 				</Box>
 				<Box
-					marginTop='30px'
-					display='flex'
-					flexWrap='wrap'
-					gap='12px'
-				>
+                    sx={{
+                        marginTop: '30px',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '12px'
+                    }}>
 					<a
 						href='/request'
 						style={{ textDecoration: 'none' }}
@@ -204,7 +214,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</a>
 				</Box>
 
-				<Box marginTop='20px'>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography
 						sx={{ ...styles.standardText }}
 						component='span'
@@ -214,7 +226,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Typography>
 				</Box>
 
-				<Box marginTop='50px'>
+				<Box sx={{
+                    marginTop: '50px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -245,7 +259,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 
 				<Box
 					id='models'
-					marginTop='60px'
+					sx={{
+                        marginTop: '60px'
+                    }}
 				>
 					<Typography
 						component='h2'
@@ -255,7 +271,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Typography>
 				</Box>
 
-				<Box marginTop='30px'>
+				<Box sx={{
+                    marginTop: '30px'
+                }}>
 					<Typography
 						component='h3'
 						variant='h6'
@@ -263,9 +281,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						Arbonia 2050
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='8px'
-					>
+                        sx={{
+                            marginTop: '8px',
+                            ...styles.standardText
+                        }}>
 						Высота: 500 мм · Глубина: 65 мм · Тип: 2-трубчатый · Сценарий: тонкий радиатор под окно
 					</Typography>
 				</Box>
@@ -290,7 +309,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					modelLink='2050'
 				/>
 
-				<Box marginTop='50px'>
+				<Box sx={{
+                    marginTop: '50px'
+                }}>
 					<Typography
 						component='h3'
 						variant='h6'
@@ -298,9 +319,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						Arbonia 2057
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='8px'
-					>
+                        sx={{
+                            marginTop: '8px',
+                            ...styles.standardText
+                        }}>
 						Высота: 570 мм · Глубина: 65 мм · Тип: 2-трубчатый · Сценарий: тонкая модель для замены старой батареи
 					</Typography>
 				</Box>
@@ -325,7 +347,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					modelLink='2057'
 				/>
 
-				<Box marginTop='50px'>
+				<Box sx={{
+                    marginTop: '50px'
+                }}>
 					<Typography
 						component='h3'
 						variant='h6'
@@ -333,9 +357,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						Arbonia 3050
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='8px'
-					>
+                        sx={{
+                            marginTop: '8px',
+                            ...styles.standardText
+                        }}>
 						Высота: 500 мм · Глубина: 105 мм · Тип: 3-трубчатый · Сценарий: мощный радиатор высотой 50 см
 					</Typography>
 				</Box>
@@ -360,7 +385,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					modelLink='3050'
 				/>
 
-				<Box marginTop='50px'>
+				<Box sx={{
+                    marginTop: '50px'
+                }}>
 					<Typography
 						component='h3'
 						variant='h6'
@@ -368,9 +395,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						Arbonia 3057
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='8px'
-					>
+                        sx={{
+                            marginTop: '8px',
+                            ...styles.standardText
+                        }}>
 						Высота: 570 мм · Глубина: 105 мм · Тип: 3-трубчатый · Сценарий: универсальная замена старой батареи
 					</Typography>
 				</Box>
@@ -397,7 +425,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 
 				<CatalogPopularLinks current='standard' />
 
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -405,34 +435,38 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						Как выбрать стандартный радиатор под окно
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='20px'
-					>
+                        sx={{
+                            marginTop: '20px',
+                            ...styles.standardText
+                        }}>
 						Стандартный радиатор под окно - это горизонтальная модель высотой около 50-60 см. Такой размер обычно
 						оставляет рабочие монтажные зазоры снизу и сверху, не мешает открывать окно и сохраняет привычное размещение
 						отопительного прибора в зоне максимальных теплопотерь.
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='20px'
-					>
+                        sx={{
+                            marginTop: '20px',
+                            ...styles.standardText
+                        }}>
 						Высота 50 см удобна для подоконников 70-80 см: радиатор легче вписать в нишу и оставить место для
 						конвекции. Высота 57 см дает больше мощности и, при боковом подключении, стандартное межосевое расстояние
 						500 мм. Поэтому 2057 и 3057 чаще выбирают для замены старых батарей, а 2050 и 3050 - когда критична высота
 						подоконника.
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='20px'
-					>
+                        sx={{
+                            marginTop: '20px',
+                            ...styles.standardText
+                        }}>
 						2-трубчатые модели Arbonia 2050 и 2057 тоньше: глубина секции 65 мм. Они визуально легче и меньше выступают
 						от стены. 3-трубчатые Arbonia 3050 и 3057 глубже: 105 мм, зато заметно мощнее. Если расчетная мощность
 						помещения высокая, 3-трубчатая модель позволяет не растягивать радиатор по длине.
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='20px'
-					>
+                        sx={{
+                            marginTop: '20px',
+                            ...styles.standardText
+                        }}>
 						Боковое подключение обычно выбирают в домах со стояками и при замене старых радиаторов. Нижнее подключение
 						удобно в новостройках и частных домах, где трубы идут из пола или скрыты в стене. При сомнениях лучше
 						отправить фото текущего подключения и размеры ниши: по ним можно быстро определить модель, высоту и число
@@ -476,7 +510,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Typography>
 				</Box>
 
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -484,9 +520,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						Для замены старых батарей
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='20px'
-					>
+                        sx={{
+                            marginTop: '20px',
+                            ...styles.standardText
+                        }}>
 						Стандартные модели Arbonia часто выбирают вместо старых чугунных, панельных, алюминиевых или
 						биметаллических батарей. Но нельзя выбирать радиатор только по внешнему размеру - перед заказом стоит
 						проверить:
@@ -511,9 +548,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						</li>
 					</Box>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='20px'
-					>
+                        sx={{
+                            marginTop: '20px',
+                            ...styles.standardText
+                        }}>
 						Arbonia 2057 и 3057 особенно важны для сценария замены: высота 57 см и межосевое расстояние 500 мм при
 						боковом подключении часто позволяют поставить радиатор без переделки труб. До заказа проверьте не только этот
 						размер, но и глубину выводов, резьбу, сторону подачи и мощность по руководству{' '}
@@ -556,7 +594,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						</a>
 						.
 					</Typography>
-					<Box marginTop='20px'>
+					<Box sx={{
+                        marginTop: '20px'
+                    }}>
 						<a
 							href='/request'
 							style={{ textDecoration: 'none' }}
@@ -571,7 +611,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Box>
 				</Box>
 
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -579,9 +621,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						Когда стандартная модель не подходит
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='20px'
-					>
+                        sx={{
+                            marginTop: '20px',
+                            ...styles.standardText
+                        }}>
 						Если подоконник низкий, окно начинается близко к полу или радиатор физически не помещается по высоте,
 						смотрите{' '}
 						<a
@@ -598,9 +641,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						.
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='14px'
-					>
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Если под окном нет места, окно панорамное или нужно освободить стену под мебель, рассмотрите{' '}
 						<a
 							style={{ textDecoration: 'none' }}
@@ -616,9 +660,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 						.
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='14px'
-					>
+                        sx={{
+                            marginTop: '14px',
+                            ...styles.standardText
+                        }}>
 						Если нужен цвет под интерьер, а не только складской белый, смотрите{' '}
 						<a
 							style={{ textDecoration: 'none' }}
@@ -647,7 +692,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Typography>
 				</Box>
 
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -656,8 +703,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Typography>
 					{faqItems.map(item => (
 						<Box
-							marginTop='25px'
 							key={item.question}
+							sx={{
+                                marginTop: '25px'
+                            }}
 						>
 							<Typography
 								component='h3'
@@ -667,9 +716,10 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 								{item.question}
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginTop='10px'
-							>
+                                sx={{
+                                    marginTop: '10px',
+                                    ...styles.standardText
+                                }}>
 								{item.answer}
 							</Typography>
 						</Box>
@@ -677,20 +727,24 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 				</Box>
 
 				<Box
-					marginTop='60px'
-					padding='25px'
-					sx={{ backgroundColor: '#f6f6f6', border: '1px solid #e5e5e5' }}
-				>
+                    sx={{
+                        marginTop: '60px',
+                        padding: '25px',
+                        backgroundColor: '#f6f6f6',
+                        border: '1px solid #e5e5e5'
+                    }}>
 					<Grid
 						container
 						spacing={2}
-						alignItems='center'
+						sx={{
+                            alignItems: 'center'
+                        }}
 					>
 						<Grid
-							item
-							xs={12}
-							md={8}
-						>
+                            size={{
+                                xs: 12,
+                                md: 8
+                            }}>
 							<Typography
 								component='h2'
 								variant='h5'
@@ -698,18 +752,19 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 								Получить расчёт
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginTop='10px'
-							>
+                                sx={{
+                                    marginTop: '10px',
+                                    ...styles.standardText
+                                }}>
 								Пришлите размеры ниши, фото подключения и площадь помещения. Подберём модель, число секций и вариант
 								подключения под вашу систему отопления.
 							</Typography>
 						</Grid>
 						<Grid
-							item
-							xs={12}
-							md={4}
-						>
+                            size={{
+                                xs: 12,
+                                md: 4
+                            }}>
 							<a
 								href='/request'
 								style={{ textDecoration: 'none' }}
@@ -725,7 +780,9 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</Grid>
 				</Box>
 
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -834,8 +891,8 @@ const SetStandardModel: React.FC<SetComponentProps> = ({ models, colors, connect
 					</ul>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default SetStandardModel

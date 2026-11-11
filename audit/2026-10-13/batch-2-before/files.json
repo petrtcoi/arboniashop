@@ -1,0 +1,20 @@
+[
+  "api_utils/getModelsData.ts",
+  "pages/coloring.tsx",
+  "pages/models/2057.tsx",
+  "pages/models/3057.tsx",
+  "pages/models/[id].tsx",
+  "pages/articles/index.tsx",
+  "pages/articles/panorama/index.tsx",
+  "pages/articles/delta-t-teplootdacha/index.tsx",
+  "pages/articles/kak-vybrat-cvet-radiatora-pod-interer/index.tsx",
+  "pages/articles/radiator-pod-nizkiy-podokonnik/index.tsx",
+  "pages/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat/index.tsx",
+  "components/pageSetComponents/setLowModel.tsx",
+  "data/article-revisions/arbonia-3057.json",
+  "data/article-revisions/arbonia-3030-vs-3037.json",
+  "data/article-revisions/low-models.json",
+  "data/article-revisions/radiatory-arbonia-pod-okno.json",
+  "data/article-revisions/tsvet-radiatorov-v-interiere.json",
+  "data/articles/ral-9016-9010-9003-kakoy-belyy-vybrat.json"
+]

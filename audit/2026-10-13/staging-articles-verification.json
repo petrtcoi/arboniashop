@@ -1,0 +1,46 @@
+{
+  "base": "http://127.0.0.1:3916",
+  "build_id": "Lrhtfi_fgYolHaR9eXLVt",
+  "articles": [
+    {
+      "url": "https://arboniashop.ru/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+      "status": 200,
+      "words_including_byline": 1010,
+      "jsonld_types": [
+        "BreadcrumbList",
+        "Article",
+        "FAQPage",
+        "Organization"
+      ],
+      "faq_questions": 3
+    },
+    {
+      "url": "https://arboniashop.ru/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+      "status": 200,
+      "words_including_byline": 992,
+      "jsonld_types": [
+        "BreadcrumbList",
+        "Article",
+        "FAQPage",
+        "Organization"
+      ],
+      "faq_questions": 3
+    },
+    {
+      "url": "https://arboniashop.ru/articles/ral-9016-9010-9003-kakoy-belyy-vybrat",
+      "status": 200,
+      "words_including_byline": 960,
+      "jsonld_types": [
+        "BreadcrumbList",
+        "Article",
+        "FAQPage",
+        "Organization"
+      ],
+      "faq_questions": 3
+    }
+  ],
+  "sitemap_urls": 203,
+  "incoming_links_checked": 13,
+  "linked_pages_images_and_assets": 30,
+  "errors": []
+}

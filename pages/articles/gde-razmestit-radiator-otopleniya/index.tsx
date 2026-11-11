@@ -14,15 +14,15 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya' /></Head>
-			<PageHeader
-				title={'Где установить радиатор: расстояние от пола, стены и подоконника'}
+        <Box>
+            <Head><link key='canonical' rel='canonical' href='https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya' /></Head>
+            <PageHeader
+				title={'Где разместить радиатор отопления: расстояния от пола, стены и окна'}
 				description={
-					'Где установить радиатор отопления и какие зазоры оставить до пола, стены, подоконника, мебели и штор. Размещение под окном, в нише и на простенке, частые ошибки монтажа.'
+					'Расстояния при монтаже: от пола 80–120 мм, от подоконника 60–100 мм, от стены 20–50 мм. Где ставить радиатор: под окном, в нише, на простенке, и где нельзя.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -33,17 +33,22 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				]}
 			/>
 
-			<Typography
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Typography
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component={'h1'}
-					variant='h4'
-					marginTop='10px'
-					marginBottom={'30px'}
-				>
+                    component={'h1'}
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '30px'
+                    }}>
 					Где разместить радиатор отопления: лучшие места и советы
 				</Typography>
 
@@ -87,9 +92,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 
 				<Box
-					textAlign={'center'}
-					maxWidth={700}
-				>
+                    sx={{
+                        textAlign: 'center',
+                        maxWidth: 700
+                    }}>
 					<img
 						src='/images/articles/underwindow.jpeg'
 						alt='Трубчатый радиатор Arbonia под окном'
@@ -100,6 +106,13 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Box>
 
 				<h2 style={{ marginTop: '40px' }}>Лучшие места для размещения радиатора сегодня</h2>
+				<p>
+					Под обычным окном сравните <a href='/catalog/standard'>радиаторы Arbonia высотой 50–57 см</a>:
+					например, <a href='/models/3057'>Arbonia 3057</a>. Для низкого подоконника подойдут по габаритам
+					<a href='/catalog/low-models'> низкие модели 30–37 см</a>, а для узкого простенка можно рассмотреть
+					<a href='/catalog/high-models'> вертикальные Arbonia 2180 и 3180</a>. Окончательный выбор зависит
+					от теплопотерь и монтажных размеров, а не только от свободного места.
+				</p>
 				<p>Теперь возможны разные варианты. Главное правило - прибор должен свободно отдавать тепло.</p>
 
 				<ul>
@@ -157,6 +170,13 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 
 				<h2 style={{ marginTop: '40px' }}>Ниши: можно или нельзя</h2>
+				<p>
+					Если ниша ограничивает высоту, сначала выполните <a href='/articles/radiator-pod-nizkiy-podokonnik'>замер
+					низкого подоконника</a>. Белый <a href='/models/3030-9016-12'>Arbonia 3030 с боковым подключением</a>
+					занимает 300 мм по высоте; к этому размеру добавляют зазоры из монтажного чертежа.
+					Для установки на простенке полезна <a href='/articles/montazh-vysokih-radiatorov-arbonia-instrukciya'>инструкция
+					по креплению высоких радиаторов</a>.
+				</p>
 				<table className={tableStyle.table}>
 					<tr>
 						<th>Вид ниши</th>
@@ -180,6 +200,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</tr>
 				</table>
 
+				<p>
+					Перед изготовлением мебели используйте <a href='/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey'>проверку
+					радиатора под глубоким подоконником или столешницей</a>. В ней разобраны размеры ниши, решётки,
+					термоголовка и доступ для обслуживания.
+				</p>
 				<h2 style={{ marginTop: '40px' }}>Как выбрать стиль радиатора под конкретное место</h2>
 				<ul>
 					<li>
@@ -239,8 +264,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					энергопотребление.
 				</p>
 			</Typography>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

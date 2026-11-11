@@ -8,7 +8,9 @@ const GeneralTextAboutArboniaProps: React.FC<GeneralTextAboutArboniaProps> = (
   _props
 ) => {
   return (
-    <Box marginTop="40px" itemProp="description">
+    <Box itemProp="description" sx={{
+      marginTop: "40px"
+    }}>
       <Typography sx={styles.standardText} component={"span"}>
         Четкая форма радиатора со сглаженными углами и краями повышает уровень
         его безопасности и делает простым в уходе. Компактный по размеру
@@ -39,7 +41,10 @@ const GeneralTextAboutArboniaProps: React.FC<GeneralTextAboutArboniaProps> = (
         обратного трубопровода, а также для воздухоспускного клапана и слива.
         Все грани скруглены с Rmin = 2 мм.
       </Typography>
-      <Typography sx={styles.standardText} paddingTop={"20px"}>
+      <Typography
+        sx={[{
+          paddingTop: "20px"
+        }, styles.standardText]}>
         Сегодня заводы Arbonia работают в Швейцарии и Чехии. В производственном
         процессе участвуют высококвалифицированные и увлеченные своим делом
         сотрудники, применяются передовые технологии и инновационные разработки.

@@ -1,3 +1,5 @@
+import ProductMetadata from '../../components/seo/ProductMetadata'
+import { formatPriceFrom, getStockPriceFrom } from '../../utils/getPriceFrom'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 
@@ -37,28 +39,30 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 	const model = models.find(model => model.id === '3057')
 	if (!model) return null
 
+	const priceFrom = getStockPriceFrom({ models, colors, connections, familyCodes: ['3057'] })
 	return (
-		<Box
+        <Box
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
-			<meta
+            <ProductMetadata description={`Стальной трубчатый радиатор Arbonia 3057: высота ${model.height} мм, глубина ${model.width} мм, боковое и нижнее подключение. Размеры, мощность и цены по числу секций.`} sku='3057' />
+            <meta
 				itemProp='name'
 				content='Радиатор Arbonia 3057'
 			/>
-			<meta
+            <meta
 				itemProp='countryOfOrigin'
 				content='Чехия'
 			/>
-			<meta
+            <meta
 				itemProp='material'
 				content='Сталь'
 			/>
-			<PageHeader
-				title={'Радиаторы Arbonia 3057 | Выгодные цены | Гарантия'}
+            <PageHeader
+				title={priceFrom ? `Arbonia 3057 — радиатор 57 см, межосевое 500 мм: цена от ${formatPriceFrom(priceFrom)}` : 'Arbonia 3057 — радиатор 57 см, межосевое 500 мм: цены и наличие'}
 				description='Трехтрубчатые радиаторы Arbonia 3057 в наличии (высота 57 см). 📦 Склады в Мск и СПб. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка по России.'
 			/>
-			<PageTitle
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Купить стальной трубчатый радиатор Arbonia 3050'}
 				breadcrumbs={[
@@ -67,19 +71,20 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					{ title: 'Arbonia 3057', link: '/models/3057' },
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Радиаторы Arbonia 3057 '}
 				subheader={'Трехтурбчатые радиаторы Arbonia высотой 57 см и межосевым расстоянием 50 см'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				<Box
-					marginBottom='30px'
-					display='flex'
-					flexDirection='row'
-					gap='15px'
-					flexWrap='wrap'
-				>
+                    sx={{
+                        marginBottom: '30px',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        gap: '15px',
+                        flexWrap: 'wrap'
+                    }}>
 					<Box
 						onClick={() => {
 							if (!refLateral.current) return
@@ -119,11 +124,13 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Box>
 				</Box>
 
-				<Box marginTop='20px'>
+				<Box sx={{
+                    marginTop: '20px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 3057 - является наиболее универсальной моделью от Arbonia. С одной стороны, он обладает
-							высокой тепловой мощностью в 78 Вт / секция (ΔT=60°). С другой, его толщина составляет всего 105 мм. При
+							высокой тепловой мощностью в 73 Вт / секция (ΔT=60°). С другой, его толщина составляет всего 105 мм. При
 							подборе радиатора взамен старых панельных или чугунных батарей, Arbonia 3057 должен быть вашим базовым
 							вариантом. Еще одним преимуществом 3-трубчатого радиатора является более низкая стоимость по сравнению с
 							более тонкими 2-трубчатыми радиаторами аналогичной мощности. Модель доступна в наличии с боковым и с
@@ -169,17 +176,19 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							глубину, сопоставимую с большинством современных моделей.
 						</p>
 						<p>
-							<span style={{ ...styles.smallTextBold }}>Мощность секции: 78 Вт (ΔT=60°).</span> При среднем расчете 100
-							Вт/м2, такой секции будет достаточно для обогрева 0.8 кв.м. В случае хорошей теплоизоляции дома, одной
-							секции может быть достаточно для обогрева 2.5 кв.м.
+							<span style={{ ...styles.smallTextBold }}>Мощность секции: 58 Вт при ΔT50 и 73 Вт при ΔT60.</span> Число секций подбирают по нагрузке помещения и фактическому температурному режиму, затем проверяют длину корпуса и подключения.
 						</p>
 					</Typography>
 				</Box>
 
+				<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}><Typography component='p' sx={styles.standardText}>По известной нагрузке воспользуйтесь <a href='/articles/arbonia-3057-skolko-sektsiy-dlina-moshchnost'>таблицей секций, мощности и длины Arbonia 3057</a>: в ней отдельно показан режим 55/45/20.</Typography></Box>
+
 				{/* 3057 боковое*/}
 				<Box
-					marginTop='40px'
 					ref={refLateral}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Arbonia 3057 с боковым подключением</h2>
@@ -188,10 +197,10 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={4}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 4
+                                }}>
 								<img
 									itemProp='image'
 									src='/images/models/3057-0.jpeg'
@@ -202,10 +211,10 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={8}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 8
+                                }}>
 								<p>
 									Боковое подключение является универсальным, так как подходит для установки в домах с вертикальной
 									разводкой труб, а также для установки в квартирах с разводкой труб по полу. В наличии поддерживаются
@@ -237,8 +246,10 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 
 				{/* 3057 нижнее*/}
 				<Box
-					marginTop='80px'
 					ref={refBottom}
+					sx={{
+                        marginTop: '80px'
+                    }}
 				>
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Радиатор Arbonia 3057 с нижним подключением</h2>
@@ -247,10 +258,10 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							spacing={2}
 						>
 							<Grid
-								item
-								xs={12}
-								md={4}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 4
+                                }}>
 								<img
 									src='/images/models/3057-4.jpeg'
 									alt='Трубчатый радиатор Arbonia 3057 69 ТВВ'
@@ -260,10 +271,10 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 							<Grid
-								item
-								xs={12}
-								md={8}
-							>
+                                size={{
+                                    xs: 12,
+                                    md: 8
+                                }}>
 								<p>
 									Нижнее подключение является стандартом для всех современных домов. Оно позволяет более свободно
 									размещать радиаторы внутри помещения, исходя из ваших нужд, а не из расположения стояков отопления.
@@ -288,7 +299,9 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Typography>
 				</Box>
 
-				<Box marginTop='50px'>
+				<Box sx={{
+                    marginTop: '50px'
+                }}>
 					<Typography sx={{ ...styles.standardText }}>
 						Здесь мы отобразили все модели Arbonia 3057 доступные к покупке со склада. Если среди предложенных вариантов
 						не нашлось нужного цвета, то через нас вы можете как заказать радиатор в нужном исполнении на заводе. Также
@@ -309,8 +322,10 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</Typography>
 				</Box>
 				<Box
-					marginTop='60px'
 					ref={refOrder}
+					sx={{
+                        marginTop: '60px'
+                    }}
 				>
 					<h2>Купит радиаторы Arbonia 3057 под заказ</h2>
 					<Typography sx={{ ...styles.standardText }}>
@@ -331,16 +346,22 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 						connections={connections}
 					/>
 				</Box>
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<h2>Дополнительные изображения стальных трубчатых радиаторов Arbonia 3057</h2>
 					<ImagesOtherList imagesString={model.imagesOther || ''} />
 				</Box>
-				<Box marginTop='80px'>
+				<Box sx={{
+                    marginTop: '80px'
+                }}>
 					<h2>Документы для скачивания</h2>
 					<DownloadsBlock />
 				</Box>
 
-				<Box marginTop='60px'>
+				<Box sx={{
+                    marginTop: '60px'
+                }}>
 					<Typography
 						component='h2'
 						variant='h5'
@@ -378,8 +399,8 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 					</ul>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default Model3057

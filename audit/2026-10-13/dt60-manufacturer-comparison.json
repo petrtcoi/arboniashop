@@ -1,0 +1,2218 @@
+{
+  "date": "2026-10-13",
+  "scope": "129 pre-rendered card parameter records, 108 model families. Manufacturer comparison verified in both 2015-N and newer 2021-N editions. This is a draft review; no production data are changed.",
+  "source_url": "https://excentshop.com/wp-content/uploads/2024/04/Terauda-sekciju-radiatori-Arbonia-Column-%E2%80%93-Katalogs_Cenu-lapa_EN_PDF.pdf",
+  "source_author": "Arbonia",
+  "source_edition": "2021-N",
+  "pdf_pages": [
+    14,
+    15,
+    16,
+    78
+  ],
+  "manufacturer_models_parsed": 140,
+  "families_compared": 108,
+  "unmatched_families": [],
+  "comparisons": [
+    {
+      "model": "2019",
+      "card": {
+        "id": "2019",
+        "dt50": 15.0,
+        "dt60": 18.0,
+        "n": 1.23,
+        "pred60": 18.771,
+        "difference": -0.771,
+        "percent": -4.11
+      },
+      "manufacturer": {
+        "dt60": 18,
+        "dt50": 15,
+        "dt42": 12,
+        "dt30": 8,
+        "n": 1.23
+      },
+      "differences": {}
+    },
+    {
+      "model": "2026",
+      "card": {
+        "id": "2026",
+        "dt50": 20.0,
+        "dt60": 25.0,
+        "n": 1.25,
+        "pred60": 25.119,
+        "difference": -0.119,
+        "percent": -0.47
+      },
+      "manufacturer": {
+        "dt60": 25,
+        "dt50": 20,
+        "dt42": 16,
+        "dt30": 11,
+        "n": 1.25
+      },
+      "differences": {}
+    },
+    {
+      "model": "2030",
+      "card": {
+        "id": "2030-9016-12",
+        "dt50": 24.0,
+        "dt60": 30.0,
+        "n": 1.26,
+        "pred60": 30.198,
+        "difference": -0.198,
+        "percent": -0.66
+      },
+      "manufacturer": {
+        "dt60": 30,
+        "dt50": 24,
+        "dt42": 19,
+        "dt30": 12,
+        "n": 1.26
+      },
+      "differences": {}
+    },
+    {
+      "model": "2035",
+      "card": {
+        "id": "2035",
+        "dt50": 28.0,
+        "dt60": 35.0,
+        "n": 1.31,
+        "pred60": 35.554,
+        "difference": -0.554,
+        "percent": -1.56
+      },
+      "manufacturer": {
+        "dt60": 35,
+        "dt50": 28,
+        "dt42": 22,
+        "dt30": 14,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "2040",
+      "card": {
+        "id": "2040",
+        "dt50": 31.0,
+        "dt60": 40.0,
+        "n": 1.31,
+        "pred60": 39.363,
+        "difference": 0.637,
+        "percent": 1.62
+      },
+      "manufacturer": {
+        "dt60": 40,
+        "dt50": 31,
+        "dt42": 25,
+        "dt30": 16,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "2045",
+      "card": {
+        "id": "2045",
+        "dt50": 35.0,
+        "dt60": 44.0,
+        "n": 1.31,
+        "pred60": 44.442,
+        "difference": -0.442,
+        "percent": -0.99
+      },
+      "manufacturer": {
+        "dt60": 44,
+        "dt50": 35,
+        "dt42": 28,
+        "dt30": 18,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "2050",
+      "card": {
+        "id": "2050-9016-12",
+        "dt50": 39.0,
+        "dt60": 49.0,
+        "n": 1.31,
+        "pred60": 49.521,
+        "difference": -0.521,
+        "percent": -1.05
+      },
+      "manufacturer": {
+        "dt60": 49,
+        "dt50": 39,
+        "dt42": 31,
+        "dt30": 20,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "2055",
+      "card": {
+        "id": "2055",
+        "dt50": 42.0,
+        "dt60": 53.0,
+        "n": 1.31,
+        "pred60": 53.331,
+        "difference": -0.331,
+        "percent": -0.62
+      },
+      "manufacturer": {
+        "dt60": 53,
+        "dt50": 42,
+        "dt42": 34,
+        "dt30": 21,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "2057",
+      "card": {
+        "id": "2057-9016-12",
+        "dt50": 42.0,
+        "dt60": 54.0,
+        "n": 1.3,
+        "pred60": 53.233,
+        "difference": 0.767,
+        "percent": 1.44
+      },
+      "manufacturer": {
+        "dt60": 53,
+        "dt50": 42,
+        "dt42": 34,
+        "dt30": 21,
+        "n": 1.3
+      },
+      "differences": {
+        "dt60": {
+          "card": 54.0,
+          "manufacturer": 53
+        }
+      }
+    },
+    {
+      "model": "2060",
+      "card": {
+        "id": "2060",
+        "dt50": 46.0,
+        "dt60": 58.0,
+        "n": 1.31,
+        "pred60": 58.41,
+        "difference": -0.41,
+        "percent": -0.7
+      },
+      "manufacturer": {
+        "dt60": 58,
+        "dt50": 46,
+        "dt42": 37,
+        "dt30": 23,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "2075",
+      "card": {
+        "id": "2075",
+        "dt50": 57.0,
+        "dt60": 71.0,
+        "n": 1.31,
+        "pred60": 72.377,
+        "difference": -1.377,
+        "percent": -1.9
+      },
+      "manufacturer": {
+        "dt60": 71,
+        "dt50": 57,
+        "dt42": 45,
+        "dt30": 29,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "2090",
+      "card": {
+        "id": "2090",
+        "dt50": 67.0,
+        "dt60": 84.0,
+        "n": 1.31,
+        "pred60": 85.075,
+        "difference": -1.075,
+        "percent": -1.26
+      },
+      "manufacturer": {
+        "dt60": 84,
+        "dt50": 67,
+        "dt42": 54,
+        "dt30": 34,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "2100",
+      "card": {
+        "id": "2100",
+        "dt50": 74.0,
+        "dt60": 92.0,
+        "n": 1.32,
+        "pred60": 94.135,
+        "difference": -2.135,
+        "percent": -2.27
+      },
+      "manufacturer": {
+        "dt60": 93,
+        "dt50": 74,
+        "dt42": 59,
+        "dt30": 37,
+        "n": 1.32
+      },
+      "differences": {
+        "dt60": {
+          "card": 92.0,
+          "manufacturer": 93
+        }
+      }
+    },
+    {
+      "model": "2110",
+      "card": {
+        "id": "2110",
+        "dt50": 81.0,
+        "dt60": 102.0,
+        "n": 1.32,
+        "pred60": 103.04,
+        "difference": -1.04,
+        "percent": -1.01
+      },
+      "manufacturer": {
+        "dt60": 102,
+        "dt50": 81,
+        "dt42": 65,
+        "dt30": 41,
+        "n": 1.32
+      },
+      "differences": {}
+    },
+    {
+      "model": "2120",
+      "card": {
+        "id": "2120",
+        "dt50": 88.0,
+        "dt60": 111.0,
+        "n": 1.32,
+        "pred60": 111.944,
+        "difference": -0.944,
+        "percent": -0.84
+      },
+      "manufacturer": {
+        "dt60": 111,
+        "dt50": 88,
+        "dt42": 70,
+        "dt30": 44,
+        "n": 1.32
+      },
+      "differences": {}
+    },
+    {
+      "model": "2150",
+      "card": {
+        "id": "2150",
+        "dt50": 109.0,
+        "dt60": 138.0,
+        "n": 1.32,
+        "pred60": 138.658,
+        "difference": -0.658,
+        "percent": -0.47
+      },
+      "manufacturer": {
+        "dt60": 138,
+        "dt50": 109,
+        "dt42": 87,
+        "dt30": 55,
+        "n": 1.32
+      },
+      "differences": {}
+    },
+    {
+      "model": "2180",
+      "card": {
+        "id": "2180-7016-12",
+        "dt50": 130.0,
+        "dt60": 164.0,
+        "n": 1.32,
+        "pred60": 165.372,
+        "difference": -1.372,
+        "percent": -0.83
+      },
+      "manufacturer": {
+        "dt60": 164,
+        "dt50": 130,
+        "dt42": 104,
+        "dt30": 66,
+        "n": 1.32
+      },
+      "differences": {}
+    },
+    {
+      "model": "2200",
+      "card": {
+        "id": "2200",
+        "dt50": 144.0,
+        "dt60": 182.0,
+        "n": 1.32,
+        "pred60": 183.182,
+        "difference": -1.182,
+        "percent": -0.65
+      },
+      "manufacturer": {
+        "dt60": 182,
+        "dt50": 144,
+        "dt42": 115,
+        "dt30": 73,
+        "n": 1.32
+      },
+      "differences": {}
+    },
+    {
+      "model": "2220",
+      "card": {
+        "id": "2220",
+        "dt50": 158.0,
+        "dt60": 199.0,
+        "n": 1.32,
+        "pred60": 200.991,
+        "difference": -1.991,
+        "percent": -0.99
+      },
+      "manufacturer": {
+        "dt60": 199,
+        "dt50": 158,
+        "dt42": 126,
+        "dt30": 80,
+        "n": 1.32
+      },
+      "differences": {}
+    },
+    {
+      "model": "2250",
+      "card": {
+        "id": "2250",
+        "dt50": 179.0,
+        "dt60": 226.0,
+        "n": 1.32,
+        "pred60": 227.705,
+        "difference": -1.705,
+        "percent": -0.75
+      },
+      "manufacturer": {
+        "dt60": 226,
+        "dt50": 179,
+        "dt42": 143,
+        "dt30": 90,
+        "n": 1.32
+      },
+      "differences": {}
+    },
+    {
+      "model": "2280",
+      "card": {
+        "id": "2280",
+        "dt50": 200.0,
+        "dt60": 253.0,
+        "n": 1.33,
+        "pred60": 254.883,
+        "difference": -1.883,
+        "percent": -0.74
+      },
+      "manufacturer": {
+        "dt60": 253,
+        "dt50": 200,
+        "dt42": 160,
+        "dt30": 101,
+        "n": 1.33
+      },
+      "differences": {}
+    },
+    {
+      "model": "2300",
+      "card": {
+        "id": "2300",
+        "dt50": 214.0,
+        "dt60": 271.0,
+        "n": 1.33,
+        "pred60": 272.725,
+        "difference": -1.725,
+        "percent": -0.63
+      },
+      "manufacturer": {
+        "dt60": 271,
+        "dt50": 214,
+        "dt42": 171,
+        "dt30": 108,
+        "n": 1.33
+      },
+      "differences": {}
+    },
+    {
+      "model": "3019",
+      "card": {
+        "id": "3019",
+        "dt50": 20.0,
+        "dt60": 25.0,
+        "n": 1.27,
+        "pred60": 25.211,
+        "difference": -0.211,
+        "percent": -0.84
+      },
+      "manufacturer": {
+        "dt60": 25,
+        "dt50": 20,
+        "dt42": 16,
+        "dt30": 11,
+        "n": 1.27
+      },
+      "differences": {}
+    },
+    {
+      "model": "3026",
+      "card": {
+        "id": "3026",
+        "dt50": 28.0,
+        "dt60": 35.0,
+        "n": 1.31,
+        "pred60": 35.554,
+        "difference": -0.554,
+        "percent": -1.56
+      },
+      "manufacturer": {
+        "dt60": 35,
+        "dt50": 28,
+        "dt42": 22,
+        "dt30": 14,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "3030",
+      "card": {
+        "id": "3030-9005-69tvv",
+        "dt50": 33.0,
+        "dt60": 41.0,
+        "n": 1.33,
+        "pred60": 42.056,
+        "difference": -1.056,
+        "percent": -2.51
+      },
+      "manufacturer": {
+        "dt60": 41,
+        "dt50": 33,
+        "dt42": 26,
+        "dt30": 16,
+        "n": 1.33
+      },
+      "differences": {}
+    },
+    {
+      "model": "3035",
+      "card": {
+        "id": "3035",
+        "dt50": 38.0,
+        "dt60": 48.0,
+        "n": 1.36,
+        "pred60": 48.693,
+        "difference": -0.693,
+        "percent": -1.42
+      },
+      "manufacturer": {
+        "dt60": 48,
+        "dt50": 38,
+        "dt42": 30,
+        "dt30": 19,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3037",
+      "card": {
+        "id": "3037-9016-12",
+        "dt50": 38.0,
+        "dt60": 49.0,
+        "n": 1.3,
+        "pred60": 48.164,
+        "difference": 0.836,
+        "percent": 1.74
+      },
+      "manufacturer": {
+        "dt60": 48,
+        "dt50": 38,
+        "dt42": 30,
+        "dt30": 19,
+        "n": 1.3
+      },
+      "differences": {
+        "dt60": {
+          "card": 49.0,
+          "manufacturer": 48
+        }
+      }
+    },
+    {
+      "model": "3040",
+      "card": {
+        "id": "3040",
+        "dt50": 43.0,
+        "dt60": 55.0,
+        "n": 1.36,
+        "pred60": 55.1,
+        "difference": -0.1,
+        "percent": -0.18
+      },
+      "manufacturer": {
+        "dt60": 55,
+        "dt50": 43,
+        "dt42": 34,
+        "dt30": 21,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3045",
+      "card": {
+        "id": "3045",
+        "dt50": 48.0,
+        "dt60": 61.0,
+        "n": 1.36,
+        "pred60": 61.507,
+        "difference": -0.507,
+        "percent": -0.83
+      },
+      "manufacturer": {
+        "dt60": 61,
+        "dt50": 48,
+        "dt42": 38,
+        "dt30": 24,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3050",
+      "card": {
+        "id": "3050-9016-12",
+        "dt50": 53.0,
+        "dt60": 68.0,
+        "n": 1.36,
+        "pred60": 67.914,
+        "difference": 0.086,
+        "percent": 0.13
+      },
+      "manufacturer": {
+        "dt60": 68,
+        "dt50": 53,
+        "dt42": 42,
+        "dt30": 26,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3055",
+      "card": {
+        "id": "3055",
+        "dt50": 58.0,
+        "dt60": 74.0,
+        "n": 1.36,
+        "pred60": 74.322,
+        "difference": -0.322,
+        "percent": -0.43
+      },
+      "manufacturer": {
+        "dt60": 74,
+        "dt50": 58,
+        "dt42": 46,
+        "dt30": 29,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3057",
+      "card": {
+        "id": "3057-9016-12",
+        "dt50": 58.0,
+        "dt60": 78.0,
+        "n": 1.3,
+        "pred60": 73.513,
+        "difference": 4.487,
+        "percent": 6.1
+      },
+      "manufacturer": {
+        "dt60": 73,
+        "dt50": 58,
+        "dt42": 47,
+        "dt30": 30,
+        "n": 1.3
+      },
+      "differences": {
+        "dt60": {
+          "card": 78.0,
+          "manufacturer": 73
+        }
+      }
+    },
+    {
+      "model": "3060",
+      "card": {
+        "id": "3060",
+        "dt50": 63.0,
+        "dt60": 80.0,
+        "n": 1.36,
+        "pred60": 80.729,
+        "difference": -0.729,
+        "percent": -0.9
+      },
+      "manufacturer": {
+        "dt60": 80,
+        "dt50": 63,
+        "dt42": 50,
+        "dt30": 31,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3075",
+      "card": {
+        "id": "3075",
+        "dt50": 78.0,
+        "dt60": 99.0,
+        "n": 1.36,
+        "pred60": 99.95,
+        "difference": -0.95,
+        "percent": -0.95
+      },
+      "manufacturer": {
+        "dt60": 99,
+        "dt50": 78,
+        "dt42": 62,
+        "dt30": 39,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3090",
+      "card": {
+        "id": "3090",
+        "dt50": 92.0,
+        "dt60": 117.0,
+        "n": 1.36,
+        "pred60": 117.889,
+        "difference": -0.889,
+        "percent": -0.75
+      },
+      "manufacturer": {
+        "dt60": 117,
+        "dt50": 92,
+        "dt42": 73,
+        "dt30": 46,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3100",
+      "card": {
+        "id": "3100",
+        "dt50": 102.0,
+        "dt60": 130.0,
+        "n": 1.36,
+        "pred60": 130.703,
+        "difference": -0.703,
+        "percent": -0.54
+      },
+      "manufacturer": {
+        "dt60": 130,
+        "dt50": 102,
+        "dt42": 81,
+        "dt30": 51,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "3110",
+      "card": {
+        "id": "3110",
+        "dt50": 111.0,
+        "dt60": 141.0,
+        "n": 1.35,
+        "pred60": 141.977,
+        "difference": -0.977,
+        "percent": -0.69
+      },
+      "manufacturer": {
+        "dt60": 141,
+        "dt50": 111,
+        "dt42": 88,
+        "dt30": 55,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "3120",
+      "card": {
+        "id": "3120",
+        "dt50": 120.0,
+        "dt60": 152.0,
+        "n": 1.35,
+        "pred60": 153.489,
+        "difference": -1.489,
+        "percent": -0.97
+      },
+      "manufacturer": {
+        "dt60": 152,
+        "dt50": 120,
+        "dt42": 95,
+        "dt30": 60,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "3150",
+      "card": {
+        "id": "3150",
+        "dt50": 147.0,
+        "dt60": 187.0,
+        "n": 1.35,
+        "pred60": 188.023,
+        "difference": -1.023,
+        "percent": -0.54
+      },
+      "manufacturer": {
+        "dt60": 187,
+        "dt50": 147,
+        "dt42": 117,
+        "dt30": 73,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "3180",
+      "card": {
+        "id": "3180-7016-12",
+        "dt50": 173.0,
+        "dt60": 219.0,
+        "n": 1.35,
+        "pred60": 221.279,
+        "difference": -2.279,
+        "percent": -1.03
+      },
+      "manufacturer": {
+        "dt60": 219,
+        "dt50": 173,
+        "dt42": 138,
+        "dt30": 86,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "3200",
+      "card": {
+        "id": "3200",
+        "dt50": 190.0,
+        "dt60": 241.0,
+        "n": 1.34,
+        "pred60": 242.581,
+        "difference": -1.581,
+        "percent": -0.65
+      },
+      "manufacturer": {
+        "dt60": 241,
+        "dt50": 190,
+        "dt42": 151,
+        "dt30": 95,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "3220",
+      "card": {
+        "id": "3220",
+        "dt50": 207.0,
+        "dt60": 262.0,
+        "n": 1.34,
+        "pred60": 264.285,
+        "difference": -2.285,
+        "percent": -0.86
+      },
+      "manufacturer": {
+        "dt60": 262,
+        "dt50": 207,
+        "dt42": 165,
+        "dt30": 104,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "3250",
+      "card": {
+        "id": "3250",
+        "dt50": 231.0,
+        "dt60": 293.0,
+        "n": 1.34,
+        "pred60": 294.927,
+        "difference": -1.927,
+        "percent": -0.65
+      },
+      "manufacturer": {
+        "dt60": 293,
+        "dt50": 231,
+        "dt42": 184,
+        "dt30": 116,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "3280",
+      "card": {
+        "id": "3280",
+        "dt50": 255.0,
+        "dt60": 323.0,
+        "n": 1.34,
+        "pred60": 325.569,
+        "difference": -2.569,
+        "percent": -0.79
+      },
+      "manufacturer": {
+        "dt60": 323,
+        "dt50": 255,
+        "dt42": 203,
+        "dt30": 128,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "3300",
+      "card": {
+        "id": "3300",
+        "dt50": 270.0,
+        "dt60": 341.0,
+        "n": 1.33,
+        "pred60": 344.092,
+        "difference": -3.092,
+        "percent": -0.9
+      },
+      "manufacturer": {
+        "dt60": 341,
+        "dt50": 270,
+        "dt42": 215,
+        "dt30": 136,
+        "n": 1.33
+      },
+      "differences": {}
+    },
+    {
+      "model": "4019",
+      "card": {
+        "id": "4019",
+        "dt50": 27.0,
+        "dt60": 33.0,
+        "n": 1.25,
+        "pred60": 33.911,
+        "difference": -0.911,
+        "percent": -2.69
+      },
+      "manufacturer": {
+        "dt60": 33,
+        "dt50": 27,
+        "dt42": 22,
+        "dt30": 14,
+        "n": 1.25
+      },
+      "differences": {}
+    },
+    {
+      "model": "4026",
+      "card": {
+        "id": "4026",
+        "dt50": 36.0,
+        "dt60": 46.0,
+        "n": 1.3,
+        "pred60": 45.629,
+        "difference": 0.371,
+        "percent": 0.81
+      },
+      "manufacturer": {
+        "dt60": 46,
+        "dt50": 36,
+        "dt42": 29,
+        "dt30": 19,
+        "n": 1.3
+      },
+      "differences": {}
+    },
+    {
+      "model": "4030",
+      "card": {
+        "id": "4030",
+        "dt50": 43.0,
+        "dt60": 54.0,
+        "n": 1.33,
+        "pred60": 54.8,
+        "difference": -0.8,
+        "percent": -1.46
+      },
+      "manufacturer": {
+        "dt60": 54,
+        "dt50": 43,
+        "dt42": 34,
+        "dt30": 21,
+        "n": 1.33
+      },
+      "differences": {}
+    },
+    {
+      "model": "4035",
+      "card": {
+        "id": "4035",
+        "dt50": 49.0,
+        "dt60": 63.0,
+        "n": 1.35,
+        "pred60": 62.674,
+        "difference": 0.326,
+        "percent": 0.52
+      },
+      "manufacturer": {
+        "dt60": 63,
+        "dt50": 49,
+        "dt42": 39,
+        "dt30": 25,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4040",
+      "card": {
+        "id": "4040",
+        "dt50": 56.0,
+        "dt60": 71.0,
+        "n": 1.35,
+        "pred60": 71.628,
+        "difference": -0.628,
+        "percent": -0.88
+      },
+      "manufacturer": {
+        "dt60": 71,
+        "dt50": 56,
+        "dt42": 44,
+        "dt30": 28,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4045",
+      "card": {
+        "id": "4045",
+        "dt50": 62.0,
+        "dt60": 79.0,
+        "n": 1.35,
+        "pred60": 79.302,
+        "difference": -0.302,
+        "percent": -0.38
+      },
+      "manufacturer": {
+        "dt60": 79,
+        "dt50": 62,
+        "dt42": 50,
+        "dt30": 31,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4050",
+      "card": {
+        "id": "4050",
+        "dt50": 69.0,
+        "dt60": 87.0,
+        "n": 1.35,
+        "pred60": 88.256,
+        "difference": -1.256,
+        "percent": -1.42
+      },
+      "manufacturer": {
+        "dt60": 87,
+        "dt50": 69,
+        "dt42": 55,
+        "dt30": 34,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4055",
+      "card": {
+        "id": "4055",
+        "dt50": 75.0,
+        "dt60": 95.0,
+        "n": 1.35,
+        "pred60": 95.93,
+        "difference": -0.93,
+        "percent": -0.97
+      },
+      "manufacturer": {
+        "dt60": 95,
+        "dt50": 75,
+        "dt42": 60,
+        "dt30": 37,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4060",
+      "card": {
+        "id": "4060",
+        "dt50": 81.0,
+        "dt60": 103.0,
+        "n": 1.35,
+        "pred60": 103.605,
+        "difference": -0.605,
+        "percent": -0.58
+      },
+      "manufacturer": {
+        "dt60": 103,
+        "dt50": 81,
+        "dt42": 64,
+        "dt30": 40,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4075",
+      "card": {
+        "id": "4075",
+        "dt50": 100.0,
+        "dt60": 126.0,
+        "n": 1.35,
+        "pred60": 127.907,
+        "difference": -1.907,
+        "percent": -1.49
+      },
+      "manufacturer": {
+        "dt60": 126,
+        "dt50": 100,
+        "dt42": 79,
+        "dt30": 50,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4090",
+      "card": {
+        "id": "4090",
+        "dt50": 117.0,
+        "dt60": 148.0,
+        "n": 1.35,
+        "pred60": 149.651,
+        "difference": -1.651,
+        "percent": -1.1
+      },
+      "manufacturer": {
+        "dt60": 148,
+        "dt50": 117,
+        "dt42": 93,
+        "dt30": 58,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4100",
+      "card": {
+        "id": "4100",
+        "dt50": 129.0,
+        "dt60": 164.0,
+        "n": 1.35,
+        "pred60": 165.0,
+        "difference": -1.0,
+        "percent": -0.61
+      },
+      "manufacturer": {
+        "dt60": 164,
+        "dt50": 129,
+        "dt42": 103,
+        "dt30": 64,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4110",
+      "card": {
+        "id": "4110",
+        "dt50": 141.0,
+        "dt60": 179.0,
+        "n": 1.35,
+        "pred60": 180.349,
+        "difference": -1.349,
+        "percent": -0.75
+      },
+      "manufacturer": {
+        "dt60": 179,
+        "dt50": 141,
+        "dt42": 112,
+        "dt30": 70,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4120",
+      "card": {
+        "id": "4120",
+        "dt50": 152.0,
+        "dt60": 193.0,
+        "n": 1.35,
+        "pred60": 194.419,
+        "difference": -1.419,
+        "percent": -0.73
+      },
+      "manufacturer": {
+        "dt60": 193,
+        "dt50": 152,
+        "dt42": 121,
+        "dt30": 76,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4150",
+      "card": {
+        "id": "4150",
+        "dt50": 186.0,
+        "dt60": 236.0,
+        "n": 1.35,
+        "pred60": 237.907,
+        "difference": -1.907,
+        "percent": -0.8
+      },
+      "manufacturer": {
+        "dt60": 236,
+        "dt50": 186,
+        "dt42": 148,
+        "dt30": 93,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "4180",
+      "card": {
+        "id": "4180",
+        "dt50": 219.0,
+        "dt60": 277.0,
+        "n": 1.34,
+        "pred60": 279.606,
+        "difference": -2.606,
+        "percent": -0.93
+      },
+      "manufacturer": {
+        "dt60": 277,
+        "dt50": 219,
+        "dt42": 174,
+        "dt30": 110,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "4200",
+      "card": {
+        "id": "4200",
+        "dt50": 241.0,
+        "dt60": 305.0,
+        "n": 1.34,
+        "pred60": 307.695,
+        "difference": -2.695,
+        "percent": -0.88
+      },
+      "manufacturer": {
+        "dt60": 305,
+        "dt50": 241,
+        "dt42": 192,
+        "dt30": 121,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "4220",
+      "card": {
+        "id": "4220",
+        "dt50": 262.0,
+        "dt60": 332.0,
+        "n": 1.34,
+        "pred60": 334.506,
+        "difference": -2.506,
+        "percent": -0.75
+      },
+      "manufacturer": {
+        "dt60": 332,
+        "dt50": 262,
+        "dt42": 209,
+        "dt30": 131,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "4250",
+      "card": {
+        "id": "4250",
+        "dt50": 293.0,
+        "dt60": 371.0,
+        "n": 1.34,
+        "pred60": 374.085,
+        "difference": -3.085,
+        "percent": -0.82
+      },
+      "manufacturer": {
+        "dt60": 371,
+        "dt50": 293,
+        "dt42": 233,
+        "dt30": 147,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "4280",
+      "card": {
+        "id": "4280",
+        "dt50": 323.0,
+        "dt60": 409.0,
+        "n": 1.34,
+        "pred60": 412.387,
+        "difference": -3.387,
+        "percent": -0.82
+      },
+      "manufacturer": {
+        "dt60": 409,
+        "dt50": 323,
+        "dt42": 257,
+        "dt30": 162,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "4300",
+      "card": {
+        "id": "4300",
+        "dt50": 343.0,
+        "dt60": 434.0,
+        "n": 1.34,
+        "pred60": 437.922,
+        "difference": -3.922,
+        "percent": -0.9
+      },
+      "manufacturer": {
+        "dt60": 434,
+        "dt50": 343,
+        "dt42": 273,
+        "dt30": 172,
+        "n": 1.34
+      },
+      "differences": {}
+    },
+    {
+      "model": "5018",
+      "card": {
+        "id": "5018",
+        "dt50": 32.0,
+        "dt60": 40.0,
+        "n": 1.29,
+        "pred60": 40.485,
+        "difference": -0.485,
+        "percent": -1.2
+      },
+      "manufacturer": {
+        "dt60": 40,
+        "dt50": 32,
+        "dt42": 26,
+        "dt30": 16,
+        "n": 1.29
+      },
+      "differences": {}
+    },
+    {
+      "model": "5026",
+      "card": {
+        "id": "5026",
+        "dt50": 45.0,
+        "dt60": 56.0,
+        "n": 1.33,
+        "pred60": 57.349,
+        "difference": -1.349,
+        "percent": -2.35
+      },
+      "manufacturer": {
+        "dt60": 56,
+        "dt50": 45,
+        "dt42": 36,
+        "dt30": 22,
+        "n": 1.33
+      },
+      "differences": {}
+    },
+    {
+      "model": "5030",
+      "card": {
+        "id": "5030",
+        "dt50": 53.0,
+        "dt60": 67.0,
+        "n": 1.36,
+        "pred60": 67.914,
+        "difference": -0.914,
+        "percent": -1.35
+      },
+      "manufacturer": {
+        "dt60": 67,
+        "dt50": 53,
+        "dt42": 42,
+        "dt30": 26,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "5035",
+      "card": {
+        "id": "5035",
+        "dt50": 61.0,
+        "dt60": 78.0,
+        "n": 1.39,
+        "pred60": 78.594,
+        "difference": -0.594,
+        "percent": -0.76
+      },
+      "manufacturer": {
+        "dt60": 78,
+        "dt50": 61,
+        "dt42": 48,
+        "dt30": 30,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "5040",
+      "card": {
+        "id": "5040",
+        "dt50": 69.0,
+        "dt60": 88.0,
+        "n": 1.39,
+        "pred60": 88.902,
+        "difference": -0.902,
+        "percent": -1.01
+      },
+      "manufacturer": {
+        "dt60": 88,
+        "dt50": 69,
+        "dt42": 55,
+        "dt30": 34,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "5045",
+      "card": {
+        "id": "5045",
+        "dt50": 85.0,
+        "dt60": 108.0,
+        "n": 1.39,
+        "pred60": 109.517,
+        "difference": -1.517,
+        "percent": -1.39
+      },
+      "manufacturer": {
+        "dt60": 98,
+        "dt50": 77,
+        "dt42": 61,
+        "dt30": 37,
+        "n": 1.39
+      },
+      "differences": {
+        "dt50": {
+          "card": 85.0,
+          "manufacturer": 77
+        },
+        "dt60": {
+          "card": 108.0,
+          "manufacturer": 98
+        }
+      }
+    },
+    {
+      "model": "5050",
+      "card": {
+        "id": "5050",
+        "dt50": 85.0,
+        "dt60": 108.0,
+        "n": 1.39,
+        "pred60": 109.517,
+        "difference": -1.517,
+        "percent": -1.39
+      },
+      "manufacturer": {
+        "dt60": 108,
+        "dt50": 85,
+        "dt42": 67,
+        "dt30": 41,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "5055",
+      "card": {
+        "id": "5055",
+        "dt50": 93.0,
+        "dt60": 118.0,
+        "n": 1.39,
+        "pred60": 119.824,
+        "difference": -1.824,
+        "percent": -1.52
+      },
+      "manufacturer": {
+        "dt60": 118,
+        "dt50": 93,
+        "dt42": 73,
+        "dt30": 45,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "5060",
+      "card": {
+        "id": "5060",
+        "dt50": 100.0,
+        "dt60": 128.0,
+        "n": 1.39,
+        "pred60": 128.843,
+        "difference": -0.843,
+        "percent": -0.65
+      },
+      "manufacturer": {
+        "dt60": 128,
+        "dt50": 100,
+        "dt42": 79,
+        "dt30": 49,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "5075",
+      "card": {
+        "id": "5075",
+        "dt50": 123.0,
+        "dt60": 157.0,
+        "n": 1.39,
+        "pred60": 158.477,
+        "difference": -1.477,
+        "percent": -0.93
+      },
+      "manufacturer": {
+        "dt60": 157,
+        "dt50": 123,
+        "dt42": 97,
+        "dt30": 60,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "5090",
+      "card": {
+        "id": "5090",
+        "dt50": 144.0,
+        "dt60": 184.0,
+        "n": 1.39,
+        "pred60": 185.534,
+        "difference": -1.534,
+        "percent": -0.83
+      },
+      "manufacturer": {
+        "dt60": 184,
+        "dt50": 144,
+        "dt42": 114,
+        "dt30": 70,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "5100",
+      "card": {
+        "id": "5100",
+        "dt50": 158.0,
+        "dt60": 202.0,
+        "n": 1.38,
+        "pred60": 203.202,
+        "difference": -1.202,
+        "percent": -0.59
+      },
+      "manufacturer": {
+        "dt60": 202,
+        "dt50": 158,
+        "dt42": 125,
+        "dt30": 77,
+        "n": 1.38
+      },
+      "differences": {}
+    },
+    {
+      "model": "5110",
+      "card": {
+        "id": "5110",
+        "dt50": 172.0,
+        "dt60": 219.0,
+        "n": 1.38,
+        "pred60": 221.207,
+        "difference": -2.207,
+        "percent": -1.0
+      },
+      "manufacturer": {
+        "dt60": 219,
+        "dt50": 172,
+        "dt42": 136,
+        "dt30": 84,
+        "n": 1.38
+      },
+      "differences": {}
+    },
+    {
+      "model": "5120",
+      "card": {
+        "id": "5120",
+        "dt50": 186.0,
+        "dt60": 237.0,
+        "n": 1.38,
+        "pred60": 239.212,
+        "difference": -2.212,
+        "percent": -0.92
+      },
+      "manufacturer": {
+        "dt60": 237,
+        "dt50": 186,
+        "dt42": 147,
+        "dt30": 91,
+        "n": 1.38
+      },
+      "differences": {}
+    },
+    {
+      "model": "5150",
+      "card": {
+        "id": "5150",
+        "dt50": 225.0,
+        "dt60": 286.0,
+        "n": 1.37,
+        "pred60": 288.842,
+        "difference": -2.842,
+        "percent": -0.98
+      },
+      "manufacturer": {
+        "dt60": 286,
+        "dt50": 225,
+        "dt42": 178,
+        "dt30": 111,
+        "n": 1.37
+      },
+      "differences": {}
+    },
+    {
+      "model": "5180",
+      "card": {
+        "id": "5180",
+        "dt50": 263.0,
+        "dt60": 335.0,
+        "n": 1.37,
+        "pred60": 337.625,
+        "difference": -2.625,
+        "percent": -0.78
+      },
+      "manufacturer": {
+        "dt60": 335,
+        "dt50": 263,
+        "dt42": 208,
+        "dt30": 130,
+        "n": 1.37
+      },
+      "differences": {}
+    },
+    {
+      "model": "5200",
+      "card": {
+        "id": "5200",
+        "dt50": 287.0,
+        "dt60": 365.0,
+        "n": 1.37,
+        "pred60": 368.434,
+        "difference": -3.434,
+        "percent": -0.93
+      },
+      "manufacturer": {
+        "dt60": 365,
+        "dt50": 287,
+        "dt42": 227,
+        "dt30": 141,
+        "n": 1.37
+      },
+      "differences": {}
+    },
+    {
+      "model": "5220",
+      "card": {
+        "id": "5220",
+        "dt50": 310.0,
+        "dt60": 394.0,
+        "n": 1.36,
+        "pred60": 397.236,
+        "difference": -3.236,
+        "percent": -0.81
+      },
+      "manufacturer": {
+        "dt60": 394,
+        "dt50": 310,
+        "dt42": 246,
+        "dt30": 153,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "5250",
+      "card": {
+        "id": "5250",
+        "dt50": 343.0,
+        "dt60": 436.0,
+        "n": 1.36,
+        "pred60": 439.522,
+        "difference": -3.522,
+        "percent": -0.8
+      },
+      "manufacturer": {
+        "dt60": 436,
+        "dt50": 343,
+        "dt42": 272,
+        "dt30": 170,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "5280",
+      "card": {
+        "id": "5280",
+        "dt50": 374.0,
+        "dt60": 474.0,
+        "n": 1.35,
+        "pred60": 478.373,
+        "difference": -4.373,
+        "percent": -0.91
+      },
+      "manufacturer": {
+        "dt60": 474,
+        "dt50": 374,
+        "dt42": 297,
+        "dt30": 186,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "5300",
+      "card": {
+        "id": "5300",
+        "dt50": 394.0,
+        "dt60": 500.0,
+        "n": 1.35,
+        "pred60": 503.954,
+        "difference": -3.954,
+        "percent": -0.78
+      },
+      "manufacturer": {
+        "dt60": 500,
+        "dt50": 394,
+        "dt42": 313,
+        "dt30": 196,
+        "n": 1.35
+      },
+      "differences": {}
+    },
+    {
+      "model": "6018",
+      "card": {
+        "id": "6018",
+        "dt50": 39.0,
+        "dt60": 49.0,
+        "n": 1.31,
+        "pred60": 49.521,
+        "difference": -0.521,
+        "percent": -1.05
+      },
+      "manufacturer": {
+        "dt60": 49,
+        "dt50": 39,
+        "dt42": 31,
+        "dt30": 20,
+        "n": 1.31
+      },
+      "differences": {}
+    },
+    {
+      "model": "6026",
+      "card": {
+        "id": "6026",
+        "dt50": 53.0,
+        "dt60": 67.0,
+        "n": 1.36,
+        "pred60": 67.914,
+        "difference": -0.914,
+        "percent": -1.35
+      },
+      "manufacturer": {
+        "dt60": 67,
+        "dt50": 53,
+        "dt42": 42,
+        "dt30": 26,
+        "n": 1.36
+      },
+      "differences": {}
+    },
+    {
+      "model": "6030",
+      "card": {
+        "id": "6030",
+        "dt50": 62.0,
+        "dt60": 79.0,
+        "n": 1.39,
+        "pred60": 79.883,
+        "difference": -0.883,
+        "percent": -1.11
+      },
+      "manufacturer": {
+        "dt60": 79,
+        "dt50": 62,
+        "dt42": 49,
+        "dt30": 30,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "6035",
+      "card": {
+        "id": "6035",
+        "dt50": 72.0,
+        "dt60": 92.0,
+        "n": 1.41,
+        "pred60": 93.106,
+        "difference": -1.106,
+        "percent": -1.19
+      },
+      "manufacturer": {
+        "dt60": 92,
+        "dt50": 72,
+        "dt42": 56,
+        "dt30": 34,
+        "n": 1.41
+      },
+      "differences": {}
+    },
+    {
+      "model": "6040",
+      "card": {
+        "id": "6040",
+        "dt50": 81.0,
+        "dt60": 104.0,
+        "n": 1.41,
+        "pred60": 104.744,
+        "difference": -0.744,
+        "percent": -0.71
+      },
+      "manufacturer": {
+        "dt60": 104,
+        "dt50": 81,
+        "dt42": 64,
+        "dt30": 39,
+        "n": 1.41
+      },
+      "differences": {}
+    },
+    {
+      "model": "6045",
+      "card": {
+        "id": "6045",
+        "dt50": 90.0,
+        "dt60": 115.0,
+        "n": 1.41,
+        "pred60": 116.383,
+        "difference": -1.383,
+        "percent": -1.19
+      },
+      "manufacturer": {
+        "dt60": 115,
+        "dt50": 90,
+        "dt42": 71,
+        "dt30": 43,
+        "n": 1.41
+      },
+      "differences": {}
+    },
+    {
+      "model": "6050",
+      "card": {
+        "id": "6050",
+        "dt50": 99.0,
+        "dt60": 127.0,
+        "n": 1.41,
+        "pred60": 128.021,
+        "difference": -1.021,
+        "percent": -0.8
+      },
+      "manufacturer": {
+        "dt60": 127,
+        "dt50": 99,
+        "dt42": 78,
+        "dt30": 48,
+        "n": 1.41
+      },
+      "differences": {}
+    },
+    {
+      "model": "6055",
+      "card": {
+        "id": "6055",
+        "dt50": 108.0,
+        "dt60": 138.0,
+        "n": 1.41,
+        "pred60": 139.659,
+        "difference": -1.659,
+        "percent": -1.19
+      },
+      "manufacturer": {
+        "dt60": 138,
+        "dt50": 108,
+        "dt42": 85,
+        "dt30": 52,
+        "n": 1.41
+      },
+      "differences": {}
+    },
+    {
+      "model": "6060",
+      "card": {
+        "id": "6060",
+        "dt50": 117.0,
+        "dt60": 150.0,
+        "n": 1.41,
+        "pred60": 151.297,
+        "difference": -1.297,
+        "percent": -0.86
+      },
+      "manufacturer": {
+        "dt60": 150,
+        "dt50": 117,
+        "dt42": 92,
+        "dt30": 56,
+        "n": 1.41
+      },
+      "differences": {}
+    },
+    {
+      "model": "6075",
+      "card": {
+        "id": "6075",
+        "dt50": 143.0,
+        "dt60": 183.0,
+        "n": 1.4,
+        "pred60": 184.582,
+        "difference": -1.582,
+        "percent": -0.86
+      },
+      "manufacturer": {
+        "dt60": 183,
+        "dt50": 143,
+        "dt42": 113,
+        "dt30": 69,
+        "n": 1.4
+      },
+      "differences": {}
+    },
+    {
+      "model": "6090",
+      "card": {
+        "id": "6090",
+        "dt50": 168.0,
+        "dt60": 215.0,
+        "n": 1.4,
+        "pred60": 216.852,
+        "difference": -1.852,
+        "percent": -0.85
+      },
+      "manufacturer": {
+        "dt60": 215,
+        "dt50": 168,
+        "dt42": 132,
+        "dt30": 81,
+        "n": 1.4
+      },
+      "differences": {}
+    },
+    {
+      "model": "6100",
+      "card": {
+        "id": "6100",
+        "dt50": 185.0,
+        "dt60": 237.0,
+        "n": 1.4,
+        "pred60": 238.795,
+        "difference": -1.795,
+        "percent": -0.75
+      },
+      "manufacturer": {
+        "dt60": 237,
+        "dt50": 185,
+        "dt42": 146,
+        "dt30": 90,
+        "n": 1.4
+      },
+      "differences": {}
+    },
+    {
+      "model": "6110",
+      "card": {
+        "id": "6110",
+        "dt50": 201.0,
+        "dt60": 257.0,
+        "n": 1.4,
+        "pred60": 259.448,
+        "difference": -2.448,
+        "percent": -0.94
+      },
+      "manufacturer": {
+        "dt60": 257,
+        "dt50": 201,
+        "dt42": 158,
+        "dt30": 97,
+        "n": 1.4
+      },
+      "differences": {}
+    },
+    {
+      "model": "6120",
+      "card": {
+        "id": "6120",
+        "dt50": 217.0,
+        "dt60": 278.0,
+        "n": 1.4,
+        "pred60": 280.1,
+        "difference": -2.1,
+        "percent": -0.75
+      },
+      "manufacturer": {
+        "dt60": 278,
+        "dt50": 217,
+        "dt42": 171,
+        "dt30": 105,
+        "n": 1.4
+      },
+      "differences": {}
+    },
+    {
+      "model": "6150",
+      "card": {
+        "id": "6150",
+        "dt50": 264.0,
+        "dt60": 338.0,
+        "n": 1.4,
+        "pred60": 340.767,
+        "difference": -2.767,
+        "percent": -0.81
+      },
+      "manufacturer": {
+        "dt60": 338,
+        "dt50": 264,
+        "dt42": 208,
+        "dt30": 128,
+        "n": 1.4
+      },
+      "differences": {}
+    },
+    {
+      "model": "6180",
+      "card": {
+        "id": "6180",
+        "dt50": 309.0,
+        "dt60": 395.0,
+        "n": 1.39,
+        "pred60": 398.126,
+        "difference": -3.126,
+        "percent": -0.79
+      },
+      "manufacturer": {
+        "dt60": 395,
+        "dt50": 309,
+        "dt42": 244,
+        "dt30": 151,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "6200",
+      "card": {
+        "id": "6200",
+        "dt50": 339.0,
+        "dt60": 433.0,
+        "n": 1.39,
+        "pred60": 436.779,
+        "difference": -3.779,
+        "percent": -0.87
+      },
+      "manufacturer": {
+        "dt60": 433,
+        "dt50": 339,
+        "dt42": 268,
+        "dt30": 165,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "6220",
+      "card": {
+        "id": "6220",
+        "dt50": 367.0,
+        "dt60": 469.0,
+        "n": 1.39,
+        "pred60": 472.855,
+        "difference": -3.855,
+        "percent": -0.82
+      },
+      "manufacturer": {
+        "dt60": 469,
+        "dt50": 367,
+        "dt42": 290,
+        "dt30": 179,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "6250",
+      "card": {
+        "id": "6250",
+        "dt50": 408.0,
+        "dt60": 521.0,
+        "n": 1.39,
+        "pred60": 525.681,
+        "difference": -4.681,
+        "percent": -0.89
+      },
+      "manufacturer": {
+        "dt60": 521,
+        "dt50": 408,
+        "dt42": 322,
+        "dt30": 199,
+        "n": 1.39
+      },
+      "differences": {}
+    },
+    {
+      "model": "6280",
+      "card": {
+        "id": "6280",
+        "dt50": 448.0,
+        "dt60": 571.0,
+        "n": 1.38,
+        "pred60": 576.167,
+        "difference": -5.167,
+        "percent": -0.9
+      },
+      "manufacturer": {
+        "dt60": 571,
+        "dt50": 448,
+        "dt42": 354,
+        "dt30": 220,
+        "n": 1.38
+      },
+      "differences": {}
+    },
+    {
+      "model": "6300",
+      "card": {
+        "id": "6300",
+        "dt50": 474.0,
+        "dt60": 605.0,
+        "n": 1.38,
+        "pred60": 609.605,
+        "difference": -4.605,
+        "percent": -0.76
+      },
+      "manufacturer": {
+        "dt60": 605,
+        "dt50": 474,
+        "dt42": 375,
+        "dt30": 232,
+        "n": 1.38
+      },
+      "differences": {}
+    }
+  ],
+  "notes": [
+    "3030: 33 W at 75/65/20, 41 W at 90/70/20 and n1.33 are all explicitly present in the manufacturer table. Their arithmetic ratio alone cannot diagnose incorrect data.",
+    "3057: card ΔT60=78 W differs from 73 W in both 2015-N and 2021-N. Newer 2021-N reconfirms q50=58 W and n1.30. 5045: card q50/q60=85/108 W differs from 77/98 W in both editions.",
+    "Do not replace all manufacturer rounded outputs with powers derived from rounded q50: logarithmic temperature difference and unrounded base outputs can account for small differences.",
+    "Draft article uses arithmetic temperature difference and calculated q30=29.8555 W; this is explicitly a preliminary calculation, not a separate tested output.",
+    "No production card data have been changed in this review."
+  ],
+  "manually_verified_text_layer_overlaps": [
+    "5018",
+    "6018"
+  ]
+}

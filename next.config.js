@@ -2,12 +2,39 @@
 
 module.exports = {
 	reactStrictMode: true,
+	experimental: { cpus: Number(process.env.NEXT_BUILD_CPUS || 1) },
 	// i18n: {
 	//   locales: ['ru'],
 	//   defaultLocale: 'ru',
 	// },
 	async redirects() {
 		return [
+			// 10.11.2026: две статьи о белых RAL делили запросы «ral 9016»; объединены по старому адресу.
+			{
+				source: '/articles/ral-9016-9010-9003-kakoy-belyy-vybrat',
+				destination: '/articles/ral-9016-pochemu-vybirayut-arkhitektory',
+				permanent: true,
+			},
+			{
+				source: '/articles/arbonia-3180-ral-9016-vs-anthracite-metallic',
+				destination: '/articles/arbonia-3180-ral-9016-vs-anthracite',
+				permanent: true,
+			},
+			{
+				source: '/models/3057-9016-1270-34',
+				destination: '/models/3057-9016-12',
+				permanent: true,
+			},
+			{
+				source: '/news/2023-report',
+				destination: '/news/2024-report',
+				permanent: true,
+			},
+			{
+				source: '/policy',
+				destination: '/privacy',
+				permanent: true,
+			},
 			{
 				source: '/articles/arbonia-radiators',
 				destination: '/articles/column-radiators',
@@ -57,7 +84,9 @@ module.exports = {
 				headers: [
 					{
 						key: 'cache-control',
-						value: 'public, max-age=31536000, immutable',
+							// HTML must revalidate after updates. Production nginx sets
+							// immutable caching separately for versioned /_next/static assets.
+							value: 'public, max-age=0, must-revalidate',
 					},
 					// {
 					//   key: 'X-DNS-Prefetch-Control',

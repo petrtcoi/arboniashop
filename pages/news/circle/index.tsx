@@ -14,9 +14,9 @@ type ArticlesListPageProps = {}
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 	return (
-		<Box>
-			<PageHeader title={'THE CIRCLE – крупнейшая строительная площадка в Швейцарии'} />
-			<PageTitle
+        <Box>
+            <PageHeader title={'THE CIRCLE – крупнейшая строительная площадка в Швейцарии'} description={'THE CIRCLE в аэропорту Цюриха — шесть зданий и парк на 180 000 м²: медицинский центр, отели, офисы и конгресс-центр. Участие Arbonia в проекте.'} />
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
@@ -26,10 +26,13 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				]}
 			/>
 
-			<Box
-				sx={{ ...global.pagePadding, maxWidth: '800px', margin: 'auto' }}
-				marginTop='20px'
-			>
+            <Box
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '800px',
+                    margin: 'auto'
+                }}>
 				<Typography
 					variant='h6'
 					component='h1'
@@ -38,7 +41,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				>
 					THE CIRCLE – крупнейшая строительная площадка в Швейцарии
 				</Typography>
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<Typography
 						style={{ ...styles.standardText }}
 						component='div'
@@ -72,8 +77,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					/>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlesListPage

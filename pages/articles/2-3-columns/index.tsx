@@ -15,14 +15,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Радиаторы Arbonia 2-трубчатые и 3-трубчатые: в чем отличия моделей'}
 				description={
 					'Среди радиаторов Arbonia наибольшей популярностью пользуются 2-трубчатые и 3-трубчатые модели. Именно они поддерживаются в наличии на складах и именно они, скорее всего,идеально подойдут для вашего дома. Разбираемся, какие отличия есть между ними и как правильно сделать выбор.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -32,15 +32,16 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide-5.jpeg'}
 				header={'Отличия 2-трубчатых радиаторов Arbonia от 3-трубчатых'}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Мы стараемся поддерживать в наличии наиболее популярные модели радиаторов Arbonia. Это наиболее универсальные
 					модели, которые подходят для большинства случаев. В складскую программу входят, как &#160;
 					<a
@@ -69,9 +70,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					. Боковое или нижнее подключение, в зависимости от того, какая система отопления используется в доме.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Также, складские модели радиаторов делятся на 2-трубчатые и 3-трубчатые. Отличия между ними заключается в
 					соответствующем числе трубок в одной секции. Двух-трубчатые радиаторы имеют меньшую толщину (65 мм),
 					трех-трубчатые на 4 см толще. Различие между данными модификациями хорошо видно невооруженным глазом. Но,
@@ -79,32 +81,37 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Мощность и габариты
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Секции 3-трубчатых радиаторов обладают большей мощностью, чем секции аналогичной высоту у 2-трубчатых батарей.
 					Соответственно, при одинаковых высоте и длине более толстые 3-трубчатые модели будут мощнее, чем аналогичная
 					2-трубчатая модель.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Например, радиатор Arbonia 3057 - 20 секций при длине 926 мм имеет мощность 1560 Вт. Радиатор Arbonia 2057 -
 					20 секций при той же длине имеет мощность 1080 Вт. А мощностью, близкую к 1560 Вт имеет уже батарея длиной 28
 					секций: 1286 мм длина и 1512 Вт мощность.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Таким образом, при подборе нужной модели по мощности, вы можете выбирать: взять более длинную и тонкую
 					2-трубчатую модель, или более короткую, но более толстую 3-трубчатую. Для установки под стандартным окном
 					есть отдельная подборка&#160;
@@ -121,7 +128,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</a>
 					&#160;с моделями 2050, 2057, 3050 и 3057.
 				</Typography>
-				<Typography sx={{ ...styles.standardText }} marginY='20px'>
+				<Typography
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Для одинаковой высоты 500 мм есть отдельное сравнение{' '}
 					<a style={{ textDecoration: 'none' }} href='/articles/arbonia-2050-ili-3050'>
 						<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
@@ -131,7 +142,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					: в нем мощность приведена при одинаковом ΔT, показаны полный компромисс по глубине и длине, а также пример
 					расчета секций для нагрузки 1000 Вт.
 				</Typography>
-				<Box textAlign={'center'}>
+				<Box sx={{
+                    textAlign: 'center'
+                }}>
 					<img
 						src='/images/articles/90.png'
 						alt='2-трубчатый и 3-трубчатый радиаторы Arbonia'
@@ -141,32 +154,37 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Box>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Стоимость
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Здесь нет однозначного ответа, какой радиатор стоит меньше. Одна секция 2-трубчатого радиатора Arbonia стоит
 					дешевле 3-трубчатой секции аналогичной высоты. Но, при этом, она обладает и меньшей тепловой мощностью,
 					поэтому, как мы обозначили ранее, для той же мощности нужно больше секций.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Поэтому, более плоские радиаторы выходят дороже, чем более толстые. Это правило справедливо для невысоких
 					радиаторов и радиаторов стандартной высоты. Для вертикальных высоких радиаторов Arbonia это соотношение
 					работает уже в другую сторону: модели 2180 выходят дешевле, чем модели 3180 аналогичной мощности.
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Отдельно можно отметить, что, так как вертикальные модели обладают большой тепловой мощностью, радиаторы 2180
 					проще подобрать подходящей мощности: из-за меньшей мощности секции они имеют меньший “шаг” при увеличении
 					числа секций. С радиаторами Arbonia 3180 часто приходится брать заметно более мощные модели, что также
@@ -174,23 +192,26 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</Typography>
 
 				<Typography
-					marginTop='40px'
 					variant='h5'
 					component={'h2'}
+					sx={{
+                        marginTop: '40px'
+                    }}
 				>
 					Гигиена и уход
 				</Typography>
 				<Typography
-					sx={{ ...styles.standardText }}
-					marginY='20px'
-				>
+                    sx={{
+                        marginY: '20px',
+                        ...styles.standardText
+                    }}>
 					Двухтрубчатые радиаторы проще в уходе, так как имеет более простую конструкцию. Их проще убирать от пыли и
 					грязи. Этот фактор может быть определяющим для тех, у кого в доме проживают аллергики, чувствительные к
 					качеству воздуха.
 				</Typography>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

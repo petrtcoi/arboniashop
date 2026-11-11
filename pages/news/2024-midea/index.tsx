@@ -13,9 +13,9 @@ type ArticlesListPageProps = {}
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 	return (
-		<Box>
-			<PageHeader title={'Arbonia продает подразделение Climate за 760 миллионов евро компании Midea'} />
-			<PageTitle
+        <Box>
+            <PageHeader title={'Arbonia продает подразделение Climate за 760 миллионов евро компании Midea'} description={'Arbonia продала подразделение Climate компании Midea Group за 760 млн евро: условия сделки, возврат средств акционерам и планы компании.'} />
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
@@ -25,10 +25,13 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				]}
 			/>
 
-			<Box
-				sx={{ ...global.pagePadding, maxWidth: '800px', margin: 'auto' }}
-				marginTop='20px'
-			>
+            <Box
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '800px',
+                    margin: 'auto'
+                }}>
 				<Typography
 					variant='h6'
 					component='h1'
@@ -37,7 +40,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				>
 					Arbonia продает подразделение Climate за 760 миллионов евро компании Midea
 				</Typography>
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<Typography
 						style={{ ...styles.standardText }}
 						component='div'
@@ -61,8 +66,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</Typography>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlesListPage

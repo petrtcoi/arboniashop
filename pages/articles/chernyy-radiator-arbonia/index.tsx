@@ -52,32 +52,35 @@ const LinkText = ({ href, children }: { href: string; children: React.ReactNode 
 
 const Paragraph = ({ children, marginTop = '14px' }: { children: React.ReactNode; marginTop?: string }) => (
 	<Typography
-		component='p'
-		marginTop={marginTop}
-		sx={{ ...styles.standardText }}
-	>
+        component='p'
+        sx={{
+            marginTop: marginTop,
+            ...styles.standardText
+        }}>
 		{children}
 	</Typography>
 )
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 	<Typography
-		component='h2'
-		variant='h5'
-		marginTop='44px'
-		marginBottom='12px'
-	>
+        component='h2'
+        variant='h5'
+        sx={{
+            marginTop: '44px',
+            marginBottom: '12px'
+        }}>
 		{children}
 	</Typography>
 )
 
 const Subheading = ({ children }: { children: React.ReactNode }) => (
 	<Typography
-		component='h3'
-		variant='h6'
-		marginTop='30px'
-		marginBottom='10px'
-	>
+        component='h3'
+        variant='h6'
+        sx={{
+            marginTop: '30px',
+            marginBottom: '10px'
+        }}>
 		{children}
 	</Typography>
 )
@@ -110,32 +113,32 @@ const ArticlePage: NextPage = () => {
 	}
 
 	return (
-		<Box>
-			<Head>
+        <Box>
+            <Head>
 				<link
 					key='canonical'
 					rel='canonical'
 					href={`${siteUrl}/articles/${slug}`}
 				/>
 			</Head>
-			<Script
+            <Script
 				id='chernyy-radiator-arbonia-article-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
 			/>
-			<Script
+            <Script
 				id='chernyy-radiator-arbonia-breadcrumb-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
 			/>
 
-			<PageHeader
+            <PageHeader
 				title={metaTitle}
 				description={metaDescription}
 				type='article'
 				image='/images/models/2180-9005.jpeg'
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -143,17 +146,22 @@ const ArticlePage: NextPage = () => {
 				]}
 			/>
 
-			<Box
-				component='article'
-				sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto', ...styles.standardText }}
-				marginTop='20px'
-			>
+            <Box
+                component='article'
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component='h1'
-					variant='h4'
-					marginTop='10px'
-					marginBottom='24px'
-				>
+                    component='h1'
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '24px'
+                    }}>
 					{h1}
 				</Typography>
 
@@ -237,7 +245,11 @@ const ArticlePage: NextPage = () => {
 					Metallic</LinkText>.
 				</Paragraph>
 
-				<Box textAlign='center' marginY='30px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginY: '30px'
+                    }}>
 					<img
 						src='/images/models/2180-9005.jpeg'
 						alt='Черный радиатор Arbonia 2180 в цвете RAL 9005 matt'
@@ -294,7 +306,11 @@ const ArticlePage: NextPage = () => {
 					и согласуйте оттенок до изготовления или заказа.
 				</Paragraph>
 
-				<Box textAlign='center' marginY='30px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginY: '30px'
+                    }}>
 					<img
 						src='/images/articles/sf-3-0.jpeg'
 						alt='Радиатор Arbonia в цвете SF-3 Anthrazit metallic'
@@ -349,8 +365,8 @@ const ArticlePage: NextPage = () => {
 					технически и выглядеть цельно в интерьере.
 				</Paragraph>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

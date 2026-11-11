@@ -1,0 +1,1 @@
+npx tsc --noEmit passed after backup source copies were renamed with .before extensions. Final Next.js production build also passed type checking.

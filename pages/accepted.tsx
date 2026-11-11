@@ -12,63 +12,77 @@ type PageAcceptedProps = {}
 
 const PageAccepted: NextPage<PageAcceptedProps> = () => {
 	return (
-		<Box sx={{ ...global.pagePadding }}>
-			<PageHeader
+        <Box sx={{ ...global.pagePadding }}>
+            <PageHeader
 				title={'Запрос на радиаторы Arbonia принят'}
 				noindex
 			/>
 
-			<Typography
-				variant='h5'
-				component='h1'
-				gutterBottom
-				textAlign='center'
-				marginTop='30px'
-				sx={{ textTransform: 'uppercase' }}
-			>
+            <Typography
+                variant='h5'
+                component='h1'
+                gutterBottom
+                sx={{
+                    textAlign: 'center',
+                    marginTop: '30px',
+                    textTransform: 'uppercase'
+                }}>
 				Запрос был получен
 			</Typography>
-			<Typography
-				sx={{ fontSize: '14px', lineHeight: '1.5', fontWeight: 300, opacity: 0.9, letterSpacing: '0.02em' }}
-				marginTop='30px'
-				variant='body1'
-				textAlign='center'
-				maxWidth='600px'
-				marginX='auto'
-			>
+            <Typography
+                variant='body1'
+                sx={{
+                    marginTop: '30px',
+                    textAlign: 'center',
+                    maxWidth: '600px',
+                    marginX: 'auto',
+                    fontSize: '14px',
+                    lineHeight: '1.5',
+                    fontWeight: 300,
+                    opacity: 0.9,
+                    letterSpacing: '0.02em'
+                }}>
 				Спасибо за ваш запрос. Мы подготовим расчет и отправим вам предложение{' '}
 				<span style={{ fontWeight: 700, color: '#1976D2' }}>в ближайшие рабочие часы</span>. Если потребуются уточнения,
 				мы свяжемся с вами.
 			</Typography>
 
-			<Typography
-				sx={{ fontSize: '14px', lineHeight: '1.5', fontWeight: 300, opacity: 0.9, letterSpacing: '0.02em' }}
-				marginTop='30px'
-				variant='body1'
-				textAlign='center'
-				maxWidth='600px'
-				marginX='auto'
-			>
+            <Typography
+                variant='body1'
+                sx={{
+                    marginTop: '30px',
+                    textAlign: 'center',
+                    maxWidth: '600px',
+                    marginX: 'auto',
+                    fontSize: '14px',
+                    lineHeight: '1.5',
+                    fontWeight: 300,
+                    opacity: 0.9,
+                    letterSpacing: '0.02em'
+                }}>
 				Если вы выбрали <span style={{ fontWeight: 700, color: '#E53935' }}>связь через мессенджер</span>, то,
 				пожалуйста <span style={{ fontWeight: 700, color: '#E53935' }}>отправьте нам любое сообщение</span> со своей
 				учётной записи. Так диалог закрепится, и мы сможем связаться без риска, что ответ попадёт в нежелательную почту.
 			</Typography>
 
-			<Grid
-				container
-				spacing={2}
-				marginTop='30px'
-				marginX='auto'
-				maxWidth='600px'
-			>
+            <Grid
+                container
+                spacing={2}
+                sx={{
+                    marginTop: '30px',
+                    marginX: 'auto',
+                    maxWidth: '600px'
+                }}>
 				<Grid
-					item
-					xs={12}
-					md={6}
-					padding='10px'
-					width='100%'
-					maxWidth={'400px'}
-				>
+                    sx={{
+                        padding: '10px',
+                        width: '100%',
+                        maxWidth: '400px'
+                    }}
+                    size={{
+                        xs: 12,
+                        md: 6
+                    }}>
 					<a
 						href={`https://wa.me/${global.whatsApp}?text=${encodeURIComponent(
 							'Здравствуйте! Жду коммерческое предложение на радиаторы Arbonia.'
@@ -99,13 +113,15 @@ const PageAccepted: NextPage<PageAcceptedProps> = () => {
 					</a>
 				</Grid>
 				<Grid
-					item
-					xs={12}
-					md={6}
-					padding='10px'
-					justifyContent={'center'}
-					maxWidth={'400px'}
-				>
+                    sx={{
+                        padding: '10px',
+                        justifyContent: 'center',
+                        maxWidth: '400px'
+                    }}
+                    size={{
+                        xs: 12,
+                        md: 6
+                    }}>
 					<a
 						href={`https://t.me/RadiatorLuxBot`}
 						style={{ textDecoration: 'none' }}
@@ -134,8 +150,8 @@ const PageAccepted: NextPage<PageAcceptedProps> = () => {
 					</a>
 				</Grid>
 			</Grid>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default PageAccepted

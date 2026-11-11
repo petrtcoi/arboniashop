@@ -1,0 +1,29 @@
+{
+  "archive": "/private/tmp/arboniashop-clusters-20261013.tgz",
+  "bytes": 43670377,
+  "sha256": "f9f0487346c108edecb12f56e38de65b9268ecb76eccd5f59474ecd268eb3df5",
+  "build_id": "STPGep00RxoYAnvybMHaW",
+  "release": "/root/releases/arboniashop-clusters-20261013",
+  "source_roots": [
+    ".next",
+    "public",
+    "api_utils",
+    "components",
+    "contexts",
+    "data",
+    "hooks",
+    "models",
+    "pages",
+    "styles",
+    "theme",
+    "utils",
+    "variables",
+    "variablesPrices",
+    "package.json",
+    "package-lock.json",
+    "next.config.js",
+    "next-sitemap.js",
+    "tsconfig.json",
+    "next-env.d.ts"
+  ]
+}

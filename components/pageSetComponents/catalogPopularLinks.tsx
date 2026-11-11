@@ -24,15 +24,14 @@ const CatalogPopularLinks: React.FC<CatalogPopularLinksProps> = ({ current }) =>
 	const links = catalogLinks.filter(link => link.id !== current)
 
 	return (
-		<Box marginTop='60px'>
-			<Grid
+        <Box sx={{
+            marginTop: '60px'
+        }}>
+            <Grid
 				container
 				spacing={2}
 			>
-				<Grid
-					item
-					xs={12}
-				>
+				<Grid size={12}>
 					<Divider
 						variant='fullWidth'
 						textAlign='left'
@@ -47,12 +46,14 @@ const CatalogPopularLinks: React.FC<CatalogPopularLinksProps> = ({ current }) =>
 				</Grid>
 				{links.map(link => (
 					<Grid
-						item
-						xs={12}
-						md={6}
-						key={link.id}
-					>
-						<Box paddingLeft='10px'>
+                        key={link.id}
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}>
+						<Box sx={{
+                            paddingLeft: '10px'
+                        }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href={link.href}
@@ -63,8 +64,8 @@ const CatalogPopularLinks: React.FC<CatalogPopularLinksProps> = ({ current }) =>
 					</Grid>
 				))}
 			</Grid>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default CatalogPopularLinks

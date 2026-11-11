@@ -1,3 +1,5 @@
+import ProductMetadata from '../seo/ProductMetadata'
+import OfferMetadata from '../seo/OfferMetadata'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import Image from 'next/image'
 import React, { useContext } from 'react'
@@ -92,49 +94,60 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 	})
 
 	return (
-		<Box>
-			<Typography
+        <Box>
+            <Typography
 				variant='h5'
 				component='h2'
-				textAlign='left'
+				sx={{
+                    textAlign: 'left'
+                }}
 			>
 				Лидеры продаж
 			</Typography>
-			<Box
-				marginTop='20px'
-				maxWidth='700px'
-			>
+            <Box
+                sx={{
+                    marginTop: '20px',
+                    maxWidth: '700px'
+                }}>
 				<Typography sx={{ ...styles.standardText }}>
 					У нас вы можете купить широкий ассортимент трубчатых радиаторов Arbonia, включая модели, поставляемые под
 					заказ. Наиболее популярные модели поддерживаются в наличии на наших складах в Москве и Санкт-Петербурге и
 					представлены ниже. Они могут быть поставлены в любой город России в кратчайшие сроки.
 				</Typography>
 			</Box>
-			<Box
-				marginTop='40px'
-				maxWidth='1200px'
-				marginX='auto'
-				itemScope
-				itemType='https://schema.org/ItemList'
-			>
+            <Box
+                itemScope
+                itemType='https://schema.org/ItemList'
+                sx={{
+                    marginTop: '40px',
+                    maxWidth: '1200px',
+                    marginX: 'auto'
+                }}>
 				<Grid
 					container
-					alignItems={'stretch'}
 					spacing={4}
+					sx={{
+                        alignItems: 'stretch'
+                    }}
 				>
 					<Grid
-						item
-						xs={12}
-						md={4}
-						display='flex'
-						flexDirection={'column'}
-						justifyContent={'space-between'}
-						itemProp='itemListElement'
-						itemScope
-						itemType='https://schema.org/Product'
-					>
+                        itemProp='itemListElement'
+                        itemScope
+                        itemType='https://schema.org/Product'
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 2180, высота ${model2180.height} мм, глубина ${model2180.width} мм. Белое боковое исполнение RAL 9016 от 4 секций.`} sku='2180' />
 						<Box>
-							<Box textAlign='center'>
+							<Box sx={{
+                                textAlign: 'center'
+                            }}>
 								<a
 									style={{ textDecoration: 'none' }}
 									href='/models/2180'
@@ -166,39 +179,45 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									</div>
 								</a>
 							</Box>
-							<Box paddingX='15px'>
+							<Box sx={{
+                                paddingX: '15px'
+                            }}>
 								<Typography sx={{ ...styles.smallText }}>
 									Самая популярная модель трубчатого радиатора Arbonia. Подходит для установки в узких нишах. Благодаря
 									большой высоте обладает высокой теплоотдачей.
 								</Typography>
 								<Box
-									marginTop='15px'
-									display='flex'
-									flexDirection={'row'}
-									alignItems={'bottom'}
-									width='100%'
-									gap={1}
-								>
+                                    sx={{
+                                        marginTop: '15px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'bottom',
+                                        width: '100%',
+                                        gap: 1
+                                    }}>
 									<Box sx={{ ...styles.smallText }}>Тип модели</Box>
 									<Box
-										sx={{ borderBottom: '1px dotted black' }}
-										flexGrow={1}
-									/>
+                                        sx={{
+                                            flexGrow: 1,
+                                            borderBottom: '1px dotted black'
+                                        }} />
 									<Box sx={{ ...styles.smallText }}>2-трубчатый радиатор</Box>
 								</Box>
 								<Box
-									marginTop='7px'
-									display='flex'
-									flexDirection={'row'}
-									alignItems={'bottom'}
-									width='100%'
-									gap={1}
-								>
+                                    sx={{
+                                        marginTop: '7px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'bottom',
+                                        width: '100%',
+                                        gap: 1
+                                    }}>
 									<Box sx={{ ...styles.smallText }}>Высота</Box>
 									<Box
-										sx={{ borderBottom: '1px dotted black' }}
-										flexGrow={1}
-									/>
+                                        sx={{
+                                            flexGrow: 1,
+                                            borderBottom: '1px dotted black'
+                                        }} />
 									<Box
 										sx={{ ...styles.smallText }}
 										itemProp='height'
@@ -207,18 +226,20 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									</Box>
 								</Box>
 								<Box
-									marginTop='7px'
-									display='flex'
-									flexDirection={'row'}
-									alignItems={'bottom'}
-									width='100%'
-									gap={1}
-								>
+                                    sx={{
+                                        marginTop: '7px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'bottom',
+                                        width: '100%',
+                                        gap: 1
+                                    }}>
 									<Box sx={{ ...styles.smallText }}>Толщина</Box>
 									<Box
-										sx={{ borderBottom: '1px dotted black' }}
-										flexGrow={1}
-									/>
+                                        sx={{
+                                            flexGrow: 1,
+                                            borderBottom: '1px dotted black'
+                                        }} />
 									<Box
 										sx={{ ...styles.smallText }}
 										itemProp='depth'
@@ -227,96 +248,109 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 									</Box>
 								</Box>
 								<Box
-									marginTop='7px'
-									display='flex'
-									flexDirection={'row'}
-									alignItems={'bottom'}
-									width='100%'
-									gap={1}
-								>
+                                    sx={{
+                                        marginTop: '7px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'bottom',
+                                        width: '100%',
+                                        gap: 1
+                                    }}>
 									<Box sx={{ ...styles.smallText }}>Мощность секции (ΔT=60°)</Box>
 									<Box
-										sx={{ borderBottom: '1px dotted black' }}
-										flexGrow={1}
-									/>
+                                        sx={{
+                                            flexGrow: 1,
+                                            borderBottom: '1px dotted black'
+                                        }} />
 									<Box sx={{ ...styles.smallText }}>164 Вт</Box>
 								</Box>
 								<Box
-									marginTop='7px'
-									display='flex'
-									flexDirection={'row'}
-									alignItems={'bottom'}
-									width='100%'
-									gap={1}
-								>
+                                    sx={{
+                                        marginTop: '7px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'bottom',
+                                        width: '100%',
+                                        gap: 1
+                                    }}>
 									<Box sx={{ ...styles.smallText }}>Подключения</Box>
 									<Box
-										sx={{ borderBottom: '1px dotted black' }}
-										flexGrow={1}
-									/>
+                                        sx={{
+                                            flexGrow: 1,
+                                            borderBottom: '1px dotted black'
+                                        }} />
 									<Box sx={{ ...styles.smallText }}>боковое и нижнее</Box>
 								</Box>
 								<Box
-									marginTop='7px'
-									display='flex'
-									flexDirection={'row'}
-									alignItems={'bottom'}
-									width='100%'
-									gap={1}
-								>
+                                    sx={{
+                                        marginTop: '7px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'bottom',
+                                        width: '100%',
+                                        gap: 1
+                                    }}>
 									<Box sx={{ ...styles.smallText }}>Цвета в наличии</Box>
 									<Box
-										sx={{ borderBottom: '1px dotted black' }}
-										flexGrow={1}
-									/>
+                                        sx={{
+                                            flexGrow: 1,
+                                            borderBottom: '1px dotted black'
+                                        }} />
 									<Box sx={{ ...styles.smallText }}>белый, RAL 7016, SF-3</Box>
 								</Box>
 								<Box
-									marginTop='7px'
-									display='flex'
-									flexDirection={'row'}
-									alignItems={'bottom'}
-									width='100%'
-									gap={1}
-								>
+                                    sx={{
+                                        marginTop: '7px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'bottom',
+                                        width: '100%',
+                                        gap: 1
+                                    }}>
 									<Box sx={{ ...styles.smallText }}>Число секций в наличии</Box>
 									<Box
-										sx={{ borderBottom: '1px dotted black' }}
-										flexGrow={1}
-									/>
+                                        sx={{
+                                            flexGrow: 1,
+                                            borderBottom: '1px dotted black'
+                                        }} />
 									<Box sx={{ ...styles.smallText }}>от 4 до 12</Box>
 								</Box>
 								<Box
-									marginTop='12px'
-									display='flex'
-									flexDirection={'row'}
-									alignItems={'bottom'}
-									width='100%'
-									gap={1}
-									itemProp='offers'
-									itemScope
-									itemType='https://schema.org/AggregateOffer'
-								>
+                                    itemProp='offers'
+                                    itemScope
+                                    itemType='https://schema.org/Offer'
+                                    sx={{
+                                        marginTop: '12px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'bottom',
+                                        width: '100%',
+                                        gap: 1
+                                    }}>
+									<OfferMetadata inStock={model2180.inStock === 'true'} url='https://arboniashop.ru/models/2180-9016-12/4' />
 									<meta
 										itemProp='priceCurrency'
 										content='RUB'
 									/>
 									<meta
-										itemProp='lowPrice'
+										itemProp='price'
 										content={model2180MinPrice.noConsole.toString()}
 									/>
 									<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
 									<Box
-										sx={{ borderBottom: '1px dotted black' }}
-										flexGrow={1}
-									/>
+                                        sx={{
+                                            flexGrow: 1,
+                                            borderBottom: '1px dotted black'
+                                        }} />
 									<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
 										от {formatPrice(model2180MinPrice.noConsole)} руб.
 									</Box>
 								</Box>
 							</Box>
 						</Box>
-						<Box marginTop='25px'>
+						<Box sx={{
+                            marginTop: '25px'
+                        }}>
 							<Button
 								fullWidth
 								variant='outlined'
@@ -328,17 +362,22 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={4}
-						display='flex'
-						flexDirection={'column'}
-						justifyContent={'space-between'}
-						itemProp='itemListElement'
-						itemScope
-						itemType='https://schema.org/Product'
-					>
-						<Box textAlign='center'>
+                        itemProp='itemListElement'
+                        itemScope
+                        itemType='https://schema.org/Product'
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 3057, высота ${model3057.height} мм, глубина ${model3057.width} мм. Белое боковое исполнение RAL 9016 от 8 секций.`} sku='3057' />
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/models/3057'
@@ -370,40 +409,46 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</div>
 							</a>
 						</Box>
-						<Box paddingX='15px'>
+						<Box sx={{
+                            paddingX: '15px'
+                        }}>
 							<Typography sx={{ ...styles.smallText }}>
 								Трехтрубчатый горизонтальный радиатор для установки под окна. При боковом подключении имеет стандартное
 								межосевое расстояние 500 мм, которое позволяет устанавливать его вместо старых алюминиевых или чугунных
 								батарей.
 							</Typography>
 							<Box
-								marginTop='15px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '15px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Тип модели</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>3-трубчатый радиатор</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Высота</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='height'
@@ -412,18 +457,20 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Толщина</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='depth'
@@ -432,94 +479,107 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Мощность секции (ΔT=60°)</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>78 Вт</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Подключения</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>боковое и нижнее</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Цвета в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>белый</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Число секций в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>от 8 до 30</Box>
 							</Box>
 							<Box
-								marginTop='12px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-								itemProp='offers'
-								itemScope
-								itemType='https://schema.org/AggregateOffer'
-							>
+                                itemProp='offers'
+                                itemScope
+                                itemType='https://schema.org/Offer'
+                                sx={{
+                                    marginTop: '12px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
+									<OfferMetadata inStock={model3057.inStock === 'true'} url='https://arboniashop.ru/models/3057-9016-12/8' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model3057MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
 									от {formatPrice(model3057MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
-							<Box marginTop='25px'>
+							<Box sx={{
+                                marginTop: '25px'
+                            }}>
 								<Button
 									fullWidth
 									variant='outlined'
@@ -532,17 +592,22 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={4}
-						display='flex'
-						flexDirection={'column'}
-						justifyContent={'space-between'}
-						itemProp='itemListElement'
-						itemScope
-						itemType='https://schema.org/Product'
-					>
-						<Box textAlign='center'>
+                        itemProp='itemListElement'
+                        itemScope
+                        itemType='https://schema.org/Product'
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 3180, высота ${model3180.height} мм, глубина ${model3180.width} мм. Белое боковое исполнение RAL 9016 от 4 секций.`} sku='3180' />
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/models/3180'
@@ -574,39 +639,45 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</div>
 							</a>
 						</Box>
-						<Box paddingX='15px'>
+						<Box sx={{
+                            paddingX: '15px'
+                        }}>
 							<Typography sx={{ ...styles.smallText }}>
 								Трехтрубчатый вертикальный радиатор. Обладает наибольшей мощностью среди всех складских моделей Arbonia.
 								Подходит для установки в больших помещениях с высокими потолками.
 							</Typography>
 							<Box
-								marginTop='15px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '15px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Тип модели</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>3-трубчатый радиатор</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Высота</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='height'
@@ -615,18 +686,20 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Толщина</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='depth'
@@ -635,94 +708,107 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Мощность секции (ΔT=60°)</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>219 Вт</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Подключения</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>боковое и нижнее</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Цвета в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>белый</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Число секций в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>от 4 до 12</Box>
 							</Box>
 							<Box
-								marginTop='12px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-								itemProp='offers'
-								itemScope
-								itemType='https://schema.org/AggregateOffer'
-							>
+                                itemProp='offers'
+                                itemScope
+                                itemType='https://schema.org/Offer'
+                                sx={{
+                                    marginTop: '12px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
+									<OfferMetadata inStock={model3180.inStock === 'true'} url='https://arboniashop.ru/models/3180-9016-12/4' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model3180MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
 									от {formatPrice(model3180MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
-							<Box marginTop='25px'>
+							<Box sx={{
+                                marginTop: '25px'
+                            }}>
 								<Button
 									fullWidth
 									variant='outlined'
@@ -735,17 +821,22 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={4}
-						display='flex'
-						flexDirection={'column'}
-						justifyContent={'space-between'}
-						itemProp='itemListElement'
-						itemScope
-						itemType='https://schema.org/Product'
-					>
-						<Box textAlign='center'>
+                        itemProp='itemListElement'
+                        itemScope
+                        itemType='https://schema.org/Product'
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 3030, высота ${model3030.height} мм, глубина ${model3030.width} мм. Белое боковое исполнение RAL 9016 от 10 секций.`} sku='3030' />
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/models/3030'
@@ -777,39 +868,45 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</div>
 							</a>
 						</Box>
-						<Box paddingX='15px'>
+						<Box sx={{
+                            paddingX: '15px'
+                        }}>
 							<Typography sx={{ ...styles.smallText }}>
 								Низкий 3-трубчатый радиатор. Высота: 30 см. Боковое и нижнее подключение. В наличии в белом цвете.
 								Подходит для установки под окна с низкими подоконниками.
 							</Typography>
 							<Box
-								marginTop='15px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '15px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Тип модели</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>3-трубчатый радиатор</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Высота</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='height'
@@ -818,18 +915,20 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Толщина</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='depth'
@@ -838,94 +937,107 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Мощность секции (ΔT=60°)</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>41 Вт</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Подключения</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>боковое и нижнее</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Цвета в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>белый</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Число секций в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>от 10 до 32</Box>
 							</Box>
 							<Box
-								marginTop='12px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-								itemProp='offers'
-								itemScope
-								itemType='https://schema.org/AggregateOffer'
-							>
+                                itemProp='offers'
+                                itemScope
+                                itemType='https://schema.org/Offer'
+                                sx={{
+                                    marginTop: '12px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
+									<OfferMetadata inStock={model3030.inStock === 'true'} url='https://arboniashop.ru/models/3030-9016-12/10' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model3030MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
 									от {formatPrice(model3030MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
-							<Box marginTop='25px'>
+							<Box sx={{
+                                marginTop: '25px'
+                            }}>
 								<Button
 									fullWidth
 									variant='outlined'
@@ -938,17 +1050,22 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={4}
-						display='flex'
-						flexDirection={'column'}
-						justifyContent={'space-between'}
-						itemProp='itemListElement'
-						itemScope
-						itemType='https://schema.org/Product'
-					>
-						<Box textAlign='center'>
+                        itemProp='itemListElement'
+                        itemScope
+                        itemType='https://schema.org/Product'
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 2050, высота ${model2050.height} мм, глубина ${model2050.width} мм. Белое боковое исполнение RAL 9016 от 8 секций.`} sku='2050' />
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/models/2050'
@@ -980,39 +1097,45 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</div>
 							</a>
 						</Box>
-						<Box paddingX='15px'>
+						<Box sx={{
+                            paddingX: '15px'
+                        }}>
 							<Typography sx={{ ...styles.smallText }}>
 								Плоский двухтрубчатый радиатор высотой. Стандартная высота 50 см - для установки под окна. Боковое и
 								нижнее подключение. В наличии в белом цвете.
 							</Typography>
 							<Box
-								marginTop='15px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '15px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Тип модели</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>2-трубчатый радиатор</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Высота</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='height'
@@ -1021,18 +1144,20 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Толщина</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='depth'
@@ -1041,94 +1166,107 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Мощность секции (ΔT=60°)</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>49 Вт</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Подключения</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>боковое и нижнее</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Цвета в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>белый</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Число секций в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>от 8 до 30</Box>
 							</Box>
 							<Box
-								marginTop='12px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-								itemProp='offers'
-								itemScope
-								itemType='https://schema.org/AggregateOffer'
-							>
+                                itemProp='offers'
+                                itemScope
+                                itemType='https://schema.org/Offer'
+                                sx={{
+                                    marginTop: '12px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
+									<OfferMetadata inStock={model2050.inStock === 'true'} url='https://arboniashop.ru/models/2050-9016-12/8' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model2050MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
 									от {formatPrice(model2050MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
-							<Box marginTop='25px'>
+							<Box sx={{
+                                marginTop: '25px'
+                            }}>
 								<Button
 									fullWidth
 									variant='outlined'
@@ -1141,17 +1279,22 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					</Grid>
 
 					<Grid
-						item
-						xs={12}
-						md={4}
-						display='flex'
-						flexDirection={'column'}
-						justifyContent={'space-between'}
-						itemProp='itemListElement'
-						itemScope
-						itemType='https://schema.org/Product'
-					>
-						<Box textAlign='center'>
+                        itemProp='itemListElement'
+                        itemScope
+                        itemType='https://schema.org/Product'
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between'
+                        }}
+                        size={{
+                            xs: 12,
+                            md: 4
+                        }}>
+						<ProductMetadata description={`Трубчатый радиатор Arbonia 3050, высота ${model3050.height} мм, глубина ${model3050.width} мм. Белое боковое исполнение RAL 9016 от 8 секций.`} sku='3050' />
+						<Box sx={{
+                            textAlign: 'center'
+                        }}>
 							<a
 								style={{ textDecoration: 'none' }}
 								href='/models/3050'
@@ -1183,39 +1326,45 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</div>
 							</a>
 						</Box>
-						<Box paddingX='15px'>
+						<Box sx={{
+                            paddingX: '15px'
+                        }}>
 							<Typography sx={{ ...styles.smallText }}>
 								Трехтрубчатый радиатор высотой 50 см. Боковое и нижнее подключение. В наличии в белом цвете. Модель
 								является более мощной, чем 2050.
 							</Typography>
 							<Box
-								marginTop='15px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '15px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Тип модели</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>3-трубчатый радиатор</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Высота</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='height'
@@ -1224,18 +1373,20 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Толщина</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box
 									sx={{ ...styles.smallText }}
 									itemProp='depth'
@@ -1244,94 +1395,107 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 								</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Мощность секции (ΔT=60°)</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>68 Вт</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Подключения</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>боковое и нижнее</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Цвета в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>белый</Box>
 							</Box>
 							<Box
-								marginTop='7px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-							>
+                                sx={{
+                                    marginTop: '7px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
 								<Box sx={{ ...styles.smallText }}>Число секций в наличии</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText }}>от 8 до 30</Box>
 							</Box>
 							<Box
-								marginTop='12px'
-								display='flex'
-								flexDirection={'row'}
-								alignItems={'bottom'}
-								width='100%'
-								gap={1}
-								itemProp='offers'
-								itemScope
-								itemType='https://schema.org/AggregateOffer'
-							>
+                                itemProp='offers'
+                                itemScope
+                                itemType='https://schema.org/Offer'
+                                sx={{
+                                    marginTop: '12px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'bottom',
+                                    width: '100%',
+                                    gap: 1
+                                }}>
+									<OfferMetadata inStock={model3050.inStock === 'true'} url='https://arboniashop.ru/models/3050-9016-12/8' />
 								<meta
 									itemProp='priceCurrency'
 									content='RUB'
 								/>
 								<meta
-									itemProp='lowPrice'
+									itemProp='price'
 									content={model3050MinPrice.noConsole.toString()}
 								/>
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>Цена</Box>
 								<Box
-									sx={{ borderBottom: '1px dotted black' }}
-									flexGrow={1}
-								/>
+                                    sx={{
+                                        flexGrow: 1,
+                                        borderBottom: '1px dotted black'
+                                    }} />
 								<Box sx={{ ...styles.smallText, fontWeight: 600 }}>
 									от {formatPrice(model3050MinPrice.noConsole)} руб.
 								</Box>
 							</Box>
-							<Box marginTop='25px'>
+							<Box sx={{
+                                marginTop: '25px'
+                            }}>
 								<Button
 									fullWidth
 									variant='outlined'
@@ -1344,8 +1508,8 @@ const Bestsellers: React.FC<BestsellersProps> = props => {
 					</Grid>
 				</Grid>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default Bestsellers

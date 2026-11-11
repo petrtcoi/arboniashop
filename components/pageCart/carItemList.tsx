@@ -30,8 +30,8 @@ const CartItemList: React.FC<CartItemListProps> = ({ items, showSummary = true }
 	}, [items, consoleType])
 
 	return (
-		<Box>
-			<TableContainer>
+        <Box>
+            <TableContainer>
 				<Table
 					sx={{ maxWidth: '1000px', minWidth: '500px' }}
 					size='small'
@@ -98,14 +98,22 @@ const CartItemList: React.FC<CartItemListProps> = ({ items, showSummary = true }
 					</TableBody>
 				</Table>
 			</TableContainer>
-			<Box marginTop='10px'>
+            <Box sx={{
+                marginTop: '10px'
+            }}>
 				<Typography sx={styles.smallTextThin}>&#42;Цена может не соответствовать сумме из-за округления</Typography>
 			</Box>
-			<Box marginTop='60px'>
+            <Box sx={{
+                marginTop: '60px'
+            }}>
 				<Typography sx={{ ...styles.standardText }}>Включать кронштейны в спецификацию:</Typography>
-				<Box marginTop='20px' />
+				<Box sx={{
+                    marginTop: '20px'
+                }} />
 				<ConsoleSwitch />
-				<Box marginTop='20px' />
+				<Box sx={{
+                    marginTop: '20px'
+                }} />
 				<Typography sx={{ ...styles.smallText }}>
 					*Автоматический подбор кронштейнов явялется приблизительным.
 					<br />
@@ -114,8 +122,8 @@ const CartItemList: React.FC<CartItemListProps> = ({ items, showSummary = true }
 					продавец при согласовании заказа.
 				</Typography>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default CartItemList

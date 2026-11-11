@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-10-13",
+  "status": "published",
+  "count_method": "Visible body text, including headings and table values; hyperlinks count by label only. Words contain letters or numbers, hyphenated words are counted as one.",
+  "articles": [
+    {
+      "slug": "ral-9016-9010-9003-kakoy-belyy-vybrat",
+      "words_including_headings_and_tables": 956,
+      "characters_without_spaces": 5776,
+      "links": 12
+    },
+    {
+      "slug": "arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+      "words_including_headings_and_tables": 1006,
+      "characters_without_spaces": 5863,
+      "links": 8
+    },
+    {
+      "slug": "radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+      "words_including_headings_and_tables": 988,
+      "characters_without_spaces": 6509,
+      "links": 9
+    }
+  ],
+  "checks": [
+    "One H1 per article",
+    "No remaining placeholders",
+    "All links use HTTPS",
+    "All 12 power-table rows match catalogue parameters",
+    "800 W and 1000 W examples use correct ceiling and next listed size",
+    "1000 mm length example uses correct floor and listed size",
+    "560 mm niche example verified",
+    "Caparol neutral / warm / cool descriptions checked against primary page",
+    "Section counts 14, 18, 22 and values 33 / 41 checked against catalogue",
+    "Nominal length L = 45*N checked against Arbonia technical drawing page 72",
+    "26 mm treated only as shop-card formula, without assigning to fittings",
+    "RAL 840-HR verified as semi-matt",
+    "All seven primary-source URLs return HTTP 200"
+  ],
+  "public_verification": "/Users/petrtcoi/Desktop/_code/arboniashop/audit/2026-10-13/production-articles-verification.json"
+}

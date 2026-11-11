@@ -26,15 +26,32 @@ const LinkText = ({ href, children }: { href: string; children: React.ReactNode 
 )
 
 const Paragraph = ({ children, marginTop = '14px' }: { children: React.ReactNode; marginTop?: string }) => (
-	<Typography component='p' marginTop={marginTop} sx={{ ...styles.standardText }}>{children}</Typography>
+	<Typography
+        component='p'
+        sx={{
+            marginTop: marginTop,
+            ...styles.standardText
+        }}>{children}</Typography>
 )
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
-	<Typography component='h2' variant='h5' marginTop='44px' marginBottom='12px'>{children}</Typography>
+	<Typography
+        component='h2'
+        variant='h5'
+        sx={{
+            marginTop: '44px',
+            marginBottom: '12px'
+        }}>{children}</Typography>
 )
 
 const Subheading = ({ children }: { children: React.ReactNode }) => (
-	<Typography component='h3' variant='h6' marginTop='30px' marginBottom='10px'>{children}</Typography>
+	<Typography
+        component='h3'
+        variant='h6'
+        sx={{
+            marginTop: '30px',
+            marginBottom: '10px'
+        }}>{children}</Typography>
 )
 
 const faqItems = [
@@ -108,23 +125,37 @@ const ArticlePage: NextPage = () => {
 	}
 
 	return (
-		<Box>
-			<Head>
+        <Box>
+            <Head>
 				<link key='canonical' rel='canonical' href={`${siteUrl}/articles/${slug}`} />
 				<script id={`${slug}-article-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 				<script id={`${slug}-breadcrumb-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 				<script id={`${slug}-faq-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 			</Head>
 
-			<PageHeader title={metaTitle} description={metaDescription} type='article' image='/images/models/2050-0.jpg' />
-			<PageTitle breadcrumbs={[
+            <PageHeader title={metaTitle} description={metaDescription} type='article' image='/images/models/2050-0.jpg' />
+            <PageTitle breadcrumbs={[
 				{ title: 'Главная', link: '/' },
 				{ title: 'Полезная информация', link: '/articles' },
 				{ title: h1, link: `/articles/${slug}` },
 			]} />
 
-			<Box component='article' sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto', ...styles.standardText }} marginTop='20px'>
-				<Typography component='h1' variant='h4' marginTop='10px' marginBottom='24px'>{h1}</Typography>
+            <Box
+                component='article'
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
+				<Typography
+                    component='h1'
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '24px'
+                    }}>{h1}</Typography>
 
 				<Paragraph marginTop='0'>
 					Если вы выбираете <strong>Arbonia 2050 или 3050</strong>, берите 2050 для минимальной глубины и более легкого вида, а 3050 - когда нужно больше мощности на коротком участке стены. Обе модели имеют высоту 500 мм, но корпус 2050 глубиной 65 мм, а 3050 - 105 мм. При одинаковом ΔT секция 3050 мощнее примерно на 36-39%. Поэтому правильный выбор зависит от теплопотерь, доступной длины и прохода перед радиатором. Цвет и подключение сравнивают уже после расчета.
@@ -163,7 +194,11 @@ const ArticlePage: NextPage = () => {
 					Arbonia 3050 имеет третий ряд труб и глубину 105 мм, поэтому при одинаковом числе секций отдает больше тепла. Модель полезна под узким окном, в угловой комнате или в помещении с повышенными теплопотерями, где длинный 2050 физически не помещается. Она выглядит плотнее и сильнее выступает в комнату, что нужно заранее проверить относительно штор, мебели и прохода. Можно конечно взять еще более длинный 2050, но это решение работает только при свободной ширине и правильном подключении. Актуальные складские варианты собраны на странице <LinkText href='/models/3050'>Arbonia 3050</LinkText>.
 				</Paragraph>
 
-				<Box textAlign='center' marginY='30px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginY: '30px'
+                    }}>
 					<img src='/images/models/2050-0.jpg' alt='Сравнение двухтрубчатого Arbonia 2050 и трехтрубчатого Arbonia 3050' style={{ maxWidth: '100%', height: 'auto' }} width={760} />
 				</Box>
 
@@ -219,28 +254,49 @@ const ArticlePage: NextPage = () => {
 
 				<SectionHeading>Частые вопросы</SectionHeading>
 				{faqItems.map(item => (
-					<Box key={item.question} marginTop='24px'>
+					<Box key={item.question} sx={{
+                        marginTop: '24px'
+                    }}>
 						<Typography component='h3' variant='h6' sx={{ fontSize: '17px' }}>{item.question}</Typography>
 						<Paragraph marginTop='8px'>{item.answer}</Paragraph>
 					</Box>
 				))}
 
-				<Box marginTop='52px' padding='25px' sx={{ backgroundColor: '#f6f6f6', border: '1px solid #e5e5e5' }}>
-					<Grid container spacing={2} alignItems='center'>
-						<Grid item xs={12} md={8}>
+				<Box
+                    sx={{
+                        marginTop: '52px',
+                        padding: '25px',
+                        backgroundColor: '#f6f6f6',
+                        border: '1px solid #e5e5e5'
+                    }}>
+					<Grid container spacing={2} sx={{
+                        alignItems: 'center'
+                    }}>
+						<Grid
+                            size={{
+                                xs: 12,
+                                md: 8
+                            }}>
 							<Typography component='h2' variant='h5'>Получить расчет Arbonia 2050 и 3050</Typography>
 							<Paragraph marginTop='10px'>
 								Пришлите размеры ниши, фотографию стены и труб, площадь, высоту потолка и температурный режим системы, если он известен. Мы посчитаем обе модели при одинаковом ΔT, покажем число секций, длину и полный вылет от стены. В результате будет видно, стоит ли экономить глубину с 2050 или длину стены с 3050. Одновременно проверим складское подключение, цвет и монтажные ограничения.
 							</Paragraph>
 						</Grid>
-						<Grid item xs={12} md={4} textAlign={{ xs: 'left', md: 'right' }}>
+						<Grid
+                            sx={{
+                                textAlign: { xs: 'left', md: 'right' }
+                            }}
+                            size={{
+                                xs: 12,
+                                md: 4
+                            }}>
 							<a href='/request' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Получить расчет</Button></a>
 						</Grid>
 					</Grid>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

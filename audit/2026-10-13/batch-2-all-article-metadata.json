@@ -1,0 +1,331 @@
+[
+  {
+    "slug": "kogda-vertikalnyy-radiator-arbonia-ne-podkhodit",
+    "title": "Когда вертикальный радиатор Arbonia не подходит - честный разбор",
+    "description": "Разбираем, в каких случаях вертикальный радиатор Arbonia не является лучшим решением: большие теплопотери у окна, недостаточная ширина теплоотдачи, ошибки выбора радиатора только из-за дизайна.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/kogda-vertikalnyy-radiator-arbonia-ne-podkhodit"
+  },
+  {
+    "slug": "radiator-postoyanno-vyklyuchaetsya",
+    "title": "Почему радиатор постоянно выключается - причины и решения",
+    "description": "Почему радиатор постоянно выключается - быстрые проверки, таблица-диагностика и понятные решения: TRV, температура котла, воздух, клапаны, шлам.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/radiator-postoyanno-vyklyuchaetsya"
+  },
+  {
+    "slug": "montazh-vysokih-radiatorov-arbonia-instrukciya",
+    "title": "Монтаж Arbonia 2180 и 3180: масса, крепления и фиксация корпуса 1800 мм",
+    "description": "Как подготовить установку высоких Arbonia 2180 и 3180: масса с теплоносителем, несущая стена, совместимый комплект и фиксация от смещения.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/montazh-vysokih-radiatorov-arbonia-instrukciya"
+  },
+  {
+    "slug": "belye-radiatory-v-temnom-interiere",
+    "title": "Белые радиаторы в темном интерьере: правила идеального сочетания",
+    "description": "Разбираемся, как вписать белый радиатор Arbonia RAL 9016 в темный интерьер без эффекта «больничной палаты». Практические правила, таблица сочетаний, советы по арматуре и освещению.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/belye-radiatory-v-temnom-interiere"
+  },
+  {
+    "slug": "delta-t-teplootdacha",
+    "title": "Теплоотдача радиатора Arbonia - влияние ΔT",
+    "description": "Почему теплоотдача радиатора Arbonia меняется при ΔT: как сравнивать паспортную мощность, учитывать температурный график и выбрать число секций без ошибки.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/delta-t-teplootdacha"
+  },
+  {
+    "slug": "trubchatye-radiatory-dlya-kvartiry",
+    "title": "Трубчатый радиатор в квартире: совместимость с системой и подготовка замены",
+    "description": "Что проверить перед установкой трубчатого радиатора в квартире: параметры системы дома, стояк, схема подключения, мощность старого прибора и порядок работ.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/trubchatye-radiatory-dlya-kvartiry"
+  },
+  {
+    "slug": "arbonia-2180-interior",
+    "title": "Arbonia 2180 в интерьере - как вертикальный радиатор меняет пространство",
+    "description": "Как Arbonia 2180 влияет на восприятие пространства. Лофт, минимализм и неоклассика, визуальное увеличение высоты потолков и практические советы по размещению.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-2180-interior"
+  },
+  {
+    "slug": "trubchatye-ili-bimetallicheskie-radiatory",
+    "title": "Трубчатые или биметаллические радиаторы: что лучше выбрать",
+    "description": "Сравниваем стальные трубчатые и биметаллические радиаторы для квартиры и дома: давление, мощность, размеры, уход, подключение, дизайн и ограничения системы отопления.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/trubchatye-ili-bimetallicheskie-radiatory"
+  },
+  {
+    "slug": "ral-9016-pochemu-vybirayut-arkhitektory",
+    "title": "RAL 9016: какой это цвет радиатора Arbonia",
+    "description": "Что означает белый RAL 9016 и как он выглядит на радиаторе Arbonia. Освещение, блеск покрытия, сочетание со стеной и проверка образцов перед заказом.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/ral-9016-pochemu-vybirayut-arkhitektory"
+  },
+  {
+    "slug": "vertical-vs-horizontal",
+    "title": "Какой радиатор выбрать: вертикальный или горизонтальный",
+    "description": "Подробно разбираем, какой радиатор лучше для вашей комнаты - вертикальный или горизонтальный. Объясняем отличия по теплоотдаче, экономии места, дизайну и установке.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/vertical-vs-horizontal"
+  },
+  {
+    "slug": "calculate",
+    "title": "Какая мощность отопления нужна комнате: проект, теплопотери и предварительная оценка",
+    "description": "Как определить требуемую тепловую нагрузку перед выбором радиатора Arbonia: данные проекта, расчёт теплопотерь, замена старого прибора и ограничения формул по площади.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/calculate"
+  },
+  {
+    "slug": "montazh-radiatorov-arbonia-rekomendacii",
+    "title": "Монтаж радиатора Arbonia: подготовка, подключение и проверка после установки",
+    "description": "Общая последовательность монтажа Arbonia: проверка комплектации и стены, разметка, подключение, заполнение, удаление воздуха и проверка герметичности.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/montazh-radiatorov-arbonia-rekomendacii"
+  },
+  {
+    "slug": "low-models",
+    "title": "Низкие Arbonia 2030, 3030 и 3037: сравнение высоты, глубины и мощности",
+    "description": "Сравниваем Arbonia 2030, 3030 и 3037: высота 300 или 370 мм, глубина 65 или 105 мм и мощность при ΔT50. Как выбрать модель по ограничениям ниши.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/low-models"
+  },
+  {
+    "slug": "high-arbonia",
+    "title": "Как выбрать высокий радиатор Arbonia для простенка и планировки комнаты",
+    "description": "Проверяем место для вертикального Arbonia: высоту и ширину простенка, открывание дверей, мебель, подводки и распределение тепла в комнате.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/high-arbonia"
+  },
+  {
+    "slug": "nizkiy-arbonia-ili-vnutripolnyy-konvektor",
+    "title": "Низкий Arbonia или внутрипольный конвектор: сравнение",
+    "description": "Низкий Arbonia или внутрипольный конвектор у панорамного окна: холодный поток от стекла, размеры ниши, пример мощности KRP91, вентилятор и стоимость установки.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/nizkiy-arbonia-ili-vnutripolnyy-konvektor"
+  },
+  {
+    "slug": "arbonia-3180-ral-9016-vs-anthracite",
+    "title": "Цвет имеет значение: RAL 9016 или Anthracite Metallic для Arbonia 3180?",
+    "description": "Что выбрать для вертикального радиатора Arbonia 3180: белый RAL 9016 или Anthracite Metallic? Разбор по стилю, практичности, освещению и арматуре + таблица быстрого выбора.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-3180-ral-9016-vs-anthracite"
+  },
+  {
+    "slug": "mezhosevoe-rasstoyanie-500-mm-arbonia",
+    "title": "Межосевое 500 мм Arbonia: измерение и геометрия подключения",
+    "description": "Что означает межосевое 500 мм у Arbonia 2057 и 3057. Измерение центров труб, высоты осей, положения относительно стены и свободного места для арматуры.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/mezhosevoe-rasstoyanie-500-mm-arbonia"
+  },
+  {
+    "slug": "arbonia-2180-po-ploshadi",
+    "title": "Калькулятор Arbonia 2180 — подбор секций по площади и температуре",
+    "description": "Калькулятор секций Arbonia 2180: площадь, высота потолков, условия помещения и температурный режим ΔT=50 или 60 °C. Предварительный расчёт мощности перед подбором.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-2180-po-ploshadi"
+  },
+  {
+    "slug": "gde-razmestit-radiator-otopleniya",
+    "title": "Где установить радиатор: расстояние от пола, стены и подоконника",
+    "description": "Где установить радиатор отопления и какие зазоры оставить до пола, стены, подоконника, мебели и штор. Размещение под окном, в нише и на простенке, частые ошибки монтажа.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya"
+  },
+  {
+    "slug": "care",
+    "title": "Правильный уход за радиаторами Arbonia: чистота и долговечность",
+    "description": "Узнайте, как правильно чистить трубчатые радиаторы Arbonia, какие средства использовать, как ухаживать за покрытием и что делать при появлении царапин, чтобы ваши радиаторы служили долго и выглядели как новые.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/care"
+  },
+  {
+    "slug": "arbonia-2180-calc",
+    "title": "Arbonia 2180 — таблица секций для комнаты 10–20 м²",
+    "description": "Готовые примеры расчёта секций Arbonia 2180 для комнат 10, 12, 15, 16, 18 и 20 м². Таблица при ΔT=50 и 60 °C, выбор складского размера и ограничения метода.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-2180-calc"
+  },
+  {
+    "slug": "calc-radiators-by-old-ones",
+    "title": "Подбор радиаторов Arbonia на основе уже установленных радиаторов",
+    "description": "При покупке радиаторов Arbonia необходимо определиться с требуемой мощностью. Только после этого можно переходить к выбору конкретной модели и его местоположению в помещении. В этой статье мы рассмотрим наиболее простой и эффективный вариант подбора радиаторов по мощности.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/calc-radiators-by-old-ones"
+  },
+  {
+    "slug": "montazh-arbonia-2180-na-gkl",
+    "title": "Arbonia 2180 на гипсокартонной стене: закладные и передача нагрузки",
+    "description": "Как подготовить гипсокартонную стену под Arbonia 2180: определить основание, согласовать закладные с креплениями и проверить массу заполненного прибора.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/montazh-arbonia-2180-na-gkl"
+  },
+  {
+    "slug": "radiatory-arbonia-pod-okno",
+    "title": "Arbonia под стандартное окно: выбор между 2050, 2057, 3050 и 3057",
+    "description": "Как выбрать радиатор Arbonia высотой 500 или 570 мм под обычное окно: таблица 2050, 2057, 3050, 3057, глубина, мощность при ΔT50 и место для подключения.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/radiatory-arbonia-pod-okno"
+  },
+  {
+    "slug": "arbonia-2050-ili-3050",
+    "title": "Arbonia 2050 или 3050 - сравнение радиаторов",
+    "description": "Arbonia 2050 или 3050: сравниваем глубину 65 и 105 мм, мощность, число секций, длину и место под окном, чтобы выбрать двух- или трехтрубную модель.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-2050-ili-3050"
+  },
+  {
+    "slug": "convection-radiaton-arbonia",
+    "title": "Радиаторы Arbonia: способы передачи тепла, конвекция и тепловое излучение",
+    "description": "Трубчатые радиаторы Arbonia передают тепло как с помощью теплового излучения, так и с помощью конвекции. Какой вид передачи тепла эффективнее? Какие у каждого есть преимущества и недостатки? Разбираем в этой статье.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/convection-radiaton-arbonia"
+  },
+  {
+    "slug": "kak-vybrat-cvet-radiatora-pod-interer",
+    "title": "Как выбрать цвет радиатора Arbonia для интерьера",
+    "description": "Порядок согласования цвета радиатора Arbonia: модель и подключение, образцы при разном освещении, блеск, арматура и спецификация заказа.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/kak-vybrat-cvet-radiatora-pod-interer"
+  },
+  {
+    "slug": "radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+    "title": "Радиатор под глубоким подоконником или столешницей: что проверить",
+    "description": "Как спланировать радиатор под глубокой столешницей: движение воздуха, место термоголовки, размеры ниши и доступ для обслуживания до заказа мебели.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey"
+  },
+  {
+    "slug": "2-3-columns",
+    "title": "Радиаторы Arbonia 2-трубчатые и 3-трубчатые: в чем отличия моделей",
+    "description": "Среди радиаторов Arbonia наибольшей популярностью пользуются 2-трубчатые и 3-трубчатые модели. Именно они поддерживаются в наличии на складах и именно они, скорее всего,идеально подойдут для вашего дома. Разбираемся, какие отличия есть между ними и как правильно сделать выбор.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/2-3-columns"
+  },
+  {
+    "slug": "epd",
+    "title": "Сертификат EPD для трубчатых радиаторов Arbonia",
+    "description": "Сертификат EPD, выданный в соответствии со стандартами ISO 14025 и EN 15804, предоставляет экологический баланс строительных изделий и превышает текущие законодательные требования. ",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/epd"
+  },
+  {
+    "slug": "consoles",
+    "title": "Регулируемые кронштейны W161 или фиксирующий зажим ZB0281",
+    "description": "Для настенного монтажа радиаторов Arbonia чаще всего применяются регулируемые кронштейны W161 или нерегулируемые зажимы ZB0281 (скрытый монтаж). В этой статье мы рассмотрим их особенности, преимущества и недостатки.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/consoles"
+  },
+  {
+    "slug": "tsvet-radiatorov-v-interiere",
+    "title": "Цветные радиаторы в интерьере: сочетания со стенами, деревом и металлом",
+    "description": "Идеи сочетаний цветного радиатора со стенами, деревом, камнем и металлическими деталями. Фон, контраст и цветовой акцент в разных комнатах.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/tsvet-radiatorov-v-interiere"
+  },
+  {
+    "slug": "column-radiators",
+    "title": "Трубчатые радиаторы Arbonia: плюсы, минусы и как выбрать модель",
+    "description": "Полный гид по трубчатым радиаторам Arbonia: плюсы и минусы, расчёт мощности, размеры, число труб, подключение и выбор модели для квартиры или частного дома.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/column-radiators"
+  },
+  {
+    "slug": "termostat",
+    "title": "Советы по правильной установке термостатов для трубчатых радиаторов Arbonia",
+    "description": "Термостаты, регулирующие подачу теплоносителя в трубчатый радиатор Arbonia, обеспечивают поддержание заданной температуры в комнате.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/termostat"
+  },
+  {
+    "slug": "chernyy-radiator-arbonia",
+    "title": "Черные радиаторы Arbonia - RAL 9005 или SF-3",
+    "description": "Черные радиаторы Arbonia: чем отличаются RAL 9005, RAL 7016 и SF-3, какие модели доступны и как подобрать цвет, подключение и мощность для интерьера.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/chernyy-radiator-arbonia"
+  },
+  {
+    "slug": "2180-3180",
+    "title": "Arbonia 2180 vs 3180: чем отличаются и когда что выбрать",
+    "description": "Сравниваем 2- и 3-трубчатые модели высотой 1,8 м: толщина, мощность, где уместнее 2180, а где лучше 3180. Практические сценарии и советы под подбор.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/2180-3180"
+  },
+  {
+    "slug": "arbonia-3057-skolko-sektsiy-dlina-moshchnost",
+    "title": "Arbonia 3057: сколько секций нужно, мощность и длина",
+    "description": "Сколько секций Arbonia 3057 нужно при 75/65/20 и 55/45/20: таблица мощности и длины, пример на 1000 Вт и проверка радиатора после снижения температуры воды.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-3057-skolko-sektsiy-dlina-moshchnost"
+  },
+  {
+    "slug": "radiator-pod-nizkiy-podokonnik",
+    "title": "Радиатор под низкий подоконник: высота и размеры ниши",
+    "description": "Как измерить нишу под низким подоконником: чистовой пол, высота корпуса, глубина, место подключения и монтажное пространство для радиатора Arbonia.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/radiator-pod-nizkiy-podokonnik"
+  },
+  {
+    "slug": "arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+    "title": "Сколько секций Arbonia 3030 нужно: длина и мощность радиатора",
+    "description": "Таблица мощности Arbonia 3030 при ΔT50 и ΔT60, длина по числу секций и примеры подбора на 800–1000 Вт с проверкой доступного места.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost"
+  },
+  {
+    "slug": "arbonia-3050-ili-3057-kakuyu-vysotu-vybrat",
+    "title": "Arbonia 3050 или 3057 - что выбрать",
+    "description": "Сравнение радиаторов Arbonia 3050 и 3057. Разница 7 см по высоте, межосевое расстояние 50 см, замена чугунных батарей и выбор под подоконник 70-80 см.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat"
+  },
+  {
+    "slug": "panorama",
+    "title": "Радиаторы для панорамных окон: низкие или вертикальные",
+    "description": "Как выбрать отопление для панорамного окна: низкие и вертикальные радиаторы Arbonia, расчёт теплопотерь, размещение, подключение, сравнение с конвектором и тёплым полом.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/panorama"
+  },
+  {
+    "slug": "arbonia-3030-vs-3037",
+    "title": "Arbonia 3030 или 3037: сравнение радиаторов высотой 300 и 370 мм",
+    "description": "Чем отличаются Arbonia 3030 и 3037: высота, межосевое расстояние, мощность при ΔT50 и ΔT60. Сравнение длины при одинаковой нагрузке и ограниченной нише.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-3030-vs-3037"
+  },
+  {
+    "slug": "ral-9016-9010-9003-kakoy-belyy-vybrat",
+    "title": "RAL 9016, 9010 или 9003: какой белый выбрать для радиатора",
+    "description": "Сравниваем белые RAL 9016, 9010 и 9003: сочетание радиатора со стеной и окнами, блеск покрытия, проверка образцов и выбор исполнения Arbonia.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/ral-9016-9010-9003-kakoy-belyy-vybrat"
+  },
+  {
+    "slug": "connections",
+    "title": "Нижнее подключение Arbonia №69 ТВВ: схема, клапан и термоголовка",
+    "description": "Как устроено нижнее подключение радиаторов Arbonia №69 ТВВ: межосевое расстояние 50 мм, подача и обратка, встроенный клапан, узел, термоголовка, монтаж и частые ошибки.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/connections"
+  },
+  {
+    "slug": "arbonia-3057",
+    "title": "Замена чугунного радиатора на Arbonia 3057: что проверить до демонтажа",
+    "description": "Проверка замены старой батареи на Arbonia 3057: глубина 105 мм, боковая арматура, мощность, состояние труб и порядок подготовки работ.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/arbonia-3057"
+  },
+  {
+    "slug": "zavodskoy-cvet-arbonia-ili-perekraska-iz-nalichiya",
+    "title": "Заводской цвет Arbonia или перекраска из наличия",
+    "description": "Как получить выбранный цвет Arbonia: заводской заказ или перекраска радиатора из наличия официальным дилером. Комплектация, сроки, образцы и гарантия.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/zavodskoy-cvet-arbonia-ili-perekraska-iz-nalichiya"
+  },
+  {
+    "slug": "vertical-radiator-power",
+    "title": "Мощность вертикальных Arbonia 2180 и 3180 при разных температурах",
+    "description": "Таблицы мощности Arbonia 2180 и 3180 при ΔT50 и ΔT60. Как перевести известную тепловую нагрузку в число секций и проверить ограниченную ширину простенка.",
+    "h1_count": 1,
+    "canonical": "https://arboniashop.ru/articles/vertical-radiator-power"
+  }
+]

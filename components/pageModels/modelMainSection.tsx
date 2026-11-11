@@ -51,26 +51,27 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
 	const minPrice = price.noConsole
 
 	return (
-		<Box>
-			<Grid
+        <Box>
+            <Grid
 				container
 				spacing={2}
 			>
 				{/* ИЗОБРАЖЕНИЕ */}
 				<Grid
-					item
-					xs={12}
-					sm={6}
-				>
+                    size={{
+                        xs: 12,
+                        sm: 6
+                    }}>
 					{modelCurr.badgesString && (
 						<Box>
 							<ModelBadges badgesString={modelCurr.badgesString} />
 						</Box>
 					)}
 					<Box
-						textAlign='center'
-						marginTop='20px'
-					>
+                        sx={{
+                            textAlign: 'center',
+                            marginTop: '20px'
+                        }}>
 						{/* <div style={ { width: '100%', height: '100%', position: 'relative' } }> */}
 
 						<img
@@ -87,17 +88,22 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
 				</Grid>
 
 				<Grid
-					item
-					xs={12}
-					sm={6}
-				>
+                    size={{
+                        xs: 12,
+                        sm: 6
+                    }}>
 					<Box
-						marginTop='30px'
-						marginLeft='20px'
-					>
+                        sx={{
+                            marginTop: '30px',
+                            marginLeft: '20px'
+                        }}>
 						{/* БЛОК ЦЕНЫ */}
-						<Box marginBottom='10px'>
-							<Box visibility={isFetching ? 'hidden' : 'hidden'}>
+						<Box sx={{
+                            marginBottom: '10px'
+                        }}>
+							<Box sx={{
+                                visibility: isFetching ? 'hidden' : 'hidden'
+                            }}>
 								<Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
 									подождите, обновляется курс валют...
 								</Typography>
@@ -120,17 +126,18 @@ const ModelMainSection: React.FC<ModelMainSectionProps> = ({
 					</Box>
 				</Grid>
 			</Grid>
-			{modelCurr.description && (
+            {modelCurr.description && (
 				<Box
-					marginTop='40px'
-					marginLeft='20px'
-					itemProp='description'
-				>
+                    itemProp='description'
+                    sx={{
+                        marginTop: '40px',
+                        marginLeft: '20px'
+                    }}>
 					<Typography sx={styles.standardText}>{modelCurr.description}</Typography>
 				</Box>
 			)}
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ModelMainSection

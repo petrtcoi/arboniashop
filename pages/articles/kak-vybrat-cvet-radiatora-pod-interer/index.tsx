@@ -15,7 +15,7 @@ const keyword = 'как выбрать цвет радиатора Arbonia'
 const h1 = 'Как выбрать цвет радиатора Arbonia под интерьер'
 const metaTitle = 'Как выбрать цвет радиатора Arbonia для интерьера'
 const metaDescription =
-	'Как выбрать цвет радиатора Arbonia под стены, окна и мебель: RAL 9016, антрацит или покраска по RAL, проверка света, фактуры и точных сочетаний.'
+	'Порядок согласования цвета радиатора Arbonia: модель и подключение, образцы при разном освещении, блеск, арматура и спецификация заказа.'
 
 const tableStyle: React.CSSProperties = {
 	width: '100%',
@@ -44,28 +44,45 @@ const LinkText = ({ href, children }: { href: string; children: React.ReactNode 
 )
 
 const Paragraph = ({ children, marginTop = '14px' }: { children: React.ReactNode; marginTop?: string }) => (
-	<Typography component='p' marginTop={marginTop} sx={{ ...styles.standardText }}>
+	<Typography
+        component='p'
+        sx={{
+            marginTop: marginTop,
+            ...styles.standardText
+        }}>
 		{children}
 	</Typography>
 )
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
-	<Typography component='h2' variant='h5' marginTop='44px' marginBottom='12px'>
+	<Typography
+        component='h2'
+        variant='h5'
+        sx={{
+            marginTop: '44px',
+            marginBottom: '12px'
+        }}>
 		{children}
 	</Typography>
 )
 
 const Subheading = ({ children }: { children: React.ReactNode }) => (
-	<Typography component='h3' variant='h6' marginTop='30px' marginBottom='10px'>
+	<Typography
+        component='h3'
+        variant='h6'
+        sx={{
+            marginTop: '30px',
+            marginBottom: '10px'
+        }}>
 		{children}
 	</Typography>
 )
 
 const faqItems = [
 	{
-		question: 'Какой цвет радиатора Arbonia самый универсальный?',
+		question: 'С чего начинать согласование цвета радиатора Arbonia?',
 		answer:
-			'RAL 9016 - самый универсальный вариант, если в помещении уже есть белые оконные откосы, подоконники или светлая отделка. Он визуально легче темных оттенков и представлен в складской программе. Однако на теплой бежевой стене холодный белый может выглядеть отдельным пятном, поэтому перед заказом его все равно нужно сравнить с отделкой. Универсальность означает простой старт выбора, а не гарантированное совпадение с любой стеной.',
+			'Сначала выбирают техническую модель, число секций и подключение. Затем определяют роль цвета в интерьере, проверяют реальные образцы рядом с отделкой и согласуют покрытие, видимую арматуру и сроки для конкретного исполнения.',
 	},
 	{
 		question: 'Нужно ли красить радиатор точно в цвет стены?',
@@ -97,7 +114,7 @@ const ArticlePage: NextPage = () => {
 		description: metaDescription,
 		image: `${siteUrl}/images/sliders/slide-colors.jpg`,
 		datePublished: '2026-08-23',
-		dateModified: '2026-08-23',
+		dateModified: '2026-10-13',
 		mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/articles/${slug}` },
 		about: keyword,
 		keywords: [keyword, 'цвет радиатора в интерьере', 'радиатор в цвет стены', 'цвета Arbonia', 'покраска RAL'],
@@ -111,15 +128,6 @@ const ArticlePage: NextPage = () => {
 		inLanguage: 'ru-RU',
 	}
 
-	const breadcrumbJsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: [
-			{ '@type': 'ListItem', position: 1, name: 'Главная', item: siteUrl },
-			{ '@type': 'ListItem', position: 2, name: 'Полезная информация', item: `${siteUrl}/articles` },
-			{ '@type': 'ListItem', position: 3, name: h1, item: `${siteUrl}/articles/${slug}` },
-		],
-	}
 
 	const faqJsonLd = {
 		'@context': 'https://schema.org',
@@ -132,16 +140,15 @@ const ArticlePage: NextPage = () => {
 	}
 
 	return (
-		<Box>
-			<Head>
+        <Box>
+            <Head>
 				<link key='canonical' rel='canonical' href={`${siteUrl}/articles/${slug}`} />
 				<script id={`${slug}-article-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-				<script id={`${slug}-breadcrumb-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 				<script id={`${slug}-faq-jsonld`} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 			</Head>
 
-			<PageHeader title={metaTitle} description={metaDescription} type='article' image='/images/sliders/slide-colors.jpg' />
-			<PageTitle
+            <PageHeader title={metaTitle} description={metaDescription} type='article' image='/images/sliders/slide-colors.jpg' />
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -149,13 +156,27 @@ const ArticlePage: NextPage = () => {
 				]}
 			/>
 
-			<Box component='article' sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto', ...styles.standardText }} marginTop='20px'>
-				<Typography component='h1' variant='h4' marginTop='10px' marginBottom='24px'>
+            <Box
+                component='article'
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
+				<Typography
+                    component='h1'
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '24px'
+                    }}>
 					{h1}
 				</Typography>
 
 				<Paragraph marginTop='0'>
-					Чтобы понять, <strong>как выбрать цвет радиатора Arbonia</strong>, сначала решите, должен ли он раствориться на стене или стать заметным акцентом. Затем сравните оттенок с окнами, мебелью и отделкой при дневном и вечернем свете. Белый RAL 9016 безопаснее для нейтрального интерьера, антрацит и черный лучше работают в поддержанной темной графике, а покраска по RAL нужна для точного сценария. Мощность и модель выбирают до цвета. Финальное решение принимают только по физическому образцу.
+					Чтобы понять, <strong>как выбрать цвет радиатора Arbonia</strong>, сначала решите, должен ли он раствориться на стене или стать заметным акцентом. Затем сравните оттенок с окнами, мебелью и отделкой при дневном и вечернем свете. Нужный оттенок согласуют с реальными материалами; название белого или антрацита само по себе не подтверждает сочетание. Мощность и модель выбирают до цвета. Финальное решение принимают только по физическому образцу.
 				</Paragraph>
 
 				<SectionHeading>Быстрый выбор цвета Arbonia</SectionHeading>
@@ -216,7 +237,11 @@ const ArticlePage: NextPage = () => {
 					Контраст работает убедительно, когда радиатор не остается единственным предметом своего цвета. Черный прибор можно связать с рамами, трековыми светильниками и ручками, терракотовый - с текстилем и керамикой, сложный зеленый - с креслом или картиной. Повторять цвет крупными пятнами не нужно, обычно достаточно двух или трех небольших поддерживающих деталей. Как альтернатива чистому черному подходит антрацит: он сохраняет графику, но меньше утяжеляет стену. Если вы рассматриваете темную модель, отдельный материал про <LinkText href='/articles/chernyy-radiator-arbonia'>черные радиаторы Arbonia</LinkText> поможет сравнить RAL 9005, RAL 7016 и SF-3.
 				</Paragraph>
 
-				<Box textAlign='center' marginY='30px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginY: '30px'
+                    }}>
 					<img src='/images/sliders/slide-colors.jpg' alt='Палитра цветов радиаторов Arbonia для интерьера' style={{ maxWidth: '100%', height: 'auto' }} width={760} />
 				</Box>
 
@@ -236,18 +261,15 @@ const ArticlePage: NextPage = () => {
 				</Paragraph>
 
 				<Subheading>Покраска по RAL - когда стандартного цвета недостаточно</Subheading>
-				<Paragraph>
-					Покраска по RAL нужна не ради самого большого выбора, а когда есть понятная задача - повторить фасад мебели, приблизиться к стене или поддержать фирменный цвет проекта. По данным нашей текущей услуги, перекраска подходящей складской модели обычно занимает 1-2 недели, а заказ нужного исполнения с завода может занимать 2-4 месяца в зависимости от загрузки. Эти сроки не стоит воспринимать как фиксированное обещание, их всегда подтверждают перед оформлением. Плюс складской модели с покраской - более короткий путь, минус - выбор ограничен теми размерами и подключениями, которые уже доступны. Заводской заказ дает больше свободы по конфигурации, но требует заранее зафиксировать оттенок и спокойно ждать производство.
-				</Paragraph>
+				<Paragraph>После согласования образца выберите способ получения цвета: заводское исполнение или порошковая перекраска подходящего радиатора из наличия официальным дилером с сохранением гарантии. У каждого варианта свои ограничения по комплектации и срокам. Порядок сравнения описан в статье <LinkText href='/articles/zavodskoy-cvet-arbonia-ili-perekraska-iz-nalichiya'>как выбрать между заводским цветом и перекраской из наличия</LinkText>.</Paragraph>
 
-				<SectionHeading>Как модель и размер меняют восприятие цвета</SectionHeading>
-				<Paragraph>
-					Один и тот же цвет выглядит по-разному на низком Arbonia 3030 и на вертикальном Arbonia 3180. Низкий прибор формирует горизонтальную линию под окном, поэтому даже черный оттенок обычно не становится центром всей комнаты. Высокая модель занимает заметный участок стены и сильнее показывает контраст, блики и ритм труб. Двухтрубчатый Arbonia 2180 глубиной 65 мм выглядит визуально легче, а трехтрубчатый 3180 глубиной 105 мм создает более плотный объем. Именно поэтому цвет выбирают на фотографии или визуализации конкретной модели, а не на абстрактном прямоугольнике из каталога.
-				</Paragraph>
-
-				<Paragraph>
-					Расположение тоже меняет результат: радиатор под окном частично окружен шторами, откосами и подоконником, а прибор на свободном простенке читается целиком. Если стена узкая, темный вертикальный радиатор может зрительно подчеркнуть высоту помещения, но одновременно сделать простенок уже. Светлый оттенок снижает этот эффект и легче переносит соседство с крупной мебелью. Как альтернатива одному большому цветовому пятну можно выбрать две менее заметные модели в разных зонах комнаты. Сначала сравните варианты в <LinkText href='/articles/column-radiators'>главном гиде по выбору Arbonia</LinkText>, а затем переносите выбранные размеры в интерьерную схему.
-				</Paragraph>
+				<SectionHeading>Проверить покрытие на выбранной модели</SectionHeading>
+                <Paragraph>Согласовывайте цвет после определения высоты, глубины, числа секций и подключения.
+                    Добавьте в интерьерный эскиз корпус реального размера и видимую арматуру.
+                    Оцените, сохраняется ли задуманный эффект на всём приборе, а не только на маленьком образце.</Paragraph>
+                <Paragraph>Идеи сочетаний с деревом, камнем и металлическими деталями собраны в
+                    <LinkText href='/articles/tsvet-radiatorov-v-interiere'> статье о цветных радиаторах в интерьере</LinkText>.
+                    После выбора композиции здесь можно пройти проверку образца и оформить спецификацию покрытия.</Paragraph>
 
 				<SectionHeading>Проверка оттенка перед заказом</SectionHeading>
 				<Paragraph>
@@ -272,8 +294,15 @@ const ArticlePage: NextPage = () => {
 				</Box>
 
 				<SectionHeading>Частые вопросы</SectionHeading>
+				<Paragraph>
+					Если выбор остановился на белом, используйте
+					<LinkText href='/articles/ral-9016-pochemu-vybirayut-arkhitektory'> сравнение RAL 9016, RAL 9010 и RAL 9003</LinkText>:
+					оно помогает согласовать радиатор со стеной, оконным профилем и мебелью.
+				</Paragraph>
 				{faqItems.map(item => (
-					<Box key={item.question} marginTop='24px'>
+					<Box key={item.question} sx={{
+                        marginTop: '24px'
+                    }}>
 						<Typography component='h3' variant='h6' sx={{ fontSize: '17px' }}>
 							{item.question}
 						</Typography>
@@ -281,22 +310,41 @@ const ArticlePage: NextPage = () => {
 					</Box>
 				))}
 
-				<Box marginTop='52px' padding='25px' sx={{ backgroundColor: '#f6f6f6', border: '1px solid #e5e5e5' }}>
-					<Grid container spacing={2} alignItems='center'>
-						<Grid item xs={12} md={8}>
+				<Box
+                    sx={{
+                        marginTop: '52px',
+                        padding: '25px',
+                        backgroundColor: '#f6f6f6',
+                        border: '1px solid #e5e5e5'
+                    }}>
+					<Grid container spacing={2} sx={{
+                        alignItems: 'center'
+                    }}>
+						<Grid
+                            size={{
+                                xs: 12,
+                                md: 8
+                            }}>
 							<Typography component='h2' variant='h5'>Подобрать модель и цвет Arbonia</Typography>
 							<Paragraph marginTop='10px'>
 								Пришлите размеры стены или ниши, фотографию помещения при дневном свете, нужную мощность и примеры отделки. Мы сравним складские цвета и покраску, проверим модель, подключение и сроки, а затем предложим несколько решений с понятными плюсами и минусами. Если точного кода пока нет, достаточно фотографии и общего описания желаемого эффекта. Финальный оттенок согласуем по образцу до заказа.
 							</Paragraph>
 						</Grid>
-						<Grid item xs={12} md={4} textAlign={{ xs: 'left', md: 'right' }}>
+						<Grid
+                            sx={{
+                                textAlign: { xs: 'left', md: 'right' }
+                            }}
+                            size={{
+                                xs: 12,
+                                md: 4
+                            }}>
 							<a href='/request' style={{ textDecoration: 'none' }}><Button variant='contained' color='secondary'>Получить подбор</Button></a>
 						</Grid>
 					</Grid>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

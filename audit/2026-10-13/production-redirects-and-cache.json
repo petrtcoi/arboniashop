@@ -1,0 +1,46 @@
+{
+  "redirects": [
+    {
+      "source": "/articles/arbonia-3180-ral-9016-vs-anthracite-metallic",
+      "destination": "/articles/arbonia-3180-ral-9016-vs-anthracite",
+      "status": 308,
+      "final_url": "https://arboniashop.ru/articles/arbonia-3180-ral-9016-vs-anthracite"
+    },
+    {
+      "source": "/models/3057-9016-1270-34",
+      "destination": "/models/3057-9016-12",
+      "status": 308,
+      "final_url": "https://arboniashop.ru/models/3057-9016-12"
+    },
+    {
+      "source": "/news/2023-report",
+      "destination": "/news/2024-report",
+      "status": 308,
+      "final_url": "https://arboniashop.ru/news/2024-report"
+    },
+    {
+      "source": "/policy",
+      "destination": "/privacy",
+      "status": 308,
+      "final_url": "https://arboniashop.ru/privacy"
+    },
+    {
+      "source": "http://www.arboniashop.ru",
+      "status": 301,
+      "destination": "https://arboniashop.ru/models/3030-9016-12"
+    },
+    {
+      "source": "http://arboniashop.ru",
+      "status": 301,
+      "destination": "https://arboniashop.ru/models/3030-9016-12"
+    },
+    {
+      "source": "https://www.arboniashop.ru",
+      "status": 301,
+      "destination": "https://arboniashop.ru/models/3030-9016-12"
+    }
+  ],
+  "html_cache": "public, max-age=0, must-revalidate",
+  "static_asset_cache": "public, max-age=31536000, immutable",
+  "tls_certificate_verified": true
+}

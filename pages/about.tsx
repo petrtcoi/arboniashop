@@ -15,8 +15,8 @@ type PageAboutProps = {}
 
 const PageAbout: NextPage<PageAboutProps> = () => {
 	return (
-		<Box>
-			<PageTitle
+        <Box>
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
@@ -24,26 +24,27 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 					{ title: 'О магазине', link: '/about' },
 				]}
 			/>
-			<PageHeader title={'О магазине радиаторов Arbonia'} />
-			<Hero
+            <PageHeader title={'О магазине радиаторов Arbonia'} />
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'О магазине'}
 			/>
-			<Box
-				sx={{ ...global.pagePadding }}
-				marginTop='20px'
-			>
+            <Box
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding
+                }}>
 				<Box>
 					<Grid
 						container
 						spacing={2}
 					>
 						<Grid
-							item
-							xs={12}
-							md={7}
-							lg={6}
-						>
+                            size={{
+                                xs: 12,
+                                md: 7,
+                                lg: 6
+                            }}>
 							<Typography
 								sx={{ ...styles.standardText }}
 								component={'span'}
@@ -68,27 +69,30 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 							</Typography>
 						</Grid>
 						<Grid
-							item
-							xs={12}
-							md={1}
-							lg={1}
-						>
+                            size={{
+                                xs: 12,
+                                md: 1,
+                                lg: 1
+                            }}>
 							<Divider orientation='vertical' />
 						</Grid>
 						<Grid
-							item
-							xs={12}
-							md={4}
-							lg={3}
-						>
+                            size={{
+                                xs: 12,
+                                md: 4,
+                                lg: 3
+                            }}>
 							<Box>
 								<Typography sx={{ ...styles.standardTextBold }}>Контактная информация</Typography>
 							</Box>
-							<Box marginTop='20px'>
+							<Box sx={{
+                                marginTop: '20px'
+                            }}>
 								<Typography
-									sx={{ ...styles.smallTextBold }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.smallTextBold
+                                    }}>
 									тел.:&nbsp;
 								</Typography>
 								<a
@@ -96,17 +100,20 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 									href={`tel:${global.phone495}`}
 								>
 									<Typography
-										sx={{ ...styles.standardTextLink }}
-										display='inline'
-									>
+                                        sx={{
+                                            display: 'inline',
+                                            ...styles.standardTextLink
+                                        }}>
 										{global.phone495String}
 									</Typography>
 								</a>
 								<br />
 								<Typography
-									sx={{ ...styles.smallTextBold, color: '#ffffff' }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.smallTextBold,
+                                        color: '#ffffff'
+                                    }}>
 									тел.:&nbsp;
 								</Typography>
 								<a
@@ -114,18 +121,20 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 									href={`tel:${global.phone812}`}
 								>
 									<Typography
-										sx={{ ...styles.standardTextLink }}
-										display='inline'
-									>
+                                        sx={{
+                                            display: 'inline',
+                                            ...styles.standardTextLink
+                                        }}>
 										{global.phone812String}
 									</Typography>
 								</a>
 							</Box>
 							<Box>
 								<Typography
-									sx={{ ...styles.smallTextBold }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.smallTextBold
+                                    }}>
 									электронная почта:&nbsp;
 								</Typography>
 								<a
@@ -133,9 +142,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 									href={`mailto:${global.email}`}
 								>
 									<Typography
-										sx={{ ...styles.standardTextLink }}
-										display='inline'
-									>
+                                        sx={{
+                                            display: 'inline',
+                                            ...styles.standardTextLink
+                                        }}>
 										{global.email}
 									</Typography>
 								</a>
@@ -143,9 +153,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 
 							<Box>
 								<Typography
-									sx={{ ...styles.smallTextBold }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.smallTextBold
+                                    }}>
 									whatsapp:&nbsp;
 								</Typography>
 								<a
@@ -153,9 +164,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 									href={`https://wa.me/${global.whatsApp}`}
 								>
 									<Typography
-										sx={{ ...styles.standardTextLink }}
-										display='inline'
-									>
+                                        sx={{
+                                            display: 'inline',
+                                            ...styles.standardTextLink
+                                        }}>
 										{global.whatsAppString}
 									</Typography>
 								</a>
@@ -163,9 +175,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 
 							<Box>
 								<Typography
-									sx={{ ...styles.smallTextBold }}
-									display='inline'
-								>
+                                    sx={{
+                                        display: 'inline',
+                                        ...styles.smallTextBold
+                                    }}>
 									telegram:&nbsp;
 								</Typography>
 								<a
@@ -173,9 +186,10 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 									href={`https://t.me/RadiatorLuxBot`}
 								>
 									<Typography
-										sx={{ ...styles.standardTextLink }}
-										display='inline'
-									>
+                                        sx={{
+                                            display: 'inline',
+                                            ...styles.standardTextLink
+                                        }}>
 										@RadiatorLuxBot
 									</Typography>
 								</a>
@@ -183,7 +197,9 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 						</Grid>
 					</Grid>
 				</Box>
-				<Box marginY='30px'>
+				<Box sx={{
+                    marginY: '30px'
+                }}>
 					<Divider />
 				</Box>
 				<Box>
@@ -193,7 +209,9 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 					>
 						Юридическая информация
 					</Typography>
-					<Box marginTop='20px'>
+					<Box sx={{
+                        marginTop: '20px'
+                    }}>
 						<Typography sx={{ ...styles.standardText }}>
 							<span>
 								<strong>ООО &#34;ХОУМ КОМФОРТ&#34;</strong>
@@ -222,8 +240,8 @@ const PageAbout: NextPage<PageAboutProps> = () => {
 					</Box>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default PageAbout

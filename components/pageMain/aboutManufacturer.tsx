@@ -9,23 +9,25 @@ type AboutManufacturerProps = {}
 
 const AboutManufacturer: React.FC<AboutManufacturerProps> = () => {
 	return (
-		<Box>
-			<Grid
+        <Box>
+            <Grid
 				container
 				spacing={2}
 			>
 				<Grid
-					item
-					xs={12}
-					md={6}
-				>
+                    size={{
+                        xs: 12,
+                        md: 6
+                    }}>
 					<Typography
 						variant='h5'
 						component='h2'
 					>
 						О производителе Arbonia
 					</Typography>
-					<Box marginTop='20px' />
+					<Box sx={{
+                        marginTop: '20px'
+                    }} />
 					<Typography sx={{ ...styles.standardText }}>
 						Более шестидесяти лет назад была заложена основа компании Arbonia, начавшей с производства отопительных
 						систем. Со временем Arbonia превратилась в ведущего производителя в сфере жилищного и промышленного
@@ -35,33 +37,37 @@ const AboutManufacturer: React.FC<AboutManufacturerProps> = () => {
 						выбор дизайна и цвета, что подтверждается многочисленными наградами.
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='10px'
-					>
+                        sx={{
+                            marginTop: '10px',
+                            ...styles.standardText
+                        }}>
 						Arbonia Riesa была основана в 1991 году в Рейзе, где на базе старого сталелитейного завода было налажено
 						производство трубчатых радиаторов и конвекторов. В 1992 году началось производство нагревательных стенок, а
 						в 1994 - радиаторов для ванных комнат. В 2010 году производство переместилось в Чехию.
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='10px'
-					>
+                        sx={{
+                            marginTop: '10px',
+                            ...styles.standardText
+                        }}>
 						В России компанию представляет "АФГ РУС". В 2016 году Arbonia отметила 25-летие, подтверждая свой статус
 						лидера в индустрии.
 					</Typography>
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='10px'
-						marginBottom='10px'
-					>
+                        sx={{
+                            marginTop: '10px',
+                            marginBottom: '10px',
+                            ...styles.standardText
+                        }}>
 						Трубчатые радиаторы отопления производятся на заводе в городе Стршибро (Stříbro), Чехия.
 					</Typography>
 
 					<Typography
-						sx={{ ...styles.standardText }}
-						marginTop='10px'
-						marginBottom='10px'
-					>
+                        sx={{
+                            marginTop: '10px',
+                            marginBottom: '10px',
+                            ...styles.standardText
+                        }}>
 						Знаковым событием последних лет стало то, что климатическое подразделение Arbonia было приобретено китайской
 						корпорацией Midea, одним из крупнейших мировых производителей климатической техники и бытовой электроники.
 						Это позволило объединить опыт Arbonia в области отопления с глобальными ресурсами и инновационными
@@ -78,10 +84,10 @@ const AboutManufacturer: React.FC<AboutManufacturerProps> = () => {
 					</div>
 				</Grid>
 				<Grid
-					item
-					xs={12}
-					md={6}
-				>
+                    size={{
+                        xs: 12,
+                        md: 6
+                    }}>
 					<img
 						loading='lazy'
 						style={{ borderRadius: '10px', maxWidth: '800px', height: 'auto', width: '100%' }}
@@ -90,8 +96,8 @@ const AboutManufacturer: React.FC<AboutManufacturerProps> = () => {
 					/>
 				</Grid>
 			</Grid>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default AboutManufacturer

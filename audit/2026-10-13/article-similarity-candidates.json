@@ -1,0 +1,302 @@
+[
+  {
+    "a": "column-radiators",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.347
+  },
+  {
+    "a": "radiatory-arbonia-pod-okno",
+    "b": "trubchatye-radiatory-dlya-kvartiry",
+    "similarity": 0.333
+  },
+  {
+    "a": "high-arbonia",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.319
+  },
+  {
+    "a": "high-arbonia",
+    "b": "trubchatye-radiatory-dlya-kvartiry",
+    "similarity": 0.291
+  },
+  {
+    "a": "chernyy-radiator-arbonia",
+    "b": "kak-vybrat-cvet-radiatora-pod-interer",
+    "similarity": 0.289
+  },
+  {
+    "a": "column-radiators",
+    "b": "high-arbonia",
+    "similarity": 0.278
+  },
+  {
+    "a": "column-radiators",
+    "b": "trubchatye-radiatory-dlya-kvartiry",
+    "similarity": 0.278
+  },
+  {
+    "a": "mezhosevoe-rasstoyanie-500-mm-arbonia",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.249
+  },
+  {
+    "a": "arbonia-2050-ili-3050",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.244
+  },
+  {
+    "a": "column-radiators",
+    "b": "trubchatye-ili-bimetallicheskie-radiatory",
+    "similarity": 0.23
+  },
+  {
+    "a": "ral-9016-9010-9003-kakoy-belyy-vybrat",
+    "b": "ral-9016-pochemu-vybirayut-arkhitektory",
+    "similarity": 0.226
+  },
+  {
+    "a": "radiator-pod-nizkiy-podokonnik",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.211
+  },
+  {
+    "a": "kogda-vertikalnyy-radiator-arbonia-ne-podkhodit",
+    "b": "trubchatye-radiatory-dlya-kvartiry",
+    "similarity": 0.209
+  },
+  {
+    "a": "connections",
+    "b": "mezhosevoe-rasstoyanie-500-mm-arbonia",
+    "similarity": 0.208
+  },
+  {
+    "a": "arbonia-2050-ili-3050",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.205
+  },
+  {
+    "a": "arbonia-3180-ral-9016-vs-anthracite",
+    "b": "chernyy-radiator-arbonia",
+    "similarity": 0.204
+  },
+  {
+    "a": "kak-vybrat-cvet-radiatora-pod-interer",
+    "b": "ral-9016-9010-9003-kakoy-belyy-vybrat",
+    "similarity": 0.203
+  },
+  {
+    "a": "trubchatye-radiatory-dlya-kvartiry",
+    "b": "vertical-vs-horizontal",
+    "similarity": 0.203
+  },
+  {
+    "a": "arbonia-2050-ili-3050",
+    "b": "delta-t-teplootdacha",
+    "similarity": 0.199
+  },
+  {
+    "a": "arbonia-2050-ili-3050",
+    "b": "mezhosevoe-rasstoyanie-500-mm-arbonia",
+    "similarity": 0.199
+  },
+  {
+    "a": "kak-vybrat-cvet-radiatora-pod-interer",
+    "b": "ral-9016-pochemu-vybirayut-arkhitektory",
+    "similarity": 0.198
+  },
+  {
+    "a": "column-radiators",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.196
+  },
+  {
+    "a": "panorama",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.196
+  },
+  {
+    "a": "column-radiators",
+    "b": "delta-t-teplootdacha",
+    "similarity": 0.194
+  },
+  {
+    "a": "arbonia-2050-ili-3050",
+    "b": "column-radiators",
+    "similarity": 0.191
+  },
+  {
+    "a": "arbonia-2180-calc",
+    "b": "arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+    "similarity": 0.191
+  },
+  {
+    "a": "trubchatye-ili-bimetallicheskie-radiatory",
+    "b": "trubchatye-radiatory-dlya-kvartiry",
+    "similarity": 0.19
+  },
+  {
+    "a": "column-radiators",
+    "b": "panorama",
+    "similarity": 0.184
+  },
+  {
+    "a": "mezhosevoe-rasstoyanie-500-mm-arbonia",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.183
+  },
+  {
+    "a": "connections",
+    "b": "panorama",
+    "similarity": 0.181
+  },
+  {
+    "a": "delta-t-teplootdacha",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.181
+  },
+  {
+    "a": "radiatory-arbonia-pod-okno",
+    "b": "trubchatye-ili-bimetallicheskie-radiatory",
+    "similarity": 0.181
+  },
+  {
+    "a": "arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+    "b": "delta-t-teplootdacha",
+    "similarity": 0.175
+  },
+  {
+    "a": "kogda-vertikalnyy-radiator-arbonia-ne-podkhodit",
+    "b": "vertical-vs-horizontal",
+    "similarity": 0.175
+  },
+  {
+    "a": "calc-radiators-by-old-ones",
+    "b": "calculate",
+    "similarity": 0.174
+  },
+  {
+    "a": "high-arbonia",
+    "b": "kogda-vertikalnyy-radiator-arbonia-ne-podkhodit",
+    "similarity": 0.173
+  },
+  {
+    "a": "connections",
+    "b": "trubchatye-ili-bimetallicheskie-radiatory",
+    "similarity": 0.17
+  },
+  {
+    "a": "radiator-pod-nizkiy-podokonnik",
+    "b": "trubchatye-radiatory-dlya-kvartiry",
+    "similarity": 0.17
+  },
+  {
+    "a": "arbonia-2180-interior",
+    "b": "vertical-vs-horizontal",
+    "similarity": 0.168
+  },
+  {
+    "a": "connections",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.168
+  },
+  {
+    "a": "delta-t-teplootdacha",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.168
+  },
+  {
+    "a": "radiatory-arbonia-pod-okno",
+    "b": "vertical-vs-horizontal",
+    "similarity": 0.167
+  },
+  {
+    "a": "radiatory-arbonia-pod-okno",
+    "b": "vertical-radiator-power",
+    "similarity": 0.166
+  },
+  {
+    "a": "high-arbonia",
+    "b": "vertical-radiator-power",
+    "similarity": 0.165
+  },
+  {
+    "a": "delta-t-teplootdacha",
+    "b": "trubchatye-radiatory-dlya-kvartiry",
+    "similarity": 0.164
+  },
+  {
+    "a": "trubchatye-radiatory-dlya-kvartiry",
+    "b": "vertical-radiator-power",
+    "similarity": 0.163
+  },
+  {
+    "a": "arbonia-3050-ili-3057-kakuyu-vysotu-vybrat",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.162
+  },
+  {
+    "a": "column-radiators",
+    "b": "mezhosevoe-rasstoyanie-500-mm-arbonia",
+    "similarity": 0.162
+  },
+  {
+    "a": "arbonia-2180-interior",
+    "b": "tsvet-radiatorov-v-interiere",
+    "similarity": 0.161
+  },
+  {
+    "a": "high-arbonia",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.161
+  },
+  {
+    "a": "high-arbonia",
+    "b": "vertical-vs-horizontal",
+    "similarity": 0.161
+  },
+  {
+    "a": "arbonia-2180-po-ploshadi",
+    "b": "vertical-radiator-power",
+    "similarity": 0.16
+  },
+  {
+    "a": "arbonia-3030-vs-3037",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.16
+  },
+  {
+    "a": "arbonia-3180-ral-9016-vs-anthracite",
+    "b": "kak-vybrat-cvet-radiatora-pod-interer",
+    "similarity": 0.16
+  },
+  {
+    "a": "arbonia-2050-ili-3050",
+    "b": "arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+    "similarity": 0.159
+  },
+  {
+    "a": "arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+    "b": "radiator-pod-nizkiy-podokonnik",
+    "similarity": 0.159
+  },
+  {
+    "a": "chernyy-radiator-arbonia",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.159
+  },
+  {
+    "a": "belye-radiatory-v-temnom-interiere",
+    "b": "chernyy-radiator-arbonia",
+    "similarity": 0.158
+  },
+  {
+    "a": "chernyy-radiator-arbonia",
+    "b": "ral-9016-pochemu-vybirayut-arkhitektory",
+    "similarity": 0.158
+  },
+  {
+    "a": "panorama",
+    "b": "radiatory-arbonia-pod-okno",
+    "similarity": 0.157
+  }
+]

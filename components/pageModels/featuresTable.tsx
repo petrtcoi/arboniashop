@@ -21,127 +21,209 @@ const FeaturesTable: NextPage<FeaturesTableProps> = ({
   return (
     <Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Наличие:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {model.inStock === "true" ? "склад" : "под заказ"}
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Модель:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline" itemProp="model">
+        <Typography
+          itemProp="model"
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {model.nameShort}
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Цвет:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline" itemProp="color">
+        <Typography
+          itemProp="color"
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {colorTitle}
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Подключение:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {connectionTitle}
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Высота:&nbsp;
         </Typography>
         <Typography
-          sx={styles.smallTextBold}
-          display="inline"
           itemProp="height"
-        >
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {model.height} мм
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Глубина:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline" itemProp="depth">
+        <Typography
+          itemProp="depth"
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {model.width} мм
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Длина секции:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline" itemProp="width">
+        <Typography
+          itemProp="width"
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {model.lengthSection} мм
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Макс. число секций:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {model.sectionsMax} сек.
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Мощность секции (ΔT=50°):&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {model.dt50} Вт
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Мощность секции (ΔT=60°):&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           {model.dt60} Вт
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Рабочее давление:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           10 бар
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Испытательное давление:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           15 бар
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Производитель:&nbsp;
         </Typography>
         <Typography
-          sx={styles.smallTextBold}
-          display="inline"
           itemProp="manufacturer"
-        >
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           Arbonia
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.smallText} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallText]}>
           Гарантия:&nbsp;
         </Typography>
-        <Typography sx={styles.smallTextBold} display="inline">
+        <Typography
+          sx={[{
+            display: "inline"
+          }, styles.smallTextBold]}>
           10 лет
         </Typography>
       </Box>
     </Box>
-  )
+  );
 }
 
 export default FeaturesTable

@@ -10,21 +10,24 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 	const getPath = (file: string) => '/docs/' + file
 
 	return (
-		<Grid
+        <Grid
 			container
 			spacing={2}
 		>
-			<Grid
-				item
-				sm={12}
-				md={6}
-				lg={4}
-				marginTop={'15px'}
-			>
+            <Grid
+                sx={{
+                    marginTop: '15px'
+                }}
+                size={{
+                    sm: 12,
+                    md: 6,
+                    lg: 4
+                }}>
 				<Box
-					mr={1}
-					display='inline'
-				>
+                    sx={{
+                        mr: 1,
+                        display: 'inline'
+                    }}>
 					<ArticleOutlinedIcon
 						color='secondary'
 						sx={{
@@ -39,25 +42,28 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 						download
 					>
 						<Typography
-							sx={styles.smallTextDotted}
-							display='inline'
-						>
+                            sx={[{
+                                display: 'inline'
+                            }, styles.smallTextDotted]}>
 							Каталог Arbonia
 						</Typography>
 					</a>
 				</Box>
 			</Grid>
-			<Grid
-				item
-				sm={12}
-				md={6}
-				lg={4}
-				marginTop={'15px'}
-			>
+            <Grid
+                sx={{
+                    marginTop: '15px'
+                }}
+                size={{
+                    sm: 12,
+                    md: 6,
+                    lg: 4
+                }}>
 				<Box
-					mr={1}
-					display='inline'
-				>
+                    sx={{
+                        mr: 1,
+                        display: 'inline'
+                    }}>
 					<ArticleOutlinedIcon
 						color='secondary'
 						sx={{
@@ -73,25 +79,28 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 						style={{ textDecoration: 'none' }}
 					>
 						<Typography
-							sx={styles.smallTextDotted}
-							display='inline'
-						>
+                            sx={[{
+                                display: 'inline'
+                            }, styles.smallTextDotted]}>
 							Сертификат соответствия
 						</Typography>
 					</a>
 				</Box>
 			</Grid>
-			<Grid
-				item
-				sm={12}
-				md={6}
-				lg={4}
-				marginTop={'15px'}
-			>
+            <Grid
+                sx={{
+                    marginTop: '15px'
+                }}
+                size={{
+                    sm: 12,
+                    md: 6,
+                    lg: 4
+                }}>
 				<Box
-					mr={1}
-					display='inline'
-				>
+                    sx={{
+                        mr: 1,
+                        display: 'inline'
+                    }}>
 					<ArticleOutlinedIcon
 						color='secondary'
 						sx={{
@@ -107,26 +116,29 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 						style={{ textDecoration: 'none' }}
 					>
 						<Typography
-							sx={styles.smallTextDotted}
-							display='inline'
-						>
+                            sx={[{
+                                display: 'inline'
+                            }, styles.smallTextDotted]}>
 							Экспертное заключение
 						</Typography>
 					</a>
 				</Box>
 			</Grid>
 
-			<Grid
-				item
-				sm={12}
-				md={6}
-				lg={4}
-				marginTop={'15px'}
-			>
+            <Grid
+                sx={{
+                    marginTop: '15px'
+                }}
+                size={{
+                    sm: 12,
+                    md: 6,
+                    lg: 4
+                }}>
 				<Box
-					mr={1}
-					display='inline'
-				>
+                    sx={{
+                        mr: 1,
+                        display: 'inline'
+                    }}>
 					<ArticleOutlinedIcon
 						color='secondary'
 						sx={{
@@ -141,26 +153,29 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 						style={{ textDecoration: 'none' }}
 					>
 						<Typography
-							sx={styles.smallTextDotted}
-							display='inline'
-						>
+                            sx={[{
+                                display: 'inline'
+                            }, styles.smallTextDotted]}>
 							Гарантия
 						</Typography>
 					</a>
 				</Box>
 			</Grid>
 
-			<Grid
-				item
-				sm={12}
-				md={6}
-				lg={4}
-				marginTop={'15px'}
-			>
+            <Grid
+                sx={{
+                    marginTop: '15px'
+                }}
+                size={{
+                    sm: 12,
+                    md: 6,
+                    lg: 4
+                }}>
 				<Box
-					mr={1}
-					display='inline'
-				>
+                    sx={{
+                        mr: 1,
+                        display: 'inline'
+                    }}>
 					<ArticleOutlinedIcon
 						color='secondary'
 						sx={{
@@ -175,26 +190,29 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 						style={{ textDecoration: 'none' }}
 					>
 						<Typography
-							sx={styles.smallTextDotted}
-							display='inline'
-						>
+                            sx={[{
+                                display: 'inline'
+                            }, styles.smallTextDotted]}>
 							Инструкция. Кронштейны W161
 						</Typography>
 					</a>
 				</Box>
 			</Grid>
 
-			<Grid
-				item
-				sm={12}
-				md={6}
-				lg={4}
-				marginTop={'15px'}
-			>
+            <Grid
+                sx={{
+                    marginTop: '15px'
+                }}
+                size={{
+                    sm: 12,
+                    md: 6,
+                    lg: 4
+                }}>
 				<Box
-					mr={1}
-					display='inline'
-				>
+                    sx={{
+                        mr: 1,
+                        display: 'inline'
+                    }}>
 					<ArticleOutlinedIcon
 						color='secondary'
 						sx={{
@@ -209,26 +227,29 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 						style={{ textDecoration: 'none' }}
 					>
 						<Typography
-							sx={styles.smallTextDotted}
-							display='inline'
-						>
+                            sx={[{
+                                display: 'inline'
+                            }, styles.smallTextDotted]}>
 							Инструкция. Кронштейны ZB0251
 						</Typography>
 					</a>
 				</Box>
 			</Grid>
 
-			<Grid
-				item
-				sm={12}
-				md={6}
-				lg={4}
-				marginTop={'15px'}
-			>
+            <Grid
+                sx={{
+                    marginTop: '15px'
+                }}
+                size={{
+                    sm: 12,
+                    md: 6,
+                    lg: 4
+                }}>
 				<Box
-					mr={1}
-					display='inline'
-				>
+                    sx={{
+                        mr: 1,
+                        display: 'inline'
+                    }}>
 					<ArticleOutlinedIcon
 						color='secondary'
 						sx={{
@@ -243,16 +264,16 @@ const DownloadsBlock: React.FC<DownloadsBlockProps> = () => {
 						style={{ textDecoration: 'none' }}
 					>
 						<Typography
-							sx={styles.smallTextDotted}
-							display='inline'
-						>
+                            sx={[{
+                                display: 'inline'
+                            }, styles.smallTextDotted]}>
 							Инструкция. Кронштейны ZB0281
 						</Typography>
 					</a>
 				</Box>
 			</Grid>
-		</Grid>
-	)
+        </Grid>
+    );
 }
 
 export default DownloadsBlock

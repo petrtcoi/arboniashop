@@ -1,0 +1,207 @@
+
+> build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Linting and checking validity of types ...
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Collecting page data ...
+   Generating static pages (0/460) ...
+Warning: data for page "/models/2057" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/3180" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/3057" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/2180" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/3030" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/2050" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/radiators/2180-12" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/order/cart" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/radiators/2180-08" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/radiators/2180-04" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/3050" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/radiators/2180-10" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/catalog/[id]" (path "/catalog/high-models") is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/catalog/[id]" (path "/catalog/standard") is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/catalog/[id]" (path "/catalog/2180-stock") is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/radiators/2180-06" is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/[id]" (path "/models/2030-9016-12") is 139 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/catalog/[id]" (path "/catalog/ral9016") is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/catalog/[id]" (path "/catalog/low-models") is 137 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/[id]" (path "/models/3030-9016-69tvv") is 139 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/[id]" (path "/models/3030-9016-12") is 139 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/[id]" (path "/models/2050-9016-12") is 139 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/[id]" (path "/models/3030-9005-69tvv") is 139 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/[id]" (path "/models/2050-9016-69tvv") is 139 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Warning: data for page "/models/[id]" (path "/models/3037-9016-12") is 139 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+   Generating static pages (115/460) 
+   Generating static pages (230/460) 
+   Generating static pages (345/460) 
+ ✓ Generating static pages (460/460)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                                                   Size     First Load JS
+┌ ● / (2763 ms)                                                 14.5 kB         159 kB
+├   /_app                                                       0 B             145 kB
+├ ○ /404                                                        1.7 kB          146 kB
+├ ● /about                                                      3.59 kB         148 kB
+├ ● /accepted                                                   2.96 kB         148 kB
+├ ● /agreement                                                  7.12 kB         152 kB
+├ ƒ /api/hello                                                  0 B             145 kB
+├ ● /articles                                                   9.42 kB         154 kB
+├ ● /articles/2-3-columns                                       4.29 kB         149 kB
+├ ● /articles/2180-3180                                         4.54 kB         149 kB
+├ ○ /articles/arbonia-2050-ili-3050                             11.2 kB         156 kB
+├ ● /articles/arbonia-2180-calc                                 4.41 kB         149 kB
+├ ● /articles/arbonia-2180-interior                             5.84 kB         150 kB
+├   └ css/84557b965f43ad31.css                                  194 B
+├ ● /articles/arbonia-2180-po-ploshadi                          6.27 kB         169 kB
+├ ○ /articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost      6.92 kB         151 kB
+├ ○ /articles/arbonia-3030-vs-3037                              7.58 kB         152 kB
+├   └ css/99163d37c6679bec.css                                  139 B
+├ ○ /articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat        4.87 kB         152 kB
+├   └ css/4b226ee39eb98e7f.css                                  155 B
+├ ● /articles/arbonia-3057                                      4.11 kB         149 kB
+├ ● /articles/arbonia-3180-ral-9016-vs-anthracite               5.48 kB         150 kB
+├   └ css/5748dfcffdb2e2d2.css                                  154 B
+├ ● /articles/belye-radiatory-v-temnom-interiere                5.83 kB         150 kB
+├   └ css/1eea1215c39dedf0.css                                  151 B
+├ ● /articles/calc-radiators-by-old-ones                        4.49 kB         149 kB
+├ ● /articles/calculate                                         5.34 kB         150 kB
+├ ● /articles/care                                              4.29 kB         149 kB
+├ ○ /articles/chernyy-radiator-arbonia (304 ms)                 7.45 kB         152 kB
+├ ● /articles/column-radiators                                  9.7 kB          154 kB
+├ ○ /articles/connections                                       10.3 kB         155 kB
+├ ● /articles/consoles                                          3.83 kB         148 kB
+├ ● /articles/convection-radiaton-arbonia                       7.35 kB         152 kB
+├ ○ /articles/delta-t-teplootdacha                              7.03 kB         152 kB
+├ ● /articles/epd                                               3 kB            148 kB
+├ ● /articles/faq                                               10.7 kB         155 kB
+├ ● /articles/gde-razmestit-radiator-otopleniya                 5.99 kB         151 kB
+├   └ css/01b9abb3872d8c2a.css                                  151 B
+├ ● /articles/high-arbonia                                      7.27 kB         152 kB
+├   └ css/8e05f0bf0be4e073.css                                  133 B
+├ ○ /articles/kak-vybrat-cvet-radiatora-pod-interer (302 ms)    12.2 kB         157 kB
+├ ● /articles/kogda-vertikalnyy-radiator-arbonia-ne-podkhodit   7.74 kB         152 kB
+├   └ css/f98efefba0da7630.css                                  158 B
+├ ● /articles/low-models                                        4.51 kB         149 kB
+├ ○ /articles/mezhosevoe-rasstoyanie-500-mm-arbonia             10.6 kB         155 kB
+├ ○ /articles/montazh-arbonia-2180-na-gkl                       5.83 kB         150 kB
+├   └ css/5ceca6df4c3f0183.css                                  148 B
+├ ● /articles/montazh-radiatorov-arbonia-rekomendacii           5.51 kB         150 kB
+├ ● /articles/montazh-vysokih-radiatorov-arbonia-instrukciya    6.2 kB          151 kB
+├   └ css/d18937937772cd1f.css                                  158 B
+├ ○ /articles/panorama                                          9.33 kB         154 kB
+├ ○ /articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey  7.21 kB         152 kB
+├ ○ /articles/radiator-pod-nizkiy-podokonnik                    10.3 kB         155 kB
+├ ● /articles/radiator-postoyanno-vyklyuchaetsya                9.31 kB         154 kB
+├   └ css/2a0a6c917f397351.css                                  152 B
+├ ● /articles/radiatory-arbonia-pod-okno                        9.67 kB         154 kB
+├   └ css/5d8b5ced30e286fb.css                                  144 B
+├ ○ /articles/ral-9016-9010-9003-kakoy-belyy-vybrat             6.83 kB         151 kB
+├ ● /articles/ral-9016-pochemu-vybirayut-arkhitektory           6.32 kB         151 kB
+├ ● /articles/termostat                                         3.63 kB         148 kB
+├ ○ /articles/trubchatye-ili-bimetallicheskie-radiatory         11.3 kB         156 kB
+├ ● /articles/trubchatye-radiatory-dlya-kvartiry                9.46 kB         154 kB
+├ ● /articles/tsvet-radiatorov-v-interiere                      9.24 kB         156 kB
+├   └ css/f68a9c578f819de1.css                                  147 B
+├ ● /articles/vertical-radiator-power                           6.59 kB         172 kB
+├   └ css/003bce3f7def4792.css                                  613 B
+├ ● /articles/vertical-vs-horizontal                            8.16 kB         155 kB
+├   └ css/c3524edbcd7aad04.css                                  143 B
+├ ● /catalog/[id] (10695 ms)                                    45.2 kB         228 kB
+├   ├ /catalog/low-models (2477 ms)
+├   ├ /catalog/ral9016 (2352 ms)
+├   ├ /catalog/standard (1970 ms)
+├   ├ /catalog/2180-stock (1950 ms)
+├   └ /catalog/high-models (1946 ms)
+├ ● /coloring                                                   3.77 kB         158 kB
+├ ● /delivery                                                   4.8 kB          149 kB
+├ ƒ /feed.yml                                                   253 B           145 kB
+├ ● /models/[id] (295193 ms)                                    8.84 kB         184 kB
+├   ├ /models/6280 (10749 ms)
+├   ├ /models/6150 (8149 ms)
+├   ├ /models/5280 (7692 ms)
+├   ├ /models/4300 (6794 ms)
+├   ├ /models/2180-sf3-12 (5271 ms)
+├   ├ /models/2280 (5208 ms)
+├   ├ /models/3050-9016-69tvv (5056 ms)
+├   └ [+122 more paths] (avg 2019 ms)
+├ ● /models/[id]/[sections] (595445 ms)                         5.02 kB         161 kB
+├   ├ /models/2180-7016-69tvv/12 (9636 ms)
+├   ├ /models/3037-9016-69tvv/18 (6711 ms)
+├   ├ /models/3180-7016-69tvv/10 (6545 ms)
+├   ├ /models/3057-9016-69tvv/8 (5939 ms)
+├   ├ /models/3180-sf3-12/8 (5450 ms)
+├   ├ /models/3180-9016-69tvv/8 (5137 ms)
+├   ├ /models/3050-9016-12/16 (5100 ms)
+├   └ [+241 more paths] (avg 2286 ms)
+├ ● /models/2050 (2877 ms)                                      4.4 kB          174 kB
+├ ● /models/2057 (2656 ms)                                      4.47 kB         174 kB
+├ ● /models/2180 (2722 ms)                                      215 B           176 kB
+├ ● /models/3030 (2667 ms)                                      4.95 kB         174 kB
+├ ● /models/3050 (1948 ms)                                      4.69 kB         174 kB
+├ ● /models/3057 (2735 ms)                                      4.79 kB         174 kB
+├ ● /models/3180 (2629 ms)                                      6.12 kB         175 kB
+├ ● /news                                                       2.67 kB         147 kB
+├ ● /news/2023-design                                           2.8 kB          147 kB
+├ ● /news/2024-midea                                            2.65 kB         147 kB
+├ ● /news/2024-report                                           3.23 kB         148 kB
+├ ● /news/2025-report                                           4.2 kB          149 kB
+├ ● /news/circle                                                3.25 kB         152 kB
+├ ● /news/redox                                                 3.23 kB         152 kB
+├ ● /oferta                                                     4.81 kB         149 kB
+├ ● /order/cart (1882 ms)                                       4.76 kB         179 kB
+├ ○ /order/success                                              1.35 kB         146 kB
+├ ● /privacy                                                    5.79 kB         150 kB
+├ ● /radiators/2180-04 (1951 ms)                                5.46 kB         155 kB
+├ ● /radiators/2180-06 (4241 ms)                                5.44 kB         155 kB
+├ ● /radiators/2180-08 (1935 ms)                                5.39 kB         155 kB
+├ ● /radiators/2180-10 (2159 ms)                                5.4 kB          155 kB
+├ ● /radiators/2180-12 (1851 ms)                                5.41 kB         155 kB
+└ ○ /request                                                    1.16 kB         153 kB
++ First Load JS shared by all                                   145 kB
+  ├ chunks/framework-945b357d4a851f4b.js                        44.9 kB
+  ├ chunks/main-e583ca6585ee3f22.js                             34.1 kB
+  ├ chunks/pages/_app-0221ddac9016d294.js                       64.6 kB
+  └ other shared chunks (total)                                 1.84 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> postbuild
+> next-sitemap
+
+✅ [next-sitemap] Generated index sitemap and 1 sitemap(s)
+   ○ https://arboniashop.ru/sitemap.xml (index)
+   ○ https://arboniashop.ru/sitemap-0.xml 

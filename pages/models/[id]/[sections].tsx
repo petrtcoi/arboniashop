@@ -1,3 +1,4 @@
+import ProductMetadata from '../../../components/seo/ProductMetadata'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -40,12 +41,13 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 	const radiatorTitle = `Радиатор Arbonia ${model.nameShort}-${sectionQnty}, ${color.nameShort}, ${connection.nameShort}`
 
 	return (
-		<Box
+        <Box
 			itemScope
 			itemType='https://schema.org/IndividualProduct'
 		>
-			<Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${model.id}`} /></Head>
-			<PageTitle
+            <ProductMetadata description={`${radiatorTitle}: ${sectionQnty} секций, высота ${model.height} мм, глубина ${model.width} мм.`} sku={`${model.id}-${sectionQnty}`} />
+            <Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${model.id}`} /></Head>
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
@@ -60,7 +62,7 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 					},
 				]}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				{/* Shit code! */}
 
 				{model.id.startsWith('2180') && (
@@ -164,15 +166,18 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 					noindex
 				/>
 				<Box
-					marginBottom={'50px'}
-					marginTop={'20px'}
-				>
+                    sx={{
+                        marginBottom: '50px',
+                        marginTop: '20px'
+                    }}>
 					<Typography
 						variant='h5'
 						component='h1'
 						gutterBottom
-						textAlign='center'
 						itemProp='name'
+						sx={{
+                            textAlign: 'center'
+                        }}
 					>
 						{radiatorTitle}
 					</Typography>
@@ -183,14 +188,17 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 					connection={connection}
 					sectionQnty={sectionQnty}
 				/>
-				<Box marginTop='40px'>
+				<Box sx={{
+                    marginTop: '40px'
+                }}>
 					<Divider variant='middle' />
 				</Box>
 				{/* ВКЛАДКИ С ИНФОРМАЦИЕЙ */}
 				<Box
-					marginTop='20px'
-					marginBottom='40px'
-				>
+                    sx={{
+                        marginTop: '20px',
+                        marginBottom: '40px'
+                    }}>
 					<Tabs
 						value={tab}
 						onChange={handleChangeTab}
@@ -214,7 +222,9 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 						<Typography
 							variant='h4'
 							component='h2'
-							marginBottom='20px'
+							sx={{
+                                marginBottom: '20px'
+                            }}
 						>
 							Дополнительные изображения
 						</Typography>
@@ -226,7 +236,9 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 						<Typography
 							variant='h4'
 							component='h2'
-							marginBottom='20px'
+							sx={{
+                                marginBottom: '20px'
+                            }}
 						>
 							Документы для скачивания
 						</Typography>
@@ -235,8 +247,8 @@ const Radiator: NextPage<RadiatorProps> = ({ model, color, connection, sectionQn
 				)}
 				<GeneralTextAboutArboniaProps />
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default Radiator

@@ -1,3 +1,4 @@
+import JsonLd from '../../../components/seo/JsonLd'
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 
@@ -13,15 +14,15 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
+        <Box>
+            <PageHeader
 				title={'Почему радиатор постоянно выключается - причины и решения'}
 				description={
 					'Почему радиатор постоянно выключается - быстрые проверки, таблица-диагностика и понятные решения: TRV, температура котла, воздух, клапаны, шлам.'
 				}
 			/>
 
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -32,17 +33,22 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				]}
 			/>
 
-			<Typography
-				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto', ...styles.standardText }}
-				marginY='20px'
-				component={'div'}
-			>
+            <Typography
+                component={'div'}
+                sx={{
+                    marginY: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '900px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
 				<Typography
-					component={'h1'}
-					variant='h4'
-					marginTop='10px'
-					marginBottom={'30px'}
-				>
+                    component={'h1'}
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '30px'
+                    }}>
 					Почему радиатор постоянно выключается - причины и решения
 				</Typography>
 
@@ -363,8 +369,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					признаки шлама и засоров, самостоятельные меры дадут лишь временный эффект и лучше вызвать специалиста.
 				</p>
 			</Typography>
-			<script type='application/ld+json'>
-				{JSON.stringify({
+            <JsonLd data={{
 					'@context': 'https://schema.org',
 					'@type': 'FAQPage',
 					mainEntity: [
@@ -433,10 +438,9 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							},
 						},
 					],
-				})}
-			</script>
-		</Box>
-	)
+				}} />
+        </Box>
+    );
 }
 
 export default ArticlePage

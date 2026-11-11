@@ -57,9 +57,10 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({
 
   return (
     <Box
-      textAlign={align}
-      minWidth={"100px"}
-    >
+      sx={{
+        textAlign: align,
+        minWidth: "100px"
+      }}>
       <Button
         color={buttonColor === "dark" ? "primary" : buttonColor}
         sx={{ color: mainColor, fontWeight: 200 }}
@@ -116,7 +117,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({
         </IconButton>
       )}
     </Box>
-  )
+  );
 }
 
 export default AddToCartButton

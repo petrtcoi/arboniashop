@@ -1,7 +1,8 @@
-import { Box, Grid, Hidden, Typography } from '@mui/material';
+import Hidden from '../ui/Hidden'
+import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 
-import Script from 'next/script';
+import JsonLd from '../seo/JsonLd';
 import * as styles from '../../styles/styles';
 
 type PageTitleProps = {
@@ -29,81 +30,89 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 	}
 
 	return (
-		<>
-			{!!breadcrumbs && breadcrumbs.length > 0 ? (
-				<Script
-					id='jsonld'
-					type='application/ld+json'
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-				/>
+        <>
+            {!!breadcrumbs && breadcrumbs.length > 0 ? (
+				<JsonLd data={jsonLd} />
 			) : null}
-			<Box
-				paddingY={'10px'}
-				paddingX={{ xs: '10px', md: '20px' }}
-				sx={{ backgroundColor: '#f6f6f6', borderBottom: '1px solid #e5e5e5', width: '100%' }}
-			>
+            <Box
+                sx={{
+                    paddingY: '10px',
+                    paddingX: { xs: '10px', md: '20px' },
+                    backgroundColor: '#f6f6f6',
+                    borderBottom: '1px solid #e5e5e5',
+                    width: '100%'
+                }}>
 				{breadcrumbs && breadcrumbs.length > 0 ? (
 					<Grid
 						container
-						justifyContent='space-between'
+						sx={{
+                            justifyContent: 'space-between'
+                        }}
 					>
-						<Grid item>
+						<Grid>
 							{breadcrumbs?.map((item, index) => {
 								return index + 1 < breadcrumbs.length ? (
 									<Box
 										key={index}
-										display='inline'
+										sx={{
+                                            display: 'inline'
+                                        }}
 									>
 										<a
 											style={{ textDecoration: 'none' }}
 											href={item.link}
-											itemProp='item'
 										>
 											<Typography
-												sx={{ ...styles.smallTextThinLink }}
-												display='inline'
-												itemProp='name'
-											>
+                                                sx={{
+                                                    display: 'inline',
+                                                    ...styles.smallTextThinLink
+                                                }}>
 												{item.title}
 											</Typography>
 										</a>
 
 										<Typography
-											sx={{ ...styles.smallTextThin }}
-											display='inline'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                ...styles.smallTextThin
+                                            }}>
 											&nbsp;&nbsp;&gt;&nbsp;&nbsp;
 										</Typography>
 									</Box>
 								) : (
 									<Box
 										key={index}
-										display='inline'
+										sx={{
+                                            display: 'inline'
+                                        }}
 									>
 										<Typography
-											sx={{ ...styles.smallText }}
-											display='inline'
-										>
+                                            sx={{
+                                                display: 'inline',
+                                                ...styles.smallText
+                                            }}>
 											{item.title}
 										</Typography>
 									</Box>
-								)
+								);
 							})}
 						</Grid>
-						<Grid item>
+						<Grid>
 							<Hidden smDown>
 								<Typography
-									component='h2'
-									sx={{ ...styles.smallTextBold }}
-									textAlign='right'
-								>
+                                    component='h2'
+                                    sx={{
+                                        textAlign: 'right',
+                                        ...styles.smallTextBold
+                                    }}>
 									{header}
 								</Typography>
 								<Typography
-									component='h2'
-									sx={{ ...styles.smallTextThin }}
-									textAlign='right'
-								>
+                                    component='h2'
+                                    sx={{
+                                        textAlign: 'right',
+                                        ...styles.smallTextThin
+                                    }}>
 									{subheader}
 								</Typography>
 							</Hidden>
@@ -112,24 +121,26 @@ const PageTitle: React.FC<PageTitleProps> = ({ header, subheader, breadcrumbs })
 				) : (
 					<>
 						<Typography
-							component='h2'
-							sx={{ ...styles.smallTextBold }}
-							textAlign='right'
-						>
+                            component='h2'
+                            sx={{
+                                textAlign: 'right',
+                                ...styles.smallTextBold
+                            }}>
 							{header}
 						</Typography>
 						<Typography
-							component='h2'
-							sx={{ ...styles.smallTextThin }}
-							textAlign='right'
-						>
+                            component='h2'
+                            sx={{
+                                textAlign: 'right',
+                                ...styles.smallTextThin
+                            }}>
 							{subheader}
 						</Typography>
 					</>
 				)}
 			</Box>
-		</>
-	)
+        </>
+    );
 }
 
 export default PageTitle

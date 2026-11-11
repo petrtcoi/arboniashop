@@ -1,9 +1,13 @@
 import { Box, Divider, Tab, Tabs, Typography } from '@mui/material'
+import calcRadiatorCost from '../../utils/calcRadiatorCost'
+import { formatPriceFrom, PRICE_RATE } from '../../utils/getPriceFrom'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { useContext, useState } from 'react'
 
 import PageHeader from '../../components/pageHeader/pageHeader'
+import ProductMetadata from '../../components/seo/ProductMetadata'
+import Stock3030Guide from '../../components/pageModels/Stock3030Guide'
 import DownloadsBlock from '../../components/pageModels/downloadsBlock'
 import ImagesOtherList from '../../components/pageModels/imagesOtherList'
 import ModelMainSection from '../../components/pageModels/modelMainSection'
@@ -91,6 +95,15 @@ const Model: NextPage<ModelProps> = ({
 	)
 
 	const { rateEuro, isFetching } = useContext(CurrencyContext)
+	// Та же цена, что «Цена от» в ModelMainSection: текущий цвет и подключение, первое складское число секций.
+	const titlePriceValue = calcRadiatorCost({
+		model: modelCurr,
+		color: colorCurr,
+		connection: connectionCurr,
+		sectionQnty: modelCurr.inStockSections ? +modelCurr.inStockSections.split(',')[0] : undefined,
+		currencyRate: PRICE_RATE,
+	}).price.noConsole
+	const titlePrice = Number.isFinite(titlePriceValue) && titlePriceValue > 0 ? titlePriceValue : null
 	const modelFamilyId = modelCurr.id.split('-')[0]
 	const modelBreadcrumbs = [
 		{ title: 'Главная', link: '/' },
@@ -108,31 +121,32 @@ const Model: NextPage<ModelProps> = ({
 	}
 
 	return (
-		<Box
+        <Box
 			itemScope
 			itemType='https://schema.org/ProductModel'
 		>
-			<Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${modelCurr.id}`} /></Head>
-			<meta
+            <ProductMetadata description={`${metaTitle}: стальной трубчатый радиатор высотой ${modelCurr.height} мм и глубиной ${modelCurr.width} мм. Размеры, мощность и цены по числу секций.`} sku={modelCurr.id} />
+            <Head><link key='canonical' rel='canonical' href={`https://arboniashop.ru/models/${modelCurr.id}`} /></Head>
+            <meta
 				itemProp='countryOfOrigin'
 				content='Чехия'
 			/>
-			<meta
+            <meta
 				itemProp='material'
 				content='Сталь'
 			/>
 
-			<PageHeader
-				title={`${metaTitle} — цена, размеры, мощность и наличие`}
+            <PageHeader
+				title={titlePrice ? `${metaTitle} — цена от ${formatPriceFrom(titlePrice)}, размеры и наличие` : `${metaTitle} — цена, размеры, мощность и наличие`}
 				description={`${metaTitle}: ${modelCurr.nameShort[0]}-трубчатая модель высотой ${modelCurr.height} мм и глубиной ${modelCurr.width} мм. Цены по числу секций, теплоотдача, размеры, подключение, гарантия 10 лет и доставка по России.`}
-				noindex={!CORE_VARIANT_MODEL_IDS.has(modelCurr.id)}
+				noindex={modelCurr.id.includes('-') && !CORE_VARIANT_MODEL_IDS.has(modelCurr.id)}
 			/>
-			<PageTitle
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={modelBreadcrumbs}
 			/>
-			<Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
+            <Box sx={{ ...global.pagePadding, maxWidth: '1200px', margin: 'auto' }}>
 				{/* Shit code! */}
 
 				{modelCurr.id.startsWith('2180') && (
@@ -229,15 +243,18 @@ const Model: NextPage<ModelProps> = ({
 				{/* Shit code end */}
 
 				<Box
-					marginBottom={'50px'}
-					marginTop={'20px'}
-				>
+                    sx={{
+                        marginBottom: '50px',
+                        marginTop: '20px'
+                    }}>
 					<Typography
 						variant='h5'
 						component='h1'
 						gutterBottom
-						textAlign='center'
 						itemProp='name'
+						sx={{
+                            textAlign: 'center'
+                        }}
 					>
 						{modelTitle}
 					</Typography>
@@ -251,14 +268,23 @@ const Model: NextPage<ModelProps> = ({
 					connectionTitle={connectionTitle}
 					handleBuyButton={setTabBuy}
 				/>
-				<Box marginTop='40px'>
+				{modelCurr.id === '3030-9016-12' && <Stock3030Guide model={modelCurr} />}
+				{modelCurr.id.split('-')[0] === '3057' && <Typography
+                    component='p'
+                    sx={[{
+                        marginTop: '24px'
+                    }, styles.standardText]}>Для выбранного режима отопления посмотрите <a href='/articles/arbonia-3057-skolko-sektsiy-dlina-moshchnost'>как рассчитать число секций Arbonia 3057</a>.</Typography>}
+				<Box sx={{
+                    marginTop: '40px'
+                }}>
 					<Divider variant='middle' />
 				</Box>
 				{/* ВКЛАДКИ С ИНФОРМАЦИЕЙ */}
 				<Box
-					marginTop='20px'
-					marginBottom='40px'
-				>
+                    sx={{
+                        marginTop: '20px',
+                        marginBottom: '40px'
+                    }}>
 					<Tabs
 						value={tab}
 						onChange={handleChangeTab}
@@ -288,18 +314,24 @@ const Model: NextPage<ModelProps> = ({
 							<Typography
 								variant='h4'
 								component='h2'
-								marginBottom='20px'
+								sx={{
+                                    marginBottom: '20px'
+                                }}
 							>
 								Купить {modelCurr.name}
 							</Typography>
 
-							<Box visibility={isFetching ? 'hidden' : 'hidden'}>
+							<Box sx={{
+                                visibility: isFetching ? 'hidden' : 'hidden'
+                            }}>
 								<Typography sx={{ ...styles.smallTextThin, ...styles.smallTextRed }}>
 									подождите, обновляется курс валют...
 								</Typography>
 							</Box>
 
-							<Box marginTop='20px'>
+							<Box sx={{
+                                marginTop: '20px'
+                            }}>
 								{modelCurr.inStock === 'true' && colorCurr !== null && connectionCurr !== null ? (
 									<RadiatorList
 										model={modelCurr}
@@ -334,7 +366,9 @@ const Model: NextPage<ModelProps> = ({
 						<Typography
 							variant='h4'
 							component='h2'
-							marginBottom='20px'
+							sx={{
+                                marginBottom: '20px'
+                            }}
 						>
 							Дополнительные изображения
 						</Typography>
@@ -346,7 +380,9 @@ const Model: NextPage<ModelProps> = ({
 						<Typography
 							variant='h4'
 							component='h2'
-							marginBottom='20px'
+							sx={{
+                                marginBottom: '20px'
+                            }}
 						>
 							Документы для скачивания
 						</Typography>
@@ -355,8 +391,8 @@ const Model: NextPage<ModelProps> = ({
 				)}
 				<GeneralTextAboutArboniaProps />
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default Model

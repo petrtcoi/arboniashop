@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-10-13",
+  "property": "sc-domain:arboniashop.ru",
+  "search_type": "Web (text-based)",
+  "performance_3m": {"start": "2026-07-11", "end": "2026-10-10", "clicks": 735, "impressions": 81596, "ctr_percent": 0.9008, "position_displayed": 8.5},
+  "performance_comparison": {
+    "current": {"start": "2026-09-13", "end": "2026-10-10", "clicks": 228, "impressions": 25489, "ctr_percent": 0.8945, "position_displayed": 7.8},
+    "previous": {"start": "2026-08-16", "end": "2026-09-12", "clicks": 229, "impressions": 28005, "ctr_percent": 0.8177, "position_displayed": 9.9},
+    "russia_current": {"clicks": 200, "impressions": 22421, "position": 7.98},
+    "russia_previous": {"clicks": 201, "impressions": 25254, "position": 10.12}
+  },
+  "indexing": {
+    "last_updated": "2026-10-09", "indexed": 275, "not_indexed": 149,
+    "reasons": {"noindex": 114, "server_error_5xx": 9, "not_found_404": 7, "redirect": 5, "alternate_canonical": 4, "discovered_not_indexed": 5, "crawled_not_indexed": 5},
+    "discovered_examples": ["/delivery", "/models/3030-9016-12", "/news/2023-design", "/oferta", "/request"],
+    "crawled_examples": ["/sitemap-0.xml", "/robots.txt", "/sitemap.xml", "/news/2024-midea", "/models/3030-9005-69tvv/12"],
+    "server_error_last_crawls": {"first": "2026-05-08", "last": "2026-05-12"},
+    "server_error_current_http_check": {"tested": 9, "status_200": 9, "noindex": 9}
+  },
+  "url_inspection": {
+    "url": "https://arboniashop.ru/models/3030-9016-12",
+    "google_index": "Discovered - currently not indexed",
+    "last_crawl": null,
+    "live_test": "URL is available to Google; Page can be indexed",
+    "live_merchant_listings": {"valid_items": 1, "non_critical_issues": true},
+    "live_breadcrumbs": {"valid_items": 1},
+    "indexing_requested_in_this_audit": false
+  },
+  "sitemap": {"status": "Success", "last_read": "2026-10-08", "discovered_pages": 200},
+  "merchant_listings": {
+    "last_updated": "2026-10-11", "valid": 32, "invalid": 2,
+    "critical": {"issue": "Invalid floating point number in property price (offers)", "urls": ["/radiators/2180-06", "/radiators/2180-10"]},
+    "warnings": {"missing_hasMerchantReturnPolicy": 34, "missing_shippingDetails": 34, "missing_availability": 34, "no_global_identifier": 34, "invalid_offers_object_type": 25, "missing_description": 9}
+  },
+  "overview_experience": {"mobile_core_web_vitals_good": 140, "mobile_needs_improvement": 0, "mobile_poor": 0, "desktop_data_available": false, "https_valid": 144, "https_invalid": 0},
+  "exact_query_check": {"query": "ral 9016", "clicks": 31, "impressions": 6267, "position": 4.3, "pages": ["https://arboniashop.ru/articles/ral-9016-pochemu-vybirayut-arkhitektory"]},
+  "confirmed_broken_internal_link": {"source": "https://arboniashop.ru/articles/calculate", "target": "https://arboniashop.ru/models/3057-9016-1270-34", "status": 404},
+  "site_or_search_console_configuration_modified": false
+}

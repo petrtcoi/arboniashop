@@ -15,14 +15,14 @@ type ArticlePageProps = {}
 
 const ArticlePage: NextPage<ArticlePageProps> = () => {
 	return (
-		<Box>
-			<PageHeader
-				title={'Радиаторы Arbonia: ответы на частые вопросы про радиаторы Arbonia'}
+        <Box>
+            <PageHeader
+				title={'Радиаторы Arbonia: частые вопросы — давление, установка, производство'}
 				description={
-					'Собрали наиболее частые вопросы, которые нам задают про радиаторы Arbonia, и подготовили на них ответы. Где можно устанавливать радиаторы Arbonia? Где их производят? Какое давление они выдерживают? И т.д.'
+					'Ответы на частые вопросы о радиаторах Arbonia: где производят, какое давление выдерживают (кратковременно до 16 атм), где можно устанавливать и как выбрать модель.'
 				}
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -32,11 +32,11 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					},
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide-5.jpeg'}
 				header={'Ответы на часто задаваемые вопросы про радиаторы Arbonia'}
 			/>
-			<Box
+            <Box
 				sx={{ ...global.pagePadding, maxWidth: '900px', margin: 'auto' }}
 				itemScope
 				itemType='https://schema.org/FAQPage'
@@ -282,10 +282,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Где производят радиаторы Arbonia?
 					</Typography>
@@ -296,9 +298,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Холдинг, который управляет брендом Arbonia, располагает несколькими производственными мощностями. Завод,
 								расположенный в городе Стршибро, Чехия, специализируется на изготовлении трубчатых радиаторов для систем
 								отопления.
@@ -316,10 +319,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Какие вертикальные радиаторы Arbonia поддерживаются в наличии?
 					</Typography>
@@ -330,9 +335,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								На складе постоянно поддерживаются радиаторы{' '}
 								<a
 									style={{ textDecoration: 'none' }}
@@ -374,10 +380,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Подходят ли радиаторы Arbonia для центрального отопления?
 					</Typography>
@@ -389,17 +397,19 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Радиаторы Arbonia подходят как для установки в многоквартирные дома с централизованной системой
 								отопления, так и для использования в частных домах с собственным отопительным котлом. Они предназначены
 								для работы в системах с закрытым контуром, где отсутствует прямой доступ кислорода к воде.
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								В обычных условиях работы центральной отопительной системы давление обычно не превышает 8 атмосфер.
 								Однако радиаторы спроектированы таким образом, что могут непрерывно работать при давлении до 10 атмосфер
 								и выдерживать кратковременные повышения до 16 атмосфер, что обеспечивает их надежность и долговечность в
@@ -417,10 +427,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Как соотносятся мощности радиаторов Arbonia c алюминиевыми или биметаллическими радиаторами?
 					</Typography>
@@ -431,18 +443,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Алюминиевые или биметаллические радиаторы состоят из секций длиной 80 мм и обладают высокой теплоотдачей
 								за счет высокой доли передачи тепла через конвекцию. Ниже представлена таблица, в которой приведены
 								мощности популярных моделей радиаторов Arbonia в сравнении с алюминиевыми батареями (мощности указаны
 								при dT=60C).
 							</Typography>
 							<Typography
-								sx={{ ...styles.smallText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.smallText
+                                }}>
 								<table
 									style={{
 										width: '100%',
@@ -480,7 +494,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											476 мм
 											<br />
-											780 Вт
+											730 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											5 секций
@@ -510,7 +524,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											566 мм
 											<br />
-											936 Вт
+											876 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											6 секций
@@ -540,7 +554,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											656 мм
 											<br />
-											1092 Вт
+											1022 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											7 секций
@@ -570,7 +584,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											746 мм
 											<br />
-											1248 Вт
+											1168 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											8 секций
@@ -600,7 +614,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											836 мм
 											<br />
-											1404 Вт
+											1314 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											9 секций
@@ -630,7 +644,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											926 мм
 											<br />
-											1560 Вт
+											1460 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											10 секций
@@ -660,7 +674,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1016 мм
 											<br />
-											1716 Вт
+											1606 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											11 секций
@@ -690,7 +704,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1106 мм
 											<br />
-											1872 Вт
+											1752 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											12 секций
@@ -720,7 +734,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1196 мм
 											<br />
-											2028 Вт
+											1898 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											13 секций
@@ -750,7 +764,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1286 мм
 											<br />
-											2184 Вт
+											2044 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray', backgroundColor: '#f2f2f2' }}>
 											13 секций
@@ -780,7 +794,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 											<br />
 											1376 мм
 											<br />
-											2340 Вт
+											2190 Вт
 										</td>
 										<td style={{ padding: '5px', border: '1px solid darkgray' }}>
 											14 секций
@@ -812,10 +826,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Возможно ли радиусное исполнение радиаторов Arbonia?
 					</Typography>
@@ -827,9 +843,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Радиусное исполнение радиаторов Arbonia предполагает индивидуальный подход к каждому заказу, начиная с
 								точного замера радиуса стены на месте установки и заканчивая контрольной проверкой утвержденного шаблона
 								перед началом производства. Этот процесс гарантирует, что радиатор будет идеально соответствовать
@@ -837,9 +854,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 								квалифицированных специалистов, от замерщика до инженеров конструкторского бюро, что, безусловно, влияет
 								на стоимость и сроки изготовления такого радиатора.
 								<Box
-									textAlign={'center'}
-									marginTop='20px'
-								>
+                                    sx={{
+                                        textAlign: 'center',
+                                        marginTop: '20px'
+                                    }}>
 									<img
 										src='/images/articles/radius1.png'
 										alt='Радиатор Arbonia в радиусном исполнении'
@@ -861,10 +879,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Какое должно быть расстояние радиатора от стены
 					</Typography>
@@ -876,16 +896,18 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Установка радиатора на рекомендованном минимальном расстоянии от стены позволяет достичь оптимального
 								теплообмена и распределения воздуха в помещении.
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								На выбор кронштейнов влияет не только тип радиатора (количество трубок), но и необходимое расстояние от
 								стены. Кронштейны с фиксированной глубиной установки (ZB 0251, ZB 0257, ZB 0280) подойдут, если точно
 								известно расстояние, необходимое для установки радиатора. В то же время, кронштейны с регулируемой
@@ -893,9 +915,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 								установку под конкретные условия и требования к расстоянию от стены.
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Для разных типов радиаторов требуются разные минимальные расстояния от стены, что связано с их тепловой
 								мощностью и способностью к распределению тепла в помещении. Чем больше количество трубок в радиаторе,
 								тем больше места необходимо для обеспечения эффективного теплообмена, поскольку более массивные
@@ -915,10 +938,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Какое нужно расстояние от пола и от подоконника?
 					</Typography>
@@ -930,9 +955,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Соблюдение минимального расстояния как от подоконника, так и от пола гарантирует, что воздух свободно
 								циркулирует вокруг радиатора, что способствует более эффективному распределению тепла.
 								<ul>
@@ -962,10 +988,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Возможно ли проходное подключение радиаторов Arbonia
 					</Typography>
@@ -977,18 +1005,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Последовательное подключение нескольких радиаторов Arbonia – это распространенный метод в системах
 								отопления, позволяющий эффективно распределять тепло в нескольких помещениях или в большом пространстве.
 								Использование проходных радиаторов и комплектующих, таких как переходники с отбортовкой и прокладки,
 								обеспечивает герметичность и надежность такого подключения.
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Выбор между 1/2" и 3/4" зависит от расчетной тепловой мощности системы и требуемого расхода воды через
 								радиаторы. Более крупный диаметр позволяет обеспечить больший расход и, соответственно, может быть
 								предпочтителен для систем с высокой тепловой нагрузкой.
@@ -1006,10 +1036,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Как работает циркуляция теплоносителя в радиаторах большой длины
 					</Typography>
@@ -1021,18 +1053,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Когда радиатор получается особенно длинным (1500 мм и более), без дополнительных мер может произойти
 								снижение эффективности отопления из-за недостаточного распределения горячей воды по всей его длине. В
 								таких случаях внутрь радиатора устанавливается трубка-удлинитель, которая помогает воде равномерно
 								распределиться, повышая тем самым общую теплоотдачу радиатора.
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Длина трубки составляет 2/3 от длины радиатора, что позволяет горячей воде достигать дальних участков
 								радиатора, тем самым улучшая его теплоотдачу и обеспечивая более равномерный нагрев помещения.
 							</Typography>
@@ -1049,10 +1083,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Возможна ли покраска радиаторов в свой цвет?
 					</Typography>
@@ -1064,9 +1100,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Вы можете выбрать между заказом радиатора прямо с завода в нужном цвете, что может занять от 2 до 4
 								месяцев, либо воспользоваться услугой покраски радиаторов в выбранный цвет из палитры RAL, что
 								значительно быстрее – всего 1-2 недели.
@@ -1084,10 +1121,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					itemType='https://schema.org/Question'
 				>
 					<Typography
-						marginTop='40px'
 						variant='h5'
 						component={'h2'}
 						itemProp='name'
+						sx={{
+                            marginTop: '40px'
+                        }}
 					>
 						Основные преимущества стальных трубчатых радиаторов
 					</Typography>
@@ -1099,9 +1138,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					>
 						<div itemProp='text'>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Стальные трубчатые радиаторы обладают множеством преимуществ, делающих их идеальным выбором для
 								современного жилища. Одно из ключевых преимуществ - это полностью автоматизированное производство,
 								исключающее человеческий фактор, что гарантирует высокое качество и однородность каждого изделия. Эти
@@ -1110,9 +1150,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 								выбор позволяет подобрать радиатор для любого пространства и тепловых нужд.
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Порошковая окраска, используемая в производстве, не только придает изделиям привлекательный внешний вид,
 								но и увеличивает их устойчивость к коррозии и механическим повреждениям. Это делает радиаторы более
 								долговечными и уменьшает потребность в их регулярном обслуживании. Уход за такими радиаторами не
@@ -1120,9 +1161,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 								в помещении.
 							</Typography>
 							<Typography
-								sx={{ ...styles.standardText }}
-								marginY='20px'
-							>
+                                sx={{
+                                    marginY: '20px',
+                                    ...styles.standardText
+                                }}>
 								Кроме того, стальные трубчатые радиаторы отличаются премиальным внешним видом. Они идеально вписываются
 								в дизайнерские интерьеры, будь то классические или современные стили, благодаря своему универсальному
 								дизайну. Это делает их подходящими для использования в самых различных архитектурных и дизайнерских
@@ -1139,10 +1181,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						itemType='https://schema.org/Question'
 					>
 						<Typography
-							marginTop='40px'
 							variant='h5'
 							component={'h2'}
 							itemProp='name'
+							sx={{
+                                marginTop: '40px'
+                            }}
 						>
 							Как приобрести радиатор Arbonia по индивидуальному заказу?
 						</Typography>
@@ -1154,26 +1198,29 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						>
 							<div itemProp='text'>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									В наличии поддерживаются наиболее популярные модели радиаторов Arbonia. Однако, если вам нужен
 									радиатор с нестандартными параметрами, вы можете оформить индивидуальный заказ. Сроки поставки
 									радиатора зависят от загруженности производства и могут составлять от 2 до 4 месяцев. Пожалуйста,
 									уточняйте реальные сроки у специалиста при оформлении заказа.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Заказать можно любой радиатор из полного каталога производителя. На выбор доступны не только любые
 									размеры, но также цвета и варианты подключения. Это дает возможность подобрать радиатор, который
 									идеально подойдет для вашего интерьера и обеспечит оптимальное отопление помещения.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Важно учитывать, что радиаторы изготавливаются и поставляются в России по вашему индивидуальному
 									заказу. Поэтому их нельзя будет вернуть или обменять. Мы настоятельно рекомендуем согласовать
 									технические параметры радиаторов с вашим прорабом перед оформлением заказа.
@@ -1191,10 +1238,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						itemType='https://schema.org/Question'
 					>
 						<Typography
-							marginTop='40px'
 							variant='h5'
 							component={'h2'}
 							itemProp='name'
+							sx={{
+                                marginTop: '40px'
+                            }}
 						>
 							Что такое объем радиатора в литрах?
 						</Typography>
@@ -1206,18 +1255,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						>
 							<div itemProp='text'>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									«Емкость для воды» показывает объем теплоносителя, который требуется радиатору для нормального
 									функционирования в системе отопления. Этот параметр также называют «объем воды в секции» - что дает
 									лучшее представление о его значении. Хотя емкость не считается ключевым фактором при выборе радиатора,
 									более важными характеристиками являются его физические размеры, рабочее давление и тепловая мощность.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Иногда можно столкнуться с двумя радиаторами с почти одинаковыми параметрами, но разной емкостью для
 									воды. В таких случаях предпочтительнее выбрать радиатор с меньшим объемом воды в секции. Это позволяет
 									более точно управлять температурой радиатора и ускоряет его нагрев, что особенно важно зимой.
@@ -1237,10 +1288,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						itemType='https://schema.org/Question'
 					>
 						<Typography
-							marginTop='40px'
 							variant='h5'
 							component={'h2'}
 							itemProp='name'
+							sx={{
+                                marginTop: '40px'
+                            }}
 						>
 							Зачем нужна перемычка при установки трубчатых радиаторов с боковым подключением?
 						</Typography>
@@ -1252,9 +1305,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						>
 							<div itemProp='text'>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									В многоквартирных домах с отопительной системой часто можно увидеть перемычку (или байпас) в
 									радиаторах с боковым подключением. Это устройство не всегда является обязательным, поэтому возникает
 									вопрос: для чего оно нужно? Установка перемычки предусмотрена на этапе проектирования системы, чтобы
@@ -1263,9 +1317,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 									байпасе.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Однотрубная система имеет свои особенности. Для равномерного распределения тепла по этажам иногда
 									необходимо перекрывать поток теплой воды в отдельных квартирах. Без перемычки температура на разных
 									этажах может существенно различаться: в одних квартирах будет жарко, а в других холодно. Байпас
@@ -1273,9 +1328,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 									отопление на всех этажах.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Кроме того, перемычка играет важную роль при аварийных ситуациях и ремонтных работах. В случае
 									необходимости можно перекрыть воду в отдельной квартире или радиаторе без отключения всего дома.
 									Байпас позволяет изолировать конкретный участок, что делает систему более удобной для обслуживания и
@@ -1294,10 +1350,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						itemType='https://schema.org/Question'
 					>
 						<Typography
-							marginTop='40px'
 							variant='h5'
 							component={'h2'}
 							itemProp='name'
+							sx={{
+                                marginTop: '40px'
+                            }}
 						>
 							Когда лучше менять радиаторы отопления?
 						</Typography>
@@ -1309,9 +1367,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						>
 							<div itemProp='text'>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Система отопления постепенно изнашивается, что со временем снижает ее эффективность, и встает вопрос о
 									замене батарей. Когда же лучше всего проводить эти работы – летом или зимой? Хотя замена радиаторов в
 									летний период часто считается более удобной, следует учитывать, что и тогда потребуется сливать воду
@@ -1320,18 +1379,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 									нежелательно - это ускоряет их коррозию.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Тем не менее, замена радиаторов летом обычно проще, так как в этот период дом не останется без
 									отопления, и согласовать проведение работ с управляющей компанией легче. Единственный недостаток
 									летней замены - невозможность сразу проверить работу новых радиаторов, поскольку подача воды
 									возобновляется лишь с началом отопительного сезона.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Зимняя замена радиаторов, напротив, проводится в исключительных случаях, обычно в аварийных ситуациях,
 									когда устранение проблемы не терпит отлагательств.
 								</Typography>
@@ -1348,10 +1409,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						itemType='https://schema.org/Question'
 					>
 						<Typography
-							marginTop='40px'
 							variant='h5'
 							component={'h2'}
 							itemProp='name'
+							sx={{
+                                marginTop: '40px'
+                            }}
 						>
 							Зачем нужен кран Маевского на радиаторе?
 						</Typography>
@@ -1363,9 +1426,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						>
 							<div itemProp='text'>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Кран Маевского - это устройство, предназначенное для выпуска воздушных масс из батарей водяного
 									отопления. Он помогает удалить воздух, который попадает в систему во время подпитки теплоносителем.
 									Вода в системе отопления может содержать растворенные газы, которые при больших объемах начинают
@@ -1373,18 +1437,20 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 									из-за чего помещение прогревается медленнее и менее равномерно.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Для выпуска воздуха через кран Маевского требуется специальная отвертка или ключ. Присутствие крана
 									особенно важно после длительного простоя системы или при добавлении нового теплоносителя, когда
 									скопившиеся газы необходимо вывести наружу. Воздух также может образовываться при взаимодействии воды
 									с металлическими элементами, что иногда приводит к выделению водорода.
 								</Typography>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Кран Маевского установлен с учетом безопасности: его можно открыть только с помощью специальных
 									инструментов, что предотвращает случайный доступ и защищает от нежелательного слива воды, что могло бы
 									привести к подтоплению квартиры или соседей.
@@ -1402,10 +1468,12 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						itemType='https://schema.org/Question'
 					>
 						<Typography
-							marginTop='40px'
 							variant='h5'
 							component={'h2'}
 							itemProp='name'
+							sx={{
+                                marginTop: '40px'
+                            }}
 						>
 							Почему трубчатые радиаторы считаются наиболее гигиеничными?
 						</Typography>
@@ -1417,9 +1485,10 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						>
 							<div itemProp='text'>
 								<Typography
-									sx={{ ...styles.standardText }}
-									marginY='20px'
-								>
+                                    sx={{
+                                        marginY: '20px',
+                                        ...styles.standardText
+                                    }}>
 									Трубчатые радиаторы считаются наиболее гигиеничными из-за их открытой и гладкой конструкции, которая
 									упрощает процесс очистки. В отличие от секционных радиаторов, они не имеют труднодоступных мест, где
 									могла бы скапливаться пыль и грязь. Это позволяет легко поддерживать их в чистоте даже в условиях
@@ -1432,8 +1501,8 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					</div>
 				</div>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

@@ -14,9 +14,9 @@ type ArticlesListPageProps = {}
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 	return (
-		<Box>
-			<PageHeader title={'Запуск системы хранения энергии на основе редокс-аккумуляторов'} />
-			<PageTitle
+        <Box>
+            <PageHeader title={'Запуск системы хранения энергии на основе редокс-аккумуляторов'} description={'Prolux Solutions из группы Arbonia представила STORAC — систему хранения энергии для частных домов на негорючих редокс-аккумуляторах ёмкостью 6 кВт⋅ч.'} />
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
@@ -26,10 +26,13 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				]}
 			/>
 
-			<Box
-				sx={{ ...global.pagePadding, maxWidth: '800px', margin: 'auto' }}
-				marginTop='20px'
-			>
+            <Box
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '800px',
+                    margin: 'auto'
+                }}>
 				<Typography
 					variant='h6'
 					component='h1'
@@ -38,7 +41,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 				>
 					Запуск системы хранения энергии на основе редокс-аккумуляторов
 				</Typography>
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<Typography
 						style={{ ...styles.standardText }}
 						component='div'
@@ -77,8 +82,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					/>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlesListPage

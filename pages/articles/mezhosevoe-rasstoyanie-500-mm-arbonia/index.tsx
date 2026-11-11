@@ -13,10 +13,10 @@ import global from '../../../variables/global'
 const siteUrl = 'https://arboniashop.ru'
 const slug = 'mezhosevoe-rasstoyanie-500-mm-arbonia'
 const keyword = 'межосевое расстояние 500 мм Arbonia'
-const h1 = 'Межосевое расстояние 500 мм Arbonia - замена батареи'
-const metaTitle = 'Межосевое расстояние 500 мм Arbonia - замена'
+const h1 = 'Межосевое расстояние 500 мм Arbonia: как измерить и проверить выводы'
+const metaTitle = 'Межосевое 500 мм Arbonia: измерение и геометрия подключения'
 const metaDescription =
-	'Межосевое расстояние 500 мм у Arbonia 2057 и 3057: как измерить старые трубы, выбрать модель, мощность и боковое подключение без ошибок при замене.'
+	'Что означает межосевое 500 мм у Arbonia 2057 и 3057. Измерение центров труб, высоты осей, положения относительно стены и свободного места для арматуры.'
 
 const quickPickRows = [
 	{
@@ -101,13 +101,24 @@ const LinkText = ({ href, children }: { href: string; children: React.ReactNode 
 )
 
 const Paragraph = ({ children, marginTop = '14px' }: { children: React.ReactNode; marginTop?: string }) => (
-	<Typography component='p' marginTop={marginTop} sx={{ ...styles.standardText }}>
+	<Typography
+        component='p'
+        sx={{
+            marginTop: marginTop,
+            ...styles.standardText
+        }}>
 		{children}
 	</Typography>
 )
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
-	<Typography component='h2' variant='h5' marginTop='44px' marginBottom='12px'>
+	<Typography
+        component='h2'
+        variant='h5'
+        sx={{
+            marginTop: '44px',
+            marginBottom: '12px'
+        }}>
 		{children}
 	</Typography>
 )
@@ -120,7 +131,7 @@ const ArticlePage: NextPage = () => {
 		description: metaDescription,
 		image: `${siteUrl}/images/articles/20230222.jpg`,
 		datePublished: '2026-07-21',
-		dateModified: '2026-07-21',
+		dateModified: '2026-10-13',
 		mainEntityOfPage: `${siteUrl}/articles/${slug}`,
 		about: keyword,
 		keywords: [keyword, 'Arbonia 2057', 'Arbonia 3057', 'замена батареи без переноса труб'],
@@ -140,44 +151,30 @@ const ArticlePage: NextPage = () => {
 		})),
 	}
 
-	const breadcrumbJsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: [
-			{ '@type': 'ListItem', position: 1, name: 'Главная', item: siteUrl },
-			{ '@type': 'ListItem', position: 2, name: 'Полезная информация', item: `${siteUrl}/articles` },
-			{ '@type': 'ListItem', position: 3, name: h1, item: `${siteUrl}/articles/${slug}` },
-		],
-	}
 
 	return (
-		<Box>
-			<Head>
+        <Box>
+            <Head>
 				<link key='canonical' rel='canonical' href={`${siteUrl}/articles/${slug}`} />
 			</Head>
-			<Script
+            <Script
 				id='mezhosevoe-500-article-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
 			/>
-			<Script
+            <Script
 				id='mezhosevoe-500-faq-jsonld'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
 			/>
-			<Script
-				id='mezhosevoe-500-breadcrumb-jsonld'
-				type='application/ld+json'
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-			/>
 
-			<PageHeader
+            <PageHeader
 				title={metaTitle}
 				description={metaDescription}
 				type='article'
 				image='/images/articles/20230222.jpg'
 			/>
-			<PageTitle
+            <PageTitle
 				breadcrumbs={[
 					{ title: 'Главная', link: '/' },
 					{ title: 'Полезная информация', link: '/articles' },
@@ -185,12 +182,22 @@ const ArticlePage: NextPage = () => {
 				]}
 			/>
 
-			<Box
-				component='article'
-				sx={{ ...global.pagePadding, maxWidth: '920px', margin: 'auto', ...styles.standardText }}
-				marginTop='20px'
-			>
-				<Typography component='h1' variant='h4' marginTop='10px' marginBottom='24px'>
+            <Box
+                component='article'
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding,
+                    maxWidth: '920px',
+                    margin: 'auto',
+                    ...styles.standardText
+                }}>
+				<Typography
+                    component='h1'
+                    variant='h4'
+                    sx={{
+                        marginTop: '10px',
+                        marginBottom: '24px'
+                    }}>
 					{h1}
 				</Typography>
 
@@ -244,7 +251,11 @@ const ArticlePage: NextPage = () => {
 					<LinkText href='/articles/arbonia-3057'>замену чугунного радиатора на Arbonia 3057</LinkText>.
 				</Paragraph>
 
-				<Box textAlign='center' marginTop='28px'>
+				<Box
+                    sx={{
+                        textAlign: 'center',
+                        marginTop: '28px'
+                    }}>
 					<img
 						src='/images/articles/20230222.jpg'
 						alt='Радиатор Arbonia 3057 с межосевым расстоянием 500 мм'
@@ -270,23 +281,15 @@ const ArticlePage: NextPage = () => {
 					проверить геометрию подключения и возможность надежного <LinkText href='/articles/montazh-radiatorov-arbonia-rekomendacii'>монтажа радиатора Arbonia</LinkText>.
 				</Paragraph>
 
-				<SectionHeading>Arbonia 2057 или 3057 - мощность и габариты</SectionHeading>
-				<Paragraph marginTop='0'>
-					Обе модели имеют одинаковую высоту 570 мм и межосевое расстояние 500 мм, но разное число труб в глубину.
-					Arbonia 2057 глубиной 65 мм выглядит тоньше и меньше выступает из стены. Arbonia 3057 глубиной 105 мм занимает
-					на 40 мм больше, зато технический каталог для режима 75/65/20 указывает 58 Вт на элемент против 42 Вт у 2057.
-					При равном числе секций это примерно на 38% больше номинальной мощности. Поэтому выбор между
-					<LinkText href='/models/2057'>Arbonia 2057</LinkText> и <LinkText href='/models/3057'>Arbonia 3057</LinkText>
-					обычно сводится к балансу глубины, доступной длины и тепловой нагрузки.
-				</Paragraph>
-				<Paragraph>
-					Для условной потребности 1000 Вт при паспортном режиме потребуется 24 элемента 2057 или 18 элементов 3057
-					после округления вверх. В реальной системе эти числа могут измениться, потому что при более низкой температуре
-					воды одна секция отдает меньше тепла. Нельзя просто повторить число секций старой батареи: у разных конструкций
-					иная мощность элемента и иной шаг по длине. Сначала определяют нагрузку помещения или проверяют мощность
-					существующего прибора, затем применяют данные конкретной модели. Для второго сценария пригодится инструкция по
-					<LinkText href='/articles/calc-radiators-by-old-ones'>подбору на основе установленной батареи</LinkText>.
-				</Paragraph>
+				<SectionHeading>Какие корпуса соответствуют межосевому 500 мм</SectionHeading>
+                <Paragraph marginTop='0'>У боковых Arbonia 2057 и 3057 одинаковая высота корпуса 570 мм и расстояние
+                    между осями 500 мм. Глубина различается: 65 и 105 мм. После проверки осей измерьте полный выступ
+                    от готовой стены и место для клапанов — геометрическая совместимость включает и эти размеры.</Paragraph>
+                <Paragraph>Для остальных ограничений и выбора стандартного корпуса используйте
+                    <LinkText href='/articles/radiatory-arbonia-pod-okno'> сравнение моделей под обычное окно</LinkText>.
+                    Подготовка замены именно на 3057 описана в
+                    <LinkText href='/articles/arbonia-3057'> отдельной статье о замене старой батареи</LinkText>.
+                    Совпадение межосевого не подтверждает достаточную теплоотдачу; её сравнивают при одинаковом режиме.</Paragraph>
 
 				<SectionHeading>Однотрубная и двухтрубная система</SectionHeading>
 				<Paragraph marginTop='0'>
@@ -334,7 +337,9 @@ const ArticlePage: NextPage = () => {
 
 				<SectionHeading>Частые вопросы</SectionHeading>
 				{faqItems.map(item => (
-					<Box key={item.question} marginTop='24px'>
+					<Box key={item.question} sx={{
+                        marginTop: '24px'
+                    }}>
 						<Typography component='h3' variant='h6' sx={{ fontSize: '17px' }}>
 							{item.question}
 						</Typography>
@@ -342,9 +347,21 @@ const ArticlePage: NextPage = () => {
 					</Box>
 				))}
 
-				<Box marginTop='52px' padding='25px' sx={{ backgroundColor: '#f6f6f6', border: '1px solid #e5e5e5' }}>
-					<Grid container spacing={2} alignItems='center'>
-						<Grid item xs={12} md={8}>
+				<Box
+                    sx={{
+                        marginTop: '52px',
+                        padding: '25px',
+                        backgroundColor: '#f6f6f6',
+                        border: '1px solid #e5e5e5'
+                    }}>
+					<Grid container spacing={2} sx={{
+                        alignItems: 'center'
+                    }}>
+						<Grid
+                            size={{
+                                xs: 12,
+                                md: 8
+                            }}>
 							<Typography component='h2' variant='h5'>
 								Проверить замену без переноса труб
 							</Typography>
@@ -355,7 +372,11 @@ const ArticlePage: NextPage = () => {
 								работ без изменения труб должен подтвердить монтажник на объекте.
 							</Paragraph>
 						</Grid>
-						<Grid item xs={12} md={4}>
+						<Grid
+                            size={{
+                                xs: 12,
+                                md: 4
+                            }}>
 							<a href='/request' style={{ textDecoration: 'none' }}>
 								<Button variant='contained' color='secondary'>
 									Проверить размеры
@@ -365,8 +386,8 @@ const ArticlePage: NextPage = () => {
 					</Grid>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlePage

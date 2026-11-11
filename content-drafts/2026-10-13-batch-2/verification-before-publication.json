@@ -1,0 +1,193 @@
+{
+  "status": "drafts-checked-not-published",
+  "articles": [
+    {
+      "slug": "arbonia-3057-skolko-sektsiy-dlina-moshchnost",
+      "words": 1104,
+      "characters_without_spaces": 6303,
+      "checks": {
+        "one_h1": true,
+        "noindex": true,
+        "draft": true,
+        "faq_count": true,
+        "no_placeholder": true,
+        "no_fake_publication_date": true,
+        "word_count_suitable": true,
+        "no_typo": true,
+        "no_78_w_claim": true
+      },
+      "incoming": 6,
+      "outgoing": 6
+    },
+    {
+      "slug": "nizkiy-arbonia-ili-vnutripolnyy-konvektor",
+      "words": 961,
+      "characters_without_spaces": 6125,
+      "checks": {
+        "one_h1": true,
+        "noindex": true,
+        "draft": true,
+        "faq_count": true,
+        "no_placeholder": true,
+        "no_fake_publication_date": true,
+        "word_count_suitable": true,
+        "no_typo": true,
+        "no_78_w_claim": true
+      },
+      "incoming": 5,
+      "outgoing": 7
+    },
+    {
+      "slug": "zavodskoy-cvet-arbonia-ili-perekraska-iz-nalichiya",
+      "words": 726,
+      "characters_without_spaces": 5014,
+      "checks": {
+        "one_h1": true,
+        "noindex": true,
+        "draft": true,
+        "faq_count": true,
+        "no_placeholder": true,
+        "no_fake_publication_date": true,
+        "word_count_suitable": true,
+        "no_typo": true,
+        "no_78_w_claim": true
+      },
+      "incoming": 5,
+      "outgoing": 6
+    }
+  ],
+  "math": {
+    "q30": 29.855518575454504,
+    "1000_w_sections": 34,
+    "34_section_length": 1556,
+    "34_section_power": 1015.0876315654531,
+    "22_sections_low_temperature": 656.8214086599991,
+    "two_18_section_radiators_low_temperature": 1074.798668716362,
+    "800_w_minimum_sections": 27
+  },
+  "3057_vs_3030_identical_faq_questions": [],
+  "delta_t_links_both_models": true,
+  "technology_confirmed_by_owner": "powder coating",
+  "unconfirmed_service_details": [
+    "factory coat removal method",
+    "accepted/excluded special coatings",
+    "surcharge amount",
+    "separate new-coating warranty period"
+  ],
+  "scope": "Editorial separation of intents reduces overlap; actual search cannibalization must be measured in GSC after publication.",
+  "link_plan_total_incoming_to_new_articles": 16,
+  "link_plan_supplement_to_published_3030": true,
+  "url_checks": [
+    {
+      "url": "https://arbonia.hlk.digital/arbonia/prospekte-preislisten/pl/ufk/anti_pl_ascotherm-eco_ch_de.pdf",
+      "status": 200,
+      "final_url": "https://arbonia.hlk.digital/arbonia/prospekte-preislisten/pl/ufk/anti_pl_ascotherm-eco_ch_de.pdf"
+    },
+    {
+      "url": "https://arboniashop.ru/articles",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/arbonia-3057",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/arbonia-3057"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/calculate",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/calculate"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/delta-t-teplootdacha",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/delta-t-teplootdacha"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/kak-vybrat-cvet-radiatora-pod-interer",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/kak-vybrat-cvet-radiatora-pod-interer"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/low-models",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/low-models"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/panorama",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/panorama"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/radiator-pod-nizkiy-podokonnik",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/radiator-pod-nizkiy-podokonnik"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/radiatory-arbonia-pod-okno",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/radiatory-arbonia-pod-okno"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/ral-9016-9010-9003-kakoy-belyy-vybrat",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/ral-9016-9010-9003-kakoy-belyy-vybrat"
+    },
+    {
+      "url": "https://arboniashop.ru/articles/tsvet-radiatorov-v-interiere",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/articles/tsvet-radiatorov-v-interiere"
+    },
+    {
+      "url": "https://arboniashop.ru/catalog/low-models",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/catalog/low-models"
+    },
+    {
+      "url": "https://arboniashop.ru/catalog/ral9016",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/catalog/ral9016"
+    },
+    {
+      "url": "https://arboniashop.ru/coloring",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/coloring"
+    },
+    {
+      "url": "https://arboniashop.ru/models/3057",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/models/3057"
+    },
+    {
+      "url": "https://arboniashop.ru/models/3057-9016-12",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/models/3057-9016-12"
+    },
+    {
+      "url": "https://arboniashop.ru/request",
+      "status": 200,
+      "final_url": "https://arboniashop.ru/request"
+    },
+    {
+      "url": "https://excentshop.com/wp-content/uploads/2024/04/Terauda-sekciju-radiatori-Arbonia-Column-%E2%80%93-Katalogs_Cenu-lapa_EN_PDF.pdf",
+      "status": 200,
+      "final_url": "https://excentshop.com/wp-content/uploads/2024/04/Terauda-sekciju-radiatori-Arbonia-Column-%E2%80%93-Katalogs_Cenu-lapa_EN_PDF.pdf"
+    },
+    {
+      "url": "https://www.arbonia-solutions.com/en/de/products/trench-convectors/ascotherm-eco/",
+      "status": 200,
+      "final_url": "https://www.arbonia-solutions.com/en/de/products/trench-convectors/ascotherm-eco/"
+    },
+    {
+      "url": "https://www.arbonia-solutions.com/en/de/service/product-information/colour-concept/",
+      "status": 200,
+      "final_url": "https://www.arbonia-solutions.com/en/de/service/product-information/colour-concept/"
+    },
+    {
+      "url": "https://www.pyradia.com/process/powder-coating/",
+      "status": 200,
+      "final_url": "https://www.pyradia.com/process/powder-coating/"
+    }
+  ],
+  "all_existing_links_http_200": true
+}

@@ -1,7 +1,7 @@
+import Hidden from '../ui/Hidden'
 import {
   Box,
   Table,
-  Hidden,
   TableBody,
   TableCell,
   TableContainer,
@@ -46,37 +46,72 @@ const RadiatorList: NextPage<RadiatorListProps> = ({
             <TableRow sx={{ backgroundColor: "#e6e6e6" }}>
               <Hidden smDown>
                 <TableCell align="left" sx={styles.smallTextBold}>
-                  <Box padding="10px" borderBottom="1px solid #333333">
+                  <Box
+                    sx={{
+                      padding: "10px",
+                      borderBottom: "1px solid #333333"
+                    }}>
                     Артикул
                   </Box>
                 </TableCell>
               </Hidden>
               <TableCell sx={styles.smallTextBold}>
-                <Box padding="10px" borderBottom="1px solid #333333">
+                <Box
+                  sx={{
+                    padding: "10px",
+                    borderBottom: "1px solid #333333"
+                  }}>
                   Радиатор
                 </Box>
               </TableCell>
               <Hidden mdDown>
                 <TableCell align="right" sx={styles.smallTextBold}>
-                  <Box padding="10px" borderBottom="1px solid #333333">
+                  <Box
+                    sx={{
+                      padding: "10px",
+                      borderBottom: "1px solid #333333"
+                    }}>
                     Длина, мм
                   </Box>
                 </TableCell>
               </Hidden>
               <Hidden mdDown>
                 <TableCell align="right" sx={styles.smallTextBold}>
-                  <Box padding="10px" borderBottom="1px solid #333333">
-                    Мощность, Вт&#42;
+                  <Box
+                    sx={{
+                      padding: "10px",
+                      borderBottom: "1px solid #333333"
+                    }}>
+                    Мощность ΔT=50 °C, Вт
+                  </Box>
+                </TableCell>
+              </Hidden>
+              <Hidden mdDown>
+                <TableCell align="right" sx={styles.smallTextBold}>
+                  <Box
+                    sx={{
+                      padding: "10px",
+                      borderBottom: "1px solid #333333"
+                    }}>
+                    Мощность ΔT=60 °C, Вт&#42;
                   </Box>
                 </TableCell>
               </Hidden>
               <TableCell align="right" sx={styles.smallTextBold}>
-                <Box padding="10px" borderBottom="1px solid #333333">
+                <Box
+                  sx={{
+                    padding: "10px",
+                    borderBottom: "1px solid #333333"
+                  }}>
                   Цена&#42;&#42;
                 </Box>
               </TableCell>
               <TableCell align="right" sx={styles.smallTextBold}>
-                <Box padding="10px" borderBottom="1px solid #333333">
+                <Box
+                  sx={{
+                    padding: "10px",
+                    borderBottom: "1px solid #333333"
+                  }}>
                   &nbsp;
                 </Box>
               </TableCell>
@@ -107,9 +142,11 @@ const RadiatorList: NextPage<RadiatorListProps> = ({
           </TableBody>
         </Table>
       </TableContainer>
-      <Box marginTop="10px">
+      <Box sx={{
+        marginTop: "10px"
+      }}>
         <Typography sx={styles.smallTextThin}>
-          &#42;Мощность указана при (ΔT=60°). &#42;&#42;Цена указана в рублях
+          &#42;На небольшом экране показана мощность при ΔT=60 °C. ΔT — разница между средней температурой воды и температурой комнаты: режим 75/65/20 соответствует ΔT=50 °C, 85/75/20 — ΔT=60 °C. &#42;&#42;Цена указана в рублях
           (пересчитывается по курсу ЦБ Евро)
         </Typography>
       </Box>

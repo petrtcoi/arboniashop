@@ -15,9 +15,9 @@ type ArticlesListPageProps = {}
 
 const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 	return (
-		<Box>
-			<PageHeader title={'Новости Arbonia'} />
-			<PageTitle
+        <Box>
+            <PageHeader title={'Новости Arbonia'} description={'Новости группы Arbonia и производителя радиаторов: сделки, финансовые результаты, производство и новые продукты.'} />
+            <PageTitle
 				header={'Специализированный магазин Arbonia в России'}
 				subheader={'Доставка со складов в Москве и Санкт-Петербурге'}
 				breadcrumbs={[
@@ -25,18 +25,21 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					{ title: 'Новости', link: '/news' },
 				]}
 			/>
-			<Hero
+            <Hero
 				imgPath={'/images/sliders/slide.jpeg'}
 				header={'Новости Arbonia'}
 			/>
-			<Box
-				sx={{ ...global.pagePadding }}
-				marginTop='20px'
-			>
+            <Box
+                sx={{
+                    marginTop: '20px',
+                    ...global.pagePadding
+                }}>
 				<Typography sx={styles.standardText}>
 					Последние актуальные новости от Arbonia. Оставайтесь в курсе всех событий и акций.
 				</Typography>
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<a
 						style={{ textDecoration: 'none' }}
 						href='/news/2025-report'
@@ -47,7 +50,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</a>
 				</Box>
 
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<a
 						style={{ textDecoration: 'none' }}
 						href='/news/2024-report'
@@ -58,7 +63,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</a>
 				</Box>
 
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<a
 						style={{ textDecoration: 'none' }}
 						href='/news/2024-midea'
@@ -69,7 +76,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</a>
 				</Box>
 
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<a
 						style={{ textDecoration: 'none' }}
 						href='/news/2023-design'
@@ -80,7 +89,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</a>
 				</Box>
 
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<a
 						style={{ textDecoration: 'none' }}
 						href='/news/redox'
@@ -91,7 +102,9 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</a>
 				</Box>
 
-				<Box mt={2}>
+				<Box sx={{
+                    mt: 2
+                }}>
 					<a
 						style={{ textDecoration: 'none' }}
 						href='/news/circle'
@@ -102,8 +115,8 @@ const ArticlesListPage: NextPage<ArticlesListPageProps> = () => {
 					</a>
 				</Box>
 			</Box>
-		</Box>
-	)
+        </Box>
+    );
 }
 
 export default ArticlesListPage

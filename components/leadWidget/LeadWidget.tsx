@@ -12,7 +12,7 @@ type LeadWidgetProps = {
 const MAX_FILE_SIZE = 5 * 1024 * 1024
 
 const LeadWidget: React.FC<LeadWidgetProps> = ({
-	webhook = 'https://arufefet.beget.app/webhook/calc-notify',
+	webhook = 'https://cloud.homekomfort.ru/api/new-order-notification',
 	successUrl = 'https://homekomfort.ru/thanks',
 	store = 'default',
 	privacyUrl = '/privacy',

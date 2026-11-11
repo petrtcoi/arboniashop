@@ -1,0 +1,1225 @@
+{
+  "checked_on": "2026-10-13",
+  "article_count": 45,
+  "live_build_id": "Lrhtfi_fgYolHaR9eXLVt",
+  "gsc_period": "2026-07-11/2026-10-10",
+  "method": "All 45 titles, descriptions, H1/H2, main-content extraction, canonical tags and content relationships were reviewed; close pairs were inspected manually and four page comparisons were read in GSC.",
+  "limitations": "Three new articles were published today and their indexing requests were accepted. They have no performance history yet. Shared intent is an editorial risk, not proof of harmful ranking competition; GSC omits anonymized queries.",
+  "duplicate_metadata": {
+    "title": [],
+    "description": []
+  },
+  "h1_anomalies": [
+    "trubchatye-radiatory-dlya-kvartiry"
+  ],
+  "gsc_page_comparisons": [
+    {
+      "page_a": "/articles/tsvet-radiatorov-v-interiere",
+      "page_b": "/articles/kak-vybrat-cvet-radiatora-pod-interer",
+      "shared_reported_queries": [],
+      "note": "This is only the reported query table; anonymized queries are unavailable. Wrapped cells are preserved in raw evidence."
+    },
+    {
+      "page_a": "/articles/arbonia-2180-calc",
+      "page_b": "/articles/arbonia-2180-po-ploshadi",
+      "shared_reported_queries": [],
+      "note": "This is only the reported query table; anonymized queries are unavailable. Wrapped cells are preserved in raw evidence."
+    },
+    {
+      "page_a": "/articles/arbonia-3057",
+      "page_b": "/articles/mezhosevoe-rasstoyanie-500-mm-arbonia",
+      "shared_reported_queries": [],
+      "note": "This is only the reported query table; anonymized queries are unavailable. Wrapped cells are preserved in raw evidence."
+    },
+    {
+      "page_a": "/articles/montazh-radiatorov-arbonia-rekomendacii",
+      "page_b": "/articles/montazh-vysokih-radiatorov-arbonia-instrukciya",
+      "shared_reported_queries": [],
+      "note": "This is only the reported query table; anonymized queries are unavailable. Wrapped cells are preserved in raw evidence."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "2-3-columns",
+      "url": "https://arboniashop.ru/articles/2-3-columns",
+      "title": "Радиаторы Arbonia 2-трубчатые и 3-трубчатые: в чем отличия моделей",
+      "h1": [
+        "Отличия 2-трубчатых радиаторов Arbonia от 3-трубчатых"
+      ],
+      "cluster": "Выбор модели",
+      "recommended_query_family": "2-трубчатый или 3-трубчатый радиатор Arbonia",
+      "user_task": "Сравнить конструкцию по глубине, мощности и уходу",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "arbonia-2050-ili-3050"
+      ],
+      "action": "Оставить общую конструктивную разницу; точные исполнения 2050/3050 вынести в специализированное сравнение.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/2-3-columns",
+        "Clicks": "13",
+        "Impressions": "295",
+        "CTR": "4.41%",
+        "Position": "6.55"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/2-3-columns"
+    },
+    {
+      "slug": "2180-3180",
+      "url": "https://arboniashop.ru/articles/2180-3180",
+      "title": "Arbonia 2180 vs 3180: чем отличаются и когда что выбрать",
+      "h1": [
+        "Arbonia 2180 vs 3180: чем отличаются и когда что выбрать"
+      ],
+      "cluster": "Выбор модели",
+      "recommended_query_family": "Arbonia 2180 или 3180",
+      "user_task": "Выбрать одну из двух вертикальных моделей",
+      "coverage": "Частично",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "high-arbonia",
+        "vertical-radiator-power"
+      ],
+      "action": "Добавить таблицу глубины, мощности при одинаковом ΔT и примеры по известной нагрузке. Убрать универсальное обещание обогреть 27 м².",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/2180-3180",
+        "Clicks": "3",
+        "Impressions": "55",
+        "CTR": "5.45%",
+        "Position": "5.93"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/2180-3180"
+    },
+    {
+      "slug": "arbonia-2050-ili-3050",
+      "url": "https://arboniashop.ru/articles/arbonia-2050-ili-3050",
+      "title": "Arbonia 2050 или 3050 - сравнение радиаторов",
+      "h1": [
+        "Arbonia 2050 или 3050 - какой радиатор выбрать"
+      ],
+      "cluster": "Выбор модели",
+      "recommended_query_family": "Arbonia 2050 или 3050",
+      "user_task": "Выбрать глубину и мощность при одинаковой высоте",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "2-3-columns",
+        "radiatory-arbonia-pod-okno"
+      ],
+      "action": "Сохранить конкретное сравнение пары; общую классификацию моделей раскрывать по ссылке.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/arbonia-2050-ili-3050",
+        "Clicks": "0",
+        "Impressions": "39",
+        "CTR": "0%",
+        "Position": "6.26"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-2050-ili-3050"
+    },
+    {
+      "slug": "arbonia-2180-calc",
+      "url": "https://arboniashop.ru/articles/arbonia-2180-calc",
+      "title": "Arbonia 2180 — таблица секций для комнаты 10–20 м²",
+      "h1": [
+        "Сколько секций радиатора Arbonia 2180 нужно для комнаты 10–20 м²"
+      ],
+      "cluster": "Мощность",
+      "recommended_query_family": "таблица секций Arbonia 2180 для 10–20 м²",
+      "user_task": "Получить готовый пример для фиксированных исходных условий",
+      "coverage": "Отвечает с допущениями",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "arbonia-2180-po-ploshadi",
+        "vertical-radiator-power"
+      ],
+      "action": "Сохранить только готовые примеры и допущения. Широкий запрос «калькулятор/расчёт 2180» закрепить за интерактивной страницей; не делать второй калькулятор.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/arbonia-2180-calc",
+        "Clicks": "5",
+        "Impressions": "248",
+        "CTR": "2.02%",
+        "Position": "5.19"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-2180-calc"
+    },
+    {
+      "slug": "arbonia-2180-interior",
+      "url": "https://arboniashop.ru/articles/arbonia-2180-interior",
+      "title": "Arbonia 2180 в интерьере - как вертикальный радиатор меняет пространство",
+      "h1": [
+        "Arbonia 2180 в интерьере: как вертикальный радиатор меняет пространство"
+      ],
+      "cluster": "Интерьер",
+      "recommended_query_family": "Arbonia 2180 в интерьере",
+      "user_task": "Оценить вид модели в разных стилях и планировках",
+      "coverage": "Частично",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "high-arbonia"
+      ],
+      "action": "Нужны реальные фотографии и подписи с моделями. Текст о визуальном эффекте отвечает теме, но без примеров слабо закрывает визуальный запрос.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/arbonia-2180-interior",
+        "Clicks": "0",
+        "Impressions": "65",
+        "CTR": "0%",
+        "Position": "7.12"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-2180-interior"
+    },
+    {
+      "slug": "arbonia-2180-po-ploshadi",
+      "url": "https://arboniashop.ru/articles/arbonia-2180-po-ploshadi",
+      "title": "Калькулятор Arbonia 2180 — подбор секций по площади и температуре",
+      "h1": [
+        "Калькулятор количества секций Arbonia 2180"
+      ],
+      "cluster": "Мощность",
+      "recommended_query_family": "калькулятор секций Arbonia 2180",
+      "user_task": "Изменить площадь, высоту и режим и получить предварительное число секций",
+      "coverage": "Отвечает с допущениями",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "arbonia-2180-calc",
+        "vertical-radiator-power"
+      ],
+      "action": "Основная страница для индивидуального предварительного расчёта 2180. Статические примеры поддерживают её ссылками и не повторяют форму.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/arbonia-2180-po-ploshadi",
+        "Clicks": "0",
+        "Impressions": "36",
+        "CTR": "0%",
+        "Position": "7.86"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-2180-po-ploshadi"
+    },
+    {
+      "slug": "arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+      "url": "https://arboniashop.ru/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost",
+      "title": "Сколько секций Arbonia 3030 нужно: длина и мощность радиатора",
+      "h1": [
+        "Сколько секций Arbonia 3030 нужно: считаем мощность и проверяем длину"
+      ],
+      "cluster": "Мощность",
+      "recommended_query_family": "сколько секций Arbonia 3030; длина и мощность 3030",
+      "user_task": "Рассчитать секции уже выбранной модели и проверить длину",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "arbonia-3030-vs-3037",
+        "radiator-pod-nizkiy-podokonnik"
+      ],
+      "action": "Новая статья. Оставить расчёт одной модели; выбор высоты и сравнение 3037 раскрывать по ссылке.",
+      "gsc_3m": {},
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-3030-skolko-sektsiy-dlina-moshchnost"
+    },
+    {
+      "slug": "arbonia-3030-vs-3037",
+      "url": "https://arboniashop.ru/articles/arbonia-3030-vs-3037",
+      "title": "Arbonia 3030 против 3037: как выбрать идеальный радиатор под низкий подоконник",
+      "h1": [
+        "Arbonia 3030 против 3037: битва за 7 сантиметров высоты"
+      ],
+      "cluster": "Выбор модели",
+      "recommended_query_family": "Arbonia 3030 или 3037",
+      "user_task": "Выбрать между высотой 300 и 370 мм",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "radiator-pod-nizkiy-podokonnik",
+        "arbonia-3030-skolko-sektsiy-dlina-moshchnost"
+      ],
+      "action": "Уточнить Title/H1 до сравнения пары моделей. Проверить без источника заявленные потери 15–20% и универсальные зазоры; подробный расчёт 3030 оставить новой статье.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/arbonia-3030-vs-3037",
+        "Clicks": "3",
+        "Impressions": "93",
+        "CTR": "3.23%",
+        "Position": "6.3"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-3030-vs-3037"
+    },
+    {
+      "slug": "arbonia-3050-ili-3057-kakuyu-vysotu-vybrat",
+      "url": "https://arboniashop.ru/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat",
+      "title": "Arbonia 3050 или 3057 - что выбрать",
+      "h1": [
+        "Arbonia 3050 или 3057 - какую высоту радиатора выбрать"
+      ],
+      "cluster": "Выбор модели",
+      "recommended_query_family": "Arbonia 3050 или 3057",
+      "user_task": "Выбрать высоту с учётом существующих выводов",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "radiatory-arbonia-pod-okno",
+        "mezhosevoe-rasstoyanie-500-mm-arbonia"
+      ],
+      "action": "Сохранить сравнение именно этой пары; замер старых труб и полную замену вынести в связанные руководства.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat",
+        "Clicks": "0",
+        "Impressions": "12",
+        "CTR": "0%",
+        "Position": "4.42"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-3050-ili-3057-kakuyu-vysotu-vybrat"
+    },
+    {
+      "slug": "arbonia-3057",
+      "url": "https://arboniashop.ru/articles/arbonia-3057",
+      "title": "Замена чугунных радиаторов на Arbonia 3057",
+      "h1": [
+        "Замена чугунных радиаторов на Arbonia 3057"
+      ],
+      "cluster": "Замена батареи",
+      "recommended_query_family": "замена чугунной батареи на Arbonia 3057",
+      "user_task": "Понять применимость конкретной модели для замены чугуна",
+      "coverage": "Частично",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "mezhosevoe-rasstoyanie-500-mm-arbonia"
+      ],
+      "action": "Усилить сценарий именно 3057: глубина, выводы, арматура и ограничения. Убрать из description обещание замены без перекрытия стояка; общую инструкцию замера оставить статье о 500 мм.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/arbonia-3057",
+        "Clicks": "0",
+        "Impressions": "27",
+        "CTR": "0%",
+        "Position": "9.15"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-3057"
+    },
+    {
+      "slug": "arbonia-3180-ral-9016-vs-anthracite",
+      "url": "https://arboniashop.ru/articles/arbonia-3180-ral-9016-vs-anthracite",
+      "title": "Цвет имеет значение: RAL 9016 или Anthracite Metallic для Arbonia 3180?",
+      "h1": [
+        "Arbonia 3180: RAL 9016 или Anthracite Metallic - какой цвет выбрать"
+      ],
+      "cluster": "Цвет",
+      "recommended_query_family": "Arbonia 3180 белый или Anthracite Metallic",
+      "user_task": "Выбрать покрытие одной конкретной вертикальной модели",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "chernyy-radiator-arbonia",
+        "kak-vybrat-cvet-radiatora-pod-interer"
+      ],
+      "action": "Оставить выбор двух исполнений 3180; не расширять до общего руководства по цветам.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/arbonia-3180-ral-9016-vs-anthracite",
+        "Clicks": "0",
+        "Impressions": "56",
+        "CTR": "0%",
+        "Position": "6.73"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/arbonia-3180-ral-9016-vs-anthracite"
+    },
+    {
+      "slug": "belye-radiatory-v-temnom-interiere",
+      "url": "https://arboniashop.ru/articles/belye-radiatory-v-temnom-interiere",
+      "title": "Белые радиаторы в темном интерьере: правила идеального сочетания",
+      "h1": [
+        "Белый радиатор на темной стене: ошибка или осознанный стиль?"
+      ],
+      "cluster": "Цвет",
+      "recommended_query_family": "белый радиатор на тёмной стене",
+      "user_task": "Оценить контрастный интерьерный сценарий",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "ral-9016-pochemu-vybirayut-arkhitektory"
+      ],
+      "action": "Сохранить сценарий контраста и примеры. Точное сравнение кодов RAL раскрывать по ссылке.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/belye-radiatory-v-temnom-interiere",
+        "Clicks": "7",
+        "Impressions": "718",
+        "CTR": "0.97%",
+        "Position": "6.33"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/belye-radiatory-v-temnom-interiere"
+    },
+    {
+      "slug": "calc-radiators-by-old-ones",
+      "url": "https://arboniashop.ru/articles/calc-radiators-by-old-ones",
+      "title": "Подбор радиаторов Arbonia на основе уже установленных радиаторов",
+      "h1": [
+        "Подбор радиаторов Arbonia на основе уже установленных радиаторов"
+      ],
+      "cluster": "Мощность",
+      "recommended_query_family": "подбор нового радиатора по мощности старого",
+      "user_task": "Использовать характеристики существующего отопления при замене",
+      "coverage": "Частично",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "calculate",
+        "arbonia-3057"
+      ],
+      "action": "Добавить конкретный пример сопоставления мощностей при одинаковом режиме; не ограничиваться советом, что старой батареи хватало зимой.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/calc-radiators-by-old-ones",
+        "Clicks": "0",
+        "Impressions": "16",
+        "CTR": "0%",
+        "Position": "5.75"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/calc-radiators-by-old-ones"
+    },
+    {
+      "slug": "calculate",
+      "url": "https://arboniashop.ru/articles/calculate",
+      "title": "Как подбирать радиаторы Arbonia по мощности",
+      "h1": [
+        "Как подбирать радиаторы Arbonia по мощности"
+      ],
+      "cluster": "Мощность",
+      "recommended_query_family": "как подобрать радиатор Arbonia по мощности",
+      "user_task": "Выбрать способ определения нагрузки: проект, теплопотери или предварительная оценка",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "vertical-radiator-power",
+        "delta-t-teplootdacha"
+      ],
+      "action": "Оставить общий алгоритм выбора исходных данных. Расчёты вертикальных моделей и объяснение ΔT раскрывать в дочерних статьях.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/calculate",
+        "Clicks": "1",
+        "Impressions": "58",
+        "CTR": "1.72%",
+        "Position": "7.26"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/calculate"
+    },
+    {
+      "slug": "care",
+      "url": "https://arboniashop.ru/articles/care",
+      "title": "Правильный уход за радиаторами Arbonia: чистота и долговечность",
+      "h1": [
+        "Правильный уход за радиаторами Arbonia"
+      ],
+      "cluster": "Уход",
+      "recommended_query_family": "как чистить трубчатый радиатор Arbonia",
+      "user_task": "Очистить прибор и выбрать допустимый уход за покрытием",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [],
+      "action": "Сохранить самостоятельный материал; рекомендации по ремонту покрытия опирать на инструкцию выбранного покрытия.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/care",
+        "Clicks": "1",
+        "Impressions": "35",
+        "CTR": "2.86%",
+        "Position": "5.83"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/care"
+    },
+    {
+      "slug": "chernyy-radiator-arbonia",
+      "url": "https://arboniashop.ru/articles/chernyy-radiator-arbonia",
+      "title": "Черные радиаторы Arbonia - RAL 9005 или SF-3",
+      "h1": [
+        "Черные радиаторы Arbonia - выбор цвета и модели"
+      ],
+      "cluster": "Цвет",
+      "recommended_query_family": "чёрный радиатор Arbonia; RAL 9005 или SF-3",
+      "user_task": "Выбрать тёмное покрытие и подходящую модель",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "arbonia-3180-ral-9016-vs-anthracite"
+      ],
+      "action": "Оставить сравнение тёмных исполнений; материал о 3180 обслуживает конкретную модель, а не весь тёмный ассортимент.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/chernyy-radiator-arbonia",
+        "Clicks": "0",
+        "Impressions": "76",
+        "CTR": "0%",
+        "Position": "7.72"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/chernyy-radiator-arbonia"
+    },
+    {
+      "slug": "column-radiators",
+      "url": "https://arboniashop.ru/articles/column-radiators",
+      "title": "Трубчатые радиаторы Arbonia: плюсы, минусы и как выбрать модель",
+      "h1": [
+        "Трубчатые радиаторы Arbonia: плюсы, минусы и как выбрать модель"
+      ],
+      "cluster": "Общий выбор",
+      "recommended_query_family": "трубчатые радиаторы Arbonia: плюсы, минусы, выбор",
+      "user_task": "Понять тип прибора и последовательность выбора",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "trubchatye-radiatory-dlya-kvartiry",
+        "radiatory-arbonia-pod-okno"
+      ],
+      "action": "Сохранить роль общего руководства. Квартирные ограничения, модели под окно и сравнение с биметаллом давать кратко со ссылками.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/column-radiators",
+        "Clicks": "14",
+        "Impressions": "1337",
+        "CTR": "1.05%",
+        "Position": "8.73"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/column-radiators"
+    },
+    {
+      "slug": "connections",
+      "url": "https://arboniashop.ru/articles/connections",
+      "title": "Нижнее подключение Arbonia №69 ТВВ: схема, клапан и термоголовка",
+      "h1": [
+        "Нижнее подключение Arbonia №69 ТВВ"
+      ],
+      "cluster": "Подключение",
+      "recommended_query_family": "нижнее подключение Arbonia 69 ТВВ",
+      "user_task": "Разобраться в схеме, выводах и составе комплекта №69 ТВВ",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "termostat",
+        "montazh-radiatorov-arbonia-rekomendacii"
+      ],
+      "action": "Сохранить специализированный узел №69 ТВВ. Общий монтаж и место датчика раскрывать по ссылкам.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/connections",
+        "Clicks": "17",
+        "Impressions": "953",
+        "CTR": "1.78%",
+        "Position": "8.96"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/connections"
+    },
+    {
+      "slug": "consoles",
+      "url": "https://arboniashop.ru/articles/consoles",
+      "title": "Регулируемые кронштейны W161 или фиксирующий зажим ZB0281",
+      "h1": [
+        "Регулируемые кронштейны W161 или фиксирующий зажим ZB0281"
+      ],
+      "cluster": "Монтаж",
+      "recommended_query_family": "кронштейны Arbonia W161, ZB0280, ZB0281, ZB0282",
+      "user_task": "Выбрать совместимый комплект крепления",
+      "coverage": "Частично",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "montazh-vysokih-radiatorov-arbonia-instrukciya"
+      ],
+      "action": "Уточнить обозначения и совместимость по документации. Не превращать сравнение комплектов в универсальный расчёт количества креплений.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/consoles",
+        "Clicks": "9",
+        "Impressions": "144",
+        "CTR": "6.25%",
+        "Position": "6.46"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/consoles"
+    },
+    {
+      "slug": "convection-radiaton-arbonia",
+      "url": "https://arboniashop.ru/articles/convection-radiaton-arbonia",
+      "title": "Радиаторы Arbonia: способы передачи тепла, конвекция и тепловое излучение",
+      "h1": [
+        "Что такое конвекция и тепловое излучение радиатора"
+      ],
+      "cluster": "Теплоотдача",
+      "recommended_query_family": "конвекция и тепловое излучение радиатора",
+      "user_task": "Понять способы передачи тепла",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "delta-t-teplootdacha"
+      ],
+      "action": "Сохранить физическое объяснение; ΔT и подбор числа секций решают другую задачу.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/convection-radiaton-arbonia",
+        "Clicks": "11",
+        "Impressions": "1513",
+        "CTR": "0.73%",
+        "Position": "5.27"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/convection-radiaton-arbonia"
+    },
+    {
+      "slug": "delta-t-teplootdacha",
+      "url": "https://arboniashop.ru/articles/delta-t-teplootdacha",
+      "title": "Теплоотдача радиатора Arbonia - влияние ΔT",
+      "h1": [
+        "Теплоотдача радиатора - как влияет ΔT"
+      ],
+      "cluster": "Теплоотдача",
+      "recommended_query_family": "ΔT радиатора; температурный напор и мощность",
+      "user_task": "Прочитать паспортную теплоотдачу и выбрать режим сравнения",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "calculate",
+        "vertical-radiator-power"
+      ],
+      "action": "Оставить определение и примеры режима; не добавлять отдельные калькуляторы всех моделей.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/delta-t-teplootdacha",
+        "Clicks": "2",
+        "Impressions": "112",
+        "CTR": "1.79%",
+        "Position": "4.82"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/delta-t-teplootdacha"
+    },
+    {
+      "slug": "epd",
+      "url": "https://arboniashop.ru/articles/epd",
+      "title": "Сертификат EPD для трубчатых радиаторов Arbonia",
+      "h1": [
+        "Сертификат EPD для трубчатых радиаторов Arbonia"
+      ],
+      "cluster": "Документы",
+      "recommended_query_family": "EPD радиаторов Arbonia",
+      "user_task": "Найти экологическую декларацию и понять её назначение",
+      "coverage": "Частично",
+      "overlap_risk": "Низкий",
+      "related_pages": [],
+      "action": "Добавить прямую ссылку на актуальную декларацию и область действия. Убрать неподтверждённые обещания соответствия будущим обязательным требованиям.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/epd",
+        "Clicks": "0",
+        "Impressions": "13",
+        "CTR": "0%",
+        "Position": "7"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/epd"
+    },
+    {
+      "slug": "faq",
+      "url": "https://arboniashop.ru/articles/faq",
+      "title": "Радиаторы Arbonia: ответы на частые вопросы про радиаторы Arbonia",
+      "h1": [
+        "Ответы на часто задаваемые вопросы про радиаторы Arbonia"
+      ],
+      "cluster": "Общий выбор",
+      "recommended_query_family": "частые вопросы о радиаторах Arbonia",
+      "user_task": "Быстро получить ответы и перейти к подробному материалу",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "column-radiators"
+      ],
+      "action": "Сохранить краткие ответы и навигацию; не делать на FAQ вторые полные руководства по каждому кластеру.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/faq",
+        "Clicks": "7",
+        "Impressions": "612",
+        "CTR": "1.14%",
+        "Position": "10.33"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/faq"
+    },
+    {
+      "slug": "gde-razmestit-radiator-otopleniya",
+      "url": "https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya",
+      "title": "Где установить радиатор: расстояние от пола, стены и подоконника",
+      "h1": [
+        "Где разместить радиатор отопления: лучшие места и советы"
+      ],
+      "cluster": "Размещение",
+      "recommended_query_family": "где разместить радиатор; расстояния до пола, стены и подоконника",
+      "user_task": "Выбрать место установки и проверить пространство вокруг",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+        "montazh-radiatorov-arbonia-rekomendacii"
+      ],
+      "action": "Сохранить сильную общую страницу. Мебельный узел оставить новой статье, подбор креплений — монтажной. Зазоры привязать к конкретной документации.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya",
+        "Clicks": "187",
+        "Impressions": "14547",
+        "CTR": "1.29%",
+        "Position": "6.61"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/gde-razmestit-radiator-otopleniya"
+    },
+    {
+      "slug": "high-arbonia",
+      "url": "https://arboniashop.ru/articles/high-arbonia",
+      "title": "Высокие радиаторы Arbonia: когда выбирать вертикальную модель 2180 или 3180",
+      "h1": [
+        "Высокие радиаторы Arbonia"
+      ],
+      "cluster": "Общий выбор",
+      "recommended_query_family": "как выбрать высокий радиатор Arbonia",
+      "user_task": "Понять применимость вертикальной формы и перейти к модели",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "2180-3180",
+        "vertical-vs-horizontal"
+      ],
+      "action": "Уточнить Title/H1 как руководство по выбору высокого радиатора. Цены и наличие принадлежат /catalog/high-models; сравнение пары — статье 2180/3180.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/high-arbonia",
+        "Clicks": "1",
+        "Impressions": "56",
+        "CTR": "1.79%",
+        "Position": "6.91"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/high-arbonia"
+    },
+    {
+      "slug": "kak-vybrat-cvet-radiatora-pod-interer",
+      "url": "https://arboniashop.ru/articles/kak-vybrat-cvet-radiatora-pod-interer",
+      "title": "Как выбрать цвет радиатора Arbonia для интерьера",
+      "h1": [
+        "Как выбрать цвет радиатора Arbonia под интерьер"
+      ],
+      "cluster": "Цвет",
+      "recommended_query_family": "как выбрать цвет радиатора Arbonia",
+      "user_task": "Согласовать модель, отделку, свет и реальное покрытие до покупки",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "tsvet-radiatorov-v-interiere",
+        "ral-9016-9010-9003-kakoy-belyy-vybrat"
+      ],
+      "action": "Основное практическое руководство по подбору покрытия. Вдохновение по цветам и стилям закрепить за второй статьёй, точное сравнение белых — за новой.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/kak-vybrat-cvet-radiatora-pod-interer",
+        "Clicks": "1",
+        "Impressions": "218",
+        "CTR": "0.46%",
+        "Position": "3.84"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/kak-vybrat-cvet-radiatora-pod-interer"
+    },
+    {
+      "slug": "kogda-vertikalnyy-radiator-arbonia-ne-podkhodit",
+      "url": "https://arboniashop.ru/articles/kogda-vertikalnyy-radiator-arbonia-ne-podkhodit",
+      "title": "Когда вертикальный радиатор Arbonia не подходит - честный разбор",
+      "h1": [
+        "Когда вертикальный радиатор Arbonia не подходит - честный разбор"
+      ],
+      "cluster": "Размещение",
+      "recommended_query_family": "когда вертикальный радиатор не подходит",
+      "user_task": "Проверить ограничения уже рассматриваемого вертикального решения",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "vertical-vs-horizontal",
+        "high-arbonia"
+      ],
+      "action": "Сохранить сценарии отказа и альтернативы; общий выбор формы раскрывать в сравнении вертикального и горизонтального.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/kogda-vertikalnyy-radiator-arbonia-ne-podkhodit",
+        "Clicks": "1",
+        "Impressions": "142",
+        "CTR": "0.7%",
+        "Position": "7.98"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/kogda-vertikalnyy-radiator-arbonia-ne-podkhodit"
+    },
+    {
+      "slug": "low-models",
+      "url": "https://arboniashop.ru/articles/low-models",
+      "title": "Невысокие модели радиаторов Arbonia в наличии",
+      "h1": [
+        "Невысокие модели радиаторов Arbonia в наличии"
+      ],
+      "cluster": "Выбор модели",
+      "recommended_query_family": "Arbonia 2030, 3030 или 3037",
+      "user_task": "Выбрать одну из трёх низких моделей",
+      "coverage": "Частично",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "radiator-pod-nizkiy-podokonnik",
+        "arbonia-3030-vs-3037"
+      ],
+      "action": "Текущий H1 «в наличии» пересекается с /catalog/low-models. Перепозиционировать в сравнение 2030/3030/3037 с таблицей; доступность и цены оставить каталогу.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/low-models",
+        "Clicks": "5",
+        "Impressions": "236",
+        "CTR": "2.12%",
+        "Position": "8.4"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/low-models"
+    },
+    {
+      "slug": "mezhosevoe-rasstoyanie-500-mm-arbonia",
+      "url": "https://arboniashop.ru/articles/mezhosevoe-rasstoyanie-500-mm-arbonia",
+      "title": "Межосевое расстояние 500 мм Arbonia - замена",
+      "h1": [
+        "Межосевое расстояние 500 мм Arbonia - замена батареи"
+      ],
+      "cluster": "Замена батареи",
+      "recommended_query_family": "межосевое расстояние 500 мм Arbonia",
+      "user_task": "Измерить существующие выводы и проверить геометрическую совместимость",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "arbonia-3057"
+      ],
+      "action": "Закрепить основной интент замера и совместимости 2057/3057. Рассказ о замене чугуна конкретно на 3057 раскрывать в отдельном сценарии.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/mezhosevoe-rasstoyanie-500-mm-arbonia",
+        "Clicks": "0",
+        "Impressions": "177",
+        "CTR": "0%",
+        "Position": "5.05"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/mezhosevoe-rasstoyanie-500-mm-arbonia"
+    },
+    {
+      "slug": "montazh-arbonia-2180-na-gkl",
+      "url": "https://arboniashop.ru/articles/montazh-arbonia-2180-na-gkl",
+      "title": "Монтаж Arbonia 2180 на гипсокартон: надежное крепление без риска",
+      "h1": [
+        "Монтаж радиатора Arbonia 2180 на гипсокартон: правила и расчеты"
+      ],
+      "cluster": "Монтаж",
+      "recommended_query_family": "монтаж Arbonia 2180 на гипсокартон",
+      "user_task": "Проверить стену, закладные и крепление на ГКЛ",
+      "coverage": "Отвечает с оговорками",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "montazh-vysokih-radiatorov-arbonia-instrukciya"
+      ],
+      "action": "Сохранить только специальную задачу стены из ГКЛ; универсальные таблицы креплений и потерь теплоотдачи подтвердить первичными инструкциями.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/montazh-arbonia-2180-na-gkl",
+        "Clicks": "4",
+        "Impressions": "328",
+        "CTR": "1.22%",
+        "Position": "7.02"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/montazh-arbonia-2180-na-gkl"
+    },
+    {
+      "slug": "montazh-radiatorov-arbonia-rekomendacii",
+      "url": "https://arboniashop.ru/articles/montazh-radiatorov-arbonia-rekomendacii",
+      "title": "Рекомендации по монтажу радиаторов Arbonia",
+      "h1": [
+        "Рекомендации по монтажу радиаторов Arbonia"
+      ],
+      "cluster": "Монтаж",
+      "recommended_query_family": "общие рекомендации по монтажу Arbonia",
+      "user_task": "Понять последовательность подготовки, установки, подключения и запуска",
+      "coverage": "Частично",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "montazh-vysokih-radiatorov-arbonia-instrukciya",
+        "consoles"
+      ],
+      "action": "Оставить общий порядок работ и ссылки на конкретные узлы. Проверить первичными инструкциями момент затяжки 250–400 Н·м, гарантийные требования и нормы крепления.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/montazh-radiatorov-arbonia-rekomendacii",
+        "Clicks": "15",
+        "Impressions": "301",
+        "CTR": "4.98%",
+        "Position": "6.07"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/montazh-radiatorov-arbonia-rekomendacii"
+    },
+    {
+      "slug": "montazh-vysokih-radiatorov-arbonia-instrukciya",
+      "url": "https://arboniashop.ru/articles/montazh-vysokih-radiatorov-arbonia-instrukciya",
+      "title": "Монтаж высоких радиаторов Arbonia: требования и расчет кронштейнов",
+      "h1": [
+        "Монтаж радиаторов Arbonia: детальное руководство по установке вертикальных моделей"
+      ],
+      "cluster": "Монтаж",
+      "recommended_query_family": "монтаж высоких Arbonia 2180 и 3180",
+      "user_task": "Учесть особенности высоты 1800 мм, массы и фиксации",
+      "coverage": "Отвечает с оговорками",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "montazh-radiatorov-arbonia-rekomendacii",
+        "montazh-arbonia-2180-na-gkl"
+      ],
+      "action": "Начинать Title/H1 с высоких моделей 2180/3180. Сократить общую гидравлику и ГКЛ до ссылок; проверить конкретные количества креплений и числовые нормы.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/montazh-vysokih-radiatorov-arbonia-instrukciya",
+        "Clicks": "9",
+        "Impressions": "184",
+        "CTR": "4.89%",
+        "Position": "5.28"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/montazh-vysokih-radiatorov-arbonia-instrukciya"
+    },
+    {
+      "slug": "panorama",
+      "url": "https://arboniashop.ru/articles/panorama",
+      "title": "Радиаторы для панорамных окон: низкие или вертикальные",
+      "h1": [
+        "Радиаторы для панорамных окон"
+      ],
+      "cluster": "Размещение",
+      "recommended_query_family": "радиаторы для панорамных окон",
+      "user_task": "Выбрать схему обогрева у большой площади остекления",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "radiator-pod-nizkiy-podokonnik",
+        "vertical-vs-horizontal"
+      ],
+      "action": "Сохранить сравнение нескольких схем у остекления; низкий подоконник — задача геометрии ниши, а не всех панорамных окон.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/panorama",
+        "Clicks": "2",
+        "Impressions": "779",
+        "CTR": "0.26%",
+        "Position": "12.03"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/panorama"
+    },
+    {
+      "slug": "radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+      "url": "https://arboniashop.ru/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey",
+      "title": "Радиатор под глубоким подоконником или столешницей: что проверить",
+      "h1": [
+        "Радиатор под глубоким подоконником или столешницей: что проверить до заказа мебели"
+      ],
+      "cluster": "Размещение",
+      "recommended_query_family": "радиатор под глубокой столешницей или подоконником",
+      "user_task": "Согласовать мебель, движение воздуха, датчик и доступ",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "gde-razmestit-radiator-otopleniya",
+        "termostat",
+        "radiator-pod-nizkiy-podokonnik"
+      ],
+      "action": "Новая статья. Оставить мебельную конструкцию до её изготовления; не расширять в общий выбор места и универсальный монтаж.",
+      "gsc_3m": {},
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey"
+    },
+    {
+      "slug": "radiator-pod-nizkiy-podokonnik",
+      "url": "https://arboniashop.ru/articles/radiator-pod-nizkiy-podokonnik",
+      "title": "Радиатор под низкий подоконник - выбор Arbonia",
+      "h1": [
+        "Радиатор под низкий подоконник - как выбрать Arbonia"
+      ],
+      "cluster": "Размещение",
+      "recommended_query_family": "радиатор под низкий подоконник",
+      "user_task": "Выбрать модель по доступной высоте ниши и монтажным габаритам",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "low-models",
+        "arbonia-3030-vs-3037",
+        "arbonia-3030-skolko-sektsiy-dlina-moshchnost"
+      ],
+      "action": "Закрепить замер и выбор типа. Для секций выбранной 3030 ссылаться на новую статью; не повторять её полную таблицу.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/radiator-pod-nizkiy-podokonnik",
+        "Clicks": "12",
+        "Impressions": "382",
+        "CTR": "3.14%",
+        "Position": "5.14"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/radiator-pod-nizkiy-podokonnik"
+    },
+    {
+      "slug": "radiator-postoyanno-vyklyuchaetsya",
+      "url": "https://arboniashop.ru/articles/radiator-postoyanno-vyklyuchaetsya",
+      "title": "Почему радиатор постоянно выключается - причины и решения",
+      "h1": [
+        "Почему радиатор постоянно выключается - причины и решения"
+      ],
+      "cluster": "Диагностика",
+      "recommended_query_family": "радиатор постоянно выключается",
+      "user_task": "Разобраться в циклическом прекращении нагрева и регулировании",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "termostat",
+        "radiator-pod-glubokim-podokonnikom-stoleshnitsey"
+      ],
+      "action": "Сохранить диагностический симптом после запуска; планирование мебели и установка датчика решают предшествующие задачи.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/radiator-postoyanno-vyklyuchaetsya",
+        "Clicks": "1",
+        "Impressions": "87",
+        "CTR": "1.15%",
+        "Position": "5.54"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/radiator-postoyanno-vyklyuchaetsya"
+    },
+    {
+      "slug": "radiatory-arbonia-pod-okno",
+      "url": "https://arboniashop.ru/articles/radiatory-arbonia-pod-okno",
+      "title": "Стандартные радиаторы Arbonia под окно",
+      "h1": [
+        "Стандартные радиаторы Arbonia под окно"
+      ],
+      "cluster": "Общий выбор",
+      "recommended_query_family": "как выбрать Arbonia под обычное окно",
+      "user_task": "Выбрать стандартную высоту 50–57 см и модель",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "column-radiators",
+        "trubchatye-radiatory-dlya-kvartiry"
+      ],
+      "action": "Оставить выбор именно стандартной оконной модели. Сократить общие разделы про цвет, вертикальную форму и расчёт до ссылок.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/radiatory-arbonia-pod-okno",
+        "Clicks": "0",
+        "Impressions": "37",
+        "CTR": "0%",
+        "Position": "6.46"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/radiatory-arbonia-pod-okno"
+    },
+    {
+      "slug": "ral-9016-9010-9003-kakoy-belyy-vybrat",
+      "url": "https://arboniashop.ru/articles/ral-9016-9010-9003-kakoy-belyy-vybrat",
+      "title": "RAL 9016, 9010 или 9003: какой белый выбрать для радиатора",
+      "h1": [
+        "RAL 9016, RAL 9010 или RAL 9003: какой белый выбрать для радиатора"
+      ],
+      "cluster": "Цвет",
+      "recommended_query_family": "RAL 9016 или 9010 или 9003 для радиатора",
+      "user_task": "Сравнить три белых покрытия и согласовать с отделкой",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "ral-9016-pochemu-vybirayut-arkhitektory"
+      ],
+      "action": "Новая статья. Основной сравнительный ответ здесь. В общей статье о 9016 оставить короткий ориентир и ссылку, не развернутый повтор сравнения.",
+      "gsc_3m": {},
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/ral-9016-9010-9003-kakoy-belyy-vybrat"
+    },
+    {
+      "slug": "ral-9016-pochemu-vybirayut-arkhitektory",
+      "url": "https://arboniashop.ru/articles/ral-9016-pochemu-vybirayut-arkhitektory",
+      "title": "RAL 9016: какой это цвет радиатора Arbonia",
+      "h1": [
+        "Что такое RAL 9016 и почему его выбирают архитекторы"
+      ],
+      "cluster": "Цвет",
+      "recommended_query_family": "RAL 9016 какой цвет",
+      "user_task": "Узнать обозначение, вид и применение одного оттенка",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "ral-9016-9010-9003-kakoy-belyy-vybrat"
+      ],
+      "action": "Сохранить сильную страницу: 31 492 показа. Title уже сужен до одного цвета. H2 сравнения трёх кодов лучше заменить коротким блоком про согласование 9016 и ссылкой на сравнение.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/ral-9016-pochemu-vybirayut-arkhitektory",
+        "Clicks": "200",
+        "Impressions": "31492",
+        "CTR": "0.64%",
+        "Position": "5.26"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/ral-9016-pochemu-vybirayut-arkhitektory"
+    },
+    {
+      "slug": "termostat",
+      "url": "https://arboniashop.ru/articles/termostat",
+      "title": "Советы по правильной установке термостатов для трубчатых радиаторов Arbonia",
+      "h1": [
+        "Термостаты для трубчатых радиаторов Arbonia"
+      ],
+      "cluster": "Подключение",
+      "recommended_query_family": "как расположить термоголовку Arbonia",
+      "user_task": "Установить датчик в подходящем месте относительно комнаты",
+      "coverage": "Частично",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "connections",
+        "radiator-pod-glubokim-podokonnikom-stoleshnitsey"
+      ],
+      "action": "Сузить Title/H1 до размещения термоголовки: текущий текст не является полным руководством по выбору совместимых термостатов. Мебельную нишу разобрать по ссылке.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/termostat",
+        "Clicks": "10",
+        "Impressions": "250",
+        "CTR": "4%",
+        "Position": "5.53"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/termostat"
+    },
+    {
+      "slug": "trubchatye-ili-bimetallicheskie-radiatory",
+      "url": "https://arboniashop.ru/articles/trubchatye-ili-bimetallicheskie-radiatory",
+      "title": "Трубчатые или биметаллические радиаторы: что лучше выбрать",
+      "h1": [
+        "Трубчатые или биметаллические радиаторы"
+      ],
+      "cluster": "Общий выбор",
+      "recommended_query_family": "трубчатые или биметаллические радиаторы",
+      "user_task": "Сравнить два типа приборов для системы и бюджета",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "column-radiators",
+        "trubchatye-radiatory-dlya-kvartiry"
+      ],
+      "action": "Сохранить именно сравнение конструкций; общую покупку трубчатого радиатора раскрывать в главном руководстве.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/trubchatye-ili-bimetallicheskie-radiatory",
+        "Clicks": "2",
+        "Impressions": "125",
+        "CTR": "1.6%",
+        "Position": "6.22"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/trubchatye-ili-bimetallicheskie-radiatory"
+    },
+    {
+      "slug": "trubchatye-radiatory-dlya-kvartiry",
+      "url": "https://arboniashop.ru/articles/trubchatye-radiatory-dlya-kvartiry",
+      "title": "Трубчатые радиаторы для квартиры - какие модели выбрать",
+      "h1": [
+        "Трубчатые радиаторы для квартиры: какие модели Arbonia выбрать",
+        "Трубчатые радиаторы для квартиры: какие модели Arbonia выбрать"
+      ],
+      "cluster": "Общий выбор",
+      "recommended_query_family": "трубчатые радиаторы для квартиры",
+      "user_task": "Проверить квартирную систему и выбрать сценарий замены или установки",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "column-radiators",
+        "radiatory-arbonia-pod-okno"
+      ],
+      "action": "Убрать двойной H1. Подчеркнуть центральное отопление, стояк, согласование и замену в квартире; общую классификацию приборов сократить.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/trubchatye-radiatory-dlya-kvartiry",
+        "Clicks": "0",
+        "Impressions": "1",
+        "CTR": "0%",
+        "Position": "2"
+      },
+      "h1_count": 2,
+      "canonical": "https://arboniashop.ru/articles/trubchatye-radiatory-dlya-kvartiry"
+    },
+    {
+      "slug": "tsvet-radiatorov-v-interiere",
+      "url": "https://arboniashop.ru/articles/tsvet-radiatorov-v-interiere",
+      "title": "Цвет радиаторов в интерьере: как выбрать оттенок",
+      "h1": [
+        "Цвет радиаторов в интерьере: как выбрать оттенок для дизайна и комфорта"
+      ],
+      "cluster": "Цвет",
+      "recommended_query_family": "цветные радиаторы в интерьере; сочетания оттенков",
+      "user_task": "Подобрать визуальное направление по цвету, стилю и комнате",
+      "coverage": "Отвечает",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "kak-vybrat-cvet-radiatora-pod-interer"
+      ],
+      "action": "Роль вдохновения уже объяснена в тексте. Отразить её в Title/H1 и description: «Цветные радиаторы в интерьере: сочетания и примеры», убрать обещание второго полного алгоритма выбора.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/tsvet-radiatorov-v-interiere",
+        "Clicks": "23",
+        "Impressions": "1455",
+        "CTR": "1.58%",
+        "Position": "5.68"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/tsvet-radiatorov-v-interiere"
+    },
+    {
+      "slug": "vertical-radiator-power",
+      "url": "https://arboniashop.ru/articles/vertical-radiator-power",
+      "title": "Мощность вертикального радиатора Arbonia - расчет",
+      "h1": [
+        "Как рассчитать мощность вертикального радиатора Arbonia"
+      ],
+      "cluster": "Мощность",
+      "recommended_query_family": "как рассчитать мощность вертикального радиатора",
+      "user_task": "Определить нагрузку и сравнить теплоотдачу 2180 и 3180",
+      "coverage": "Отвечает с допущениями",
+      "overlap_risk": "Средний",
+      "related_pages": [
+        "calculate",
+        "arbonia-2180-po-ploshadi",
+        "arbonia-2180-calc"
+      ],
+      "action": "Оставить расчёт вертикальной формы и сравнение двух моделей. Любые 164/219 Вт сопровождать режимом ΔT; интерактивный расчёт конкретной 2180 вынести по ссылке.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/vertical-radiator-power",
+        "Clicks": "18",
+        "Impressions": "557",
+        "CTR": "3.23%",
+        "Position": "4.65"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/vertical-radiator-power"
+    },
+    {
+      "slug": "vertical-vs-horizontal",
+      "url": "https://arboniashop.ru/articles/vertical-vs-horizontal",
+      "title": "Какой радиатор выбрать: вертикальный или горизонтальный",
+      "h1": [
+        "Какой радиатор выбрать: вертикальный или горизонтальный"
+      ],
+      "cluster": "Общий выбор",
+      "recommended_query_family": "вертикальный или горизонтальный радиатор",
+      "user_task": "Выбрать форму размещения до выбора модели",
+      "coverage": "Отвечает",
+      "overlap_risk": "Низкий",
+      "related_pages": [
+        "high-arbonia",
+        "kogda-vertikalnyy-radiator-arbonia-ne-podkhodit"
+      ],
+      "action": "Сохранить сравнение формы; общий высокий ассортимент и особые противопоказания раскрывать по ссылкам.",
+      "gsc_3m": {
+        "Top pages": "https://arboniashop.ru/articles/vertical-vs-horizontal",
+        "Clicks": "14",
+        "Impressions": "1326",
+        "CTR": "1.06%",
+        "Position": "7"
+      },
+      "h1_count": 1,
+      "canonical": "https://arboniashop.ru/articles/vertical-vs-horizontal"
+    }
+  ]
+}

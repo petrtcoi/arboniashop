@@ -67,3 +67,18 @@
 2. **Не было Emotion SSR-кэша:** стили MUI вставлялись по ходу разметки, и классы на сервере и в браузере расходились (например, у иконки телефона в шапке). Подключён официальный `@mui/material-nextjs` (pages router): `AppCacheProvider` в `_app.tsx`, `DocumentHeadTags` + `documentGetInitialProps` в `_document.tsx`; добавлены `@emotion/cache`, `@emotion/server`.
 
 Проверка: dev-сервер, 21 страница разных шаблонов — ошибок гидратации нет. Production-сборка: мета всех 205 URL совпадает с живым сайтом; раскладка 14 страниц при 1280 и 375 px совпадает с живым сайтом до пикселя.
+
+### Доработка и выкладка 10–11.11.2026
+
+После первой выкладки исправления (`arboniashop-20261110-hydration`) проверка всех страниц на живом сайте (скрипт-перехватчик ошибок в начале `<head>` до гидратации) нашла #418 ещё на 13 страницах. Причины и исправления:
+
+- таблицы без `<tbody>` (`<tr>` прямо в `<table>`) — 9 таблиц в 6 статьях (`faq`, `gde-razmestit…`, `vertical-vs-horizontal`, `radiator-postoyanno-vyklyuchaetsya`, `belye-radiatory…`, `arbonia-3180-ral-9016-vs-anthracite`);
+- `<ul>` внутри `<p>` — `/articles/termostat`, `/delivery`: абзацы разбиты вокруг списков;
+- `Typography` внутри `Typography` (`<p>` в `<p>`) в строках цены — `/radiators/2180-*`: вложенные стали `span`; там же исправлен неподставленный `#{SECTIONS_POSTFIX}` в alt.
+- В Hero незакрытая скобка `rgb(0 0 0 / 60%` в `text-shadow` — исправлена.
+
+Пробовал отдавать стили Emotion одним блоком в `<head>` (`transpilePackages: ['@mui/material-nextjs']`): SSR-кэш заработал, но CSS-модули статей стали перекрывать стили MUI и вёрстка поменялась; вынос стилей в `<body>` не помог — откатил. Стили остаются как раньше (inline при SSR). `AppCacheProvider` на сервере фактически не действует (внешний модуль со своей копией `@emotion/react`) — классы на клиенте отличаются, React это только предупреждает в dev, ошибки #418 нет.
+
+Релиз `/srv/homekomfort/releases/arboniashop-20261110-hydration2` (коммит `10fba95`), предыдущий drop-in — `/root/arboniashop-release.conf.bak-20261110-hydration`. Проверено 11.11 на живом сайте: все 207 URL (sitemap + корзина + `/accepted`) гидратируются без ошибок, мета совпадает с проверенной сборкой.
+
+**Права на кэш.** В релизах, собранных 09–10.11, не было `.next/cache`, а `.next` принадлежит root — сервис (`hk-<site>`) не мог писать кэш оптимизированных картинок (EACCES в журнале). 11.11 создан `.next/cache` с владельцем `hk-arboniashop`, `.next` отдан тому же пользователю. В следующих выкладках: `install -d -o hk-<site> -g hk-<site> .next/cache` и `chown hk-<site> .next`.

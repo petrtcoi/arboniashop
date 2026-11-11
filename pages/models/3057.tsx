@@ -127,7 +127,7 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '20px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 3057 - является наиболее универсальной моделью от Arbonia. С одной стороны, он обладает
 							высокой тепловой мощностью в 73 Вт / секция (ΔT=60°). С другой, его толщина составляет всего 105 мм. При
@@ -190,7 +190,7 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Arbonia 3057 с боковым подключением</h2>
 						<Grid
 							container
@@ -251,7 +251,7 @@ const Model3057: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиатор Arbonia 3057 с нижним подключением</h2>
 						<Grid
 							container

@@ -130,7 +130,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					модели, требования производителя, проект системы и выбранные кронштейны. Зазор должен обеспечивать движение
 					воздуха и доступ к соединениям, но фактическая величина зависит от глубины подоконника и геометрии ниши.
 				</p>
-				<table className={tableStyle.table}>
+				<table className={tableStyle.table}><tbody>
 					<tr>
 						<th>Расстояние</th>
 						<th>Рекомендация</th>
@@ -151,7 +151,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<td>От мебели и плотных тканей</td>
 						<td>150–300 мм свободного пространства</td>
 					</tr>
-				</table>
+				</tbody></table>
 
 				<h2 style={{ marginTop: '40px' }}>Где радиатор ставить нельзя</h2>
 				<p>Есть зоны, которые значительно ухудшают работу приборов:</p>
@@ -177,7 +177,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					Для установки на простенке полезна <a href='/articles/montazh-vysokih-radiatorov-arbonia-instrukciya'>инструкция
 					по креплению высоких радиаторов</a>.
 				</p>
-				<table className={tableStyle.table}>
+				<table className={tableStyle.table}><tbody>
 					<tr>
 						<th>Вид ниши</th>
 						<th>Можно устанавливать?</th>
@@ -198,7 +198,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<td>Да</td>
 						<td>Нужны вентиляционные решётки сверху и снизу</td>
 					</tr>
-				</table>
+				</tbody></table>
 
 				<p>
 					Перед изготовлением мебели используйте <a href='/articles/radiator-pod-glubokim-podokonnikom-stoleshnitsey'>проверку
@@ -216,7 +216,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</ul>
 
 				<h2 style={{ marginTop: '40px' }}>Где ставить радиаторы в разных комнатах</h2>
-				<table className={tableStyle.table}>
+				<table className={tableStyle.table}><tbody>
 					<tr>
 						<th>Комната</th>
 						<th>Лучшее местоположение</th>
@@ -247,7 +247,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<td>В зоне недоступной для игры</td>
 						<td>Желательны модели с ограничением температуры</td>
 					</tr>
-				</table>
+				</tbody></table>
 
 				<h2 style={{ marginTop: '40px' }}>Итог: правила грамотного размещения радиатора</h2>
 				<ul>

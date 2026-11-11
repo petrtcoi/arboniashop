@@ -77,7 +77,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</p>
 
 				<h2 style={{ marginTop: '40px' }}>📊 Быстрая таблица выбора</h2>
-				<table className={tableStyle.table}>
+				<table className={tableStyle.table}><tbody>
 					<tr>
 						<th>Сценарий</th>
 						<th>Лучше выбрать</th>
@@ -108,7 +108,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<td>Anthracite Metallic</td>
 						<td>На антраците меньше заметны мелкие загрязнения, а 3180 часто ставят в проходных зонах.</td>
 					</tr>
-				</table>
+				</tbody></table>
 
 				<h2 style={{ marginTop: '40px' }}>🤍 RAL 9016 - «тихий» 3180, который не спорит с интерьером</h2>
 

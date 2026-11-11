@@ -285,7 +285,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									</a>
 								</Box>
 
-								<Typography sx={{ ...styles.standardText }}>
+								<Typography component='div' sx={{ ...styles.standardText }}>
 									<p>
 										Радиатор Arbonia 2180 10 секций - компактный вертикальный радиатор шириной {width} мм. Радиатор
 										может являться единственным источником тепла при обогреве средних помещений. В остальных ситуациях,
@@ -318,7 +318,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                                 display: 'inline'
                                             }, styles.standardText]}>
 											Цена от:{' '}
-											<Typography
+											<Typography component='span'
                                                 itemProp='offers'
                                                 itemScope
                                                 itemType='https://schema.org/Offer'
@@ -341,7 +341,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 												</span>{' '}
 												руб
 											</Typography>
-											<Typography
+											<Typography component='span'
                                                 sx={{
                                                     display: 'inline',
                                                     marginX: '15px',
@@ -580,7 +580,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '40px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 {SECTIONS_STRING} в цвете RAL 9016</h2>
 						<Grid
 							container
@@ -594,7 +594,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								<img
 									itemProp='image'
 									src='/images/models/2180-1.jpeg'
-									alt={`Белый радиатор Arbonia 2180 ${SECTIONS_STRING} #{SECTIONS_POSTFIX}`}
+									alt={`Белый радиатор Arbonia 2180 ${SECTIONS_STRING} ${SECTIONS_POSTFIX}`}
 									width={600}
 									height={600}
 								/>
@@ -618,7 +618,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -641,7 +641,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -682,7 +682,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -705,7 +705,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -748,7 +748,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '80px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 {SECTIONS_STRING} в темном цвете RAL7016</h2>
 						<Grid
 							container
@@ -785,7 +785,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -808,7 +808,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -849,7 +849,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -872,7 +872,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -915,7 +915,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '80px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 {SECTIONS_STRING} в металлизированном цвете SF-3</h2>
 						<Grid
 							container
@@ -958,7 +958,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -981,7 +981,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -1022,7 +1022,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -1045,7 +1045,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -1088,7 +1088,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '80px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 {SECTIONS_QNTY} в черном цвете RAL9005</h2>
 						<Grid
 							container
@@ -1124,7 +1124,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -1147,7 +1147,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',
@@ -1188,7 +1188,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                                             display: 'inline'
                                         }, styles.standardText]}>
 										Цена:{' '}
-										<Typography
+										<Typography component='span'
                                             itemProp='offers'
                                             itemScope
                                             itemType='https://schema.org/Offer'
@@ -1211,7 +1211,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 											</span>{' '}
 											руб
 										</Typography>
-										<Typography
+										<Typography component='span'
                                             sx={{
                                                 display: 'inline',
                                                 marginX: '15px',

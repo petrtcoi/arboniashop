@@ -143,7 +143,7 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '20px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 3030 - это 3-трубчатая модель высотой всего 30 см Это наиболее низкая модель из имеющихся
 							в наличии. При небольших габаритах, она обладает достаточно высокой тепловой мощностью и может
@@ -176,7 +176,7 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3030 с боковым подключением</h2>
 						<Grid
 							container
@@ -232,7 +232,7 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3030 с нижним подключением</h2>
 						<Grid
 							container
@@ -292,7 +292,7 @@ const Model3030: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3030 69 ТВВ в черном цвете RAL 9005 matt</h2>
 						<Grid
 							container

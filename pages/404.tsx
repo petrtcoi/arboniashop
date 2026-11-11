@@ -37,7 +37,7 @@ const SuccessPage: NextPage<SuccessPageProps> = () => {
                         marginTop: '40px',
                         paddingX: '1rem'
                     }}>
-					<Typography sx={style.standardText}>
+					<Typography component='div' sx={style.standardText}>
 						<p>
 							К сожалению, запрашиваемая страница не существует. Возможно, вы ввели неверный адрес или перешли по
 							устаревшей ссылке.

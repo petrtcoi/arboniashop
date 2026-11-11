@@ -150,7 +150,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				</div>
 
 				<h2 style={{ marginTop: '40px' }}>🎨 Таблица сочетаемости: белый радиатор + цвет стен</h2>
-				<table className={tableStyle.table}>
+				<table className={tableStyle.table}><tbody>
 					<tr>
 						<th>Цвет стены</th>
 						<th>Белый радиатор</th>
@@ -181,7 +181,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<td>✅ Хорошо</td>
 						<td>Создает мягкий, «сливочный» контраст в уютных спальнях.</td>
 					</tr>
-				</table>
+				</tbody></table>
 
 				<h2 style={{ marginTop: '40px' }}>🛠 Как интегрировать белый радиатор: 3 стратегии</h2>
 

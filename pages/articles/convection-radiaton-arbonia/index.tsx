@@ -74,7 +74,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					Передача тепла через теплый воздух - это основной вид передачи для всех радиаторов отопления. Обогрев
 					помещения осуществляется в несколько шагов:
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText
@@ -95,7 +95,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                     }}>
 					Мощность радиатора, передаваемая через конвекцию, зависит от двух факторов
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText
@@ -158,7 +158,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                     }}>
 					Какие преимущества имеют отопительные приборы, делающие ставку на конвекцию:
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText
@@ -188,7 +188,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					жилье эконом / комфорт - класса? Для этого есть ряд причин, вытекающих из преимуществ конвекторов, а потому
 					неустранимых принципиально.
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText
@@ -240,7 +240,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					В этом простота и сила подобных приборов. Мощность теплового излучения также зависит от двух факторов:
 				</Typography>
 
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText
@@ -295,7 +295,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                     }}>
 					Какие преимущества имеют отопительные приборы, делающие ставку на конвекцию:
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText
@@ -330,7 +330,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
                     }}>
 					Но есть здесь и недостатки:
 				</Typography>
-				<Typography
+				<Typography component='div'
                     sx={{
                         marginY: '20px',
                         ...styles.standardText

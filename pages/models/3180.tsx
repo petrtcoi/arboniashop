@@ -141,7 +141,7 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '20px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 3180 - это самая мощная модель от данного производителя, которую можно найти в наличии на
 							складе. Она сочетает в себе высокую тепловую мощность (одна секция может обогреть в среднем от 2 до 4
@@ -187,7 +187,7 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3180 RAL 9016</h2>
 						<Grid
 							container
@@ -312,7 +312,7 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3180 RAL7016</h2>
 						<Grid
 							container
@@ -378,7 +378,7 @@ const Model3180: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 3180 SF-3</h2>
 						<Grid
 							container

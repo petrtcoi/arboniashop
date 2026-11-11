@@ -100,7 +100,7 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
                         marginTop: '20px',
                         maxWidth: '800px'
                     }}>
-					<Typography sx={{
+					<Typography component='div' sx={{
                         fontSize: { xs: '12px', sm: '14px' }
                     }}>
 						<p>
@@ -122,14 +122,14 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia RAL 9016 небольшой высоты (до 40 см)</h2>
 						<Box
                             sx={{
                                 marginTop: '20px',
                                 maxWidth: '800px'
                             }}>
-							<Typography sx={{
+							<Typography component='div' sx={{
                                 fontSize: { xs: '12px', sm: '14px' }
                             }}>
 								<p>
@@ -265,14 +265,14 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia RAL 9016 стандартной высоты</h2>
 						<Box
                             sx={{
                                 marginTop: '20px',
                                 maxWidth: '800px'
                             }}>
-							<Typography sx={{
+							<Typography component='div' sx={{
                                 fontSize: { xs: '12px', sm: '14px' }
                             }}>
 								<p>
@@ -480,14 +480,14 @@ const SetRAL9016Model: React.FC<SetComponentProps> = ({ models, colors, connecti
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia RAL 9016 высотой 1.8 м</h2>
 						<Box
                             sx={{
                                 marginTop: '20px',
                                 maxWidth: '800px'
                             }}>
-							<Typography sx={{
+							<Typography component='div' sx={{
                                 fontSize: { xs: '12px', sm: '14px' }
                             }}>
 								<p>

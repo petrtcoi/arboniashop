@@ -129,7 +129,7 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				<Box sx={{
                     marginTop: '20px'
                 }}>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<p>
 							Радиатор Arbonia 2057 - двухтрубчатая модель высотой 57 см. Он идеально подойдет для установки под
 							стандартные окна, оставляя достаточно места для подключения снизу и под подоконником. Толщина радиатора
@@ -177,7 +177,7 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '40px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 2057 с боковым подключением</h2>
 						<Grid
 							container
@@ -233,7 +233,7 @@ const Model2057: React.FC<SetComponentProps> = ({ models, colors, connections }:
                         marginTop: '80px'
                     }}
 				>
-					<Typography sx={{ ...styles.standardText }}>
+					<Typography component='div' sx={{ ...styles.standardText }}>
 						<h2>Радиаторы Arbonia 2057 с нижним подключением</h2>
 						<Grid
 							container

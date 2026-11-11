@@ -61,7 +61,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 
 				<h2 style={{ marginTop: '40px' }}>🧭 Шпаргалка: диагностика за 1 минуту</h2>
 
-				<table className={tableStyle.table}>
+				<table className={tableStyle.table}><tbody>
 					<tr>
 						<th>Причина</th>
 						<th>Как проявляется</th>
@@ -104,7 +104,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<td>Давление, ошибки котла, работу насоса</td>
 						<td>Обычно нет</td>
 					</tr>
-				</table>
+				</tbody></table>
 
 				<div
 					className='cta'
@@ -198,7 +198,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 				<table
 					className={tableStyle.table}
 					style={{ marginTop: '10px' }}
-				>
+				><tbody>
 					<tr>
 						<th>Сценарий</th>
 						<th>Что происходит</th>
@@ -219,7 +219,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 						<td>Нестабильный нагрев во всем доме</td>
 						<td>Проверить котел, насос, датчики</td>
 					</tr>
-				</table>
+				</tbody></table>
 
 				<h2 style={{ marginTop: '40px' }}>💨 Причина 3: воздух в радиаторе</h2>
 				<p>

@@ -298,7 +298,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 					✅ Таблица сравнения - какой радиатор выбрать
 				</Typography>
 				<Box style={{ overflowX: 'auto', marginTop: '20px' }}>
-					<table className={tableStyle.table}>
+					<table className={tableStyle.table}><tbody>
 						<tr>
 							<th>Критерий</th> <th>Горизонтальный радиатор</th> <th>Вертикальный радиатор</th>
 						</tr>
@@ -336,7 +336,7 @@ const ArticlePage: NextPage<ArticlePageProps> = () => {
 							<td>Лучшие модели</td> <td>Низкие и средние трубчатые, панельные решения</td>
 							<td>Высокие трубчатые, например Arbonia</td>
 						</tr>
-					</table>
+					</tbody></table>
 				</Box>
 
 				<Typography
